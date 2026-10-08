@@ -1,0 +1,11 @@
+{
+  "status": "TRAINED",
+  "seed": 42,
+  "arm": "bayes_mean",
+  "episodes": 10000,
+  "optimizer_steps": 40000,
+  "success": 9757,
+  "collision": 197,
+  "timeout": 46,
+  "wall_seconds": 26353.417255163193
+}

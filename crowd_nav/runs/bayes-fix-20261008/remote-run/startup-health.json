@@ -1,0 +1,93 @@
+{
+  "status": "B7_STARTUP_CHECK",
+  "unix_time": 1791420828.4744773,
+  "workers": [
+    {
+      "arm": "bayes",
+      "seed": 42,
+      "pid": 2231394,
+      "started_unix": 1791420640.884378,
+      "proc_start_ticks": "2530788726",
+      "episode": 18,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "=200000\n[10-08 08:53:47] INFO: [RL-EP-0018] (18/10000) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:47] INFO:               cumulative s/c/t%: 88.9%/11.1%/0.0%\n[10-08 08:53:47] INFO: [REPLAY-STORE] ok=18 skip=0 steps=1432 buf=200000\n"
+    },
+    {
+      "arm": "bayes",
+      "seed": 43,
+      "pid": 2231391,
+      "started_unix": 1791420640.8808856,
+      "proc_start_ticks": "2530788725",
+      "episode": 18,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "f=200000\n[10-08 08:53:46] INFO: [RL-EP-0018] (18/10000) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:46] INFO:               cumulative s/c/t%: 88.9%/5.6%/5.6%\n[10-08 08:53:46] INFO: [REPLAY-STORE] ok=18 skip=0 steps=1605 buf=200000\n"
+    },
+    {
+      "arm": "bayes_mean",
+      "seed": 42,
+      "pid": 2231392,
+      "started_unix": 1791420640.8827221,
+      "proc_start_ticks": "2530788725",
+      "episode": 13,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "200000\n[10-08 08:53:47] INFO: [RL-EP-0013] (13/10000) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:47] INFO:               cumulative s/c/t%: 46.2%/38.5%/15.4%\n[10-08 08:53:47] INFO: [REPLAY-STORE] ok=13 skip=0 steps=1034 buf=200000\n"
+    },
+    {
+      "arm": "bayes_mean",
+      "seed": 43,
+      "pid": 2231393,
+      "started_unix": 1791420640.8823662,
+      "proc_start_ticks": "2530788725",
+      "episode": 13,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "=200000\n[10-08 08:53:46] INFO: [RL-EP-0013] (13/10000) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:46] INFO:               cumulative s/c/t%: 69.2%/23.1%/7.7%\n[10-08 08:53:46] INFO: [REPLAY-STORE] ok=13 skip=0 steps=1107 buf=200000\n"
+    },
+    {
+      "arm": "gru",
+      "seed": 42,
+      "pid": 2231388,
+      "started_unix": 1791420640.8700626,
+      "proc_start_ticks": "2530788724",
+      "episode": 41,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "=200000\n[10-08 08:53:47] INFO: [RL-EP-0041] (41/10000) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:47] INFO:               cumulative s/c/t%: 80.5%/14.6%/4.9%\n[10-08 08:53:47] INFO: [REPLAY-STORE] ok=41 skip=0 steps=3838 buf=200000\n"
+    },
+    {
+      "arm": "gru",
+      "seed": 43,
+      "pid": 2231390,
+      "started_unix": 1791420640.8780947,
+      "proc_start_ticks": "2530788725",
+      "episode": 41,
+      "grid80": true,
+      "built80": true,
+      "il_strict": true,
+      "dataset_version": true,
+      "traceback": false,
+      "tail": "=200000\n[10-08 08:53:47] INFO: [RL-EP-0041] (41/10000) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000\n[10-08 08:53:47] INFO:               cumulative s/c/t%: 82.9%/14.6%/2.4%\n[10-08 08:53:47] INFO: [REPLAY-STORE] ok=41 skip=0 steps=3705 buf=200000\n"
+    }
+  ],
+  "old_il43_active": [],
+  "disk_free_GiB": 6.878215789794922,
+  "error": null
+}

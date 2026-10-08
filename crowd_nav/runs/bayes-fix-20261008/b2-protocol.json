@@ -1,0 +1,119 @@
+{
+  "roots": [
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 21,
+      "seed": 1540568433,
+      "outcome": "collision",
+      "steps": 22,
+      "root_step": 20
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 0,
+      "seed": 1541568415,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 2,
+      "seed": 1541568417,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 4,
+      "seed": 1541568419,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 10,
+      "seed": 1541568425,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 12,
+      "seed": 1541568427,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 20,
+      "seed": 1541568435,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 3,
+      "seed": 1542568421,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 7,
+      "seed": 1542568425,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 9,
+      "seed": 1542568427,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 0,
+      "seed": 1543568421,
+      "outcome": "collision",
+      "steps": 26,
+      "root_step": 23
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 6,
+      "seed": 1543568427,
+      "outcome": "timeout",
+      "steps": 101,
+      "root_step": 23
+    }
+  ],
+  "registered_unix": 1791402705.1116939,
+  "wall_budget_seconds": 1800,
+  "candidates": "All 80 native actions subject to the unchanged Parent one-step safe mask, if any safe candidate exists.",
+  "intervention": "One forced selection at the fixed root, original smoothing and last-action state, then original Parent continuation.",
+  "oracle": "Offline true continuation outcomes; choose contact-free success with highest native discounted return.",
+  "replay": "Reset/replay, no deepcopy; exact root hash and baseline outcome/steps required.",
+  "claim": "Conditional single-action headroom on failure-selected development roots, not population SR upper bound or Bayesian-specific gain."
+}

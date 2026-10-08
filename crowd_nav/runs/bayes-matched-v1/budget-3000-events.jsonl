@@ -1,0 +1,10 @@
+{"time_utc": "2026-10-06T12:49:45Z", "event": "EVALUATION_STARTED", "arm": "gru", "checkpoint_sha256": "a33860e054a3c02f0f5d2dab4cfa4950fcb1841dcd43824b7766a63dbe80e813"}
+{"time_utc": "2026-10-06T14:22:20Z", "event": "USER_BUDGET_CUTOFF", "arm": "bayes_mean", "pid": 1609725, "checkpoint_sha256": "a0e1ef561c0569032f8342af5014e7a5b91486fce0578d5a5d518ccf3a54766e", "evaluated_episode": 3000, "note": "Post-checkpoint work, if any, excluded; not a scientific failure"}
+{"time_utc": "2026-10-06T14:43:33Z", "event": "EVALUATION_COMPLETE", "arm": "gru", "wall_seconds": 6828.185386419296}
+{"time_utc": "2026-10-06T14:43:33Z", "event": "EVALUATION_STARTED", "arm": "bayes_mean", "checkpoint_sha256": "a0e1ef561c0569032f8342af5014e7a5b91486fce0578d5a5d518ccf3a54766e"}
+{"time_utc": "2026-10-06T14:45:24Z", "event": "USER_BUDGET_CUTOFF", "arm": "bayes", "pid": 1609723, "checkpoint_sha256": "07ee4a7f71d19b10aeec4c54753d2398ae349923e50f29b7c421fa7ae1c9059e", "evaluated_episode": 3000, "note": "Post-checkpoint work, if any, excluded; not a scientific failure"}
+{"time_utc": "2026-10-06T15:12:55Z", "event": "PARALLEL_EVALUATION_SCHEDULE", "reason": "Training workers finished; verified 31GB host RAM available and GPU load below 10GB; scientific sources/weights/cases unchanged", "suspended_controller_pid": 1658574, "mean_evaluation_pid": 1676085, "note": "Resume original controller after this Full evaluation returns; no duplicated cohort; latency is contended"}
+{"time_utc": "2026-10-06T15:12:55Z", "event": "EVALUATION_STARTED", "arm": "bayes", "checkpoint_sha256": "07ee4a7f71d19b10aeec4c54753d2398ae349923e50f29b7c421fa7ae1c9059e"}
+{"time_utc": "2026-10-06T17:01:49Z", "event": "EVALUATION_COMPLETE", "arm": "bayes", "wall_seconds": 6533.768522500992}
+{"time_utc": "2026-10-06T17:01:51Z", "event": "EVALUATION_COMPLETE", "arm": "bayes_mean", "wall_seconds": 8297.455236911774}
+{"time_utc": "2026-10-06T17:01:51Z", "event": "ALREADY_EVALUATED", "arm": "bayes"}

@@ -1,0 +1,11 @@
+{
+  "status": "TRAINED",
+  "seed": 42,
+  "arm": "gru",
+  "episodes": 10000,
+  "optimizer_steps": 40000,
+  "success": 9745,
+  "collision": 193,
+  "timeout": 62,
+  "wall_seconds": 17358.851662158966
+}

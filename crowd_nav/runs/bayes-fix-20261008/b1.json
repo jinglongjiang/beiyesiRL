@@ -1,0 +1,1531 @@
+{
+  "status": "COMPLETE",
+  "steps": 10696,
+  "episodes": 192,
+  "cpu_only": true,
+  "original_outcome_step_parity": true,
+  "collision_episodes": 10,
+  "results": {
+    "future-4-clearance-0.0": {
+      "train_steps": 7568,
+      "test_steps": 2573,
+      "train_positives": 28,
+      "test_positives": 0,
+      "train_episodes": 144,
+      "test_episodes": 48,
+      "status": "EVIDENCE_INSUFFICIENT_SINGLE_CLASS"
+    },
+    "future-4-clearance-0.2": {
+      "train_steps": 7573,
+      "test_steps": 2581,
+      "train_positives": 657,
+      "test_positives": 225,
+      "train_episodes": 144,
+      "test_episodes": 48,
+      "sigma_mean": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.7239700056593096,
+        "test_auc": 0.7239700056593096,
+        "episode_bootstrap_95_ci": [
+          0.6598694116173848,
+          0.7841347358451906
+        ]
+      },
+      "sigma_max": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.6077428787021317,
+        "test_auc": 0.6077428787021317,
+        "episode_bootstrap_95_ci": [
+          0.5235706683513262,
+          0.6770205217201701
+        ]
+      },
+      "current_clearance": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.14040181097906054,
+        "test_auc": 0.8595981890209394,
+        "episode_bootstrap_95_ci": [
+          0.8257176492529873,
+          0.8937321638440485
+        ]
+      },
+      "history_age": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.43110262214676476,
+        "test_auc": 0.5688973778532352,
+        "episode_bootstrap_95_ci": [
+          0.49204117525674446,
+          0.6337558251680248
+        ]
+      },
+      "sigma_linear": {
+        "test_auc": 0.8643557819279382,
+        "episode_bootstrap_95_ci": [
+          0.7964625944806245,
+          0.9076930604590503
+        ]
+      },
+      "status": "ASSOCIATION_DIAGNOSTIC_ONLY"
+    },
+    "future-8-clearance-0.0": {
+      "train_steps": 7020,
+      "test_steps": 2381,
+      "train_positives": 56,
+      "test_positives": 0,
+      "train_episodes": 144,
+      "test_episodes": 48,
+      "status": "EVIDENCE_INSUFFICIENT_SINGLE_CLASS"
+    },
+    "future-8-clearance-0.2": {
+      "train_steps": 7040,
+      "test_steps": 2404,
+      "train_positives": 1028,
+      "test_positives": 356,
+      "train_episodes": 144,
+      "test_episodes": 48,
+      "sigma_mean": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.7106350673718399,
+        "test_auc": 0.7106350673718399,
+        "episode_bootstrap_95_ci": [
+          0.6404578018206727,
+          0.7710357001749087
+        ]
+      },
+      "sigma_max": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.6043591445751404,
+        "test_auc": 0.6043591445751404,
+        "episode_bootstrap_95_ci": [
+          0.5212559902887923,
+          0.6779451937339941
+        ]
+      },
+      "current_clearance": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.1831082119030899,
+        "test_auc": 0.8168917880969101,
+        "episode_bootstrap_95_ci": [
+          0.7763318120309487,
+          0.8581402035363884
+        ]
+      },
+      "history_age": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.42497682035639045,
+        "test_auc": 0.5750231796436096,
+        "episode_bootstrap_95_ci": [
+          0.4934155501959796,
+          0.6451909842264126
+        ]
+      },
+      "sigma_linear": {
+        "test_auc": 0.8280975684691011,
+        "episode_bootstrap_95_ci": [
+          0.7419893355945769,
+          0.8856308097344102
+        ]
+      },
+      "status": "ASSOCIATION_DIAGNOSTIC_ONLY"
+    },
+    "episode-collision": {
+      "train_steps": 7979,
+      "test_steps": 2717,
+      "train_positives": 133,
+      "test_positives": 47,
+      "train_episodes": 144,
+      "test_episodes": 48,
+      "sigma_mean": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.7256673838552873,
+        "test_auc": 0.7256673838552873,
+        "episode_bootstrap_95_ci": [
+          0.675827549087327,
+          0.7817404682777073
+        ]
+      },
+      "sigma_max": {
+        "direction_selected_on_training": 1,
+        "raw_test_auc": 0.725276914495179,
+        "test_auc": 0.725276914495179,
+        "episode_bootstrap_95_ci": [
+          0.6763415275933238,
+          0.7806890959691715
+        ]
+      },
+      "current_clearance": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.2053390708422982,
+        "test_auc": 0.7946609291577018,
+        "episode_bootstrap_95_ci": [
+          0.7335491187723078,
+          0.8454911793732676
+        ]
+      },
+      "history_age": {
+        "direction_selected_on_training": -1,
+        "raw_test_auc": 0.2223444099131405,
+        "test_auc": 0.7776555900868595,
+        "episode_bootstrap_95_ci": [
+          0.7310703720685497,
+          0.8319796918290412
+        ]
+      },
+      "sigma_linear": {
+        "test_auc": 0.9363774005896884,
+        "episode_bootstrap_95_ci": [
+          0.9141362045604084,
+          0.9610001215987396
+        ]
+      },
+      "status": "ASSOCIATION_DIAGNOSTIC_ONLY"
+    }
+  },
+  "episode_metadata": [
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 0,
+      "seed": 1540568412,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 1,
+      "seed": 1540568413,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 2,
+      "seed": 1540568414,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 3,
+      "seed": 1540568415,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 4,
+      "seed": 1540568416,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 5,
+      "seed": 1540568417,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 6,
+      "seed": 1540568418,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 7,
+      "seed": 1540568419,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 8,
+      "seed": 1540568420,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 9,
+      "seed": 1540568421,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 10,
+      "seed": 1540568422,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 11,
+      "seed": 1540568423,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 12,
+      "seed": 1540568424,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 13,
+      "seed": 1540568425,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 14,
+      "seed": 1540568426,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 15,
+      "seed": 1540568427,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 16,
+      "seed": 1540568428,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 17,
+      "seed": 1540568429,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 18,
+      "seed": 1540568430,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 19,
+      "seed": 1540568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 20,
+      "seed": 1540568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 21,
+      "seed": 1540568433,
+      "outcome": "collision"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 22,
+      "seed": 1540568434,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 23,
+      "seed": 1540568435,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 24,
+      "seed": 1540568436,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 25,
+      "seed": 1540568437,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 26,
+      "seed": 1540568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 27,
+      "seed": 1540568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 28,
+      "seed": 1540568440,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 29,
+      "seed": 1540568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 30,
+      "seed": 1540568442,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_circle",
+      "scene_id": 0,
+      "episode": 31,
+      "seed": 1540568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 0,
+      "seed": 1541568415,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 1,
+      "seed": 1541568416,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 2,
+      "seed": 1541568417,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 3,
+      "seed": 1541568418,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 4,
+      "seed": 1541568419,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 5,
+      "seed": 1541568420,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 6,
+      "seed": 1541568421,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 7,
+      "seed": 1541568422,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 8,
+      "seed": 1541568423,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 9,
+      "seed": 1541568424,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 10,
+      "seed": 1541568425,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 11,
+      "seed": 1541568426,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 12,
+      "seed": 1541568427,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 13,
+      "seed": 1541568428,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 14,
+      "seed": 1541568429,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 15,
+      "seed": 1541568430,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 16,
+      "seed": 1541568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 17,
+      "seed": 1541568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 18,
+      "seed": 1541568433,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 19,
+      "seed": 1541568434,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 20,
+      "seed": 1541568435,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 21,
+      "seed": 1541568436,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 22,
+      "seed": 1541568437,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 23,
+      "seed": 1541568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 24,
+      "seed": 1541568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 25,
+      "seed": 1541568440,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 26,
+      "seed": 1541568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 27,
+      "seed": 1541568442,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 28,
+      "seed": 1541568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 29,
+      "seed": 1541568444,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 30,
+      "seed": 1541568445,
+      "outcome": "success"
+    },
+    {
+      "scene": "baseline_square",
+      "scene_id": 1,
+      "episode": 31,
+      "seed": 1541568446,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 0,
+      "seed": 1542568418,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 1,
+      "seed": 1542568419,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 2,
+      "seed": 1542568420,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 3,
+      "seed": 1542568421,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 4,
+      "seed": 1542568422,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 5,
+      "seed": 1542568423,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 6,
+      "seed": 1542568424,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 7,
+      "seed": 1542568425,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 8,
+      "seed": 1542568426,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 9,
+      "seed": 1542568427,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 10,
+      "seed": 1542568428,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 11,
+      "seed": 1542568429,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 12,
+      "seed": 1542568430,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 13,
+      "seed": 1542568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 14,
+      "seed": 1542568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 15,
+      "seed": 1542568433,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 16,
+      "seed": 1542568434,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 17,
+      "seed": 1542568435,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 18,
+      "seed": 1542568436,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 19,
+      "seed": 1542568437,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 20,
+      "seed": 1542568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 21,
+      "seed": 1542568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 22,
+      "seed": 1542568440,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 23,
+      "seed": 1542568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 24,
+      "seed": 1542568442,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 25,
+      "seed": 1542568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 26,
+      "seed": 1542568444,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 27,
+      "seed": 1542568445,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 28,
+      "seed": 1542568446,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 29,
+      "seed": 1542568447,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 30,
+      "seed": 1542568448,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_circle",
+      "scene_id": 2,
+      "episode": 31,
+      "seed": 1542568449,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 0,
+      "seed": 1543568421,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 1,
+      "seed": 1543568422,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 2,
+      "seed": 1543568423,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 3,
+      "seed": 1543568424,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 4,
+      "seed": 1543568425,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 5,
+      "seed": 1543568426,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 6,
+      "seed": 1543568427,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 7,
+      "seed": 1543568428,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 8,
+      "seed": 1543568429,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 9,
+      "seed": 1543568430,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 10,
+      "seed": 1543568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 11,
+      "seed": 1543568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 12,
+      "seed": 1543568433,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 13,
+      "seed": 1543568434,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 14,
+      "seed": 1543568435,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 15,
+      "seed": 1543568436,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 16,
+      "seed": 1543568437,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 17,
+      "seed": 1543568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 18,
+      "seed": 1543568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 19,
+      "seed": 1543568440,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 20,
+      "seed": 1543568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 21,
+      "seed": 1543568442,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 22,
+      "seed": 1543568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 23,
+      "seed": 1543568444,
+      "outcome": "collision"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 24,
+      "seed": 1543568445,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 25,
+      "seed": 1543568446,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 26,
+      "seed": 1543568447,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 27,
+      "seed": 1543568448,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 28,
+      "seed": 1543568449,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 29,
+      "seed": 1543568450,
+      "outcome": "success"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 30,
+      "seed": 1543568451,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "scene_id": 3,
+      "episode": 31,
+      "seed": 1543568452,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 0,
+      "seed": 1544568424,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 1,
+      "seed": 1544568425,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 2,
+      "seed": 1544568426,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 3,
+      "seed": 1544568427,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 4,
+      "seed": 1544568428,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 5,
+      "seed": 1544568429,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 6,
+      "seed": 1544568430,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 7,
+      "seed": 1544568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 8,
+      "seed": 1544568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 9,
+      "seed": 1544568433,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 10,
+      "seed": 1544568434,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 11,
+      "seed": 1544568435,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 12,
+      "seed": 1544568436,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 13,
+      "seed": 1544568437,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 14,
+      "seed": 1544568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 15,
+      "seed": 1544568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 16,
+      "seed": 1544568440,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 17,
+      "seed": 1544568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 18,
+      "seed": 1544568442,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 19,
+      "seed": 1544568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 20,
+      "seed": 1544568444,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 21,
+      "seed": 1544568445,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 22,
+      "seed": 1544568446,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 23,
+      "seed": 1544568447,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 24,
+      "seed": 1544568448,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 25,
+      "seed": 1544568449,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 26,
+      "seed": 1544568450,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 27,
+      "seed": 1544568451,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 28,
+      "seed": 1544568452,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 29,
+      "seed": 1544568453,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 30,
+      "seed": 1544568454,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_circle",
+      "scene_id": 4,
+      "episode": 31,
+      "seed": 1544568455,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 0,
+      "seed": 1545568427,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 1,
+      "seed": 1545568428,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 2,
+      "seed": 1545568429,
+      "outcome": "collision"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 3,
+      "seed": 1545568430,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 4,
+      "seed": 1545568431,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 5,
+      "seed": 1545568432,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 6,
+      "seed": 1545568433,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 7,
+      "seed": 1545568434,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 8,
+      "seed": 1545568435,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 9,
+      "seed": 1545568436,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 10,
+      "seed": 1545568437,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 11,
+      "seed": 1545568438,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 12,
+      "seed": 1545568439,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 13,
+      "seed": 1545568440,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 14,
+      "seed": 1545568441,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 15,
+      "seed": 1545568442,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 16,
+      "seed": 1545568443,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 17,
+      "seed": 1545568444,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 18,
+      "seed": 1545568445,
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 19,
+      "seed": 1545568446,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 20,
+      "seed": 1545568447,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 21,
+      "seed": 1545568448,
+      "outcome": "collision"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 22,
+      "seed": 1545568449,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 23,
+      "seed": 1545568450,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 24,
+      "seed": 1545568451,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 25,
+      "seed": 1545568452,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 26,
+      "seed": 1545568453,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 27,
+      "seed": 1545568454,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 28,
+      "seed": 1545568455,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 29,
+      "seed": 1545568456,
+      "outcome": "success"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 30,
+      "seed": 1545568457,
+      "outcome": "collision"
+    },
+    {
+      "scene": "large_square",
+      "scene_id": 5,
+      "episode": 31,
+      "seed": 1545568458,
+      "outcome": "success"
+    }
+  ],
+  "limitation": "AUC is association on reused diagnostic cases, not posterior calibration, causal gain or fresh confirmation."
+}

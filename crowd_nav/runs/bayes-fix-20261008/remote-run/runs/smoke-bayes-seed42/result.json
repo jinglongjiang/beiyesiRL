@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "seed": 42,
+  "arm": "bayes",
+  "episodes": 200,
+  "optimizer_steps": 800,
+  "success": 158,
+  "collision": 33,
+  "timeout": 9,
+  "wall_seconds": 630.6389882564545
+}

@@ -1,0 +1,82 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/root/miniconda3/envs/mamba/lib/python3.10/site-packages/torch/nn/modules/rnn.py:1394: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at /pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1479.)
+  result = _VF.gru(
+{
+  "legacy_source_matches_backup": true,
+  "replay": [
+    {
+      "contract": "legal-prefix",
+      "n_step": 1,
+      "per": false,
+      "passed": true
+    },
+    {
+      "contract": "legal-prefix",
+      "n_step": 1,
+      "per": true,
+      "passed": true
+    },
+    {
+      "contract": "legal-prefix",
+      "n_step": 3,
+      "per": false,
+      "passed": true
+    },
+    {
+      "contract": "legal-prefix",
+      "n_step": 3,
+      "per": true,
+      "passed": true
+    },
+    {
+      "contract": "legacy",
+      "n_step": 1,
+      "per": false,
+      "passed": true
+    },
+    {
+      "contract": "legacy",
+      "n_step": 1,
+      "per": true,
+      "passed": true
+    },
+    {
+      "contract": "legacy",
+      "n_step": 3,
+      "per": false,
+      "passed": true
+    },
+    {
+      "contract": "legacy",
+      "n_step": 3,
+      "per": true,
+      "passed": true
+    }
+  ],
+  "actions": {
+    "bayes": {
+      "roots": 128,
+      "action_mismatches": 0,
+      "max_window_error": 0.0,
+      "max_value_error": 0.0
+    },
+    "bayes_mean": {
+      "roots": 118,
+      "action_mismatches": 0,
+      "max_window_error": 0.0,
+      "max_value_error": 0.0
+    },
+    "gru": {
+      "roots": 128,
+      "action_mismatches": 0,
+      "max_window_error": 0.0,
+      "max_value_error": 0.0
+    }
+  },
+  "wall_seconds": 20.253143310546875,
+  "status": "PASS"
+}
+[W1007 15:52:56.943893162 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

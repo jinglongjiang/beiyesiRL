@@ -1,0 +1,10 @@
+{"utc": "2026-10-06T05:06:42.586190", "arm": "gru", "event": "preprocessing-paused-for-host-memory"}
+{"utc": "2026-10-06T05:06:42.586401", "arm": "bayes_mean", "event": "preprocessing-paused-for-host-memory"}
+{"utc": "2026-10-06T05:06:42.586468", "arm": "bayes", "event": "preprocessing-paused-for-host-memory"}
+{"utc": "2026-10-06T05:16:43.159459", "arm": "mamba", "event": "preprocessing-completed-training-may-overlap"}
+{"utc": "2026-10-06T05:16:43.159728", "arm": "gru", "event": "preprocessing-resumed"}
+{"utc": "2026-10-06T05:27:23.755367", "arm": "gru", "event": "preprocessing-completed-training-may-overlap"}
+{"utc": "2026-10-06T05:27:23.755608", "arm": "bayes_mean", "event": "preprocessing-resumed"}
+{"utc": "2026-10-06T05:37:54.339313", "arm": "bayes_mean", "event": "preprocessing-completed-training-may-overlap"}
+{"utc": "2026-10-06T05:37:54.339481", "arm": "bayes", "event": "preprocessing-resumed"}
+{"utc": "2026-10-06T05:48:24.911330", "arm": "bayes", "event": "preprocessing-completed-training-may-overlap"}

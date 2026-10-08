@@ -1,0 +1,23 @@
+{
+  "status": "EXITED_OK",
+  "pid": 2137701,
+  "proc_start_ticks": "2528621997",
+  "started_unix": 1791398973.6024985,
+  "command": [
+    "/root/miniconda3/envs/mamba/bin/python",
+    "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+    "worker",
+    "train",
+    "--config",
+    "/root/bayes-fix-20261008/runs/il-bayes-seed42/config.ini",
+    "--outdir",
+    "/root/bayes-fix-20261008/runs/il-bayes-seed42",
+    "--temporal-backbone",
+    "bayes",
+    "--seed",
+    "42",
+    "--gpu",
+    "--pretrain-only"
+  ],
+  "returncode": 0
+}

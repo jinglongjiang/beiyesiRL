@@ -1,0 +1,116 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[INFO] ========================================
+[INFO] TEST.PY - Mamba Policy Testing
+[INFO] ========================================
+[INFO] Config: T=24, dt=0.25, v_max=1.0 (MATCHED TO TRAINING)
+[INFO] Feature: TTC-Sorting enabled (与contracts.py训练时一致)
+Using device: cuda
+[INFO] Evaluation seed base: 20261006
+[INFO] Oscillation metrics: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/gru-seed42-to8000/benchmark-8000.csv
+
+======================================================================
+Test Case [0]: baseline_circle | 5 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for baseline_circle:
+  SUCCESS:   497/500 (99.4%)
+  COLLISION: 3/500 (0.6%)
+  TIMEOUT:   0/500 (0.0%)
+  TIME TAKEN (s): 11.54
+  DISC. FREQ: 0.50
+  DISC. DIST (m): 1.10
+  OSC(success): switch=1.698/s, turn-rev=0.717/s, curvature=0.873 rad/m, lateral-sign=0.319/s
+  OSC-HARM(success): stall=0.027, osc-stall=0.017, backtrack=0.029, progress-eff=0.855
+
+======================================================================
+Test Case [1]: baseline_square | 10 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for baseline_square:
+  SUCCESS:   442/500 (88.4%)
+  COLLISION: 9/500 (1.8%)
+  TIMEOUT:   49/500 (9.8%)
+  TIME TAKEN (s): 13.59
+  DISC. FREQ: 2.34
+  DISC. DIST (m): 1.02
+  OSC(success): switch=2.148/s, turn-rev=0.894/s, curvature=1.435 rad/m, lateral-sign=0.414/s
+  OSC-HARM(success): stall=0.114, osc-stall=0.063, backtrack=0.089, progress-eff=0.742
+
+======================================================================
+Test Case [2]: dense_circle | 10 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for dense_circle:
+  SUCCESS:   492/500 (98.4%)
+  COLLISION: 7/500 (1.4%)
+  TIMEOUT:   1/500 (0.2%)
+  TIME TAKEN (s): 13.65
+  DISC. FREQ: 1.63
+  DISC. DIST (m): 0.81
+  OSC(success): switch=2.142/s, turn-rev=0.881/s, curvature=1.454 rad/m, lateral-sign=0.389/s
+  OSC-HARM(success): stall=0.077, osc-stall=0.047, backtrack=0.076, progress-eff=0.722
+
+======================================================================
+Test Case [3]: dense_square | 20 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for dense_square:
+  SUCCESS:   245/500 (49.0%)
+  COLLISION: 18/500 (3.6%)
+  TIMEOUT:   237/500 (47.4%)
+  TIME TAKEN (s): 16.68
+  DISC. FREQ: 4.30
+  DISC. DIST (m): 1.38
+  OSC(success): switch=2.623/s, turn-rev=1.258/s, curvature=2.457 rad/m, lateral-sign=0.707/s
+  OSC-HARM(success): stall=0.184, osc-stall=0.117, backtrack=0.160, progress-eff=0.603
+
+======================================================================
+Test Case [4]: large_circle | 12 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for large_circle:
+  SUCCESS:   447/500 (89.4%)
+  COLLISION: 8/500 (1.6%)
+  TIMEOUT:   45/500 (9.0%)
+  TIME TAKEN (s): 16.86
+  DISC. FREQ: 2.48
+  DISC. DIST (m): 1.05
+  OSC(success): switch=1.758/s, turn-rev=0.778/s, curvature=1.053 rad/m, lateral-sign=0.305/s
+  OSC-HARM(success): stall=0.059, osc-stall=0.042, backtrack=0.064, progress-eff=0.781
+
+======================================================================
+Test Case [5]: large_square | 20 humans
+======================================================================
+[INFO] Loading Mamba policy: mamba
+[INFO] SARL-style value lookahead enabled
+[DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for large_square:
+  SUCCESS:   355/500 (71.0%)
+  COLLISION: 29/500 (5.8%)
+  TIMEOUT:   116/500 (23.2%)
+  TIME TAKEN (s): 15.86
+  DISC. FREQ: 4.06
+  DISC. DIST (m): 1.44
+  OSC(success): switch=2.477/s, turn-rev=1.078/s, curvature=1.920 rad/m, lateral-sign=0.528/s
+  OSC-HARM(success): stall=0.178, osc-stall=0.108, backtrack=0.144, progress-eff=0.636
+[INFO] Oscillation CSV complete: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/gru-seed42-to8000/benchmark-8000.csv
+[LATENCY] n=34859 mean=33.930 ms median=33.691 ms p95=36.786 ms max=184.348 ms

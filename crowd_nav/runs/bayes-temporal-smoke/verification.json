@@ -1,0 +1,62 @@
+{
+  "status": "TRAINABLE_REFERENCE_VERIFIED",
+  "method_signal_found": false,
+  "matched_performance_study": false,
+  "parent": "local Mamba-VL backup",
+  "seed": 42,
+  "tests_passed": 13,
+  "mamba_checkpoint": "crowd_nav/runs/mamba_vl/rl_model_ep10000_T24.pth",
+  "mamba_strict_load": true,
+  "mamba_value_expression_exact_parity": true,
+  "mamba_health": {"success": 2, "collision": 0, "timeout": 0},
+  "verified_run": "crowd_nav/runs/bayes-temporal-smoke/verified",
+  "orca": {"attempts": 8, "success": 8, "windows": 413},
+  "il": {"epochs": 2, "first_epoch_mse": 0.2479, "last_epoch_mse": 0.0096},
+  "post_il_validation": {"success": 2, "collision": 0, "timeout": 0},
+  "pre_rl_test": {"success": 2, "collision": 0, "timeout": 3},
+  "online_rl": {
+    "success": 4, "collision": 0, "timeout": 0,
+    "trajectories_inserted": 4, "trajectories_skipped": 0,
+    "new_transitions": 534, "replay_initial": 413, "replay_final": 947,
+    "optimizer_steps": 8, "temporal_parameters_updated": true
+  },
+  "final_validation": {"success": 2, "collision": 0, "timeout": 0},
+  "saved_model_reload": {
+    "success": 2, "collision": 0, "timeout": 0,
+    "native_cases": [84, 85],
+    "simulation_duration_s": [12.5, 17.0],
+    "path_length_m": [12.329583820656575, 16.495769071896945],
+    "csv": "crowd_nav/runs/bayes-temporal-smoke/bayes-reload-health.csv"
+  },
+  "independent_contact_audit": false,
+  "uncertainty_calibrated": false,
+  "novelty_established": false,
+  "invalid_runs_preserved": {
+    "full": "Interrupted during inherited 100-episode post-IL evaluation; no online RL verified",
+    "full-short": "All four online replay insertions failed because inherited action index was None"
+  },
+  "shared_engineering_changes": [
+    "Return actual selected value-lookahead action index for all temporal backbones",
+    "Configurable post-IL evaluation count with original default 100"
+  ],
+  "unresolved_contracts": [
+    "Inherited repeat-first padding currently treated as repeated measurements",
+    "Inherited exploration path skips current-history append",
+    "Hypothetical CV successor is not an actual sensor observation",
+    "Reference Gaussian state trained only using value MSE",
+    "Temporal capacity differs from original Mamba/GRU"
+  ],
+  "sha256": {
+    "crowd_nav/policy/bayes_temporal.py": "92ee25a533f1b43ac237aac58d613854a55ec4159702ddc3cd29c9afa8436102",
+    "crowd_nav/policy/mamba_rl.py": "a10a94542acd68c920e24bbaed38a80c63c1e4c37e0578ce420fbbbfdae5c06c",
+    "crowd_nav/train.py": "d18470f5385b3f7e95ac2b966b27fca5068beb18ad97ccca82245bb18240d0f0",
+    "crowd_nav/test.py": "3db7883481ae87487d009e48010ae1eb5aa16d156ae09276eaa527f812f18634",
+    "tests/test_bayes_temporal.py": "5530df025b07cfdcb2c8cb0e861bb65f98dc29e033f0cdf51056f8924720b9be",
+    "crowd_nav/configs/env.config": "ed62b5c2d09f50e7e918ccb10a19ade9152f2c01edc6659a98816f1222f497a8",
+    "crowd_nav/configs/policy.config": "0e11199562f38238187ea5f19a047a5a770b2746b4886a12981c83fc6db8f294",
+    "crowd_nav/configs/train.config": "151d3b869a0ca6923929682424a756db14f775f0f4adffaf17c38fcef4a044e3",
+    "crowd_nav/configs/bayes-temporal-smoke.config": "2bcbc92cc91b9891e9c6a545547160e12b6b4ad32eacc8fcc30102681ab491a9",
+    "crowd_nav/runs/mamba_vl/rl_model_ep10000_T24.pth": "a2b5ac50c8362134e4c8b19e7b692cae4f394e70294f9cb1ed4bfb52d9675a65",
+    "crowd_nav/runs/bayes-temporal-smoke/verified/rl_model_ep4.pth": "7e732815014829cf3810a608bc0cadfc1aabf5e505673ea1a2aa80e4846c18ac"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "POSTHOC_DISCREPANCY_DIAGNOSIS_NOT_A_NEW_GATE",
+  "source": "b0-native-features.npz, all 10696 states retained",
+  "native_full_24_fraction": 0.5920905011219147,
+  "initial_orca_full_24_fraction": 0.041666666666666664,
+  "reweighting": "Each of the 24 history-length groups receives probability 1/24, no sample deletion",
+  "uniform_history_age_residual_ratio": 0.022879747674808,
+  "uniform_history_age_constant_ratio": 0.9981309517969149,
+  "interpretation": "History-length weighting accounts for the main residual discrepancy. Native frequency-weighted B0 passes; this does not assert every history-length distribution passes."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pipeline": "native six-scenario evaluator, actual new Full checkpoint, explicitly guarded GRID80",
+  "episodes": 6,
+  "success": 3,
+  "collision": 1,
+  "timeout": 2,
+  "claim": "Engineering pipeline check, not a performance verdict.",
+  "unix": 1791420954.0999525
+}

@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "failures": [],
+  "arms": {
+    "gru": {
+      "status": "COMPLETE",
+      "arm": "gru",
+      "episode": 8000
+    },
+    "bayes_mean": {
+      "status": "COMPLETE",
+      "arm": "bayes_mean",
+      "episode": 8000
+    },
+    "bayes": {
+      "status": "COMPLETE",
+      "arm": "bayes",
+      "episode": 8000
+    }
+  }
+}

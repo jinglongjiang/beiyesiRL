@@ -1,0 +1,49 @@
+{
+  "started_kst": "2026-10-08T03:27:10+09:00",
+  "budget_deadline_kst": "2026-10-08T11:27:10+09:00",
+  "purpose": "Repair posterior consumption, accept smoke, launch and supervise matched 3-arm x 2-seed training; completion of full training is not required within eight hours.",
+  "arms": ["gru", "bayes_mean", "bayes"],
+  "training_seeds": [42, 43],
+  "dataset_sha256": "8ed0a8d9e6d5676d2887ad5ccd359f2148d51cbfbb82015ba1d1fb32d24208ae",
+  "dataset_version": "matched-native-orca-v1",
+  "old_full_checkpoint_sha256": "8fd40a187da11d724d5e7c1b88bd3193d2f09a19d4672ac9d766b02c8ef23a76",
+  "b0": {
+    "data": "First 24 observed frames of 512 equally spaced ORCA episodes with length >=24; 12288 real episode/frame identities, no candidate successor states.",
+    "device": "cpu",
+    "constant_ratio": "norm(mean(gap)) / mean(norm(gap))",
+    "residual_ratio": "mean(norm(gap-mean(gap))) / mean(norm(readout(mu)))",
+    "pass": {"constant_ratio_gt": 0.95, "residual_ratio_lt": 0.02, "median_cosine_gt": 0.99},
+    "failure": "Stop before changing Bayesian encoder; investigate discrepancy rather than selecting a passing cohort."
+  },
+  "b1": {
+    "cohort": "First 32 saved native benchmark episodes in each of the six original scenarios; original saved seeds, original Full policy and safety settings.",
+    "sigma": "sqrt(diagonal filtered variance) on actual legal current-history window",
+    "future_horizons": [4, 8],
+    "clearance_labels_m": [0.0, 0.2],
+    "censoring": "Do not label a shorter safe future window as a complete k-step negative.",
+    "split": "Episode indices divisible by four are held out, no frame-level random split.",
+    "readouts": ["mean sigma", "max sigma", "64-dimensional standardized linear logistic probe"],
+    "simple_descriptors": ["current clearance", "history age"],
+    "claim_boundary": "AUC is predictive association, not proof of Bayesian calibration or causal navigation value; KL alone is not guaranteed to add hazard information."
+  },
+  "repair": {
+    "production_module_only": "crowd_nav/policy/bayes_temporal.py",
+    "readout_input": "concat(mu, log(clamp(P,1e-6)))",
+    "mean_arm": "variance channels replaced by exact zeros",
+    "readout_shape": "128 -> SiLU(256) -> 256",
+    "value_head_shape": "Linear(256,1), unchanged for all three arms",
+    "sigma_cubature": "Removed from new model, old source/checkpoints preserved.",
+    "unchanged": ["state/action support", "spatial encoder", "reward", "history T=24", "LR", "depth", "filter recursion", "safety margin 0.2", "risk_lambda 0.8", "action_smoothing 0.3", "IL dataset", "MC-return RL"],
+    "no_kda_changes": true
+  },
+  "initialization": {
+    "parity_mapping": "old readout weight into FIRST 64 mean columns, variance columns zero; bias and other weights copied. Diagnostic only, not trained outcomes.",
+    "training": "Matched 50-epoch IL from the frozen offline corpus for new shapes/seeds. Reuse a newly accepted matching IL checkpoint, not old incompatible readout or smoke RL weights.",
+    "formal_start": "Selected IL checkpoint for each arm and seed; fresh online RL, no smoke RL continuation."
+  },
+  "smoke": {"seed": 42, "rl_episodes": 200, "updates_per_episode": 4, "batch_size": 256, "pass": "all complete, strict expected IL loading and dataset version/hash, GRID=80, finite saved policy/optimizer, aggregate 200 training-episode SR strictly between zero and one, no traceback"},
+  "formal": {"rl_episodes": 10000, "updates_per_episode": 4, "batch_size": 256, "save_every": 500, "eval_every": 1000, "eval_episodes": 50},
+  "benchmark": {"cases_per_scenario": 500, "scenarios": 6, "time_limit": 25, "base_seed": 20261006, "fresh_confirmation": false},
+  "operational": {"remote": "root@45.126.120.6", "root": "/root/bayes-fix-20261008", "python": "/root/miniconda3/envs/mamba/bin/python", "memory_and_disk_guard": true, "pid_identity": "pid plus /proc starttime, no self-matching grep"},
+  "b2": "Optional after priority acceptance/startup work; at most 12 frozen failed-root first-action replay tests, not a population SR upper bound."
+}

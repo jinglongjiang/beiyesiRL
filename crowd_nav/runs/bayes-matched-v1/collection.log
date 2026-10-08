@@ -1,0 +1,204 @@
+[TENSORBOARD] Disabled due to import failure: No module named 'tensorboard'
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+Traceback (most recent call last):
+  File "/home/jasper/miniconda3/envs/crowdnav/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/jasper/miniconda3/envs/crowdnav/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/jasper/bayes-vl-matched-20261006/crowd_nav/train.py", line 3921, in <module>
+    main()
+  File "/home/jasper/bayes-vl-matched-20261006/crowd_nav/train.py", line 3272, in main
+    tb_writer = SummaryWriter(log_dir=tb_log_dir)
+TypeError: 'NoneType' object is not callable
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+LOG_BACKUP: Previous log backed up to: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/train_backup_20261006_134900.log
+[10-06 13:49:00] INFO: [TENSORBOARD] Fresh events will be saved to: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/tensorboard_logs
+[10-06 13:49:00] INFO: [TEMPORAL-BACKBONE] CLI override: bayes_mean
+[10-06 13:49:00] ERROR: [CONTRACTS] env.config not found: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/env.config
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+LOG_BACKUP: Previous log backed up to: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/train_backup_20261006_134952.log
+[10-06 13:49:52] INFO: [TENSORBOARD] Fresh events will be saved to: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/tensorboard_logs
+[10-06 13:49:52] INFO: [TEMPORAL-BACKBONE] CLI override: bayes_mean
+[10-06 13:49:52] INFO: [CONTRACTS] GRID initialized from runtime cfg: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}
+[10-06 13:49:52] INFO: [CONTRACTS] GRID locked from env.config: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}, num_actions=80
+[10-06 13:49:52] INFO: [SEED] 使用命令行指定的seed: 271828
+/home/jasper/miniconda3/envs/crowdnav/lib/python3.8/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[10-06 13:49:52] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:49:52] INFO: human number: 5
+[10-06 13:49:52] INFO: Not randomize human's radius and preferred speed
+[10-06 13:49:52] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:49:52] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:49:52] INFO: [BOOT] policy=mamba_rl device=cpu
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [SOT] env: circle R=4.0 Nh=5 dt=0.25 T=50 | reward: 1.0/-0.5/-0.5 | actions: 80(sampling=exponential, stop=False) | success_radius=0.25 | eval eps=0
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [ALGO] Value-lookahead (BAYES_MEAN): one-step lookahead + epsilon-greedy
+[10-06 13:49:52] INFO: REWARD: success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:49:52] INFO: TRAINING: lr=1e-05, gamma=0.99, batch=256, updates_per_ep=4
+[10-06 13:49:52] INFO: TIMESTEP: dt=0.25s
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [DISCRETE-Q] Q-head initialized: 80 actions (5 speeds × 16 headings, stop=False)
+[10-06 13:49:52] INFO: [VALUE-HEAD] Value head initialized (SARL-style, 1-dim output)
+[10-06 13:49:52] INFO: [AUXILIARY-HEAD] Future position predictor initialized: 3 neighbors × 4 future steps
+[10-06 13:49:52] INFO: [ABLATION] Lookahead scoring mode: full
+[10-06 13:49:52] INFO: ================================================================================
+[10-06 13:49:52] INFO: [TEMPORAL-BACKBONE] BAYES_MEAN backbone configuration:
+[10-06 13:49:52] INFO:   d_model=256, n_layers=4, d_state=64
+[10-06 13:49:52] INFO:   d_conv=4, expand=2
+[10-06 13:49:52] INFO: [SEQ-FINAL] Sequence Length Configuration (SSOT):
+[10-06 13:49:52] INFO:   seq_len=24 (from train.config:[buffer])
+[10-06 13:49:52] INFO:   T=24 (should match policy.config:[temporal].T)
+[10-06 13:49:52] INFO: [ARCH-FINAL] Architecture: EnhancedSpatial(3-way:robot+human+relation) -> BAYES_MEAN -> DualHead
+[10-06 13:49:52] INFO: [DEVICE] cpu
+[10-06 13:49:52] INFO: ================================================================================
+[10-06 13:49:52] INFO: [POLICY-INIT] Main policy built: mamba_rl
+[10-06 13:49:52] INFO: [POLICY-INIT] Set multiagent_training=True (5-human crowd navigation)
+[10-06 13:49:52] INFO: [MAMBA-RL] Set env_dt=0.25
+[10-06 13:49:52] INFO: ✅ debug.md清理：奖励整形器已删除（未实际使用）
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [CONFIG-SUMMARY] Training Configuration (Runtime Values)
+[10-06 13:49:52] INFO:   Policy: mamba_rl
+[10-06 13:49:52] INFO:   Sequence: seq_len=24
+[10-06 13:49:52] INFO:   Training: batch_size=256, updates_per_ep=4
+[10-06 13:49:52] INFO:   Learning: lr=0.000010, gamma=0.99
+[10-06 13:49:52] INFO:   Episodes: 10000, device=cpu
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [SARL-TRAIN] goal prior=OFF
+[10-06 13:49:52] INFO: [CFG-LOCK] circle R=4 Nh=5 dt=0.25 T=50 succ_r=0.25 visible=False actions=80 eval_eps=0
+[10-06 13:49:52] INFO: [REWARD-PROFILE] Using profile=benchmark, time_limit=50.0s
+[10-06 13:49:52] INFO: [REWARD-BENCHMARK] {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:49:52] INFO: [CONFIG-FALLBACK] success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:49:52] INFO: [ACTIVE-REWARD] Using profile-based rewards: {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:49:52] INFO: ============================================================
+[10-06 13:49:52] INFO: [TRAJECTORY-LOG] Recording enabled: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/trajectory.log
+[10-06 13:49:52] INFO: [IL-AUTO] force_online=true -> skip offline dataset auto-detect
+[10-06 13:49:52] INFO: [IL-AUTO] 自动检测训练数据...
+[10-06 13:49:52] INFO: [IL-AUTO]   离线数据集: None (exists: False)
+[10-06 13:49:52] INFO: [IL-AUTO]   BC checkpoint: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/il_policy.pth (exists: False)
+[10-06 13:49:52] INFO: [IL-AUTO]   IL checkpoint: /home/jasper/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/collection/ckpt_il.pt (exists: False)
+[10-06 13:49:52] INFO: [IL-AUTO] force_online=true -> will run IL+BC online (ignore checkpoints/offline cache)
+[10-06 13:49:52] INFO: [IQL-REPLAY] Initialized: capacity=200000, seq_len=24, with MC returns
+[10-06 13:49:52] INFO: [SARL-BUFFER] rl_buffer capacity=200000, n_step=1, per=False
+[10-06 13:49:52] INFO: [STATS-RESET] TrainingStats reset for RL phase
+[10-06 13:49:52] INFO: [IL-BC] Starting BC training phase...
+[10-06 13:49:52] INFO: [IL-CONFIG] success_target=5000 max_total_episodes=12000 prefill_batch_episodes=64 patience_batches=5
+[10-06 13:49:52] INFO: [IL-CONFIG] success_target=5000 (type=int)
+[10-06 13:49:52] INFO: [IL-CONFIG] max_total_episodes=12000 (type=int)
+[10-06 13:49:52] INFO: [IL-CONFIG] batch_collect_episodes=64 (type=int)
+[10-06 13:49:52] INFO: [IL-CONFIG] patience_batches=5 (type=int)
+[10-06 13:49:52] INFO: [IL-TEACHER] Applying ORCA teacher profile: neighbor_dist=6.0, max_neighbors=15, time_horizon=5.0, time_horizon_obst=5.0, safety_space=0.25
+[10-06 13:49:52] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:49:52] INFO: human number: 5
+[10-06 13:49:52] INFO: Not randomize human's radius and preferred speed
+[10-06 13:49:52] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:49:52] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:49:52] WARNING: [IL] Explorer has no replay buffer reference; IL data will stay in-flight only
+[10-06 13:49:52] INFO: [IL-START] Buffer size before IL: 0
+[10-06 13:49:52] INFO: [IL-CACHE] force_online=true -> skip offline dataset cache, recollect IL online
+[10-06 13:49:52] INFO: [IL-CACHE] 未发现离线数据集 (None)，使用在线采集
+[10-06 13:49:52] INFO: [POLICY-TAG] phase=il tag=IL-ORCA-TEACHER
+[10-06 13:49:52] INFO: [IL] phase='il' remapped to 'train' for env.reset compatibility
+[10-06 13:49:52] INFO: [ENV-TRACK] Robot get_full_state #1: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:49:52] INFO: [DEBUG.MD-P0.2] ORCA policy configured with standard parameters
+[10-06 13:49:52] INFO: [ORCA-DEBUG] safety_space=0.1, neighbor_dist=10.0, time_horizon=5.0
+[10-06 13:49:52] INFO: [DEBUG.MD-P0] Created ORCA policy with standard parameters for IL stage
+[10-06 13:49:52] INFO: [ACTION-SPACE] Built 80 actions (GRID 5×16, stop=False)
+[10-06 13:49:52] INFO: [EXPLORER] IL-ORCA: JointState, state_dim=(34,)
+[10-06 13:49:52] INFO: [DENSE-REWARD-STEP] progress=0.1644, progress_reward=0.0, time_penalty=0.0, robot_speed=0.658, step_reward=0.0000
+[10-06 13:49:52] INFO: [ENV-TRACK] Robot get_full_state #2: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:49:52] INFO: [ENV-TRACK] Robot get_full_state #3: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:49:53] INFO: [IL-COLLECT] episodes=64/12000 | success=64/5000 (100.00%)
+[10-06 13:49:55] INFO: [IL-COLLECT] episodes=128/12000 | success=128/5000 (100.00%)
+[10-06 13:49:56] INFO: [IL-COLLECT] episodes=192/12000 | success=191/5000 (99.48%)
+[10-06 13:49:57] INFO: [IL-COLLECT] episodes=256/12000 | success=255/5000 (99.61%)
+[10-06 13:49:58] INFO: [IL-COLLECT] episodes=320/12000 | success=319/5000 (99.69%)
+[10-06 13:50:00] INFO: [IL-COLLECT] episodes=384/12000 | success=383/5000 (99.74%)
+[10-06 13:50:01] INFO: [IL-COLLECT] episodes=448/12000 | success=447/5000 (99.78%)
+[10-06 13:50:02] INFO: [IL-COLLECT] episodes=512/12000 | success=511/5000 (99.80%)
+[10-06 13:50:03] INFO: [IL-COLLECT] episodes=576/12000 | success=574/5000 (99.65%)
+[10-06 13:50:05] INFO: [IL-COLLECT] episodes=640/12000 | success=638/5000 (99.69%)
+[10-06 13:50:06] INFO: [IL-COLLECT] episodes=704/12000 | success=701/5000 (99.57%)
+[10-06 13:50:07] INFO: [IL-COLLECT] episodes=768/12000 | success=765/5000 (99.61%)
+[10-06 13:50:08] INFO: [IL-COLLECT] episodes=832/12000 | success=829/5000 (99.64%)
+[10-06 13:50:10] INFO: [IL-COLLECT] episodes=896/12000 | success=893/5000 (99.67%)
+[10-06 13:50:11] INFO: [IL-COLLECT] episodes=960/12000 | success=957/5000 (99.69%)
+[10-06 13:50:13] INFO: [IL-COLLECT] episodes=1024/12000 | success=1021/5000 (99.71%)
+[10-06 13:50:15] INFO: [IL-COLLECT] episodes=1088/12000 | success=1085/5000 (99.72%)
+[10-06 13:50:16] INFO: [IL-COLLECT] episodes=1152/12000 | success=1149/5000 (99.74%)
+[10-06 13:50:18] INFO: [IL-COLLECT] episodes=1216/12000 | success=1213/5000 (99.75%)
+[10-06 13:50:19] INFO: [IL-COLLECT] episodes=1280/12000 | success=1276/5000 (99.69%)
+[10-06 13:50:21] INFO: [IL-COLLECT] episodes=1344/12000 | success=1340/5000 (99.70%)
+[10-06 13:50:23] INFO: [IL-COLLECT] episodes=1408/12000 | success=1404/5000 (99.72%)
+[10-06 13:50:24] INFO: [IL-COLLECT] episodes=1472/12000 | success=1468/5000 (99.73%)
+[10-06 13:50:26] INFO: [IL-COLLECT] episodes=1536/12000 | success=1532/5000 (99.74%)
+[10-06 13:50:27] INFO: [IL-COLLECT] episodes=1600/12000 | success=1596/5000 (99.75%)
+[10-06 13:50:29] INFO: [IL-COLLECT] episodes=1664/12000 | success=1660/5000 (99.76%)
+[10-06 13:50:31] INFO: [IL-COLLECT] episodes=1728/12000 | success=1724/5000 (99.77%)
+[10-06 13:50:32] INFO: [IL-COLLECT] episodes=1792/12000 | success=1788/5000 (99.78%)
+[10-06 13:50:34] INFO: [IL-COLLECT] episodes=1856/12000 | success=1851/5000 (99.73%)
+[10-06 13:50:35] INFO: [IL-COLLECT] episodes=1920/12000 | success=1915/5000 (99.74%)
+[10-06 13:50:37] INFO: [IL-COLLECT] episodes=1984/12000 | success=1979/5000 (99.75%)
+[10-06 13:50:39] INFO: [IL-COLLECT] episodes=2048/12000 | success=2042/5000 (99.71%)
+[10-06 13:50:40] INFO: [IL-COLLECT] episodes=2112/12000 | success=2106/5000 (99.72%)
+[10-06 13:50:42] INFO: [IL-COLLECT] episodes=2176/12000 | success=2170/5000 (99.72%)
+[10-06 13:50:43] INFO: [IL-COLLECT] episodes=2240/12000 | success=2233/5000 (99.69%)
+[10-06 13:50:45] INFO: [IL-COLLECT] episodes=2304/12000 | success=2297/5000 (99.70%)
+[10-06 13:50:47] INFO: [IL-COLLECT] episodes=2368/12000 | success=2361/5000 (99.70%)
+[10-06 13:50:48] INFO: [IL-COLLECT] episodes=2432/12000 | success=2425/5000 (99.71%)
+[10-06 13:50:50] INFO: [IL-COLLECT] episodes=2496/12000 | success=2489/5000 (99.72%)
+[10-06 13:50:52] INFO: [IL-COLLECT] episodes=2560/12000 | success=2550/5000 (99.61%)
+[10-06 13:50:53] INFO: [IL-COLLECT] episodes=2624/12000 | success=2614/5000 (99.62%)
+[10-06 13:50:55] INFO: [IL-COLLECT] episodes=2688/12000 | success=2677/5000 (99.59%)
+[10-06 13:50:56] INFO: [IL-COLLECT] episodes=2752/12000 | success=2741/5000 (99.60%)
+[10-06 13:50:58] INFO: [IL-COLLECT] episodes=2816/12000 | success=2805/5000 (99.61%)
+[10-06 13:51:00] INFO: [IL-COLLECT] episodes=2880/12000 | success=2869/5000 (99.62%)
+[10-06 13:51:01] INFO: [IL-COLLECT] episodes=2944/12000 | success=2933/5000 (99.63%)
+[10-06 13:51:03] INFO: [IL-COLLECT] episodes=3008/12000 | success=2997/5000 (99.63%)
+[10-06 13:51:04] INFO: [IL-COLLECT] episodes=3072/12000 | success=3061/5000 (99.64%)
+[10-06 13:51:06] INFO: [IL-COLLECT] episodes=3136/12000 | success=3125/5000 (99.65%)
+[10-06 13:51:08] INFO: [IL-COLLECT] episodes=3200/12000 | success=3189/5000 (99.66%)
+[10-06 13:51:09] INFO: [IL-COLLECT] episodes=3264/12000 | success=3252/5000 (99.63%)
+[10-06 13:51:11] INFO: [IL-COLLECT] episodes=3328/12000 | success=3316/5000 (99.64%)
+[10-06 13:51:13] INFO: [IL-COLLECT] episodes=3392/12000 | success=3380/5000 (99.65%)
+[10-06 13:51:14] INFO: [IL-COLLECT] episodes=3456/12000 | success=3444/5000 (99.65%)
+[10-06 13:51:16] INFO: [IL-COLLECT] episodes=3520/12000 | success=3508/5000 (99.66%)
+[10-06 13:51:17] INFO: [IL-COLLECT] episodes=3584/12000 | success=3571/5000 (99.64%)
+[10-06 13:51:19] INFO: [IL-COLLECT] episodes=3648/12000 | success=3635/5000 (99.64%)
+[10-06 13:51:21] INFO: [IL-COLLECT] episodes=3712/12000 | success=3699/5000 (99.65%)
+[10-06 13:51:22] INFO: [IL-COLLECT] episodes=3776/12000 | success=3762/5000 (99.63%)
+[10-06 13:51:24] INFO: [IL-COLLECT] episodes=3840/12000 | success=3826/5000 (99.64%)
+[10-06 13:51:25] INFO: [IL-COLLECT] episodes=3904/12000 | success=3890/5000 (99.64%)
+[10-06 13:51:27] INFO: [IL-COLLECT] episodes=3968/12000 | success=3953/5000 (99.62%)
+[10-06 13:51:29] INFO: [IL-COLLECT] episodes=4032/12000 | success=4017/5000 (99.63%)
+[10-06 13:51:30] INFO: [IL-COLLECT] episodes=4096/12000 | success=4081/5000 (99.63%)
+[10-06 13:51:32] INFO: [IL-COLLECT] episodes=4160/12000 | success=4145/5000 (99.64%)
+[10-06 13:51:33] INFO: [IL-COLLECT] episodes=4224/12000 | success=4209/5000 (99.64%)
+[10-06 13:51:35] INFO: [IL-COLLECT] episodes=4288/12000 | success=4273/5000 (99.65%)
+[10-06 13:51:37] INFO: [IL-COLLECT] episodes=4352/12000 | success=4337/5000 (99.66%)
+[10-06 13:51:38] INFO: [IL-COLLECT] episodes=4416/12000 | success=4401/5000 (99.66%)
+[10-06 13:51:40] INFO: [IL-COLLECT] episodes=4480/12000 | success=4464/5000 (99.64%)
+[10-06 13:51:41] INFO: [IL-COLLECT] episodes=4544/12000 | success=4528/5000 (99.65%)
+[10-06 13:51:43] INFO: [IL-COLLECT] episodes=4608/12000 | success=4592/5000 (99.65%)
+[10-06 13:51:45] INFO: [IL-COLLECT] episodes=4672/12000 | success=4656/5000 (99.66%)
+[10-06 13:51:46] INFO: [IL-COLLECT] episodes=4736/12000 | success=4720/5000 (99.66%)
+[10-06 13:51:48] INFO: [IL-COLLECT] episodes=4800/12000 | success=4784/5000 (99.67%)
+[10-06 13:51:49] INFO: [IL-COLLECT] episodes=4864/12000 | success=4848/5000 (99.67%)
+[10-06 13:51:51] INFO: [IL-COLLECT] episodes=4928/12000 | success=4910/5000 (99.63%)
+[10-06 13:51:53] INFO: [IL-COLLECT] episodes=4992/12000 | success=4974/5000 (99.64%)
+[10-06 13:51:54] INFO: [IL-COLLECT] episodes=5056/12000 | success=5037/5000 (99.62%)
+[10-06 13:51:54] INFO: [IL-COLLECT] Final success set: 5037 trajectories from 5056 attempts (success_ratio=99.62%)
+[10-06 13:51:54] INFO: [IL-COLLECT] Fail trajectories kept for RL prefill: 3
+[10-06 13:51:54] INFO: [IL-DATA] BC dataset uses success+collision: success=5037, collision=3
+[10-06 13:51:54] INFO: [IL-BUFFER] IL data reserved for BC pretraining only (5040 trajectories)
+[10-06 13:51:54] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:51:54] INFO: human number: 5
+[10-06 13:51:54] INFO: Not randomize human's radius and preferred speed
+[10-06 13:51:54] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:51:54] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:51:54] INFO: [IL-TEACHER] Restored ORCA parameters for RL phase
+[10-06 13:52:00] INFO: [IL-FROZEN] Saved 5040 trajectories to crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-06 13:52:00] INFO: [IL-BC] BC training completed: success_rate=99.6%

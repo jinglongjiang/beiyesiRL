@@ -1,0 +1,68 @@
+[
+  {
+    "status": "TRAINED",
+    "seed": 42,
+    "arm": "gru",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9745,
+    "collision": 193,
+    "timeout": 62,
+    "wall_seconds": 17358.851662158966
+  },
+  {
+    "status": "TRAINED",
+    "seed": 42,
+    "arm": "bayes_mean",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9757,
+    "collision": 197,
+    "timeout": 46,
+    "wall_seconds": 26353.417255163193
+  },
+  {
+    "status": "TRAINED",
+    "seed": 42,
+    "arm": "bayes",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9766,
+    "collision": 205,
+    "timeout": 29,
+    "wall_seconds": 26218.73951625824
+  },
+  {
+    "status": "TRAINED",
+    "seed": 43,
+    "arm": "gru",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9690,
+    "collision": 260,
+    "timeout": 50,
+    "wall_seconds": 17373.865755796432
+  },
+  {
+    "status": "TRAINED",
+    "seed": 43,
+    "arm": "bayes_mean",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9733,
+    "collision": 207,
+    "timeout": 60,
+    "wall_seconds": 26518.925073623657
+  },
+  {
+    "status": "TRAINED",
+    "seed": 43,
+    "arm": "bayes",
+    "episodes": 10000,
+    "optimizer_steps": 40000,
+    "success": 9752,
+    "collision": 214,
+    "timeout": 34,
+    "wall_seconds": 26429.068348169327
+  }
+]

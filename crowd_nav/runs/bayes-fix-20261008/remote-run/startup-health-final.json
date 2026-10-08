@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "captured_kst": "2026-10-08T10:16:50.741917+09:00",
+  "unix": 1791422210.7419226,
+  "workers": [
+    {
+      "arm": "bayes",
+      "seed": 42,
+      "pid": 2231394,
+      "started_kst": "2026-10-08T09:50:40.884378+09:00",
+      "episode": 576,
+      "counts": {
+        "success": 479,
+        "collision": 88,
+        "timeout": 10
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": 0.0009102976182475686
+    },
+    {
+      "arm": "bayes",
+      "seed": 43,
+      "pid": 2231391,
+      "started_kst": "2026-10-08T09:50:40.880886+09:00",
+      "episode": 594,
+      "counts": {
+        "success": 499,
+        "collision": 92,
+        "timeout": 4
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": 0.0006430557114072144
+    },
+    {
+      "arm": "bayes_mean",
+      "seed": 42,
+      "pid": 2231392,
+      "started_kst": "2026-10-08T09:50:40.882722+09:00",
+      "episode": 588,
+      "counts": {
+        "success": 461,
+        "collision": 116,
+        "timeout": 12
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": 0.0
+    },
+    {
+      "arm": "bayes_mean",
+      "seed": 43,
+      "pid": 2231393,
+      "started_kst": "2026-10-08T09:50:40.882366+09:00",
+      "episode": 592,
+      "counts": {
+        "success": 458,
+        "collision": 121,
+        "timeout": 14
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": 0.0
+    },
+    {
+      "arm": "gru",
+      "seed": 42,
+      "pid": 2231388,
+      "started_kst": "2026-10-08T09:50:40.870063+09:00",
+      "episode": 902,
+      "counts": {
+        "success": 795,
+        "collision": 97,
+        "timeout": 11
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": null
+    },
+    {
+      "arm": "gru",
+      "seed": 43,
+      "pid": 2231390,
+      "started_kst": "2026-10-08T09:50:40.878095+09:00",
+      "episode": 852,
+      "counts": {
+        "success": 736,
+        "collision": 97,
+        "timeout": 20
+      },
+      "checkpoint_ep500": "STRICT_FINITE_STEP2000_PASS",
+      "variance_column_adam_moment_absmax": null
+    }
+  ],
+  "disk_free_GiB": 6.787738800048828,
+  "memory_available_KiB": 24661420,
+  "error": null,
+  "claim": "Training startup and actual variance-channel optimization verified; no task improvement claim.",
+  "import_path_pins": {
+    "crowd_nav": "/root/bayes-fix-20261008/code/crowd_nav/__init__.py",
+    "crowd_sim": "/root/bayes-fix-20261008/code/crowd_sim/__init__.py",
+    "crowd_nav.policy.mamba_rl": "/root/bayes-fix-20261008/code/crowd_nav/policy/mamba_rl.py"
+  },
+  "source_pin_recheck_unix": 1791422467.2181442
+}

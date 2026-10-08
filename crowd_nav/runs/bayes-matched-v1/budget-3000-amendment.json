@@ -1,0 +1,19 @@
+{
+  "reason": "Explicit user request; operational budget change, not outcome-selected stopping",
+  "original_protocol_sha256": "64a90adb21da6531a3693bccb7de7bfdab6eca6e07213257ccb6761f6db4400f",
+  "rl_budget": 3000,
+  "retained_il_epochs": 50,
+  "arms": [
+    "gru",
+    "bayes_mean",
+    "bayes"
+  ],
+  "seed": 42,
+  "checkpoint": "rl_model_ep3000.pth",
+  "evaluation": "Original six scenarios x 500",
+  "no_mamba_training_or_evaluation": true,
+  "gru": "Use existing episode-3000 weights; later training is not used for selection",
+  "seed43": "Not launched under revised initial three-arm evaluation schedule",
+  "cutoff": "Monitor complete atomic checkpoint, validate then stop existing workers; do not resume/reseed",
+  "source_sha256": "f39aba3d5f03f0343b2244b3feb59925ab45428045e985eb7eacbc97fe7ef1a7"
+}

@@ -1,0 +1,86 @@
+{
+  "arms": [
+    "gru",
+    "bayes_mean",
+    "bayes"
+  ],
+  "seed": 42,
+  "target_episodes": 10000,
+  "smoke_episodes": 200,
+  "batch_size": 256,
+  "updates_per_episode": 4,
+  "no_mamba": true,
+  "il": {
+    "gru": {
+      "sha256": "71f5261a2b4f6a5b46ebd64beeea3eaaae955a55795e134e525f15210b77c12f",
+      "path": "/root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/gru-seed42/il_policy.pth",
+      "metadata": {
+        "stage": "bc_policy_only",
+        "arch": "policy_network",
+        "epochs": 5,
+        "value_loss": 0.0013954788446426392,
+        "action_loss": 0.0,
+        "total_loss": 0.0013954788446426392,
+        "objective": "value_regression",
+        "eval_success_rate": 1.0,
+        "best_epoch": 5,
+        "best_sr": 1.0,
+        "seq_len": 24,
+        "dataset_size": 235980,
+        "timestamp": "2026-10-06 16:09:15"
+      }
+    },
+    "bayes_mean": {
+      "sha256": "ad0e0bac731249585b845e3fe6aee7bf3ba7ab8915525eb4ad4af0769d54f7f1",
+      "path": "/root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/bayes_mean-seed42/il_policy.pth",
+      "metadata": {
+        "stage": "bc_policy_only",
+        "arch": "policy_network",
+        "epochs": 35,
+        "value_loss": 0.0016513548325747252,
+        "action_loss": 0.0,
+        "total_loss": 0.0016513548325747252,
+        "objective": "value_regression",
+        "eval_success_rate": 1.0,
+        "best_epoch": 35,
+        "best_sr": 1.0,
+        "seq_len": 24,
+        "dataset_size": 235980,
+        "timestamp": "2026-10-06 19:22:42"
+      }
+    },
+    "bayes": {
+      "sha256": "209e428a46b67ac652396233bc5b422f7c5760d799bc846926f5eeeb69a0fb61",
+      "path": "/root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/bayes-seed42/il_policy.pth",
+      "metadata": {
+        "stage": "bc_policy_only",
+        "arch": "policy_network",
+        "epochs": 35,
+        "value_loss": 0.0016444320790469646,
+        "action_loss": 0.0,
+        "total_loss": 0.0016444320790469646,
+        "objective": "value_regression",
+        "eval_success_rate": 0.95,
+        "best_epoch": 35,
+        "best_sr": 0.95,
+        "seq_len": 24,
+        "dataset_size": 235980,
+        "timestamp": "2026-10-06 19:45:41"
+      }
+    }
+  },
+  "data_sha256": "8ed0a8d9e6d5676d2887ad5ccd359f2148d51cbfbb82015ba1d1fb32d24208ae",
+  "sources": {
+    "crowd_nav/policy/mamba_rl.py": "c844135f5d0afff9128e2bc4f8177ca30c80c5e9aa808efbc078f6487d406d88",
+    "crowd_nav/policy/bayes_temporal.py": "92ee25a533f1b43ac237aac58d613854a55ec4159702ddc3cd29c9afa8436102",
+    "crowd_nav/utils/ppo_buffer.py": "99325e3c8086e1a80ac45e9add295eff6f8fa21960fce745018c89eab1de263f",
+    "crowd_nav/train.py": "d50d4b376e3ec31e9ddd81f32985352c3f2dd5454eec967a840cf9f53273192a",
+    "crowd_nav/contracts.py": "ae42e22ede2012ab9ec09082223d539fb76b4cbe99e867f277c0bef8dab56043",
+    "crowd_nav/utils/explorer.py": "670def0cd05874492c4d3e3ab96034079c4f09b47662650e98302c5df4c2a3a1",
+    "crowd_nav/test.py": "a816ea29769080834c875e5fdead58d742893ef6ddb7a273c0435da92d292aed",
+    "scripts/verify-bayes-optimization.py": "787b762b770aef5d2581fd8e97d0859ffe91d1b1b8ac3b1b6de558307a269b24",
+    "scripts/run-bayes-optimized.py": "882573eb2ad6916f11bd2ba39a6052ecb1913464fd171ed9c3202d52c8b8e67c"
+  },
+  "initialized_from": "original matched IL; not smoke or old RL weights",
+  "evaluation": "same six native scenarios x 500; reused development test set, not fresh confirmation"
+}

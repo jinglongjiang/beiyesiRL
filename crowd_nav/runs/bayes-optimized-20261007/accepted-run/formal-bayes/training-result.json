@@ -1,0 +1,9 @@
+{
+  "status": "TRAINED",
+  "arm": "bayes",
+  "episode": 10000,
+  "optimizer_steps": 40000,
+  "il_retrained": false,
+  "wall_seconds": 27379.19556069374,
+  "checkpoint_sha256": "8fd40a187da11d724d5e7c1b88bd3193d2f09a19d4672ac9d766b02c8ef23a76"
+}

@@ -1,0 +1,155 @@
+[10-08 02:49:37] INFO: [TENSORBOARD] Fresh events will be saved to: /root/bayes-fix-20261008/runs/il-gru-seed42/tensorboard_logs
+[10-08 02:49:37] INFO: [TEMPORAL-BACKBONE] CLI override: gru
+[10-08 02:49:37] INFO: [CONTRACTS] GRID initialized from runtime cfg: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}
+[10-08 02:49:37] INFO: [CONTRACTS] GRID locked from env.config: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}, num_actions=80
+[10-08 02:49:37] INFO: [SEED] 使用命令行指定的seed: 42
+[10-08 02:49:37] INFO: [SEED] ⚡ CUDA确定性模式已关闭（训练模式，速度优先）
+[10-08 02:49:37] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-08 02:49:37] INFO: human number: 5
+[10-08 02:49:37] INFO: Not randomize human's radius and preferred speed
+[10-08 02:49:37] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-08 02:49:37] INFO: Square width: 10.0, circle radius: 4.0
+[10-08 02:49:37] INFO: [BOOT] policy=mamba_rl device=cuda
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [SOT] env: circle R=4.0 Nh=5 dt=0.25 T=50 | reward: 1.0/-0.5/-0.5 | actions: 80(sampling=exponential, stop=False) | success_radius=0.25 | eval eps=0
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [ALGO] Value-lookahead (GRU): one-step lookahead + epsilon-greedy
+[10-08 02:49:37] INFO: REWARD: success=1.0, collision=-0.5, timeout=-0.5
+[10-08 02:49:37] INFO: TRAINING: lr=1e-05, gamma=0.99, batch=256, updates_per_ep=4
+[10-08 02:49:37] INFO: TIMESTEP: dt=0.25s
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [DISCRETE-Q] Q-head initialized: 80 actions (5 speeds × 16 headings, stop=False)
+[10-08 02:49:37] INFO: [VALUE-HEAD] Value head initialized (SARL-style, 1-dim output)
+[10-08 02:49:37] INFO: [AUXILIARY-HEAD] Future position predictor initialized: 3 neighbors × 4 future steps
+[10-08 02:49:37] INFO: [ABLATION] Lookahead scoring mode: full
+[10-08 02:49:37] INFO: ================================================================================
+[10-08 02:49:37] INFO: [TEMPORAL-BACKBONE] GRU backbone configuration:
+[10-08 02:49:37] INFO:   d_model=256, n_layers=4, d_state=64
+[10-08 02:49:37] INFO:   d_conv=4, expand=2
+[10-08 02:49:37] INFO: [SEQ-FINAL] Sequence Length Configuration (SSOT):
+[10-08 02:49:37] INFO:   seq_len=24 (from train.config:[buffer])
+[10-08 02:49:37] INFO:   T=24 (should match policy.config:[temporal].T)
+[10-08 02:49:37] INFO: [ARCH-FINAL] Architecture: EnhancedSpatial(3-way:robot+human+relation) -> GRU -> DualHead
+[10-08 02:49:37] INFO: [DEVICE] cuda
+[10-08 02:49:37] INFO: ================================================================================
+[10-08 02:49:37] INFO: [POLICY-INIT] Main policy built: mamba_rl
+[10-08 02:49:37] INFO: [POLICY-INIT] Set multiagent_training=True (5-human crowd navigation)
+[10-08 02:49:37] INFO: [MAMBA-RL] Set env_dt=0.25
+[10-08 02:49:37] INFO: ✅ debug.md清理：奖励整形器已删除（未实际使用）
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [CONFIG-SUMMARY] Training Configuration (Runtime Values)
+[10-08 02:49:37] INFO:   Policy: mamba_rl
+[10-08 02:49:37] INFO:   Sequence: seq_len=24
+[10-08 02:49:37] INFO:   Training: batch_size=256, updates_per_ep=4
+[10-08 02:49:37] INFO:   Learning: lr=0.000010, gamma=0.99
+[10-08 02:49:37] INFO:   Episodes: 10000, device=cuda
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [SARL-TRAIN] goal prior=OFF
+[10-08 02:49:37] INFO: [CFG-LOCK] circle R=4 Nh=5 dt=0.25 T=50 succ_r=0.25 visible=False actions=80 eval_eps=0
+[10-08 02:49:37] INFO: [REWARD-PROFILE] Using profile=benchmark, time_limit=50.0s
+[10-08 02:49:37] INFO: [REWARD-BENCHMARK] {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-08 02:49:37] INFO: [CONFIG-FALLBACK] success=1.0, collision=-0.5, timeout=-0.5
+[10-08 02:49:37] INFO: [ACTIVE-REWARD] Using profile-based rewards: {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-08 02:49:37] INFO: ============================================================
+[10-08 02:49:37] INFO: [TRAJECTORY-LOG] Recording enabled: /root/bayes-fix-20261008/runs/il-gru-seed42/trajectory.log
+[10-08 02:49:37] INFO: [IL-AUTO] 自动检测训练数据...
+[10-08 02:49:37] INFO: [IL-AUTO]   离线数据集: /root/bayes-assets/crowd_nav/runs/bayes-matched-v1/orca-shared.pth (exists: True)
+[10-08 02:49:37] INFO: [IL-AUTO]   BC checkpoint: /root/bayes-fix-20261008/runs/il-gru-seed42/il_policy.pth (exists: False)
+[10-08 02:49:37] INFO: [IL-AUTO]   IL checkpoint: /root/bayes-fix-20261008/runs/il-gru-seed42/ckpt_il.pt (exists: False)
+[10-08 02:49:37] INFO: [IL-AUTO] ✓ 检测到离线数据集: /root/bayes-assets/crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-08 02:49:37] INFO: [IL-AUTO]   将跳过IL在线收集，强制执行BC训练
+[10-08 02:49:37] INFO: [IQL-REPLAY] Initialized: capacity=200000, seq_len=24, with MC returns
+[10-08 02:49:37] INFO: [MC-REPLAY] next_states 未分配, 省 1.86 GiB
+[10-08 02:49:37] INFO: [SARL-BUFFER] rl_buffer capacity=200000, n_step=1, per=False
+[10-08 02:49:37] INFO: [STATS-RESET] TrainingStats reset for RL phase
+[10-08 02:49:37] INFO: [IL-BC] Starting BC training phase...
+[10-08 02:49:37] INFO: [IL-CONFIG] success_target=5000 max_total_episodes=12000 prefill_batch_episodes=64 patience_batches=5
+[10-08 02:49:37] INFO: [IL-CONFIG] success_target=5000 (type=int)
+[10-08 02:49:37] INFO: [IL-CONFIG] max_total_episodes=12000 (type=int)
+[10-08 02:49:37] INFO: [IL-CONFIG] batch_collect_episodes=64 (type=int)
+[10-08 02:49:37] INFO: [IL-CONFIG] patience_batches=5 (type=int)
+[10-08 02:49:37] INFO: [IL-TEACHER] Applying ORCA teacher profile: neighbor_dist=6.0, max_neighbors=15, time_horizon=5.0, time_horizon_obst=5.0, safety_space=0.25
+[10-08 02:49:37] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-08 02:49:37] INFO: human number: 5
+[10-08 02:49:37] INFO: Not randomize human's radius and preferred speed
+[10-08 02:49:37] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-08 02:49:37] INFO: Square width: 10.0, circle radius: 4.0
+[10-08 02:49:37] WARNING: [IL] Explorer has no replay buffer reference; IL data will stay in-flight only
+[10-08 02:49:37] INFO: [IL-START] Buffer size before IL: 0
+[10-08 02:49:37] INFO: [IL-CACHE] 发现离线数据集缓存: /root/bayes-assets/crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-08 02:49:40] INFO: [IL-CACHE] 数据集版本: matched-native-orca-v1
+[10-08 02:49:40] INFO: [IL-CACHE] 生成时间: unknown
+[10-08 02:49:40] INFO: [IL-CACHE] Seeds: []
+[10-08 02:49:40] INFO: [IL-CACHE] ORCA configs: []
+[10-08 02:49:40] INFO: [IL-CACHE] 总轨迹数: 5040
+[10-08 02:49:40] INFO: [IL-CACHE] 原始成功率: 99.62%
+[10-08 02:49:40] INFO: [IL-CACHE] 限制加载: 5040 episodes (max_il_prefill=50000)
+[10-08 02:49:40] INFO: [IL-CACHE] ✓ 成功加载 5037 条轨迹
+[10-08 02:49:40] INFO: [IL-CACHE] 失败轨迹保留 3 条用于RL预填充
+[10-08 02:49:40] INFO: [IL-CACHE] 跳过在线采集，直接使用离线数据集
+[10-08 02:49:40] INFO: [IL-COLLECT] Final success set: 5037 trajectories from 5056 attempts (success_ratio=99.62%)
+[10-08 02:49:40] INFO: [IL-COLLECT] Fail trajectories kept for RL prefill: 3
+[10-08 02:49:40] INFO: [IL-DATA] BC dataset uses success+collision: success=5037, collision=3
+[10-08 02:49:40] INFO: [IL-BUFFER] IL data reserved for BC pretraining only (5040 trajectories)
+[10-08 02:49:40] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-08 02:49:40] INFO: human number: 5
+[10-08 02:49:40] INFO: Not randomize human's radius and preferred speed
+[10-08 02:49:40] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-08 02:49:40] INFO: Square width: 10.0, circle radius: 4.0
+[10-08 02:49:40] INFO: [IL-TEACHER] Restored ORCA parameters for RL phase
+[10-08 02:49:40] INFO: [IL-BC] ✗ No BC checkpoint found at /root/bayes-fix-20261008/runs/il-gru-seed42/il_policy.pth
+[10-08 02:49:40] INFO: [IL-BC] Starting 50 epochs of BC training from scratch
+[10-08 02:49:40] INFO: [IL-BC] Training policy network - 1754857 params
+[10-08 02:49:40] INFO: [TRAINING-MODE] Switched to 'rl' mode
+[10-08 02:49:40] INFO: [IL-BC-MODE] Using RL mode for BC training (full 24-frame temporal modeling)
+[10-08 02:49:40] INFO: [IL-BC-MODE] This ensures BC learns sequence dependencies, not just single-frame actions
+[10-08 02:49:40] INFO: [IL-OBJECTIVE] mode=value_regression, lr=0.0001, gamma=0.99
+[10-08 02:49:40] INFO: [IL-BC] Data source: Provided trajectories
+[10-08 02:49:40] INFO: [IL-BC] Trajectories: 5040
+[10-08 02:49:48] INFO: [IL-ACTION-PROCESS] Total steps: 235980, n_actions=80
+[10-08 02:49:48] INFO: [IL-TOKEN-CONVERT] Converting 5663520 states to tokens in batches (batch_size=100000, please wait)...
+[10-08 03:02:18] INFO: [IL-TOKEN-CONVERT] Token conversion complete (5663520 states)
+[10-08 03:02:19] INFO: [IL-DATASET] IL dataset: 235980 sequences (seq_len=24, with MC returns)
+[10-08 03:02:19] INFO: [IL-BC] Prepared dataset: N=235980, batch_size=256, batches=921
+[10-08 03:16:43] INFO: [ENV-TRACK] Robot get_full_state #1: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-08 03:16:43] INFO: [ACTION-SPACE] Built 80 actions (GRID 5×16, stop=False)
+[10-08 03:16:43] INFO: [EXPLORER] RL-MAMBA-DOUBLEQ: JointState, state_dim=(34,)
+[10-08 03:16:43] INFO: [DENSE-REWARD-STEP] progress=-0.0039, progress_reward=0.0, time_penalty=0.0, robot_speed=1.000, step_reward=0.0000
+[10-08 03:16:43] INFO: [ENV-TRACK] Robot get_full_state #2: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-08 03:16:43] INFO: [ENV-TRACK] Robot get_full_state #3: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-08 03:16:58] INFO: [IL-BC-EVAL] epoch=5 quick_eval sr=100.0% (best=0.0% @ epoch 0)
+[10-08 03:16:58] INFO: [IL-BC] ★ New best! epoch=5, sr=100.0%
+[10-08 03:31:03] INFO: [IL-VALUE] epoch=10/50 value_loss=0.0025 action_loss=0.0000 total=0.0025 lr=0.000091
+[10-08 03:31:20] INFO: [IL-BC-EVAL] epoch=10 quick_eval sr=85.0% (best=100.0% @ epoch 5)
+[10-08 03:45:54] INFO: [IL-BC-EVAL] epoch=15 quick_eval sr=70.0% (best=100.0% @ epoch 5)
+[10-08 04:00:04] INFO: [IL-VALUE] epoch=20/50 value_loss=0.0021 action_loss=0.0000 total=0.0021 lr=0.000066
+[10-08 04:00:31] INFO: [IL-BC-EVAL] epoch=20 quick_eval sr=60.0% (best=100.0% @ epoch 5)
+[10-08 04:14:57] INFO: [IL-BC-EVAL] epoch=25 quick_eval sr=35.0% (best=100.0% @ epoch 5)
+[10-08 04:28:59] INFO: [IL-VALUE] epoch=30/50 value_loss=0.0017 action_loss=0.0000 total=0.0017 lr=0.000035
+[10-08 04:29:31] INFO: [IL-BC-EVAL] epoch=30 quick_eval sr=45.0% (best=100.0% @ epoch 5)
+[10-08 04:44:02] INFO: [IL-BC-EVAL] epoch=35 quick_eval sr=30.0% (best=100.0% @ epoch 5)
+[10-08 04:57:59] INFO: [IL-VALUE] epoch=40/50 value_loss=0.0015 action_loss=0.0000 total=0.0015 lr=0.000010
+[10-08 04:58:32] INFO: [IL-BC-EVAL] epoch=40 quick_eval sr=40.0% (best=100.0% @ epoch 5)
+[10-08 05:12:40] INFO: [IL-BC-EVAL] epoch=45 quick_eval sr=40.0% (best=100.0% @ epoch 5)
+[10-08 05:26:44] INFO: [IL-VALUE] epoch=50/50 value_loss=0.0014 action_loss=0.0000 total=0.0014 lr=0.000001
+[10-08 05:27:16] INFO: [IL-BC-EVAL] epoch=50 quick_eval sr=45.0% (best=100.0% @ epoch 5)
+[10-08 05:27:16] INFO: [IL-BC] Using best checkpoint from epoch 5 (sr=100.0%)
+[10-08 05:27:16] INFO: [IL-BC] Saving BC checkpoint with metadata...
+[10-08 05:27:16] INFO: [IL-BC] ✓ BC checkpoint saved to /root/bayes-fix-20261008/runs/il-gru-seed42/il_policy.pth
+[10-08 05:27:16] INFO: [IL-CONTINUOUS-BC] BC training completed
+[10-08 05:27:16] INFO: [IL-BC-EVAL] Skipping IL evaluation (Q-head not trained, will validate in RL phase)
+[10-08 05:27:16] INFO: [TRAINING-MODE] Switched to 'rl' mode
+[10-08 05:27:16] INFO: [IL-BC-MODE] BC training finished, keeping RL mode for RL phase
+[10-08 05:27:16] INFO: [IL-BC-MODE] Temporal encoder is now trained (unlike old BC-only baseline)
+[10-08 05:27:16] INFO: [IL-BC-ADAPT] Skipping warm adaptation - temporal encoder already trained during BC
+[10-08 05:27:16] INFO: [IL-BC] Evaluating newly trained BC model...
+[10-08 05:28:25] INFO: [IL-BC] Newly trained BC model success rate: 98.0% (98/100 episodes)
+[10-08 05:28:25] INFO: [IL-ORCA-DATA] Teacher success stats: attempts=5056, successes=5037, ratio=0.996
+[10-08 05:28:25] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-08 05:28:25] INFO: human number: 5
+[10-08 05:28:25] INFO: Not randomize human's radius and preferred speed
+[10-08 05:28:25] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-08 05:28:25] INFO: Square width: 10.0, circle radius: 4.0
+[10-08 05:28:25] INFO: [IL-PARAM-RESTORE] Parameters restored for RL: time_limit=50, success_radius=0.25, human_num=5
+[10-08 05:28:25] INFO: [IL-BC] BC training completed: success_rate=99.6%
+[10-08 05:28:25] INFO: [ABLATION] --pretrain-only complete; exiting before online RL

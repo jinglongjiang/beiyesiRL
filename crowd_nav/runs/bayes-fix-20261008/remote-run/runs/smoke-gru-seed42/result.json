@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "seed": 42,
+  "arm": "gru",
+  "episodes": 200,
+  "optimizer_steps": 800,
+  "success": 171,
+  "collision": 25,
+  "timeout": 4,
+  "wall_seconds": 405.4157462120056
+}

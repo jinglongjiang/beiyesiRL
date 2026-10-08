@@ -1,0 +1,9 @@
+{
+  "status": "TRAINED",
+  "arm": "gru",
+  "episode": 10000,
+  "optimizer_steps": 40000,
+  "il_retrained": false,
+  "wall_seconds": 18579.046493053436,
+  "checkpoint_sha256": "c78f5314ddaf09ed59a69a55be8f96b7604c1a276ec28430410b2978f371659d"
+}

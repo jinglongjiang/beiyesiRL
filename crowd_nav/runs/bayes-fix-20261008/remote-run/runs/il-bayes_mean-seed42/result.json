@@ -1,0 +1,22 @@
+{
+  "status": "IL_VALID",
+  "arm": "bayes_mean",
+  "seed": 42,
+  "checkpoint_sha256": "f652414c8ec089f28673a18511f6a6617a9528d73ac3feabdf4f1602b5777f4e",
+  "metadata": {
+    "stage": "bc_policy_only",
+    "arch": "policy_network",
+    "epochs": 50,
+    "value_loss": 0.0015834239311516285,
+    "action_loss": 0.0,
+    "total_loss": 0.0015834239311516285,
+    "objective": "value_regression",
+    "eval_success_rate": 1.0,
+    "best_epoch": 50,
+    "best_sr": 1.0,
+    "seq_len": 24,
+    "dataset_size": 235980,
+    "timestamp": "2026-10-08 08:27:18"
+  },
+  "wall_seconds": 20359.924384832382
+}

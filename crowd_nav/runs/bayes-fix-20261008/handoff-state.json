@@ -1,0 +1,116 @@
+{
+  "status": "FORMAL_CONTROLLER_LAUNCHED",
+  "controller": {
+    "pid": 2231369,
+    "proc_start_ticks": "2530788114",
+    "unix_time": 1791420634.7745028
+  },
+  "smoke": [
+    {
+      "status": "PASS",
+      "seed": 42,
+      "arm": "gru",
+      "episodes": 200,
+      "optimizer_steps": 800,
+      "success": 171,
+      "collision": 25,
+      "timeout": 4,
+      "wall_seconds": 405.4157462120056
+    },
+    {
+      "status": "PASS",
+      "seed": 42,
+      "arm": "bayes_mean",
+      "episodes": 200,
+      "optimizer_steps": 800,
+      "success": 151,
+      "collision": 46,
+      "timeout": 3,
+      "wall_seconds": 600.595409154892
+    },
+    {
+      "status": "PASS",
+      "seed": 42,
+      "arm": "bayes",
+      "episodes": 200,
+      "optimizer_steps": 800,
+      "success": 158,
+      "collision": 33,
+      "timeout": 9,
+      "wall_seconds": 630.6389882564545
+    }
+  ],
+  "retired": {
+    "status": "OLD_QUEUE_RETIRED",
+    "controller_pid": 2137679,
+    "aborted_unused_il": [
+      {
+        "pid": 2231007,
+        "proc_start_ticks": "2530787128",
+        "command": [
+          "/root/miniconda3/envs/mamba/bin/python",
+          "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+          "worker",
+          "train",
+          "--config",
+          "/root/bayes-fix-20261008/runs/il-bayes_mean-seed43/config.ini",
+          "--outdir",
+          "/root/bayes-fix-20261008/runs/il-bayes_mean-seed43",
+          "--temporal-backbone",
+          "bayes_mean",
+          "--seed",
+          "43",
+          "--gpu",
+          "--pretrain-only",
+          ""
+        ],
+        "reason": "BUDGET_ABORTED_UNUSED_SECOND_IL"
+      },
+      {
+        "pid": 2231008,
+        "proc_start_ticks": "2530787129",
+        "command": [
+          "/root/miniconda3/envs/mamba/bin/python",
+          "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+          "worker",
+          "train",
+          "--config",
+          "/root/bayes-fix-20261008/runs/il-bayes-seed43/config.ini",
+          "--outdir",
+          "/root/bayes-fix-20261008/runs/il-bayes-seed43",
+          "--temporal-backbone",
+          "bayes",
+          "--seed",
+          "43",
+          "--gpu",
+          "--pretrain-only",
+          ""
+        ],
+        "reason": "BUDGET_ABORTED_UNUSED_SECOND_IL"
+      },
+      {
+        "pid": 2231009,
+        "proc_start_ticks": "2530787129",
+        "command": [
+          "/root/miniconda3/envs/mamba/bin/python",
+          "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+          "worker",
+          "train",
+          "--config",
+          "/root/bayes-fix-20261008/runs/il-gru-seed43/config.ini",
+          "--outdir",
+          "/root/bayes-fix-20261008/runs/il-gru-seed43",
+          "--temporal-backbone",
+          "gru",
+          "--seed",
+          "43",
+          "--gpu",
+          "--pretrain-only",
+          ""
+        ],
+        "reason": "BUDGET_ABORTED_UNUSED_SECOND_IL"
+      }
+    ],
+    "unix_time": 1791420631.7870162
+  }
+}

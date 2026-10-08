@@ -1,0 +1,42 @@
+{
+  "version": "user-budget-8000-warm-continuation-v1",
+  "arms": [
+    "gru",
+    "bayes_mean",
+    "bayes"
+  ],
+  "training_seed": 42,
+  "original_protocol_sha256": "64a90adb21da6531a3693bccb7de7bfdab6eca6e07213257ccb6761f6db4400f",
+  "starting_checkpoint_sha256": {
+    "gru": "a33860e054a3c02f0f5d2dab4cfa4950fcb1841dcd43824b7766a63dbe80e813",
+    "bayes_mean": "a0e1ef561c0569032f8342af5014e7a5b91486fce0578d5a5d518ccf3a54766e",
+    "bayes": "07ee4a7f71d19b10aeec4c54753d2398ae349923e50f29b7c421fa7ae1c9059e"
+  },
+  "start_episode": 3001,
+  "last_episode": 8000,
+  "additional_rl_episodes": 5000,
+  "il_retraining": false,
+  "restored": [
+    "policy",
+    "target_value_network",
+    "optimizer",
+    "statistics_history"
+  ],
+  "not_restored": [
+    "online_replay",
+    "RNG_state",
+    "environment_case_counter"
+  ],
+  "replay": "Native replay prefill from identical frozen ORCA corpus; old online replay unavailable",
+  "rng": "Native matched reset seed+200003; this is NOT an exact uninterrupted run",
+  "environment": "Native restart; training case sequence may repeat earlier cases",
+  "no_mamba": true,
+  "model_objective_reward_action_history_unchanged": true,
+  "evaluation": "Same six native scenarios x 500 at fixed episode-8000 weights; not fresh confirmation",
+  "evaluation_seed": 20261006,
+  "evaluation_time_limit": 25,
+  "launch_condition": "All three complete-3000.json exist and validate; never interrupt their evaluations",
+  "resource_guard": "At least 27 GiB available host RAM and 4 GiB disk before starting 3 workers",
+  "failure_rule": "No silent fresh training, partial restore, overwrite, or automatic rescue",
+  "script_sha256": "4e4284d208e25584fbf7e19e801d6669b83d9eedca3244dd9e314cefd00dd7e2"
+}

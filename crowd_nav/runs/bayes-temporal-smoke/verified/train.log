@@ -1,0 +1,188 @@
+[10-06 13:17:39] INFO: [TENSORBOARD] Fresh events will be saved to: crowd_nav/runs/bayes-temporal-smoke/verified/tensorboard_logs
+[10-06 13:17:39] INFO: [TEMPORAL-BACKBONE] CLI override: bayes
+[10-06 13:17:39] INFO: [CONTRACTS] GRID initialized from runtime cfg: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}
+[10-06 13:17:39] INFO: [CONTRACTS] GRID locked from env.config: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}, num_actions=80
+[10-06 13:17:39] INFO: [SEED] 使用命令行指定的seed: 42
+[10-06 13:17:39] INFO: [SEED] ⚡ CUDA确定性模式已关闭（训练模式，速度优先）
+[10-06 13:17:39] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:17:39] INFO: human number: 5
+[10-06 13:17:39] INFO: Not randomize human's radius and preferred speed
+[10-06 13:17:39] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:17:39] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:17:39] INFO: [BOOT] policy=mamba_rl device=cpu
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [SOT] env: circle R=4.0 Nh=5 dt=0.25 T=50 | reward: 1.0/-0.5/-0.5 | actions: 80(sampling=exponential, stop=False) | success_radius=0.25 | eval eps=0
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [ALGO] Value-lookahead (BAYES): one-step lookahead + epsilon-greedy
+[10-06 13:17:39] INFO: REWARD: success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:17:39] INFO: TRAINING: lr=1e-05, gamma=0.99, batch=16, updates_per_ep=2
+[10-06 13:17:39] INFO: TIMESTEP: dt=0.25s
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [DISCRETE-Q] Q-head initialized: 80 actions (5 speeds × 16 headings, stop=False)
+[10-06 13:17:39] INFO: [VALUE-HEAD] Value head initialized (SARL-style, 1-dim output)
+[10-06 13:17:39] INFO: [AUXILIARY-HEAD] Future position predictor initialized: 3 neighbors × 4 future steps
+[10-06 13:17:39] INFO: [ABLATION] Lookahead scoring mode: full
+[10-06 13:17:39] INFO: ================================================================================
+[10-06 13:17:39] INFO: [TEMPORAL-BACKBONE] BAYES backbone configuration:
+[10-06 13:17:39] INFO:   d_model=256, n_layers=4, d_state=64
+[10-06 13:17:39] INFO:   d_conv=4, expand=2
+[10-06 13:17:39] INFO: [SEQ-FINAL] Sequence Length Configuration (SSOT):
+[10-06 13:17:39] INFO:   seq_len=24 (from train.config:[buffer])
+[10-06 13:17:39] INFO:   T=24 (should match policy.config:[temporal].T)
+[10-06 13:17:39] INFO: [ARCH-FINAL] Architecture: EnhancedSpatial(3-way:robot+human+relation) -> BAYES -> DualHead
+[10-06 13:17:39] INFO: [DEVICE] cpu
+[10-06 13:17:39] INFO: ================================================================================
+[10-06 13:17:39] INFO: [POLICY-INIT] Main policy built: mamba_rl
+[10-06 13:17:39] INFO: [POLICY-INIT] Set multiagent_training=True (5-human crowd navigation)
+[10-06 13:17:39] INFO: [MAMBA-RL] Set env_dt=0.25
+[10-06 13:17:39] INFO: ✅ debug.md清理：奖励整形器已删除（未实际使用）
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [CONFIG-SUMMARY] Training Configuration (Runtime Values)
+[10-06 13:17:39] INFO:   Policy: mamba_rl
+[10-06 13:17:39] INFO:   Sequence: seq_len=24
+[10-06 13:17:39] INFO:   Training: batch_size=16, updates_per_ep=2
+[10-06 13:17:39] INFO:   Learning: lr=0.000010, gamma=0.99
+[10-06 13:17:39] INFO:   Episodes: 4, device=cpu
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [SARL-TRAIN] goal prior=OFF
+[10-06 13:17:39] INFO: [CFG-LOCK] circle R=4 Nh=5 dt=0.25 T=50 succ_r=0.25 visible=False actions=80 eval_eps=0
+[10-06 13:17:39] INFO: [REWARD-PROFILE] Using profile=benchmark, time_limit=50.0s
+[10-06 13:17:39] INFO: [REWARD-BENCHMARK] {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:17:39] INFO: [CONFIG-FALLBACK] success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:17:39] INFO: [ACTIVE-REWARD] Using profile-based rewards: {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:17:39] INFO: ============================================================
+[10-06 13:17:39] INFO: [TRAJECTORY-LOG] Recording enabled: crowd_nav/runs/bayes-temporal-smoke/verified/trajectory.log
+[10-06 13:17:39] INFO: [IL-AUTO] force_online=true -> skip offline dataset auto-detect
+[10-06 13:17:39] INFO: [IL-AUTO] 自动检测训练数据...
+[10-06 13:17:39] INFO: [IL-AUTO]   离线数据集: None (exists: False)
+[10-06 13:17:39] INFO: [IL-AUTO]   BC checkpoint: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-temporal-smoke/verified/il_policy.pth (exists: False)
+[10-06 13:17:39] INFO: [IL-AUTO]   IL checkpoint: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-temporal-smoke/verified/ckpt_il.pt (exists: False)
+[10-06 13:17:39] INFO: [IL-AUTO] force_online=true -> will run IL+BC online (ignore checkpoints/offline cache)
+[10-06 13:17:39] INFO: [IQL-REPLAY] Initialized: capacity=200000, seq_len=24, with MC returns
+[10-06 13:17:39] INFO: [SARL-BUFFER] rl_buffer capacity=200000, n_step=1, per=False
+[10-06 13:17:39] INFO: [STATS-RESET] TrainingStats reset for RL phase
+[10-06 13:17:39] INFO: [IL-BC] Starting BC training phase...
+[10-06 13:17:39] INFO: [IL-CONFIG] success_target=8 max_total_episodes=32 prefill_batch_episodes=8 patience_batches=5
+[10-06 13:17:39] INFO: [IL-CONFIG] success_target=8 (type=int)
+[10-06 13:17:39] INFO: [IL-CONFIG] max_total_episodes=32 (type=int)
+[10-06 13:17:39] INFO: [IL-CONFIG] batch_collect_episodes=8 (type=int)
+[10-06 13:17:39] INFO: [IL-CONFIG] patience_batches=5 (type=int)
+[10-06 13:17:39] INFO: [IL-TEACHER] Applying ORCA teacher profile: neighbor_dist=6.0, max_neighbors=15, time_horizon=5.0, time_horizon_obst=5.0, safety_space=0.25
+[10-06 13:17:39] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:17:39] INFO: human number: 5
+[10-06 13:17:39] INFO: Not randomize human's radius and preferred speed
+[10-06 13:17:39] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:17:39] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:17:39] WARNING: [IL] Explorer has no replay buffer reference; IL data will stay in-flight only
+[10-06 13:17:39] INFO: [IL-START] Buffer size before IL: 0
+[10-06 13:17:39] INFO: [IL-CACHE] force_online=true -> skip offline dataset cache, recollect IL online
+[10-06 13:17:39] INFO: [IL-CACHE] 未发现离线数据集 (None)，使用在线采集
+[10-06 13:17:39] INFO: [POLICY-TAG] phase=il tag=IL-ORCA-TEACHER
+[10-06 13:17:39] INFO: [IL] phase='il' remapped to 'train' for env.reset compatibility
+[10-06 13:17:39] INFO: [ENV-TRACK] Robot get_full_state #1: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:17:39] INFO: [DEBUG.MD-P0.2] ORCA policy configured with standard parameters
+[10-06 13:17:39] INFO: [ORCA-DEBUG] safety_space=0.1, neighbor_dist=10.0, time_horizon=5.0
+[10-06 13:17:39] INFO: [DEBUG.MD-P0] Created ORCA policy with standard parameters for IL stage
+[10-06 13:17:39] INFO: [ACTION-SPACE] Built 80 actions (GRID 5×16, stop=False)
+[10-06 13:17:39] INFO: [EXPLORER] IL-ORCA: JointState, state_dim=(34,)
+[10-06 13:17:39] INFO: [DENSE-REWARD-STEP] progress=0.1644, progress_reward=0.0, time_penalty=0.0, robot_speed=0.658, step_reward=0.0000
+[10-06 13:17:39] INFO: [ENV-TRACK] Robot get_full_state #2: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:17:39] INFO: [ENV-TRACK] Robot get_full_state #3: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-06 13:17:40] INFO: [IL-COLLECT] episodes=8/32 | success=8/8 (100.00%)
+[10-06 13:17:40] INFO: [IL-COLLECT] Final success set: 8 trajectories from 8 attempts (success_ratio=100.00%)
+[10-06 13:17:40] INFO: [IL-DATA] BC dataset uses success+collision: success=8, collision=0
+[10-06 13:17:40] INFO: [IL-BUFFER] IL data reserved for BC pretraining only (8 trajectories)
+[10-06 13:17:40] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:17:40] INFO: human number: 5
+[10-06 13:17:40] INFO: Not randomize human's radius and preferred speed
+[10-06 13:17:40] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:17:40] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:17:40] INFO: [IL-TEACHER] Restored ORCA parameters for RL phase
+[10-06 13:17:40] INFO: [IL-BC] ✗ No BC checkpoint found at crowd_nav/runs/bayes-temporal-smoke/verified/il_policy.pth
+[10-06 13:17:40] INFO: [IL-BC] Starting 2 epochs of BC training from scratch
+[10-06 13:17:40] INFO: [IL-BC] Training policy network - 290985 params
+[10-06 13:17:40] INFO: [TRAINING-MODE] Switched to 'rl' mode
+[10-06 13:17:40] INFO: [IL-BC-MODE] Using RL mode for BC training (full 24-frame temporal modeling)
+[10-06 13:17:40] INFO: [IL-BC-MODE] This ensures BC learns sequence dependencies, not just single-frame actions
+[10-06 13:17:40] INFO: [IL-OBJECTIVE] mode=value_regression, lr=0.0001, gamma=0.99
+[10-06 13:17:40] INFO: [IL-BC] Data source: Provided trajectories
+[10-06 13:17:40] INFO: [IL-BC] Trajectories: 8
+[10-06 13:17:40] INFO: [IL-ACTION-PROCESS] Total steps: 413, n_actions=80
+[10-06 13:17:40] INFO: [IL-TOKEN-CONVERT] Converting 9912 states to tokens...
+[10-06 13:17:41] INFO: [IL-TOKEN-CONVERT] Token conversion complete
+[10-06 13:17:41] INFO: [IL-DATASET] IL dataset: 413 sequences (seq_len=24, with MC returns)
+[10-06 13:17:41] INFO: [IL-BC] Prepared dataset: N=413, batch_size=16, batches=25
+[10-06 13:17:41] INFO: [IL-VALUE] epoch=1/2 value_loss=0.2479 action_loss=0.0000 total=0.2479 lr=0.000051
+[10-06 13:17:42] INFO: [IL-VALUE] epoch=2/2 value_loss=0.0096 action_loss=0.0000 total=0.0096 lr=0.000001
+[10-06 13:17:42] INFO: [IL-BC] No best checkpoint found, using final epoch 2
+[10-06 13:17:42] INFO: [IL-BC] Saving BC checkpoint with metadata...
+[10-06 13:17:42] INFO: [IL-BC] ✓ BC checkpoint saved to crowd_nav/runs/bayes-temporal-smoke/verified/il_policy.pth
+[10-06 13:17:42] INFO: [IL-CONTINUOUS-BC] BC training completed
+[10-06 13:17:42] INFO: [IL-BC-EVAL] Skipping IL evaluation (Q-head not trained, will validate in RL phase)
+[10-06 13:17:42] INFO: [TRAINING-MODE] Switched to 'rl' mode
+[10-06 13:17:42] INFO: [IL-BC-MODE] BC training finished, keeping RL mode for RL phase
+[10-06 13:17:42] INFO: [IL-BC-MODE] Temporal encoder is now trained (unlike old BC-only baseline)
+[10-06 13:17:42] INFO: [IL-BC-ADAPT] Skipping warm adaptation - temporal encoder already trained during BC
+[10-06 13:17:42] INFO: [IL-BC] Evaluating newly trained BC model...
+[10-06 13:17:42] INFO: [EXPLORER] RL-MAMBA-DOUBLEQ: JointState, state_dim=(34,)
+[10-06 13:17:47] INFO: [IL-BC] Newly trained BC model success rate: 100.0% (2/2 episodes)
+[10-06 13:17:47] INFO: [IL-ORCA-DATA] Teacher success stats: attempts=8, successes=8, ratio=1.000
+[10-06 13:17:47] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:17:47] INFO: human number: 5
+[10-06 13:17:47] INFO: Not randomize human's radius and preferred speed
+[10-06 13:17:47] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:17:47] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:17:47] INFO: [IL-PARAM-RESTORE] Parameters restored for RL: time_limit=50, success_radius=0.25, human_num=5
+[10-06 13:17:47] INFO: [IL-BC] BC training completed: success_rate=100.0%
+[10-06 13:17:47] INFO: [SARL-PREFILL-LIMITED] IL episodes injected=8, skipped=0, buffer_size=413 (max_prefill=64)
+[10-06 13:17:47] INFO: [CKPT-LOAD] skipped (already warm-started with fresh IL ckpt)
+[10-06 13:17:47] INFO: [JIT] 4090 UNLEASHED: torch.compile FORCED ON! (reduce-overhead mode, after checkpoint loads)
+[10-06 13:17:47] INFO: [CURRICULUM] DISABLED - Focusing on standard environment
+[10-06 13:17:47] INFO: [CURRICULUM] RL will use baseline 5-human circle environment (Nh=5, R=4)
+[10-06 13:17:47] INFO: [ALGO] Value-lookahead (BAYES): value regression + one-step lookahead, lr=1e-05
+[10-06 13:17:47] INFO: [SARL-WARMUP] Replay warmup threshold: 64 transitions
+[10-06 13:17:47] INFO: [SARL] n_step=1, use_per=False
+[10-06 13:17:47] INFO: [CHECKPOINT] interval=4 episodes
+[10-06 13:17:47] INFO: [VECTORIZE] Parallel sampling disabled, using serial explorer
+[10-06 13:17:47] INFO: [DIAGNOSTIC] ⚠ Using SERIAL sampling (no parallelization)
+[10-06 13:17:47] INFO: [DIAGNOSTIC] Pre-RL policy evaluation (5 episodes)...
+[10-06 13:18:20] INFO: [DIAGNOSTIC] Pre-RL test performance: s/c/t=40.0%/0.0%/60.0%
+[10-06 13:18:20] INFO: [TRAIN] Algorithm: sarl
+[10-06 13:18:20] INFO: [P1-RL] Base config: human_num=5, circle_radius=4.0, success_radius=0.25
+[10-06 13:18:23] INFO: FIRST_ACTION: Policy doesn't expose continuous action info, skipping debug
+[10-06 13:18:23] INFO: [RL-EP-0001] (1/4) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=506
+[10-06 13:18:23] INFO:               cumulative s/c/t%: 100.0%/0.0%/0.0%
+[10-06 13:18:23] INFO: [REPLAY-STORE] ok=1 skip=0 steps=93 buf=506
+[10-06 13:18:29] INFO: [RL-EP-0002] (2/4) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=702
+[10-06 13:18:29] INFO:               cumulative s/c/t%: 100.0%/0.0%/0.0%
+[10-06 13:18:29] INFO: [REPLAY-STORE] ok=2 skip=0 steps=289 buf=702
+[10-06 13:18:34] INFO: [RL-EP-0003] (3/4) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=834
+[10-06 13:18:34] INFO:               cumulative s/c/t%: 100.0%/0.0%/0.0%
+[10-06 13:18:34] INFO: [REPLAY-STORE] ok=3 skip=0 steps=421 buf=834
+[10-06 13:18:38] INFO: [RL-EP-0004] (4/4) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=947
+[10-06 13:18:38] INFO:               cumulative s/c/t%: 100.0%/0.0%/0.0%
+[10-06 13:18:38] INFO: [REPLAY-STORE] ok=4 skip=0 steps=534 buf=947
+[10-06 13:18:38] INFO: [EVAL] Starting evaluation: ep=4, ε=0.0, k=2
+[10-06 13:18:45] INFO: [EVAL] Completed evaluation: succ=1.000 coll=0.000 timeout=0.000 sum=1.000 nav=18.62
+[10-06 13:18:45] INFO: [EVAL-EXTENDED] path_len=12.84m smoothness=0.604 avg_speed=0.69m/s
+[10-06 13:18:45] INFO: [BEST-SAVE] success=1.000 -> crowd_nav/runs/bayes-temporal-smoke/verified/best_model.pth
+[10-06 13:18:45] INFO: [RL-SAVE] sarl checkpoint -> crowd_nav/runs/bayes-temporal-smoke/verified/rl_model_ep4.pth
+[10-06 13:18:45] INFO: [RL-SAVE] Saved components: policy, target network, optimizer
+[10-06 13:18:45] INFO: ================================================================================
+[10-06 13:18:45] INFO: 
+[10-06 13:18:45] INFO: ================================================================================
+[10-06 13:18:45] INFO: [FINAL-STATS] Episodes completed: 4
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Success Rate:   1.000 (100.0%)
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Collision Rate: 0.000 (0.0%)
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Timeout Rate:   0.000 (0.0%)
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Reward:         0.28
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Time Taken:     33.38s
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Discomfort Freq: 0.000
+[10-06 13:18:45] INFO: [FINAL-STATS] Average Discomfort Dist: 0.000m
+[10-06 13:18:45] INFO: [FINAL-STATS] Best Evaluation Success: 1.000 (100.0%)
+[10-06 13:18:45] INFO: [ACHIEVEMENT] 🎯 TARGET REACHED! Average success rate 100.0% >= 90%
+[10-06 13:18:45] INFO: ================================================================================
+[10-06 13:18:45] INFO: [DONE] Training completed - best_eval_success=1.000
+[10-06 13:18:45] INFO: [MAIN-COMPLETE] Training finished with best evaluation success: 1.000
+[10-06 13:18:45] INFO: [TRAJECTORY-LOG] Trajectory file closed successfully
+[10-06 13:18:45] INFO: [TENSORBOARD] Events file closed successfully

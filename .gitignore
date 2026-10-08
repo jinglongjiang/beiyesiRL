@@ -1,0 +1,60 @@
+# editors
+.idea/
+.vscode/
+
+# Python
+*.egg-info/
+.pytest_cache/
+__pycache__
+.cache/
+venv*/
+.venv*/
+.mypy_cache/
+.ruff_cache/
+
+# data
+data/
+*.mp4
+videos/
+
+# Never publish model weights, optimizers, demonstration datasets or credentials.
+*.pth*
+*.pt
+*.pt.*
+*.ckpt*
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.bin
+*.pem
+*.key
+.env
+.env.*
+id_rsa*
+id_ed25519*
+/orca_demos_seq.npz
+*.egg-info/
+*.lock
+*.pid
+*.bak*
+*.backup*
+*_backup.py
+*.p1_backup
+/backup/
+/runs/
+
+# Keep only this temporal-Bayesian research line's experimental outputs.
+crowd_nav/runs/*
+!crowd_nav/runs/bayes-matched-v1/
+!crowd_nav/runs/bayes-optimized-20261007/
+!crowd_nav/runs/bayes-fix-20261008/
+!crowd_nav/runs/bayes-temporal-smoke/
+
+# Historical source archives can embed datasets or checkpoints.
+*.tar
+*.tar.gz
+*.tgz
+*.zip

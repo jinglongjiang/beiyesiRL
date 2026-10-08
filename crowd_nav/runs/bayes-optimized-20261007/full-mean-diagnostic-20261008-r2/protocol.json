@@ -1,0 +1,24 @@
+{
+  "kind": "diagnostic, not new trained methods or fresh confirmation",
+  "cases": "first 16 existing benchmark episodes in each of six scenarios, selected without outcome filtering",
+  "episodes_per_scenario": 16,
+  "variants": [
+    "trained_mean",
+    "trained_full",
+    "full_weights_mean_read",
+    "full_weights_gh64"
+  ],
+  "checkpoint": {
+    "bayes_mean": "5caca8df6b6a994822490b66b7da70bdd936dc0e959608467e59705f3e1a4dc3",
+    "bayes": "8fd40a187da11d724d5e7c1b88bd3193d2f09a19d4672ac9d766b02c8ef23a76"
+  },
+  "source": {
+    "crowd_nav/policy/bayes_temporal.py": "92ee25a533f1b43ac237aac58d613854a55ec4159702ddc3cd29c9afa8436102",
+    "crowd_nav/policy/mamba_rl.py": "c844135f5d0afff9128e2bc4f8177ca30c80c5e9aa808efbc078f6487d406d88",
+    "crowd_nav/test.py": "a816ea29769080834c875e5fdead58d742893ef6ddb7a273c0435da92d292aed"
+  },
+  "root_recording": "every tenth decision on original Full trajectory",
+  "gh_order": 64,
+  "numerical_reference_order": 32,
+  "unchanged": "all weights, Gaussian recursion, history, action support, reward, environment, test safety and smoothing"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "ONLINE_REPLAY_CONTRACT_INVALID",
+  "scientific_observation": false,
+  "process_completed": true,
+  "reason": "Inherited value-lookahead act()/predict(return_idx=True) returned None for the action index. All four online trajectories failed insertion with int(None).",
+  "orca_success_trajectories": 8,
+  "il_windows": 413,
+  "il_epochs": 2,
+  "executed_online_episodes": 4,
+  "online_trajectory_insertion_failures": 4,
+  "online_trajectories_stored": 0,
+  "returned_native_training_counts": {"success": 4, "collision": 0, "timeout": 0},
+  "warning": "The 4/4 outcome is not evidence of successful online RL or a method improvement; updates still used the IL prefill. Shared action-index plumbing is repaired for all temporal backbones before the next wiring test."
+}

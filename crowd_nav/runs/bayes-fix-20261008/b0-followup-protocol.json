@@ -1,0 +1,7 @@
+{
+  "reason": "Initial B0 sampled only first-24-frame ORCA startup prefixes; constant_ratio 0.995067 and median cosine 0.997672 passed, residual 0.022302 failed. This is preserved as a failed cohort, not silently overwritten.",
+  "followup": "Use the already preregistered 192-episode native B1 cohort, no outcome filtering; collect actual current-state last posteriors and same-weight feature gaps on every deployed Full decision.",
+  "unchanged_thresholds": {"n_ge": 10000, "constant_ratio_gt": 0.95, "residual_ratio_lt": 0.02, "median_cosine_gt": 0.99},
+  "do_not_change_encoder_until_followup_passes": true,
+  "failure": "If native cohort also disagrees, stop repair/startup and report discrepancy. Do not select a passing subset."
+}

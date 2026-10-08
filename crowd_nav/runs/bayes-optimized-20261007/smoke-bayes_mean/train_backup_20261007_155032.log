@@ -1,0 +1,9 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+LOG_BACKUP: Previous log backed up to: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000/smoke-bayes_mean/train_backup_20261007_155032.log
+[10-07 15:50:32] INFO: [TENSORBOARD] Fresh events will be saved to: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000/smoke-bayes_mean/tensorboard_logs
+[10-07 15:50:32] INFO: [TEMPORAL-BACKBONE] CLI override: bayes_mean
+[10-07 15:50:32] ERROR: [CONTRACTS] env.config not found: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000/smoke-bayes_mean/env.config
+[W1007 15:50:33.418363747 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

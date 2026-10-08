@@ -1,0 +1,14 @@
+{
+  "status": "INTERRUPTED_ENGINEERING_RUN",
+  "reason": "Inherited trainer hard-coded 100 post-IL validation episodes despite a short wiring-test budget. Interrupted before online RL; rerun has a configurable validation count, with the original default retained at 100.",
+  "scientific_observation": false,
+  "il_completed": true,
+  "orca_success_trajectories": 8,
+  "il_windows": 413,
+  "il_epochs": 2,
+  "recorded_training_mse": [0.2479, 0.0096],
+  "online_rl_completed": false,
+  "completed_validation_episode_count": null,
+  "preserved": ["train.log", "il_policy.pth"],
+  "note": "Do not treat the incomplete validation or interruption as a scientific failure. This process loaded the initial algebraically equivalent covariance update P*(1-K); the final block uses the numerically stable P*R/(P+R) expression."
+}

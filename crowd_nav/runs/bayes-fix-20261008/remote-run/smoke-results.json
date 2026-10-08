@@ -1,0 +1,35 @@
+[
+  {
+    "status": "PASS",
+    "seed": 42,
+    "arm": "gru",
+    "episodes": 200,
+    "optimizer_steps": 800,
+    "success": 171,
+    "collision": 25,
+    "timeout": 4,
+    "wall_seconds": 405.4157462120056
+  },
+  {
+    "status": "PASS",
+    "seed": 42,
+    "arm": "bayes_mean",
+    "episodes": 200,
+    "optimizer_steps": 800,
+    "success": 151,
+    "collision": 46,
+    "timeout": 3,
+    "wall_seconds": 600.595409154892
+  },
+  {
+    "status": "PASS",
+    "seed": 42,
+    "arm": "bayes",
+    "episodes": 200,
+    "optimizer_steps": 800,
+    "success": 158,
+    "collision": 33,
+    "timeout": 9,
+    "wall_seconds": 630.6389882564545
+  }
+]

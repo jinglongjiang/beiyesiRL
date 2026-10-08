@@ -1,0 +1,23 @@
+{
+  "status": "SMOKE",
+  "pid": 2227398,
+  "proc_start_ticks": "2530724061",
+  "started_unix": 1791419994.24401,
+  "command": [
+    "/root/miniconda3/envs/mamba/bin/python",
+    "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+    "worker",
+    "train",
+    "--config",
+    "/root/bayes-fix-20261008/runs/smoke-bayes-seed42/config.ini",
+    "--outdir",
+    "/root/bayes-fix-20261008/runs/smoke-bayes-seed42",
+    "--temporal-backbone",
+    "bayes",
+    "--seed",
+    "42",
+    "--gpu"
+  ],
+  "elapsed_seconds": 615.6201162338257,
+  "disk_free_bytes": 7391985664
+}

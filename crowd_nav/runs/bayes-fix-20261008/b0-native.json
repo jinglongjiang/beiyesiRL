@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "states": 10696,
+  "constant_ratio": 0.9941028952598572,
+  "residual_ratio": 0.015553930774331093,
+  "cosine_median": 0.9978299140930176,
+  "cosine_p05": 0.9553357362747192,
+  "gap_relative_to_mean": 0.10056670010089874,
+  "sigma_median": 0.5288119316101074,
+  "initial_orca_prefix_b0": "failed, retained unchanged",
+  "explanation": "Native deployed Full current-history states, rather than a sample restricted to the first 24 ORCA observations."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "status": "TRAINED",
+    "arm": "gru",
+    "episode": 10000,
+    "optimizer_steps": 40000,
+    "il_retrained": false,
+    "wall_seconds": 18579.046493053436,
+    "checkpoint_sha256": "c78f5314ddaf09ed59a69a55be8f96b7604c1a276ec28430410b2978f371659d"
+  },
+  {
+    "status": "TRAINED",
+    "arm": "bayes_mean",
+    "episode": 10000,
+    "optimizer_steps": 40000,
+    "il_retrained": false,
+    "wall_seconds": 26287.822196006775,
+    "checkpoint_sha256": "5caca8df6b6a994822490b66b7da70bdd936dc0e959608467e59705f3e1a4dc3"
+  },
+  {
+    "status": "TRAINED",
+    "arm": "bayes",
+    "episode": 10000,
+    "optimizer_steps": 40000,
+    "il_retrained": false,
+    "wall_seconds": 27379.19556069374,
+    "checkpoint_sha256": "8fd40a187da11d724d5e7c1b88bd3193d2f09a19d4672ac9d766b02c8ef23a76"
+  }
+]

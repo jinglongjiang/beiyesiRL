@@ -1,0 +1,111 @@
+[10-06 13:53:00] INFO: [TENSORBOARD] Fresh events will be saved to: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-matched-v1/mamba-seed43/tensorboard_logs
+[10-06 13:53:00] INFO: [TEMPORAL-BACKBONE] CLI override: mamba
+[10-06 13:53:00] INFO: [CONTRACTS] GRID initialized from runtime cfg: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}
+[10-06 13:53:00] INFO: [CONTRACTS] GRID locked from env.config: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}, num_actions=80
+[10-06 13:53:00] INFO: [SEED] 使用命令行指定的seed: 43
+[10-06 13:53:00] INFO: [SEED] ⚡ CUDA确定性模式已关闭（训练模式，速度优先）
+[10-06 13:53:00] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:53:00] INFO: human number: 5
+[10-06 13:53:00] INFO: Not randomize human's radius and preferred speed
+[10-06 13:53:00] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:53:00] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:53:00] INFO: [BOOT] policy=mamba_rl device=cuda
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [SOT] env: circle R=4.0 Nh=5 dt=0.25 T=50 | reward: 1.0/-0.5/-0.5 | actions: 80(sampling=exponential, stop=False) | success_radius=0.25 | eval eps=0
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [ALGO] Value-lookahead (MAMBA): one-step lookahead + epsilon-greedy
+[10-06 13:53:00] INFO: REWARD: success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:53:00] INFO: TRAINING: lr=1e-05, gamma=0.99, batch=256, updates_per_ep=4
+[10-06 13:53:00] INFO: TIMESTEP: dt=0.25s
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [DISCRETE-Q] Q-head initialized: 80 actions (5 speeds × 16 headings, stop=False)
+[10-06 13:53:00] INFO: [VALUE-HEAD] Value head initialized (SARL-style, 1-dim output)
+[10-06 13:53:00] INFO: [AUXILIARY-HEAD] Future position predictor initialized: 3 neighbors × 4 future steps
+[10-06 13:53:00] INFO: [ABLATION] Lookahead scoring mode: full
+[10-06 13:53:00] INFO: ================================================================================
+[10-06 13:53:00] INFO: [TEMPORAL-BACKBONE] MAMBA backbone configuration:
+[10-06 13:53:00] INFO:   d_model=256, n_layers=4, d_state=64
+[10-06 13:53:00] INFO:   d_conv=4, expand=2
+[10-06 13:53:00] INFO: [SEQ-FINAL] Sequence Length Configuration (SSOT):
+[10-06 13:53:00] INFO:   seq_len=24 (from train.config:[buffer])
+[10-06 13:53:00] INFO:   T=24 (should match policy.config:[temporal].T)
+[10-06 13:53:00] INFO: [ARCH-FINAL] Architecture: EnhancedSpatial(3-way:robot+human+relation) -> MAMBA -> DualHead
+[10-06 13:53:00] INFO: [DEVICE] cuda
+[10-06 13:53:00] INFO: ================================================================================
+[10-06 13:53:00] INFO: [POLICY-INIT] Main policy built: mamba_rl
+[10-06 13:53:00] INFO: [POLICY-INIT] Set multiagent_training=True (5-human crowd navigation)
+[10-06 13:53:00] INFO: [MAMBA-RL] Set env_dt=0.25
+[10-06 13:53:00] INFO: ✅ debug.md清理：奖励整形器已删除（未实际使用）
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [CONFIG-SUMMARY] Training Configuration (Runtime Values)
+[10-06 13:53:00] INFO:   Policy: mamba_rl
+[10-06 13:53:00] INFO:   Sequence: seq_len=24
+[10-06 13:53:00] INFO:   Training: batch_size=256, updates_per_ep=4
+[10-06 13:53:00] INFO:   Learning: lr=0.000010, gamma=0.99
+[10-06 13:53:00] INFO:   Episodes: 10000, device=cuda
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [SARL-TRAIN] goal prior=OFF
+[10-06 13:53:00] INFO: [CFG-LOCK] circle R=4 Nh=5 dt=0.25 T=50 succ_r=0.25 visible=False actions=80 eval_eps=0
+[10-06 13:53:00] INFO: [REWARD-PROFILE] Using profile=benchmark, time_limit=50.0s
+[10-06 13:53:00] INFO: [REWARD-BENCHMARK] {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:53:00] INFO: [CONFIG-FALLBACK] success=1.0, collision=-0.5, timeout=-0.5
+[10-06 13:53:00] INFO: [ACTIVE-REWARD] Using profile-based rewards: {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-06 13:53:00] INFO: ============================================================
+[10-06 13:53:00] INFO: [TRAJECTORY-LOG] Recording enabled: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-matched-v1/mamba-seed43/trajectory.log
+[10-06 13:53:00] INFO: [IL-AUTO] 自动检测训练数据...
+[10-06 13:53:00] INFO: [IL-AUTO]   离线数据集: crowd_nav/runs/bayes-matched-v1/orca-shared.pth (exists: True)
+[10-06 13:53:00] INFO: [IL-AUTO]   BC checkpoint: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-matched-v1/mamba-seed43/il_policy.pth (exists: False)
+[10-06 13:53:00] INFO: [IL-AUTO]   IL checkpoint: /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-matched-v1/mamba-seed43/ckpt_il.pt (exists: False)
+[10-06 13:53:00] INFO: [IL-AUTO] ✓ 检测到离线数据集: crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-06 13:53:00] INFO: [IL-AUTO]   将跳过IL在线收集，强制执行BC训练
+[10-06 13:53:00] INFO: [IQL-REPLAY] Initialized: capacity=200000, seq_len=24, with MC returns
+[10-06 13:53:00] INFO: [SARL-BUFFER] rl_buffer capacity=200000, n_step=1, per=False
+[10-06 13:53:00] INFO: [STATS-RESET] TrainingStats reset for RL phase
+[10-06 13:53:00] INFO: [IL-BC] Starting BC training phase...
+[10-06 13:53:00] INFO: [IL-CONFIG] success_target=5000 max_total_episodes=12000 prefill_batch_episodes=64 patience_batches=5
+[10-06 13:53:00] INFO: [IL-CONFIG] success_target=5000 (type=int)
+[10-06 13:53:00] INFO: [IL-CONFIG] max_total_episodes=12000 (type=int)
+[10-06 13:53:00] INFO: [IL-CONFIG] batch_collect_episodes=64 (type=int)
+[10-06 13:53:00] INFO: [IL-CONFIG] patience_batches=5 (type=int)
+[10-06 13:53:00] INFO: [IL-TEACHER] Applying ORCA teacher profile: neighbor_dist=6.0, max_neighbors=15, time_horizon=5.0, time_horizon_obst=5.0, safety_space=0.25
+[10-06 13:53:00] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:53:00] INFO: human number: 5
+[10-06 13:53:00] INFO: Not randomize human's radius and preferred speed
+[10-06 13:53:00] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:53:00] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:53:00] WARNING: [IL] Explorer has no replay buffer reference; IL data will stay in-flight only
+[10-06 13:53:00] INFO: [IL-START] Buffer size before IL: 0
+[10-06 13:53:00] INFO: [IL-CACHE] 发现离线数据集缓存: crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-06 13:53:02] INFO: [IL-CACHE] 数据集版本: matched-native-orca-v1
+[10-06 13:53:02] INFO: [IL-CACHE] 生成时间: unknown
+[10-06 13:53:02] INFO: [IL-CACHE] Seeds: []
+[10-06 13:53:02] INFO: [IL-CACHE] ORCA configs: []
+[10-06 13:53:02] INFO: [IL-CACHE] 总轨迹数: 5040
+[10-06 13:53:02] INFO: [IL-CACHE] 原始成功率: 99.62%
+[10-06 13:53:02] INFO: [IL-CACHE] 限制加载: 5040 episodes (max_il_prefill=50000)
+[10-06 13:53:02] INFO: [IL-CACHE] ✓ 成功加载 5037 条轨迹
+[10-06 13:53:02] INFO: [IL-CACHE] 失败轨迹保留 3 条用于RL预填充
+[10-06 13:53:02] INFO: [IL-CACHE] 跳过在线采集，直接使用离线数据集
+[10-06 13:53:02] INFO: [IL-COLLECT] Final success set: 5037 trajectories from 5056 attempts (success_ratio=99.62%)
+[10-06 13:53:02] INFO: [IL-COLLECT] Fail trajectories kept for RL prefill: 3
+[10-06 13:53:02] INFO: [IL-DATA] BC dataset uses success+collision: success=5037, collision=3
+[10-06 13:53:02] INFO: [IL-BUFFER] IL data reserved for BC pretraining only (5040 trajectories)
+[10-06 13:53:02] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-06 13:53:02] INFO: human number: 5
+[10-06 13:53:02] INFO: Not randomize human's radius and preferred speed
+[10-06 13:53:02] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-06 13:53:02] INFO: Square width: 10.0, circle radius: 4.0
+[10-06 13:53:02] INFO: [IL-TEACHER] Restored ORCA parameters for RL phase
+[10-06 13:53:02] INFO: [IL-BC] ✗ No BC checkpoint found at /home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-matched-v1/mamba-seed43/il_policy.pth
+[10-06 13:53:02] INFO: [IL-BC] Starting 50 epochs of BC training from scratch
+[10-06 13:53:02] INFO: [IL-BC] Training policy network - 2223337 params
+[10-06 13:53:02] INFO: [TRAINING-MODE] Switched to 'rl' mode
+[10-06 13:53:02] INFO: [IL-BC-MODE] Using RL mode for BC training (full 24-frame temporal modeling)
+[10-06 13:53:02] INFO: [IL-BC-MODE] This ensures BC learns sequence dependencies, not just single-frame actions
+[10-06 13:53:02] INFO: [IL-OBJECTIVE] mode=value_regression, lr=0.0001, gamma=0.99
+[10-06 13:53:02] INFO: [IL-BC] Data source: Provided trajectories
+[10-06 13:53:02] INFO: [IL-BC] Trajectories: 5040
+[10-06 13:53:07] INFO: [IL-ACTION-PROCESS] Total steps: 235980, n_actions=80
+[10-06 13:53:07] INFO: [IL-TOKEN-CONVERT] Converting 5663520 states to tokens in batches (batch_size=100000, please wait)...
+[10-06 13:59:52] INFO: [IL-TOKEN-CONVERT] Token conversion complete (5663520 states)
+[10-06 13:59:52] INFO: [IL-DATASET] IL dataset: 235980 sequences (seq_len=24, with MC returns)

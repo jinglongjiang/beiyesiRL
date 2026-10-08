@@ -1,0 +1,5557 @@
+{
+  "version": "saved-three-arm-analysis-v1",
+  "training_seed": 42,
+  "uncertainty_interval": "Exploratory paired scenario-stratified case bootstrap; not training-seed variability or fresh confirmation",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261007,
+  "cohorts": {
+    "3000": {
+      "gru": {
+        "csv_sha256": "27e0b93804aa6cce96f3e803d8234a59c1ed5606b8f8d42085b937b0099b6537",
+        "aggregate": {
+          "n": 3000,
+          "success": 2177,
+          "collision": 109,
+          "timeout": 714,
+          "contact_episodes": 93,
+          "contact_steps": 97,
+          "contact_duration_s": 24.25,
+          "discomfort_steps": 7593,
+          "total_steps": 196827,
+          "discomfort_step_fraction": 0.038577024493590815,
+          "min_clearance_m": -0.20834945888329648,
+          "success_time_s": 14.0343362425356,
+          "all_episode_duration_s": 16.40225,
+          "all_episode_path_m": 13.4643632642985,
+          "success_path_m": 11.215570379597645,
+          "episode_mean_clearance_m": 2.032860590100569,
+          "inference_step_weighted_ms": 31.58434058126167,
+          "mean_episode_inference_p95_ms": 37.552570942416786,
+          "mean_episode_stall_fraction": 0.26693842636804055,
+          "mean_episode_backtracking_fraction": 0.243172809483702,
+          "mean_episode_progress_efficiency": 0.601693921529328,
+          "mean_episode_turn_reversal_hz": 0.8818875693431013
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 492,
+            "collision": 8,
+            "timeout": 0,
+            "contact_episodes": 7,
+            "contact_steps": 8,
+            "contact_duration_s": 2.0,
+            "discomfort_steps": 272,
+            "total_steps": 22136,
+            "discomfort_step_fraction": 0.012287676183592338,
+            "min_clearance_m": -0.08359541206862409,
+            "success_time_s": 11.161077235772357,
+            "all_episode_duration_s": 11.068,
+            "all_episode_path_m": 8.699578306397695,
+            "success_path_m": 8.779448584988387,
+            "episode_mean_clearance_m": 1.1223519620613447,
+            "inference_step_weighted_ms": 27.60301312222339,
+            "mean_episode_inference_p95_ms": 37.53510523699224,
+            "mean_episode_stall_fraction": 0.01174358393759732,
+            "mean_episode_backtracking_fraction": 0.017080383848215135,
+            "mean_episode_progress_efficiency": 0.8889589493739808,
+            "mean_episode_turn_reversal_hz": 0.6049186289579845
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 362,
+            "collision": 13,
+            "timeout": 125,
+            "contact_episodes": 10,
+            "contact_steps": 10,
+            "contact_duration_s": 2.5,
+            "discomfort_steps": 1097,
+            "total_steps": 31684,
+            "discomfort_step_fraction": 0.034623153642216895,
+            "min_clearance_m": -0.1268624254296678,
+            "success_time_s": 13.072513812154696,
+            "all_episode_duration_s": 15.842,
+            "all_episode_path_m": 12.880774140718007,
+            "success_path_m": 10.211214715025509,
+            "episode_mean_clearance_m": 2.2679872413618556,
+            "inference_step_weighted_ms": 29.03918170845993,
+            "mean_episode_inference_p95_ms": 39.700297152996065,
+            "mean_episode_stall_fraction": 0.31383567234507304,
+            "mean_episode_backtracking_fraction": 0.2722034551981951,
+            "mean_episode_progress_efficiency": 0.5815355345381182,
+            "mean_episode_turn_reversal_hz": 0.8513790583070261
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 489,
+            "collision": 7,
+            "timeout": 4,
+            "contact_episodes": 6,
+            "contact_steps": 6,
+            "contact_duration_s": 1.5,
+            "discomfort_steps": 811,
+            "total_steps": 26935,
+            "discomfort_step_fraction": 0.030109522925561537,
+            "min_clearance_m": -0.15049418024863942,
+            "success_time_s": 13.443762781186095,
+            "all_episode_duration_s": 13.4675,
+            "all_episode_path_m": 10.276820295151706,
+            "success_path_m": 10.264812545768601,
+            "episode_mean_clearance_m": 0.8117812397131958,
+            "inference_step_weighted_ms": 29.779448485510546,
+            "mean_episode_inference_p95_ms": 41.83949331864714,
+            "mean_episode_stall_fraction": 0.06303999979606635,
+            "mean_episode_backtracking_fraction": 0.0645277152786264,
+            "mean_episode_progress_efficiency": 0.7625882427004328,
+            "mean_episode_turn_reversal_hz": 0.9064706775941098
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 141,
+            "collision": 21,
+            "timeout": 338,
+            "contact_episodes": 16,
+            "contact_steps": 18,
+            "contact_duration_s": 4.5,
+            "discomfort_steps": 1793,
+            "total_steps": 43616,
+            "discomfort_step_fraction": 0.04110876742479824,
+            "min_clearance_m": -0.08954172544070527,
+            "success_time_s": 15.99468085106383,
+            "all_episode_duration_s": 21.808,
+            "all_episode_path_m": 18.31053011453884,
+            "success_path_m": 12.125195700513116,
+            "episode_mean_clearance_m": 4.368659665597212,
+            "inference_step_weighted_ms": 35.4218835004975,
+            "mean_episode_inference_p95_ms": 38.73308267332614,
+            "mean_episode_stall_fraction": 0.6659864177508247,
+            "mean_episode_backtracking_fraction": 0.6071439528450482,
+            "mean_episode_progress_efficiency": 0.2221958825745026,
+            "mean_episode_turn_reversal_hz": 0.9899290467213246
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 426,
+            "collision": 18,
+            "timeout": 56,
+            "contact_episodes": 17,
+            "contact_steps": 17,
+            "contact_duration_s": 4.25,
+            "discomfort_steps": 1313,
+            "total_steps": 36818,
+            "discomfort_step_fraction": 0.03566190450323212,
+            "min_clearance_m": -0.08483927096303678,
+            "success_time_s": 17.926643192488264,
+            "all_episode_duration_s": 18.409,
+            "all_episode_path_m": 15.955097191859625,
+            "success_path_m": 15.653318913394257,
+            "episode_mean_clearance_m": 1.0939182522279223,
+            "inference_step_weighted_ms": 30.297709168362697,
+            "mean_episode_inference_p95_ms": 31.896775106340648,
+            "mean_episode_stall_fraction": 0.09901626678363039,
+            "mean_episode_backtracking_fraction": 0.09566878456984804,
+            "mean_episode_progress_efficiency": 0.7349936989336104,
+            "mean_episode_turn_reversal_hz": 0.899795821878085
+          },
+          "large_square": {
+            "n": 500,
+            "success": 267,
+            "collision": 42,
+            "timeout": 191,
+            "contact_episodes": 37,
+            "contact_steps": 38,
+            "contact_duration_s": 9.5,
+            "discomfort_steps": 2307,
+            "total_steps": 35638,
+            "discomfort_step_fraction": 0.06473427240585891,
+            "min_clearance_m": -0.20834945888329648,
+            "success_time_s": 14.469101123595506,
+            "all_episode_duration_s": 17.819,
+            "all_episode_path_m": 14.663379537125133,
+            "success_path_m": 11.246773408132599,
+            "episode_mean_clearance_m": 2.5324651796418847,
+            "inference_step_weighted_ms": 34.31679387137062,
+            "mean_episode_inference_p95_ms": 35.61067216619849,
+            "mean_episode_stall_fraction": 0.4480086175950515,
+            "mean_episode_backtracking_fraction": 0.4024125651622793,
+            "mean_episode_progress_efficiency": 0.4198912210553233,
+            "mean_episode_turn_reversal_hz": 1.038832182600077
+          }
+        }
+      },
+      "bayes_mean": {
+        "csv_sha256": "d332224f550616ba75e2f8358a6f6fbc30b014b5ff2eb605fbaa79098c912504",
+        "aggregate": {
+          "n": 3000,
+          "success": 2425,
+          "collision": 70,
+          "timeout": 505,
+          "contact_episodes": 63,
+          "contact_steps": 68,
+          "contact_duration_s": 17.0,
+          "discomfort_steps": 5169,
+          "total_steps": 198686,
+          "discomfort_step_fraction": 0.026015924624784838,
+          "min_clearance_m": -0.14741039965984176,
+          "success_time_s": 15.091340206185567,
+          "all_episode_duration_s": 16.557166666666667,
+          "all_episode_path_m": 13.197714924405654,
+          "success_path_m": 12.071697830555609,
+          "episode_mean_clearance_m": 1.3058423170403515,
+          "inference_step_weighted_ms": 31.901996124130395,
+          "mean_episode_inference_p95_ms": 32.62017696232845,
+          "mean_episode_stall_fraction": 0.18137361740670727,
+          "mean_episode_backtracking_fraction": 0.1576254558738347,
+          "mean_episode_progress_efficiency": 0.6259814347379655,
+          "mean_episode_turn_reversal_hz": 0.9478758359279924
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 497,
+            "collision": 0,
+            "timeout": 3,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 126,
+            "total_steps": 23981,
+            "discomfort_step_fraction": 0.005254159542971519,
+            "min_clearance_m": 0.03933857952502251,
+            "success_time_s": 11.91046277665996,
+            "all_episode_duration_s": 11.9905,
+            "all_episode_path_m": 9.259660323066413,
+            "success_path_m": 9.205543513588152,
+            "episode_mean_clearance_m": 1.1112622178989264,
+            "inference_step_weighted_ms": 26.268026047146186,
+            "mean_episode_inference_p95_ms": 27.43844568990171,
+            "mean_episode_stall_fraction": 0.025947669772448383,
+            "mean_episode_backtracking_fraction": 0.034489855365439887,
+            "mean_episode_progress_efficiency": 0.8488991647738892,
+            "mean_episode_turn_reversal_hz": 0.7289447068272498
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 417,
+            "collision": 3,
+            "timeout": 80,
+            "contact_episodes": 2,
+            "contact_steps": 3,
+            "contact_duration_s": 0.75,
+            "discomfort_steps": 751,
+            "total_steps": 32375,
+            "discomfort_step_fraction": 0.023196911196911196,
+            "min_clearance_m": -0.03668178582534165,
+            "success_time_s": 14.549160671462829,
+            "all_episode_duration_s": 16.1875,
+            "all_episode_path_m": 12.870457289638201,
+            "success_path_m": 11.486694029455888,
+            "episode_mean_clearance_m": 1.5447443838389132,
+            "inference_step_weighted_ms": 29.496325658555197,
+            "mean_episode_inference_p95_ms": 30.636701678484677,
+            "mean_episode_stall_fraction": 0.21199962799327435,
+            "mean_episode_backtracking_fraction": 0.1775883407215785,
+            "mean_episode_progress_efficiency": 0.6019739455023516,
+            "mean_episode_turn_reversal_hz": 0.859549084760846
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 482,
+            "collision": 0,
+            "timeout": 18,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 559,
+            "total_steps": 29844,
+            "discomfort_step_fraction": 0.018730733145690927,
+            "min_clearance_m": 0.013945066773286774,
+            "success_time_s": 14.53630705394191,
+            "all_episode_duration_s": 14.922,
+            "all_episode_path_m": 11.17612088485729,
+            "success_path_m": 10.87891046282662,
+            "episode_mean_clearance_m": 0.945261709674503,
+            "inference_step_weighted_ms": 30.00579127209777,
+            "mean_episode_inference_p95_ms": 31.222226399183274,
+            "mean_episode_stall_fraction": 0.10625570763132615,
+            "mean_episode_backtracking_fraction": 0.0884089800119138,
+            "mean_episode_progress_efficiency": 0.7056236237044884,
+            "mean_episode_turn_reversal_hz": 0.9552429820056291
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 243,
+            "collision": 25,
+            "timeout": 232,
+            "contact_episodes": 22,
+            "contact_steps": 25,
+            "contact_duration_s": 6.25,
+            "discomfort_steps": 1402,
+            "total_steps": 41220,
+            "discomfort_step_fraction": 0.03401261523532266,
+            "min_clearance_m": -0.10316909104527883,
+            "success_time_s": 17.814814814814813,
+            "all_episode_duration_s": 20.61,
+            "all_episode_path_m": 16.0832254438506,
+            "success_path_m": 13.754361271304985,
+            "episode_mean_clearance_m": 2.0208988501143916,
+            "inference_step_weighted_ms": 36.12691998989663,
+            "mean_episode_inference_p95_ms": 37.35709275379777,
+            "mean_episode_stall_fraction": 0.40716775575607866,
+            "mean_episode_backtracking_fraction": 0.3414405479153995,
+            "mean_episode_progress_efficiency": 0.35964001066126194,
+            "mean_episode_turn_reversal_hz": 1.1347418041217443
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 441,
+            "collision": 1,
+            "timeout": 58,
+            "contact_episodes": 1,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_steps": 505,
+            "total_steps": 36282,
+            "discomfort_step_fraction": 0.013918747588335815,
+            "min_clearance_m": -0.013336677033126576,
+            "success_time_s": 17.22562358276644,
+            "all_episode_duration_s": 18.141,
+            "all_episode_path_m": 16.2545921063933,
+            "success_path_m": 15.582969204705789,
+            "episode_mean_clearance_m": 1.261019117206729,
+            "inference_step_weighted_ms": 30.991961612667442,
+            "mean_episode_inference_p95_ms": 32.234302868694066,
+            "mean_episode_stall_fraction": 0.10322902646553367,
+            "mean_episode_backtracking_fraction": 0.1040042754689179,
+            "mean_episode_progress_efficiency": 0.7204461116554737,
+            "mean_episode_turn_reversal_hz": 0.8437502737501359
+          },
+          "large_square": {
+            "n": 500,
+            "success": 345,
+            "collision": 41,
+            "timeout": 114,
+            "contact_episodes": 38,
+            "contact_steps": 39,
+            "contact_duration_s": 9.75,
+            "discomfort_steps": 1826,
+            "total_steps": 34984,
+            "discomfort_step_fraction": 0.05219528927509719,
+            "min_clearance_m": -0.14741039965984176,
+            "success_time_s": 16.457971014492752,
+            "all_episode_duration_s": 17.492,
+            "all_episode_path_m": 13.542233498628109,
+            "success_path_m": 12.900656960220697,
+            "episode_mean_clearance_m": 0.9518676235086454,
+            "inference_step_weighted_ms": 35.573636466607866,
+            "mean_episode_inference_p95_ms": 36.83229238390923,
+            "mean_episode_stall_fraction": 0.23364191682158256,
+            "mean_episode_backtracking_fraction": 0.19982073575975862,
+            "mean_episode_progress_efficiency": 0.5193057521303283,
+            "mean_episode_turn_reversal_hz": 1.1650261641023494
+          }
+        }
+      },
+      "bayes": {
+        "csv_sha256": "bb65697f5cb7058703d8760819d07f8e6445ca059b70b1cc7b7c28de2956e5d8",
+        "aggregate": {
+          "n": 3000,
+          "success": 2577,
+          "collision": 85,
+          "timeout": 338,
+          "contact_episodes": 77,
+          "contact_steps": 79,
+          "contact_duration_s": 19.75,
+          "discomfort_steps": 5770,
+          "total_steps": 188049,
+          "discomfort_step_fraction": 0.0306834920685566,
+          "min_clearance_m": -0.1195111395995993,
+          "success_time_s": 14.772215754753589,
+          "all_episode_duration_s": 15.67075,
+          "all_episode_path_m": 13.243720797466166,
+          "success_path_m": 12.537304633988452,
+          "episode_mean_clearance_m": 1.3396775144209068,
+          "inference_step_weighted_ms": 31.82097611399085,
+          "mean_episode_inference_p95_ms": 32.77410948649049,
+          "mean_episode_stall_fraction": 0.15131173626358402,
+          "mean_episode_backtracking_fraction": 0.15067501417557824,
+          "mean_episode_progress_efficiency": 0.6370719691465648,
+          "mean_episode_turn_reversal_hz": 0.7739943222963126
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 478,
+            "collision": 0,
+            "timeout": 22,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 142,
+            "total_steps": 25150,
+            "discomfort_step_fraction": 0.005646123260437376,
+            "min_clearance_m": 0.004310818438913011,
+            "success_time_s": 11.99163179916318,
+            "all_episode_duration_s": 12.575,
+            "all_episode_path_m": 9.762588675911623,
+            "success_path_m": 9.393297024851517,
+            "episode_mean_clearance_m": 1.3745457867101045,
+            "inference_step_weighted_ms": 26.579934228396795,
+            "mean_episode_inference_p95_ms": 27.767809561640025,
+            "mean_episode_stall_fraction": 0.04264300345946601,
+            "mean_episode_backtracking_fraction": 0.04775562356915454,
+            "mean_episode_progress_efficiency": 0.816010946426011,
+            "mean_episode_turn_reversal_hz": 0.5930871029294763
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 444,
+            "collision": 12,
+            "timeout": 44,
+            "contact_episodes": 11,
+            "contact_steps": 12,
+            "contact_duration_s": 3.0,
+            "discomfort_steps": 808,
+            "total_steps": 29920,
+            "discomfort_step_fraction": 0.027005347593582887,
+            "min_clearance_m": -0.09843185558343182,
+            "success_time_s": 14.247747747747749,
+            "all_episode_duration_s": 14.96,
+            "all_episode_path_m": 12.421275274298313,
+            "success_path_m": 11.760673044124191,
+            "episode_mean_clearance_m": 1.4087794484860665,
+            "inference_step_weighted_ms": 29.69235873327934,
+            "mean_episode_inference_p95_ms": 30.880238236114383,
+            "mean_episode_stall_fraction": 0.15595084636229622,
+            "mean_episode_backtracking_fraction": 0.15897503998083923,
+            "mean_episode_progress_efficiency": 0.6327742363476366,
+            "mean_episode_turn_reversal_hz": 0.7850664789047607
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 468,
+            "collision": 5,
+            "timeout": 27,
+            "contact_episodes": 5,
+            "contact_steps": 5,
+            "contact_duration_s": 1.25,
+            "discomfort_steps": 486,
+            "total_steps": 29563,
+            "discomfort_step_fraction": 0.016439468254236714,
+            "min_clearance_m": -0.09798158979091653,
+            "success_time_s": 14.259081196581196,
+            "all_episode_duration_s": 14.7815,
+            "all_episode_path_m": 12.5506044842709,
+            "success_path_m": 12.038192372449478,
+            "episode_mean_clearance_m": 1.3781551680563238,
+            "inference_step_weighted_ms": 30.067488852434323,
+            "mean_episode_inference_p95_ms": 31.348236279934646,
+            "mean_episode_stall_fraction": 0.1194947312377193,
+            "mean_episode_backtracking_fraction": 0.13829998286156164,
+            "mean_episode_progress_efficiency": 0.6371386029299224,
+            "mean_episode_turn_reversal_hz": 0.6611332090303735
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 303,
+            "collision": 31,
+            "timeout": 166,
+            "contact_episodes": 29,
+            "contact_steps": 30,
+            "contact_duration_s": 7.5,
+            "discomfort_steps": 1679,
+            "total_steps": 37886,
+            "discomfort_step_fraction": 0.04431716201235285,
+            "min_clearance_m": -0.1195111395995993,
+            "success_time_s": 16.962871287128714,
+            "all_episode_duration_s": 18.943,
+            "all_episode_path_m": 15.844830893472938,
+            "success_path_m": 14.266316745848197,
+            "episode_mean_clearance_m": 1.6640692283350005,
+            "inference_step_weighted_ms": 35.932089824184054,
+            "mean_episode_inference_p95_ms": 37.20405167527497,
+            "mean_episode_stall_fraction": 0.3384718584654421,
+            "mean_episode_backtracking_fraction": 0.3122066250942326,
+            "mean_episode_progress_efficiency": 0.4056344116573059,
+            "mean_episode_turn_reversal_hz": 1.017273492095103
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 453,
+            "collision": 4,
+            "timeout": 43,
+            "contact_episodes": 4,
+            "contact_steps": 4,
+            "contact_duration_s": 1.0,
+            "discomfort_steps": 509,
+            "total_steps": 35268,
+            "discomfort_step_fraction": 0.014432346603153,
+            "min_clearance_m": -0.08031969252799909,
+            "success_time_s": 16.992825607064017,
+            "all_episode_duration_s": 17.634,
+            "all_episode_path_m": 16.463193154300882,
+            "success_path_m": 16.096979135589184,
+            "episode_mean_clearance_m": 1.3540364243666376,
+            "inference_step_weighted_ms": 31.208358238484667,
+            "mean_episode_inference_p95_ms": 32.47072487957776,
+            "mean_episode_stall_fraction": 0.07998902322542638,
+            "mean_episode_backtracking_fraction": 0.08400116598000866,
+            "mean_episode_progress_efficiency": 0.7192153577783494,
+            "mean_episode_turn_reversal_hz": 0.5997214476467132
+          },
+          "large_square": {
+            "n": 500,
+            "success": 431,
+            "collision": 33,
+            "timeout": 36,
+            "contact_episodes": 28,
+            "contact_steps": 28,
+            "contact_duration_s": 7.0,
+            "discomfort_steps": 2146,
+            "total_steps": 30262,
+            "discomfort_step_fraction": 0.07091401757980305,
+            "min_clearance_m": -0.10903003862199079,
+            "success_time_s": 15.079466357308585,
+            "all_episode_duration_s": 15.131,
+            "all_episode_path_m": 12.419832302542336,
+            "success_path_m": 12.40927999906685,
+            "episode_mean_clearance_m": 0.8584790305713068,
+            "inference_step_weighted_ms": 35.56134134351786,
+            "mean_episode_inference_p95_ms": 36.973596286401154,
+            "mean_episode_stall_fraction": 0.17132095483115406,
+            "mean_episode_backtracking_fraction": 0.1628116475676728,
+            "mean_episode_progress_efficiency": 0.6116582597401634,
+            "mean_episode_turn_reversal_hz": 0.9876842031714482
+          }
+        }
+      }
+    },
+    "8000": {
+      "gru": {
+        "csv_sha256": "04de0f92bfb362fd07d14eb4593d66e5e7410f5b0be889bf2aa9194cd716c030",
+        "aggregate": {
+          "n": 3000,
+          "success": 2478,
+          "collision": 74,
+          "timeout": 448,
+          "contact_episodes": 66,
+          "contact_steps": 73,
+          "contact_duration_s": 18.25,
+          "discomfort_steps": 7650,
+          "total_steps": 189699,
+          "discomfort_step_fraction": 0.040327044423006976,
+          "min_clearance_m": -0.20451450590591197,
+          "success_time_s": 14.411924939467312,
+          "all_episode_duration_s": 15.80825,
+          "all_episode_path_m": 12.773975549302845,
+          "success_path_m": 11.83162344130368,
+          "episode_mean_clearance_m": 1.0507388216565616,
+          "inference_step_weighted_ms": 31.565236728917565,
+          "mean_episode_inference_p95_ms": 38.32436404203375,
+          "mean_episode_stall_fraction": 0.18261680629159538,
+          "mean_episode_backtracking_fraction": 0.15225681340396324,
+          "mean_episode_progress_efficiency": 0.6437852511338792,
+          "mean_episode_turn_reversal_hz": 0.98454287395257
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 497,
+            "collision": 3,
+            "timeout": 0,
+            "contact_episodes": 2,
+            "contact_steps": 2,
+            "contact_duration_s": 0.5,
+            "discomfort_steps": 248,
+            "total_steps": 23001,
+            "discomfort_step_fraction": 0.010782139906960567,
+            "min_clearance_m": -0.014250625869506428,
+            "success_time_s": 11.540241448692154,
+            "all_episode_duration_s": 11.5005,
+            "all_episode_path_m": 9.167781419760667,
+            "success_path_m": 9.202830293545194,
+            "episode_mean_clearance_m": 1.0968878108747573,
+            "inference_step_weighted_ms": 29.116274024433615,
+            "mean_episode_inference_p95_ms": 40.18173350356519,
+            "mean_episode_stall_fraction": 0.026821241700363437,
+            "mean_episode_backtracking_fraction": 0.02915148378798212,
+            "mean_episode_progress_efficiency": 0.8527050113843433,
+            "mean_episode_turn_reversal_hz": 0.7168225036803421
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 442,
+            "collision": 9,
+            "timeout": 49,
+            "contact_episodes": 9,
+            "contact_steps": 9,
+            "contact_duration_s": 2.25,
+            "discomfort_steps": 1172,
+            "total_steps": 29070,
+            "discomfort_step_fraction": 0.040316477468180255,
+            "min_clearance_m": -0.09640874911550612,
+            "success_time_s": 13.585407239819004,
+            "all_episode_duration_s": 14.535,
+            "all_episode_path_m": 11.39562107888887,
+            "success_path_m": 10.849004651833877,
+            "episode_mean_clearance_m": 0.947175825050289,
+            "inference_step_weighted_ms": 29.97199337395106,
+            "mean_episode_inference_p95_ms": 42.647212248668076,
+            "mean_episode_stall_fraction": 0.17525268601060798,
+            "mean_episode_backtracking_fraction": 0.1306972793200935,
+            "mean_episode_progress_efficiency": 0.6739627399591049,
+            "mean_episode_turn_reversal_hz": 0.9582310914365509
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 492,
+            "collision": 7,
+            "timeout": 1,
+            "contact_episodes": 5,
+            "contact_steps": 6,
+            "contact_duration_s": 1.5,
+            "discomfort_steps": 815,
+            "total_steps": 27166,
+            "discomfort_step_fraction": 0.030000736214385627,
+            "min_clearance_m": -0.20451450590591197,
+            "success_time_s": 13.654979674796747,
+            "all_episode_duration_s": 13.583,
+            "all_episode_path_m": 10.895069655175572,
+            "success_path_m": 10.950521350531117,
+            "episode_mean_clearance_m": 0.7953153232322697,
+            "inference_step_weighted_ms": 30.602573222058833,
+            "mean_episode_inference_p95_ms": 44.24546025954187,
+            "mean_episode_stall_fraction": 0.07702016311818236,
+            "mean_episode_backtracking_fraction": 0.07693775773553543,
+            "mean_episode_progress_efficiency": 0.7183276434080897,
+            "mean_episode_turn_reversal_hz": 0.8814128537005301
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 245,
+            "collision": 18,
+            "timeout": 237,
+            "contact_episodes": 15,
+            "contact_steps": 17,
+            "contact_duration_s": 4.25,
+            "discomfort_steps": 2149,
+            "total_steps": 40613,
+            "discomfort_step_fraction": 0.05291409154704159,
+            "min_clearance_m": -0.19490856949231977,
+            "success_time_s": 16.680612244897958,
+            "all_episode_duration_s": 20.3065,
+            "all_episode_path_m": 15.59550319448734,
+            "success_path_m": 13.254798368901282,
+            "episode_mean_clearance_m": 1.2316468528000672,
+            "inference_step_weighted_ms": 34.72713907443159,
+            "mean_episode_inference_p95_ms": 36.71787761934102,
+            "mean_episode_stall_fraction": 0.417052526731205,
+            "mean_episode_backtracking_fraction": 0.3353331145563853,
+            "mean_episode_progress_efficiency": 0.366882871228124,
+            "mean_episode_turn_reversal_hz": 1.4325195781432927
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 447,
+            "collision": 8,
+            "timeout": 45,
+            "contact_episodes": 7,
+            "contact_steps": 10,
+            "contact_duration_s": 2.5,
+            "discomfort_steps": 1238,
+            "total_steps": 34990,
+            "discomfort_step_fraction": 0.035381537582166334,
+            "min_clearance_m": -0.17362851300698828,
+            "success_time_s": 16.861297539149888,
+            "all_episode_duration_s": 17.495,
+            "all_episode_path_m": 15.568585134874535,
+            "success_path_m": 15.231809563930167,
+            "episode_mean_clearance_m": 1.0172696100541785,
+            "inference_step_weighted_ms": 29.219782963995595,
+            "mean_episode_inference_p95_ms": 30.47122865244746,
+            "mean_episode_stall_fraction": 0.08141540347536241,
+            "mean_episode_backtracking_fraction": 0.07775684736261676,
+            "mean_episode_progress_efficiency": 0.759667140161097,
+            "mean_episode_turn_reversal_hz": 0.8164664553428809
+          },
+          "large_square": {
+            "n": 500,
+            "success": 355,
+            "collision": 29,
+            "timeout": 116,
+            "contact_episodes": 28,
+            "contact_steps": 29,
+            "contact_duration_s": 7.25,
+            "discomfort_steps": 2028,
+            "total_steps": 34859,
+            "discomfort_step_fraction": 0.05817722826242864,
+            "min_clearance_m": -0.07380399973437757,
+            "success_time_s": 15.86056338028169,
+            "all_episode_duration_s": 17.4295,
+            "all_episode_path_m": 14.021292812630083,
+            "success_path_m": 12.692944213039654,
+            "episode_mean_clearance_m": 1.2161375079278074,
+            "inference_step_weighted_ms": 33.93045029208043,
+            "mean_episode_inference_p95_ms": 35.6826719686389,
+            "mean_episode_stall_fraction": 0.3181388167138511,
+            "mean_episode_backtracking_fraction": 0.2636643976611663,
+            "mean_episode_progress_efficiency": 0.4911661006625159,
+            "mean_episode_turn_reversal_hz": 1.101804761411824
+          }
+        }
+      },
+      "bayes_mean": {
+        "csv_sha256": "661684a6ebe4dee6ec636c2f29cd76db407a747edad768b8259357a92de41d75",
+        "aggregate": {
+          "n": 3000,
+          "success": 2654,
+          "collision": 58,
+          "timeout": 288,
+          "contact_episodes": 52,
+          "contact_steps": 55,
+          "contact_duration_s": 13.75,
+          "discomfort_steps": 5466,
+          "total_steps": 186924,
+          "discomfort_step_fraction": 0.029241830904538742,
+          "min_clearance_m": -0.16146707630634388,
+          "success_time_s": 14.756876412961567,
+          "all_episode_duration_s": 15.577,
+          "all_episode_path_m": 11.936164732725931,
+          "success_path_m": 11.630801192869065,
+          "episode_mean_clearance_m": 0.9332167791532523,
+          "inference_step_weighted_ms": 31.80729623505941,
+          "mean_episode_inference_p95_ms": 32.60424605663866,
+          "mean_episode_stall_fraction": 0.12823694736274235,
+          "mean_episode_backtracking_fraction": 0.12118353102816784,
+          "mean_episode_progress_efficiency": 0.6917928171939802,
+          "mean_episode_turn_reversal_hz": 0.9817152702418043
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 498,
+            "collision": 1,
+            "timeout": 1,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 74,
+            "total_steps": 23064,
+            "discomfort_step_fraction": 0.0032084634061741242,
+            "min_clearance_m": 0.03098806065741,
+            "success_time_s": 11.526606425702811,
+            "all_episode_duration_s": 11.532,
+            "all_episode_path_m": 8.918917944940716,
+            "success_path_m": 8.91375164863728,
+            "episode_mean_clearance_m": 1.2780216846859862,
+            "inference_step_weighted_ms": 26.430957736638046,
+            "mean_episode_inference_p95_ms": 27.769407165423036,
+            "mean_episode_stall_fraction": 0.026264049787793852,
+            "mean_episode_backtracking_fraction": 0.045044382476124085,
+            "mean_episode_progress_efficiency": 0.8714273856667758,
+            "mean_episode_turn_reversal_hz": 0.6530970706270596
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 471,
+            "collision": 5,
+            "timeout": 24,
+            "contact_episodes": 5,
+            "contact_steps": 6,
+            "contact_duration_s": 1.5,
+            "discomfort_steps": 826,
+            "total_steps": 29266,
+            "discomfort_step_fraction": 0.028223877537073738,
+            "min_clearance_m": -0.09242199057336309,
+            "success_time_s": 14.231422505307856,
+            "all_episode_duration_s": 14.633,
+            "all_episode_path_m": 11.32331208665798,
+            "success_path_m": 11.124262087622519,
+            "episode_mean_clearance_m": 0.8948603534071939,
+            "inference_step_weighted_ms": 29.580367249436357,
+            "mean_episode_inference_p95_ms": 30.956697596237063,
+            "mean_episode_stall_fraction": 0.13317549113231597,
+            "mean_episode_backtracking_fraction": 0.12299145113794804,
+            "mean_episode_progress_efficiency": 0.6969078086714214,
+            "mean_episode_turn_reversal_hz": 0.8849919236979331
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 497,
+            "collision": 1,
+            "timeout": 2,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 397,
+            "total_steps": 27461,
+            "discomfort_step_fraction": 0.014456866101015986,
+            "min_clearance_m": 0.04032361899291803,
+            "success_time_s": 13.710764587525151,
+            "all_episode_duration_s": 13.7305,
+            "all_episode_path_m": 10.167515247209558,
+            "success_path_m": 10.163017279178087,
+            "episode_mean_clearance_m": 0.8854586315116812,
+            "inference_step_weighted_ms": 29.973629110663254,
+            "mean_episode_inference_p95_ms": 31.71604372523725,
+            "mean_episode_stall_fraction": 0.05799209368191942,
+            "mean_episode_backtracking_fraction": 0.06759801322807339,
+            "mean_episode_progress_efficiency": 0.7735206327429636,
+            "mean_episode_turn_reversal_hz": 0.8479978947292643
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 292,
+            "collision": 19,
+            "timeout": 189,
+            "contact_episodes": 17,
+            "contact_steps": 18,
+            "contact_duration_s": 4.5,
+            "discomfort_steps": 1719,
+            "total_steps": 39908,
+            "discomfort_step_fraction": 0.043074070361832216,
+            "min_clearance_m": -0.11458588093249739,
+            "success_time_s": 17.517123287671232,
+            "all_episode_duration_s": 19.954,
+            "all_episode_path_m": 13.77874966453054,
+            "success_path_m": 12.91071456193179,
+            "episode_mean_clearance_m": 0.7319448269308737,
+            "inference_step_weighted_ms": 35.60631212948188,
+            "mean_episode_inference_p95_ms": 36.76224221028387,
+            "mean_episode_stall_fraction": 0.29628968826544283,
+            "mean_episode_backtracking_fraction": 0.24905150901601253,
+            "mean_episode_progress_efficiency": 0.44729258037819863,
+            "mean_episode_turn_reversal_hz": 1.389641610523378
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 490,
+            "collision": 7,
+            "timeout": 3,
+            "contact_episodes": 7,
+            "contact_steps": 7,
+            "contact_duration_s": 1.75,
+            "discomfort_steps": 630,
+            "total_steps": 33432,
+            "discomfort_step_fraction": 0.018844221105527637,
+            "min_clearance_m": -0.16146707630634388,
+            "success_time_s": 16.778061224489797,
+            "all_episode_duration_s": 16.716,
+            "all_episode_path_m": 14.781668435822095,
+            "success_path_m": 14.855438081367835,
+            "episode_mean_clearance_m": 1.0467790512358124,
+            "inference_step_weighted_ms": 30.84612177924698,
+            "mean_episode_inference_p95_ms": 31.899900910630823,
+            "mean_episode_stall_fraction": 0.05550028220613334,
+            "mean_episode_backtracking_fraction": 0.06255736383806966,
+            "mean_episode_progress_efficiency": 0.7949798649611958,
+            "mean_episode_turn_reversal_hz": 0.827884178300501
+          },
+          "large_square": {
+            "n": 500,
+            "success": 406,
+            "collision": 25,
+            "timeout": 69,
+            "contact_episodes": 23,
+            "contact_steps": 24,
+            "contact_duration_s": 6.0,
+            "discomfort_steps": 1820,
+            "total_steps": 33793,
+            "discomfort_step_fraction": 0.053857307726452225,
+            "min_clearance_m": -0.12588197293001657,
+            "success_time_s": 16.18472906403941,
+            "all_episode_duration_s": 16.8965,
+            "all_episode_path_m": 12.646825017194708,
+            "success_path_m": 12.535610103145553,
+            "episode_mean_clearance_m": 0.7622361271479665,
+            "inference_step_weighted_ms": 35.359817935292796,
+            "mean_episode_inference_p95_ms": 36.521184732019904,
+            "mean_episode_stall_fraction": 0.20020007910284882,
+            "mean_episode_backtracking_fraction": 0.17985846647277937,
+            "mean_episode_progress_efficiency": 0.5666286307433264,
+            "mean_episode_turn_reversal_hz": 1.2866789435726897
+          }
+        }
+      },
+      "bayes": {
+        "csv_sha256": "c195ce345661db85662b82e9d146b1527fc0fbed91e14da2b0db1a753b71afba",
+        "aggregate": {
+          "n": 3000,
+          "success": 2536,
+          "collision": 39,
+          "timeout": 425,
+          "contact_episodes": 34,
+          "contact_steps": 36,
+          "contact_duration_s": 9.0,
+          "discomfort_steps": 3419,
+          "total_steps": 190665,
+          "discomfort_step_fraction": 0.017931974929850786,
+          "min_clearance_m": -0.16641003084240397,
+          "success_time_s": 14.495465299684543,
+          "all_episode_duration_s": 15.88875,
+          "all_episode_path_m": 13.314431893475604,
+          "success_path_m": 12.400282064628152,
+          "episode_mean_clearance_m": 1.2176865742862244,
+          "inference_step_weighted_ms": 32.188346307302,
+          "mean_episode_inference_p95_ms": 32.974499635833006,
+          "mean_episode_stall_fraction": 0.15397020204450193,
+          "mean_episode_backtracking_fraction": 0.15513617693618537,
+          "mean_episode_progress_efficiency": 0.626240505817665,
+          "mean_episode_turn_reversal_hz": 0.9044138717175346
+        },
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 500,
+            "collision": 0,
+            "timeout": 0,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 60,
+            "total_steps": 22494,
+            "discomfort_step_fraction": 0.002667377967457989,
+            "min_clearance_m": 0.08441656239530648,
+            "success_time_s": 11.247,
+            "all_episode_duration_s": 11.247,
+            "all_episode_path_m": 9.144007626670906,
+            "success_path_m": 9.144007626670906,
+            "episode_mean_clearance_m": 1.2839909016745286,
+            "inference_step_weighted_ms": 26.571544435104126,
+            "mean_episode_inference_p95_ms": 27.944360007718206,
+            "mean_episode_stall_fraction": 0.013680405285364974,
+            "mean_episode_backtracking_fraction": 0.0379579189476817,
+            "mean_episode_progress_efficiency": 0.8532307061157606,
+            "mean_episode_turn_reversal_hz": 0.6064352616286354
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 423,
+            "collision": 2,
+            "timeout": 75,
+            "contact_episodes": 2,
+            "contact_steps": 2,
+            "contact_duration_s": 0.5,
+            "discomfort_steps": 454,
+            "total_steps": 31525,
+            "discomfort_step_fraction": 0.014401268834258525,
+            "min_clearance_m": -0.005955467818206994,
+            "success_time_s": 14.13356973995272,
+            "all_episode_duration_s": 15.7625,
+            "all_episode_path_m": 13.407682998448658,
+            "success_path_m": 12.15560107972539,
+            "episode_mean_clearance_m": 1.3712346515282745,
+            "inference_step_weighted_ms": 29.912891076917596,
+            "mean_episode_inference_p95_ms": 31.425693159550427,
+            "mean_episode_stall_fraction": 0.18938282419940258,
+            "mean_episode_backtracking_fraction": 0.1881507996761272,
+            "mean_episode_progress_efficiency": 0.5736602793660588,
+            "mean_episode_turn_reversal_hz": 0.8493788024902731
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 490,
+            "collision": 2,
+            "timeout": 8,
+            "contact_episodes": 1,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_steps": 214,
+            "total_steps": 26832,
+            "discomfort_step_fraction": 0.007975551580202743,
+            "min_clearance_m": -0.008592776221694298,
+            "success_time_s": 13.25969387755102,
+            "all_episode_duration_s": 13.416,
+            "all_episode_path_m": 11.44287194864056,
+            "success_path_m": 11.373161118874103,
+            "episode_mean_clearance_m": 1.0468588111785029,
+            "inference_step_weighted_ms": 30.215386587562186,
+            "mean_episode_inference_p95_ms": 32.05227759629488,
+            "mean_episode_stall_fraction": 0.07728390536249033,
+            "mean_episode_backtracking_fraction": 0.11071819325439733,
+            "mean_episode_progress_efficiency": 0.6859376112101598,
+            "mean_episode_turn_reversal_hz": 0.7620316043704195
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 283,
+            "collision": 15,
+            "timeout": 202,
+            "contact_episodes": 14,
+            "contact_steps": 15,
+            "contact_duration_s": 3.75,
+            "discomfort_steps": 1226,
+            "total_steps": 39794,
+            "discomfort_step_fraction": 0.030808664622807458,
+            "min_clearance_m": -0.09434025510560129,
+            "success_time_s": 16.92226148409894,
+            "all_episode_duration_s": 19.897,
+            "all_episode_path_m": 16.00564880771151,
+            "success_path_m": 14.10246027521222,
+            "episode_mean_clearance_m": 1.2381217335175234,
+            "inference_step_weighted_ms": 36.04729155760698,
+            "mean_episode_inference_p95_ms": 37.06074514389038,
+            "mean_episode_stall_fraction": 0.34059460374237016,
+            "mean_episode_backtracking_fraction": 0.29862169133722966,
+            "mean_episode_progress_efficiency": 0.3801715534742087,
+            "mean_episode_turn_reversal_hz": 1.2885160190831553
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 446,
+            "collision": 0,
+            "timeout": 54,
+            "contact_episodes": 0,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_steps": 259,
+            "total_steps": 35325,
+            "discomfort_step_fraction": 0.007331917905166313,
+            "min_clearance_m": 0.0014480877861335895,
+            "success_time_s": 16.743834080717487,
+            "all_episode_duration_s": 17.6625,
+            "all_episode_path_m": 15.719553535315535,
+            "success_path_m": 15.417525330126947,
+            "episode_mean_clearance_m": 1.4177665737047331,
+            "inference_step_weighted_ms": 31.2828615295153,
+            "mean_episode_inference_p95_ms": 32.33997133001685,
+            "mean_episode_stall_fraction": 0.0828613125010984,
+            "mean_episode_backtracking_fraction": 0.09288079049022378,
+            "mean_episode_progress_efficiency": 0.7422956480212727,
+            "mean_episode_turn_reversal_hz": 0.7065781677011612
+          },
+          "large_square": {
+            "n": 500,
+            "success": 394,
+            "collision": 20,
+            "timeout": 86,
+            "contact_episodes": 17,
+            "contact_steps": 18,
+            "contact_duration_s": 4.5,
+            "discomfort_steps": 1206,
+            "total_steps": 34695,
+            "discomfort_step_fraction": 0.03476005188067445,
+            "min_clearance_m": -0.16641003084240397,
+            "success_time_s": 16.25507614213198,
+            "all_episode_duration_s": 17.3475,
+            "all_episode_path_m": 14.166826444066446,
+            "success_path_m": 13.434595793065256,
+            "episode_mean_clearance_m": 0.9481467741137828,
+            "inference_step_weighted_ms": 35.919140517874844,
+            "mean_episode_inference_p95_ms": 37.02395057752729,
+            "mean_episode_stall_fraction": 0.22001816117628514,
+            "mean_episode_backtracking_fraction": 0.20248766791145265,
+            "mean_episode_progress_efficiency": 0.5221472367185293,
+            "mean_episode_turn_reversal_hz": 1.213543375031563
+          }
+        }
+      }
+    }
+  },
+  "pairs": {
+    "3000": {
+      "bayes_mean_minus_gru": {
+        "difference_pp": {
+          "SR": 8.266666666666666,
+          "CR": -1.3,
+          "geometric_contact": -1.0
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            6.6000000000000005,
+            9.933333333333334
+          ],
+          "CR": [
+            -2.1,
+            -0.5
+          ],
+          "geometric_contact": [
+            -1.7666666666666668,
+            -0.23333333333333336
+          ]
+        },
+        "left_only_success": 474,
+        "right_only_success": 226,
+        "common_success": 1951,
+        "common_success_time_difference_s": 0.8139415684264479,
+        "common_success_path_difference_m": 0.6292421762779858,
+        "outcome_transition_left_to_right": {
+          "success->success": 1951,
+          "success->collision": 75,
+          "success->timeout": 399,
+          "collision->success": 22,
+          "collision->collision": 13,
+          "collision->timeout": 35,
+          "timeout->success": 204,
+          "timeout->collision": 21,
+          "timeout->timeout": 280
+        }
+      },
+      "bayes_minus_gru": {
+        "difference_pp": {
+          "SR": 13.333333333333334,
+          "CR": -0.8,
+          "geometric_contact": -0.5333333333333333
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            11.600000000000001,
+            15.033333333333331
+          ],
+          "CR": [
+            -1.6666666666666667,
+            0.06749999999998797
+          ],
+          "geometric_contact": [
+            -1.3333333333333335,
+            0.3
+          ]
+        },
+        "left_only_success": 594,
+        "right_only_success": 194,
+        "common_success": 1983,
+        "common_success_time_difference_s": 0.5229450327786183,
+        "common_success_path_difference_m": 1.1099226837261256,
+        "outcome_transition_left_to_right": {
+          "success->success": 1983,
+          "success->collision": 90,
+          "success->timeout": 504,
+          "collision->success": 33,
+          "collision->collision": 9,
+          "collision->timeout": 43,
+          "timeout->success": 161,
+          "timeout->collision": 10,
+          "timeout->timeout": 167
+        }
+      },
+      "bayes_minus_bayes_mean": {
+        "difference_pp": {
+          "SR": 5.066666666666666,
+          "CR": 0.5,
+          "geometric_contact": 0.46666666666666673
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            3.4333333333333336,
+            6.7
+          ],
+          "CR": [
+            -0.26666666666666666,
+            1.2333333333333334
+          ],
+          "geometric_contact": [
+            -0.2666666666666667,
+            1.2
+          ]
+        },
+        "left_only_success": 399,
+        "right_only_success": 247,
+        "common_success": 2178,
+        "common_success_time_difference_s": -0.3568640955004591,
+        "common_success_path_difference_m": 0.40770799863497736,
+        "outcome_transition_left_to_right": {
+          "success->success": 2178,
+          "success->collision": 50,
+          "success->timeout": 349,
+          "collision->success": 51,
+          "collision->collision": 10,
+          "collision->timeout": 24,
+          "timeout->success": 196,
+          "timeout->collision": 10,
+          "timeout->timeout": 132
+        }
+      }
+    },
+    "8000": {
+      "bayes_mean_minus_gru": {
+        "difference_pp": {
+          "SR": 5.866666666666666,
+          "CR": -0.5333333333333333,
+          "geometric_contact": -0.46666666666666673
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            4.433333333333334,
+            7.3
+          ],
+          "CR": [
+            -1.2,
+            0.13333333333333333
+          ],
+          "geometric_contact": [
+            -1.0999999999999999,
+            0.19999999999999996
+          ]
+        },
+        "left_only_success": 330,
+        "right_only_success": 154,
+        "common_success": 2324,
+        "common_success_time_difference_s": 0.13758605851979347,
+        "common_success_path_difference_m": -0.34035234143807974,
+        "outcome_transition_left_to_right": {
+          "success->success": 2324,
+          "success->collision": 46,
+          "success->timeout": 284,
+          "collision->success": 26,
+          "collision->collision": 15,
+          "collision->timeout": 17,
+          "timeout->success": 128,
+          "timeout->collision": 13,
+          "timeout->timeout": 147
+        }
+      },
+      "bayes_minus_gru": {
+        "difference_pp": {
+          "SR": 1.9333333333333333,
+          "CR": -1.1666666666666667,
+          "geometric_contact": -1.0666666666666667
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            0.3666666666666667,
+            3.4666666666666663
+          ],
+          "CR": [
+            -1.8333333333333333,
+            -0.5
+          ],
+          "geometric_contact": [
+            -1.7000000000000002,
+            -0.4333333333333333
+          ]
+        },
+        "left_only_success": 311,
+        "right_only_success": 253,
+        "common_success": 2225,
+        "common_success_time_difference_s": -0.015280898876404495,
+        "common_success_path_difference_m": 0.4977335374150696,
+        "outcome_transition_left_to_right": {
+          "success->success": 2225,
+          "success->collision": 53,
+          "success->timeout": 258,
+          "collision->success": 25,
+          "collision->collision": 3,
+          "collision->timeout": 11,
+          "timeout->success": 228,
+          "timeout->collision": 18,
+          "timeout->timeout": 179
+        }
+      },
+      "bayes_minus_bayes_mean": {
+        "difference_pp": {
+          "SR": -3.933333333333333,
+          "CR": -0.6333333333333333,
+          "geometric_contact": -0.6
+        },
+        "exploratory_case_bootstrap_95_ci_pp": {
+          "SR": [
+            -5.366666666666667,
+            -2.466666666666667
+          ],
+          "CR": [
+            -1.2333333333333334,
+            -0.03333333333333334
+          ],
+          "geometric_contact": [
+            -1.1666666666666667,
+            -0.033333333333333326
+          ]
+        },
+        "left_only_success": 196,
+        "right_only_success": 314,
+        "common_success": 2340,
+        "common_success_time_difference_s": -0.1622863247863248,
+        "common_success_path_difference_m": 0.8329294201080983,
+        "outcome_transition_left_to_right": {
+          "success->success": 2340,
+          "success->collision": 39,
+          "success->timeout": 157,
+          "collision->success": 24,
+          "collision->collision": 6,
+          "collision->timeout": 9,
+          "timeout->success": 290,
+          "timeout->collision": 13,
+          "timeout->timeout": 122
+        }
+      }
+    }
+  },
+  "stage_changes": {
+    "gru": {
+      "difference_pp": {
+        "SR": 10.033333333333333,
+        "CR": -1.1666666666666667,
+        "geometric_contact": -0.8999999999999999
+      },
+      "exploratory_case_bootstrap_95_ci_pp": {
+        "SR": [
+          8.533333333333333,
+          11.5
+        ],
+        "CR": [
+          -1.9333333333333331,
+          -0.4
+        ],
+        "geometric_contact": [
+          -1.633333333333333,
+          -0.16666666666666669
+        ]
+      },
+      "left_only_success": 432,
+      "right_only_success": 131,
+      "common_success": 2046,
+      "common_success_time_difference_s": 0.09567448680351906,
+      "common_success_path_difference_m": 0.3569123441153681,
+      "outcome_transition_left_to_right": {
+        "success->success": 2046,
+        "success->collision": 68,
+        "success->timeout": 364,
+        "collision->success": 32,
+        "collision->collision": 24,
+        "collision->timeout": 18,
+        "timeout->success": 99,
+        "timeout->collision": 17,
+        "timeout->timeout": 332
+      }
+    },
+    "bayes_mean": {
+      "difference_pp": {
+        "SR": 7.633333333333334,
+        "CR": -0.4,
+        "geometric_contact": -0.36666666666666664
+      },
+      "exploratory_case_bootstrap_95_ci_pp": {
+        "SR": [
+          6.066666666666666,
+          9.133333333333333
+        ],
+        "CR": [
+          -1.0333333333333334,
+          0.2333333333333334
+        ],
+        "geometric_contact": [
+          -1.0,
+          0.26666666666666666
+        ]
+      },
+      "left_only_success": 398,
+      "right_only_success": 169,
+      "common_success": 2256,
+      "common_success_time_difference_s": -0.5074246453900709,
+      "common_success_path_difference_m": -0.5486017453731933,
+      "outcome_transition_left_to_right": {
+        "success->success": 2256,
+        "success->collision": 45,
+        "success->timeout": 353,
+        "collision->success": 30,
+        "collision->collision": 14,
+        "collision->timeout": 14,
+        "timeout->success": 139,
+        "timeout->collision": 11,
+        "timeout->timeout": 138
+      }
+    },
+    "bayes": {
+      "difference_pp": {
+        "SR": -1.3666666666666667,
+        "CR": -1.5333333333333332,
+        "geometric_contact": -1.4333333333333333
+      },
+      "exploratory_case_bootstrap_95_ci_pp": {
+        "SR": [
+          -2.9333333333333336,
+          0.23333333333333348
+        ],
+        "CR": [
+          -2.1999999999999997,
+          -0.8666666666666666
+        ],
+        "geometric_contact": [
+          -2.066666666666667,
+          -0.7991666666666786
+        ]
+      },
+      "left_only_success": 273,
+      "right_only_success": 314,
+      "common_success": 2263,
+      "common_success_time_difference_s": -0.28954927087936366,
+      "common_success_path_difference_m": -0.14607478622770537,
+      "outcome_transition_left_to_right": {
+        "success->success": 2263,
+        "success->collision": 59,
+        "success->timeout": 214,
+        "collision->success": 28,
+        "collision->collision": 9,
+        "collision->timeout": 2,
+        "timeout->success": 286,
+        "timeout->collision": 17,
+        "timeout->timeout": 122
+      }
+    }
+  },
+  "training": {
+    "gru": {
+      "3000": {
+        "validation": [
+          {
+            "episode": 1000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 2000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 3000,
+            "sr": 0.96,
+            "cr": 0.0,
+            "tr": 0.04
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 25,
+            "mse": 0.0029
+          },
+          {
+            "episode": 50,
+            "mse": 0.0079
+          },
+          {
+            "episode": 75,
+            "mse": 0.007
+          },
+          {
+            "episode": 100,
+            "mse": 0.0044
+          },
+          {
+            "episode": 125,
+            "mse": 0.008
+          },
+          {
+            "episode": 150,
+            "mse": 0.0087
+          },
+          {
+            "episode": 175,
+            "mse": 0.0093
+          },
+          {
+            "episode": 200,
+            "mse": 0.0103
+          },
+          {
+            "episode": 225,
+            "mse": 0.0141
+          },
+          {
+            "episode": 250,
+            "mse": 0.0127
+          },
+          {
+            "episode": 275,
+            "mse": 0.0129
+          },
+          {
+            "episode": 300,
+            "mse": 0.0111
+          },
+          {
+            "episode": 325,
+            "mse": 0.0132
+          },
+          {
+            "episode": 350,
+            "mse": 0.0172
+          },
+          {
+            "episode": 375,
+            "mse": 0.0101
+          },
+          {
+            "episode": 400,
+            "mse": 0.0231
+          },
+          {
+            "episode": 425,
+            "mse": 0.0191
+          },
+          {
+            "episode": 450,
+            "mse": 0.0185
+          },
+          {
+            "episode": 475,
+            "mse": 0.0193
+          },
+          {
+            "episode": 500,
+            "mse": 0.0105
+          },
+          {
+            "episode": 525,
+            "mse": 0.021
+          },
+          {
+            "episode": 550,
+            "mse": 0.0158
+          },
+          {
+            "episode": 575,
+            "mse": 0.016
+          },
+          {
+            "episode": 600,
+            "mse": 0.0183
+          },
+          {
+            "episode": 625,
+            "mse": 0.0197
+          },
+          {
+            "episode": 650,
+            "mse": 0.01
+          },
+          {
+            "episode": 675,
+            "mse": 0.0238
+          },
+          {
+            "episode": 700,
+            "mse": 0.0117
+          },
+          {
+            "episode": 725,
+            "mse": 0.0216
+          },
+          {
+            "episode": 750,
+            "mse": 0.0126
+          },
+          {
+            "episode": 775,
+            "mse": 0.0274
+          },
+          {
+            "episode": 800,
+            "mse": 0.018
+          },
+          {
+            "episode": 825,
+            "mse": 0.0201
+          },
+          {
+            "episode": 850,
+            "mse": 0.0184
+          },
+          {
+            "episode": 875,
+            "mse": 0.0236
+          },
+          {
+            "episode": 900,
+            "mse": 0.0277
+          },
+          {
+            "episode": 925,
+            "mse": 0.022
+          },
+          {
+            "episode": 950,
+            "mse": 0.016
+          },
+          {
+            "episode": 975,
+            "mse": 0.0224
+          },
+          {
+            "episode": 1000,
+            "mse": 0.0215
+          },
+          {
+            "episode": 1025,
+            "mse": 0.0247
+          },
+          {
+            "episode": 1050,
+            "mse": 0.0235
+          },
+          {
+            "episode": 1075,
+            "mse": 0.026
+          },
+          {
+            "episode": 1100,
+            "mse": 0.0343
+          },
+          {
+            "episode": 1125,
+            "mse": 0.0193
+          },
+          {
+            "episode": 1150,
+            "mse": 0.0252
+          },
+          {
+            "episode": 1175,
+            "mse": 0.0301
+          },
+          {
+            "episode": 1200,
+            "mse": 0.0269
+          },
+          {
+            "episode": 1225,
+            "mse": 0.027
+          },
+          {
+            "episode": 1250,
+            "mse": 0.018
+          },
+          {
+            "episode": 1275,
+            "mse": 0.0206
+          },
+          {
+            "episode": 1300,
+            "mse": 0.0273
+          },
+          {
+            "episode": 1325,
+            "mse": 0.0298
+          },
+          {
+            "episode": 1350,
+            "mse": 0.0236
+          },
+          {
+            "episode": 1375,
+            "mse": 0.0226
+          },
+          {
+            "episode": 1400,
+            "mse": 0.0238
+          },
+          {
+            "episode": 1425,
+            "mse": 0.0298
+          },
+          {
+            "episode": 1450,
+            "mse": 0.0218
+          },
+          {
+            "episode": 1475,
+            "mse": 0.0237
+          },
+          {
+            "episode": 1500,
+            "mse": 0.0159
+          },
+          {
+            "episode": 1525,
+            "mse": 0.0218
+          },
+          {
+            "episode": 1550,
+            "mse": 0.0269
+          },
+          {
+            "episode": 1575,
+            "mse": 0.0339
+          },
+          {
+            "episode": 1600,
+            "mse": 0.0214
+          },
+          {
+            "episode": 1625,
+            "mse": 0.0234
+          },
+          {
+            "episode": 1650,
+            "mse": 0.0301
+          },
+          {
+            "episode": 1675,
+            "mse": 0.0262
+          },
+          {
+            "episode": 1700,
+            "mse": 0.0245
+          },
+          {
+            "episode": 1725,
+            "mse": 0.0245
+          },
+          {
+            "episode": 1750,
+            "mse": 0.0231
+          },
+          {
+            "episode": 1775,
+            "mse": 0.0236
+          },
+          {
+            "episode": 1800,
+            "mse": 0.0298
+          },
+          {
+            "episode": 1825,
+            "mse": 0.0239
+          },
+          {
+            "episode": 1850,
+            "mse": 0.0285
+          },
+          {
+            "episode": 1875,
+            "mse": 0.0231
+          },
+          {
+            "episode": 1900,
+            "mse": 0.0258
+          },
+          {
+            "episode": 1925,
+            "mse": 0.023
+          },
+          {
+            "episode": 1950,
+            "mse": 0.0204
+          },
+          {
+            "episode": 1975,
+            "mse": 0.0235
+          },
+          {
+            "episode": 2000,
+            "mse": 0.0306
+          },
+          {
+            "episode": 2025,
+            "mse": 0.0252
+          },
+          {
+            "episode": 2050,
+            "mse": 0.0269
+          },
+          {
+            "episode": 2075,
+            "mse": 0.023
+          },
+          {
+            "episode": 2100,
+            "mse": 0.0222
+          },
+          {
+            "episode": 2125,
+            "mse": 0.0235
+          },
+          {
+            "episode": 2150,
+            "mse": 0.0326
+          },
+          {
+            "episode": 2175,
+            "mse": 0.0218
+          },
+          {
+            "episode": 2200,
+            "mse": 0.0247
+          },
+          {
+            "episode": 2225,
+            "mse": 0.0233
+          },
+          {
+            "episode": 2250,
+            "mse": 0.0244
+          },
+          {
+            "episode": 2275,
+            "mse": 0.0306
+          },
+          {
+            "episode": 2300,
+            "mse": 0.0302
+          },
+          {
+            "episode": 2325,
+            "mse": 0.0219
+          },
+          {
+            "episode": 2350,
+            "mse": 0.0188
+          },
+          {
+            "episode": 2375,
+            "mse": 0.0252
+          },
+          {
+            "episode": 2400,
+            "mse": 0.0261
+          },
+          {
+            "episode": 2425,
+            "mse": 0.0223
+          },
+          {
+            "episode": 2450,
+            "mse": 0.0257
+          },
+          {
+            "episode": 2475,
+            "mse": 0.0241
+          },
+          {
+            "episode": 2500,
+            "mse": 0.0196
+          },
+          {
+            "episode": 2525,
+            "mse": 0.0264
+          },
+          {
+            "episode": 2550,
+            "mse": 0.0252
+          },
+          {
+            "episode": 2575,
+            "mse": 0.0259
+          },
+          {
+            "episode": 2600,
+            "mse": 0.0233
+          },
+          {
+            "episode": 2625,
+            "mse": 0.0254
+          },
+          {
+            "episode": 2650,
+            "mse": 0.0223
+          },
+          {
+            "episode": 2675,
+            "mse": 0.0285
+          },
+          {
+            "episode": 2700,
+            "mse": 0.0275
+          },
+          {
+            "episode": 2725,
+            "mse": 0.0248
+          },
+          {
+            "episode": 2750,
+            "mse": 0.0353
+          },
+          {
+            "episode": 2775,
+            "mse": 0.0216
+          },
+          {
+            "episode": 2800,
+            "mse": 0.0218
+          },
+          {
+            "episode": 2825,
+            "mse": 0.0282
+          },
+          {
+            "episode": 2850,
+            "mse": 0.0342
+          },
+          {
+            "episode": 2875,
+            "mse": 0.0192
+          },
+          {
+            "episode": 2900,
+            "mse": 0.024
+          },
+          {
+            "episode": 2925,
+            "mse": 0.0176
+          },
+          {
+            "episode": 2950,
+            "mse": 0.0247
+          },
+          {
+            "episode": 2975,
+            "mse": 0.0243
+          },
+          {
+            "episode": 3000,
+            "mse": 0.0196
+          }
+        ],
+        "il_value_losses": [
+          {
+            "epoch": 10,
+            "mse": 0.0025
+          },
+          {
+            "epoch": 20,
+            "mse": 0.0021
+          },
+          {
+            "epoch": 30,
+            "mse": 0.0017
+          },
+          {
+            "epoch": 40,
+            "mse": 0.0015
+          },
+          {
+            "epoch": 50,
+            "mse": 0.0014
+          }
+        ],
+        "best_il_epoch": [
+          "5"
+        ]
+      },
+      "8000": {
+        "validation": [
+          {
+            "episode": 4000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 5000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 6000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 7000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 8000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 3025,
+            "mse": 0.0044
+          },
+          {
+            "episode": 3050,
+            "mse": 0.0029
+          },
+          {
+            "episode": 3075,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3100,
+            "mse": 0.0025
+          },
+          {
+            "episode": 3125,
+            "mse": 0.0027
+          },
+          {
+            "episode": 3150,
+            "mse": 0.0025
+          },
+          {
+            "episode": 3175,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3200,
+            "mse": 0.0021
+          },
+          {
+            "episode": 3225,
+            "mse": 0.0035
+          },
+          {
+            "episode": 3250,
+            "mse": 0.0026
+          },
+          {
+            "episode": 3275,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3300,
+            "mse": 0.004
+          },
+          {
+            "episode": 3325,
+            "mse": 0.0076
+          },
+          {
+            "episode": 3350,
+            "mse": 0.0049
+          },
+          {
+            "episode": 3375,
+            "mse": 0.0039
+          },
+          {
+            "episode": 3400,
+            "mse": 0.0048
+          },
+          {
+            "episode": 3425,
+            "mse": 0.006
+          },
+          {
+            "episode": 3450,
+            "mse": 0.0025
+          },
+          {
+            "episode": 3475,
+            "mse": 0.0039
+          },
+          {
+            "episode": 3500,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3525,
+            "mse": 0.0049
+          },
+          {
+            "episode": 3550,
+            "mse": 0.0031
+          },
+          {
+            "episode": 3575,
+            "mse": 0.0059
+          },
+          {
+            "episode": 3600,
+            "mse": 0.0059
+          },
+          {
+            "episode": 3625,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3650,
+            "mse": 0.0039
+          },
+          {
+            "episode": 3675,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3700,
+            "mse": 0.002
+          },
+          {
+            "episode": 3725,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3750,
+            "mse": 0.0037
+          },
+          {
+            "episode": 3775,
+            "mse": 0.005
+          },
+          {
+            "episode": 3800,
+            "mse": 0.0046
+          },
+          {
+            "episode": 3825,
+            "mse": 0.0032
+          },
+          {
+            "episode": 3850,
+            "mse": 0.0038
+          },
+          {
+            "episode": 3875,
+            "mse": 0.0044
+          },
+          {
+            "episode": 3900,
+            "mse": 0.0047
+          },
+          {
+            "episode": 3925,
+            "mse": 0.006
+          },
+          {
+            "episode": 3950,
+            "mse": 0.0055
+          },
+          {
+            "episode": 3975,
+            "mse": 0.0026
+          },
+          {
+            "episode": 4000,
+            "mse": 0.0055
+          },
+          {
+            "episode": 4025,
+            "mse": 0.0024
+          },
+          {
+            "episode": 4050,
+            "mse": 0.0034
+          },
+          {
+            "episode": 4075,
+            "mse": 0.0045
+          },
+          {
+            "episode": 4100,
+            "mse": 0.0044
+          },
+          {
+            "episode": 4125,
+            "mse": 0.0047
+          },
+          {
+            "episode": 4150,
+            "mse": 0.0022
+          },
+          {
+            "episode": 4175,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4200,
+            "mse": 0.0063
+          },
+          {
+            "episode": 4225,
+            "mse": 0.0039
+          },
+          {
+            "episode": 4250,
+            "mse": 0.0032
+          },
+          {
+            "episode": 4275,
+            "mse": 0.0034
+          },
+          {
+            "episode": 4300,
+            "mse": 0.0057
+          },
+          {
+            "episode": 4325,
+            "mse": 0.0028
+          },
+          {
+            "episode": 4350,
+            "mse": 0.0051
+          },
+          {
+            "episode": 4375,
+            "mse": 0.0033
+          },
+          {
+            "episode": 4400,
+            "mse": 0.0056
+          },
+          {
+            "episode": 4425,
+            "mse": 0.0032
+          },
+          {
+            "episode": 4450,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4475,
+            "mse": 0.0052
+          },
+          {
+            "episode": 4500,
+            "mse": 0.0036
+          },
+          {
+            "episode": 4525,
+            "mse": 0.0144
+          },
+          {
+            "episode": 4550,
+            "mse": 0.0062
+          },
+          {
+            "episode": 4575,
+            "mse": 0.0042
+          },
+          {
+            "episode": 4600,
+            "mse": 0.0053
+          },
+          {
+            "episode": 4625,
+            "mse": 0.0093
+          },
+          {
+            "episode": 4650,
+            "mse": 0.0045
+          },
+          {
+            "episode": 4675,
+            "mse": 0.0071
+          },
+          {
+            "episode": 4700,
+            "mse": 0.0058
+          },
+          {
+            "episode": 4725,
+            "mse": 0.0075
+          },
+          {
+            "episode": 4750,
+            "mse": 0.0053
+          },
+          {
+            "episode": 4775,
+            "mse": 0.0064
+          },
+          {
+            "episode": 4800,
+            "mse": 0.0067
+          },
+          {
+            "episode": 4825,
+            "mse": 0.0065
+          },
+          {
+            "episode": 4850,
+            "mse": 0.0125
+          },
+          {
+            "episode": 4875,
+            "mse": 0.0072
+          },
+          {
+            "episode": 4900,
+            "mse": 0.0065
+          },
+          {
+            "episode": 4925,
+            "mse": 0.0067
+          },
+          {
+            "episode": 4950,
+            "mse": 0.0059
+          },
+          {
+            "episode": 4975,
+            "mse": 0.0071
+          },
+          {
+            "episode": 5000,
+            "mse": 0.0074
+          },
+          {
+            "episode": 5025,
+            "mse": 0.0068
+          },
+          {
+            "episode": 5050,
+            "mse": 0.0068
+          },
+          {
+            "episode": 5075,
+            "mse": 0.0033
+          },
+          {
+            "episode": 5100,
+            "mse": 0.0032
+          },
+          {
+            "episode": 5125,
+            "mse": 0.0064
+          },
+          {
+            "episode": 5150,
+            "mse": 0.0055
+          },
+          {
+            "episode": 5175,
+            "mse": 0.0052
+          },
+          {
+            "episode": 5200,
+            "mse": 0.0059
+          },
+          {
+            "episode": 5225,
+            "mse": 0.0085
+          },
+          {
+            "episode": 5250,
+            "mse": 0.0062
+          },
+          {
+            "episode": 5275,
+            "mse": 0.0077
+          },
+          {
+            "episode": 5300,
+            "mse": 0.0086
+          },
+          {
+            "episode": 5325,
+            "mse": 0.0095
+          },
+          {
+            "episode": 5350,
+            "mse": 0.0093
+          },
+          {
+            "episode": 5375,
+            "mse": 0.0078
+          },
+          {
+            "episode": 5400,
+            "mse": 0.0104
+          },
+          {
+            "episode": 5425,
+            "mse": 0.0098
+          },
+          {
+            "episode": 5450,
+            "mse": 0.0123
+          },
+          {
+            "episode": 5475,
+            "mse": 0.0105
+          },
+          {
+            "episode": 5500,
+            "mse": 0.012
+          },
+          {
+            "episode": 5525,
+            "mse": 0.0077
+          },
+          {
+            "episode": 5550,
+            "mse": 0.0098
+          },
+          {
+            "episode": 5575,
+            "mse": 0.0083
+          },
+          {
+            "episode": 5600,
+            "mse": 0.0036
+          },
+          {
+            "episode": 5625,
+            "mse": 0.0068
+          },
+          {
+            "episode": 5650,
+            "mse": 0.0077
+          },
+          {
+            "episode": 5675,
+            "mse": 0.0081
+          },
+          {
+            "episode": 5700,
+            "mse": 0.0091
+          },
+          {
+            "episode": 5725,
+            "mse": 0.0075
+          },
+          {
+            "episode": 5750,
+            "mse": 0.0077
+          },
+          {
+            "episode": 5775,
+            "mse": 0.0112
+          },
+          {
+            "episode": 5800,
+            "mse": 0.0082
+          },
+          {
+            "episode": 5825,
+            "mse": 0.0115
+          },
+          {
+            "episode": 5850,
+            "mse": 0.011
+          },
+          {
+            "episode": 5875,
+            "mse": 0.0073
+          },
+          {
+            "episode": 5900,
+            "mse": 0.0084
+          },
+          {
+            "episode": 5925,
+            "mse": 0.0105
+          },
+          {
+            "episode": 5950,
+            "mse": 0.0028
+          },
+          {
+            "episode": 5975,
+            "mse": 0.0095
+          },
+          {
+            "episode": 6000,
+            "mse": 0.0094
+          },
+          {
+            "episode": 6025,
+            "mse": 0.0105
+          },
+          {
+            "episode": 6050,
+            "mse": 0.01
+          },
+          {
+            "episode": 6075,
+            "mse": 0.007
+          },
+          {
+            "episode": 6100,
+            "mse": 0.0038
+          },
+          {
+            "episode": 6125,
+            "mse": 0.0041
+          },
+          {
+            "episode": 6150,
+            "mse": 0.0076
+          },
+          {
+            "episode": 6175,
+            "mse": 0.0087
+          },
+          {
+            "episode": 6200,
+            "mse": 0.0098
+          },
+          {
+            "episode": 6225,
+            "mse": 0.0085
+          },
+          {
+            "episode": 6250,
+            "mse": 0.004
+          },
+          {
+            "episode": 6275,
+            "mse": 0.0099
+          },
+          {
+            "episode": 6300,
+            "mse": 0.007
+          },
+          {
+            "episode": 6325,
+            "mse": 0.0076
+          },
+          {
+            "episode": 6350,
+            "mse": 0.0098
+          },
+          {
+            "episode": 6375,
+            "mse": 0.0091
+          },
+          {
+            "episode": 6400,
+            "mse": 0.0136
+          },
+          {
+            "episode": 6425,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6450,
+            "mse": 0.009
+          },
+          {
+            "episode": 6475,
+            "mse": 0.0076
+          },
+          {
+            "episode": 6500,
+            "mse": 0.0062
+          },
+          {
+            "episode": 6525,
+            "mse": 0.0075
+          },
+          {
+            "episode": 6550,
+            "mse": 0.0091
+          },
+          {
+            "episode": 6575,
+            "mse": 0.0047
+          },
+          {
+            "episode": 6600,
+            "mse": 0.0143
+          },
+          {
+            "episode": 6625,
+            "mse": 0.0068
+          },
+          {
+            "episode": 6650,
+            "mse": 0.0066
+          },
+          {
+            "episode": 6675,
+            "mse": 0.01
+          },
+          {
+            "episode": 6700,
+            "mse": 0.0093
+          },
+          {
+            "episode": 6725,
+            "mse": 0.0093
+          },
+          {
+            "episode": 6750,
+            "mse": 0.0049
+          },
+          {
+            "episode": 6775,
+            "mse": 0.0105
+          },
+          {
+            "episode": 6800,
+            "mse": 0.0086
+          },
+          {
+            "episode": 6825,
+            "mse": 0.0045
+          },
+          {
+            "episode": 6850,
+            "mse": 0.009
+          },
+          {
+            "episode": 6875,
+            "mse": 0.0077
+          },
+          {
+            "episode": 6900,
+            "mse": 0.0093
+          },
+          {
+            "episode": 6925,
+            "mse": 0.0055
+          },
+          {
+            "episode": 6950,
+            "mse": 0.0065
+          },
+          {
+            "episode": 6975,
+            "mse": 0.0117
+          },
+          {
+            "episode": 7000,
+            "mse": 0.0112
+          },
+          {
+            "episode": 7025,
+            "mse": 0.0074
+          },
+          {
+            "episode": 7050,
+            "mse": 0.0051
+          },
+          {
+            "episode": 7075,
+            "mse": 0.0084
+          },
+          {
+            "episode": 7100,
+            "mse": 0.0066
+          },
+          {
+            "episode": 7125,
+            "mse": 0.0107
+          },
+          {
+            "episode": 7150,
+            "mse": 0.0043
+          },
+          {
+            "episode": 7175,
+            "mse": 0.0025
+          },
+          {
+            "episode": 7200,
+            "mse": 0.0071
+          },
+          {
+            "episode": 7225,
+            "mse": 0.0105
+          },
+          {
+            "episode": 7250,
+            "mse": 0.0104
+          },
+          {
+            "episode": 7275,
+            "mse": 0.0062
+          },
+          {
+            "episode": 7300,
+            "mse": 0.0019
+          },
+          {
+            "episode": 7325,
+            "mse": 0.0066
+          },
+          {
+            "episode": 7350,
+            "mse": 0.0026
+          },
+          {
+            "episode": 7375,
+            "mse": 0.0097
+          },
+          {
+            "episode": 7400,
+            "mse": 0.0056
+          },
+          {
+            "episode": 7425,
+            "mse": 0.0016
+          },
+          {
+            "episode": 7450,
+            "mse": 0.0041
+          },
+          {
+            "episode": 7475,
+            "mse": 0.0072
+          },
+          {
+            "episode": 7500,
+            "mse": 0.0072
+          },
+          {
+            "episode": 7525,
+            "mse": 0.0145
+          },
+          {
+            "episode": 7550,
+            "mse": 0.0086
+          },
+          {
+            "episode": 7575,
+            "mse": 0.0077
+          },
+          {
+            "episode": 7600,
+            "mse": 0.0085
+          },
+          {
+            "episode": 7625,
+            "mse": 0.0042
+          },
+          {
+            "episode": 7650,
+            "mse": 0.0071
+          },
+          {
+            "episode": 7675,
+            "mse": 0.0032
+          },
+          {
+            "episode": 7700,
+            "mse": 0.0023
+          },
+          {
+            "episode": 7725,
+            "mse": 0.0045
+          },
+          {
+            "episode": 7750,
+            "mse": 0.0063
+          },
+          {
+            "episode": 7775,
+            "mse": 0.0063
+          },
+          {
+            "episode": 7800,
+            "mse": 0.0062
+          },
+          {
+            "episode": 7825,
+            "mse": 0.0057
+          },
+          {
+            "episode": 7850,
+            "mse": 0.0081
+          },
+          {
+            "episode": 7875,
+            "mse": 0.0068
+          },
+          {
+            "episode": 7900,
+            "mse": 0.0046
+          },
+          {
+            "episode": 7925,
+            "mse": 0.006
+          },
+          {
+            "episode": 7950,
+            "mse": 0.0032
+          },
+          {
+            "episode": 7975,
+            "mse": 0.0084
+          },
+          {
+            "episode": 8000,
+            "mse": 0.0083
+          }
+        ],
+        "il_value_losses": [],
+        "best_il_epoch": []
+      },
+      "additional_training": {
+        "arm": "gru",
+        "train_wall_seconds": 12781.951690912247,
+        "checkpoint_sha256": "f4ead5b02a7ba9b49afdd25abaed4bc5fa3e2063f75fab1041d628fe29918fa6",
+        "warm_continuation": true
+      },
+      "evaluation": 6574.6908230781555
+    },
+    "bayes_mean": {
+      "3000": {
+        "validation": [
+          {
+            "episode": 1000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 2000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 3000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 25,
+            "mse": 0.0024
+          },
+          {
+            "episode": 50,
+            "mse": 0.0036
+          },
+          {
+            "episode": 75,
+            "mse": 0.0021
+          },
+          {
+            "episode": 100,
+            "mse": 0.0031
+          },
+          {
+            "episode": 125,
+            "mse": 0.0046
+          },
+          {
+            "episode": 150,
+            "mse": 0.0054
+          },
+          {
+            "episode": 175,
+            "mse": 0.0094
+          },
+          {
+            "episode": 200,
+            "mse": 0.0065
+          },
+          {
+            "episode": 225,
+            "mse": 0.0038
+          },
+          {
+            "episode": 250,
+            "mse": 0.0066
+          },
+          {
+            "episode": 275,
+            "mse": 0.0075
+          },
+          {
+            "episode": 300,
+            "mse": 0.0114
+          },
+          {
+            "episode": 325,
+            "mse": 0.0088
+          },
+          {
+            "episode": 350,
+            "mse": 0.0069
+          },
+          {
+            "episode": 375,
+            "mse": 0.0112
+          },
+          {
+            "episode": 400,
+            "mse": 0.0058
+          },
+          {
+            "episode": 425,
+            "mse": 0.0147
+          },
+          {
+            "episode": 450,
+            "mse": 0.0164
+          },
+          {
+            "episode": 475,
+            "mse": 0.0118
+          },
+          {
+            "episode": 500,
+            "mse": 0.0126
+          },
+          {
+            "episode": 525,
+            "mse": 0.0138
+          },
+          {
+            "episode": 550,
+            "mse": 0.0173
+          },
+          {
+            "episode": 575,
+            "mse": 0.0118
+          },
+          {
+            "episode": 600,
+            "mse": 0.0124
+          },
+          {
+            "episode": 625,
+            "mse": 0.0158
+          },
+          {
+            "episode": 650,
+            "mse": 0.0121
+          },
+          {
+            "episode": 675,
+            "mse": 0.016
+          },
+          {
+            "episode": 700,
+            "mse": 0.0128
+          },
+          {
+            "episode": 725,
+            "mse": 0.02
+          },
+          {
+            "episode": 750,
+            "mse": 0.0112
+          },
+          {
+            "episode": 775,
+            "mse": 0.0146
+          },
+          {
+            "episode": 800,
+            "mse": 0.0269
+          },
+          {
+            "episode": 825,
+            "mse": 0.0167
+          },
+          {
+            "episode": 850,
+            "mse": 0.0217
+          },
+          {
+            "episode": 875,
+            "mse": 0.0175
+          },
+          {
+            "episode": 900,
+            "mse": 0.0152
+          },
+          {
+            "episode": 925,
+            "mse": 0.0232
+          },
+          {
+            "episode": 950,
+            "mse": 0.0199
+          },
+          {
+            "episode": 975,
+            "mse": 0.021
+          },
+          {
+            "episode": 1000,
+            "mse": 0.0165
+          },
+          {
+            "episode": 1025,
+            "mse": 0.021
+          },
+          {
+            "episode": 1050,
+            "mse": 0.0168
+          },
+          {
+            "episode": 1075,
+            "mse": 0.0147
+          },
+          {
+            "episode": 1100,
+            "mse": 0.0173
+          },
+          {
+            "episode": 1125,
+            "mse": 0.0187
+          },
+          {
+            "episode": 1150,
+            "mse": 0.0182
+          },
+          {
+            "episode": 1175,
+            "mse": 0.0164
+          },
+          {
+            "episode": 1200,
+            "mse": 0.0242
+          },
+          {
+            "episode": 1225,
+            "mse": 0.0131
+          },
+          {
+            "episode": 1250,
+            "mse": 0.0153
+          },
+          {
+            "episode": 1275,
+            "mse": 0.0212
+          },
+          {
+            "episode": 1300,
+            "mse": 0.0165
+          },
+          {
+            "episode": 1325,
+            "mse": 0.0259
+          },
+          {
+            "episode": 1350,
+            "mse": 0.0205
+          },
+          {
+            "episode": 1375,
+            "mse": 0.0213
+          },
+          {
+            "episode": 1400,
+            "mse": 0.0201
+          },
+          {
+            "episode": 1425,
+            "mse": 0.0212
+          },
+          {
+            "episode": 1450,
+            "mse": 0.0138
+          },
+          {
+            "episode": 1475,
+            "mse": 0.0224
+          },
+          {
+            "episode": 1500,
+            "mse": 0.0255
+          },
+          {
+            "episode": 1525,
+            "mse": 0.0171
+          },
+          {
+            "episode": 1550,
+            "mse": 0.015
+          },
+          {
+            "episode": 1575,
+            "mse": 0.0176
+          },
+          {
+            "episode": 1600,
+            "mse": 0.0181
+          },
+          {
+            "episode": 1625,
+            "mse": 0.0191
+          },
+          {
+            "episode": 1650,
+            "mse": 0.018
+          },
+          {
+            "episode": 1675,
+            "mse": 0.0171
+          },
+          {
+            "episode": 1700,
+            "mse": 0.0265
+          },
+          {
+            "episode": 1725,
+            "mse": 0.0231
+          },
+          {
+            "episode": 1750,
+            "mse": 0.0244
+          },
+          {
+            "episode": 1775,
+            "mse": 0.0235
+          },
+          {
+            "episode": 1800,
+            "mse": 0.0227
+          },
+          {
+            "episode": 1825,
+            "mse": 0.0209
+          },
+          {
+            "episode": 1850,
+            "mse": 0.0235
+          },
+          {
+            "episode": 1875,
+            "mse": 0.0184
+          },
+          {
+            "episode": 1900,
+            "mse": 0.0277
+          },
+          {
+            "episode": 1925,
+            "mse": 0.0191
+          },
+          {
+            "episode": 1950,
+            "mse": 0.0195
+          },
+          {
+            "episode": 1975,
+            "mse": 0.0214
+          },
+          {
+            "episode": 2000,
+            "mse": 0.0173
+          },
+          {
+            "episode": 2025,
+            "mse": 0.0242
+          },
+          {
+            "episode": 2050,
+            "mse": 0.0189
+          },
+          {
+            "episode": 2075,
+            "mse": 0.0203
+          },
+          {
+            "episode": 2100,
+            "mse": 0.023
+          },
+          {
+            "episode": 2125,
+            "mse": 0.0191
+          },
+          {
+            "episode": 2150,
+            "mse": 0.0235
+          },
+          {
+            "episode": 2175,
+            "mse": 0.0217
+          },
+          {
+            "episode": 2200,
+            "mse": 0.0211
+          },
+          {
+            "episode": 2225,
+            "mse": 0.0194
+          },
+          {
+            "episode": 2250,
+            "mse": 0.0269
+          },
+          {
+            "episode": 2275,
+            "mse": 0.0222
+          },
+          {
+            "episode": 2300,
+            "mse": 0.0243
+          },
+          {
+            "episode": 2325,
+            "mse": 0.0269
+          },
+          {
+            "episode": 2350,
+            "mse": 0.0165
+          },
+          {
+            "episode": 2375,
+            "mse": 0.0244
+          },
+          {
+            "episode": 2400,
+            "mse": 0.0128
+          },
+          {
+            "episode": 2425,
+            "mse": 0.0214
+          },
+          {
+            "episode": 2450,
+            "mse": 0.0226
+          },
+          {
+            "episode": 2475,
+            "mse": 0.0219
+          },
+          {
+            "episode": 2500,
+            "mse": 0.0218
+          },
+          {
+            "episode": 2525,
+            "mse": 0.0178
+          },
+          {
+            "episode": 2550,
+            "mse": 0.017
+          },
+          {
+            "episode": 2575,
+            "mse": 0.0191
+          },
+          {
+            "episode": 2600,
+            "mse": 0.0216
+          },
+          {
+            "episode": 2625,
+            "mse": 0.016
+          },
+          {
+            "episode": 2650,
+            "mse": 0.0179
+          },
+          {
+            "episode": 2675,
+            "mse": 0.0187
+          },
+          {
+            "episode": 2700,
+            "mse": 0.0236
+          },
+          {
+            "episode": 2725,
+            "mse": 0.0272
+          },
+          {
+            "episode": 2750,
+            "mse": 0.0258
+          },
+          {
+            "episode": 2775,
+            "mse": 0.0226
+          },
+          {
+            "episode": 2800,
+            "mse": 0.0169
+          },
+          {
+            "episode": 2825,
+            "mse": 0.0245
+          },
+          {
+            "episode": 2850,
+            "mse": 0.0216
+          },
+          {
+            "episode": 2875,
+            "mse": 0.0209
+          },
+          {
+            "episode": 2900,
+            "mse": 0.0249
+          },
+          {
+            "episode": 2925,
+            "mse": 0.0224
+          },
+          {
+            "episode": 2950,
+            "mse": 0.0175
+          },
+          {
+            "episode": 2975,
+            "mse": 0.0224
+          },
+          {
+            "episode": 3000,
+            "mse": 0.0166
+          }
+        ],
+        "il_value_losses": [
+          {
+            "epoch": 10,
+            "mse": 0.0025
+          },
+          {
+            "epoch": 20,
+            "mse": 0.0021
+          },
+          {
+            "epoch": 30,
+            "mse": 0.0018
+          },
+          {
+            "epoch": 40,
+            "mse": 0.0017
+          },
+          {
+            "epoch": 50,
+            "mse": 0.0017
+          }
+        ],
+        "best_il_epoch": [
+          "35"
+        ]
+      },
+      "8000": {
+        "validation": [
+          {
+            "episode": 4000,
+            "sr": 0.98,
+            "cr": 0.02,
+            "tr": 0.0
+          },
+          {
+            "episode": 5000,
+            "sr": 0.98,
+            "cr": 0.02,
+            "tr": 0.0
+          },
+          {
+            "episode": 6000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 7000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 8000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 3025,
+            "mse": 0.0031
+          },
+          {
+            "episode": 3050,
+            "mse": 0.0027
+          },
+          {
+            "episode": 3075,
+            "mse": 0.0028
+          },
+          {
+            "episode": 3100,
+            "mse": 0.0027
+          },
+          {
+            "episode": 3125,
+            "mse": 0.0036
+          },
+          {
+            "episode": 3150,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3175,
+            "mse": 0.0025
+          },
+          {
+            "episode": 3200,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3225,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3250,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3275,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3300,
+            "mse": 0.0034
+          },
+          {
+            "episode": 3325,
+            "mse": 0.0019
+          },
+          {
+            "episode": 3350,
+            "mse": 0.0021
+          },
+          {
+            "episode": 3375,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3400,
+            "mse": 0.0026
+          },
+          {
+            "episode": 3425,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3450,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3475,
+            "mse": 0.0034
+          },
+          {
+            "episode": 3500,
+            "mse": 0.0019
+          },
+          {
+            "episode": 3525,
+            "mse": 0.0033
+          },
+          {
+            "episode": 3550,
+            "mse": 0.0021
+          },
+          {
+            "episode": 3575,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3600,
+            "mse": 0.0032
+          },
+          {
+            "episode": 3625,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3650,
+            "mse": 0.004
+          },
+          {
+            "episode": 3675,
+            "mse": 0.0021
+          },
+          {
+            "episode": 3700,
+            "mse": 0.0059
+          },
+          {
+            "episode": 3725,
+            "mse": 0.0045
+          },
+          {
+            "episode": 3750,
+            "mse": 0.0038
+          },
+          {
+            "episode": 3775,
+            "mse": 0.0056
+          },
+          {
+            "episode": 3800,
+            "mse": 0.0021
+          },
+          {
+            "episode": 3825,
+            "mse": 0.0033
+          },
+          {
+            "episode": 3850,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3875,
+            "mse": 0.0033
+          },
+          {
+            "episode": 3900,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3925,
+            "mse": 0.0032
+          },
+          {
+            "episode": 3950,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3975,
+            "mse": 0.0057
+          },
+          {
+            "episode": 4000,
+            "mse": 0.0038
+          },
+          {
+            "episode": 4025,
+            "mse": 0.0035
+          },
+          {
+            "episode": 4050,
+            "mse": 0.0031
+          },
+          {
+            "episode": 4075,
+            "mse": 0.0031
+          },
+          {
+            "episode": 4100,
+            "mse": 0.0051
+          },
+          {
+            "episode": 4125,
+            "mse": 0.004
+          },
+          {
+            "episode": 4150,
+            "mse": 0.0053
+          },
+          {
+            "episode": 4175,
+            "mse": 0.0057
+          },
+          {
+            "episode": 4200,
+            "mse": 0.0038
+          },
+          {
+            "episode": 4225,
+            "mse": 0.0055
+          },
+          {
+            "episode": 4250,
+            "mse": 0.0054
+          },
+          {
+            "episode": 4275,
+            "mse": 0.0064
+          },
+          {
+            "episode": 4300,
+            "mse": 0.0039
+          },
+          {
+            "episode": 4325,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4350,
+            "mse": 0.0044
+          },
+          {
+            "episode": 4375,
+            "mse": 0.005
+          },
+          {
+            "episode": 4400,
+            "mse": 0.0061
+          },
+          {
+            "episode": 4425,
+            "mse": 0.007
+          },
+          {
+            "episode": 4450,
+            "mse": 0.0045
+          },
+          {
+            "episode": 4475,
+            "mse": 0.0087
+          },
+          {
+            "episode": 4500,
+            "mse": 0.0079
+          },
+          {
+            "episode": 4525,
+            "mse": 0.0056
+          },
+          {
+            "episode": 4550,
+            "mse": 0.0071
+          },
+          {
+            "episode": 4575,
+            "mse": 0.0091
+          },
+          {
+            "episode": 4600,
+            "mse": 0.0062
+          },
+          {
+            "episode": 4625,
+            "mse": 0.0054
+          },
+          {
+            "episode": 4650,
+            "mse": 0.0018
+          },
+          {
+            "episode": 4675,
+            "mse": 0.0053
+          },
+          {
+            "episode": 4700,
+            "mse": 0.0042
+          },
+          {
+            "episode": 4725,
+            "mse": 0.0033
+          },
+          {
+            "episode": 4750,
+            "mse": 0.005
+          },
+          {
+            "episode": 4775,
+            "mse": 0.0052
+          },
+          {
+            "episode": 4800,
+            "mse": 0.002
+          },
+          {
+            "episode": 4825,
+            "mse": 0.0042
+          },
+          {
+            "episode": 4850,
+            "mse": 0.0074
+          },
+          {
+            "episode": 4875,
+            "mse": 0.0028
+          },
+          {
+            "episode": 4900,
+            "mse": 0.0059
+          },
+          {
+            "episode": 4925,
+            "mse": 0.0066
+          },
+          {
+            "episode": 4950,
+            "mse": 0.0087
+          },
+          {
+            "episode": 4975,
+            "mse": 0.0088
+          },
+          {
+            "episode": 5000,
+            "mse": 0.0054
+          },
+          {
+            "episode": 5025,
+            "mse": 0.0043
+          },
+          {
+            "episode": 5050,
+            "mse": 0.0065
+          },
+          {
+            "episode": 5075,
+            "mse": 0.0058
+          },
+          {
+            "episode": 5100,
+            "mse": 0.0066
+          },
+          {
+            "episode": 5125,
+            "mse": 0.0051
+          },
+          {
+            "episode": 5150,
+            "mse": 0.0059
+          },
+          {
+            "episode": 5175,
+            "mse": 0.0079
+          },
+          {
+            "episode": 5200,
+            "mse": 0.0054
+          },
+          {
+            "episode": 5225,
+            "mse": 0.0062
+          },
+          {
+            "episode": 5250,
+            "mse": 0.006
+          },
+          {
+            "episode": 5275,
+            "mse": 0.0092
+          },
+          {
+            "episode": 5300,
+            "mse": 0.008
+          },
+          {
+            "episode": 5325,
+            "mse": 0.0102
+          },
+          {
+            "episode": 5350,
+            "mse": 0.0149
+          },
+          {
+            "episode": 5375,
+            "mse": 0.0156
+          },
+          {
+            "episode": 5400,
+            "mse": 0.0039
+          },
+          {
+            "episode": 5425,
+            "mse": 0.0051
+          },
+          {
+            "episode": 5450,
+            "mse": 0.0074
+          },
+          {
+            "episode": 5475,
+            "mse": 0.0109
+          },
+          {
+            "episode": 5500,
+            "mse": 0.0092
+          },
+          {
+            "episode": 5525,
+            "mse": 0.0054
+          },
+          {
+            "episode": 5550,
+            "mse": 0.0109
+          },
+          {
+            "episode": 5575,
+            "mse": 0.0093
+          },
+          {
+            "episode": 5600,
+            "mse": 0.0064
+          },
+          {
+            "episode": 5625,
+            "mse": 0.0069
+          },
+          {
+            "episode": 5650,
+            "mse": 0.0079
+          },
+          {
+            "episode": 5675,
+            "mse": 0.0064
+          },
+          {
+            "episode": 5700,
+            "mse": 0.0061
+          },
+          {
+            "episode": 5725,
+            "mse": 0.0108
+          },
+          {
+            "episode": 5750,
+            "mse": 0.0136
+          },
+          {
+            "episode": 5775,
+            "mse": 0.0094
+          },
+          {
+            "episode": 5800,
+            "mse": 0.0174
+          },
+          {
+            "episode": 5825,
+            "mse": 0.0061
+          },
+          {
+            "episode": 5850,
+            "mse": 0.0097
+          },
+          {
+            "episode": 5875,
+            "mse": 0.0123
+          },
+          {
+            "episode": 5900,
+            "mse": 0.0029
+          },
+          {
+            "episode": 5925,
+            "mse": 0.0113
+          },
+          {
+            "episode": 5950,
+            "mse": 0.0093
+          },
+          {
+            "episode": 5975,
+            "mse": 0.004
+          },
+          {
+            "episode": 6000,
+            "mse": 0.0049
+          },
+          {
+            "episode": 6025,
+            "mse": 0.0136
+          },
+          {
+            "episode": 6050,
+            "mse": 0.0107
+          },
+          {
+            "episode": 6075,
+            "mse": 0.0064
+          },
+          {
+            "episode": 6100,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6125,
+            "mse": 0.0065
+          },
+          {
+            "episode": 6150,
+            "mse": 0.0105
+          },
+          {
+            "episode": 6175,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6200,
+            "mse": 0.0107
+          },
+          {
+            "episode": 6225,
+            "mse": 0.0081
+          },
+          {
+            "episode": 6250,
+            "mse": 0.0103
+          },
+          {
+            "episode": 6275,
+            "mse": 0.0045
+          },
+          {
+            "episode": 6300,
+            "mse": 0.0135
+          },
+          {
+            "episode": 6325,
+            "mse": 0.006
+          },
+          {
+            "episode": 6350,
+            "mse": 0.007
+          },
+          {
+            "episode": 6375,
+            "mse": 0.0143
+          },
+          {
+            "episode": 6400,
+            "mse": 0.0074
+          },
+          {
+            "episode": 6425,
+            "mse": 0.007
+          },
+          {
+            "episode": 6450,
+            "mse": 0.0165
+          },
+          {
+            "episode": 6475,
+            "mse": 0.0075
+          },
+          {
+            "episode": 6500,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6525,
+            "mse": 0.0065
+          },
+          {
+            "episode": 6550,
+            "mse": 0.0115
+          },
+          {
+            "episode": 6575,
+            "mse": 0.009
+          },
+          {
+            "episode": 6600,
+            "mse": 0.0109
+          },
+          {
+            "episode": 6625,
+            "mse": 0.0044
+          },
+          {
+            "episode": 6650,
+            "mse": 0.0071
+          },
+          {
+            "episode": 6675,
+            "mse": 0.0053
+          },
+          {
+            "episode": 6700,
+            "mse": 0.0105
+          },
+          {
+            "episode": 6725,
+            "mse": 0.0178
+          },
+          {
+            "episode": 6750,
+            "mse": 0.0049
+          },
+          {
+            "episode": 6775,
+            "mse": 0.0049
+          },
+          {
+            "episode": 6800,
+            "mse": 0.0063
+          },
+          {
+            "episode": 6825,
+            "mse": 0.0088
+          },
+          {
+            "episode": 6850,
+            "mse": 0.0045
+          },
+          {
+            "episode": 6875,
+            "mse": 0.0127
+          },
+          {
+            "episode": 6900,
+            "mse": 0.0046
+          },
+          {
+            "episode": 6925,
+            "mse": 0.0051
+          },
+          {
+            "episode": 6950,
+            "mse": 0.0079
+          },
+          {
+            "episode": 6975,
+            "mse": 0.0074
+          },
+          {
+            "episode": 7000,
+            "mse": 0.0064
+          },
+          {
+            "episode": 7025,
+            "mse": 0.0091
+          },
+          {
+            "episode": 7050,
+            "mse": 0.0106
+          },
+          {
+            "episode": 7075,
+            "mse": 0.0069
+          },
+          {
+            "episode": 7100,
+            "mse": 0.0136
+          },
+          {
+            "episode": 7125,
+            "mse": 0.0105
+          },
+          {
+            "episode": 7150,
+            "mse": 0.0084
+          },
+          {
+            "episode": 7175,
+            "mse": 0.0106
+          },
+          {
+            "episode": 7200,
+            "mse": 0.0112
+          },
+          {
+            "episode": 7225,
+            "mse": 0.0064
+          },
+          {
+            "episode": 7250,
+            "mse": 0.0069
+          },
+          {
+            "episode": 7275,
+            "mse": 0.0067
+          },
+          {
+            "episode": 7300,
+            "mse": 0.0077
+          },
+          {
+            "episode": 7325,
+            "mse": 0.0109
+          },
+          {
+            "episode": 7350,
+            "mse": 0.0033
+          },
+          {
+            "episode": 7375,
+            "mse": 0.0078
+          },
+          {
+            "episode": 7400,
+            "mse": 0.0055
+          },
+          {
+            "episode": 7425,
+            "mse": 0.0063
+          },
+          {
+            "episode": 7450,
+            "mse": 0.0053
+          },
+          {
+            "episode": 7475,
+            "mse": 0.0074
+          },
+          {
+            "episode": 7500,
+            "mse": 0.0044
+          },
+          {
+            "episode": 7525,
+            "mse": 0.0138
+          },
+          {
+            "episode": 7550,
+            "mse": 0.006
+          },
+          {
+            "episode": 7575,
+            "mse": 0.0073
+          },
+          {
+            "episode": 7600,
+            "mse": 0.0057
+          },
+          {
+            "episode": 7625,
+            "mse": 0.006
+          },
+          {
+            "episode": 7650,
+            "mse": 0.0031
+          },
+          {
+            "episode": 7675,
+            "mse": 0.0064
+          },
+          {
+            "episode": 7700,
+            "mse": 0.0057
+          },
+          {
+            "episode": 7725,
+            "mse": 0.0086
+          },
+          {
+            "episode": 7750,
+            "mse": 0.0055
+          },
+          {
+            "episode": 7775,
+            "mse": 0.0037
+          },
+          {
+            "episode": 7800,
+            "mse": 0.0069
+          },
+          {
+            "episode": 7825,
+            "mse": 0.0031
+          },
+          {
+            "episode": 7850,
+            "mse": 0.0107
+          },
+          {
+            "episode": 7875,
+            "mse": 0.0085
+          },
+          {
+            "episode": 7900,
+            "mse": 0.0092
+          },
+          {
+            "episode": 7925,
+            "mse": 0.0099
+          },
+          {
+            "episode": 7950,
+            "mse": 0.0052
+          },
+          {
+            "episode": 7975,
+            "mse": 0.011
+          },
+          {
+            "episode": 8000,
+            "mse": 0.0068
+          }
+        ],
+        "il_value_losses": [],
+        "best_il_epoch": []
+      },
+      "additional_training": {
+        "arm": "bayes_mean",
+        "train_wall_seconds": 16775.84303832054,
+        "checkpoint_sha256": "41d17f11c8965c9e527decdffaaefc6fcd9da97a91f81bb2ddc8c1e2f935985e",
+        "warm_continuation": true
+      },
+      "evaluation": 6510.152896404266
+    },
+    "bayes": {
+      "3000": {
+        "validation": [
+          {
+            "episode": 1000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 2000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 3000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 25,
+            "mse": 0.0019
+          },
+          {
+            "episode": 50,
+            "mse": 0.007
+          },
+          {
+            "episode": 75,
+            "mse": 0.0074
+          },
+          {
+            "episode": 100,
+            "mse": 0.0073
+          },
+          {
+            "episode": 125,
+            "mse": 0.0109
+          },
+          {
+            "episode": 150,
+            "mse": 0.0066
+          },
+          {
+            "episode": 175,
+            "mse": 0.0076
+          },
+          {
+            "episode": 200,
+            "mse": 0.0082
+          },
+          {
+            "episode": 225,
+            "mse": 0.01
+          },
+          {
+            "episode": 250,
+            "mse": 0.0103
+          },
+          {
+            "episode": 275,
+            "mse": 0.0079
+          },
+          {
+            "episode": 300,
+            "mse": 0.0098
+          },
+          {
+            "episode": 325,
+            "mse": 0.012
+          },
+          {
+            "episode": 350,
+            "mse": 0.0124
+          },
+          {
+            "episode": 375,
+            "mse": 0.0168
+          },
+          {
+            "episode": 400,
+            "mse": 0.0146
+          },
+          {
+            "episode": 425,
+            "mse": 0.019
+          },
+          {
+            "episode": 450,
+            "mse": 0.0125
+          },
+          {
+            "episode": 475,
+            "mse": 0.0148
+          },
+          {
+            "episode": 500,
+            "mse": 0.0203
+          },
+          {
+            "episode": 525,
+            "mse": 0.0207
+          },
+          {
+            "episode": 550,
+            "mse": 0.0176
+          },
+          {
+            "episode": 575,
+            "mse": 0.0155
+          },
+          {
+            "episode": 600,
+            "mse": 0.0195
+          },
+          {
+            "episode": 625,
+            "mse": 0.0168
+          },
+          {
+            "episode": 650,
+            "mse": 0.0127
+          },
+          {
+            "episode": 675,
+            "mse": 0.0128
+          },
+          {
+            "episode": 700,
+            "mse": 0.0207
+          },
+          {
+            "episode": 725,
+            "mse": 0.0193
+          },
+          {
+            "episode": 750,
+            "mse": 0.0315
+          },
+          {
+            "episode": 775,
+            "mse": 0.018
+          },
+          {
+            "episode": 800,
+            "mse": 0.0126
+          },
+          {
+            "episode": 825,
+            "mse": 0.0231
+          },
+          {
+            "episode": 850,
+            "mse": 0.0235
+          },
+          {
+            "episode": 875,
+            "mse": 0.0212
+          },
+          {
+            "episode": 900,
+            "mse": 0.0244
+          },
+          {
+            "episode": 925,
+            "mse": 0.0224
+          },
+          {
+            "episode": 950,
+            "mse": 0.0223
+          },
+          {
+            "episode": 975,
+            "mse": 0.0257
+          },
+          {
+            "episode": 1000,
+            "mse": 0.0221
+          },
+          {
+            "episode": 1025,
+            "mse": 0.0148
+          },
+          {
+            "episode": 1050,
+            "mse": 0.0254
+          },
+          {
+            "episode": 1075,
+            "mse": 0.0233
+          },
+          {
+            "episode": 1100,
+            "mse": 0.0214
+          },
+          {
+            "episode": 1125,
+            "mse": 0.0245
+          },
+          {
+            "episode": 1150,
+            "mse": 0.019
+          },
+          {
+            "episode": 1175,
+            "mse": 0.0284
+          },
+          {
+            "episode": 1200,
+            "mse": 0.0197
+          },
+          {
+            "episode": 1225,
+            "mse": 0.0201
+          },
+          {
+            "episode": 1250,
+            "mse": 0.0126
+          },
+          {
+            "episode": 1275,
+            "mse": 0.0261
+          },
+          {
+            "episode": 1300,
+            "mse": 0.017
+          },
+          {
+            "episode": 1325,
+            "mse": 0.0203
+          },
+          {
+            "episode": 1350,
+            "mse": 0.0218
+          },
+          {
+            "episode": 1375,
+            "mse": 0.0211
+          },
+          {
+            "episode": 1400,
+            "mse": 0.0285
+          },
+          {
+            "episode": 1425,
+            "mse": 0.0291
+          },
+          {
+            "episode": 1450,
+            "mse": 0.0178
+          },
+          {
+            "episode": 1475,
+            "mse": 0.0294
+          },
+          {
+            "episode": 1500,
+            "mse": 0.0155
+          },
+          {
+            "episode": 1525,
+            "mse": 0.0217
+          },
+          {
+            "episode": 1550,
+            "mse": 0.0201
+          },
+          {
+            "episode": 1575,
+            "mse": 0.0185
+          },
+          {
+            "episode": 1600,
+            "mse": 0.0297
+          },
+          {
+            "episode": 1625,
+            "mse": 0.0171
+          },
+          {
+            "episode": 1650,
+            "mse": 0.0253
+          },
+          {
+            "episode": 1675,
+            "mse": 0.0265
+          },
+          {
+            "episode": 1700,
+            "mse": 0.0262
+          },
+          {
+            "episode": 1725,
+            "mse": 0.0238
+          },
+          {
+            "episode": 1750,
+            "mse": 0.0232
+          },
+          {
+            "episode": 1775,
+            "mse": 0.0223
+          },
+          {
+            "episode": 1800,
+            "mse": 0.0256
+          },
+          {
+            "episode": 1825,
+            "mse": 0.0256
+          },
+          {
+            "episode": 1850,
+            "mse": 0.0214
+          },
+          {
+            "episode": 1875,
+            "mse": 0.0212
+          },
+          {
+            "episode": 1900,
+            "mse": 0.017
+          },
+          {
+            "episode": 1925,
+            "mse": 0.014
+          },
+          {
+            "episode": 1950,
+            "mse": 0.0249
+          },
+          {
+            "episode": 1975,
+            "mse": 0.0234
+          },
+          {
+            "episode": 2000,
+            "mse": 0.0229
+          },
+          {
+            "episode": 2025,
+            "mse": 0.0225
+          },
+          {
+            "episode": 2050,
+            "mse": 0.0204
+          },
+          {
+            "episode": 2075,
+            "mse": 0.0215
+          },
+          {
+            "episode": 2100,
+            "mse": 0.0264
+          },
+          {
+            "episode": 2125,
+            "mse": 0.0215
+          },
+          {
+            "episode": 2150,
+            "mse": 0.0267
+          },
+          {
+            "episode": 2175,
+            "mse": 0.0187
+          },
+          {
+            "episode": 2200,
+            "mse": 0.018
+          },
+          {
+            "episode": 2225,
+            "mse": 0.0189
+          },
+          {
+            "episode": 2250,
+            "mse": 0.0213
+          },
+          {
+            "episode": 2275,
+            "mse": 0.0221
+          },
+          {
+            "episode": 2300,
+            "mse": 0.0204
+          },
+          {
+            "episode": 2325,
+            "mse": 0.0215
+          },
+          {
+            "episode": 2350,
+            "mse": 0.0215
+          },
+          {
+            "episode": 2375,
+            "mse": 0.0227
+          },
+          {
+            "episode": 2400,
+            "mse": 0.0248
+          },
+          {
+            "episode": 2425,
+            "mse": 0.025
+          },
+          {
+            "episode": 2450,
+            "mse": 0.0251
+          },
+          {
+            "episode": 2475,
+            "mse": 0.0189
+          },
+          {
+            "episode": 2500,
+            "mse": 0.0189
+          },
+          {
+            "episode": 2525,
+            "mse": 0.0241
+          },
+          {
+            "episode": 2550,
+            "mse": 0.0256
+          },
+          {
+            "episode": 2575,
+            "mse": 0.02
+          },
+          {
+            "episode": 2600,
+            "mse": 0.0223
+          },
+          {
+            "episode": 2625,
+            "mse": 0.0162
+          },
+          {
+            "episode": 2650,
+            "mse": 0.0237
+          },
+          {
+            "episode": 2675,
+            "mse": 0.0187
+          },
+          {
+            "episode": 2700,
+            "mse": 0.0283
+          },
+          {
+            "episode": 2725,
+            "mse": 0.0202
+          },
+          {
+            "episode": 2750,
+            "mse": 0.0236
+          },
+          {
+            "episode": 2775,
+            "mse": 0.0285
+          },
+          {
+            "episode": 2800,
+            "mse": 0.0196
+          },
+          {
+            "episode": 2825,
+            "mse": 0.0245
+          },
+          {
+            "episode": 2850,
+            "mse": 0.0159
+          },
+          {
+            "episode": 2875,
+            "mse": 0.0195
+          },
+          {
+            "episode": 2900,
+            "mse": 0.0195
+          },
+          {
+            "episode": 2925,
+            "mse": 0.0177
+          },
+          {
+            "episode": 2950,
+            "mse": 0.0185
+          },
+          {
+            "episode": 2975,
+            "mse": 0.0173
+          },
+          {
+            "episode": 3000,
+            "mse": 0.0229
+          }
+        ],
+        "il_value_losses": [
+          {
+            "epoch": 10,
+            "mse": 0.0025
+          },
+          {
+            "epoch": 20,
+            "mse": 0.0021
+          },
+          {
+            "epoch": 30,
+            "mse": 0.0018
+          },
+          {
+            "epoch": 40,
+            "mse": 0.0017
+          },
+          {
+            "epoch": 50,
+            "mse": 0.0016
+          }
+        ],
+        "best_il_epoch": [
+          "35"
+        ]
+      },
+      "8000": {
+        "validation": [
+          {
+            "episode": 4000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 5000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 6000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 7000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          },
+          {
+            "episode": 8000,
+            "sr": 1.0,
+            "cr": 0.0,
+            "tr": 0.0
+          }
+        ],
+        "value_loss": [
+          {
+            "episode": 3025,
+            "mse": 0.0033
+          },
+          {
+            "episode": 3050,
+            "mse": 0.0031
+          },
+          {
+            "episode": 3075,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3100,
+            "mse": 0.0029
+          },
+          {
+            "episode": 3125,
+            "mse": 0.0027
+          },
+          {
+            "episode": 3150,
+            "mse": 0.0037
+          },
+          {
+            "episode": 3175,
+            "mse": 0.0025
+          },
+          {
+            "episode": 3200,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3225,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3250,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3275,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3300,
+            "mse": 0.0029
+          },
+          {
+            "episode": 3325,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3350,
+            "mse": 0.0036
+          },
+          {
+            "episode": 3375,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3400,
+            "mse": 0.0036
+          },
+          {
+            "episode": 3425,
+            "mse": 0.0045
+          },
+          {
+            "episode": 3450,
+            "mse": 0.0041
+          },
+          {
+            "episode": 3475,
+            "mse": 0.0032
+          },
+          {
+            "episode": 3500,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3525,
+            "mse": 0.0038
+          },
+          {
+            "episode": 3550,
+            "mse": 0.0019
+          },
+          {
+            "episode": 3575,
+            "mse": 0.0056
+          },
+          {
+            "episode": 3600,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3625,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3650,
+            "mse": 0.0033
+          },
+          {
+            "episode": 3675,
+            "mse": 0.0022
+          },
+          {
+            "episode": 3700,
+            "mse": 0.0061
+          },
+          {
+            "episode": 3725,
+            "mse": 0.0028
+          },
+          {
+            "episode": 3750,
+            "mse": 0.004
+          },
+          {
+            "episode": 3775,
+            "mse": 0.0023
+          },
+          {
+            "episode": 3800,
+            "mse": 0.0035
+          },
+          {
+            "episode": 3825,
+            "mse": 0.003
+          },
+          {
+            "episode": 3850,
+            "mse": 0.0024
+          },
+          {
+            "episode": 3875,
+            "mse": 0.0048
+          },
+          {
+            "episode": 3900,
+            "mse": 0.0047
+          },
+          {
+            "episode": 3925,
+            "mse": 0.0029
+          },
+          {
+            "episode": 3950,
+            "mse": 0.0042
+          },
+          {
+            "episode": 3975,
+            "mse": 0.0045
+          },
+          {
+            "episode": 4000,
+            "mse": 0.0037
+          },
+          {
+            "episode": 4025,
+            "mse": 0.002
+          },
+          {
+            "episode": 4050,
+            "mse": 0.0088
+          },
+          {
+            "episode": 4075,
+            "mse": 0.0095
+          },
+          {
+            "episode": 4100,
+            "mse": 0.0049
+          },
+          {
+            "episode": 4125,
+            "mse": 0.0044
+          },
+          {
+            "episode": 4150,
+            "mse": 0.0077
+          },
+          {
+            "episode": 4175,
+            "mse": 0.004
+          },
+          {
+            "episode": 4200,
+            "mse": 0.0033
+          },
+          {
+            "episode": 4225,
+            "mse": 0.0048
+          },
+          {
+            "episode": 4250,
+            "mse": 0.0046
+          },
+          {
+            "episode": 4275,
+            "mse": 0.0056
+          },
+          {
+            "episode": 4300,
+            "mse": 0.0081
+          },
+          {
+            "episode": 4325,
+            "mse": 0.0061
+          },
+          {
+            "episode": 4350,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4375,
+            "mse": 0.0024
+          },
+          {
+            "episode": 4400,
+            "mse": 0.0059
+          },
+          {
+            "episode": 4425,
+            "mse": 0.0047
+          },
+          {
+            "episode": 4450,
+            "mse": 0.0046
+          },
+          {
+            "episode": 4475,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4500,
+            "mse": 0.0031
+          },
+          {
+            "episode": 4525,
+            "mse": 0.0043
+          },
+          {
+            "episode": 4550,
+            "mse": 0.007
+          },
+          {
+            "episode": 4575,
+            "mse": 0.0068
+          },
+          {
+            "episode": 4600,
+            "mse": 0.0041
+          },
+          {
+            "episode": 4625,
+            "mse": 0.0054
+          },
+          {
+            "episode": 4650,
+            "mse": 0.004
+          },
+          {
+            "episode": 4675,
+            "mse": 0.0081
+          },
+          {
+            "episode": 4700,
+            "mse": 0.0043
+          },
+          {
+            "episode": 4725,
+            "mse": 0.0063
+          },
+          {
+            "episode": 4750,
+            "mse": 0.0046
+          },
+          {
+            "episode": 4775,
+            "mse": 0.0046
+          },
+          {
+            "episode": 4800,
+            "mse": 0.0086
+          },
+          {
+            "episode": 4825,
+            "mse": 0.0048
+          },
+          {
+            "episode": 4850,
+            "mse": 0.0066
+          },
+          {
+            "episode": 4875,
+            "mse": 0.0065
+          },
+          {
+            "episode": 4900,
+            "mse": 0.0079
+          },
+          {
+            "episode": 4925,
+            "mse": 0.011
+          },
+          {
+            "episode": 4950,
+            "mse": 0.0102
+          },
+          {
+            "episode": 4975,
+            "mse": 0.0088
+          },
+          {
+            "episode": 5000,
+            "mse": 0.0048
+          },
+          {
+            "episode": 5025,
+            "mse": 0.0087
+          },
+          {
+            "episode": 5050,
+            "mse": 0.0142
+          },
+          {
+            "episode": 5075,
+            "mse": 0.0138
+          },
+          {
+            "episode": 5100,
+            "mse": 0.0108
+          },
+          {
+            "episode": 5125,
+            "mse": 0.0079
+          },
+          {
+            "episode": 5150,
+            "mse": 0.0031
+          },
+          {
+            "episode": 5175,
+            "mse": 0.0036
+          },
+          {
+            "episode": 5200,
+            "mse": 0.0087
+          },
+          {
+            "episode": 5225,
+            "mse": 0.0041
+          },
+          {
+            "episode": 5250,
+            "mse": 0.0031
+          },
+          {
+            "episode": 5275,
+            "mse": 0.0059
+          },
+          {
+            "episode": 5300,
+            "mse": 0.0065
+          },
+          {
+            "episode": 5325,
+            "mse": 0.0021
+          },
+          {
+            "episode": 5350,
+            "mse": 0.0114
+          },
+          {
+            "episode": 5375,
+            "mse": 0.0059
+          },
+          {
+            "episode": 5400,
+            "mse": 0.0026
+          },
+          {
+            "episode": 5425,
+            "mse": 0.0121
+          },
+          {
+            "episode": 5450,
+            "mse": 0.0093
+          },
+          {
+            "episode": 5475,
+            "mse": 0.0079
+          },
+          {
+            "episode": 5500,
+            "mse": 0.0073
+          },
+          {
+            "episode": 5525,
+            "mse": 0.0078
+          },
+          {
+            "episode": 5550,
+            "mse": 0.0101
+          },
+          {
+            "episode": 5575,
+            "mse": 0.0078
+          },
+          {
+            "episode": 5600,
+            "mse": 0.0083
+          },
+          {
+            "episode": 5625,
+            "mse": 0.0104
+          },
+          {
+            "episode": 5650,
+            "mse": 0.0061
+          },
+          {
+            "episode": 5675,
+            "mse": 0.0075
+          },
+          {
+            "episode": 5700,
+            "mse": 0.0054
+          },
+          {
+            "episode": 5725,
+            "mse": 0.009
+          },
+          {
+            "episode": 5750,
+            "mse": 0.0068
+          },
+          {
+            "episode": 5775,
+            "mse": 0.0133
+          },
+          {
+            "episode": 5800,
+            "mse": 0.0053
+          },
+          {
+            "episode": 5825,
+            "mse": 0.0141
+          },
+          {
+            "episode": 5850,
+            "mse": 0.0079
+          },
+          {
+            "episode": 5875,
+            "mse": 0.0043
+          },
+          {
+            "episode": 5900,
+            "mse": 0.0066
+          },
+          {
+            "episode": 5925,
+            "mse": 0.0138
+          },
+          {
+            "episode": 5950,
+            "mse": 0.0102
+          },
+          {
+            "episode": 5975,
+            "mse": 0.0118
+          },
+          {
+            "episode": 6000,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6025,
+            "mse": 0.0068
+          },
+          {
+            "episode": 6050,
+            "mse": 0.0081
+          },
+          {
+            "episode": 6075,
+            "mse": 0.0044
+          },
+          {
+            "episode": 6100,
+            "mse": 0.0133
+          },
+          {
+            "episode": 6125,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6150,
+            "mse": 0.0156
+          },
+          {
+            "episode": 6175,
+            "mse": 0.0094
+          },
+          {
+            "episode": 6200,
+            "mse": 0.0072
+          },
+          {
+            "episode": 6225,
+            "mse": 0.0086
+          },
+          {
+            "episode": 6250,
+            "mse": 0.0089
+          },
+          {
+            "episode": 6275,
+            "mse": 0.0072
+          },
+          {
+            "episode": 6300,
+            "mse": 0.0093
+          },
+          {
+            "episode": 6325,
+            "mse": 0.0142
+          },
+          {
+            "episode": 6350,
+            "mse": 0.0077
+          },
+          {
+            "episode": 6375,
+            "mse": 0.0065
+          },
+          {
+            "episode": 6400,
+            "mse": 0.0059
+          },
+          {
+            "episode": 6425,
+            "mse": 0.0075
+          },
+          {
+            "episode": 6450,
+            "mse": 0.0093
+          },
+          {
+            "episode": 6475,
+            "mse": 0.0084
+          },
+          {
+            "episode": 6500,
+            "mse": 0.011
+          },
+          {
+            "episode": 6525,
+            "mse": 0.0067
+          },
+          {
+            "episode": 6550,
+            "mse": 0.0109
+          },
+          {
+            "episode": 6575,
+            "mse": 0.0099
+          },
+          {
+            "episode": 6600,
+            "mse": 0.0116
+          },
+          {
+            "episode": 6625,
+            "mse": 0.0121
+          },
+          {
+            "episode": 6650,
+            "mse": 0.013
+          },
+          {
+            "episode": 6675,
+            "mse": 0.0076
+          },
+          {
+            "episode": 6700,
+            "mse": 0.0109
+          },
+          {
+            "episode": 6725,
+            "mse": 0.008
+          },
+          {
+            "episode": 6750,
+            "mse": 0.0092
+          },
+          {
+            "episode": 6775,
+            "mse": 0.0117
+          },
+          {
+            "episode": 6800,
+            "mse": 0.0156
+          },
+          {
+            "episode": 6825,
+            "mse": 0.0113
+          },
+          {
+            "episode": 6850,
+            "mse": 0.0072
+          },
+          {
+            "episode": 6875,
+            "mse": 0.0064
+          },
+          {
+            "episode": 6900,
+            "mse": 0.0065
+          },
+          {
+            "episode": 6925,
+            "mse": 0.0083
+          },
+          {
+            "episode": 6950,
+            "mse": 0.0071
+          },
+          {
+            "episode": 6975,
+            "mse": 0.0088
+          },
+          {
+            "episode": 7000,
+            "mse": 0.0054
+          },
+          {
+            "episode": 7025,
+            "mse": 0.0059
+          },
+          {
+            "episode": 7050,
+            "mse": 0.0094
+          },
+          {
+            "episode": 7075,
+            "mse": 0.0063
+          },
+          {
+            "episode": 7100,
+            "mse": 0.0124
+          },
+          {
+            "episode": 7125,
+            "mse": 0.0082
+          },
+          {
+            "episode": 7150,
+            "mse": 0.0081
+          },
+          {
+            "episode": 7175,
+            "mse": 0.0078
+          },
+          {
+            "episode": 7200,
+            "mse": 0.0041
+          },
+          {
+            "episode": 7225,
+            "mse": 0.0101
+          },
+          {
+            "episode": 7250,
+            "mse": 0.0095
+          },
+          {
+            "episode": 7275,
+            "mse": 0.0112
+          },
+          {
+            "episode": 7300,
+            "mse": 0.0137
+          },
+          {
+            "episode": 7325,
+            "mse": 0.0098
+          },
+          {
+            "episode": 7350,
+            "mse": 0.0095
+          },
+          {
+            "episode": 7375,
+            "mse": 0.0087
+          },
+          {
+            "episode": 7400,
+            "mse": 0.0107
+          },
+          {
+            "episode": 7425,
+            "mse": 0.0082
+          },
+          {
+            "episode": 7450,
+            "mse": 0.0121
+          },
+          {
+            "episode": 7475,
+            "mse": 0.0089
+          },
+          {
+            "episode": 7500,
+            "mse": 0.0143
+          },
+          {
+            "episode": 7525,
+            "mse": 0.0095
+          },
+          {
+            "episode": 7550,
+            "mse": 0.0098
+          },
+          {
+            "episode": 7575,
+            "mse": 0.0101
+          },
+          {
+            "episode": 7600,
+            "mse": 0.0083
+          },
+          {
+            "episode": 7625,
+            "mse": 0.0115
+          },
+          {
+            "episode": 7650,
+            "mse": 0.0071
+          },
+          {
+            "episode": 7675,
+            "mse": 0.008
+          },
+          {
+            "episode": 7700,
+            "mse": 0.0077
+          },
+          {
+            "episode": 7725,
+            "mse": 0.0079
+          },
+          {
+            "episode": 7750,
+            "mse": 0.0071
+          },
+          {
+            "episode": 7775,
+            "mse": 0.0091
+          },
+          {
+            "episode": 7800,
+            "mse": 0.01
+          },
+          {
+            "episode": 7825,
+            "mse": 0.011
+          },
+          {
+            "episode": 7850,
+            "mse": 0.0074
+          },
+          {
+            "episode": 7875,
+            "mse": 0.0113
+          },
+          {
+            "episode": 7900,
+            "mse": 0.0067
+          },
+          {
+            "episode": 7925,
+            "mse": 0.0081
+          },
+          {
+            "episode": 7950,
+            "mse": 0.0059
+          },
+          {
+            "episode": 7975,
+            "mse": 0.0076
+          },
+          {
+            "episode": 8000,
+            "mse": 0.0105
+          }
+        ],
+        "il_value_losses": [],
+        "best_il_epoch": []
+      },
+      "additional_training": {
+        "arm": "bayes",
+        "train_wall_seconds": 17466.559858322144,
+        "checkpoint_sha256": "70ff6a8d34db103a620df36f7a9b3d78c60cb784381e7d7b9dbf107157d82452",
+        "warm_continuation": true
+      },
+      "evaluation": 6713.39448261261
+    }
+  },
+  "checkpoints": {
+    "gru": {
+      "sha256": "f4ead5b02a7ba9b49afdd25abaed4bc5fa3e2063f75fab1041d628fe29918fa6",
+      "bytes": 29287871,
+      "registered_parameters": 1754857,
+      "temporal_parameters": 1579520,
+      "optimizer_updated_parameters": 1698305,
+      "optimizer_parameter_states": 38,
+      "optimizer_steps": 32000,
+      "strict_loading": true,
+      "policy_and_target_finite": true
+    },
+    "bayes_mean": {
+      "sha256": "41d17f11c8965c9e527decdffaaefc6fcd9da97a91f81bb2ddc8c1e2f935985e",
+      "bytes": 5925253,
+      "registered_parameters": 290985,
+      "temporal_parameters": 115648,
+      "optimizer_updated_parameters": 234433,
+      "optimizer_parameter_states": 33,
+      "optimizer_steps": 32000,
+      "strict_loading": true,
+      "policy_and_target_finite": true
+    },
+    "bayes": {
+      "sha256": "70ff6a8d34db103a620df36f7a9b3d78c60cb784381e7d7b9dbf107157d82452",
+      "bytes": 5924869,
+      "registered_parameters": 290985,
+      "temporal_parameters": 115648,
+      "optimizer_updated_parameters": 234433,
+      "optimizer_parameter_states": 33,
+      "optimizer_steps": 32000,
+      "strict_loading": true,
+      "policy_and_target_finite": true
+    }
+  }
+}

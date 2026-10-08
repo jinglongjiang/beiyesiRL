@@ -1,0 +1,82 @@
+{
+  "version": "bayes-temporal-v1-matched",
+  "arms": [
+    "mamba",
+    "gru",
+    "bayes_mean",
+    "bayes"
+  ],
+  "paired_seeds": [
+    42,
+    43
+  ],
+  "parent": "user-supplied CrowdNav Mamba-VL backup; no external Bayesian Parent",
+  "dataset_seed": 271828,
+  "dataset_success_target": 5000,
+  "il_epochs": 50,
+  "il_batch_size": 256,
+  "rl_episodes": 10000,
+  "development_checkpoint": 3000,
+  "save_every": 500,
+  "updates_per_episode": 4,
+  "rl_batch_size": 256,
+  "replay_capacity": 200000,
+  "gamma": 0.99,
+  "eval_every": 1000,
+  "validation_episodes": 50,
+  "final_checkpoint": "rl_model_ep10000.pth, not best-on-test checkpoint",
+  "final_scenarios": [
+    "baseline_circle",
+    "baseline_square",
+    "dense_circle",
+    "dense_square",
+    "large_circle",
+    "large_square"
+  ],
+  "final_episodes_per_scenario": 500,
+  "final_time_limit_s": 25,
+  "final_eval_seed": 20261006,
+  "final_test_pool_size": 1000,
+  "final_case_rule": "native indices 412+3*scenario_id through 911+3*scenario_id; disjoint from IL quick-test selection roots",
+  "human_policy": "original native ORCA",
+  "observation_noise": 0,
+  "behavior_profile": "nominal",
+  "history_contract": "right-aligned real suffix; zero prefix is excluded before temporal encoding",
+  "exploration_contract": "append one legal current observation even for epsilon actions",
+  "inherited_test_safety_filter": true,
+  "shared_changes": [
+    "legal-prefix",
+    "exploration-clock",
+    "action-index return",
+    "fixed IL epoch count",
+    "independent common IL shuffle RNG",
+    "common post-IL RNG reset",
+    "compile disabled on all arms"
+  ],
+  "online_replay": "same protocol, not identical divergent on-policy trajectories",
+  "capacity_matched": false,
+  "uncertainty_calibrated": false,
+  "il_storage": "CPU corpus; identical per-minibatch transfer to the training device",
+  "memory_cap_policy": "same cap for all four arms within a host/seed",
+  "platform_policy": "all four arms per paired seed on one common host/runtime; report seeds separately",
+  "stage_a_rule": "save/evaluate at 3000; no stop solely because V1 trails Mamba",
+  "v2_rule": "no automatic hyperparameter search; one evidence-based structural repair after complete V1 comparison",
+  "stop_rules": [
+    "engineering invalidity",
+    "nonfinite loss/parameters",
+    "actual memory/disk risk"
+  ],
+  "sources": {
+    "crowd_nav/policy/mamba_rl.py": "277cde91d157de0ace7d8f17ab49bd807dbf6819ce96cc50dc22b8a60174c784",
+    "crowd_nav/policy/bayes_temporal.py": "92ee25a533f1b43ac237aac58d613854a55ec4159702ddc3cd29c9afa8436102",
+    "crowd_nav/train.py": "b41b450b62fd5dff95a02f3d01a0542fa59dda992affb4d418f52c29667a82b2",
+    "crowd_nav/test.py": "a816ea29769080834c875e5fdead58d742893ef6ddb7a273c0435da92d292aed",
+    "crowd_nav/utils/ppo_buffer.py": "614eb0dd815ed925aa5ba887bf7cc8d35f58c7b96edd820363f141d55dbf0f49",
+    "crowd_nav/contracts.py": "ae42e22ede2012ab9ec09082223d539fb76b4cbe99e867f277c0bef8dab56043",
+    "crowd_nav/utils/explorer.py": "670def0cd05874492c4d3e3ab96034079c4f09b47662650e98302c5df4c2a3a1",
+    "crowd_nav/configs/env.config": "ed62b5c2d09f50e7e918ccb10a19ade9152f2c01edc6659a98816f1222f497a8",
+    "crowd_nav/configs/policy.config": "0e11199562f38238187ea5f19a047a5a770b2746b4886a12981c83fc6db8f294",
+    "crowd_nav/configs/train.config": "151d3b869a0ca6923929682424a756db14f775f0f4adffaf17c38fcef4a044e3",
+    "scripts/run-bayes-matched.py": "bd62c1fccd94049f8f71083edceb46ccde87994afc4c1c6db8e83cfdfcdf28f8"
+  }
+}

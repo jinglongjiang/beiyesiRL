@@ -1,0 +1,11 @@
+{
+  "registered_kst": "2026-10-08T04:17:42.921757+09:00",
+  "registration_time_basis": "Initial amendment file modification time, recorded before new smoke or formal navigation outcomes",
+  "reason": "Measured first Bayes-Mean IL epoch took 394.85 seconds with three workers. A sequential second 50-epoch IL block would exceed the eight-hour startup budget. Local host has only 8.4 GiB available RAM and 3.9 GiB used swap.",
+  "timing_basis": "IL compute only; registered before any new navigation smoke or formal outcome",
+  "preserved": ["50 IL epochs per arm", "same frozen offline ORCA dataset", "same IL objective and hyperparameters", "200 RL smoke per arm", "10000 formal RL episodes per worker", "formal RL seeds 42 and 43", "all environment, reward, action, observation and safety contracts"],
+  "initialization": "Reuse each arm's newly trained seed42 50-epoch IL checkpoint for both formal RL seeds. Do not reuse smoke RL weights, old incompatible Bayes IL, partial IL or selectively chosen navigation checkpoints.",
+  "claim_boundary": "Two matched online RL seeds with a shared per-arm IL initialization. Not two independent full IL+RL initialization seeds, and not paper-level confirmation.",
+  "operator_plan": "Preserve the current seed42 IL and its smoke to completion. Retire the old controller before undertaking a second full IL block; preserve any already-started seed43 preprocessing as budget-aborted engineering work. Freeze a formal-only version before launching six RL workers.",
+  "formal_requires": "All three full 50-epoch seed42 IL jobs and all three 200-episode smoke jobs accepted using their original gates. No gate relaxed."
+}

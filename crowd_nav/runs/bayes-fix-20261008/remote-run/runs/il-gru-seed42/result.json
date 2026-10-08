@@ -1,0 +1,22 @@
+{
+  "status": "IL_VALID",
+  "arm": "gru",
+  "seed": 42,
+  "checkpoint_sha256": "c9b32750bef715095056f7ae615bb350fef7cb4563d4057623d011004f7ceeee",
+  "metadata": {
+    "stage": "bc_policy_only",
+    "arch": "policy_network",
+    "epochs": 5,
+    "value_loss": 0.0013954788446426392,
+    "action_loss": 0.0,
+    "total_loss": 0.0013954788446426392,
+    "objective": "value_regression",
+    "eval_success_rate": 1.0,
+    "best_epoch": 5,
+    "best_sr": 1.0,
+    "seq_len": 24,
+    "dataset_size": 235980,
+    "timestamp": "2026-10-08 05:27:16"
+  },
+  "wall_seconds": 9534.143979787827
+}

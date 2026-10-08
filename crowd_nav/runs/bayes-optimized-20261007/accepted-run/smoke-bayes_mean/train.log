@@ -1,0 +1,600 @@
+[10-07 15:53:05] INFO: [TENSORBOARD] Fresh events will be saved to: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/tensorboard_logs
+[10-07 15:53:05] INFO: [TEMPORAL-BACKBONE] CLI override: bayes_mean
+[10-07 15:53:05] INFO: [CONTRACTS] GRID initialized from runtime cfg: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}
+[10-07 15:53:05] INFO: [CONTRACTS] GRID locked from env.config: {'n_speeds': 5, 'n_headings': 16, 'v_min': 0.05, 'v_max': 1.0, 'sampling': 'exponential', 'include_stop': False, 'stop_eps': 0.05}, num_actions=80
+[10-07 15:53:05] INFO: [SEED] 使用命令行指定的seed: 42
+[10-07 15:53:05] INFO: [SEED] ⚡ CUDA确定性模式已关闭（训练模式，速度优先）
+[10-07 15:53:05] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-07 15:53:05] INFO: human number: 5
+[10-07 15:53:05] INFO: Not randomize human's radius and preferred speed
+[10-07 15:53:05] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-07 15:53:05] INFO: Square width: 10.0, circle radius: 4.0
+[10-07 15:53:05] INFO: [BOOT] policy=mamba_rl device=cuda
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [SOT] env: circle R=4.0 Nh=5 dt=0.25 T=50 | reward: 1.0/-0.5/-0.5 | actions: 80(sampling=exponential, stop=False) | success_radius=0.25 | eval eps=0
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [ALGO] Value-lookahead (BAYES_MEAN): one-step lookahead + epsilon-greedy
+[10-07 15:53:05] INFO: REWARD: success=1.0, collision=-0.5, timeout=-0.5
+[10-07 15:53:05] INFO: TRAINING: lr=1e-05, gamma=0.99, batch=256, updates_per_ep=4
+[10-07 15:53:05] INFO: TIMESTEP: dt=0.25s
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [DISCRETE-Q] Q-head initialized: 80 actions (5 speeds × 16 headings, stop=False)
+[10-07 15:53:05] INFO: [VALUE-HEAD] Value head initialized (SARL-style, 1-dim output)
+[10-07 15:53:05] INFO: [AUXILIARY-HEAD] Future position predictor initialized: 3 neighbors × 4 future steps
+[10-07 15:53:05] INFO: [ABLATION] Lookahead scoring mode: full
+[10-07 15:53:05] INFO: ================================================================================
+[10-07 15:53:05] INFO: [TEMPORAL-BACKBONE] BAYES_MEAN backbone configuration:
+[10-07 15:53:05] INFO:   d_model=256, n_layers=4, d_state=64
+[10-07 15:53:05] INFO:   d_conv=4, expand=2
+[10-07 15:53:05] INFO: [SEQ-FINAL] Sequence Length Configuration (SSOT):
+[10-07 15:53:05] INFO:   seq_len=24 (from train.config:[buffer])
+[10-07 15:53:05] INFO:   T=24 (should match policy.config:[temporal].T)
+[10-07 15:53:05] INFO: [ARCH-FINAL] Architecture: EnhancedSpatial(3-way:robot+human+relation) -> BAYES_MEAN -> DualHead
+[10-07 15:53:05] INFO: [DEVICE] cuda
+[10-07 15:53:05] INFO: ================================================================================
+[10-07 15:53:05] INFO: [POLICY-INIT] Main policy built: mamba_rl
+[10-07 15:53:05] INFO: [POLICY-INIT] Set multiagent_training=True (5-human crowd navigation)
+[10-07 15:53:05] INFO: [MAMBA-RL] Set env_dt=0.25
+[10-07 15:53:05] INFO: ✅ debug.md清理：奖励整形器已删除（未实际使用）
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [CONFIG-SUMMARY] Training Configuration (Runtime Values)
+[10-07 15:53:05] INFO:   Policy: mamba_rl
+[10-07 15:53:05] INFO:   Sequence: seq_len=24
+[10-07 15:53:05] INFO:   Training: batch_size=256, updates_per_ep=4
+[10-07 15:53:05] INFO:   Learning: lr=0.000010, gamma=0.99
+[10-07 15:53:05] INFO:   Episodes: 200, device=cuda
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [SARL-TRAIN] goal prior=OFF
+[10-07 15:53:05] INFO: [CFG-LOCK] circle R=4 Nh=5 dt=0.25 T=50 succ_r=0.25 visible=False actions=80 eval_eps=0
+[10-07 15:53:05] INFO: [REWARD-PROFILE] Using profile=benchmark, time_limit=50.0s
+[10-07 15:53:05] INFO: [REWARD-BENCHMARK] {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-07 15:53:05] INFO: [CONFIG-FALLBACK] success=1.0, collision=-0.5, timeout=-0.5
+[10-07 15:53:05] INFO: [ACTIVE-REWARD] Using profile-based rewards: {'success': 1.0, 'collision': -0.5, 'timeout': -0.5}
+[10-07 15:53:05] INFO: ============================================================
+[10-07 15:53:05] INFO: [TRAJECTORY-LOG] Recording enabled: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/trajectory.log
+[10-07 15:53:05] INFO: [IL-AUTO] 自动检测训练数据...
+[10-07 15:53:05] INFO: [IL-AUTO]   离线数据集: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/orca-shared.pth (exists: True)
+[10-07 15:53:05] INFO: [IL-AUTO]   BC checkpoint: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/il_policy.pth (exists: False)
+[10-07 15:53:05] INFO: [IL-AUTO]   IL checkpoint: /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/ckpt_il.pt (exists: False)
+[10-07 15:53:05] INFO: [IL-AUTO] ✓ 检测到离线数据集: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-07 15:53:05] INFO: [IL-AUTO]   将跳过IL在线收集，强制执行BC训练
+[10-07 15:53:05] INFO: [IQL-REPLAY] Initialized: capacity=200000, seq_len=24, with MC returns
+[10-07 15:53:05] INFO: [MC-REPLAY] next_states 未分配, 省 1.86 GiB
+[10-07 15:53:05] INFO: [SARL-BUFFER] rl_buffer capacity=200000, n_step=1, per=False
+[10-07 15:53:05] INFO: [STATS-RESET] TrainingStats reset for RL phase
+[10-07 15:53:05] INFO: [IL-BC] Starting BC training phase...
+[10-07 15:53:05] INFO: [IL-CONFIG] success_target=5000 max_total_episodes=12000 prefill_batch_episodes=64 patience_batches=5
+[10-07 15:53:05] INFO: [IL-CONFIG] success_target=5000 (type=int)
+[10-07 15:53:05] INFO: [IL-CONFIG] max_total_episodes=12000 (type=int)
+[10-07 15:53:05] INFO: [IL-CONFIG] batch_collect_episodes=64 (type=int)
+[10-07 15:53:05] INFO: [IL-CONFIG] patience_batches=5 (type=int)
+[10-07 15:53:05] INFO: [IL-TEACHER] Applying ORCA teacher profile: neighbor_dist=6.0, max_neighbors=15, time_horizon=5.0, time_horizon_obst=5.0, safety_space=0.25
+[10-07 15:53:05] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-07 15:53:05] INFO: human number: 5
+[10-07 15:53:05] INFO: Not randomize human's radius and preferred speed
+[10-07 15:53:05] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-07 15:53:05] INFO: Square width: 10.0, circle radius: 4.0
+[10-07 15:53:05] WARNING: [IL] Explorer has no replay buffer reference; IL data will stay in-flight only
+[10-07 15:53:05] INFO: [IL-START] Buffer size before IL: 0
+[10-07 15:53:05] INFO: [IL-CACHE] 发现离线数据集缓存: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/orca-shared.pth
+[10-07 15:53:08] INFO: [IL-CACHE] 数据集版本: matched-native-orca-v1
+[10-07 15:53:08] INFO: [IL-CACHE] 生成时间: unknown
+[10-07 15:53:08] INFO: [IL-CACHE] Seeds: []
+[10-07 15:53:08] INFO: [IL-CACHE] ORCA configs: []
+[10-07 15:53:08] INFO: [IL-CACHE] 总轨迹数: 5040
+[10-07 15:53:08] INFO: [IL-CACHE] 原始成功率: 99.62%
+[10-07 15:53:08] INFO: [IL-CACHE] 限制加载: 5040 episodes (max_il_prefill=50000)
+[10-07 15:53:08] INFO: [IL-CACHE] ✓ 成功加载 5037 条轨迹
+[10-07 15:53:08] INFO: [IL-CACHE] 失败轨迹保留 3 条用于RL预填充
+[10-07 15:53:08] INFO: [IL-CACHE] 跳过在线采集，直接使用离线数据集
+[10-07 15:53:08] INFO: [IL-COLLECT] Final success set: 5037 trajectories from 5056 attempts (success_ratio=99.62%)
+[10-07 15:53:08] INFO: [IL-COLLECT] Fail trajectories kept for RL prefill: 3
+[10-07 15:53:08] INFO: [IL-DATA] BC dataset uses success+collision: success=5037, collision=3
+[10-07 15:53:08] INFO: [IL-BUFFER] IL data reserved for BC pretraining only (5040 trajectories)
+[10-07 15:53:08] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-07 15:53:08] INFO: human number: 5
+[10-07 15:53:08] INFO: Not randomize human's radius and preferred speed
+[10-07 15:53:08] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-07 15:53:08] INFO: Square width: 10.0, circle radius: 4.0
+[10-07 15:53:08] INFO: [IL-TEACHER] Restored ORCA parameters for RL phase
+[10-07 15:53:08] INFO: [IL-BC] ✓ Found existing BC checkpoint: /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/bayes_mean-seed42/il_policy.pth
+[10-07 15:53:08] INFO: [IL-BC] Loading checkpoint to skip 50 epochs of BC training
+[10-07 15:53:08] INFO: [IL-BC] Detected old format (dict with 'value' key)
+[10-07 15:53:08] INFO: [IL-BC] ✓ Loaded all parameters (strict mode)
+[10-07 15:53:08] INFO: [IL-BC] Checkpoint metadata:
+[10-07 15:53:08] INFO:   - Training epochs: 35
+[10-07 15:53:08] INFO:   - BC loss: N/A
+[10-07 15:53:08] INFO:   - Eval success rate: 1.0
+[10-07 15:53:08] INFO:   - Timestamp: 2026-10-06 19:22:42
+[10-07 15:53:08] INFO: [IL-BC] ✓ Successfully loaded BC weights from /root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/bayes_mean-seed42/il_policy.pth
+[10-07 15:53:08] INFO: [IL-BC] Evaluating loaded BC model (100 episodes)...
+[10-07 15:53:08] INFO: [ENV-TRACK] Robot get_full_state #1: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-07 15:53:08] INFO: [ACTION-SPACE] Built 80 actions (GRID 5×16, stop=False)
+[10-07 15:53:08] INFO: [EXPLORER] RL-MAMBA-DOUBLEQ: JointState, state_dim=(34,)
+[10-07 15:53:08] INFO: [DENSE-REWARD-STEP] progress=0.2304, progress_reward=0.0, time_penalty=0.0, robot_speed=1.000, step_reward=0.0000
+[10-07 15:53:08] INFO: [ENV-TRACK] Robot get_full_state #2: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-07 15:53:08] INFO: [ENV-TRACK] Robot get_full_state #3: radius=0.300, v_pref=1.000, gx=0.000, gy=4.000
+[10-07 15:53:12] INFO: [IL-BC] Loaded BC model success rate: 100.0% (5/5 episodes)
+[10-07 15:53:12] INFO: [IL-ORCA-DATA] Teacher success stats: attempts=5056, successes=5037, ratio=0.996
+[10-07 15:53:12] INFO: [DENSE-REWARD] progress_reward=0.0, time_penalty=0.0, stand_penalty=0.0
+[10-07 15:53:12] INFO: human number: 5
+[10-07 15:53:12] INFO: Not randomize human's radius and preferred speed
+[10-07 15:53:12] INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+[10-07 15:53:12] INFO: Square width: 10.0, circle radius: 4.0
+[10-07 15:53:12] INFO: [IL-PARAM-RESTORE] Parameters restored for RL: time_limit=50, success_radius=0.25, human_num=5
+[10-07 15:53:12] INFO: [IL-BC] BC training completed: success_rate=99.6%
+[10-07 15:53:47] INFO: [SARL-PREFILL-LIMITED] IL episodes injected=5000, skipped=0, buffer_size=200000 (max_prefill=5000)
+[10-07 15:53:47] INFO: [CKPT-LOAD] skipped (already warm-started with fresh IL ckpt)
+[10-07 15:53:47] INFO: [CURRICULUM] DISABLED - Focusing on standard environment
+[10-07 15:53:47] INFO: [CURRICULUM] RL will use baseline 5-human circle environment (Nh=5, R=4)
+[10-07 15:53:47] INFO: [ALGO] Value-lookahead (BAYES_MEAN): value regression + one-step lookahead, lr=1e-05
+[10-07 15:53:47] INFO: [SARL-WARMUP] Replay warmup threshold: 5000 transitions
+[10-07 15:53:47] INFO: [SARL] n_step=1, use_per=False
+[10-07 15:53:47] INFO: [CHECKPOINT] interval=50 episodes
+[10-07 15:53:47] INFO: [VECTORIZE] Parallel sampling disabled, using serial explorer
+[10-07 15:53:47] INFO: [DIAGNOSTIC] ⚠ Using SERIAL sampling (no parallelization)
+[10-07 15:53:47] INFO: [DIAGNOSTIC] Pre-RL policy evaluation (5 episodes)...
+[10-07 15:53:50] INFO: [DIAGNOSTIC] Pre-RL test performance: s/c/t=100.0%/0.0%/0.0%
+[10-07 15:53:50] INFO: [TRAIN] Algorithm: sarl
+[10-07 15:53:50] INFO: [P1-RL] Base config: human_num=5, circle_radius=4.0, success_radius=0.25
+[10-07 15:53:50] INFO: FIRST_ACTION: Policy doesn't expose continuous action info, skipping debug
+[10-07 15:53:52] INFO: [RL-EP-0001] (1/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:53:52] INFO:               cumulative s/c/t%: 0.0%/100.0%/0.0%
+[10-07 15:53:52] INFO: [REPLAY-STORE] ok=1 skip=0 steps=23 buf=200000
+[10-07 15:53:55] INFO: [RL-EP-0002] (2/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:53:55] INFO:               cumulative s/c/t%: 50.0%/50.0%/0.0%
+[10-07 15:53:55] INFO: [REPLAY-STORE] ok=2 skip=0 steps=114 buf=200000
+[10-07 15:53:57] INFO: [RL-EP-0003] (3/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:53:57] INFO:               cumulative s/c/t%: 66.7%/33.3%/0.0%
+[10-07 15:53:57] INFO: [REPLAY-STORE] ok=3 skip=0 steps=181 buf=200000
+[10-07 15:53:59] INFO: [RL-EP-0004] (4/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:53:59] INFO:               cumulative s/c/t%: 75.0%/25.0%/0.0%
+[10-07 15:53:59] INFO: [REPLAY-STORE] ok=4 skip=0 steps=250 buf=200000
+[10-07 15:54:02] INFO: [RL-EP-0005] (5/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:02] INFO:               cumulative s/c/t%: 80.0%/20.0%/0.0%
+[10-07 15:54:02] INFO: [REPLAY-STORE] ok=5 skip=0 steps=336 buf=200000
+[10-07 15:54:04] INFO: [RL-EP-0006] (6/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:04] INFO:               cumulative s/c/t%: 83.3%/16.7%/0.0%
+[10-07 15:54:04] INFO: [REPLAY-STORE] ok=6 skip=0 steps=400 buf=200000
+[10-07 15:54:06] INFO: [RL-EP-0007] (7/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:06] INFO:               cumulative s/c/t%: 85.7%/14.3%/0.0%
+[10-07 15:54:06] INFO: [REPLAY-STORE] ok=7 skip=0 steps=470 buf=200000
+[10-07 15:54:09] INFO: [RL-EP-0008] (8/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:09] INFO:               cumulative s/c/t%: 87.5%/12.5%/0.0%
+[10-07 15:54:09] INFO: [REPLAY-STORE] ok=8 skip=0 steps=538 buf=200000
+[10-07 15:54:12] INFO: [RL-EP-0009] (9/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:12] INFO:               cumulative s/c/t%: 88.9%/11.1%/0.0%
+[10-07 15:54:12] INFO: [REPLAY-STORE] ok=9 skip=0 steps=651 buf=200000
+[10-07 15:54:14] INFO: [RL-EP-0010] (10/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:14] INFO:               cumulative s/c/t%: 90.0%/10.0%/0.0%
+[10-07 15:54:14] INFO: [REPLAY-STORE] ok=10 skip=0 steps=708 buf=200000
+[10-07 15:54:16] INFO: [RL-EP-0011] (11/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:16] INFO:               cumulative s/c/t%: 90.9%/9.1%/0.0%
+[10-07 15:54:16] INFO: [REPLAY-STORE] ok=11 skip=0 steps=772 buf=200000
+[10-07 15:54:19] INFO: [RL-EP-0012] (12/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:19] INFO:               cumulative s/c/t%: 91.7%/8.3%/0.0%
+[10-07 15:54:19] INFO: [REPLAY-STORE] ok=12 skip=0 steps=843 buf=200000
+[10-07 15:54:20] INFO: [RL-EP-0013] (13/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:20] INFO:               cumulative s/c/t%: 84.6%/15.4%/0.0%
+[10-07 15:54:20] INFO: [REPLAY-STORE] ok=13 skip=0 steps=871 buf=200000
+[10-07 15:54:23] INFO: [RL-EP-0014] (14/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:23] INFO:               cumulative s/c/t%: 85.7%/14.3%/0.0%
+[10-07 15:54:23] INFO: [REPLAY-STORE] ok=14 skip=0 steps=949 buf=200000
+[10-07 15:54:25] INFO: [RL-EP-0015] (15/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:25] INFO:               cumulative s/c/t%: 86.7%/13.3%/0.0%
+[10-07 15:54:25] INFO: [REPLAY-STORE] ok=15 skip=0 steps=1024 buf=200000
+[10-07 15:54:28] INFO: [RL-EP-0016] (16/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:28] INFO:               cumulative s/c/t%: 87.5%/12.5%/0.0%
+[10-07 15:54:28] INFO: [REPLAY-STORE] ok=16 skip=0 steps=1103 buf=200000
+[10-07 15:54:30] INFO: [RL-EP-0017] (17/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:30] INFO:               cumulative s/c/t%: 88.2%/11.8%/0.0%
+[10-07 15:54:30] INFO: [REPLAY-STORE] ok=17 skip=0 steps=1191 buf=200000
+[10-07 15:54:33] INFO: [RL-EP-0018] (18/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:33] INFO:               cumulative s/c/t%: 88.9%/11.1%/0.0%
+[10-07 15:54:33] INFO: [REPLAY-STORE] ok=18 skip=0 steps=1267 buf=200000
+[10-07 15:54:35] INFO: [RL-EP-0019] (19/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:35] INFO:               cumulative s/c/t%: 89.5%/10.5%/0.0%
+[10-07 15:54:35] INFO: [REPLAY-STORE] ok=19 skip=0 steps=1349 buf=200000
+[10-07 15:54:38] INFO: [RL-EP-0020] (20/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:38] INFO:               cumulative s/c/t%: 90.0%/10.0%/0.0%
+[10-07 15:54:38] INFO: [REPLAY-STORE] ok=20 skip=0 steps=1413 buf=200000
+[10-07 15:54:40] INFO: [RL-EP-0021] (21/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:40] INFO:               cumulative s/c/t%: 90.5%/9.5%/0.0%
+[10-07 15:54:40] INFO: [REPLAY-STORE] ok=21 skip=0 steps=1475 buf=200000
+[10-07 15:54:43] INFO: [RL-EP-0022] (22/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:43] INFO:               cumulative s/c/t%: 90.9%/9.1%/0.0%
+[10-07 15:54:43] INFO: [REPLAY-STORE] ok=22 skip=0 steps=1551 buf=200000
+[10-07 15:54:45] INFO: [RL-EP-0023] (23/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:45] INFO:               cumulative s/c/t%: 91.3%/8.7%/0.0%
+[10-07 15:54:45] INFO: [REPLAY-STORE] ok=23 skip=0 steps=1608 buf=200000
+[10-07 15:54:47] INFO: [RL-EP-0024] (24/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:47] INFO:               cumulative s/c/t%: 91.7%/8.3%/0.0%
+[10-07 15:54:47] INFO: [REPLAY-STORE] ok=24 skip=0 steps=1685 buf=200000
+[10-07 15:54:50] INFO: [SARL-LOSS] ep=25 value_loss=0.0024 epsilon=0.2958
+[10-07 15:54:50] INFO: [STAT] ep=025 | roll@25(s/c/t)=0.9/0.1/0.0 (0.92/0.08/0.00) | R.mean=0.4
+[10-07 15:54:50] INFO: [METRICS-25] time=17.45s | dfreq=0.000 | ddist=0.000m
+[10-07 15:54:50] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 15:54:50] INFO: [RL-EP-0025] (25/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:50] INFO:               cumulative s/c/t%: 92.0%/8.0%/0.0%
+[10-07 15:54:50] INFO: [REPLAY-STORE] ok=25 skip=0 steps=1745 buf=200000
+[10-07 15:54:50] INFO: ================================================================================
+[10-07 15:54:50] INFO: [MULTI-SCALE-25] TARGET: peak=0.920 stable_90=6ep
+[10-07 15:54:50] INFO: [MULTI-SCALE-25] WINDOWS: short=1.000 med=0.920 long=0.920
+[10-07 15:54:50] INFO: [MULTI-SCALE-25] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 15:54:50] INFO: [ACHIEVEMENT] Stable 90%+ success rate achieved for 6 episodes!
+[10-07 15:54:50] INFO: [HEALTH-CHECK-25] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 15:54:50] INFO: ================================================================================
+[10-07 15:54:52] INFO: [RL-EP-0026] (26/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:52] INFO:               cumulative s/c/t%: 92.3%/7.7%/0.0%
+[10-07 15:54:52] INFO: [REPLAY-STORE] ok=26 skip=0 steps=1803 buf=200000
+[10-07 15:54:54] INFO: [RL-EP-0027] (27/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:54] INFO:               cumulative s/c/t%: 88.9%/11.1%/0.0%
+[10-07 15:54:54] INFO: [REPLAY-STORE] ok=27 skip=0 steps=1832 buf=200000
+[10-07 15:54:57] INFO: [RL-EP-0028] (28/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:57] INFO:               cumulative s/c/t%: 89.3%/10.7%/0.0%
+[10-07 15:54:57] INFO: [REPLAY-STORE] ok=28 skip=0 steps=1893 buf=200000
+[10-07 15:54:59] INFO: [RL-EP-0029] (29/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:54:59] INFO:               cumulative s/c/t%: 89.7%/10.3%/0.0%
+[10-07 15:54:59] INFO: [REPLAY-STORE] ok=29 skip=0 steps=1973 buf=200000
+[10-07 15:55:01] INFO: [RL-EP-0030] (30/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:01] INFO:               cumulative s/c/t%: 90.0%/10.0%/0.0%
+[10-07 15:55:01] INFO: [REPLAY-STORE] ok=30 skip=0 steps=2037 buf=200000
+[10-07 15:55:04] INFO: [RL-EP-0031] (31/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:04] INFO:               cumulative s/c/t%: 90.3%/9.7%/0.0%
+[10-07 15:55:04] INFO: [REPLAY-STORE] ok=31 skip=0 steps=2114 buf=200000
+[10-07 15:55:06] INFO: [RL-EP-0032] (32/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:06] INFO:               cumulative s/c/t%: 90.6%/9.4%/0.0%
+[10-07 15:55:06] INFO: [REPLAY-STORE] ok=32 skip=0 steps=2187 buf=200000
+[10-07 15:55:09] INFO: [RL-EP-0033] (33/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:09] INFO:               cumulative s/c/t%: 90.9%/9.1%/0.0%
+[10-07 15:55:09] INFO: [REPLAY-STORE] ok=33 skip=0 steps=2277 buf=200000
+[10-07 15:55:11] INFO: [RL-EP-0034] (34/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:11] INFO:               cumulative s/c/t%: 91.2%/8.8%/0.0%
+[10-07 15:55:11] INFO: [REPLAY-STORE] ok=34 skip=0 steps=2336 buf=200000
+[10-07 15:55:13] INFO: [RL-EP-0035] (35/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:13] INFO:               cumulative s/c/t%: 91.4%/8.6%/0.0%
+[10-07 15:55:13] INFO: [REPLAY-STORE] ok=35 skip=0 steps=2392 buf=200000
+[10-07 15:55:16] INFO: [RL-EP-0036] (36/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:16] INFO:               cumulative s/c/t%: 91.7%/8.3%/0.0%
+[10-07 15:55:16] INFO: [REPLAY-STORE] ok=36 skip=0 steps=2460 buf=200000
+[10-07 15:55:20] INFO: [RL-EP-0037] (37/200) s/c/t=0/0/1 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:20] INFO:               cumulative s/c/t%: 89.2%/8.1%/2.7%
+[10-07 15:55:20] INFO: [REPLAY-STORE] ok=37 skip=0 steps=2661 buf=200000
+[10-07 15:55:23] INFO: [RL-EP-0038] (38/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:23] INFO:               cumulative s/c/t%: 89.5%/7.9%/2.6%
+[10-07 15:55:23] INFO: [REPLAY-STORE] ok=38 skip=0 steps=2737 buf=200000
+[10-07 15:55:25] INFO: [RL-EP-0039] (39/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:25] INFO:               cumulative s/c/t%: 89.7%/7.7%/2.6%
+[10-07 15:55:25] INFO: [REPLAY-STORE] ok=39 skip=0 steps=2791 buf=200000
+[10-07 15:55:28] INFO: [RL-EP-0040] (40/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:28] INFO:               cumulative s/c/t%: 90.0%/7.5%/2.5%
+[10-07 15:55:28] INFO: [REPLAY-STORE] ok=40 skip=0 steps=2852 buf=200000
+[10-07 15:55:30] INFO: [RL-EP-0041] (41/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:30] INFO:               cumulative s/c/t%: 90.2%/7.3%/2.4%
+[10-07 15:55:30] INFO: [REPLAY-STORE] ok=41 skip=0 steps=2950 buf=200000
+[10-07 15:55:33] INFO: [RL-EP-0042] (42/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:33] INFO:               cumulative s/c/t%: 90.5%/7.1%/2.4%
+[10-07 15:55:33] INFO: [REPLAY-STORE] ok=42 skip=0 steps=3026 buf=200000
+[10-07 15:55:36] INFO: [RL-EP-0043] (43/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:36] INFO:               cumulative s/c/t%: 90.7%/7.0%/2.3%
+[10-07 15:55:36] INFO: [REPLAY-STORE] ok=43 skip=0 steps=3086 buf=200000
+[10-07 15:55:38] INFO: [RL-EP-0044] (44/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:38] INFO:               cumulative s/c/t%: 90.9%/6.8%/2.3%
+[10-07 15:55:38] INFO: [REPLAY-STORE] ok=44 skip=0 steps=3157 buf=200000
+[10-07 15:55:41] INFO: [RL-EP-0045] (45/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:41] INFO:               cumulative s/c/t%: 91.1%/6.7%/2.2%
+[10-07 15:55:41] INFO: [REPLAY-STORE] ok=45 skip=0 steps=3220 buf=200000
+[10-07 15:55:44] INFO: [RL-EP-0046] (46/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:44] INFO:               cumulative s/c/t%: 91.3%/6.5%/2.2%
+[10-07 15:55:44] INFO: [REPLAY-STORE] ok=46 skip=0 steps=3294 buf=200000
+[10-07 15:55:46] INFO: [RL-EP-0047] (47/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:46] INFO:               cumulative s/c/t%: 89.4%/8.5%/2.1%
+[10-07 15:55:46] INFO: [REPLAY-STORE] ok=47 skip=0 steps=3320 buf=200000
+[10-07 15:55:48] INFO: [RL-EP-0048] (48/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:48] INFO:               cumulative s/c/t%: 89.6%/8.3%/2.1%
+[10-07 15:55:48] INFO: [REPLAY-STORE] ok=48 skip=0 steps=3384 buf=200000
+[10-07 15:55:51] INFO: [RL-EP-0049] (49/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:51] INFO:               cumulative s/c/t%: 89.8%/8.2%/2.0%
+[10-07 15:55:51] INFO: [REPLAY-STORE] ok=49 skip=0 steps=3459 buf=200000
+[10-07 15:55:51] INFO: [CONFIG-CHECK] ep=50 updates_per_ep=4 (from config)
+[10-07 15:55:53] INFO: [SARL-LOSS] ep=50 value_loss=0.0036 epsilon=0.2917
+[10-07 15:55:53] INFO: [STAT] ep=050 | roll@25(s/c/t)=0.9/0.1/0.0 (0.90/0.08/0.02) | R.mean=0.4
+[10-07 15:55:53] INFO: [METRICS-25] time=17.61s | dfreq=0.000 | ddist=0.000m
+[10-07 15:55:54] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 15:55:54] INFO: [RL-EP-0050] (50/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:55:54] INFO:               cumulative s/c/t%: 90.0%/8.0%/2.0%
+[10-07 15:55:54] INFO: [REPLAY-STORE] ok=50 skip=0 steps=3522 buf=200000
+[10-07 15:55:54] INFO: ================================================================================
+[10-07 15:55:54] INFO: [MULTI-SCALE-50] TARGET: peak=0.923 stable_90=7ep
+[10-07 15:55:54] INFO: [MULTI-SCALE-50] WINDOWS: short=0.900 med=0.880 long=0.900
+[10-07 15:55:54] INFO: [MULTI-SCALE-50] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 15:55:54] INFO: [ACHIEVEMENT] Stable 90%+ success rate achieved for 7 episodes!
+[10-07 15:55:54] INFO: [HEALTH-CHECK-50] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 15:55:54] INFO: ================================================================================
+[10-07 15:55:54] INFO: [RL-SAVE] sarl checkpoint -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/rl_model_ep50.pth
+[10-07 15:55:54] INFO: [RL-SAVE] Saved components: policy, target network, optimizer
+[10-07 15:55:57] INFO: [RL-EP-0051] (51)
+[10-07 15:55:59] INFO: [RL-EP-0052] (52)
+[10-07 15:56:02] INFO: [RL-EP-0053] (53)
+[10-07 15:56:05] INFO: [RL-EP-0054] (54)
+[10-07 15:56:07] INFO: [RL-EP-0055] roll=0.920/0.060/0.020
+[10-07 15:56:10] INFO: [RL-EP-0056] (56)
+[10-07 15:56:12] INFO: [RL-EP-0057] (57)
+[10-07 15:56:14] INFO: [RL-EP-0058] (58)
+[10-07 15:56:17] INFO: [RL-EP-0059] (59)
+[10-07 15:56:19] INFO: [RL-EP-0060] roll=0.900/0.080/0.020
+[10-07 15:56:22] INFO: [RL-EP-0061] (61)
+[10-07 15:56:24] INFO: [RL-EP-0062] (62)
+[10-07 15:56:27] INFO: [RL-EP-0063] (63)
+[10-07 15:56:29] INFO: [RL-EP-0064] (64)
+[10-07 15:56:32] INFO: [RL-EP-0065] roll=0.920/0.060/0.020
+[10-07 15:56:35] INFO: [RL-EP-0066] (66)
+[10-07 15:56:37] INFO: [RL-EP-0067] (67)
+[10-07 15:56:39] INFO: [RL-EP-0068] (68)
+[10-07 15:56:42] INFO: [RL-EP-0069] (69)
+[10-07 15:56:44] INFO: [RL-EP-0070] roll=0.900/0.080/0.020
+[10-07 15:56:47] INFO: [RL-EP-0071] (71)
+[10-07 15:56:49] INFO: [RL-EP-0072] (72)
+[10-07 15:56:52] INFO: [RL-EP-0073] (73)
+[10-07 15:56:55] INFO: [RL-EP-0074] (74)
+[10-07 15:56:57] INFO: [SARL-LOSS] ep=75 value_loss=0.0021 epsilon=0.2875
+[10-07 15:56:57] INFO: [STAT] ep=075 | roll@25(s/c/t)=0.9/0.1/0.0 (0.90/0.08/0.02) | R.mean=0.4
+[10-07 15:56:57] INFO: [METRICS-25] time=17.07s | dfreq=0.000 | ddist=0.000m
+[10-07 15:56:58] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 15:56:58] INFO: [RL-EP-0075] (75/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:56:58] INFO:               cumulative s/c/t%: 90.0%/8.0%/2.0%
+[10-07 15:56:58] INFO: [REPLAY-STORE] ok=75 skip=0 steps=5158 buf=200000
+[10-07 15:56:58] INFO: [STAGE0-MONITOR] timeout_ratio=0.020 (target: decrease over time)
+[10-07 15:56:58] INFO: ================================================================================
+[10-07 15:56:58] INFO: [MULTI-SCALE-75] TARGET: peak=0.923 stable_90=10ep
+[10-07 15:56:58] INFO: [MULTI-SCALE-75] WINDOWS: short=0.900 med=0.920 long=0.907
+[10-07 15:56:58] INFO: [MULTI-SCALE-75] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 15:56:58] INFO: [ACHIEVEMENT] Stable 90%+ success rate achieved for 10 episodes!
+[10-07 15:56:58] INFO: [HEALTH-CHECK-75] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 15:56:58] INFO: ================================================================================
+[10-07 15:57:00] INFO: [RL-EP-0076] (76)
+[10-07 15:57:03] INFO: [RL-EP-0077] (77)
+[10-07 15:57:05] INFO: [RL-EP-0078] (78)
+[10-07 15:57:07] INFO: [RL-EP-0079] (79)
+[10-07 15:57:10] INFO: [RL-EP-0080] roll=0.900/0.080/0.020
+[10-07 15:57:12] INFO: [RL-EP-0081] (81)
+[10-07 15:57:14] INFO: [RL-EP-0082] (82)
+[10-07 15:57:17] INFO: [RL-EP-0083] (83)
+[10-07 15:57:19] INFO: [RL-EP-0084] (84)
+[10-07 15:57:22] INFO: [RL-EP-0085] roll=0.880/0.100/0.020
+[10-07 15:57:24] INFO: [RL-EP-0086] (86)
+[10-07 15:57:28] INFO: [RL-EP-0087] (87)
+[10-07 15:57:31] INFO: [RL-EP-0088] (88)
+[10-07 15:57:33] INFO: [RL-EP-0089] (89)
+[10-07 15:57:36] INFO: [RL-EP-0090] roll=0.880/0.100/0.020
+[10-07 15:57:38] INFO: [RL-EP-0091] (91)
+[10-07 15:57:41] INFO: [RL-EP-0092] (92)
+[10-07 15:57:43] INFO: [RL-EP-0093] (93)
+[10-07 15:57:46] INFO: [RL-EP-0094] (94)
+[10-07 15:57:48] INFO: [RL-EP-0095] roll=0.880/0.100/0.020
+[10-07 15:57:51] INFO: [RL-EP-0096] (96)
+[10-07 15:57:53] INFO: [RL-EP-0097] (97)
+[10-07 15:57:56] INFO: [RL-EP-0098] (98)
+[10-07 15:57:58] INFO: [RL-EP-0099] (99)
+[10-07 15:57:58] INFO: [CONFIG-CHECK] ep=100 updates_per_ep=4 (from config)
+[10-07 15:57:58] INFO: [SARL-EPSILON] ep=100 epsilon=0.2833 (start=0.3, end=0.05, decay=1500)
+[10-07 15:58:00] INFO: [SARL-REPLAY] ep=100 buffer_size=200000 updates=4
+[10-07 15:58:00] INFO: [SARL-LOSS] ep=100 value_loss=0.0031 epsilon=0.2833
+[10-07 15:58:00] INFO: [SARL-STATS] ep=100 buffer_size=200000
+[10-07 15:58:00] INFO: [STAT] ep=100 | roll@25(s/c/t)=0.9/0.1/0.0 (0.90/0.08/0.02) | R.mean=0.4
+[10-07 15:58:00] INFO: [METRICS-25] time=16.66s | dfreq=0.000 | ddist=0.000m
+[10-07 15:58:01] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 15:58:01] INFO: [RL-EP-0100] (100/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:58:01] INFO:               cumulative s/c/t%: 90.0%/8.0%/2.0%
+[10-07 15:58:01] INFO: [REPLAY-STORE] ok=100 skip=0 steps=6855 buf=200000
+[10-07 15:58:01] INFO: [STAGE0-MONITOR] timeout_ratio=0.020 (target: decrease over time)
+[10-07 15:58:01] INFO: [SOT-0100] REWARD succ=1.0/coll=-0.50 | GRID 5×16=80 | EVENTS s=0.90/c=0.08/t=0.02
+[10-07 15:58:01] INFO: ================================================================================
+[10-07 15:58:01] INFO: [MULTI-SCALE-100] TARGET: peak=0.923 stable_90=4ep
+[10-07 15:58:01] INFO: [MULTI-SCALE-100] WINDOWS: short=1.000 med=0.880 long=0.900
+[10-07 15:58:01] INFO: [MULTI-SCALE-100] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 15:58:01] INFO: [MILESTONE] Peak performance 92.3% reached! Working towards stability...
+[10-07 15:58:01] INFO: [HEALTH-CHECK-100] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 15:58:01] INFO: ================================================================================
+[10-07 15:58:01] INFO: [EVAL] Starting evaluation: ep=100, ε=0.0, k=5
+[10-07 15:58:04] INFO: [EVAL] Completed evaluation: succ=0.800 coll=0.200 timeout=0.000 sum=1.000 nav=11.90
+[10-07 15:58:04] INFO: [EVAL-EXTENDED] path_len=9.43m smoothness=0.707 avg_speed=0.79m/s
+[10-07 15:58:04] INFO: [BEST-SAVE] success=0.800 -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/best_model.pth
+[10-07 15:58:04] INFO: [RL-SAVE] sarl checkpoint -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/rl_model_ep100.pth
+[10-07 15:58:04] INFO: [RL-SAVE] Saved components: policy, target network, optimizer
+[10-07 15:58:06] INFO: [RL-EP-0101] (101)
+[10-07 15:58:08] INFO: [RL-EP-0102] (102)
+[10-07 15:58:11] INFO: [RL-EP-0103] (103)
+[10-07 15:58:13] INFO: [RL-EP-0104] (104)
+[10-07 15:58:15] INFO: [RL-EP-0105] roll=0.880/0.100/0.020
+[10-07 15:58:18] INFO: [RL-EP-0106] (106)
+[10-07 15:58:19] INFO: [RL-EP-0107] (107)
+[10-07 15:58:22] INFO: [RL-EP-0108] (108)
+[10-07 15:58:24] INFO: [RL-EP-0109] (109)
+[10-07 15:58:26] INFO: [RL-EP-0110] roll=0.860/0.120/0.020
+[10-07 15:58:28] INFO: [RL-EP-0111] (111)
+[10-07 15:58:31] INFO: [RL-EP-0112] (112)
+[10-07 15:58:32] INFO: [RL-EP-0113] (113)
+[10-07 15:58:35] INFO: [RL-EP-0114] (114)
+[10-07 15:58:37] INFO: [RL-EP-0115] roll=0.840/0.140/0.020
+[10-07 15:58:40] INFO: [RL-EP-0116] (116)
+[10-07 15:58:42] INFO: [RL-EP-0117] (117)
+[10-07 15:58:45] INFO: [RL-EP-0118] (118)
+[10-07 15:58:47] INFO: [RL-EP-0119] (119)
+[10-07 15:58:50] INFO: [RL-EP-0120] roll=0.860/0.120/0.020
+[10-07 15:58:52] INFO: [RL-EP-0121] (121)
+[10-07 15:58:55] INFO: [RL-EP-0122] (122)
+[10-07 15:58:58] INFO: [RL-EP-0123] (123)
+[10-07 15:59:00] INFO: [RL-EP-0124] (124)
+[10-07 15:59:03] INFO: [SARL-LOSS] ep=125 value_loss=0.0046 epsilon=0.2792
+[10-07 15:59:03] INFO: [STAT] ep=125 | roll@25(s/c/t)=0.9/0.1/0.0 (0.86/0.12/0.02) | R.mean=0.4
+[10-07 15:59:03] INFO: [METRICS-25] time=15.04s | dfreq=0.000 | ddist=0.000m
+[10-07 15:59:03] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 15:59:03] INFO: [RL-EP-0125] (125/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 15:59:03] INFO:               cumulative s/c/t%: 86.0%/12.0%/2.0%
+[10-07 15:59:03] INFO: [REPLAY-STORE] ok=125 skip=0 steps=8165 buf=200000
+[10-07 15:59:03] INFO: [STAGE0-MONITOR] timeout_ratio=0.020 (target: decrease over time)
+[10-07 15:59:03] INFO: ================================================================================
+[10-07 15:59:03] INFO: [MULTI-SCALE-125] TARGET: peak=0.923 stable_90=0ep
+[10-07 15:59:03] INFO: [MULTI-SCALE-125] WINDOWS: short=1.000 med=0.840 long=0.880
+[10-07 15:59:03] INFO: [MULTI-SCALE-125] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 15:59:03] INFO: [MILESTONE] Peak performance 92.3% reached! Working towards stability...
+[10-07 15:59:03] INFO: [HEALTH-CHECK-125] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 15:59:03] INFO: ================================================================================
+[10-07 15:59:06] INFO: [RL-EP-0126] (126)
+[10-07 15:59:08] INFO: [RL-EP-0127] (127)
+[10-07 15:59:10] INFO: [RL-EP-0128] (128)
+[10-07 15:59:13] INFO: [RL-EP-0129] (129)
+[10-07 15:59:15] INFO: [RL-EP-0130] roll=0.860/0.120/0.020
+[10-07 15:59:18] INFO: [RL-EP-0131] (131)
+[10-07 15:59:20] INFO: [RL-EP-0132] (132)
+[10-07 15:59:22] INFO: [RL-EP-0133] (133)
+[10-07 15:59:25] INFO: [RL-EP-0134] (134)
+[10-07 15:59:28] INFO: [RL-EP-0135] roll=0.860/0.120/0.020
+[10-07 15:59:30] INFO: [RL-EP-0136] (136)
+[10-07 15:59:33] INFO: [RL-EP-0137] (137)
+[10-07 15:59:35] INFO: [RL-EP-0138] (138)
+[10-07 15:59:38] INFO: [RL-EP-0139] (139)
+[10-07 15:59:40] INFO: [RL-EP-0140] roll=0.880/0.120/0.000
+[10-07 15:59:43] INFO: [RL-EP-0141] (141)
+[10-07 15:59:45] INFO: [RL-EP-0142] (142)
+[10-07 15:59:47] INFO: [RL-EP-0143] (143)
+[10-07 15:59:50] INFO: [RL-EP-0144] (144)
+[10-07 15:59:52] INFO: [RL-EP-0145] roll=0.860/0.140/0.000
+[10-07 15:59:54] INFO: [RL-EP-0146] (146)
+[10-07 15:59:57] INFO: [RL-EP-0147] (147)
+[10-07 15:59:59] INFO: [RL-EP-0148] (148)
+[10-07 16:00:02] INFO: [RL-EP-0149] (149)
+[10-07 16:00:02] INFO: [CONFIG-CHECK] ep=150 updates_per_ep=4 (from config)
+[10-07 16:00:04] INFO: [SARL-LOSS] ep=150 value_loss=0.0054 epsilon=0.2750
+[10-07 16:00:04] INFO: [STAT] ep=150 | roll@25(s/c/t)=0.8/0.2/0.0 (0.82/0.18/0.00) | R.mean=0.4
+[10-07 16:00:04] INFO: [METRICS-25] time=13.16s | dfreq=0.000 | ddist=0.000m
+[10-07 16:00:05] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 16:00:05] INFO: [RL-EP-0150] (150/200) s/c/t=1/0/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 16:00:05] INFO:               cumulative s/c/t%: 82.0%/18.0%/0.0%
+[10-07 16:00:05] INFO: [REPLAY-STORE] ok=150 skip=0 steps=9487 buf=200000
+[10-07 16:00:05] INFO: [STAGE0-MONITOR] timeout_ratio=0.000 (target: decrease over time)
+[10-07 16:00:05] INFO: ================================================================================
+[10-07 16:00:05] INFO: [MULTI-SCALE-150] TARGET: peak=0.923 stable_90=0ep
+[10-07 16:00:05] INFO: [MULTI-SCALE-150] WINDOWS: short=0.700 med=0.800 long=0.860
+[10-07 16:00:05] INFO: [MULTI-SCALE-150] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 16:00:05] INFO: [MILESTONE] Peak performance 92.3% reached! Working towards stability...
+[10-07 16:00:05] INFO: [HEALTH-CHECK-150] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 16:00:05] INFO: ================================================================================
+[10-07 16:00:05] INFO: [RL-SAVE] sarl checkpoint -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/rl_model_ep150.pth
+[10-07 16:00:05] INFO: [RL-SAVE] Saved components: policy, target network, optimizer
+[10-07 16:00:07] INFO: [RL-EP-0151] (151)
+[10-07 16:00:10] INFO: [RL-EP-0152] (152)
+[10-07 16:00:12] INFO: [RL-EP-0153] (153)
+[10-07 16:00:15] INFO: [RL-EP-0154] (154)
+[10-07 16:00:17] INFO: [RL-EP-0155] roll=0.840/0.160/0.000
+[10-07 16:00:20] INFO: [RL-EP-0156] (156)
+[10-07 16:00:22] INFO: [RL-EP-0157] (157)
+[10-07 16:00:24] INFO: [RL-EP-0158] (158)
+[10-07 16:00:27] INFO: [RL-EP-0159] (159)
+[10-07 16:00:29] INFO: [RL-EP-0160] roll=0.860/0.140/0.000
+[10-07 16:00:31] INFO: [RL-EP-0161] (161)
+[10-07 16:00:34] INFO: [RL-EP-0162] (162)
+[10-07 16:00:37] INFO: [RL-EP-0163] (163)
+[10-07 16:00:39] INFO: [RL-EP-0164] (164)
+[10-07 16:00:41] INFO: [RL-EP-0165] roll=0.860/0.140/0.000
+[10-07 16:00:44] INFO: [RL-EP-0166] (166)
+[10-07 16:00:46] INFO: [RL-EP-0167] (167)
+[10-07 16:00:48] INFO: [RL-EP-0168] (168)
+[10-07 16:00:51] INFO: [RL-EP-0169] (169)
+[10-07 16:00:53] INFO: [RL-EP-0170] roll=0.840/0.160/0.000
+[10-07 16:00:56] INFO: [RL-EP-0171] (171)
+[10-07 16:00:58] INFO: [RL-EP-0172] (172)
+[10-07 16:01:01] INFO: [RL-EP-0173] (173)
+[10-07 16:01:03] INFO: [RL-EP-0174] (174)
+[10-07 16:01:05] INFO: [SARL-LOSS] ep=175 value_loss=0.0094 epsilon=0.2708
+[10-07 16:01:05] INFO: [STAT] ep=175 | roll@25(s/c/t)=0.8/0.2/0.0 (0.82/0.18/0.00) | R.mean=0.4
+[10-07 16:01:05] INFO: [METRICS-25] time=13.12s | dfreq=0.000 | ddist=0.000m
+[10-07 16:01:06] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 16:01:06] INFO: [RL-EP-0175] (175/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 16:01:06] INFO:               cumulative s/c/t%: 82.0%/18.0%/0.0%
+[10-07 16:01:06] INFO: [REPLAY-STORE] ok=175 skip=0 steps=10789 buf=200000
+[10-07 16:01:06] INFO: [STAGE0-MONITOR] timeout_ratio=0.000 (target: decrease over time)
+[10-07 16:01:06] INFO: ================================================================================
+[10-07 16:01:06] INFO: [MULTI-SCALE-175] TARGET: peak=0.923 stable_90=0ep
+[10-07 16:01:06] INFO: [MULTI-SCALE-175] WINDOWS: short=0.800 med=0.840 long=0.840
+[10-07 16:01:06] INFO: [MULTI-SCALE-175] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 16:01:06] INFO: [MILESTONE] Peak performance 92.3% reached! Working towards stability...
+[10-07 16:01:06] INFO: [HEALTH-CHECK-175] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 16:01:06] INFO: ================================================================================
+[10-07 16:01:08] INFO: [RL-EP-0176] (176)
+[10-07 16:01:11] INFO: [RL-EP-0177] (177)
+[10-07 16:01:12] INFO: [RL-EP-0178] (178)
+[10-07 16:01:15] INFO: [RL-EP-0179] (179)
+[10-07 16:01:18] INFO: [RL-EP-0180] roll=0.820/0.180/0.000
+[10-07 16:01:19] INFO: [RL-EP-0181] (181)
+[10-07 16:01:22] INFO: [RL-EP-0182] (182)
+[10-07 16:01:24] INFO: [RL-EP-0183] (183)
+[10-07 16:01:27] INFO: [RL-EP-0184] (184)
+[10-07 16:01:29] INFO: [RL-EP-0185] roll=0.800/0.200/0.000
+[10-07 16:01:32] INFO: [RL-EP-0186] (186)
+[10-07 16:01:34] INFO: [RL-EP-0187] (187)
+[10-07 16:01:37] INFO: [RL-EP-0188] (188)
+[10-07 16:01:39] INFO: [RL-EP-0189] (189)
+[10-07 16:01:42] INFO: [RL-EP-0190] roll=0.800/0.200/0.000
+[10-07 16:01:44] INFO: [RL-EP-0191] (191)
+[10-07 16:01:46] INFO: [RL-EP-0192] (192)
+[10-07 16:01:49] INFO: [RL-EP-0193] (193)
+[10-07 16:01:51] INFO: [RL-EP-0194] (194)
+[10-07 16:01:54] INFO: [RL-EP-0195] roll=0.800/0.200/0.000
+[10-07 16:01:56] INFO: [RL-EP-0196] (196)
+[10-07 16:01:58] INFO: [RL-EP-0197] (197)
+[10-07 16:02:01] INFO: [RL-EP-0198] (198)
+[10-07 16:02:03] INFO: [RL-EP-0199] (199)
+[10-07 16:02:03] INFO: [CONFIG-CHECK] ep=200 updates_per_ep=4 (from config)
+[10-07 16:02:03] INFO: [SARL-EPSILON] ep=200 epsilon=0.2667 (start=0.3, end=0.05, decay=1500)
+[10-07 16:02:06] INFO: [SARL-REPLAY] ep=200 buffer_size=200000 updates=4
+[10-07 16:02:06] INFO: [SARL-LOSS] ep=200 value_loss=0.0065 epsilon=0.2667
+[10-07 16:02:06] INFO: [SARL-STATS] ep=200 buffer_size=200000
+[10-07 16:02:06] INFO: [STAT] ep=200 | roll@25(s/c/t)=0.8/0.2/0.0 (0.80/0.20/0.00) | R.mean=0.4
+[10-07 16:02:06] INFO: [METRICS-25] time=12.99s | dfreq=0.000 | ddist=0.000m
+[10-07 16:02:06] INFO: [METRICS-PLOT] 3-metrics curve -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/curves_3metrics.png
+[10-07 16:02:06] INFO: [RL-EP-0200] (200/200) s/c/t=0/1/0 qloss=0.0000 ploss=0.0000 buf=200000
+[10-07 16:02:06] INFO:               cumulative s/c/t%: 80.0%/20.0%/0.0%
+[10-07 16:02:06] INFO: [REPLAY-STORE] ok=200 skip=0 steps=12085 buf=200000
+[10-07 16:02:06] INFO: [STAGE0-MONITOR] timeout_ratio=0.000 (target: decrease over time)
+[10-07 16:02:06] INFO: [SOT-0200] REWARD succ=1.0/coll=-0.50 | GRID 5×16=80 | EVENTS s=0.80/c=0.20/t=0.00
+[10-07 16:02:06] INFO: ================================================================================
+[10-07 16:02:06] INFO: [MULTI-SCALE-200] TARGET: peak=0.923 stable_90=0ep
+[10-07 16:02:06] INFO: [MULTI-SCALE-200] WINDOWS: short=0.700 med=0.760 long=0.810
+[10-07 16:02:06] INFO: [MULTI-SCALE-200] QUALITY: stability=0.800 learn_rate=0.00000
+[10-07 16:02:06] INFO: [MILESTONE] Peak performance 92.3% reached! Working towards stability...
+[10-07 16:02:06] INFO: [HEALTH-CHECK-200] Overall: NEEDS_IMPROVEMENT (score=0.400)
+[10-07 16:02:06] INFO: ================================================================================
+[10-07 16:02:06] INFO: [EVAL] Starting evaluation: ep=200, ε=0.0, k=5
+[10-07 16:02:11] INFO: [EVAL] Completed evaluation: succ=1.000 coll=0.000 timeout=0.000 sum=1.000 nav=11.90
+[10-07 16:02:11] INFO: [EVAL-EXTENDED] path_len=8.85m smoothness=0.731 avg_speed=0.75m/s
+[10-07 16:02:11] INFO: [BEST-SAVE] success=1.000 -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/best_model.pth
+[10-07 16:02:11] INFO: ================================================================================
+[10-07 16:02:11] INFO: [CUMULATIVE-METRICS] Episode 200: Cumulative average (all 200 episodes)
+[10-07 16:02:11] INFO:   Success: 0.862 (86.2%), Collision: 0.128 (12.8%), Timeout: 0.010 (1.0%)
+[10-07 16:02:11] INFO:   Avg Reward: 0.39
+[10-07 16:02:11] INFO:   Avg Time Taken: 15.11s
+[10-07 16:02:11] INFO:   Avg Discomfort Freq: 0.000
+[10-07 16:02:11] INFO:   Avg Discomfort Dist: 0.000m
+[10-07 16:02:11] INFO: ================================================================================
+[10-07 16:02:11] INFO: [RL-SAVE] sarl checkpoint -> /root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/smoke-bayes_mean/rl_model_ep200.pth
+[10-07 16:02:11] INFO: [RL-SAVE] Saved components: policy, target network, optimizer
+[10-07 16:02:11] INFO: ================================================================================
+[10-07 16:02:11] INFO: 
+[10-07 16:02:11] INFO: ================================================================================
+[10-07 16:02:11] INFO: [FINAL-STATS] Episodes completed: 200
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Success Rate:   0.862 (86.2%)
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Collision Rate: 0.128 (12.8%)
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Timeout Rate:   0.010 (1.0%)
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Reward:         0.39
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Time Taken:     15.11s
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Discomfort Freq: 0.000
+[10-07 16:02:11] INFO: [FINAL-STATS] Average Discomfort Dist: 0.000m
+[10-07 16:02:11] INFO: [FINAL-STATS] Best Evaluation Success: 1.000 (100.0%)
+[10-07 16:02:11] INFO: [PROGRESS] 📈 GOOD PROGRESS! Average success rate 86.2%, approaching 90% target
+[10-07 16:02:11] INFO: ================================================================================
+[10-07 16:02:11] INFO: [DONE] Training completed - best_eval_success=1.000
+[10-07 16:02:11] INFO: [MAIN-COMPLETE] Training finished with best evaluation success: 1.000
+[10-07 16:02:11] INFO: [TRAJECTORY-LOG] Trajectory file closed successfully
+[10-07 16:02:11] INFO: [TENSORBOARD] Events file closed successfully

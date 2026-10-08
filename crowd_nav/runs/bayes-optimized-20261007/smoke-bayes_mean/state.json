@@ -1,0 +1,18 @@
+{
+  "status": "TRAIN",
+  "pid": 1876563,
+  "command": [
+    "/root/miniconda3/envs/mamba/bin/python",
+    "-m",
+    "crowd_nav.train",
+    "--config",
+    "/root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000/smoke-bayes_mean/config.ini",
+    "--outdir",
+    "/root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000/smoke-bayes_mean",
+    "--temporal-backbone",
+    "bayes_mean",
+    "--seed",
+    "42",
+    "--gpu"
+  ]
+}

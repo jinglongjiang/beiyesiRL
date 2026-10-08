@@ -1,0 +1,24 @@
+{
+  "status": "IL",
+  "pid": 2137700,
+  "proc_start_ticks": "2528621997",
+  "started_unix": 1791398973.6001892,
+  "command": [
+    "/root/miniconda3/envs/mamba/bin/python",
+    "/root/bayes-fix-20261008/code/scripts/run-bayes-fix.py",
+    "worker",
+    "train",
+    "--config",
+    "/root/bayes-fix-20261008/runs/il-gru-seed42/config.ini",
+    "--outdir",
+    "/root/bayes-fix-20261008/runs/il-gru-seed42",
+    "--temporal-backbone",
+    "gru",
+    "--seed",
+    "42",
+    "--gpu",
+    "--pretrain-only"
+  ],
+  "elapsed_seconds": 9519.127689361572,
+  "disk_free_bytes": 7586930688
+}

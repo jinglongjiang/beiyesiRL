@@ -1,0 +1,152 @@
+{
+  "captured_kst": "2026-10-08T11:31:12.364457+09:00",
+  "captured_unix": 1791426672.4322362,
+  "workers": [
+    {
+      "run": "formal-bayes-seed42",
+      "pid": 2231394,
+      "proc_identity_verified": true,
+      "last_logged_episode": 2246,
+      "completed_outcomes": 2247,
+      "counts": {
+        "success": 2074,
+        "collision": 158,
+        "timeout": 15
+      },
+      "latest_checkpoint": [
+        2000,
+        "rl_model_ep2000.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    },
+    {
+      "run": "formal-bayes-seed43",
+      "pid": 2231391,
+      "proc_identity_verified": true,
+      "last_logged_episode": 2281,
+      "completed_outcomes": 2282,
+      "counts": {
+        "success": 2115,
+        "collision": 159,
+        "timeout": 8
+      },
+      "latest_checkpoint": [
+        2000,
+        "rl_model_ep2000.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    },
+    {
+      "run": "formal-bayes_mean-seed42",
+      "pid": 2231392,
+      "proc_identity_verified": true,
+      "last_logged_episode": 2202,
+      "completed_outcomes": 2203,
+      "counts": {
+        "success": 2014,
+        "collision": 156,
+        "timeout": 33
+      },
+      "latest_checkpoint": [
+        2000,
+        "rl_model_ep2000.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    },
+    {
+      "run": "formal-bayes_mean-seed43",
+      "pid": 2231393,
+      "proc_identity_verified": true,
+      "last_logged_episode": 2215,
+      "completed_outcomes": 2216,
+      "counts": {
+        "success": 2014,
+        "collision": 162,
+        "timeout": 40
+      },
+      "latest_checkpoint": [
+        2000,
+        "rl_model_ep2000.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    },
+    {
+      "run": "formal-gru-seed42",
+      "pid": 2231388,
+      "proc_identity_verified": true,
+      "last_logged_episode": 3439,
+      "completed_outcomes": 3440,
+      "counts": {
+        "success": 3255,
+        "collision": 143,
+        "timeout": 42
+      },
+      "latest_checkpoint": [
+        3000,
+        "rl_model_ep3000.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    },
+    {
+      "run": "formal-gru-seed43",
+      "pid": 2231390,
+      "proc_identity_verified": true,
+      "last_logged_episode": 3509,
+      "completed_outcomes": 3509,
+      "counts": {
+        "success": 3284,
+        "collision": 191,
+        "timeout": 34
+      },
+      "latest_checkpoint": [
+        3500,
+        "rl_model_ep3500.pth"
+      ],
+      "grid80": true,
+      "offline_dataset": true,
+      "il_strict": true,
+      "traceback": false,
+      "result": null,
+      "benchmark_result": null
+    }
+  ],
+  "controller_state": {
+    "stage": "FORMAL",
+    "seeds": [
+      42,
+      43
+    ],
+    "pid": 2231369
+  },
+  "error": null,
+  "training_results": null,
+  "complete": null,
+  "disk_free_GiB": 6.324886322021484,
+  "memory_available_KiB": 24892672,
+  "gpu": "8678 MiB, 92 %\n"
+}

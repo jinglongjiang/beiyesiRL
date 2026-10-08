@@ -1,0 +1,8 @@
+{
+  "description": "ORCA pretraining only / w/o online fine-tuning",
+  "il_policy": "/root/bayes-fix-20261008/runs/il-bayes-seed42/il_policy.pth",
+  "il_success_rate": 0.9962420886075949,
+  "status": "done",
+  "timestamp": "2026-10-08 08:39:40",
+  "variant": "orca_only"
+}

@@ -1,0 +1,13 @@
+kex_exchange_identification: Connection closed by remote host
+Traceback (most recent call last):
+  File "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-fix.py", line 420, in <module>
+    handoff(sys.argv[2])
+  File "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-fix.py", line 354, in handoff
+    state = remote_python(inspect)
+  File "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-fix.py", line 340, in remote_python
+    value = subprocess.check_output(['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15',
+  File "/home/abc/miniconda3/envs/crowdnav/lib/python3.8/subprocess.py", line 415, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/home/abc/miniconda3/envs/crowdnav/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', 'root@45.126.120.6', '/root/miniconda3/envs/mamba/bin/python -c \'import pathlib,json; b=pathlib.Path(\'"\'"\'/root/bayes-fix-20261008\'"\'"\'); print(json.dumps({n:json.loads((b/n).read_text()) if (b/n).exists() else None for n in ("controller-state.json","smoke-results.json","error.json")}))\'']' returned non-zero exit status 255.

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "old_mean_mapping_max_abs": 0.0,
+  "mapped_trained_old_weights": true,
+  "ordinary_and_legal_prefix": "PASS",
+  "mean_variance_invariance": "bitwise PASS",
+  "full_variance_sensitivity": 0.4456368684768677,
+  "identical_mean_full_state_dict": "PASS",
+  "value_heads": {
+    "gru": {
+      "weight_shape": [
+        1,
+        256
+      ],
+      "parameters": 257
+    },
+    "bayes_mean": {
+      "weight_shape": [
+        1,
+        256
+      ],
+      "parameters": 257
+    },
+    "bayes": {
+      "weight_shape": [
+        1,
+        256
+      ],
+      "parameters": 257
+    }
+  },
+  "readout_source_sha256": "7740d10e654c961cceb4248ff7ca4a8401dee8ae1c5d327592aa4f4d6f27c2ac",
+  "claim": "Engineering acceptance only; no trained navigation improvement yet."
+}

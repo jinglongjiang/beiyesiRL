@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "results": [
+    {
+      "status": "COMPLETE",
+      "arm": "gru",
+      "evaluation_wall_seconds": 2402.1957342624664,
+      "success": 2684,
+      "collision": 84,
+      "timeout": 232,
+      "contact_episodes": 73
+    },
+    {
+      "status": "COMPLETE",
+      "arm": "bayes_mean",
+      "evaluation_wall_seconds": 2712.497798681259,
+      "success": 2755,
+      "collision": 94,
+      "timeout": 151,
+      "contact_episodes": 81
+    },
+    {
+      "status": "COMPLETE",
+      "arm": "bayes",
+      "evaluation_wall_seconds": 2652.429428577423,
+      "success": 2615,
+      "collision": 147,
+      "timeout": 238,
+      "contact_episodes": 131
+    }
+  ]
+}
