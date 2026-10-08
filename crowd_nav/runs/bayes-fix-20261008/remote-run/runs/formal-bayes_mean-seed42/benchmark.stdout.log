@@ -103,3 +103,15 @@ Test Case [5]: large_square | 20 humans
 [INFO] Loading Mamba policy: mamba
 [INFO] SARL-style value lookahead enabled
 [DEBUG] Policy Class: <class 'crowd_nav.policy.mamba_rl.MambaRLPolicy'>
+
+Results for large_square:
+  SUCCESS:   341/500 (68.2%)
+  COLLISION: 38/500 (7.6%)
+  TIMEOUT:   121/500 (24.2%)
+  TIME TAKEN (s): 15.80
+  DISC. FREQ: 3.64
+  DISC. DIST (m): 0.79
+  OSC(success): switch=2.963/s, turn-rev=1.549/s, curvature=2.930 rad/m, lateral-sign=0.681/s
+  OSC-HARM(success): stall=0.110, osc-stall=0.085, backtrack=0.113, progress-eff=0.678
+[INFO] Oscillation CSV complete: /root/bayes-fix-20261008/runs/formal-bayes_mean-seed42/benchmark-10000.csv
+[LATENCY] n=34676 mean=13.359 ms median=13.665 ms p95=14.649 ms max=142.632 ms

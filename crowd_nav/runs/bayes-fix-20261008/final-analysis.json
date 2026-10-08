@@ -1,0 +1,1912 @@
+{
+  "analysis_version": "completed-logvariance-readout-v1",
+  "analyzed_at_kst": "2026-10-08T21:31:53.072528+09:00",
+  "completion": "all six 10000-RL/40000-update runs and six 3000-case benchmarks complete",
+  "source_files_verified": 162,
+  "configs_verified": 13,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261008,
+  "inference_limits": [
+    "Two online RL seeds share each arm IL seed42; not two independent IL+RL seeds.",
+    "Both RL seeds use the same 3000 native evaluation worlds; 6000 records are not 6000 unique worlds.",
+    "Intervals describe paired evaluation-case variation conditional on trained models, not training-seed population uncertainty.",
+    "Exploratory intervals have no multiple-comparison correction and are not fresh confirmation.",
+    "Mean still uses variance in filtering; comparison isolates explicit readout variance channels.",
+    "Geometric contacts are sampled-state radius overlaps, not continuous swept collision checks.",
+    "Success time/path metrics are conditional on success; all-outcome durations include early collision termination.",
+    "No per-decision fallback counter exists in these benchmark CSVs; do not infer zero fallback.",
+    "Compute timings contain shared-device contention and are not isolated deployment measurements."
+  ],
+  "cohorts": {
+    "42": {
+      "gru": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2684,
+          "collision": 84,
+          "timeout": 232,
+          "contact_episodes": 73,
+          "rates_percent": {
+            "SR": 89.46666666666667,
+            "CR": 2.8,
+            "TR": 7.733333333333333,
+            "geometric_contact": 2.433333333333333
+          },
+          "total_steps": 177516,
+          "contact_steps": 73,
+          "contact_duration_s": 18.25,
+          "discomfort_step_fraction": 0.028910070078190134,
+          "minimum_clearance_m": -0.25941787226683305,
+          "episode_mean_minimum_clearance_m": 0.23151257307636472,
+          "success_time_s": 14.159556631892697,
+          "success_path_m": 12.262332266838433,
+          "all_episode_duration_s": 14.793,
+          "all_episode_path_m": 12.41177080401233,
+          "inference_step_weighted_ms": 11.657545823885831,
+          "mean_episode_inference_p95_ms": 13.097428372253974,
+          "mean_episode_stall_fraction": 0.10424389190882641,
+          "mean_episode_oscillatory_stall_fraction": 0.07841181397429647,
+          "mean_episode_progress_efficiency": 0.6588746080194273,
+          "mean_episode_heading_flip_hz": 0.3528220609437127,
+          "mean_episode_total_turn_rad": 30.242417086631757,
+          "mean_episode_curvature_rad_per_m": 2.2707801485034147
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 42,
+          "arm": "gru",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9745,
+          "collision": 193,
+          "timeout": 62,
+          "wall_seconds": 17358.851662158966
+        },
+        "evaluation_seconds": 2612.25336933136,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 500,
+            "collision": 0,
+            "timeout": 0,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 100.0,
+              "CR": 0.0,
+              "TR": 0.0,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 22727,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.0031680380164561973,
+            "minimum_clearance_m": 0.04182825995738115,
+            "episode_mean_minimum_clearance_m": 0.3865199663179682,
+            "success_time_s": 11.3635,
+            "success_path_m": 10.078705936712293,
+            "all_episode_duration_s": 11.3635,
+            "all_episode_path_m": 10.078705936712293,
+            "inference_step_weighted_ms": 11.748857254453954,
+            "mean_episode_inference_p95_ms": 13.336503241583705,
+            "mean_episode_stall_fraction": 0.010123224908897001,
+            "mean_episode_oscillatory_stall_fraction": 0.005169616731888441,
+            "mean_episode_progress_efficiency": 0.7791343076020214,
+            "mean_episode_heading_flip_hz": 0.13947151891897477,
+            "mean_episode_total_turn_rad": 11.794551887764559,
+            "mean_episode_curvature_rad_per_m": 1.172125641170865
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 455,
+            "collision": 6,
+            "timeout": 39,
+            "contact_episodes": 5,
+            "rates_percent": {
+              "SR": 91.0,
+              "CR": 1.2,
+              "TR": 7.8,
+              "geometric_contact": 1.0
+            },
+            "total_steps": 27611,
+            "contact_steps": 5,
+            "contact_duration_s": 1.25,
+            "discomfort_step_fraction": 0.028285828111984355,
+            "minimum_clearance_m": -0.10812696695985624,
+            "episode_mean_minimum_clearance_m": 0.2128690453348705,
+            "success_time_s": 12.935714285714285,
+            "success_path_m": 11.021738079270703,
+            "all_episode_duration_s": 13.8055,
+            "all_episode_path_m": 11.359171196119865,
+            "inference_step_weighted_ms": 11.854127533675829,
+            "mean_episode_inference_p95_ms": 13.46342885531485,
+            "mean_episode_stall_fraction": 0.10964155167934034,
+            "mean_episode_oscillatory_stall_fraction": 0.08223597013900276,
+            "mean_episode_progress_efficiency": 0.6773611682670044,
+            "mean_episode_heading_flip_hz": 0.35338066180908945,
+            "mean_episode_total_turn_rad": 29.293640906082228,
+            "mean_episode_curvature_rad_per_m": 2.3024697159263385
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 492,
+            "collision": 3,
+            "timeout": 5,
+            "contact_episodes": 2,
+            "rates_percent": {
+              "SR": 98.4,
+              "CR": 0.6,
+              "TR": 1.0,
+              "geometric_contact": 0.4
+            },
+            "total_steps": 26325,
+            "contact_steps": 2,
+            "contact_duration_s": 0.5,
+            "discomfort_step_fraction": 0.014207027540360873,
+            "minimum_clearance_m": -0.026137320478514026,
+            "episode_mean_minimum_clearance_m": 0.24584029389109757,
+            "success_time_s": 13.064532520325203,
+            "success_path_m": 11.495974261094087,
+            "all_episode_duration_s": 13.1625,
+            "all_episode_path_m": 11.54652835269277,
+            "inference_step_weighted_ms": 11.671197838508165,
+            "mean_episode_inference_p95_ms": 13.227092883735896,
+            "mean_episode_stall_fraction": 0.055367250124016366,
+            "mean_episode_oscillatory_stall_fraction": 0.030408603864180393,
+            "mean_episode_progress_efficiency": 0.6782890390426611,
+            "mean_episode_heading_flip_hz": 0.18572518020567874,
+            "mean_episode_total_turn_rad": 16.999950338389674,
+            "mean_episode_curvature_rad_per_m": 1.4338884466244128
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 328,
+            "collision": 37,
+            "timeout": 135,
+            "contact_episodes": 34,
+            "rates_percent": {
+              "SR": 65.6,
+              "CR": 7.4,
+              "TR": 27.0,
+              "geometric_contact": 6.8
+            },
+            "total_steps": 36227,
+            "contact_steps": 34,
+            "contact_duration_s": 8.5,
+            "discomfort_step_fraction": 0.05178458056145969,
+            "minimum_clearance_m": -0.24749407168114634,
+            "episode_mean_minimum_clearance_m": 0.15516810226348646,
+            "success_time_s": 16.522103658536587,
+            "success_path_m": 13.421728490267945,
+            "all_episode_duration_s": 18.1135,
+            "all_episode_path_m": 13.571904177072367,
+            "inference_step_weighted_ms": 11.638721872311232,
+            "mean_episode_inference_p95_ms": 12.964982172101736,
+            "mean_episode_stall_fraction": 0.25528966463849617,
+            "mean_episode_oscillatory_stall_fraction": 0.21022108569986886,
+            "mean_episode_progress_efficiency": 0.47040064050742925,
+            "mean_episode_heading_flip_hz": 0.8456092195752692,
+            "mean_episode_total_turn_rad": 67.9230962185948,
+            "mean_episode_curvature_rad_per_m": 4.7068516646328495
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 476,
+            "collision": 4,
+            "timeout": 20,
+            "contact_episodes": 2,
+            "rates_percent": {
+              "SR": 95.2,
+              "CR": 0.8,
+              "TR": 4.0,
+              "geometric_contact": 0.4
+            },
+            "total_steps": 34466,
+            "contact_steps": 2,
+            "contact_duration_s": 0.5,
+            "discomfort_step_fraction": 0.009603667382347822,
+            "minimum_clearance_m": -0.18804831151016166,
+            "episode_mean_minimum_clearance_m": 0.2417411261581019,
+            "success_time_s": 16.974789915966387,
+            "success_path_m": 15.72833191975904,
+            "all_episode_duration_s": 17.233,
+            "all_episode_path_m": 15.865153770791927,
+            "inference_step_weighted_ms": 11.352230415075908,
+            "mean_episode_inference_p95_ms": 12.804652045667172,
+            "mean_episode_stall_fraction": 0.051000612606936384,
+            "mean_episode_oscillatory_stall_fraction": 0.03229182435741562,
+            "mean_episode_progress_efficiency": 0.740893991558486,
+            "mean_episode_heading_flip_hz": 0.18173401014868143,
+            "mean_episode_total_turn_rad": 21.010690002518093,
+            "mean_episode_curvature_rad_per_m": 1.2854557789939285
+          },
+          "large_square": {
+            "n": 500,
+            "success": 433,
+            "collision": 34,
+            "timeout": 33,
+            "contact_episodes": 30,
+            "rates_percent": {
+              "SR": 86.6,
+              "CR": 6.8,
+              "TR": 6.6,
+              "geometric_contact": 6.0
+            },
+            "total_steps": 30160,
+            "contact_steps": 30,
+            "contact_duration_s": 7.5,
+            "discomfort_step_fraction": 0.05629973474801061,
+            "minimum_clearance_m": -0.25941787226683305,
+            "episode_mean_minimum_clearance_m": 0.14693690449266358,
+            "success_time_s": 15.03406466512702,
+            "success_path_m": 12.269800772975882,
+            "all_episode_duration_s": 15.08,
+            "all_episode_path_m": 12.049161390684757,
+            "inference_step_weighted_ms": 11.768371235599014,
+            "mean_episode_inference_p95_ms": 12.787911035120487,
+            "mean_episode_stall_fraction": 0.1440410474952723,
+            "mean_episode_oscillatory_stall_fraction": 0.11014378305342278,
+            "mean_episode_progress_efficiency": 0.6071685011389616,
+            "mean_episode_heading_flip_hz": 0.41101177500458275,
+            "mean_episode_total_turn_rad": 34.43257316644122,
+            "mean_episode_curvature_rad_per_m": 2.723889643672091
+          }
+        }
+      },
+      "bayes_mean": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2500,
+          "collision": 85,
+          "timeout": 415,
+          "contact_episodes": 75,
+          "rates_percent": {
+            "SR": 83.33333333333333,
+            "CR": 2.8333333333333335,
+            "TR": 13.833333333333334,
+            "geometric_contact": 2.5
+          },
+          "total_steps": 191113,
+          "contact_steps": 77,
+          "contact_duration_s": 19.25,
+          "discomfort_step_fraction": 0.030646790118934873,
+          "minimum_clearance_m": -0.1619189979789205,
+          "episode_mean_minimum_clearance_m": 0.21111522570291083,
+          "success_time_s": 14.748,
+          "success_path_m": 11.593839627259506,
+          "all_episode_duration_s": 15.926083333333333,
+          "all_episode_path_m": 11.877761550739592,
+          "inference_step_weighted_ms": 13.991293831852337,
+          "mean_episode_inference_p95_ms": 15.419042862703403,
+          "mean_episode_stall_fraction": 0.12349095042944577,
+          "mean_episode_oscillatory_stall_fraction": 0.10163309302385008,
+          "mean_episode_progress_efficiency": 0.6888529809202338,
+          "mean_episode_heading_flip_hz": 0.4559538752811413,
+          "mean_episode_total_turn_rad": 38.405657483219564,
+          "mean_episode_curvature_rad_per_m": 3.0083050836027456
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 42,
+          "arm": "bayes_mean",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9757,
+          "collision": 197,
+          "timeout": 46,
+          "wall_seconds": 26353.417255163193
+        },
+        "evaluation_seconds": 3257.9068377017975,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 466,
+            "collision": 0,
+            "timeout": 34,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 93.2,
+              "CR": 0.0,
+              "TR": 6.8,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 24835,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.006925709683913831,
+            "minimum_clearance_m": 0.10741306409718365,
+            "episode_mean_minimum_clearance_m": 0.27752280634594934,
+            "success_time_s": 11.481223175965665,
+            "success_path_m": 9.036256778456826,
+            "all_episode_duration_s": 12.4175,
+            "all_episode_path_m": 9.374787200915163,
+            "inference_step_weighted_ms": 14.055552906899571,
+            "mean_episode_inference_p95_ms": 15.652163995429873,
+            "mean_episode_stall_fraction": 0.04725223957216444,
+            "mean_episode_oscillatory_stall_fraction": 0.042366270348947487,
+            "mean_episode_progress_efficiency": 0.8386408359795035,
+            "mean_episode_heading_flip_hz": 0.2628907315655087,
+            "mean_episode_total_turn_rad": 20.893620534705967,
+            "mean_episode_curvature_rad_per_m": 1.9359587246190793
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 457,
+            "collision": 9,
+            "timeout": 34,
+            "contact_episodes": 7,
+            "rates_percent": {
+              "SR": 91.4,
+              "CR": 1.8,
+              "TR": 6.8,
+              "geometric_contact": 1.4
+            },
+            "total_steps": 27870,
+            "contact_steps": 7,
+            "contact_duration_s": 1.75,
+            "discomfort_step_fraction": 0.0348762109795479,
+            "minimum_clearance_m": -0.055004594855062594,
+            "episode_mean_minimum_clearance_m": 0.1978528060108944,
+            "success_time_s": 13.312910284463895,
+            "success_path_m": 10.464796219676833,
+            "all_episode_duration_s": 13.935,
+            "all_episode_path_m": 10.59462277876983,
+            "inference_step_weighted_ms": 14.197411870160837,
+            "mean_episode_inference_p95_ms": 15.829005763307213,
+            "mean_episode_stall_fraction": 0.10915629020216275,
+            "mean_episode_oscillatory_stall_fraction": 0.08200012107164781,
+            "mean_episode_progress_efficiency": 0.7254998829438207,
+            "mean_episode_heading_flip_hz": 0.341911730365365,
+            "mean_episode_total_turn_rad": 28.245155456532544,
+            "mean_episode_curvature_rad_per_m": 2.447195128467957
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 469,
+            "collision": 1,
+            "timeout": 30,
+            "contact_episodes": 1,
+            "rates_percent": {
+              "SR": 93.8,
+              "CR": 0.2,
+              "TR": 6.0,
+              "geometric_contact": 0.2
+            },
+            "total_steps": 28811,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_step_fraction": 0.014195966818229148,
+            "minimum_clearance_m": -0.00021636558124971117,
+            "episode_mean_minimum_clearance_m": 0.23985132305508916,
+            "success_time_s": 13.727078891257996,
+            "success_path_m": 10.490140785910429,
+            "all_episode_duration_s": 14.4055,
+            "all_episode_path_m": 10.718930260109945,
+            "inference_step_weighted_ms": 14.006156176959648,
+            "mean_episode_inference_p95_ms": 15.527101530134678,
+            "mean_episode_stall_fraction": 0.08038805144554087,
+            "mean_episode_oscillatory_stall_fraction": 0.061658738939550484,
+            "mean_episode_progress_efficiency": 0.7348759663947301,
+            "mean_episode_heading_flip_hz": 0.26591505107387553,
+            "mean_episode_total_turn_rad": 24.177405635304538,
+            "mean_episode_curvature_rad_per_m": 2.120669270711676
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 284,
+            "collision": 36,
+            "timeout": 180,
+            "contact_episodes": 31,
+            "rates_percent": {
+              "SR": 56.8,
+              "CR": 7.2,
+              "TR": 36.0,
+              "geometric_contact": 6.2
+            },
+            "total_steps": 38726,
+            "contact_steps": 32,
+            "contact_duration_s": 8.0,
+            "discomfort_step_fraction": 0.05389144244177039,
+            "minimum_clearance_m": -0.12308133412957245,
+            "episode_mean_minimum_clearance_m": 0.15184736117295536,
+            "success_time_s": 17.529929577464788,
+            "success_path_m": 13.116447434517728,
+            "all_episode_duration_s": 19.363,
+            "all_episode_path_m": 13.05507218026944,
+            "inference_step_weighted_ms": 14.308986020327993,
+            "mean_episode_inference_p95_ms": 15.656957957148553,
+            "mean_episode_stall_fraction": 0.25089051985914007,
+            "mean_episode_oscillatory_stall_fraction": 0.21704097266953715,
+            "mean_episode_progress_efficiency": 0.47000802892346677,
+            "mean_episode_heading_flip_hz": 0.9566862815627337,
+            "mean_episode_total_turn_rad": 76.02616410540574,
+            "mean_episode_curvature_rad_per_m": 5.6494479328519365
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 483,
+            "collision": 1,
+            "timeout": 16,
+            "contact_episodes": 1,
+            "rates_percent": {
+              "SR": 96.6,
+              "CR": 0.2,
+              "TR": 3.2,
+              "geometric_contact": 0.2
+            },
+            "total_steps": 36195,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_step_fraction": 0.011023622047244094,
+            "minimum_clearance_m": -0.006984580554912467,
+            "episode_mean_minimum_clearance_m": 0.24859101386392427,
+            "success_time_s": 17.8731884057971,
+            "success_path_m": 15.14893181002028,
+            "all_episode_duration_s": 18.0975,
+            "all_episode_path_m": 15.22018665553182,
+            "inference_step_weighted_ms": 14.042532807729376,
+            "mean_episode_inference_p95_ms": 15.426309204846621,
+            "mean_episode_stall_fraction": 0.06780684851161915,
+            "mean_episode_oscillatory_stall_fraction": 0.04914815490452945,
+            "mean_episode_progress_efficiency": 0.7766805833396603,
+            "mean_episode_heading_flip_hz": 0.2518097608511979,
+            "mean_episode_total_turn_rad": 27.185680562172585,
+            "mean_episode_curvature_rad_per_m": 1.7624788941361662
+          },
+          "large_square": {
+            "n": 500,
+            "success": 341,
+            "collision": 38,
+            "timeout": 121,
+            "contact_episodes": 35,
+            "rates_percent": {
+              "SR": 68.2,
+              "CR": 7.6,
+              "TR": 24.2,
+              "geometric_contact": 7.0
+            },
+            "total_steps": 34676,
+            "contact_steps": 36,
+            "contact_duration_s": 9.0,
+            "discomfort_step_fraction": 0.05242819240973584,
+            "minimum_clearance_m": -0.1619189979789205,
+            "episode_mean_minimum_clearance_m": 0.1510260437686525,
+            "success_time_s": 15.796187683284458,
+            "success_path_m": 11.816452706043254,
+            "all_episode_duration_s": 17.338,
+            "all_episode_path_m": 12.302970228841353,
+            "inference_step_weighted_ms": 13.358979686503385,
+            "mean_episode_inference_p95_ms": 14.42271872535348,
+            "mean_episode_stall_fraction": 0.18545175298604735,
+            "mean_episode_oscillatory_stall_fraction": 0.15758430020888814,
+            "mean_episode_progress_efficiency": 0.5874125879402213,
+            "mean_episode_heading_flip_hz": 0.6565096962681669,
+            "mean_episode_total_turn_rad": 53.905918605196014,
+            "mean_episode_curvature_rad_per_m": 4.134080550829658
+          }
+        }
+      },
+      "bayes": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2693,
+          "collision": 93,
+          "timeout": 214,
+          "contact_episodes": 79,
+          "rates_percent": {
+            "SR": 89.76666666666667,
+            "CR": 3.1,
+            "TR": 7.133333333333334,
+            "geometric_contact": 2.6333333333333333
+          },
+          "total_steps": 179272,
+          "contact_steps": 86,
+          "contact_duration_s": 21.5,
+          "discomfort_step_fraction": 0.036241019233343746,
+          "minimum_clearance_m": -0.20324027723367216,
+          "episode_mean_minimum_clearance_m": 0.20671615691717815,
+          "success_time_s": 14.455718529520981,
+          "success_path_m": 11.5082748327729,
+          "all_episode_duration_s": 14.939333333333334,
+          "all_episode_path_m": 11.521740307813783,
+          "inference_step_weighted_ms": 13.960177275131953,
+          "mean_episode_inference_p95_ms": 15.387527781538665,
+          "mean_episode_stall_fraction": 0.10914877608339706,
+          "mean_episode_oscillatory_stall_fraction": 0.07840605355859573,
+          "mean_episode_progress_efficiency": 0.7059148672103124,
+          "mean_episode_heading_flip_hz": 0.25240923407482596,
+          "mean_episode_total_turn_rad": 24.577055271594315,
+          "mean_episode_curvature_rad_per_m": 2.071683228839359
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 42,
+          "arm": "bayes",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9766,
+          "collision": 205,
+          "timeout": 29,
+          "wall_seconds": 26218.73951625824
+        },
+        "evaluation_seconds": 3047.7132029533386,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 499,
+            "collision": 0,
+            "timeout": 1,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 99.8,
+              "CR": 0.0,
+              "TR": 0.2,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 22931,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.009157908508133096,
+            "minimum_clearance_m": 0.03542023481055334,
+            "episode_mean_minimum_clearance_m": 0.30618310992652187,
+            "success_time_s": 11.437875751503006,
+            "success_path_m": 9.389517368762954,
+            "all_episode_duration_s": 11.4655,
+            "all_episode_path_m": 9.388224071555953,
+            "inference_step_weighted_ms": 13.93493321935795,
+            "mean_episode_inference_p95_ms": 15.533103484287858,
+            "mean_episode_stall_fraction": 0.011660351373337732,
+            "mean_episode_oscillatory_stall_fraction": 0.005834775365750945,
+            "mean_episode_progress_efficiency": 0.8368238392405228,
+            "mean_episode_heading_flip_hz": 0.045229183975115286,
+            "mean_episode_total_turn_rad": 8.458850981697813,
+            "mean_episode_curvature_rad_per_m": 0.8957129362358877
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 452,
+            "collision": 12,
+            "timeout": 36,
+            "contact_episodes": 11,
+            "rates_percent": {
+              "SR": 90.4,
+              "CR": 2.4,
+              "TR": 7.2,
+              "geometric_contact": 2.2
+            },
+            "total_steps": 27658,
+            "contact_steps": 13,
+            "contact_duration_s": 3.25,
+            "discomfort_step_fraction": 0.040747704100079545,
+            "minimum_clearance_m": -0.11033868167093247,
+            "episode_mean_minimum_clearance_m": 0.18439274828984872,
+            "success_time_s": 13.206858407079647,
+            "success_path_m": 10.817523717616899,
+            "all_episode_duration_s": 13.829,
+            "all_episode_path_m": 10.81384381228613,
+            "inference_step_weighted_ms": 14.2266654050314,
+            "mean_episode_inference_p95_ms": 15.804189958795906,
+            "mean_episode_stall_fraction": 0.13057142763922736,
+            "mean_episode_oscillatory_stall_fraction": 0.09003008762054948,
+            "mean_episode_progress_efficiency": 0.6912089800507515,
+            "mean_episode_heading_flip_hz": 0.2860021623309343,
+            "mean_episode_total_turn_rad": 24.473590936309833,
+            "mean_episode_curvature_rad_per_m": 2.201563665094521
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 494,
+            "collision": 3,
+            "timeout": 3,
+            "contact_episodes": 3,
+            "rates_percent": {
+              "SR": 98.8,
+              "CR": 0.6,
+              "TR": 0.6,
+              "geometric_contact": 0.6
+            },
+            "total_steps": 27895,
+            "contact_steps": 4,
+            "contact_duration_s": 1.0,
+            "discomfort_step_fraction": 0.01365836171356874,
+            "minimum_clearance_m": -0.05920810779849561,
+            "episode_mean_minimum_clearance_m": 0.23091416281788324,
+            "success_time_s": 13.904858299595142,
+            "success_path_m": 10.35606796379647,
+            "all_episode_duration_s": 13.9475,
+            "all_episode_path_m": 10.370722556725163,
+            "inference_step_weighted_ms": 13.997808995827443,
+            "mean_episode_inference_p95_ms": 15.509712218120693,
+            "mean_episode_stall_fraction": 0.04965108120691201,
+            "mean_episode_oscillatory_stall_fraction": 0.02926711192834573,
+            "mean_episode_progress_efficiency": 0.759398334139016,
+            "mean_episode_heading_flip_hz": 0.1256270192242964,
+            "mean_episode_total_turn_rad": 15.323593289111257,
+            "mean_episode_curvature_rad_per_m": 1.4688521165514024
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 334,
+            "collision": 28,
+            "timeout": 138,
+            "contact_episodes": 21,
+            "rates_percent": {
+              "SR": 66.8,
+              "CR": 5.6,
+              "TR": 27.6,
+              "geometric_contact": 4.2
+            },
+            "total_steps": 37269,
+            "contact_steps": 23,
+            "contact_duration_s": 5.75,
+            "discomfort_step_fraction": 0.05980841986637688,
+            "minimum_clearance_m": -0.06774875448247009,
+            "episode_mean_minimum_clearance_m": 0.14910401392406358,
+            "success_time_s": 17.086077844311376,
+            "success_path_m": 13.083428309399704,
+            "all_episode_duration_s": 18.6345,
+            "all_episode_path_m": 13.05010881252406,
+            "inference_step_weighted_ms": 14.201519216022408,
+            "mean_episode_inference_p95_ms": 15.579799147695303,
+            "mean_episode_stall_fraction": 0.26430359041171714,
+            "mean_episode_oscillatory_stall_fraction": 0.20475193381443085,
+            "mean_episode_progress_efficiency": 0.48906242071926265,
+            "mean_episode_heading_flip_hz": 0.6172917528451599,
+            "mean_episode_total_turn_rad": 53.88437591958554,
+            "mean_episode_curvature_rad_per_m": 4.09492397674037
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 491,
+            "collision": 2,
+            "timeout": 7,
+            "contact_episodes": 1,
+            "rates_percent": {
+              "SR": 98.2,
+              "CR": 0.4,
+              "TR": 1.4,
+              "geometric_contact": 0.2
+            },
+            "total_steps": 34220,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_step_fraction": 0.015225014611338399,
+            "minimum_clearance_m": -0.028388361415652152,
+            "episode_mean_minimum_clearance_m": 0.22631446486979134,
+            "success_time_s": 17.05091649694501,
+            "success_path_m": 14.110004396501212,
+            "all_episode_duration_s": 17.11,
+            "all_episode_path_m": 14.159894714590227,
+            "inference_step_weighted_ms": 13.986492323760467,
+            "mean_episode_inference_p95_ms": 15.407012429460883,
+            "mean_episode_stall_fraction": 0.030630529261350438,
+            "mean_episode_oscillatory_stall_fraction": 0.01825006848015368,
+            "mean_episode_progress_efficiency": 0.8331603245989276,
+            "mean_episode_heading_flip_hz": 0.09616484588832969,
+            "mean_episode_total_turn_rad": 16.20379190609937,
+            "mean_episode_curvature_rad_per_m": 1.1410709119694689
+          },
+          "large_square": {
+            "n": 500,
+            "success": 423,
+            "collision": 48,
+            "timeout": 29,
+            "contact_episodes": 43,
+            "rates_percent": {
+              "SR": 84.6,
+              "CR": 9.6,
+              "TR": 5.8,
+              "geometric_contact": 8.6
+            },
+            "total_steps": 29299,
+            "contact_steps": 45,
+            "contact_duration_s": 11.25,
+            "discomfort_step_fraction": 0.0692515102904536,
+            "minimum_clearance_m": -0.20324027723367216,
+            "episode_mean_minimum_clearance_m": 0.14338844167495995,
+            "success_time_s": 14.904255319148936,
+            "success_path_m": 11.827705553533846,
+            "all_episode_duration_s": 14.6495,
+            "all_episode_path_m": 11.347647879201165,
+            "inference_step_weighted_ms": 13.354816414293012,
+            "mean_episode_inference_p95_ms": 14.491349450871349,
+            "mean_episode_stall_fraction": 0.16807567660783765,
+            "mean_episode_oscillatory_stall_fraction": 0.12230234414234377,
+            "mean_episode_progress_efficiency": 0.6258353045133935,
+            "mean_episode_heading_flip_hz": 0.34414044018512013,
+            "mean_episode_total_turn_rad": 29.11812859676207,
+            "mean_episode_curvature_rad_per_m": 2.627975766444506
+          }
+        }
+      }
+    },
+    "43": {
+      "gru": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2630,
+          "collision": 241,
+          "timeout": 129,
+          "contact_episodes": 215,
+          "rates_percent": {
+            "SR": 87.66666666666667,
+            "CR": 8.033333333333333,
+            "TR": 4.3,
+            "geometric_contact": 7.166666666666667
+          },
+          "total_steps": 166428,
+          "contact_steps": 226,
+          "contact_duration_s": 56.5,
+          "discomfort_step_fraction": 0.050165837479270316,
+          "minimum_clearance_m": -0.2351592772640808,
+          "episode_mean_minimum_clearance_m": 0.1612836138967,
+          "success_time_s": 14.040019011406844,
+          "success_path_m": 12.018256639410042,
+          "all_episode_duration_s": 13.869,
+          "all_episode_path_m": 11.621918215109993,
+          "inference_step_weighted_ms": 11.620380757582259,
+          "mean_episode_inference_p95_ms": 13.050467564972738,
+          "mean_episode_stall_fraction": 0.12113122432916364,
+          "mean_episode_oscillatory_stall_fraction": 0.08845468642320058,
+          "mean_episode_progress_efficiency": 0.6939695702033339,
+          "mean_episode_heading_flip_hz": 0.311846251544373,
+          "mean_episode_total_turn_rad": 26.239514469983593,
+          "mean_episode_curvature_rad_per_m": 2.1819349154783763
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 43,
+          "arm": "gru",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9690,
+          "collision": 260,
+          "timeout": 50,
+          "wall_seconds": 17373.865755796432
+        },
+        "evaluation_seconds": 2432.0415320396423,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 492,
+            "collision": 5,
+            "timeout": 3,
+            "contact_episodes": 3,
+            "rates_percent": {
+              "SR": 98.4,
+              "CR": 1.0,
+              "TR": 0.6,
+              "geometric_contact": 0.6
+            },
+            "total_steps": 22822,
+            "contact_steps": 3,
+            "contact_duration_s": 0.75,
+            "discomfort_step_fraction": 0.017132591359214792,
+            "minimum_clearance_m": -0.09019188252201016,
+            "episode_mean_minimum_clearance_m": 0.2239903123963748,
+            "success_time_s": 11.398882113821138,
+            "success_path_m": 9.697696500505637,
+            "all_episode_duration_s": 11.411,
+            "all_episode_path_m": 9.667290829567033,
+            "inference_step_weighted_ms": 11.727780902542937,
+            "mean_episode_inference_p95_ms": 13.272116876393557,
+            "mean_episode_stall_fraction": 0.03927040090222958,
+            "mean_episode_oscillatory_stall_fraction": 0.02562417050648066,
+            "mean_episode_progress_efficiency": 0.8072792157059063,
+            "mean_episode_heading_flip_hz": 0.15211032181534298,
+            "mean_episode_total_turn_rad": 12.766619015077337,
+            "mean_episode_curvature_rad_per_m": 1.2823494101780404
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 474,
+            "collision": 14,
+            "timeout": 12,
+            "contact_episodes": 14,
+            "rates_percent": {
+              "SR": 94.8,
+              "CR": 2.8,
+              "TR": 2.4,
+              "geometric_contact": 2.8
+            },
+            "total_steps": 25112,
+            "contact_steps": 14,
+            "contact_duration_s": 3.5,
+            "discomfort_step_fraction": 0.045635552723797386,
+            "minimum_clearance_m": -0.12407904782657231,
+            "episode_mean_minimum_clearance_m": 0.18114903046704936,
+            "success_time_s": 12.477320675105485,
+            "success_path_m": 10.59232877788701,
+            "all_episode_duration_s": 12.556,
+            "all_episode_path_m": 10.533938468791753,
+            "inference_step_weighted_ms": 11.813868108220628,
+            "mean_episode_inference_p95_ms": 13.397760366648436,
+            "mean_episode_stall_fraction": 0.09020022014501275,
+            "mean_episode_oscillatory_stall_fraction": 0.06102560606218956,
+            "mean_episode_progress_efficiency": 0.7323238629376336,
+            "mean_episode_heading_flip_hz": 0.22980527036419854,
+            "mean_episode_total_turn_rad": 20.156202936676753,
+            "mean_episode_curvature_rad_per_m": 1.8035413215474723
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 405,
+            "collision": 91,
+            "timeout": 4,
+            "contact_episodes": 87,
+            "rates_percent": {
+              "SR": 81.0,
+              "CR": 18.2,
+              "TR": 0.8,
+              "geometric_contact": 17.4
+            },
+            "total_steps": 25052,
+            "contact_steps": 95,
+            "contact_duration_s": 23.75,
+            "discomfort_step_fraction": 0.048818457608175,
+            "minimum_clearance_m": -0.2351592772640808,
+            "episode_mean_minimum_clearance_m": 0.1339966642908131,
+            "success_time_s": 13.812962962962963,
+            "success_path_m": 11.641282233814863,
+            "all_episode_duration_s": 12.526,
+            "all_episode_path_m": 10.439541851857827,
+            "inference_step_weighted_ms": 11.67898576509766,
+            "mean_episode_inference_p95_ms": 13.240201537311076,
+            "mean_episode_stall_fraction": 0.13533861614675152,
+            "mean_episode_oscillatory_stall_fraction": 0.08810530981739416,
+            "mean_episode_progress_efficiency": 0.6877354779775806,
+            "mean_episode_heading_flip_hz": 0.3132615454491528,
+            "mean_episode_total_turn_rad": 22.62534881663003,
+            "mean_episode_curvature_rad_per_m": 2.315436125391456
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 345,
+            "collision": 64,
+            "timeout": 91,
+            "contact_episodes": 55,
+            "rates_percent": {
+              "SR": 69.0,
+              "CR": 12.8,
+              "TR": 18.2,
+              "geometric_contact": 11.0
+            },
+            "total_steps": 31498,
+            "contact_steps": 57,
+            "contact_duration_s": 14.25,
+            "discomfort_step_fraction": 0.08514826338180202,
+            "minimum_clearance_m": -0.17625281509836693,
+            "episode_mean_minimum_clearance_m": 0.11775672120000678,
+            "success_time_s": 15.165942028985507,
+            "success_path_m": 12.779894054032596,
+            "all_episode_duration_s": 15.749,
+            "all_episode_path_m": 12.375560312718967,
+            "inference_step_weighted_ms": 11.514214099000405,
+            "mean_episode_inference_p95_ms": 12.71801099292934,
+            "mean_episode_stall_fraction": 0.22628956228260108,
+            "mean_episode_oscillatory_stall_fraction": 0.1859123257932452,
+            "mean_episode_progress_efficiency": 0.5390782874434271,
+            "mean_episode_heading_flip_hz": 0.6828181006891189,
+            "mean_episode_total_turn_rad": 53.05060907703194,
+            "mean_episode_curvature_rad_per_m": 3.9112712220296078
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 482,
+            "collision": 16,
+            "timeout": 2,
+            "contact_episodes": 14,
+            "rates_percent": {
+              "SR": 96.4,
+              "CR": 3.2,
+              "TR": 0.4,
+              "geometric_contact": 2.8
+            },
+            "total_steps": 34231,
+            "contact_steps": 14,
+            "contact_duration_s": 3.5,
+            "discomfort_step_fraction": 0.03254360082965733,
+            "minimum_clearance_m": -0.1609515120624388,
+            "episode_mean_minimum_clearance_m": 0.1704400907951482,
+            "success_time_s": 17.37344398340249,
+            "success_path_m": 15.623448911484232,
+            "all_episode_duration_s": 17.1155,
+            "all_episode_path_m": 15.371988403049377,
+            "inference_step_weighted_ms": 11.335842753767999,
+            "mean_episode_inference_p95_ms": 12.779309424757958,
+            "mean_episode_stall_fraction": 0.08575284008011647,
+            "mean_episode_oscillatory_stall_fraction": 0.05819011062754781,
+            "mean_episode_progress_efficiency": 0.7557443645317641,
+            "mean_episode_heading_flip_hz": 0.1706675742915312,
+            "mean_episode_total_turn_rad": 21.272003872553405,
+            "mean_episode_curvature_rad_per_m": 1.3879364744032219
+          },
+          "large_square": {
+            "n": 500,
+            "success": 432,
+            "collision": 51,
+            "timeout": 17,
+            "contact_episodes": 42,
+            "rates_percent": {
+              "SR": 86.4,
+              "CR": 10.2,
+              "TR": 3.4,
+              "geometric_contact": 8.4
+            },
+            "total_steps": 27713,
+            "contact_steps": 43,
+            "contact_duration_s": 10.75,
+            "discomfort_step_fraction": 0.06469887778298994,
+            "minimum_clearance_m": -0.2294913126509321,
+            "episode_mean_minimum_clearance_m": 0.14036886423080777,
+            "success_time_s": 14.357060185185185,
+            "success_path_m": 11.94837804168872,
+            "all_episode_duration_s": 13.8565,
+            "all_episode_path_m": 11.343189424675005,
+            "inference_step_weighted_ms": 11.775757104956343,
+            "mean_episode_inference_p95_ms": 12.895406191796065,
+            "mean_episode_stall_fraction": 0.1499357064182704,
+            "mean_episode_oscillatory_stall_fraction": 0.11187059573234612,
+            "mean_episode_progress_efficiency": 0.6416562126236919,
+            "mean_episode_heading_flip_hz": 0.3224146966568935,
+            "mean_episode_total_turn_rad": 27.566303101932114,
+            "mean_episode_curvature_rad_per_m": 2.3910749393204607
+          }
+        }
+      },
+      "bayes_mean": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2396,
+          "collision": 94,
+          "timeout": 510,
+          "contact_episodes": 83,
+          "rates_percent": {
+            "SR": 79.86666666666666,
+            "CR": 3.1333333333333333,
+            "TR": 17.0,
+            "geometric_contact": 2.7666666666666666
+          },
+          "total_steps": 191557,
+          "contact_steps": 87,
+          "contact_duration_s": 21.75,
+          "discomfort_step_fraction": 0.028518926481412844,
+          "minimum_clearance_m": -0.16840018635772736,
+          "episode_mean_minimum_clearance_m": 0.2042095658754503,
+          "success_time_s": 14.428839732888147,
+          "success_path_m": 11.718801624921184,
+          "all_episode_duration_s": 15.963083333333334,
+          "all_episode_path_m": 12.34203717106313,
+          "inference_step_weighted_ms": 14.161706134842081,
+          "mean_episode_inference_p95_ms": 15.558649677659075,
+          "mean_episode_stall_fraction": 0.13261721746176777,
+          "mean_episode_oscillatory_stall_fraction": 0.11030536734895728,
+          "mean_episode_progress_efficiency": 0.6561001157235924,
+          "mean_episode_heading_flip_hz": 0.5123686542046202,
+          "mean_episode_total_turn_rad": 40.13067247372662,
+          "mean_episode_curvature_rad_per_m": 3.047292744961839
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 43,
+          "arm": "bayes_mean",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9733,
+          "collision": 207,
+          "timeout": 60,
+          "wall_seconds": 26518.925073623657
+        },
+        "evaluation_seconds": 3302.934178829193,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 497,
+            "collision": 1,
+            "timeout": 2,
+            "contact_episodes": 1,
+            "rates_percent": {
+              "SR": 99.4,
+              "CR": 0.2,
+              "TR": 0.4,
+              "geometric_contact": 0.2
+            },
+            "total_steps": 22103,
+            "contact_steps": 1,
+            "contact_duration_s": 0.25,
+            "discomfort_step_fraction": 0.014568158168574402,
+            "minimum_clearance_m": -0.1500634347400015,
+            "episode_mean_minimum_clearance_m": 0.2588392919368417,
+            "success_time_s": 11.009557344064387,
+            "success_path_m": 9.129805127867535,
+            "all_episode_duration_s": 11.0515,
+            "all_episode_path_m": 9.13736988282363,
+            "inference_step_weighted_ms": 14.20772026674686,
+            "mean_episode_inference_p95_ms": 15.867142130434512,
+            "mean_episode_stall_fraction": 0.015059053601231002,
+            "mean_episode_oscillatory_stall_fraction": 0.008947006257087158,
+            "mean_episode_progress_efficiency": 0.8570235441822514,
+            "mean_episode_heading_flip_hz": 0.1197405794242533,
+            "mean_episode_total_turn_rad": 11.898978875367188,
+            "mean_episode_curvature_rad_per_m": 1.271666094822731
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 425,
+            "collision": 10,
+            "timeout": 65,
+            "contact_episodes": 9,
+            "rates_percent": {
+              "SR": 85.0,
+              "CR": 2.0,
+              "TR": 13.0,
+              "geometric_contact": 1.8
+            },
+            "total_steps": 30030,
+            "contact_steps": 10,
+            "contact_duration_s": 2.5,
+            "discomfort_step_fraction": 0.029337329337329337,
+            "minimum_clearance_m": -0.0955908945751116,
+            "episode_mean_minimum_clearance_m": 0.20966047646706323,
+            "success_time_s": 13.734117647058824,
+            "success_path_m": 11.137214457608852,
+            "all_episode_duration_s": 15.015,
+            "all_episode_path_m": 11.519261891391512,
+            "inference_step_weighted_ms": 14.52028293446664,
+            "mean_episode_inference_p95_ms": 16.097086276859045,
+            "mean_episode_stall_fraction": 0.14080299304809887,
+            "mean_episode_oscillatory_stall_fraction": 0.11449431658886841,
+            "mean_episode_progress_efficiency": 0.6524589400373634,
+            "mean_episode_heading_flip_hz": 0.4680272513883415,
+            "mean_episode_total_turn_rad": 36.50914283827347,
+            "mean_episode_curvature_rad_per_m": 2.9242511548162393
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 471,
+            "collision": 5,
+            "timeout": 24,
+            "contact_episodes": 4,
+            "rates_percent": {
+              "SR": 94.2,
+              "CR": 1.0,
+              "TR": 4.8,
+              "geometric_contact": 0.8
+            },
+            "total_steps": 28197,
+            "contact_steps": 6,
+            "contact_duration_s": 1.5,
+            "discomfort_step_fraction": 0.017803312409121537,
+            "minimum_clearance_m": -0.15373158552740024,
+            "episode_mean_minimum_clearance_m": 0.2197376687447938,
+            "success_time_s": 13.591295116772823,
+            "success_path_m": 10.928507506221186,
+            "all_episode_duration_s": 14.0985,
+            "all_episode_path_m": 11.202993294845465,
+            "inference_step_weighted_ms": 14.179633643170192,
+            "mean_episode_inference_p95_ms": 15.698348657414318,
+            "mean_episode_stall_fraction": 0.09394190778812081,
+            "mean_episode_oscillatory_stall_fraction": 0.07498028966304228,
+            "mean_episode_progress_efficiency": 0.7055703261177343,
+            "mean_episode_heading_flip_hz": 0.3678895177333512,
+            "mean_episode_total_turn_rad": 27.4654691838584,
+            "mean_episode_curvature_rad_per_m": 2.3551123680406225
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 224,
+            "collision": 35,
+            "timeout": 241,
+            "contact_episodes": 31,
+            "rates_percent": {
+              "SR": 44.8,
+              "CR": 7.0,
+              "TR": 48.2,
+              "geometric_contact": 6.2
+            },
+            "total_steps": 40745,
+            "contact_steps": 31,
+            "contact_duration_s": 7.75,
+            "discomfort_step_fraction": 0.040446680574303596,
+            "minimum_clearance_m": -0.16840018635772736,
+            "episode_mean_minimum_clearance_m": 0.15597717243823256,
+            "success_time_s": 17.771205357142858,
+            "success_path_m": 13.414181843770686,
+            "all_episode_duration_s": 20.3725,
+            "all_episode_path_m": 13.81994040514152,
+            "inference_step_weighted_ms": 14.478202241248098,
+            "mean_episode_inference_p95_ms": 15.777758792415261,
+            "mean_episode_stall_fraction": 0.29262514263425715,
+            "mean_episode_oscillatory_stall_fraction": 0.252406918604887,
+            "mean_episode_progress_efficiency": 0.4054200038732914,
+            "mean_episode_heading_flip_hz": 1.0482229003433785,
+            "mean_episode_total_turn_rad": 80.79279106309826,
+            "mean_episode_curvature_rad_per_m": 5.770946895289434
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 402,
+            "collision": 3,
+            "timeout": 95,
+            "contact_episodes": 3,
+            "rates_percent": {
+              "SR": 80.4,
+              "CR": 0.6,
+              "TR": 19.0,
+              "geometric_contact": 0.6
+            },
+            "total_steps": 36929,
+            "contact_steps": 3,
+            "contact_duration_s": 0.75,
+            "discomfort_step_fraction": 0.012997914917815268,
+            "minimum_clearance_m": -0.08407515363855811,
+            "episode_mean_minimum_clearance_m": 0.22859117823506636,
+            "success_time_s": 16.92910447761194,
+            "success_path_m": 14.90500178608997,
+            "all_episode_duration_s": 18.4645,
+            "all_episode_path_m": 16.00442742960595,
+            "inference_step_weighted_ms": 14.135192925771557,
+            "mean_episode_inference_p95_ms": 15.439526183903217,
+            "mean_episode_stall_fraction": 0.07917796225644567,
+            "mean_episode_oscillatory_stall_fraction": 0.06692570429957674,
+            "mean_episode_progress_efficiency": 0.7414528655366228,
+            "mean_episode_heading_flip_hz": 0.41409906331769447,
+            "mean_episode_total_turn_rad": 35.12258642528066,
+            "mean_episode_curvature_rad_per_m": 2.1079299981119504
+          },
+          "large_square": {
+            "n": 500,
+            "success": 377,
+            "collision": 40,
+            "timeout": 83,
+            "contact_episodes": 35,
+            "rates_percent": {
+              "SR": 75.4,
+              "CR": 8.0,
+              "TR": 16.6,
+              "geometric_contact": 7.0
+            },
+            "total_steps": 33553,
+            "contact_steps": 36,
+            "contact_duration_s": 9.0,
+            "discomfort_step_fraction": 0.04857985873096295,
+            "minimum_clearance_m": -0.14453275670778565,
+            "episode_mean_minimum_clearance_m": 0.15245160743070427,
+            "success_time_s": 16.114058355437667,
+            "success_path_m": 12.37003955924204,
+            "all_episode_duration_s": 16.7765,
+            "all_episode_path_m": 12.368230122570706,
+            "inference_step_weighted_ms": 13.440246320211724,
+            "mean_episode_inference_p95_ms": 14.472036024928093,
+            "mean_episode_stall_fraction": 0.17409624544245308,
+            "mean_episode_oscillatory_stall_fraction": 0.14407796868028208,
+            "mean_episode_progress_efficiency": 0.5746750145942907,
+            "mean_episode_heading_flip_hz": 0.656232613020702,
+            "mean_episode_total_turn_rad": 48.9950664564817,
+            "mean_episode_curvature_rad_per_m": 3.853849958690057
+          }
+        }
+      },
+      "bayes": {
+        "aggregate": {
+          "n": 3000,
+          "success": 2431,
+          "collision": 59,
+          "timeout": 510,
+          "contact_episodes": 51,
+          "rates_percent": {
+            "SR": 81.03333333333333,
+            "CR": 1.9666666666666666,
+            "TR": 17.0,
+            "geometric_contact": 1.7
+          },
+          "total_steps": 203130,
+          "contact_steps": 54,
+          "contact_duration_s": 13.5,
+          "discomfort_step_fraction": 0.02137547383449023,
+          "minimum_clearance_m": -0.14137133388395606,
+          "episode_mean_minimum_clearance_m": 0.21639093266230378,
+          "success_time_s": 15.473570547099959,
+          "success_path_m": 12.11576784073665,
+          "all_episode_duration_s": 16.9275,
+          "all_episode_path_m": 12.452492281731198,
+          "inference_step_weighted_ms": 13.92402342442574,
+          "mean_episode_inference_p95_ms": 15.318443025896947,
+          "mean_episode_stall_fraction": 0.17092049337268778,
+          "mean_episode_oscillatory_stall_fraction": 0.1352246568748275,
+          "mean_episode_progress_efficiency": 0.6242493664249511,
+          "mean_episode_heading_flip_hz": 0.5087009257509127,
+          "mean_episode_total_turn_rad": 44.00681751878695,
+          "mean_episode_curvature_rad_per_m": 3.386180138311042
+        },
+        "training": {
+          "status": "TRAINED",
+          "seed": 43,
+          "arm": "bayes",
+          "episodes": 10000,
+          "optimizer_steps": 40000,
+          "success": 9752,
+          "collision": 214,
+          "timeout": 34,
+          "wall_seconds": 26429.068348169327
+        },
+        "evaluation_seconds": 3453.14417386055,
+        "scenarios": {
+          "baseline_circle": {
+            "n": 500,
+            "success": 498,
+            "collision": 0,
+            "timeout": 2,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 99.6,
+              "CR": 0.0,
+              "TR": 0.4,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 23636,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.009180910475545777,
+            "minimum_clearance_m": 0.0688538131637707,
+            "episode_mean_minimum_clearance_m": 0.2773349801775958,
+            "success_time_s": 11.764056224899598,
+            "success_path_m": 9.619216700033284,
+            "all_episode_duration_s": 11.818,
+            "all_episode_path_m": 9.634743969631431,
+            "inference_step_weighted_ms": 13.9868200994129,
+            "mean_episode_inference_p95_ms": 15.590599739551545,
+            "mean_episode_stall_fraction": 0.01716505686946308,
+            "mean_episode_oscillatory_stall_fraction": 0.009418038716417545,
+            "mean_episode_progress_efficiency": 0.8116258418568103,
+            "mean_episode_heading_flip_hz": 0.13816204507601382,
+            "mean_episode_total_turn_rad": 14.487050163915413,
+            "mean_episode_curvature_rad_per_m": 1.4775524656677144
+          },
+          "baseline_square": {
+            "n": 500,
+            "success": 409,
+            "collision": 8,
+            "timeout": 83,
+            "contact_episodes": 8,
+            "rates_percent": {
+              "SR": 81.8,
+              "CR": 1.6,
+              "TR": 16.6,
+              "geometric_contact": 1.6
+            },
+            "total_steps": 31781,
+            "contact_steps": 8,
+            "contact_duration_s": 2.0,
+            "discomfort_step_fraction": 0.02268651080834461,
+            "minimum_clearance_m": -0.13107366860791436,
+            "episode_mean_minimum_clearance_m": 0.2052845578884992,
+            "success_time_s": 14.254889975550123,
+            "success_path_m": 11.124673617190313,
+            "all_episode_duration_s": 15.8905,
+            "all_episode_path_m": 11.389374237414197,
+            "inference_step_weighted_ms": 14.34300233933231,
+            "mean_episode_inference_p95_ms": 15.924656664952636,
+            "mean_episode_stall_fraction": 0.19087505108971456,
+            "mean_episode_oscillatory_stall_fraction": 0.1473905383526557,
+            "mean_episode_progress_efficiency": 0.6294482587680754,
+            "mean_episode_heading_flip_hz": 0.5110445259811623,
+            "mean_episode_total_turn_rad": 41.87245968005105,
+            "mean_episode_curvature_rad_per_m": 3.5049339113242772
+          },
+          "dense_circle": {
+            "n": 500,
+            "success": 493,
+            "collision": 0,
+            "timeout": 7,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 98.6,
+              "CR": 0.0,
+              "TR": 1.4,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 29165,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.012823589919423967,
+            "minimum_clearance_m": 0.02274451618483231,
+            "episode_mean_minimum_clearance_m": 0.23586029387685187,
+            "success_time_s": 14.431034482758621,
+            "success_path_m": 10.908642987698402,
+            "all_episode_duration_s": 14.5825,
+            "all_episode_path_m": 10.971681107520409,
+            "inference_step_weighted_ms": 14.022520097020804,
+            "mean_episode_inference_p95_ms": 15.561874401196837,
+            "mean_episode_stall_fraction": 0.0828055734806234,
+            "mean_episode_oscillatory_stall_fraction": 0.05439479460973456,
+            "mean_episode_progress_efficiency": 0.7131194135688536,
+            "mean_episode_heading_flip_hz": 0.27682021387810934,
+            "mean_episode_total_turn_rad": 25.722604531226775,
+            "mean_episode_curvature_rad_per_m": 2.3091481210880667
+          },
+          "dense_square": {
+            "n": 500,
+            "success": 216,
+            "collision": 18,
+            "timeout": 266,
+            "contact_episodes": 15,
+            "rates_percent": {
+              "SR": 43.2,
+              "CR": 3.6,
+              "TR": 53.2,
+              "geometric_contact": 3.0
+            },
+            "total_steps": 42961,
+            "contact_steps": 17,
+            "contact_duration_s": 4.25,
+            "discomfort_step_fraction": 0.026372756686296874,
+            "minimum_clearance_m": -0.07354331757776023,
+            "episode_mean_minimum_clearance_m": 0.1897373757822531,
+            "success_time_s": 18.22337962962963,
+            "success_path_m": 13.16205562100093,
+            "all_episode_duration_s": 21.4805,
+            "all_episode_path_m": 13.937363370623007,
+            "inference_step_weighted_ms": 14.31030128894745,
+            "mean_episode_inference_p95_ms": 15.697550675272941,
+            "mean_episode_stall_fraction": 0.37880712942378114,
+            "mean_episode_oscillatory_stall_fraction": 0.30740874368043886,
+            "mean_episode_progress_efficiency": 0.35983516425334583,
+            "mean_episode_heading_flip_hz": 1.0473948957967272,
+            "mean_episode_total_turn_rad": 86.62573509107337,
+            "mean_episode_curvature_rad_per_m": 6.146749142131662
+          },
+          "large_circle": {
+            "n": 500,
+            "success": 477,
+            "collision": 0,
+            "timeout": 23,
+            "contact_episodes": 0,
+            "rates_percent": {
+              "SR": 95.4,
+              "CR": 0.0,
+              "TR": 4.6,
+              "geometric_contact": 0.0
+            },
+            "total_steps": 38352,
+            "contact_steps": 0,
+            "contact_duration_s": 0.0,
+            "discomfort_step_fraction": 0.010820817688777639,
+            "minimum_clearance_m": 0.04448519714834098,
+            "episode_mean_minimum_clearance_m": 0.2259902176453798,
+            "success_time_s": 18.883123689727462,
+            "success_path_m": 15.8856436614061,
+            "all_episode_duration_s": 19.176,
+            "all_episode_path_m": 16.048601142306126,
+            "inference_step_weighted_ms": 13.84634040981845,
+            "mean_episode_inference_p95_ms": 15.155076094344258,
+            "mean_episode_stall_fraction": 0.05936595271882768,
+            "mean_episode_oscillatory_stall_fraction": 0.04117310310234748,
+            "mean_episode_progress_efficiency": 0.7406587249059831,
+            "mean_episode_heading_flip_hz": 0.30150860608222513,
+            "mean_episode_total_turn_rad": 34.02693347750946,
+            "mean_episode_curvature_rad_per_m": 2.0934933454553097
+          },
+          "large_square": {
+            "n": 500,
+            "success": 338,
+            "collision": 33,
+            "timeout": 129,
+            "contact_episodes": 28,
+            "rates_percent": {
+              "SR": 67.6,
+              "CR": 6.6,
+              "TR": 25.8,
+              "geometric_contact": 5.6
+            },
+            "total_steps": 37235,
+            "contact_steps": 29,
+            "contact_duration_s": 7.25,
+            "discomfort_step_fraction": 0.03980126225325634,
+            "minimum_clearance_m": -0.14137133388395606,
+            "episode_mean_minimum_clearance_m": 0.16413817060324282,
+            "success_time_s": 17.365384615384617,
+            "success_path_m": 12.765246039115857,
+            "all_episode_duration_s": 18.6175,
+            "all_episode_path_m": 12.733189862892027,
+            "inference_step_weighted_ms": 13.083736841308362,
+            "mean_episode_inference_p95_ms": 13.980900580063462,
+            "mean_episode_stall_fraction": 0.29650419665371675,
+            "mean_episode_oscillatory_stall_fraction": 0.25156272278737063,
+            "mean_episode_progress_efficiency": 0.49080879519663845,
+            "mean_episode_heading_flip_hz": 0.7772752676912388,
+            "mean_episode_total_turn_rad": 61.30612216894563,
+            "mean_episode_curvature_rad_per_m": 4.785203844199221
+          }
+        }
+      }
+    }
+  },
+  "descriptive_pooled": {
+    "gru": {
+      "n": 6000,
+      "success": 5314,
+      "collision": 325,
+      "timeout": 361,
+      "contact_episodes": 288,
+      "rates_percent": {
+        "SR": 88.56666666666666,
+        "CR": 5.416666666666667,
+        "TR": 6.016666666666667,
+        "geometric_contact": 4.8
+      },
+      "total_steps": 343944,
+      "contact_steps": 299,
+      "contact_duration_s": 74.75,
+      "discomfort_step_fraction": 0.03919533412415975,
+      "minimum_clearance_m": -0.25941787226683305,
+      "episode_mean_minimum_clearance_m": 0.19639809348653234,
+      "success_time_s": 14.100395182536696,
+      "success_path_m": 12.141534581453287,
+      "all_episode_duration_s": 14.331,
+      "all_episode_path_m": 12.016844509561164,
+      "inference_step_weighted_ms": 11.639562350835652,
+      "mean_episode_inference_p95_ms": 13.073947968613357,
+      "mean_episode_stall_fraction": 0.11268755811899503,
+      "mean_episode_oscillatory_stall_fraction": 0.08343325019874853,
+      "mean_episode_progress_efficiency": 0.6764220891113807,
+      "mean_episode_heading_flip_hz": 0.3323341562440429,
+      "mean_episode_total_turn_rad": 28.24096577830768,
+      "mean_episode_curvature_rad_per_m": 2.2263575319908955
+    },
+    "bayes_mean": {
+      "n": 6000,
+      "success": 4896,
+      "collision": 179,
+      "timeout": 925,
+      "contact_episodes": 158,
+      "rates_percent": {
+        "SR": 81.6,
+        "CR": 2.9833333333333334,
+        "TR": 15.416666666666666,
+        "geometric_contact": 2.6333333333333333
+      },
+      "total_steps": 382670,
+      "contact_steps": 164,
+      "contact_duration_s": 41.0,
+      "discomfort_step_fraction": 0.029581623853450752,
+      "minimum_clearance_m": -0.16840018635772736,
+      "episode_mean_minimum_clearance_m": 0.20766239578918058,
+      "success_time_s": 14.591809640522875,
+      "success_path_m": 11.654993415330866,
+      "all_episode_duration_s": 15.944583333333334,
+      "all_episode_path_m": 12.10989936090136,
+      "inference_step_weighted_ms": 14.076598845372619,
+      "mean_episode_inference_p95_ms": 15.488846270181238,
+      "mean_episode_stall_fraction": 0.12805408394560677,
+      "mean_episode_oscillatory_stall_fraction": 0.10596923018640368,
+      "mean_episode_progress_efficiency": 0.6724765483219131,
+      "mean_episode_heading_flip_hz": 0.48416126474288074,
+      "mean_episode_total_turn_rad": 39.26816497847309,
+      "mean_episode_curvature_rad_per_m": 3.0277989142822923
+    },
+    "bayes": {
+      "n": 6000,
+      "success": 5124,
+      "collision": 152,
+      "timeout": 724,
+      "contact_episodes": 130,
+      "rates_percent": {
+        "SR": 85.4,
+        "CR": 2.533333333333333,
+        "TR": 12.066666666666666,
+        "geometric_contact": 2.1666666666666665
+      },
+      "total_steps": 382402,
+      "contact_steps": 140,
+      "contact_duration_s": 35.0,
+      "discomfort_step_fraction": 0.02834451702658459,
+      "minimum_clearance_m": -0.20324027723367216,
+      "episode_mean_minimum_clearance_m": 0.21155354478974095,
+      "success_time_s": 14.938622170179547,
+      "success_path_m": 11.79649019232791,
+      "all_episode_duration_s": 15.933416666666666,
+      "all_episode_path_m": 11.987116294772491,
+      "inference_step_weighted_ms": 13.940972533279261,
+      "mean_episode_inference_p95_ms": 15.352985403717806,
+      "mean_episode_stall_fraction": 0.14003463472804242,
+      "mean_episode_oscillatory_stall_fraction": 0.10681535521671161,
+      "mean_episode_progress_efficiency": 0.6650821168176317,
+      "mean_episode_heading_flip_hz": 0.38055507991286935,
+      "mean_episode_total_turn_rad": 34.29193639519064,
+      "mean_episode_curvature_rad_per_m": 2.7289316835752007
+    }
+  },
+  "pairs": {
+    "bayes_minus_bayes_mean": {
+      "42": {
+        "difference_pp": {
+          "SR": 6.433333333333334,
+          "CR": 0.26666666666666666,
+          "TR": -6.7,
+          "geometric_contact": 0.13333333333333333
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            4.866666666666666,
+            7.967499999999989
+          ],
+          "CR": [
+            -0.5333333333333333,
+            1.0666666666666669
+          ],
+          "TR": [
+            -8.133333333333335,
+            -5.3
+          ],
+          "geometric_contact": [
+            -0.6,
+            0.9000000000000001
+          ]
+        },
+        "left_only_success": 391,
+        "right_only_success": 198,
+        "common_success": 2302,
+        "common_success_left_minus_right": {
+          "duration_s": -0.34068201563857514,
+          "path_length_m": -0.13441973998826148,
+          "min_clearance_m": -0.004327209485578182,
+          "stalled_window_ratio": -0.0014098770379358458,
+          "heading_flip_hz": -0.10686250425488433,
+          "total_abs_turn_rad": -6.276428684054854,
+          "curvature_rad_per_m": -0.49554374161636555
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2302,
+          "success->timeout": 328,
+          "timeout->success": 134,
+          "success->collision": 63,
+          "collision->success": 64,
+          "timeout->timeout": 71,
+          "timeout->collision": 9,
+          "collision->collision": 13,
+          "collision->timeout": 16
+        }
+      },
+      "43": {
+        "difference_pp": {
+          "SR": 1.1666666666666667,
+          "CR": -1.1666666666666667,
+          "TR": 0.0,
+          "geometric_contact": -1.0666666666666667
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            -0.46666666666666695,
+            2.8000000000000003
+          ],
+          "CR": [
+            -1.9000000000000004,
+            -0.4333333333333333
+          ],
+          "TR": [
+            -1.5666666666666662,
+            1.5999999999999994
+          ],
+          "geometric_contact": [
+            -1.7666666666666668,
+            -0.39916666666667866
+          ]
+        },
+        "left_only_success": 329,
+        "right_only_success": 294,
+        "common_success": 2102,
+        "common_success_left_minus_right": {
+          "duration_s": 1.0128449096098953,
+          "path_length_m": 0.3777266047800871,
+          "min_clearance_m": 0.007074338833981485,
+          "stalled_window_ratio": 0.016056084870951497,
+          "heading_flip_hz": -0.04903905027456904,
+          "total_abs_turn_rad": 0.889631252282878,
+          "curvature_rad_per_m": 0.04027814930566923
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2102,
+          "success->timeout": 274,
+          "timeout->success": 259,
+          "success->collision": 55,
+          "collision->collision": 11,
+          "timeout->timeout": 223,
+          "collision->success": 35,
+          "collision->timeout": 13,
+          "timeout->collision": 28
+        }
+      }
+    },
+    "bayes_minus_gru": {
+      "42": {
+        "difference_pp": {
+          "SR": 0.3,
+          "CR": 0.3,
+          "TR": -0.6,
+          "geometric_contact": 0.2
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            -0.9666666666666667,
+            1.5666666666666667
+          ],
+          "CR": [
+            -0.4666666666666666,
+            1.0666666666666667
+          ],
+          "TR": [
+            -1.6666666666666667,
+            0.4666666666666668
+          ],
+          "geometric_contact": [
+            -0.5333333333333332,
+            0.9333333333333332
+          ]
+        },
+        "left_only_success": 191,
+        "right_only_success": 182,
+        "common_success": 2502,
+        "common_success_left_minus_right": {
+          "duration_s": 0.3061550759392486,
+          "path_length_m": -0.7662644489894482,
+          "min_clearance_m": -0.02822223234083987,
+          "stalled_window_ratio": 0.0035747412568801545,
+          "heading_flip_hz": -0.05313867591139322,
+          "total_abs_turn_rad": -1.9412551960801174,
+          "curvature_rad_per_m": -0.08062961382169391
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2502,
+          "timeout->success": 113,
+          "success->timeout": 135,
+          "collision->success": 69,
+          "success->collision": 56,
+          "timeout->timeout": 91,
+          "collision->collision": 18,
+          "collision->timeout": 6,
+          "timeout->collision": 10
+        }
+      },
+      "43": {
+        "difference_pp": {
+          "SR": -6.633333333333333,
+          "CR": -6.066666666666666,
+          "TR": 12.7,
+          "geometric_contact": -5.466666666666667
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            -8.166666666666666,
+            -5.133333333333333
+          ],
+          "CR": [
+            -7.1,
+            -5.033333333333334
+          ],
+          "TR": [
+            11.5,
+            13.900000000000002
+          ],
+          "geometric_contact": [
+            -6.434166666666666,
+            -4.5
+          ]
+        },
+        "left_only_success": 202,
+        "right_only_success": 401,
+        "common_success": 2229,
+        "common_success_left_minus_right": {
+          "duration_s": 1.483961417676088,
+          "path_length_m": 0.14443145765195667,
+          "min_clearance_m": 0.04177863396130188,
+          "stalled_window_ratio": -0.011022772235512783,
+          "heading_flip_hz": 0.07560971579643173,
+          "total_abs_turn_rad": 7.162848872383165,
+          "curvature_rad_per_m": 0.536939271035827
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2229,
+          "success->collision": 170,
+          "timeout->success": 357,
+          "success->timeout": 32,
+          "timeout->collision": 58,
+          "collision->success": 44,
+          "timeout->timeout": 95,
+          "collision->collision": 13,
+          "collision->timeout": 2
+        }
+      }
+    },
+    "bayes_mean_minus_gru": {
+      "42": {
+        "difference_pp": {
+          "SR": -6.133333333333333,
+          "CR": 0.03333333333333333,
+          "TR": 6.1,
+          "geometric_contact": 0.06666666666666667
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            -7.7,
+            -4.566666666666667
+          ],
+          "CR": [
+            -0.7333333333333333,
+            0.8
+          ],
+          "TR": [
+            4.633333333333334,
+            7.533333333333333
+          ],
+          "geometric_contact": [
+            -0.7,
+            0.8
+          ]
+        },
+        "left_only_success": 197,
+        "right_only_success": 381,
+        "common_success": 2303,
+        "common_success_left_minus_right": {
+          "duration_s": 0.5988927485887973,
+          "path_length_m": -0.7061634556104619,
+          "min_clearance_m": -0.02426676081234175,
+          "stalled_window_ratio": 0.00534500734356243,
+          "heading_flip_hz": 0.04921641270856227,
+          "total_abs_turn_rad": 4.137584406792595,
+          "curvature_rad_per_m": 0.4102558800763135
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2303,
+          "timeout->success": 322,
+          "timeout->timeout": 77,
+          "collision->success": 59,
+          "success->timeout": 143,
+          "success->collision": 54,
+          "collision->collision": 14,
+          "collision->timeout": 12,
+          "timeout->collision": 16
+        }
+      },
+      "43": {
+        "difference_pp": {
+          "SR": -7.8,
+          "CR": -4.9,
+          "TR": 12.7,
+          "geometric_contact": -4.3999999999999995
+        },
+        "exploratory_fixed_model_paired_case_95_ci_pp": {
+          "SR": [
+            -9.433333333333332,
+            -6.166666666666667
+          ],
+          "CR": [
+            -5.966666666666667,
+            -3.8
+          ],
+          "TR": [
+            11.399999999999999,
+            13.96749999999999
+          ],
+          "geometric_contact": [
+            -5.433333333333333,
+            -3.3666666666666663
+          ]
+        },
+        "left_only_success": 215,
+        "right_only_success": 449,
+        "common_success": 2181,
+        "common_success_left_minus_right": {
+          "duration_s": 0.5555937643282898,
+          "path_length_m": -0.1405709886343905,
+          "min_clearance_m": 0.03530893770247248,
+          "stalled_window_ratio": -0.027892333708912097,
+          "heading_flip_hz": 0.12758946329304077,
+          "total_abs_turn_rad": 6.375779189257757,
+          "curvature_rad_per_m": 0.4905772470825354
+        },
+        "outcome_transition_left_to_right": {
+          "success->success": 2181,
+          "timeout->success": 385,
+          "success->collision": 176,
+          "success->timeout": 39,
+          "collision->success": 64,
+          "timeout->timeout": 84,
+          "timeout->collision": 41,
+          "collision->collision": 24,
+          "collision->timeout": 6
+        }
+      }
+    }
+  },
+  "pooled_paired_cases": {
+    "bayes_minus_bayes_mean": {
+      "difference_pp": {
+        "SR": 3.8,
+        "CR": -0.44999999999999996,
+        "TR": -3.35,
+        "geometric_contact": -0.46666666666666673
+      },
+      "exploratory_fixed_models_shared_case_95_ci_pp": {
+        "SR": [
+          2.6,
+          4.983333333333333
+        ],
+        "CR": [
+          -1.0333333333333332,
+          0.13333333333333336
+        ],
+        "TR": [
+          -4.466666666666667,
+          -2.249583333333339
+        ],
+        "geometric_contact": [
+          -1.0166666666666666,
+          0.0833333333333333
+        ]
+      }
+    },
+    "bayes_minus_gru": {
+      "difference_pp": {
+        "SR": -3.166666666666667,
+        "CR": -2.8833333333333333,
+        "TR": 6.05,
+        "geometric_contact": -2.6333333333333333
+      },
+      "exploratory_fixed_models_shared_case_95_ci_pp": {
+        "SR": [
+          -4.1499999999999995,
+          -2.216666666666667
+        ],
+        "CR": [
+          -3.516666666666667,
+          -2.25
+        ],
+        "TR": [
+          5.250000000000001,
+          6.866666666666667
+        ],
+        "geometric_contact": [
+          -3.2499999999999996,
+          -2.016666666666667
+        ]
+      }
+    },
+    "bayes_mean_minus_gru": {
+      "difference_pp": {
+        "SR": -6.966666666666667,
+        "CR": -2.433333333333333,
+        "TR": 9.4,
+        "geometric_contact": -2.166666666666667
+      },
+      "exploratory_fixed_models_shared_case_95_ci_pp": {
+        "SR": [
+          -8.1,
+          -5.833333333333333
+        ],
+        "CR": [
+          -3.1,
+          -1.7666666666666668
+        ],
+        "TR": [
+          8.383333333333333,
+          10.4
+        ],
+        "geometric_contact": [
+          -2.800416666666666,
+          -1.5166666666666668
+        ]
+      }
+    }
+  },
+  "raw_sha256": {
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/complete.json": "9faa09ff88658b55bba5027d34ce283c51842ebc3c2af8d521d2d13869f6c893",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/training-results.json": "755894eb403d523f34cf24f6de336ace04604b901dd058eef2bf12b545d46239",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/formal-version.json": "2feb964c385960c520d435b43e458f96d70b7416c8d128d52ce1e3d37d77607e",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-gru-seed42/benchmark-10000.csv": "db8862dfa6abbfbafc409201da89c4c0fc0c06e04bd1b582536ddb998bc30858",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/benchmark-10000.csv": "40691e5a4e2feb986f2aac0ec04729e6465212114f47f4af0defc6b2e5984468",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/benchmark-10000.csv": "008f2b3bb888cf0017587dec6bfe602fbb7e1c900553c29cf5f1c95fb59ee219",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-gru-seed43/benchmark-10000.csv": "2a471f0114ff5f5405e40ce35db0db4c1d7493edc060f76b66ccc381132b2416",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/benchmark-10000.csv": "afbba3de5cfb8b1ea522120a0a88d0be8c1970994e350e75a7cadefa651b8a9c",
+    "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/benchmark-10000.csv": "0a40dc51d067068b24044505ebf992a3949b14a6db51e4b9c48ce423791348ec"
+  }
+}

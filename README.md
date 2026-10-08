@@ -18,6 +18,12 @@ and unrelated experiment outputs are not uploaded.
 - Historical 3,000/8,000 runs: `crowd_nav/runs/bayes-matched-v1/`.
 - Historical fresh 10,000 runs: `crowd_nav/runs/bayes-optimized-20261007/`.
 - Repaired three-arm/two-RL-seed runs: `crowd_nav/runs/bayes-fix-20261008/`.
+- All six repaired runs now completed 10,000 RL episodes and 3,000 evaluation
+  cases each. Complex exceeds Simple in observed success rate, but does not
+  consistently exceed GRU; uncertainty-specific causality remains unverified.
+- Final saved-result analysis: `crowd_nav/runs/bayes-fix-20261008/final-analysis.json`.
+  Recompute with `python3 scripts/analyze-bayes-fix-results.py` (NumPy only;
+  no checkpoint, GPU, training or evaluation launch).
 - Sync manifest: `SYNC-MANIFEST.json`. Active evaluation CSVs are partial unless
   the corresponding complete-result artifact explicitly verifies completion.
 

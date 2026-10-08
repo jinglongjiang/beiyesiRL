@@ -1,5 +1,5 @@
 {
-  "status": "BENCHMARK",
+  "status": "EXITED_OK",
   "pid": 2392747,
   "proc_start_ticks": "2533440638",
   "started_unix": 1791447160.004131,
@@ -33,5 +33,6 @@
     "--run_label",
     "bayes-fix-seed43",
     "--gpu"
-  ]
+  ],
+  "returncode": 0
 }

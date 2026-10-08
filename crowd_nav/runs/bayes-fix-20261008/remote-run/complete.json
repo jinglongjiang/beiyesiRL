@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE",
+  "results": [
+    {
+      "status": "EVALUATED",
+      "arm": "gru",
+      "seed": 42,
+      "seconds": 2612.25336933136,
+      "success": 2684,
+      "collision": 84,
+      "timeout": 232,
+      "geometric_contact_episodes": 73
+    },
+    {
+      "status": "EVALUATED",
+      "arm": "bayes_mean",
+      "seed": 42,
+      "seconds": 3257.9068377017975,
+      "success": 2500,
+      "collision": 85,
+      "timeout": 415,
+      "geometric_contact_episodes": 75
+    },
+    {
+      "status": "EVALUATED",
+      "arm": "bayes",
+      "seed": 42,
+      "seconds": 3047.7132029533386,
+      "success": 2693,
+      "collision": 93,
+      "timeout": 214,
+      "geometric_contact_episodes": 79
+    },
+    {
+      "status": "EVALUATED",
+      "arm": "gru",
+      "seed": 43,
+      "seconds": 2432.0415320396423,
+      "success": 2630,
+      "collision": 241,
+      "timeout": 129,
+      "geometric_contact_episodes": 215
+    },
+    {
+      "status": "EVALUATED",
+      "arm": "bayes_mean",
+      "seed": 43,
+      "seconds": 3302.934178829193,
+      "success": 2396,
+      "collision": 94,
+      "timeout": 510,
+      "geometric_contact_episodes": 83
+    },
+    {
+      "status": "EVALUATED",
+      "arm": "bayes",
+      "seed": 43,
+      "seconds": 3453.14417386055,
+      "success": 2431,
+      "collision": 59,
+      "timeout": 510,
+      "geometric_contact_episodes": 51
+    }
+  ]
+}

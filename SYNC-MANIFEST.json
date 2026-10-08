@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-08T18:00:46.754953+09:00",
+  "snapshot_time": "2026-10-08T21:36:56.334435+09:00",
   "repository": "https://github.com/jinglongjiang/beiyesiRL.git",
   "source_project": "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav",
   "scope": "Bayesian temporal replacement source and experiment evidence; not other Bayesian parents",
@@ -13,8 +13,8 @@
     "unrelated historical experiment outputs",
     "source archives that may embed excluded assets"
   ],
-  "registered_file_count_excluding_manifest": 679,
-  "registered_bytes_excluding_manifest": 412928908,
+  "registered_file_count_excluding_manifest": 686,
+  "registered_bytes_excluding_manifest": 413584956,
   "completed_formal_training_artifact": [
     {
       "status": "TRAINED",
@@ -83,15 +83,15 @@
       "wall_seconds": 26429.068348169327
     }
   ],
-  "repaired_benchmark_complete_marker_present": false,
+  "repaired_benchmark_complete_marker_present": true,
   "benchmark_snapshots": [
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/benchmark-10000.csv",
-      "recorded_rows": 2755,
+      "recorded_rows": 3000,
       "outcomes": {
-        "success": 2480,
-        "timeout": 202,
-        "collision": 73
+        "success": 2693,
+        "timeout": 214,
+        "collision": 93
       },
       "scenario_counts": {
         "baseline_circle": 500,
@@ -99,17 +99,17 @@
         "dense_circle": 500,
         "dense_square": 500,
         "large_circle": 500,
-        "large_square": 255
+        "large_square": 500
       },
-      "is_complete_3000_case_table": false
+      "is_complete_3000_case_table": true
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/benchmark-10000.csv",
-      "recorded_rows": 2501,
+      "recorded_rows": 3000,
       "outcomes": {
-        "success": 2094,
-        "timeout": 381,
-        "collision": 26
+        "success": 2431,
+        "timeout": 510,
+        "collision": 59
       },
       "scenario_counts": {
         "baseline_circle": 500,
@@ -117,17 +117,17 @@
         "dense_circle": 500,
         "dense_square": 500,
         "large_circle": 500,
-        "large_square": 1
+        "large_square": 500
       },
-      "is_complete_3000_case_table": false
+      "is_complete_3000_case_table": true
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/benchmark-10000.csv",
-      "recorded_rows": 2621,
+      "recorded_rows": 3000,
       "outcomes": {
-        "success": 2238,
-        "timeout": 328,
-        "collision": 55
+        "success": 2500,
+        "timeout": 415,
+        "collision": 85
       },
       "scenario_counts": {
         "baseline_circle": 500,
@@ -135,17 +135,17 @@
         "dense_circle": 500,
         "dense_square": 500,
         "large_circle": 500,
-        "large_square": 121
+        "large_square": 500
       },
-      "is_complete_3000_case_table": false
+      "is_complete_3000_case_table": true
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/benchmark-10000.csv",
-      "recorded_rows": 2574,
+      "recorded_rows": 3000,
       "outcomes": {
-        "success": 2074,
-        "timeout": 442,
-        "collision": 58
+        "success": 2396,
+        "timeout": 510,
+        "collision": 94
       },
       "scenario_counts": {
         "baseline_circle": 500,
@@ -153,9 +153,9 @@
         "dense_circle": 500,
         "dense_square": 500,
         "large_circle": 500,
-        "large_square": 74
+        "large_square": 500
       },
-      "is_complete_3000_case_table": false
+      "is_complete_3000_case_table": true
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-gru-seed42/benchmark-10000.csv",
@@ -378,9 +378,9 @@
     },
     {
       "path": "BAYES-TEMPORAL.md",
-      "bytes": 72696,
-      "sha256": "4626a16da7026518e94a973181c8548e2d26934f0affba4a6b2273b147c25f71",
-      "git_blob": "4ef7be880b4dfbe3405feab33af1ef5f5cec3249"
+      "bytes": 86832,
+      "sha256": "c43eb372fbc7350fe0148439c1cb715bfed70674fdc1bd7fbb33692b767a9ace",
+      "git_blob": "895b8b0485b2492fa56b4f8dc7d4154b4782873d"
     },
     {
       "path": "LICENSE",
@@ -390,9 +390,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 6046,
-      "sha256": "4e5224bc8fb3f8aefeec299ac40dd8642e225c37a78dc65e51d2b4ede522f2ed",
-      "git_blob": "e6b55da989988b6c9326dca1f1df09b2a1d6bbf7"
+      "bytes": 6497,
+      "sha256": "493a37f5e9b00bf096f6310c980d09937004454787eeeeed6201aa230003bb77",
+      "git_blob": "ccdd7a6248eeb74160a33cec8bd82fb2c96f8afa"
     },
     {
       "path": "crowd_nav/1.py",
@@ -1091,6 +1091,12 @@
       "git_blob": "c456dd5c7cf05c4e82e73fa6c9ee0899fe9067c2"
     },
     {
+      "path": "crowd_nav/runs/bayes-fix-20261008/final-analysis.json",
+      "bytes": 77291,
+      "sha256": "f75c0f9ece9eab1e38baab54529b135e448dfacef05106dbac2b1ca7e441f534",
+      "git_blob": "91c73b807575d2541bc1509262d48f0c19ad7f0e"
+    },
+    {
       "path": "crowd_nav/runs/bayes-fix-20261008/handoff-attempt2-pid.json",
       "bytes": 284,
       "sha256": "94b3031e1a5ca89875beb745d8c8953f0aaced2c70731b23aac154d11931bd94",
@@ -1146,9 +1152,9 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/mirror.log",
-      "bytes": 13909,
-      "sha256": "f23425dd082c856fd8efae54431f8dec015456bc5e6cc091576ba1716e1ca280",
-      "git_blob": "83dca9460f256cf6f87c458d6663cca4847bbf64"
+      "bytes": 14107,
+      "sha256": "d31a734c63740f5e5512d2a5591ac13d651364e7b3239873d6898a577d2634b2",
+      "git_blob": "a1f42db424c80aa2b58abfe44da8c21bf85b5416"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/old-bayes-temporal.py",
@@ -1167,6 +1173,12 @@
       "bytes": 474,
       "sha256": "c1ebf3828d47ad5e048f1e9ea88968c24ff1470c866f620499dfed5279f4c4be",
       "git_blob": "272cc93ca85fd466bb9c74d281798e5e06398a99"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/complete.json",
+      "bytes": 1405,
+      "sha256": "9faa09ff88658b55bba5027d34ce283c51842ebc3c2af8d521d2d13869f6c893",
+      "git_blob": "1351e32bceb854f9603b51b6e49cb29a2e8d6a87"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/configs/bayes-seed42.eval.ini",
@@ -1332,15 +1344,21 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/benchmark-10000.csv",
-      "bytes": 935748,
-      "sha256": "9e43025701db25d53142596e653afa37daeaa4853233b2edf48079f29b445a2f",
-      "git_blob": "c09016b2af039a7d5a73b68259e57c6b87691a7a"
+      "bytes": 1020031,
+      "sha256": "008f2b3bb888cf0017587dec6bfe602fbb7e1c900553c29cf5f1c95fb59ee219",
+      "git_blob": "7aecb912eb60c5e9cb84702b8043d7246357ab66"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/benchmark-result.json",
+      "bytes": 185,
+      "sha256": "bb118e91a796e5863adc5617eeb90b1ff2cc4d74a258adce8e35d513b48cc598",
+      "git_blob": "5ed773e136374e5f07b3e1ffa13825c9113ebbe2"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/benchmark.stdout.log",
-      "bytes": 4770,
-      "sha256": "062caeb09832d1d0a33a9f117cd20b3828a6cf711f3252b18d6ac0ebd9308acb",
-      "git_blob": "fd369d318237e7f79e3bc0afb4fa26678725b32b"
+      "bytes": 5309,
+      "sha256": "9cbe8e4463a3347cae4ab5e7b719306f736d0b381858abc4626b32e4d9926683",
+      "git_blob": "b88396a2d884eb920a857964efc90d263581662a"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/config.ini",
@@ -1374,15 +1392,15 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/live.json",
-      "bytes": 996,
-      "sha256": "faa76c99df166e1f822832a5738a16a143679ef10456bd48ce1f6730c300d759",
-      "git_blob": "2856c5b3498ec246cd0ffff4bc4badb507df4000"
+      "bytes": 997,
+      "sha256": "f7eefa4e629932bed736f8381efaef505e24d3a24f6bc5b6cd304acd10fedb61",
+      "git_blob": "4a754b06a9545e41f36fcc2082cd4211d481108f"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/process.json",
-      "bytes": 923,
-      "sha256": "965306551f91ce5d5eca8e1eb9104d3ee5a4eca36276a6529d77a85fc5ddda83",
-      "git_blob": "c34960bba914dd48dcd630c6efa055f1ebe9dea5"
+      "bytes": 942,
+      "sha256": "afed393b9416e8685db51e1978579f881c2446a01331286a6e4d097bcaf59ece",
+      "git_blob": "499611be1eb17c1d3b7ba4f950b9ec43861bf4ca"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed42/result.json",
@@ -1410,15 +1428,21 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/benchmark-10000.csv",
-      "bytes": 867258,
-      "sha256": "3101cc8551ae795866c244b14932d05678989303e78bf65b8e0cd37b24cc4c17",
-      "git_blob": "dba2c36a5e0ace080dc3da6deac58c7c519b6e77"
+      "bytes": 1044527,
+      "sha256": "0a40dc51d067068b24044505ebf992a3949b14a6db51e4b9c48ce423791348ec",
+      "git_blob": "d3fabfedaba50c3caebdde6984ef4c5859042aed"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/benchmark-result.json",
+      "bytes": 183,
+      "sha256": "b9cf510f14dc94af74657c7f5f0b83cf4333218e53fde07e43013e8142f42135",
+      "git_blob": "58e09ce7f643571afaa66e96e959acc3f76bddb0"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/benchmark.stdout.log",
-      "bytes": 4771,
-      "sha256": "8ff48dade16d2bd97f983237e21e36e55feb5527dfdca50045386d00fbd643bf",
-      "git_blob": "bfd6d94866587d0f307541aba19ac73322e310f3"
+      "bytes": 5312,
+      "sha256": "ea528ca891eff8969bc0c778d3d7f29dbb9c73cf4bf4245e37fd01505d11d4e4",
+      "git_blob": "9c1eccc53226e0abe7a902ea48d3b9a20f990728"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/config.ini",
@@ -1452,15 +1476,15 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/live.json",
-      "bytes": 996,
-      "sha256": "36533d065f4879102948f11964785e2d512340f9da162823fbaf7f75437fc483",
-      "git_blob": "99c1fce47dda6c0a9384f6f8327d19f3800aaaa3"
+      "bytes": 995,
+      "sha256": "beb60c9e7e15a0538f15825963baa6139caa07bf522d340a4af7e99f1fdcf915",
+      "git_blob": "757cf1001c9c6d32a7bea4891b1e71df865b9336"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/process.json",
-      "bytes": 922,
-      "sha256": "964beb6421767eb4334833fbfdc0da326855f989e4c51e58c4bcde2336843971",
-      "git_blob": "b7a061b6c4b6400aca21f1fb8eac2159bea01c14"
+      "bytes": 941,
+      "sha256": "1f5e1dc303dfd37888c4662bcb39ad267ac5a44f80e5a3d43cf3a821bff239ed",
+      "git_blob": "abfc7e42b34e99e7d059cca80eede7c827a58303"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes-seed43/result.json",
@@ -1488,15 +1512,21 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/benchmark-10000.csv",
-      "bytes": 909763,
-      "sha256": "380d00c1fc3e52e4c870aeb65cb31af866a12d0fa5608ee74a308a2d960acffb",
-      "git_blob": "af8245f6f2fe2fbb98c818b6eb0dcff9b243ad7c"
+      "bytes": 1044660,
+      "sha256": "40691e5a4e2feb986f2aac0ec04729e6465212114f47f4af0defc6b2e5984468",
+      "git_blob": "6dc499dce93e80f153ce55b2923100cbd9afef30"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/benchmark-result.json",
+      "bytes": 190,
+      "sha256": "5f91dfbafac7cb0c4859b6e01e5769b7ee548e8a470a69b03716178a25ef7d34",
+      "git_blob": "954967cef1800ab06fa349c2c2b5ec2cc500f990"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/benchmark.stdout.log",
-      "bytes": 4777,
-      "sha256": "6d3cd44be585e5e585ea8f203ee1cdda8a3ef490651b327eb7c78c28f5c20720",
-      "git_blob": "4f06f4addd60ac2a05687099d8c0896fa087bc16"
+      "bytes": 5323,
+      "sha256": "c5d1affdabe4b60ea5963abbdb143a6e86e162a3888ae2f9030be501b054911f",
+      "git_blob": "ae83b4bcd96f9e09a270568f2a86ff674589042c"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/config.ini",
@@ -1531,14 +1561,14 @@
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/live.json",
       "bytes": 1027,
-      "sha256": "3bd8567b681ac1ceb8b304534348aaed14be20aab66fbdd23887e2fd69e675b2",
-      "git_blob": "eb5dfcf156fb5a850b0051019ef1196d26a94163"
+      "sha256": "8cc0bcfb785c0fd9b439a9880dd8af422afeb9167213c9cac57fd81e5a3c618d",
+      "git_blob": "e11d0c951ce1cadaecc11b1b11bce1072a78f206"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/process.json",
-      "bytes": 953,
-      "sha256": "c514b1f53cead2a6a11df768352e226140c1a919c43b8f7d397a3bc53d6f6d1b",
-      "git_blob": "4b3202ea12921d786b1a39ee57be77fa830a12dc"
+      "bytes": 972,
+      "sha256": "be858daa2d1acc0895182998cfdc79b1a63a94f9548cc27e8e4cb4d1aa9e73ce",
+      "git_blob": "76082923c5958248adf148832c45ac82b498efdb"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed42/result.json",
@@ -1566,15 +1596,21 @@
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/benchmark-10000.csv",
-      "bytes": 898668,
-      "sha256": "27c66c5b3894b1767b674dd9eeb5f554f555acac8e666c8aaed6896ef36c025c",
-      "git_blob": "001f1fc4d0a1024abcb70c7b50bc62b6e7e273f5"
+      "bytes": 1051105,
+      "sha256": "afbba3de5cfb8b1ea522120a0a88d0be8c1970994e350e75a7cadefa651b8a9c",
+      "git_blob": "abe3d654a12f9626471f2a3602b299fef787d5a4"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/benchmark-result.json",
+      "bytes": 189,
+      "sha256": "fc8c0c5e5c2d7d0cdf868c67ca1c764eec11ae1f5bf56dd72100ae25dc5a88cc",
+      "git_blob": "cfe9a9e71271c70f7e700ca8e2d2f49c2577f548"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/benchmark.stdout.log",
-      "bytes": 4779,
-      "sha256": "3b735b5c15e92cbbd52d651a7f0cfed0afca3ba9a1487ed6428fa8529f7f02bd",
-      "git_blob": "c2d28cb76e20a37a365b980e6c959437f56c747b"
+      "bytes": 5324,
+      "sha256": "ac5f7209a3156b276e107b9f3842cbe6093948bc4c1c80a0b83e688604a2fb67",
+      "git_blob": "654206695d46762c7293b39b012984796b07b564"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/config.ini",
@@ -1609,14 +1645,14 @@
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/live.json",
       "bytes": 1026,
-      "sha256": "0174a52d9ee9e896d8df3f59c7c94ccea2d42f123127177e7c051fc99248db24",
-      "git_blob": "4c4739d091fa41ac265296c1df123a09e8816c88"
+      "sha256": "4fbeec1b7559124c1ec2d6d8af77d6498b051200910c1327dace3ef5e4fbcb69",
+      "git_blob": "1af64bc37f25bf916047e475827dacddc8a3e8ce"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/process.json",
-      "bytes": 953,
-      "sha256": "91e124948bf554c16d5a8120d01f88cc859e43b6a00e1f91c3a76f66b305f27d",
-      "git_blob": "4e65a7d81db15921fa8bf75cd8dd21f7d2bab9d2"
+      "bytes": 972,
+      "sha256": "54001fffaa0de959c9215db7b4b7aef654811fcdabcedd0b4a35caff6c4d3997",
+      "git_blob": "e3b4f38f6bf45ee3cfd37ae772a4e3461b383c6f"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/remote-run/runs/formal-bayes_mean-seed43/result.json",
@@ -4317,6 +4353,12 @@
       "bytes": 4001,
       "sha256": "47619a02377d7a53af978e7834db84f4cf67f015658a5324a3b8c90e445afa39",
       "git_blob": "d19ab84a9daf582855d468a1ef7e8cb926584023"
+    },
+    {
+      "path": "scripts/analyze-bayes-fix-results.py",
+      "bytes": 10687,
+      "sha256": "a32c965dcddd53c018be703e585411ca9a94f4c90d2a0c67cd75995f0e61e77d",
+      "git_blob": "c40dfaa4ee7e2137f957b065b88c7d3e1d808b4f"
     },
     {
       "path": "scripts/audit-bayes-fix.py",
