@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "at_kst": "2026-10-09T03:20:29.101510+09:00",
+  "two_seed_agreement": {
+    "future-4-clearance-0.0": "\u5c1a\u672a\u8bc1\u660e\uff1a\u81f3\u5c11\u4e00\u7ec4\u65e0\u6cd5\u68c0\u9a8c\uff0c\u4e0d\u5224\u65ad\u4e00\u81f4\u6027",
+    "future-4-clearance-0.2": "\u5df2\u9a8c\u8bc1\uff1a\u4e24\u7ec4\u5747\u6b63\u589e\u91cf\u5173\u8054\uff0c\u4ec5\u9650\u8fd9\u4e24\u4e2a\u6a21\u578b/\u6848\u4f8b",
+    "future-8-clearance-0.0": "\u5c1a\u672a\u8bc1\u660e\uff1a\u81f3\u5c11\u4e00\u7ec4\u65e0\u6cd5\u68c0\u9a8c\uff0c\u4e0d\u5224\u65ad\u4e00\u81f4\u6027",
+    "future-8-clearance-0.2": "\u5df2\u9a8c\u8bc1\uff1a\u4e24\u7ec4\u5747\u6b63\u589e\u91cf\u5173\u8054\uff0c\u4ec5\u9650\u8fd9\u4e24\u4e2a\u6a21\u578b/\u6848\u4f8b",
+    "episode-collision": "\u5c1a\u672a\u8bc1\u660e\uff1a\u81f3\u5c11\u4e00\u7ec4\u65e0\u6cd5\u68c0\u9a8c\uff0c\u4e0d\u5224\u65ad\u4e00\u81f4\u6027"
+  },
+  "geometry_marginal_auc": {
+    "old": 0.8595981890209394,
+    "seed42": 0.8442099168333509,
+    "seed43": 0.8540358744394618
+  },
+  "self_checks": {
+    "GRID": 80,
+    "episode_parity": {
+      "42": 192,
+      "43": 192
+    },
+    "old_label_descriptor_fixture": {
+      "episode_id": 96,
+      "scene": "dense_square",
+      "case_index": 0,
+      "outcome": "collision",
+      "steps": 26,
+      "sigma_max_abs_error": 8.940696716308594e-08,
+      "descriptors_max_abs_error": 0.0,
+      "labels_equal": true,
+      "valid_equal": true
+    },
+    "statistical_tests": "5 passed"
+  },
+  "algorithm_changes": false,
+  "training_protocol_changes": false,
+  "training_runs": 0,
+  "remote_4090_access": false
+}

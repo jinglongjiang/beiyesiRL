@@ -1,0 +1,19 @@
+test_future_does_not_cross_episode_boundary (test_bayes_diagnostics.DiagnosticContracts) ... ok
+test_incomplete_danger_is_valid_positive (test_bayes_diagnostics.DiagnosticContracts) ... ok
+test_incomplete_safe_future_is_censored (test_bayes_diagnostics.DiagnosticContracts) ... ok
+test_legacy_split_counts (test_bayes_diagnostics.DiagnosticContracts) ... ok
+test_paired_identical_predictions_have_zero_delta (test_bayes_diagnostics.DiagnosticContracts) ... /usr/lib/python3/dist-packages/scipy/sparse/sputils.py:16: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+  supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+<frozen importlib._bootstrap>:219: RuntimeWarning: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 232 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 232 from PyObject
+/usr/lib/python3/dist-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+/usr/lib/python3/dist-packages/scipy/linalg/__init__.py:217: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+  from numpy.dual import register_func
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.546s
+
+OK

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "scripts/diagnose-bayes-variance.py", line 426, in <module>
+    nested(dataset, args.tag)
+  File "scripts/diagnose-bayes-variance.py", line 167, in nested
+    with np.load(dataset) as source:
+  File "/home/abc/.local/lib/python3.8/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-diagnostic-20261009/b1-seed42.npz'

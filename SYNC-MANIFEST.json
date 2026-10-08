@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-10-08T21:36:56.334435+09:00",
+  "snapshot_time": "2026-10-09T03:21:40.829688+09:00",
   "repository": "https://github.com/jinglongjiang/beiyesiRL.git",
   "source_project": "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav",
   "scope": "Bayesian temporal replacement source and experiment evidence; not other Bayesian parents",
@@ -13,8 +13,8 @@
     "unrelated historical experiment outputs",
     "source archives that may embed excluded assets"
   ],
-  "registered_file_count_excluding_manifest": 686,
-  "registered_bytes_excluding_manifest": 413584956,
+  "registered_file_count_excluding_manifest": 714,
+  "registered_bytes_excluding_manifest": 426673779,
   "completed_formal_training_artifact": [
     {
       "status": "TRAINED",
@@ -366,9 +366,9 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 795,
-      "sha256": "1c678edc185bfaf069a5b910112f32445dd52806f3522028e26ed90324fd3847",
-      "git_blob": "86648840b14938d3d0944d65d1fdbd9e7d87dd93"
+      "bytes": 895,
+      "sha256": "1f35d9d8b29a464ddfc9012ab08e4f9446c982e0e6857ef0e8fd7ab6cdb09ee9",
+      "git_blob": "5ffddbeaa5c03f7098e0b285e95728752425f949"
     },
     {
       "path": ".pylintrc",
@@ -383,6 +383,12 @@
       "git_blob": "895b8b0485b2492fa56b4f8dc7d4154b4782873d"
     },
     {
+      "path": "BAYES-VARIANCE-TIMEOUT-DIAGNOSTIC.md",
+      "bytes": 30235,
+      "sha256": "ff6bcb3055dcce483eae9000ff88fd40a59c5453906fe8f1f68da75e263b1fb5",
+      "git_blob": "5003a7702704c5b09a228e37cd2391c8822da64e"
+    },
+    {
       "path": "LICENSE",
       "bytes": 1073,
       "sha256": "7cdb8444870153776a3ca245a717e662353afca4e8f7e2166d551b90fe86170d",
@@ -390,9 +396,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 6497,
-      "sha256": "493a37f5e9b00bf096f6310c980d09937004454787eeeeed6201aa230003bb77",
-      "git_blob": "ccdd7a6248eeb74160a33cec8bd82fb2c96f8afa"
+      "bytes": 6797,
+      "sha256": "a5c0ef5f51f7659a6cf1fd523ff52308f84416903edfbdb16e43b179b981e153",
+      "git_blob": "3f8d8513db8dcb625a8c43fb64cc167461b82fa5"
     },
     {
       "path": "crowd_nav/1.py",
@@ -1005,6 +1011,150 @@
       "bytes": 3473,
       "sha256": "bb4a5f094cccc64721a21f20de4557d1cfdb058fdb4b415f1dcbaf241d609ba6",
       "git_blob": "e0a85c15378ce5b6b34b06e9d5c06bd3e18432cb"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/b1-seed42.npz",
+      "bytes": 2733512,
+      "sha256": "baf2a643c0247190df62d8b60cf193ae6a69f95db0b6e1090ed8df66db807a5a",
+      "git_blob": "2aa09669422016198082dda48aa393c6db54ccc3"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/b1-seed43.npz",
+      "bytes": 3013049,
+      "sha256": "ef049e8858c3a534abf72d9bae2747690a96bb08c6741d178ef270652fd034c7",
+      "git_blob": "c9a40177b99ac215bbc2e4d71ae1b53df23bfca8"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/diagnostic-summary.json",
+      "bytes": 1607,
+      "sha256": "5e3c6020ebec28674c5ee3bc8a80f87dd1a144f95262c71e8552e3cd73c59a24",
+      "git_blob": "af58ef7edaba0f04d2e671c296ec5636968e6689"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/engineering-premature-nested-seed42.log",
+      "bytes": 554,
+      "sha256": "df3c298d9343339aae5f594724205eb6d70ea7a964ed0d5f07fba6f402fe4388",
+      "git_blob": "38fdf87ad02d1e1b2ebccb96e48107caf115a135"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/engineering-runs.json",
+      "bytes": 472,
+      "sha256": "48d5522d9750eee5a5b09199664ed43a48088daf582d1e947868a5db891fe534",
+      "git_blob": "e109dd85e0242c4bb20d2d12e86a05abf84affe0"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/episode-traces-seed42.json",
+      "bytes": 67242,
+      "sha256": "04dc2ebc208fc6024b2261319f766954d65a98220f4ad20418ba7c2eecdcf0b1",
+      "git_blob": "98f877affffe073aa39fccf3e98aa173d602377c"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/episode-traces-seed42.npz",
+      "bytes": 3169534,
+      "sha256": "e412d51faba246c10fd93c195aa7f703c159013a685538184957b1ead918fb04",
+      "git_blob": "538e28c8f1cbb34c295f23aab8ab274c873918a4"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/episode-traces-seed43.json",
+      "bytes": 67266,
+      "sha256": "44fe5a39ebc54f652806cfe051015b0099c8e00211c7174f0cbbf512596b0394",
+      "git_blob": "8bb92b091d4e8d628b07de094b48239469dece3e"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/episode-traces-seed43.npz",
+      "bytes": 3496781,
+      "sha256": "41b27b83b0c884e1b55d560df09a269eeb0ac90771da08d27668ce0b9c54bdf0",
+      "git_blob": "cec8e5fac3262b4d580c7db69be9656b2364ce4f"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/label-descriptor-parity.json",
+      "bytes": 241,
+      "sha256": "0c7f2679ef19e7d089fbb07083c4d26a13084847b4f8b51207bf24408c7a8c9e",
+      "git_blob": "d9d57547cdce41b562c3288717c224d109d1e5e6"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-old.json",
+      "bytes": 20395,
+      "sha256": "dd91662ae8d25566d9b1642fc750423eabba1f5db3a2dcc793d4031aab5e5806",
+      "git_blob": "835059049a9ef58eacb340dca18dbacc859538f9"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-old.log",
+      "bytes": 7807,
+      "sha256": "a36f1d746ca2e46987f5886360859c6d33885e6ef96b0bca9eb9ebe3173247a9",
+      "git_blob": "ea5ce9e3abf14a962814b6f44f6a7405474c1fe4"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-seed42.json",
+      "bytes": 15498,
+      "sha256": "60853f7c9294fdbf1aee72b0d58b19b9181575c82eb20646b4aa89e68ee5a27a",
+      "git_blob": "b1fecbf6eada453c815c0de522e583395134939f"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-seed42.log",
+      "bytes": 6019,
+      "sha256": "314a66e5e046abf08c6c70a7bfea078ab25759021fbb42044c455d893c6188e1",
+      "git_blob": "2ec734077b284179b312b31add5a10867f9f88e1"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-seed43.json",
+      "bytes": 15497,
+      "sha256": "9914c0cd90aef858868ebd7eea81cecdd76431f87b05d4574293dfe61899046f",
+      "git_blob": "23f6b1424c1cd66bb0025ae3750f61d35f4c610b"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/nested-seed43.log",
+      "bytes": 6022,
+      "sha256": "122f21fc1757ffdfe771c8ed4ebd9f64d06388aefc40568aea3187c8635d66d8",
+      "git_blob": "7c5d51e1231d391f9bbc28c5587d6c874a8b2d72"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/protocol.json",
+      "bytes": 49614,
+      "sha256": "d332932f0215e76747e8151cd5ff2117ad794f277ad28ded8ac8f51497b44034",
+      "git_blob": "6c9a5adc17f5e399d5d62945ef7e306bfdd985dd"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/sample-seed42.json",
+      "bytes": 661,
+      "sha256": "323fca0d30f33e30a600b753eab44295f6e90a2752e019f52f9e13362c962695",
+      "git_blob": "125ded37cd7e02dedef7157ef386f02c3f99309a"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/sample-seed42.log",
+      "bytes": 24887,
+      "sha256": "1b9b13cf714a2ca1d4dc555c0c9ce2fd652a461bdceda894fad410d9a72102f0",
+      "git_blob": "83fcb31ea2ed400665371f5dccfb80d9040f4d85"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/sample-seed43.json",
+      "bytes": 661,
+      "sha256": "1a788ae9e1bd58bc421e8bc8e24543f259a56d242007ba18407fb7401b8199bf",
+      "git_blob": "96dd77fcea129f04be4c363d835b80be289ba99e"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/sample-seed43.log",
+      "bytes": 24886,
+      "sha256": "fc1f1881df8d9e36ead600026582e3050f7a075dfb94efe2ceae92b33d709907",
+      "git_blob": "3797748c7957a4ac862fbbd98a5147e9c04182bf"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/timeout-analysis.json",
+      "bytes": 230745,
+      "sha256": "a1be77fab30eedc26a180f01c77729034e6075d0238cd5240fe80d599b670d1b",
+      "git_blob": "8b35a96104e231304be813a2bd62f89c4c57d390"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/timeout-distributions.csv",
+      "bytes": 53439,
+      "sha256": "e56fa23d8c02e818d951ba1b1a506e77a2f6df1d15383877dba586105b4b032e",
+      "git_blob": "4108b5d2c7ee13284860abb06363826ed20bd480"
+    },
+    {
+      "path": "crowd_nav/runs/bayes-diagnostic-20261009/unit-tests.log",
+      "bytes": 1941,
+      "sha256": "0d6c969e661c56bec85f9513cb09b6d455634975b308ad2f5897f70eecd4443b",
+      "git_blob": "bb691b876d3c6aee040bec16343973737eac5bb8"
     },
     {
       "path": "crowd_nav/runs/bayes-fix-20261008/b0-age-mix.json",
@@ -4373,6 +4523,12 @@
       "git_blob": "1b84fefd15010f51d4de1f8e4bac8b2f1571b427"
     },
     {
+      "path": "scripts/diagnose-bayes-variance.py",
+      "bytes": 24748,
+      "sha256": "55e0d5d3e9724215ba2c38a0dac60ed4ca228e6314779f17254128e9300ae52a",
+      "git_blob": "294680a8d554bfec8f3416826bafaaa58669e9d2"
+    },
+    {
       "path": "scripts/finish-bayes-3000.py",
       "bytes": 7437,
       "sha256": "f39aba3d5f03f0343b2244b3feb59925ab45428045e985eb7eacbc97fe7ef1a7",
@@ -4395,6 +4551,12 @@
       "bytes": 5497,
       "sha256": "a15b024d7daadccc4b7d33878f8cb710922ed648ac10a180badecd48e54ec8d8",
       "git_blob": "a4098f8f41a57b6ae49377ff625d01f0203be3fe"
+    },
+    {
+      "path": "scripts/report-bayes-diagnostics.py",
+      "bytes": 22416,
+      "sha256": "c203e7c4d622a9cdf34546b03e1dd6b1c43406ccce50c9724d3181a0af340d52",
+      "git_blob": "36d351b98bf0168bad0f7ce88af929f6b015ea50"
     },
     {
       "path": "scripts/run-bayes-fix.py",
@@ -4461,6 +4623,12 @@
       "bytes": 9848,
       "sha256": "2d9e487c434040406317ca2cbab4d33d96c18a532ac06c006fbba37aa7a77b08",
       "git_blob": "c162a3efad30d8b7a66ce9a1a6d9c82dd945b305"
+    },
+    {
+      "path": "tests/test_bayes_diagnostics.py",
+      "bytes": 2694,
+      "sha256": "e5e1cbca0cb8b0262bbe68fd38f0e1e9d482e196dc286ccff9a55a0f6ea57939",
+      "git_blob": "e7829c4cee0fd0b2bcd3eae1b06502ad75e84dc9"
     },
     {
       "path": "tests/test_bayes_temporal.py",

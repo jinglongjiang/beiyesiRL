@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "grid": 80,
+  "import_root": "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav",
+  "episodes": 192,
+  "steps": 12929,
+  "outcome_and_step_parity": true,
+  "seconds": 182.73501181602478,
+  "device": "NVIDIA GeForce RTX 3060",
+  "checkpoint_sha256": "5d10eba8e43b4ac58d3b11d6babb68bda70cae02f58dc30deb70b1d3b6341ec6",
+  "config_sha256": "072eeb5470c25332723a12ae32b21b7803c27ff7bf10b40b877f8435fda49f6f",
+  "tf32_matmul": false,
+  "outcome_counts": {
+    "success": 163,
+    "timeout": 28,
+    "collision": 1
+  },
+  "label_contract": "exact original post-action future window and censoring; current descriptors before action"
+}

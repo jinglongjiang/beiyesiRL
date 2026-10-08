@@ -52,6 +52,7 @@ crowd_nav/runs/*
 !crowd_nav/runs/bayes-optimized-20261007/
 !crowd_nav/runs/bayes-fix-20261008/
 !crowd_nav/runs/bayes-diagnostic-20261009/
+crowd_nav/runs/bayes-diagnostic-20261009/seed*-episodes/
 !crowd_nav/runs/bayes-temporal-smoke/
 
 # Historical source archives can embed datasets or checkpoints.

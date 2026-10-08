@@ -1,0 +1,12 @@
+{
+  "runs": [
+    {
+      "task": "nested-seed42",
+      "status": "INVALID_ENGINEERING_ONLY",
+      "reason": "Statistics were invoked before the seed42 aggregate NPZ was written. FileNotFoundError occurred before any fit or outcome statistic.",
+      "scientific_observation": false,
+      "saved_log": "engineering-premature-nested-seed42.log",
+      "correction": "Wait for completed sampling and a nonempty NPZ, then run the unchanged frozen statistics."
+    }
+  ]
+}

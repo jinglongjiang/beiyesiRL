@@ -24,6 +24,10 @@ and unrelated experiment outputs are not uploaded.
 - Final saved-result analysis: `crowd_nav/runs/bayes-fix-20261008/final-analysis.json`.
   Recompute with `python3 scripts/analyze-bayes-fix-results.py` (NumPy only;
   no checkpoint, GPU, training or evaluation launch).
+- Read-only variance/timeout diagnostic (2026-10-09):
+  [BAYES-VARIANCE-TIMEOUT-DIAGNOSTIC.md](BAYES-VARIANCE-TIMEOUT-DIAGNOSTIC.md).
+  All inference used local RTX 3060, no 4090 access or retraining. Results and
+  losslessly packed episode traces are in `crowd_nav/runs/bayes-diagnostic-20261009/`.
 - Sync manifest: `SYNC-MANIFEST.json`. Active evaluation CSVs are partial unless
   the corresponding complete-result artifact explicitly verifies completion.
 
