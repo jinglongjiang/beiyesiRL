@@ -1,0 +1,42 @@
+digraph BayesianNavigation {
+  graph [rankdir=TB, bgcolor="white", pad=0.35, nodesep=0.35, ranksep=0.4,
+    fontname="Noto Sans CJK SC", fontsize=22,
+    label="当前贝叶斯导航：模块流向图", labelloc=t];
+  node [shape=box, style="filled", fillcolor="#f4f6f8", color="#a7b0ba",
+    fontname="Noto Sans CJK SC", fontsize=13, margin="0.16,0.12"];
+  edge [fontname="Noto Sans CJK SC", fontsize=10, color="#687582", arrowsize=0.7];
+
+  obs [label="当前观测\n机器人状态 + 行人状态"];
+  candidates [label="80 个候选动作：5 档速度 × 16 个方向\n机器人解析推进；行人按当前速度推进"];
+  windows [label="候选历史窗口 Hᵃ：最多 T=24 帧\n真实历史 + 当前帧 + 假想后继帧\nlegal-prefix：剔除左侧零填充", fillcolor="#e9f1f9"];
+  spatial [label="关系空间编码器（每帧独立）\n机器人 13维 → 64维\n前5人：13维 token + 8维关系 → 64维\n距离排序 → 4头 Attention → Max Pool\n机器人/人群融合 → 场景特征 xₜ：256维"];
+
+  subgraph cluster_bayes {
+    label="BayesianTemporalEncoder：场景级对角高斯滤波";
+    fontname="Noto Sans CJK SC"; fontsize=15; color="#27877d";
+    measurement [label="观测映射\nyₜ = Linear(xₜ)，64维\nRₜ = softplus(Linear(xₜ)) + ε", fillcolor="#e8f5f1"];
+    filter [label="每个候选窗口从可学习先验重新开始\n首帧更新先验；随后逐帧预测 + 校正\nμ⁻ = a ⊙ μ + drift；P⁻ = a² ⊙ P + Q\nK = P⁻ / (P⁻ + R)\nμ = μ⁻ + K ⊙ (y − μ⁻)；P = P⁻ ⊙ R / (P⁻ + R)", fillcolor="#e8f5f1"];
+    belief [label="最后有效帧的后验\n均值 μ：64维 + 对角方差 P：64维", fillcolor="#e8f5f1"];
+    readout [label="后验读出（本轮诊断的干预位置）\n复杂结构：[μ, log(max(P, 10⁻⁶))]\n简单结构：[μ, 0]\nLinear(128→256) → SiLU → Linear(256→256)", fillcolor="#e8f5f1"];
+    measurement -> filter -> belief -> readout;
+  }
+  value [label="原标量价值头\nLinear(256→1)：V(Hᵃ)"];
+  geometry [label="全部行人的候选几何检查\n预测净距 dminᵃ + 即时奖励 rᵃ\n不是只检查网络输入的前5人", fillcolor="#fff3df"];
+  score [label="候选评分\nQᵃ = rᵃ + γ V(Hᵃ)\n测试期净距过滤 / 风险惩罚（按配置）\n候选0扣 0.001 → argmax", fillcolor="#fff3df"];
+  execute [label="当前真实帧写入历史一次\n测试期动作平滑（本轮 α=0.3）\n执行动作 → 环境更新 → 下一次观测"];
+  diagnostic [label="仅诊断：不执行干预动作\n固定 logvar / 候选内打乱 logvar\n阳性对照：打乱 μ\n重算影子评分，比较翻转、真实净距与即时奖励",
+    fillcolor="#f3ecf8", color="#9673ae"];
+
+  obs -> candidates -> windows -> spatial -> measurement;
+  candidates -> geometry;
+  readout -> value -> score;
+  geometry -> score;
+  score -> execute;
+  execute -> obs [style=dashed, label="闭环", constraint=false];
+  diagnostic -> readout [style=dashed, color="#9673ae", label="运行期输入替换", constraint=false];
+  {rank=same; value; geometry; diagnostic;}
+
+  note [shape=plaintext, fillcolor="white", fontsize=11,
+    label="图按当前源码绘制；没有128点积分，没有逐行人持久记忆。\n假想后继帧只进入候选窗口，不写回真实历史；候选后验不作为跨步缓存。\n训练链保留：ORCA轨迹 → MC回报价值预训练 → 在线 ε-greedy / replay / MC价值回归。\n高斯模型在学习到的latent观测空间中成立，不等同于已校准的人类意图posterior。"];
+  execute -> note [style=invis];
+}

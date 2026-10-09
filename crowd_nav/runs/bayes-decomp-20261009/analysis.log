@@ -1,0 +1,517 @@
+{
+  "status": "COMPLETE",
+  "verdict": "REAL_DIRECTION_NOT_ESTABLISHED",
+  "next_route": "INFORMATION_LAYER",
+  "episodes": 1200,
+  "steps": 77352,
+  "seeds": {
+    "42": {
+      "fixed": {
+        "flip": {
+          "steps": 36169,
+          "flips": 9441,
+          "episodes": 600,
+          "flip_rate": 0.2610246343553872,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 9441,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0052960491473360875,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.25466305397672484,
+            0.2676182042344138
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 36169,
+          "flips": 9441,
+          "episodes": 600,
+          "flip_rate": 0.2610246343553872,
+          "real_wins": 5273,
+          "intervention_wins": 4168,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.5585213430780638,
+          "real_win_fraction_all_flips": 0.5585213430780638,
+          "mean_delta_real_all_flips": 0.00506984130460821,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0052960491473360875,
+          "binomial_p_descriptive": 5.5671580405315665e-30,
+          "binomial_p_bonferroni8": 4.453726432425253e-29,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.25466305397672484,
+            0.2676182042344138
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.5434891713783646,
+            0.5725829422890166
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.002808490210571986,
+            0.007337854397205664
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 36169,
+          "flips": 9441,
+          "episodes": 600,
+          "flip_rate": 0.2610246343553872,
+          "real_wins": 165,
+          "intervention_wins": 162,
+          "ties": 9114,
+          "real_win_fraction_nonties": 0.5045871559633027,
+          "real_win_fraction_all_flips": 0.01747696218620909,
+          "mean_delta_real_all_flips": 0.001004001741492337,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0052960491473360875,
+          "binomial_p_descriptive": 0.9119555228667412,
+          "binomial_p_bonferroni8": 1.0,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.25466305397672484,
+            0.2676182042344138
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.445647233201581,
+            0.563590792861902
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.00016557620456393953,
+            0.0018574820750063914
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 36169,
+        "median_max_value_change": 0.015070021152496338,
+        "pre_filter_flip_count": 9668
+      },
+      "shuffle_within": {
+        "flip": {
+          "steps": 36169,
+          "flips": 23245,
+          "episodes": 600,
+          "flip_rate": 0.6426774309491553,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 23245,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.004172940417294041,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6339955811152592,
+            0.6516230587917444
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 36169,
+          "flips": 23245,
+          "episodes": 600,
+          "flip_rate": 0.6426774309491553,
+          "real_wins": 9441,
+          "intervention_wins": 13804,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.40615186061518604,
+          "real_win_fraction_all_flips": 0.40615186061518604,
+          "mean_delta_real_all_flips": -0.012875335203215701,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.004172940417294041,
+          "binomial_p_descriptive": 4.3881086936913857e-181,
+          "binomial_p_bonferroni8": 3.5104869549531085e-180,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6339955811152592,
+            0.6516230587917444
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.39758429056147554,
+            0.4150157793696238
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            -0.014237214172716247,
+            -0.011541303653024611
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 36169,
+          "flips": 23245,
+          "episodes": 600,
+          "flip_rate": 0.6426774309491553,
+          "real_wins": 406,
+          "intervention_wins": 606,
+          "ties": 22233,
+          "real_win_fraction_nonties": 0.40118577075098816,
+          "real_win_fraction_all_flips": 0.017466121746612176,
+          "mean_delta_real_all_flips": 0.0008400757291992027,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.004172940417294041,
+          "binomial_p_descriptive": 3.486629910816202e-10,
+          "binomial_p_bonferroni8": 2.7893039286529614e-09,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6339955811152592,
+            0.6516230587917444
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.36425035884613605,
+            0.4380622478526809
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.00046097445773347467,
+            0.0012734599673751839
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 36169,
+        "median_max_value_change": 0.012560486793518066,
+        "pre_filter_flip_count": 24012
+      },
+      "ctrl_shuffle_mean": {
+        "flip": {
+          "steps": 36169,
+          "flips": 35124,
+          "episodes": 600,
+          "flip_rate": 0.9711078547927784,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 35124,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0028755267053866304,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9681331556153082,
+            0.9741377586728618
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 36169,
+          "flips": 35124,
+          "episodes": 600,
+          "flip_rate": 0.9711078547927784,
+          "real_wins": 13508,
+          "intervention_wins": 21616,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.3845803439243822,
+          "real_win_fraction_all_flips": 0.3845803439243822,
+          "mean_delta_real_all_flips": -0.04002362148380608,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0028755267053866304,
+          "binomial_p_descriptive": 5e-324,
+          "binomial_p_bonferroni8": 4e-323,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9681331556153082,
+            0.9741377586728618
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.3714582593198613,
+            0.3970765777674145
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            -0.04460309087529764,
+            -0.035655909329788064
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 36169,
+          "flips": 35124,
+          "episodes": 600,
+          "flip_rate": 0.9711078547927784,
+          "real_wins": 559,
+          "intervention_wins": 849,
+          "ties": 33716,
+          "real_win_fraction_nonties": 0.39701704545454547,
+          "real_win_fraction_all_flips": 0.015915043844664616,
+          "mean_delta_real_all_flips": 0.0010201169169970787,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0028755267053866304,
+          "binomial_p_descriptive": 1.0850352151503609e-14,
+          "binomial_p_bonferroni8": 8.680281721202887e-14,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9681331556153082,
+            0.9741377586728618
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.3616225738528572,
+            0.43074212864961764
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.0006339938712125222,
+            0.0013880443556916846
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 36169,
+        "median_max_value_change": 0.03415769338607788,
+        "pre_filter_flip_count": 35580
+      }
+    },
+    "43": {
+      "fixed": {
+        "flip": {
+          "steps": 41183,
+          "flips": 13962,
+          "episodes": 600,
+          "flip_rate": 0.33902338343491245,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 13962,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.005156854318865492,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.32833772434778624,
+            0.3496290785857357
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 41183,
+          "flips": 13962,
+          "episodes": 600,
+          "flip_rate": 0.33902338343491245,
+          "real_wins": 6595,
+          "intervention_wins": 7367,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.4723535310127489,
+          "real_win_fraction_all_flips": 0.4723535310127489,
+          "mean_delta_real_all_flips": -0.007680041028605268,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.005156854318865492,
+          "binomial_p_descriptive": 6.726969576762455e-11,
+          "binomial_p_bonferroni8": 5.381575661409964e-10,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.32833772434778624,
+            0.3496290785857357
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.4571776098862596,
+            0.48856922373645945
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            -0.010970993785082251,
+            -0.00420598249974149
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 41183,
+          "flips": 13962,
+          "episodes": 600,
+          "flip_rate": 0.33902338343491245,
+          "real_wins": 88,
+          "intervention_wins": 120,
+          "ties": 13754,
+          "real_win_fraction_nonties": 0.4230769230769231,
+          "real_win_fraction_all_flips": 0.006302821945280046,
+          "mean_delta_real_all_flips": -0.0001473318752793171,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.005156854318865492,
+          "binomial_p_descriptive": 0.03134994567403402,
+          "binomial_p_bonferroni8": 0.25079956539227216,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.32833772434778624,
+            0.3496290785857357
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.35134534534534534,
+            0.4976958525345622
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            -0.0005899520465201533,
+            0.0003513371406954832
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 41183,
+        "median_max_value_change": 0.018328368663787842,
+        "pre_filter_flip_count": 14218
+      },
+      "shuffle_within": {
+        "flip": {
+          "steps": 41183,
+          "flips": 27903,
+          "episodes": 600,
+          "flip_rate": 0.6775368477284316,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 27903,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0033329749489302224,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6663540258324013,
+            0.688126577379538
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 41183,
+          "flips": 27903,
+          "episodes": 600,
+          "flip_rate": 0.6775368477284316,
+          "real_wins": 11543,
+          "intervention_wins": 16360,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.41368311651076944,
+          "real_win_fraction_all_flips": 0.41368311651076944,
+          "mean_delta_real_all_flips": -0.018688926881844484,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0033329749489302224,
+          "binomial_p_descriptive": 1.0836116452669618e-183,
+          "binomial_p_bonferroni8": 8.668893162135695e-183,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6663540258324013,
+            0.688126577379538
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.40494910943798357,
+            0.4222657818962473
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            -0.02040774358050572,
+            -0.01693699732871557
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 41183,
+          "flips": 27903,
+          "episodes": 600,
+          "flip_rate": 0.6775368477284316,
+          "real_wins": 190,
+          "intervention_wins": 513,
+          "ties": 27200,
+          "real_win_fraction_nonties": 0.2702702702702703,
+          "real_win_fraction_all_flips": 0.006809303659104756,
+          "mean_delta_real_all_flips": 0.0003638440376212535,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0033329749489302224,
+          "binomial_p_descriptive": 3.6496225274356955e-35,
+          "binomial_p_bonferroni8": 2.9196980219485564e-34,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.6663540258324013,
+            0.688126577379538
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.2256105770060583,
+            0.3185351518719243
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            4.221148107238249e-05,
+            0.0007088201152789728
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 41183,
+        "median_max_value_change": 0.014600396156311035,
+        "pre_filter_flip_count": 28302
+      },
+      "ctrl_shuffle_mean": {
+        "flip": {
+          "steps": 41183,
+          "flips": 39861,
+          "episodes": 600,
+          "flip_rate": 0.9678993759560984,
+          "real_wins": 0,
+          "intervention_wins": 0,
+          "ties": 39861,
+          "real_win_fraction_nonties": null,
+          "real_win_fraction_all_flips": 0.0,
+          "mean_delta_real_all_flips": 0.0,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0025338049722786683,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9657117956967973,
+            0.9700862041261693
+          ],
+          "real_win_episode_bootstrap_95_ci": null,
+          "mean_delta_episode_bootstrap_95_ci": null,
+          "bootstrap_single_class_or_no_nonties_draws": null
+        },
+        "clearance": {
+          "steps": 41183,
+          "flips": 39861,
+          "episodes": 600,
+          "flip_rate": 0.9678993759560984,
+          "real_wins": 20937,
+          "intervention_wins": 18924,
+          "ties": 0,
+          "real_win_fraction_nonties": 0.5252502445999849,
+          "real_win_fraction_all_flips": 0.5252502445999849,
+          "mean_delta_real_all_flips": 0.009859704265230758,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0025338049722786683,
+          "binomial_p_descriptive": 6.797096907254308e-24,
+          "binomial_p_bonferroni8": 5.437677525803446e-23,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9657117956967973,
+            0.9700862041261693
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.5158503379992894,
+            0.534956024252392
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.006898771990380477,
+            0.012732691404635768
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "reward": {
+          "steps": 41183,
+          "flips": 39861,
+          "episodes": 600,
+          "flip_rate": 0.9678993759560984,
+          "real_wins": 317,
+          "intervention_wins": 746,
+          "ties": 38798,
+          "real_win_fraction_nonties": 0.2982126058325494,
+          "real_win_fraction_all_flips": 0.00795263540804295,
+          "mean_delta_real_all_flips": 0.0005269719189864218,
+          "flipped_episodes": 600,
+          "largest_episode_flip_fraction": 0.0025338049722786683,
+          "binomial_p_descriptive": 1.8967520272610303e-40,
+          "binomial_p_bonferroni8": 1.5174016218088242e-39,
+          "flip_rate_episode_bootstrap_95_ci": [
+            0.9657117956967973,
+            0.9700862041261693
+          ],
+          "real_win_episode_bootstrap_95_ci": [
+            0.25908098340078345,
+            0.34000095785440615
+          ],
+          "mean_delta_episode_bootstrap_95_ci": [
+            0.0002869626650048785,
+            0.0007942735668613753
+          ],
+          "bootstrap_single_class_or_no_nonties_draws": 0
+        },
+        "replacement_changed_steps": 41183,
+        "median_max_value_change": 0.05060011148452759,
+        "pre_filter_flip_count": 40043
+      }
+    }
+  }
+}

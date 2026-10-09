@@ -1,0 +1,7 @@
+{
+  "status": "ENGINEERING_INVALID",
+  "scientific_observations": 0,
+  "error": "Inline process-monitor command had literal backslash-n, producing Python SyntaxError",
+  "experiment_effect": "None; no data, code, model, or experiment process was changed",
+  "replacement": "process-check.py with exact argv and /proc/PID checks"
+}

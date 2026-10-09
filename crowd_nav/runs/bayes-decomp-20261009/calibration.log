@@ -1,0 +1,16 @@
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+Traceback (most recent call last):
+  File "decompose.py", line 530, in <module>
+    main()
+  File "decompose.py", line 524, in main
+    calibrate()
+  File "decompose.py", line 441, in calibrate
+    _, _, candidate_logvars, meta = episode(m, policy, references, seed, scene, case, 'calibration')
+  File "decompose.py", line 298, in episode
+    env, robot = environment(m, policy, training_seed, scene)
+  File "decompose.py", line 190, in environment
+    policy.set_env(env)
+  File "/home/abc/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'MambaRLPolicy' object has no attribute 'set_env'

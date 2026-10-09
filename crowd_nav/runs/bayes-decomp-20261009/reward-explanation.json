@@ -1,0 +1,117 @@
+{
+  "status": "POST_HOC_DESCRIPTIVE_ONLY",
+  "results": {
+    "seed42/fixed": {
+      "flips": 9441,
+      "groups": {
+        "tie": {
+          "n": 9114,
+          "positive": 0,
+          "negative": 0,
+          "sum_delta": 0.0
+        },
+        "discomfort_difference": {
+          "n": 310,
+          "positive": 152,
+          "negative": 158,
+          "sum_delta": -0.03993105045217115
+        },
+        "terminal_goal_difference": {
+          "n": 16,
+          "positive": 13,
+          "negative": 3,
+          "sum_delta": 10.0
+        },
+        "native_collision_difference": {
+          "n": 1,
+          "positive": 0,
+          "negative": 1,
+          "sum_delta": -0.481288508118671
+        }
+      }
+    },
+    "seed42/shuffle_within": {
+      "flips": 23245,
+      "groups": {
+        "tie": {
+          "n": 22233,
+          "positive": 0,
+          "negative": 0,
+          "sum_delta": 0.0
+        },
+        "discomfort_difference": {
+          "n": 986,
+          "positive": 383,
+          "negative": 603,
+          "sum_delta": 0.04398493530457131
+        },
+        "terminal_goal_difference": {
+          "n": 23,
+          "positive": 21,
+          "negative": 2,
+          "sum_delta": 19.0
+        },
+        "native_collision_difference": {
+          "n": 3,
+          "positive": 2,
+          "negative": 1,
+          "sum_delta": 0.4835753899308673
+        }
+      }
+    },
+    "seed43/fixed": {
+      "flips": 13962,
+      "groups": {
+        "tie": {
+          "n": 13754,
+          "positive": 0,
+          "negative": 0,
+          "sum_delta": 0.0
+        },
+        "discomfort_difference": {
+          "n": 196,
+          "positive": 83,
+          "negative": 113,
+          "sum_delta": -0.05704764264982559
+        },
+        "terminal_goal_difference": {
+          "n": 12,
+          "positive": 5,
+          "negative": 7,
+          "sum_delta": -2.0
+        }
+      }
+    },
+    "seed43/shuffle_within": {
+      "flips": 27903,
+      "groups": {
+        "tie": {
+          "n": 27200,
+          "positive": 0,
+          "negative": 0,
+          "sum_delta": 0.0
+        },
+        "discomfort_difference": {
+          "n": 680,
+          "positive": 173,
+          "negative": 507,
+          "sum_delta": -0.3248290444187059
+        },
+        "terminal_goal_difference": {
+          "n": 22,
+          "positive": 16,
+          "negative": 6,
+          "sum_delta": 10.0
+        },
+        "native_collision_difference": {
+          "n": 1,
+          "positive": 1,
+          "negative": 0,
+          "sum_delta": 0.47716922616455626
+        }
+      }
+    }
+  },
+  "verdict_unchanged": "REAL_DIRECTION_NOT_ESTABLISHED",
+  "purpose": "Explain sign-frequency versus magnitude disagreement, not a new success criterion"
+}

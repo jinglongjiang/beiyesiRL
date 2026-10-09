@@ -1,0 +1,974 @@
+{
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/1.py": {
+    "sha256": "f410f708bd054b021db89ebd94df5ef5ed1567850ce741e97a9cacdd5975039c",
+    "bytes": 187
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/analyze_lr_results.py": {
+    "sha256": "34c07ff055efbf2586fbd1dba605cb63803597b7f3d4ed1a046f78a6113b355e",
+    "bytes": 5912
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/analyze_pathology.py": {
+    "sha256": "9e72f7b9db2933a2c23bb60c7f0e520e2e4ec7fd400bb5992df67ca63c621a2e",
+    "bytes": 10028
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/analyze_trajectory.py": {
+    "sha256": "48a05b90fe20c60b61455c52ce264c9d431038007a24fb7e70eccd7044cede32",
+    "bytes": 34850
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/__init__.py": {
+    "sha256": "30eff88086fce561028c57742cded5c6a22ae5c20570f4fc39e6ad384d2af131",
+    "bytes": 71
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/calibrate_bma_cv.py": {
+    "sha256": "62b5ae018e772bf06ab847db3be1ae8e76a8a068e3b45d99e4cbe5d07d538e06",
+    "bytes": 6486
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/collect_nonstationary.py": {
+    "sha256": "51f4f944f5a064c3ac181555952476ff76451976f392f7acc37cb96392f9f286",
+    "bytes": 7969
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/evaluate_prediction_gate.py": {
+    "sha256": "b995e411fa8980a9fe90979451bfe6e9eb71f9f5ffd732e863cdcc19b8a746b8",
+    "bytes": 14214
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/evaluate_prefit_gate.py": {
+    "sha256": "97bd89d7f2f3598f4abb371d566112a948a6132ad123520a971c5e43ae42350b",
+    "bytes": 6712
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/protocol.py": {
+    "sha256": "2180b72d44a0cd56a91c8bda826193c0bee43554ef969627c127fdec2a60b9d7",
+    "bytes": 5681
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/bayesian_pilot/run_prediction_gate.py": {
+    "sha256": "aeabbf6500dfb22035ad089050d02a3fc564229b29e3d3c31006205fbb0d6eec",
+    "bytes": 4680
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/belief_space_rl/__init__.py": {
+    "sha256": "1d0f96cb4d8fc18b493f6ef0255460b85d4dfd5acf04c343962552e3790570d4",
+    "bytes": 53
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/belief_space_rl/evaluate_checkpoints.py": {
+    "sha256": "6127899ae4eb2bf2cd287152db6a6e40f4c9a1ddd5edb54a2d2dfdf457bdde17",
+    "bytes": 6661
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/belief_space_rl/model.py": {
+    "sha256": "d299f51ca4d9a4b0193e0bac6a800c292a9e22800b18efec7d6404ad5d514a6a",
+    "bytes": 6872
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/belief_space_rl/runtime.py": {
+    "sha256": "0254e7254dea4de0331f9d11ff9b9f777077cc5805c8bb93a75d5377b145c4ab",
+    "bytes": 20537
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/belief_space_rl/train.py": {
+    "sha256": "727af4a421037ac28f9a6b03d7186fc3b0a4cb241b9be827e609844c6868b086",
+    "bytes": 37648
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/check_il_meta.py": {
+    "sha256": "797638eb282d2cb5c565eb16cd1376bc04852aef3efe73eab0e302c686546349",
+    "bytes": 2314
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/check_mc_returns.py": {
+    "sha256": "31633ed937b4b780796e361950d798e5d06949d47a3f4f20c84ae46cacd5624e",
+    "bytes": 2485
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/clean_aggressive.py": {
+    "sha256": "34ce46eba727fefd14d64680772071f1c56720b6034a9151c952fdea09fa80ea",
+    "bytes": 816
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/compare_oscillation.py": {
+    "sha256": "9cdd98b348fad52e44c851f021bd8cd3ae7cc21b95aa77fc795b8c9fe93a5c64",
+    "bytes": 11088
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/bayes-temporal-smoke.config": {
+    "sha256": "2bcbc92cc91b9891e9c6a545547160e12b6b4ad32eacc8fcc30102681ab491a9",
+    "bytes": 2828
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/env.config": {
+    "sha256": "ed62b5c2d09f50e7e918ccb10a19ade9152f2c01edc6659a98816f1222f497a8",
+    "bytes": 1233
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/env_gdbn.config": {
+    "sha256": "20d0a3fb40b905b3771836ba96edd96399d30d15db5fa924ef3177ba9e2d0ec1",
+    "bytes": 1182
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy.config": {
+    "sha256": "0e11199562f38238187ea5f19a047a5a770b2746b4886a12981c83fc6db8f294",
+    "bytes": 2928
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_bayesian_distributional.config": {
+    "sha256": "5e39f2848352f92555fabdebcb9f71528ef5f4b608d584d58493b0aa1b8c809a",
+    "bytes": 1166
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_bayesian_fullcrowd_compact.config": {
+    "sha256": "521a52d64c6a6c1a82fabb2a81bd1793326d35627f85a18d15f62b563848e54d",
+    "bytes": 1165
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_bayesian_fullcrowd_tail.config": {
+    "sha256": "0384d7491534d6007111d3e36c7e8331d342681f73ac781f7bf6bccbad390a79",
+    "bytes": 1162
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_bayesian_model_average.config": {
+    "sha256": "81130a67c853578ef907645d515fb8d16f5554730f7bafc789b740850cc5a100",
+    "bytes": 1359
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_fixed_model_average.config": {
+    "sha256": "2d480bb3296746a6ad4368d42327e7a891a40eba8053f27093b1ac16fd772076",
+    "bytes": 1359
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_gdbn.config": {
+    "sha256": "1557bd9445426fc16a604a472043e78516f8af0f1dae0a2662c4f6b42e6e85c9",
+    "bytes": 3457
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/policy_ppo.config": {
+    "sha256": "534f0245bd6577e407921f4b2cca87ea95ae4dbdbc1d8e79c63ff7aa3c48e4d7",
+    "bytes": 2759
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/configs/train.config": {
+    "sha256": "151d3b869a0ca6923929682424a756db14f775f0f4adffaf17c38fcef4a044e3",
+    "bytes": 1530
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/contracts.py": {
+    "sha256": "ae42e22ede2012ab9ec09082223d539fb76b4cbe99e867f277c0bef8dab56043",
+    "bytes": 33164
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/contracts_gdbn.py": {
+    "sha256": "7cdd0aeea2f87efb064391c5d0954e8cdd79a7573280899ff6c3af34703d8af4",
+    "bytes": 39618
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/convert_ckpt.py": {
+    "sha256": "169aecd899362497a029ed4a6fc3d60cdd87ac1d13ec2a5a5b154ee479682c3d",
+    "bytes": 728
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/crowdnav_3d_demo.py": {
+    "sha256": "e0b04242866d7c676cc45e2520d2047f1b92b1f5864270df99f0c25b0259a53b",
+    "bytes": 9802
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/crowdnav_3d_demo_with_pth.py": {
+    "sha256": "9ceba3ec61126b755ec8a5a1a6606805bcfaf52ede1c548ef8d9bd5326d8c7fd",
+    "bytes": 11938
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/crowdnav_ros.py": {
+    "sha256": "aba7867c2cd2317939ecebdbd6b0e23a6903df947223f5e79cdaeceea2942a1b",
+    "bytes": 10612
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/crowdnav_rviz_demo.py": {
+    "sha256": "cc4dca473f7bc15e5b4d0cc6ed1536af55c08e2eaaa79cae3681a3a3275cca32",
+    "bytes": 16853
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/crowdnav_rviz_visual.py": {
+    "sha256": "278bca4a783c172f1e34165a49d7a52a66816c0063576cebf5030bbcb191409f",
+    "bytes": 4054
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output/env.config": {
+    "sha256": "624f401fbace3fd0e47d0e0d6de4de1b93a89745053d87c62ab4a01f51cb6956",
+    "bytes": 1792
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output/policy.config": {
+    "sha256": "02bd6e153c6daab47fa6ae20367927efcc87ea8b38dd293927deea339fb03bca",
+    "bytes": 854
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output/train.config": {
+    "sha256": "4bb003c0a4c5a629f3be8e51568ecffc947ddceae27be4be845f57221f134e0e",
+    "bytes": 911
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr2/env.config": {
+    "sha256": "05f69dccb55fec4b776c97c7cd367840e12ac3d6259313ce4f84c50950670f0c",
+    "bytes": 496
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr2/policy.config": {
+    "sha256": "3cecee2e418effa73aca4fb90f5f5328e93dee647f73d3bcdcbbf3706db77573",
+    "bytes": 838
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr2/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr3/env.config": {
+    "sha256": "a3f39c886675e3716f7f2726ee429a57cf9f8bf84dba342b4fcd2a21f8d9f828",
+    "bytes": 495
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr3/policy.config": {
+    "sha256": "12ff7e0e1b86e4a241719b0cff4ff925a08df9031783e1cc84c71fdaa9e214d1",
+    "bytes": 826
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr3/train.config": {
+    "sha256": "816cf24f545c7935cdceafebce613b4a433093be054ff6595cac5fcd6ee1113b",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr4/env.config": {
+    "sha256": "a3f39c886675e3716f7f2726ee429a57cf9f8bf84dba342b4fcd2a21f8d9f828",
+    "bytes": 495
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr4/policy.config": {
+    "sha256": "12ff7e0e1b86e4a241719b0cff4ff925a08df9031783e1cc84c71fdaa9e214d1",
+    "bytes": 826
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr4/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr_original/env.config": {
+    "sha256": "30a6feafb6f5bbc899916d47272b28a0c7f920d5523157f88977937cb8e64100",
+    "bytes": 494
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr_original/policy.config": {
+    "sha256": "666e54beb152d1d5fdc8f236210cd85a9d229ab573bf596aa4457b861ed8783e",
+    "bytes": 827
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadr_original/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadrl/env.config": {
+    "sha256": "22f10d45485e4157d0d09e7426ffdf696e0f8136b162a72a2f9036454fc3079d",
+    "bytes": 496
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadrl/policy.config": {
+    "sha256": "3cecee2e418effa73aca4fb90f5f5328e93dee647f73d3bcdcbbf3706db77573",
+    "bytes": 838
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/output_cadrl/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl/env.config": {
+    "sha256": "05f69dccb55fec4b776c97c7cd367840e12ac3d6259313ce4f84c50950670f0c",
+    "bytes": 496
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl/policy.config": {
+    "sha256": "289c3543ce789b030d1e3744af8eb5628a84723bf1b80e58cca1c750f00277f5",
+    "bytes": 773
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl_2/env.config": {
+    "sha256": "05f69dccb55fec4b776c97c7cd367840e12ac3d6259313ce4f84c50950670f0c",
+    "bytes": 496
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl_2/policy.config": {
+    "sha256": "f8e9e8cedc18f817b51fc345d1965517fc8ba53a759f88d383f594a8d7038f2a",
+    "bytes": 774
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/backup/sarl_2/train.config": {
+    "sha256": "fbd74d43d88464c5cc646ba3343cd7b4e2f3b53bff590e77cddc16d8d0249832",
+    "bytes": 685
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_000547/env.config": {
+    "sha256": "81b6f4fb0c0e9c43f1236f6be2fca496f664ce142fcee8c22c0258c3c4dba3cd",
+    "bytes": 2535
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_000547/policy.config": {
+    "sha256": "101e09a9af8b371e3202904530545c40567de065b2db94363d059398a7740f49",
+    "bytes": 1247
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_000547/train.config": {
+    "sha256": "87ef8dadf794abbbadcc8cc4c6d5b2848347346450fecd33620889bc6fef1367",
+    "bytes": 2007
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001244/env.config": {
+    "sha256": "81b6f4fb0c0e9c43f1236f6be2fca496f664ce142fcee8c22c0258c3c4dba3cd",
+    "bytes": 2535
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001244/policy.config": {
+    "sha256": "999578625968792511e472af3c5d79a0c87afabf22fb0f44fe63af829c03d455",
+    "bytes": 864
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001244/train.config": {
+    "sha256": "87ef8dadf794abbbadcc8cc4c6d5b2848347346450fecd33620889bc6fef1367",
+    "bytes": 2007
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001500/env.config": {
+    "sha256": "5567f3cd93156a875bad96fe1b98eace5b9a142b70330424fad93ffb368586ca",
+    "bytes": 1609
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001500/policy.config": {
+    "sha256": "999578625968792511e472af3c5d79a0c87afabf22fb0f44fe63af829c03d455",
+    "bytes": 864
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001500/train.config": {
+    "sha256": "87ef8dadf794abbbadcc8cc4c6d5b2848347346450fecd33620889bc6fef1367",
+    "bytes": 2007
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001725/env.config": {
+    "sha256": "5567f3cd93156a875bad96fe1b98eace5b9a142b70330424fad93ffb368586ca",
+    "bytes": 1609
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001725/policy.config": {
+    "sha256": "999578625968792511e472af3c5d79a0c87afabf22fb0f44fe63af829c03d455",
+    "bytes": 864
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_001725/train.config": {
+    "sha256": "b14fa97913d5ff4634e52737465f5348535ce50b3398b17d0d770df474a05d50",
+    "bytes": 918
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_003028/env.config": {
+    "sha256": "5567f3cd93156a875bad96fe1b98eace5b9a142b70330424fad93ffb368586ca",
+    "bytes": 1609
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_003028/policy.config": {
+    "sha256": "999578625968792511e472af3c5d79a0c87afabf22fb0f44fe63af829c03d455",
+    "bytes": 864
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_fast_20250821_003028/train.config": {
+    "sha256": "b14fa97913d5ff4634e52737465f5348535ce50b3398b17d0d770df474a05d50",
+    "bytes": 918
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_165950/env.config": {
+    "sha256": "ae43e74f9f0594595ddf10d2b7ff18aea9f285667a5be2a469e2758671592dae",
+    "bytes": 2582
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_165950/policy.config": {
+    "sha256": "62760cc42c6203ed01fd57510045dc295f79cda2216fb3e300b65826e662c269",
+    "bytes": 1282
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_165950/train.config": {
+    "sha256": "e6343dbb7e9e05cdf10a1a455ba76aa23c13de4dcce8e689c41b306ae2148070",
+    "bytes": 2169
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_170546/env.config": {
+    "sha256": "ae43e74f9f0594595ddf10d2b7ff18aea9f285667a5be2a469e2758671592dae",
+    "bytes": 2582
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_170546/policy.config": {
+    "sha256": "62760cc42c6203ed01fd57510045dc295f79cda2216fb3e300b65826e662c269",
+    "bytes": 1282
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/data/output_optimized_20250820_170546/train.config": {
+    "sha256": "e6343dbb7e9e05cdf10a1a455ba76aa23c13de4dcce8e689c41b306ae2148070",
+    "bytes": 2169
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/debug_buffer_state.py": {
+    "sha256": "f75c996906fa784a31075544d5fc94a762f0c6e6becef279b7dc289c06f4960e",
+    "bytes": 2829
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/diagnose_bc.py": {
+    "sha256": "e15f7abb7c3255c150a4d8d8443a741381a741d8e0799a5de47aa41075b83ab0",
+    "bytes": 11182
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/empty_field_smoke_test.py": {
+    "sha256": "451a3988a1ad92934658acb6321b69431fcbd36e2ddb6fb7e00531424b7aa680",
+    "bytes": 8766
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/final_clean.py": {
+    "sha256": "6687364c5abebe4a6750e5bcee1431308fe926699b22bb736e35ac3e636d0821",
+    "bytes": 858
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/final_cleanup.py": {
+    "sha256": "872e0942bc9722b10977f233ac29100c983210b7119f7218820d385d929938cb",
+    "bytes": 1096
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/final_trim.py": {
+    "sha256": "3cd817dfb5c016b51513f87a79948d32ff3099359a11c1bc52a4e66db8461a4f",
+    "bytes": 671
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/find_best_seed.py": {
+    "sha256": "4622ca11fad3e7af86fecc46c17ef2257ed52fc33008b2057434be6c13bb6f36",
+    "bytes": 13402
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/gazebo_finetune.py": {
+    "sha256": "c5b53c71b744f81d1ef771daa8c5fe390aa3e5973252a5ce8d0702c35a6a2b73",
+    "bytes": 1875
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/gdbn.py": {
+    "sha256": "68d8335ec74d3eb6b3f35817fd3a65eb937edb5722bd94465ddc1001b07ce445",
+    "bytes": 50477
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/layer1_diagnostics.py": {
+    "sha256": "675a430a6a15af7fe0461c1516ce00f5cb1f863400f0cacbfbad99b335c77862",
+    "bytes": 5262
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/layer1_fix_collision_detection.py": {
+    "sha256": "1cb0be12460094163a5769e6e5640251d7752106c2bd9e956337a26c8fc443e9",
+    "bytes": 6027
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/layer2_quantization_test.py": {
+    "sha256": "47c2ab6a0ea874af2a72db0b3f9ededba8818a718631a0bb698f71790c04c8e3",
+    "bytes": 6288
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/leg_sarl_node.py": {
+    "sha256": "e4677aa0fca35c211f1dfd510d1003b71543cb1e505eafa81d529e88526012e4",
+    "bytes": 6930
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/optimize_train.py": {
+    "sha256": "8daf9e2caac0fb7666221ccf0eedc8b1b0cc197a1e428f915bac304c7db117ba",
+    "bytes": 2379
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/pipeline.py": {
+    "sha256": "30116fa12be0b5ddc40e969c60fef37e6da8987cbae5b80f322f2774708d3558",
+    "bytes": 41273
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/__init__.py": {
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/attngraph_policy.py": {
+    "sha256": "c7ab20ff95fb35c68dc2a2e09266082de06aab626d9db4c2bf060c6b9925fa3e",
+    "bytes": 13178
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/bayes_temporal.py": {
+    "sha256": "7740d10e654c961cceb4248ff7ca4a8401dee8ae1c5d327592aa4f4d6f27c2ac",
+    "bytes": 4679
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/bayesian_fullcrowd_risk_value.py": {
+    "sha256": "752597994ddfe90d06c27acc30b3a8c738844d20ac9f5f5d168498c9002a9084",
+    "bytes": 10916
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/bayesian_model_average_risk_value.py": {
+    "sha256": "c6a787fb581ea07efe9e94c2b21417e6fb3f5e05f4550b0ad573286b110a4d73",
+    "bytes": 15079
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/cadrl.py": {
+    "sha256": "cda63955622fd01043b3ad660f7c10ed39f96d00fadbd727460e638da024930f",
+    "bytes": 9988
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/cv_fullcrowd_risk_value.py": {
+    "sha256": "83fc8305fbca3e4531538001e10cdbd59189406f0e7023fa0fc0d87a28a9cb07",
+    "bytes": 800
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/dsrnn_configs/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/dsrnn_configs/config.py": {
+    "sha256": "4e405a8c0ae9af50259873a5f50d57005a5b9ba917ed233e84827ba05aec8dc6",
+    "bytes": 5793
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/dsrnn_policy.py": {
+    "sha256": "d502390d1ad1006a524e95a1cc5c509c9c59ce70b7af1f54f55ed5c699afe4c3",
+    "bytes": 4733
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/lstm_rl.py": {
+    "sha256": "de32d626c8e2ac38f6c31350789a766c0082654675b1fd420f5ce389a1259b8f",
+    "bytes": 4362
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/mamba.py": {
+    "sha256": "54783120e5051e81ae22b035bcacc0dbfb5bec9fc9abe3ed13e03b338c1ac642",
+    "bytes": 1238
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/mamba_rl.py": {
+    "sha256": "c844135f5d0afff9128e2bc4f8177ca30c80c5e9aa808efbc078f6487d406d88",
+    "bytes": 61570
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/mamba_rl_gdbn.py": {
+    "sha256": "ab9ec49d65e4f0af3a3d60e348cf30c4e48dc6a3b78ce31caec6f5b5bd2ef359",
+    "bytes": 93222
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/mamba_rl_ppo.py": {
+    "sha256": "48787eb92ffe1453184b19051e73606cc7e3f7f82ba665c1fb22569d1967766f",
+    "bytes": 26561
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/multi_human_rl.py": {
+    "sha256": "33dd6c29c98f7fffb0a5f00088bc4fbc509221a821d46a9cf307f81eeaf70d7c",
+    "bytes": 8613
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/orca_wrapper.py": {
+    "sha256": "66a52054fb9a74c72d4def5bb72083076b111f596acf563ba13c8ea66e957c80",
+    "bytes": 451
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/policy_factory.py": {
+    "sha256": "55a2a87004e8ca2921027841b3b1978cd95d251ca0cd4bd5ac83cbf3d4377e80",
+    "bytes": 7223
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/algo/__init__.py": {
+    "sha256": "7e633c99320cc17174164cb8d07356150db9afcc797d5e1846603d342a57e2c7",
+    "bytes": 21
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/algo/ppo.py": {
+    "sha256": "aa56c0590c7761a41643e5dbb6ae12264b27a3f8bc867aa4a73389ab0c9fee59",
+    "bytes": 3813
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/distributions.py": {
+    "sha256": "2ed3f91a6eee406c0d71549c15243a9100a9c28d9ce4b9f3c6b52388d941eeda",
+    "bytes": 2810
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/envs.py": {
+    "sha256": "737f694dd643e03c24f0e2737a3291c5a6ee6d0f1fae6aa849b47db1542e7887",
+    "bytes": 9258
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/model.py": {
+    "sha256": "72d24587b33574b69ed850d008150e3cd2f983599d6ed0f2d431b88834da2020",
+    "bytes": 2654
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/shmem_vec_env.py": {
+    "sha256": "0e6f3e4ba28dac3a85f1697aa35b787eb15c05e05d144bab25784bd3aa309397",
+    "bytes": 5264
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/srnn_model.py": {
+    "sha256": "c2d2e61a163ec92cd9664a57fc3e13b42844d1b22a7f30f7a9706713c1c9bbc6",
+    "bytes": 17121
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/storage.py": {
+    "sha256": "795e1f1e31a1daf41f4e9843a3010defb5fa46862a95f9966120d993c726503d",
+    "bytes": 11622
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/a2c_ppo_acktr/utils.py": {
+    "sha256": "cadad9690d0cf3b87c14a83e3b8d6f9422972c8e965b5385a4f7ceb5e071ab50",
+    "bytes": 1063
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/pytorchBaselines/evaluation.py": {
+    "sha256": "b5899ed457829eaad1aa2fdf0c4e29dd5375767a8d8b2c541d809dd702365f1e",
+    "bytes": 6395
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/policy/sarl.py": {
+    "sha256": "76e88bdd1af548d25bc47a1ff3f672e4ebc73eeacc9a483918097ec218761b98",
+    "bytes": 3654
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/quick_seed_test.py": {
+    "sha256": "009b221c79e0c103a9f43ad10dcd46dadba212ebf009d9c5fe2a215fa7f9748e",
+    "bytes": 11191
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/risk_models.py": {
+    "sha256": "8395676616eed7b2067fa1efaf67d6174ac215d9a73e3ba8cb3791cf9d19b945",
+    "bytes": 5994
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/safe_clean.py": {
+    "sha256": "6e094c730c8f79d380aa648a412017b8543e687049a34773a0596277c9bdfe4c",
+    "bytes": 881
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/sarl_real_navigation.py": {
+    "sha256": "dc6c5c7687a9ffca2740a2a9706e8dab61b23d01e2e5a87b1a1afa078739d3a3",
+    "bytes": 1646
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/sarl_real_robot_node.py": {
+    "sha256": "314727028fe1fdc4f41928b9b27918ae98bfe021c3a2bf4e0a0f7d1e840b8672",
+    "bytes": 6350
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/simple_layer0_probe.py": {
+    "sha256": "7d29c50a2bf6375ee2a04364880555a71a514ac54fe8bfd521065ccc2f62d9a9",
+    "bytes": 3026
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/simple_seed_test.py": {
+    "sha256": "15770ff0f032d9c43c06586dd60c225a880142f5b9ac08c5ac2449303071baa6",
+    "bytes": 12470
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test.py": {
+    "sha256": "a816ea29769080834c875e5fdead58d742893ef6ddb7a273c0435da92d292aed",
+    "bytes": 63328
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test2.py": {
+    "sha256": "c3694145d0cf6c3ad33b1e62f2d9b287e8e4b42083dc3de43d944a975ef24858",
+    "bytes": 32694
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test3.py": {
+    "sha256": "1ea977751bd7758e67ceebd355ebb811fb6fbb33cdd5a1e7d9ac80390415fcb1",
+    "bytes": 34090
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test4.py": {
+    "sha256": "5a6554594ff6199bcaff5b7bd4b44f398419935a4b78bcda097f4dd1f9339d96",
+    "bytes": 36895
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test5.py": {
+    "sha256": "0d42fa2b9e5697570da930f7b00f95f2f0e89f5f3c2b86e5cc4319f123015985",
+    "bytes": 31266
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test5_backup.py": {
+    "sha256": "2477b7d1ccd3b4a07912833a51767d957d758057d8d71e4af742752fed33f055",
+    "bytes": 33094
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test6.py": {
+    "sha256": "9f85c42fd8be584e3b65882b526701a456abc3f50ea916cf927f13f77c9e02e0",
+    "bytes": 34768
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test7.py": {
+    "sha256": "71c73bd244c3ce877eb32be28a6154cb43e18496b7e58d694b501420a65c17a7",
+    "bytes": 35799
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test8.py": {
+    "sha256": "332ea5dea46c66a59554c588a57f71a92e38b7ecd156a8b7105e8dffb3ba17a8",
+    "bytes": 10684
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_4d_flow.py": {
+    "sha256": "4266fb001c3af83e8cecc825ae73bab5e34cc8929c1860d2e05c8dd2ef671e2b",
+    "bytes": 7625
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_adaptive.py": {
+    "sha256": "2631445f2c2d9a52170a403dfe049f4a32cb63625228f5d8ba1eb5e702d62af4",
+    "bytes": 8848
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_buffer_sampling.py": {
+    "sha256": "83aa5faa1b362bc566ae98db8260f99e35da59536e00c780a808197fff8e8443",
+    "bytes": 2566
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_buffer_shape.py": {
+    "sha256": "47752b95e50787231e3c5fe973dbf588f8829268380f5f7f3bdd7111e6d3f769",
+    "bytes": 4257
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_debug.py": {
+    "sha256": "12de587b32a67237e1da199e2c2dc9c8805f579bfac89af3acd95cac2b94bda7",
+    "bytes": 9130
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_diffdrive_consistency.py": {
+    "sha256": "d97addef5cccfc7582a6b9699b6c170c299518682c5fc5daec38158026f3b32b",
+    "bytes": 31117
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_fixes.py": {
+    "sha256": "f4ff4ec7c7d8b7ad83d8f87940e576796bf0bc9a4792efc30ef3b64c73747df1",
+    "bytes": 5843
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_gdbn.py": {
+    "sha256": "7a21969ece8fd5540d4a4a1c1c226d50dc871904e1f369f65d80b6f8aeae93b5",
+    "bytes": 65339
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_optimized.py": {
+    "sha256": "8b607ff523354f17b8a2d82509d031de4b1eea42a6d4462d623fb9f55147545e",
+    "bytes": 15019
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_ppo.py": {
+    "sha256": "491832b329b7f15f8ed8ccdbc4a1f0db3c73b921f9422294e78118d3c68756de",
+    "bytes": 21779
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_render.py": {
+    "sha256": "04d67ae05f8feb3002941f14ee13b861b9428b78b5b6d7180a9b801d54b0939a",
+    "bytes": 18662
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_shape.py": {
+    "sha256": "66e7269ee1949b66f8beac1bd8543f5b056f024e5771db41455c0cbe443c0e3a",
+    "bytes": 1642
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/test_ttc_simple.py": {
+    "sha256": "68d3f54fa9bcf682ee1f5b35ca3ddf521f2318f6a27ad8f21459f1188929dc4e",
+    "bytes": 18420
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/analyze_candidate_diag.py": {
+    "sha256": "4a166d6ffe88a66e241f1554b59bf5179934dbd3cd329d3a76031f4c1015f9cf",
+    "bytes": 4895
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/analyze_counterfactual_risk.py": {
+    "sha256": "c1f4a67367bf04b2c3a105ffeee640889c8aa3d9dc18b72b6620009ad6ec23c1",
+    "bytes": 3923
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/analyze_fullcrowd_eval.py": {
+    "sha256": "29ee673dccb7341e5bb8cc0d31c06ff0df90f2875dc923559e78ca04b95af822",
+    "bytes": 7929
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/build_doom_dataset.py": {
+    "sha256": "b45d63e93e9cc2f4ecaa8ae87264615687442ef5094c8b5859cd07a5e3c8a7ed",
+    "bytes": 6715
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/collect_bayesian_risk_trajectories.py": {
+    "sha256": "46dbb67b74fc10586285381bc46ed9649b43e74fb7a27f857219a52cd194935d",
+    "bytes": 11566
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/combine_fullcrowd_eval.py": {
+    "sha256": "d94ae3782e6ae4d9340e887605a9f469cc20d9b32b85e7b69e9e205820d756b3",
+    "bytes": 5251
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/eval35_status.py": {
+    "sha256": "3b0d3871d4c6807ec53480cf1aef05bce19cef7dfa59e1183c8c93e54b159edf",
+    "bytes": 2557
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/fit_behavior_gdbn_modes.py": {
+    "sha256": "ee771a2c3a380d4d6859d643dd1f9bb7a4cb6f30707949c35efdaea0875d35b6",
+    "bytes": 18346
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/fit_k1_gdbn.py": {
+    "sha256": "5ee466632b322ad6e075c42daf3631cdcb851be63d46ffa57108183dacef2c99",
+    "bytes": 2126
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/generate_counterfactual_supervision.py": {
+    "sha256": "628f397477ae5111d221a145f78bb59577847f542cec759298e8897ada05828d",
+    "bytes": 29029
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/initialize_bayesian_fullcrowd_risk.py": {
+    "sha256": "6d27344c535d6f9396bb6c34a3e42539c42b66b0a73780d17fec0846dab3d514",
+    "bytes": 4550
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/run_eval_queue.py": {
+    "sha256": "75b60c4d03171cebfdc5c18c3d68635b7a0dcea0fb3435c70b4be0b747126946",
+    "bytes": 28179
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/run_seed_suite.py": {
+    "sha256": "7d735b6ffc17b26d27203e1b396308564b1ecf3b93c751bfed2ae310dec33324",
+    "bytes": 14279
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/train_doom_predictor.py": {
+    "sha256": "f03194f4b324d1c188887c82f1f7a7b21cc9dad57379aa70c1ae832594bf7ae4",
+    "bytes": 6384
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/tools/validate_gdbn_prediction.py": {
+    "sha256": "960016a7981bae845843bdb044e73e40061599ec91c3cc9df1d6c597eaab31a8",
+    "bytes": 15182
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/train.py": {
+    "sha256": "d50d4b376e3ec31e9ddd81f32985352c3f2dd5454eec967a840cf9f53273192a",
+    "bytes": 186901
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/train_fast.py": {
+    "sha256": "d6d2155b9c06161a9e8a568273ffd4bf754b8f7e7ab396273308d2e58eeffce7",
+    "bytes": 14558
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/trim_more.py": {
+    "sha256": "137afa2cfbffe5c705bf295bdaa6a3844f2ed57e0f01cad27fc3e21bc98b36d2",
+    "bytes": 459
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/ultra_compact.py": {
+    "sha256": "27941c87883745db973ce8cd0c0f5c2e5ee0f02e7782f9ae626a0b39f75b13d2",
+    "bytes": 643
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/data_utils.py": {
+    "sha256": "13be8bbbffdc9735b22f60782ecbb4726ad8ede6c903dabb6d2832760038df7e",
+    "bytes": 6196
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/explorer.py": {
+    "sha256": "670def0cd05874492c4d3e3ab96034079c4f09b47662650e98302c5df4c2a3a1",
+    "bytes": 40375
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/log_formatter.py": {
+    "sha256": "f6ab0ba6350d9bede93a254341f4e760c505dea25a3382f1f0019762c620367a",
+    "bytes": 10334
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/memory.py": {
+    "sha256": "9a0fcd344ee95e355344b1e0d5bfec8f0eb3ec0de26deeca3f32c2c16b327966",
+    "bytes": 295
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/memory_simple_sample.py": {
+    "sha256": "75485b28193027db34408ed1e1a977922dd52d0608f6da3b77fc9ac4933b165a",
+    "bytes": 4249
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/metrics.py": {
+    "sha256": "3d0e0eeb52805375ed32b0033e4e8dc3ffe128f74e358df4b488e6fdc4cca4c8",
+    "bytes": 11173
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/plot.py": {
+    "sha256": "5884fa46c85e05bfb48a64d65723288d0ec610d269ed274d02b356743630c2fe",
+    "bytes": 5352
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/ppo_buffer.py": {
+    "sha256": "99325e3c8086e1a80ac45e9add295eff6f8fa21960fce745018c89eab1de263f",
+    "bytes": 18804
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/utils/vectorized_sampler.py": {
+    "sha256": "6616239d2132ebc7a5cd003ab07ae367bb0446ca607f5531bc341f0cc2f2aefb",
+    "bytes": 26044
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/value_converter.py": {
+    "sha256": "8d71346cd24e5230aacff08610ddcb3411cb4430746ccc0c117de9e8d92b0de6",
+    "bytes": 8803
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/value_first_il.py": {
+    "sha256": "39cc77903a38cc24e809ad58c8f4b0d0af5815070f37a782caf210f89e011b44",
+    "bytes": 9248
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/__init__.py": {
+    "sha256": "d7c25e84bc3a8aa1f6b58d0e87430117d8c2a8f9c8e2d92af1229118e0a7e6c4",
+    "bytes": 203
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/__init__.py": {
+    "sha256": "7ce4d6b62cc05f8cbf7b5d2b7d43b61c637d2ee32fe60d8d43dc044ccf004917",
+    "bytes": 32
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/crowd_sim.py": {
+    "sha256": "115aac6e660d0c7fff4425e448f5b9c97683159fe2cb8f9d43ecbfb07a3554dc",
+    "bytes": 27778
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/crowd_sim_backup.py": {
+    "sha256": "f492ea72e9a7c06ade92d003a25623d04c49e338161ec8cda432ab0d0a90e80d",
+    "bytes": 29623
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/linear.py": {
+    "sha256": "e5e55833c45ce64cafee3c5f6a50fdaae7c2664b663935800f98d4da5fa937b4",
+    "bytes": 659
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/orca.py": {
+    "sha256": "3d4eab21a556a8767f0fcfc962b444652385c21d29b2ea22a38b711d6df50967",
+    "bytes": 7616
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/orca_gpu.py": {
+    "sha256": "4d9aae4e187c4a8159c408387ca93596fbaf529e9fc148af3f94a1d5962f7508",
+    "bytes": 15488
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/orca_pure.py": {
+    "sha256": "fe2661a54ecad9bf349a9d8eb1049ca5d4fb0d45aac0488c8d1b9909950d9e52",
+    "bytes": 8736
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/policy.py": {
+    "sha256": "d73f0fca7ad2ad3cbb6c6a9324ea0d600d8b9e68c46b363c5ecfe5f92720ecdf",
+    "bytes": 1544
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/policy_factory.py": {
+    "sha256": "851a07050076a1348c3814b5a52a748847ed31e21fa1fec8d3286bdf0749f0e5",
+    "bytes": 1845
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/sf.py": {
+    "sha256": "efa4f3ce9c87dd000ca2183e764062068ddb541bd649380a673c7b6ec848e79c",
+    "bytes": 9963
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/__init__.py": {
+    "sha256": "5837bae0d3c30c74154b967bc8599befbcc3ac3b9b09630b33b6bc2f6488af77",
+    "bytes": 189
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/fieldofview.py": {
+    "sha256": "475d6db36dd0287e44444127823810c1c1686dafe3ddf7ce905b6f81de79ae6d",
+    "bytes": 816
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/potentials.py": {
+    "sha256": "f3ef9f63e82336c54b579ef020f926fc0a96763f1308d24af4431a6d5e3e4e06",
+    "bytes": 4955
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/show.py": {
+    "sha256": "92734e5d6cc8566d7e2fe3080e4623e6449aa9768880411180316a0b7d7561a7",
+    "bytes": 1124
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/simulator.py": {
+    "sha256": "8de3e2872fc3c0f060395cbe5314fc800967db199b1f04faac3b1e24dcfa7708",
+    "bytes": 4058
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/policy/socialforce/stateutils.py": {
+    "sha256": "7a5788c13a42b874f91f8efb64e657b9d52c6a8b452854c9857edec35c6814fb",
+    "bytes": 561
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/__init__.py": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/action.py": {
+    "sha256": "643a2ebf410f503e8d667baa154d12254eaa9efcbbb45cd1ab265fb31887ed5b",
+    "bytes": 132
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/agent.py": {
+    "sha256": "3861156a22ea9012e8b73109d871e72d13b234264d6bbc12535e7c988bb87be2",
+    "bytes": 7142
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/human.py": {
+    "sha256": "ed51807d9511a677026360029c4528c6305e010a1f83be55b9da17c7ab01832b",
+    "bytes": 860
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/info.py": {
+    "sha256": "af1928ae2c266689b655741630d9bcf65213a486e9557b7a1003ba1762c4c7ec",
+    "bytes": 589
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/robot.py": {
+    "sha256": "25d79572d4b1c82275f1652741e4f66d021d0d05019423671acee24e736a8e18",
+    "bytes": 3265
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/state.py": {
+    "sha256": "4d187c7c55809ad028d247d47252642e4b0ede99e5f2e4d60732b9700fc62e48",
+    "bytes": 3308
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_sim/envs/utils/utils.py": {
+    "sha256": "fbee6ffc321abbfed833d906b8c5e40a9f4d829f993edcb0ed1e6f9cb8ee7d77",
+    "bytes": 586
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/add_action_indices_to_dataset.py": {
+    "sha256": "47619a02377d7a53af978e7834db84f4cf67f015658a5324a3b8c90e445afa39",
+    "bytes": 4001
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/analyze-bayes-fix-results.py": {
+    "sha256": "a32c965dcddd53c018be703e585411ca9a94f4c90d2a0c67cd75995f0e61e77d",
+    "bytes": 10687
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/audit-bayes-fix.py": {
+    "sha256": "8730a2a861a98e0618e446925fe97ee3088be9f7416cd0e454fd0b1ccd38c105",
+    "bytes": 23911
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/continue-bayes-8000.py": {
+    "sha256": "4e4284d208e25584fbf7e19e801d6669b83d9eedca3244dd9e314cefd00dd7e2",
+    "bytes": 11165
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/diagnose-bayes-variance.py": {
+    "sha256": "55e0d5d3e9724215ba2c38a0dac60ed4ca228e6314779f17254128e9300ae52a",
+    "bytes": 24748
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/finish-bayes-3000.py": {
+    "sha256": "f39aba3d5f03f0343b2244b3feb59925ab45428045e985eb7eacbc97fe7ef1a7",
+    "bytes": 7437
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/generate_il_dataset.py": {
+    "sha256": "cdb66af406bd2b6b9cb98f1c7bfbb3dbc3f14ce818e859a50e13dde01fbd0a8d",
+    "bytes": 27085
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/mirror-bayes-optimized.py": {
+    "sha256": "d1f376a132ef2da55fc55e2bcc155767729874123cc394c7f25ea63339de02e5",
+    "bytes": 1088
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/mirror-bayes-overnight.py": {
+    "sha256": "a15b024d7daadccc4b7d33878f8cb710922ed648ac10a180badecd48e54ec8d8",
+    "bytes": 5497
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/report-bayes-diagnostics.py": {
+    "sha256": "c203e7c4d622a9cdf34546b03e1dd6b1c43406ccce50c9724d3181a0af340d52",
+    "bytes": 22416
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-fix.py": {
+    "sha256": "fff2ef2f3f556f1dabe876e5f3c58caf0f4943584847f294dbb024d8ceb6f8f5",
+    "bytes": 22711
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-matched.py": {
+    "sha256": "bd62c1fccd94049f8f71083edceb46ccde87994afc4c1c6db8e83cfdfcdf28f8",
+    "bytes": 13908
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/run-bayes-optimized.py": {
+    "sha256": "ba10c1f4daa0947a58cfdb44fa178b030b4e3b447d8facf045d250715675477c",
+    "bytes": 10887
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/stagger-bayes-preprocessing.py": {
+    "sha256": "aeac7b9ac0db257569c25b4952592aafff60ddf80ef529e84a941dd8e8a612a6",
+    "bytes": 1852
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/summarize-bayes-results.py": {
+    "sha256": "2f1c418e8a076dd57eb7031411deaf41337a21716e1bfd4d43160c610f9f1cbe",
+    "bytes": 9716
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/verify-bayes-fix.py": {
+    "sha256": "546fab25ff288cde7247b1989303b0cc488db1d2b8bed1e60cab52f9490796fe",
+    "bytes": 4571
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/scripts/verify-bayes-optimization.py": {
+    "sha256": "787b762b770aef5d2581fd8e97d0859ffe91d1b1b8ac3b1b6de558307a269b24",
+    "bytes": 7346
+  },
+  "/home/abc/4090_backup_20261009/root/bayes-fix-20261008/runs/formal-bayes-seed42/rl_model_ep10000.pth": {
+    "sha256": "98731abe348a1e70626ed43f4af7ce6b20ca1eb19ae5808675f58b610f7b5ecc",
+    "bytes": 6515048
+  },
+  "/home/abc/4090_backup_20261009/root/bayes-fix-20261008/runs/formal-bayes-seed42/benchmark-10000.csv": {
+    "sha256": "008f2b3bb888cf0017587dec6bfe602fbb7e1c900553c29cf5f1c95fb59ee219",
+    "bytes": 1020031
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-fix-20261008/remote-run/configs/bayes-seed42.eval.ini": {
+    "sha256": "0ad16876742e123a066fc00ed1a617cdb513a26a8ed920f165da358b5a1d9501",
+    "bytes": 2883
+  },
+  "/home/abc/4090_backup_20261009/root/bayes-fix-20261008/runs/formal-bayes-seed43/rl_model_ep10000.pth": {
+    "sha256": "5d10eba8e43b4ac58d3b11d6babb68bda70cae02f58dc30deb70b1d3b6341ec6",
+    "bytes": 6520168
+  },
+  "/home/abc/4090_backup_20261009/root/bayes-fix-20261008/runs/formal-bayes-seed43/benchmark-10000.csv": {
+    "sha256": "0a40dc51d067068b24044505ebf992a3949b14a6db51e4b9c48ce423791348ec",
+    "bytes": 1044527
+  },
+  "/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-fix-20261008/remote-run/configs/bayes-seed43.eval.ini": {
+    "sha256": "072eeb5470c25332723a12ae32b21b7803c27ff7bf10b40b877f8435fda49f6f",
+    "bytes": 2882
+  },
+  "/home/abc/workspace/bayes-decomp-20261009/decompose-preflight-invalid.py": {
+    "sha256": "d0e23126ee6a12208b2e76f4afa77ec6ea0f1fbbc845b7fa91f0e3397b1f7005",
+    "bytes": 28890
+  },
+  "/home/abc/workspace/bayes-decomp-20261009/decompose.py": {
+    "sha256": "7cc855488b6c1be864d8bc148ef5711bece773eb3dc05576821b02cbf24385b6",
+    "bytes": 28929
+  }
+}

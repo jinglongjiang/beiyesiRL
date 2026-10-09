@@ -1,0 +1,12 @@
+{
+  "status": "ENGINEERING_INVALID_BEFORE_FIRST_EPISODE",
+  "error": "AttributeError: optional set_env does not exist on inherited policy",
+  "scientific_observations": 0,
+  "log": "calibration.log",
+  "repair": "Guard optional set_env exactly as existing validated read-only evaluator",
+  "algorithm_changes": false,
+  "old_source": "/home/abc/workspace/bayes-decomp-20261009/decompose-preflight-invalid.py",
+  "new_source_sha256": "7cc855488b6c1be864d8bc148ef5711bece773eb3dc05576821b02cbf24385b6",
+  "protocol_unchanged": true,
+  "failed_job_stopped": true
+}

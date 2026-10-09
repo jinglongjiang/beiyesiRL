@@ -28,7 +28,19 @@ and unrelated experiment outputs are not uploaded.
   [BAYES-VARIANCE-TIMEOUT-DIAGNOSTIC.md](BAYES-VARIANCE-TIMEOUT-DIAGNOSTIC.md).
   All inference used local RTX 3060, no 4090 access or retraining. Results and
   losslessly packed episode traces are in `crowd_nav/runs/bayes-diagnostic-20261009/`.
-- Sync manifest: `SYNC-MANIFEST.json`. Active evaluation CSVs are partial unless
+- Variance decision-layer decomposition (2026-10-09):
+  [report](crowd_nav/runs/bayes-decomp-20261009/REPORT.md) and
+  [module flow](crowd_nav/runs/bayes-decomp-20261009/module-flow.svg).
+  Completed 1,200 real-policy episodes / 77,352 decisions with runtime-only
+  shadow interventions, local RTX 3060, zero training and no Parent changes.
+  Variance readout affects decisions, but a consistently beneficial direction
+  is not established (`REAL_DIRECTION_NOT_ESTABLISHED`). This is neither a
+  Complex-versus-Simple comparison nor a closed-loop intervention benefit.
+  Protocols, raw JSON/NPZ, controls, interrupted/invalid evidence and analysis
+  code are retained together in `crowd_nav/runs/bayes-decomp-20261009/`.
+- Historical sync manifest: `SYNC-MANIFEST.json`; the latest diagnostic uses
+  `crowd_nav/runs/bayes-decomp-20261009/sync-manifest.json`.
+  Active evaluation CSVs are partial unless
   the corresponding complete-result artifact explicitly verifies completion.
 
 Run commands from this project root. Follow the frozen experiment protocols

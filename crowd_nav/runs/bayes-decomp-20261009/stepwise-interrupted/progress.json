@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "counts": {
+    "steps": 25435,
+    "episodes": 434,
+    "outcome-success": 393,
+    "fixed-flips": 6831,
+    "fixed-changed": 25435,
+    "shuffle_within-flips": 16716,
+    "shuffle_within-changed": 25435,
+    "ctrl_shuffle_mean-flips": 24818,
+    "ctrl_shuffle_mean-changed": 25435,
+    "outcome-timeout": 32,
+    "outcome-collision": 9
+  },
+  "seconds": 1185.0089044570923
+}

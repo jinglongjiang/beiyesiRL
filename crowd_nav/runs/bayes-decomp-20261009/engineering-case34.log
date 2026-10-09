@@ -1,0 +1,29 @@
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+{
+  "status": "ENGINEERING_REPLAY_COMPLETE_NOT_SCIENTIFIC_OUTCOME",
+  "training_seed": 42,
+  "scene": "large_circle",
+  "case": 34,
+  "reference_outcome": "success",
+  "reference_steps": 66,
+  "instrumented_attempts": [
+    {
+      "passed_external_reference": false,
+      "outcome": "success",
+      "steps": 67
+    },
+    {
+      "passed_external_reference": false,
+      "outcome": "success",
+      "steps": 67
+    }
+  ],
+  "unpatched_local_parent_outcome": "success",
+  "unpatched_local_parent_steps": 67,
+  "instrumented_repeat_bitwise_equal": true,
+  "unpatched_actions_positions_bitwise_equal": true,
+  "conclusion": "No instrumentation effect on this local replay. External benchmark trajectory is not identical; exact cross-runtime cause remains unverified.",
+  "formal_run_stopped": true,
+  "new_scientific_observations": 0
+}

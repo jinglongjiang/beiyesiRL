@@ -1,0 +1,745 @@
+{
+  "mean_logvar": [
+    -1.7192472842759612,
+    -1.8001952080776908,
+    -1.2238627552150851,
+    -1.1492095235217483,
+    -1.5548648693599776,
+    -1.9329574870399875,
+    -1.2171823064180964,
+    -1.2582332104373557,
+    -1.7162481565158685,
+    -2.1860169098009545,
+    -1.326751015130849,
+    -2.12721371901539,
+    -2.3984430570494046,
+    -1.662186754750316,
+    -2.5959509365612012,
+    -2.0576905101045506,
+    -1.4841026542051183,
+    -1.3905877680601844,
+    -1.2521145118068167,
+    -1.477900120742556,
+    -1.099142032680572,
+    -2.058196007720533,
+    -2.446091105868873,
+    -2.691908414228884,
+    -1.4874084413496134,
+    -2.374237988538693,
+    -2.245938994096621,
+    -1.815612312032165,
+    -1.4518940479357032,
+    -1.454342183700418,
+    -1.158086282510924,
+    -1.1241954006213102,
+    -1.1514921555043114,
+    -1.483153497260643,
+    -2.48772943387086,
+    -1.5659361241572962,
+    -1.3647160134665814,
+    -1.968572903037284,
+    -1.1125073972207604,
+    -1.2388204043253583,
+    -1.2851042783737245,
+    -1.9139907204997078,
+    -1.2148756288970297,
+    -2.2717005477823276,
+    -1.656509082344911,
+    -1.0518773447273788,
+    -1.9883084147157564,
+    -2.049388853871269,
+    -1.1084372364688515,
+    -1.2985969581880565,
+    -1.3943448827010418,
+    -1.029284902756044,
+    -1.0109159133723096,
+    -1.2427587705552512,
+    -1.4767896139066683,
+    -1.422601012669957,
+    -1.191154301156003,
+    -1.5267339874499612,
+    -1.5944294622967488,
+    -1.647825295836279,
+    -2.1283381770984207,
+    -1.3007439802259566,
+    -2.086389384387797,
+    -1.2418203595758543
+  ],
+  "candidate_rows": 537680,
+  "episodes": [
+    {
+      "scene": "baseline_circle",
+      "case": 400,
+      "outcome": "success",
+      "steps": 46,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 401,
+      "outcome": "success",
+      "steps": 45,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 402,
+      "outcome": "success",
+      "steps": 43,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 403,
+      "outcome": "success",
+      "steps": 44,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 404,
+      "outcome": "success",
+      "steps": 52,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 405,
+      "outcome": "success",
+      "steps": 47,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 406,
+      "outcome": "success",
+      "steps": 42,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 407,
+      "outcome": "success",
+      "steps": 48,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 408,
+      "outcome": "success",
+      "steps": 51,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 409,
+      "outcome": "success",
+      "steps": 45,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 410,
+      "outcome": "success",
+      "steps": 51,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 411,
+      "outcome": "success",
+      "steps": 56,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 412,
+      "outcome": "success",
+      "steps": 57,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 413,
+      "outcome": "success",
+      "steps": 42,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 414,
+      "outcome": "success",
+      "steps": 49,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 415,
+      "outcome": "success",
+      "steps": 46,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 400,
+      "outcome": "success",
+      "steps": 63,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 401,
+      "outcome": "success",
+      "steps": 54,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 402,
+      "outcome": "success",
+      "steps": 79,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 403,
+      "outcome": "success",
+      "steps": 84,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 404,
+      "outcome": "success",
+      "steps": 74,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 405,
+      "outcome": "success",
+      "steps": 51,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 406,
+      "outcome": "success",
+      "steps": 85,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 407,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 408,
+      "outcome": "success",
+      "steps": 52,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 409,
+      "outcome": "success",
+      "steps": 59,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 410,
+      "outcome": "success",
+      "steps": 53,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 411,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 412,
+      "outcome": "success",
+      "steps": 46,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 413,
+      "outcome": "success",
+      "steps": 47,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 414,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "baseline_square",
+      "case": 415,
+      "outcome": "success",
+      "steps": 57,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 400,
+      "outcome": "success",
+      "steps": 49,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 401,
+      "outcome": "success",
+      "steps": 67,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 402,
+      "outcome": "success",
+      "steps": 67,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 403,
+      "outcome": "success",
+      "steps": 49,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 404,
+      "outcome": "success",
+      "steps": 63,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 405,
+      "outcome": "success",
+      "steps": 57,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 406,
+      "outcome": "success",
+      "steps": 65,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 407,
+      "outcome": "success",
+      "steps": 65,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 408,
+      "outcome": "success",
+      "steps": 65,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 409,
+      "outcome": "success",
+      "steps": 54,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 410,
+      "outcome": "success",
+      "steps": 53,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 411,
+      "outcome": "success",
+      "steps": 46,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 412,
+      "outcome": "success",
+      "steps": 55,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 413,
+      "outcome": "success",
+      "steps": 45,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 414,
+      "outcome": "success",
+      "steps": 56,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_circle",
+      "case": 415,
+      "outcome": "success",
+      "steps": 50,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 400,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 401,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 402,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 403,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 404,
+      "outcome": "success",
+      "steps": 65,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 405,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 406,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 407,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 408,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 409,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 410,
+      "outcome": "success",
+      "steps": 59,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 411,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 412,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 413,
+      "outcome": "success",
+      "steps": 94,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 414,
+      "outcome": "success",
+      "steps": 83,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "dense_square",
+      "case": 415,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 400,
+      "outcome": "success",
+      "steps": 75,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 401,
+      "outcome": "success",
+      "steps": 79,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 402,
+      "outcome": "success",
+      "steps": 82,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 403,
+      "outcome": "success",
+      "steps": 80,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 404,
+      "outcome": "success",
+      "steps": 73,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 405,
+      "outcome": "success",
+      "steps": 96,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 406,
+      "outcome": "success",
+      "steps": 72,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 407,
+      "outcome": "success",
+      "steps": 82,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 408,
+      "outcome": "success",
+      "steps": 67,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 409,
+      "outcome": "success",
+      "steps": 68,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 410,
+      "outcome": "success",
+      "steps": 62,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 411,
+      "outcome": "success",
+      "steps": 82,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 412,
+      "outcome": "success",
+      "steps": 76,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 413,
+      "outcome": "success",
+      "steps": 70,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 414,
+      "outcome": "success",
+      "steps": 87,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_circle",
+      "case": 415,
+      "outcome": "success",
+      "steps": 65,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 400,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 401,
+      "outcome": "success",
+      "steps": 73,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 402,
+      "outcome": "collision",
+      "steps": 15,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 403,
+      "outcome": "success",
+      "steps": 89,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 404,
+      "outcome": "success",
+      "steps": 72,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 405,
+      "outcome": "success",
+      "steps": 93,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 406,
+      "outcome": "success",
+      "steps": 67,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 407,
+      "outcome": "success",
+      "steps": 64,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 408,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 409,
+      "outcome": "success",
+      "steps": 62,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 410,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 411,
+      "outcome": "success",
+      "steps": 59,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 412,
+      "outcome": "success",
+      "steps": 62,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 413,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 414,
+      "outcome": "timeout",
+      "steps": 101,
+      "tensor_digests": {}
+    },
+    {
+      "scene": "large_square",
+      "case": 415,
+      "outcome": "success",
+      "steps": 54,
+      "tensor_digests": {}
+    }
+  ],
+  "seconds": 86.02713918685913,
+  "sha_checkpoint": "5d10eba8e43b4ac58d3b11d6babb68bda70cae02f58dc30deb70b1d3b6341ec6"
+}

@@ -1,0 +1,16 @@
+ERROR:root:[MAMBA-SSM] ✗ Failed to import mamba_ssm: No module named 'mamba_ssm'
+ERROR:root:[MAMBA-SSM] Please install: pip install mamba-ssm
+FULL 42 baseline_circle {'steps': 4661, 'episodes': 100, 'outcome-success': 100, 'fixed-flips': 1189, 'fixed-changed': 4661, 'shuffle_within-flips': 3035, 'shuffle_within-changed': 4661, 'ctrl_shuffle_mean-flips': 4562, 'ctrl_shuffle_mean-changed': 4661} elapsed 202.11230301856995
+FULL 42 baseline_square {'steps': 10188, 'episodes': 200, 'outcome-success': 193, 'fixed-flips': 2679, 'fixed-changed': 10188, 'shuffle_within-flips': 6621, 'shuffle_within-changed': 10188, 'ctrl_shuffle_mean-flips': 9923, 'ctrl_shuffle_mean-changed': 10188, 'outcome-timeout': 4, 'outcome-collision': 3} elapsed 450.9093437194824
+FULL 42 dense_circle {'steps': 15660, 'episodes': 300, 'outcome-success': 293, 'fixed-flips': 4149, 'fixed-changed': 15660, 'shuffle_within-flips': 10266, 'shuffle_within-changed': 15660, 'ctrl_shuffle_mean-flips': 15303, 'ctrl_shuffle_mean-changed': 15660, 'outcome-timeout': 4, 'outcome-collision': 3} elapsed 698.5950231552124
+FULL 42 dense_square {'steps': 23169, 'episodes': 400, 'outcome-success': 359, 'fixed-flips': 6303, 'fixed-changed': 23169, 'shuffle_within-flips': 15441, 'shuffle_within-changed': 23169, 'ctrl_shuffle_mean-flips': 22583, 'ctrl_shuffle_mean-changed': 23169, 'outcome-timeout': 32, 'outcome-collision': 9} elapsed 1080.845213651657
+Traceback (most recent call last):
+  File "decompose.py", line 531, in <module>
+    main()
+  File "decompose.py", line 527, in main
+    run(args.command)
+  File "decompose.py", line 481, in run
+    rows, trace, _, meta = episode(m, policy, references, seed, scene, case, phase, fixed, True)
+  File "decompose.py", line 423, in episode
+    assert outcome == reference['outcome'] and steps == int(reference['steps']), 'Benchmark outcome/step mismatch'
+AssertionError: Benchmark outcome/step mismatch

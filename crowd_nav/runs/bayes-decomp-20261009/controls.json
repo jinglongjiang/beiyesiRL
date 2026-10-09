@@ -1,0 +1,1556 @@
+{
+  "smoke_passed": true,
+  "grid": 80,
+  "deterministic_flips": 0,
+  "counts": {
+    "42": {
+      "steps": 1053,
+      "episodes": 18,
+      "outcome-success": 17,
+      "external-benchmark-mismatches": 0,
+      "fixed-flips": 263,
+      "fixed-changed": 1053,
+      "shuffle_within-flips": 657,
+      "shuffle_within-changed": 1053,
+      "ctrl_shuffle_mean-flips": 1032,
+      "ctrl_shuffle_mean-changed": 1053,
+      "outcome-collision": 1
+    },
+    "43": {
+      "steps": 1163,
+      "episodes": 18,
+      "outcome-success": 17,
+      "external-benchmark-mismatches": 0,
+      "fixed-flips": 447,
+      "fixed-changed": 1163,
+      "shuffle_within-flips": 823,
+      "shuffle_within-changed": 1163,
+      "ctrl_shuffle_mean-flips": 1130,
+      "ctrl_shuffle_mean-changed": 1163,
+      "outcome-collision": 1
+    }
+  },
+  "controls": {
+    "42": [
+      {
+        "scene": "baseline_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 46,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9440600275993347,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6131858825683594,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.8886753916740417,
+            "per_dimension_candidate_std_before_mean": 0.04694250226020813,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9440600275993347,
+            "mean_after": -0.9440600275993347,
+            "std_before": 0.6131858825683594,
+            "std_after": 0.6131858825683594,
+            "max_abs_change": 0.9724076986312866,
+            "per_dimension_candidate_std_before_mean": 0.04694250226020813,
+            "per_dimension_candidate_std_after_mean": 0.04694249480962753
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.10901644080877304,
+            "mean_after": -0.10901647061109543,
+            "std_before": 0.7405688762664795,
+            "std_after": 0.7405688762664795,
+            "max_abs_change": 1.0652711391448975,
+            "per_dimension_candidate_std_before_mean": 0.10847266018390656,
+            "per_dimension_candidate_std_after_mean": 0.10847266018390656
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 46
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 58,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9465397000312805,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6104691028594971,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.8811603784561157,
+            "per_dimension_candidate_std_before_mean": 0.04906267300248146,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9465397000312805,
+            "mean_after": -0.946539580821991,
+            "std_before": 0.6104691028594971,
+            "std_after": 0.6104691028594971,
+            "max_abs_change": 1.0394941568374634,
+            "per_dimension_candidate_std_before_mean": 0.04906267300248146,
+            "per_dimension_candidate_std_after_mean": 0.04906267672777176
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1053069606423378,
+            "mean_after": -0.10530693829059601,
+            "std_before": 0.7463510036468506,
+            "std_after": 0.7463510036468506,
+            "max_abs_change": 0.9925780296325684,
+            "per_dimension_candidate_std_before_mean": 0.11371524631977081,
+            "per_dimension_candidate_std_after_mean": 0.11371523141860962
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 58
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 42,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9915329217910767,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6374439001083374,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.9979355335235596,
+            "per_dimension_candidate_std_before_mean": 0.06251038610935211,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9915329217910767,
+            "mean_after": -0.9915329217910767,
+            "std_before": 0.6374439001083374,
+            "std_after": 0.6374437808990479,
+            "max_abs_change": 0.750767707824707,
+            "per_dimension_candidate_std_before_mean": 0.06251038610935211,
+            "per_dimension_candidate_std_after_mean": 0.06251038610935211
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1317896544933319,
+            "mean_after": -0.13178963959217072,
+            "std_before": 0.7862088084220886,
+            "std_after": 0.7862088084220886,
+            "max_abs_change": 0.9902334809303284,
+            "per_dimension_candidate_std_before_mean": 0.12299835681915283,
+            "per_dimension_candidate_std_after_mean": 0.12299835681915283
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 42
+      },
+      {
+        "scene": "baseline_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 81,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.977721631526947,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6149682402610779,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.0131831169128418,
+            "per_dimension_candidate_std_before_mean": 0.072747603058815,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.977721631526947,
+            "mean_after": -0.9777215123176575,
+            "std_before": 0.6149682402610779,
+            "std_after": 0.6149681806564331,
+            "max_abs_change": 1.110405445098877,
+            "per_dimension_candidate_std_before_mean": 0.072747603058815,
+            "per_dimension_candidate_std_after_mean": 0.072747603058815
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.13001661002635956,
+            "mean_after": -0.13001663982868195,
+            "std_before": 0.7344635128974915,
+            "std_after": 0.7344635128974915,
+            "max_abs_change": 1.1594339609146118,
+            "per_dimension_candidate_std_before_mean": 0.11792807281017303,
+            "per_dimension_candidate_std_after_mean": 0.11792806535959244
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 81
+      },
+      {
+        "scene": "baseline_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 73,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9477772116661072,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.5744883418083191,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.9761824607849121,
+            "per_dimension_candidate_std_before_mean": 0.05822345241904259,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9477772116661072,
+            "mean_after": -0.9477772116661072,
+            "std_before": 0.5744883418083191,
+            "std_after": 0.5744883418083191,
+            "max_abs_change": 0.4721705913543701,
+            "per_dimension_candidate_std_before_mean": 0.05822345241904259,
+            "per_dimension_candidate_std_after_mean": 0.05822344869375229
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.0966886654496193,
+            "mean_after": -0.0966886579990387,
+            "std_before": 0.6415516138076782,
+            "std_after": 0.641551673412323,
+            "max_abs_change": 0.8740463256835938,
+            "per_dimension_candidate_std_before_mean": 0.095736064016819,
+            "per_dimension_candidate_std_after_mean": 0.0957360714673996
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 73
+      },
+      {
+        "scene": "baseline_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 41,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9706576466560364,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6092346906661987,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.3961423635482788,
+            "per_dimension_candidate_std_before_mean": 0.10472577810287476,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9706576466560364,
+            "mean_after": -0.9706575274467468,
+            "std_before": 0.6092346906661987,
+            "std_after": 0.6092346906661987,
+            "max_abs_change": 1.4769632816314697,
+            "per_dimension_candidate_std_before_mean": 0.10472577810287476,
+            "per_dimension_candidate_std_after_mean": 0.10472577810287476
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.10648369789123535,
+            "mean_after": -0.10648369789123535,
+            "std_before": 0.6925919055938721,
+            "std_after": 0.6925919055938721,
+            "max_abs_change": 1.9536949396133423,
+            "per_dimension_candidate_std_before_mean": 0.167293518781662,
+            "per_dimension_candidate_std_after_mean": 0.167293518781662
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 41
+      },
+      {
+        "scene": "dense_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 57,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9789237976074219,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6471095681190491,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.0357608795166016,
+            "per_dimension_candidate_std_before_mean": 0.05673779919743538,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9789237976074219,
+            "mean_after": -0.9789237976074219,
+            "std_before": 0.6471095681190491,
+            "std_after": 0.6471095681190491,
+            "max_abs_change": 1.0145858526229858,
+            "per_dimension_candidate_std_before_mean": 0.05673779919743538,
+            "per_dimension_candidate_std_after_mean": 0.05673779919743538
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12905727326869965,
+            "mean_after": -0.12905727326869965,
+            "std_before": 0.8184426426887512,
+            "std_after": 0.818442702293396,
+            "max_abs_change": 0.9654709696769714,
+            "per_dimension_candidate_std_before_mean": 0.11845861375331879,
+            "per_dimension_candidate_std_after_mean": 0.11845861375331879
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 57
+      },
+      {
+        "scene": "dense_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 60,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9778791666030884,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6176661849021912,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.1672041416168213,
+            "per_dimension_candidate_std_before_mean": 0.07622533291578293,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9778791666030884,
+            "mean_after": -0.9778791666030884,
+            "std_before": 0.6176661849021912,
+            "std_after": 0.6176661849021912,
+            "max_abs_change": 1.052849292755127,
+            "per_dimension_candidate_std_before_mean": 0.07622533291578293,
+            "per_dimension_candidate_std_after_mean": 0.07622532546520233
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12595221400260925,
+            "mean_after": -0.12595221400260925,
+            "std_before": 0.7382920384407043,
+            "std_after": 0.7382920384407043,
+            "max_abs_change": 1.3605878353118896,
+            "per_dimension_candidate_std_before_mean": 0.14174045622348785,
+            "per_dimension_candidate_std_after_mean": 0.14174044132232666
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 60
+      },
+      {
+        "scene": "dense_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 55,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9573157429695129,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6098152995109558,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.1418404579162598,
+            "per_dimension_candidate_std_before_mean": 0.06216766685247421,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9573157429695129,
+            "mean_after": -0.9573156237602234,
+            "std_before": 0.6098152995109558,
+            "std_after": 0.6098152995109558,
+            "max_abs_change": 0.7812056541442871,
+            "per_dimension_candidate_std_before_mean": 0.06216766685247421,
+            "per_dimension_candidate_std_after_mean": 0.062167663127183914
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12371131032705307,
+            "mean_after": -0.12371131032705307,
+            "std_before": 0.7409825921058655,
+            "std_after": 0.7409825921058655,
+            "max_abs_change": 1.0534663200378418,
+            "per_dimension_candidate_std_before_mean": 0.13354404270648956,
+            "per_dimension_candidate_std_after_mean": 0.13354404270648956
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 55
+      },
+      {
+        "scene": "dense_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "collision",
+        "steps": 27,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0066149234771729,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6479836702346802,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.9987447261810303,
+            "per_dimension_candidate_std_before_mean": 0.0821702629327774,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0066149234771729,
+            "mean_after": -1.0066149234771729,
+            "std_before": 0.6479836702346802,
+            "std_after": 0.6479836702346802,
+            "max_abs_change": 0.8018200397491455,
+            "per_dimension_candidate_std_before_mean": 0.0821702629327774,
+            "per_dimension_candidate_std_after_mean": 0.082170270383358
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.13073419034481049,
+            "mean_after": -0.1307341754436493,
+            "std_before": 0.790870726108551,
+            "std_after": 0.790870726108551,
+            "max_abs_change": 1.2887803316116333,
+            "per_dimension_candidate_std_before_mean": 0.1328355222940445,
+            "per_dimension_candidate_std_after_mean": 0.1328355222940445
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "collision",
+        "external_benchmark_steps": 27
+      },
+      {
+        "scene": "dense_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 73,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0185647010803223,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.5735155344009399,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.5095360279083252,
+            "per_dimension_candidate_std_before_mean": 0.06302568316459656,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0185647010803223,
+            "mean_after": -1.0185647010803223,
+            "std_before": 0.5735155344009399,
+            "std_after": 0.5735155344009399,
+            "max_abs_change": 0.9096744060516357,
+            "per_dimension_candidate_std_before_mean": 0.06302568316459656,
+            "per_dimension_candidate_std_after_mean": 0.06302568316459656
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.07916723191738129,
+            "mean_after": -0.07916723191738129,
+            "std_before": 0.5274476408958435,
+            "std_after": 0.5274476408958435,
+            "max_abs_change": 0.7702945470809937,
+            "per_dimension_candidate_std_before_mean": 0.08529812842607498,
+            "per_dimension_candidate_std_after_mean": 0.08529812842607498
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 73
+      },
+      {
+        "scene": "dense_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 63,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9434286952018738,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6047438979148865,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.0760445594787598,
+            "per_dimension_candidate_std_before_mean": 0.06531648337841034,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9434286952018738,
+            "mean_after": -0.9434286952018738,
+            "std_before": 0.6047438979148865,
+            "std_after": 0.6047438979148865,
+            "max_abs_change": 0.757274866104126,
+            "per_dimension_candidate_std_before_mean": 0.06531648337841034,
+            "per_dimension_candidate_std_after_mean": 0.06531648337841034
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12029948085546494,
+            "mean_after": -0.12029948085546494,
+            "std_before": 0.7379202842712402,
+            "std_after": 0.7379202842712402,
+            "max_abs_change": 1.2579840421676636,
+            "per_dimension_candidate_std_before_mean": 0.13437488675117493,
+            "per_dimension_candidate_std_after_mean": 0.13437488675117493
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 63
+      },
+      {
+        "scene": "large_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 65,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.987907886505127,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6165346503257751,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.0335204601287842,
+            "per_dimension_candidate_std_before_mean": 0.041374772787094116,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.987907886505127,
+            "mean_after": -0.987907886505127,
+            "std_before": 0.6165346503257751,
+            "std_after": 0.6165346503257751,
+            "max_abs_change": 0.49175405502319336,
+            "per_dimension_candidate_std_before_mean": 0.041374772787094116,
+            "per_dimension_candidate_std_after_mean": 0.041374772787094116
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12309892475605011,
+            "mean_after": -0.1230989322066307,
+            "std_before": 0.7092381715774536,
+            "std_after": 0.7092381715774536,
+            "max_abs_change": 0.5554049015045166,
+            "per_dimension_candidate_std_before_mean": 0.08148996531963348,
+            "per_dimension_candidate_std_after_mean": 0.08148996531963348
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 65
+      },
+      {
+        "scene": "large_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 66,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9347740411758423,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6240758299827576,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.8997992277145386,
+            "per_dimension_candidate_std_before_mean": 0.03509727120399475,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9347740411758423,
+            "mean_after": -0.9347740411758423,
+            "std_before": 0.6240758299827576,
+            "std_after": 0.6240758299827576,
+            "max_abs_change": 0.5471010208129883,
+            "per_dimension_candidate_std_before_mean": 0.03509727120399475,
+            "per_dimension_candidate_std_after_mean": 0.035097263753414154
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12359880656003952,
+            "mean_after": -0.12359880656003952,
+            "std_before": 0.7902897000312805,
+            "std_after": 0.7902897000312805,
+            "max_abs_change": 0.7963951230049133,
+            "per_dimension_candidate_std_before_mean": 0.09054224193096161,
+            "per_dimension_candidate_std_after_mean": 0.09054224193096161
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 66
+      },
+      {
+        "scene": "large_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 63,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0660858154296875,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.5968093276023865,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.600551724433899,
+            "per_dimension_candidate_std_before_mean": 0.06830930709838867,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0660858154296875,
+            "mean_after": -1.0660858154296875,
+            "std_before": 0.5968093276023865,
+            "std_after": 0.5968092679977417,
+            "max_abs_change": 0.8037886619567871,
+            "per_dimension_candidate_std_before_mean": 0.06830930709838867,
+            "per_dimension_candidate_std_after_mean": 0.06830930709838867
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.06842602789402008,
+            "mean_after": -0.06842602044343948,
+            "std_before": 0.5354794263839722,
+            "std_after": 0.5354794263839722,
+            "max_abs_change": 0.9967032670974731,
+            "per_dimension_candidate_std_before_mean": 0.0917416512966156,
+            "per_dimension_candidate_std_after_mean": 0.0917416512966156
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 63
+      },
+      {
+        "scene": "large_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 56,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9467676281929016,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.6180537343025208,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 0.8999876976013184,
+            "per_dimension_candidate_std_before_mean": 0.05283750593662262,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9467676281929016,
+            "mean_after": -0.9467675089836121,
+            "std_before": 0.6180537343025208,
+            "std_after": 0.618053674697876,
+            "max_abs_change": 0.6088685989379883,
+            "per_dimension_candidate_std_before_mean": 0.05283750593662262,
+            "per_dimension_candidate_std_after_mean": 0.05283751338720322
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1131012961268425,
+            "mean_after": -0.1131012812256813,
+            "std_before": 0.7560984492301941,
+            "std_after": 0.7560984492301941,
+            "max_abs_change": 0.9127062559127808,
+            "per_dimension_candidate_std_before_mean": 0.10505032539367676,
+            "per_dimension_candidate_std_after_mean": 0.10505032539367676
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 56
+      },
+      {
+        "scene": "large_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 56,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9731449484825134,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.5607819557189941,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 2.09145450592041,
+            "per_dimension_candidate_std_before_mean": 0.11229569464921951,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9731449484825134,
+            "mean_after": -0.9731448292732239,
+            "std_before": 0.5607819557189941,
+            "std_after": 0.5607819557189941,
+            "max_abs_change": 2.7202813625335693,
+            "per_dimension_candidate_std_before_mean": 0.11229569464921951,
+            "per_dimension_candidate_std_after_mean": 0.11229568719863892
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.06377457827329636,
+            "mean_after": -0.06377457827329636,
+            "std_before": 0.5477176308631897,
+            "std_after": 0.5477176308631897,
+            "max_abs_change": 2.004176139831543,
+            "per_dimension_candidate_std_before_mean": 0.16235965490341187,
+            "per_dimension_candidate_std_after_mean": 0.16235965490341187
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 56
+      },
+      {
+        "scene": "large_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 71,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -0.9949323534965515,
+            "mean_after": -1.5295177698135376,
+            "std_before": 0.5849302411079407,
+            "std_after": 0.4184933006763458,
+            "max_abs_change": 1.3454686403274536,
+            "per_dimension_candidate_std_before_mean": 0.08035434037446976,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -0.9949323534965515,
+            "mean_after": -0.9949323534965515,
+            "std_before": 0.5849302411079407,
+            "std_after": 0.5849302411079407,
+            "max_abs_change": 0.9479984045028687,
+            "per_dimension_candidate_std_before_mean": 0.08035434037446976,
+            "per_dimension_candidate_std_after_mean": 0.08035434037446976
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.09102614223957062,
+            "mean_after": -0.09102613478899002,
+            "std_before": 0.5964727997779846,
+            "std_after": 0.5964727997779846,
+            "max_abs_change": 1.2393983602523804,
+            "per_dimension_candidate_std_before_mean": 0.11936451494693756,
+            "per_dimension_candidate_std_after_mean": 0.11936451494693756
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 71
+      }
+    ],
+    "43": [
+      {
+        "scene": "baseline_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 47,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0776031017303467,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7644888162612915,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.041680097579956,
+            "per_dimension_candidate_std_before_mean": 0.04902462661266327,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0776031017303467,
+            "mean_after": -1.0776031017303467,
+            "std_before": 0.7644888162612915,
+            "std_after": 0.7644888758659363,
+            "max_abs_change": 0.7997446060180664,
+            "per_dimension_candidate_std_before_mean": 0.04902462661266327,
+            "per_dimension_candidate_std_after_mean": 0.049024634063243866
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.14264348149299622,
+            "mean_after": -0.1426434963941574,
+            "std_before": 0.8390419483184814,
+            "std_after": 0.8390419483184814,
+            "max_abs_change": 0.6934090852737427,
+            "per_dimension_candidate_std_before_mean": 0.08497928082942963,
+            "per_dimension_candidate_std_after_mean": 0.08497928082942963
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 47
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 61,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0961192846298218,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.8052840232849121,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.3296964168548584,
+            "per_dimension_candidate_std_before_mean": 0.0526239350438118,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0961192846298218,
+            "mean_after": -1.0961192846298218,
+            "std_before": 0.8052840232849121,
+            "std_after": 0.8052840232849121,
+            "max_abs_change": 0.8699743747711182,
+            "per_dimension_candidate_std_before_mean": 0.0526239350438118,
+            "per_dimension_candidate_std_after_mean": 0.0526239350438118
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.16677497327327728,
+            "mean_after": -0.16677497327327728,
+            "std_before": 0.9323878884315491,
+            "std_after": 0.9323878884315491,
+            "max_abs_change": 0.7137209177017212,
+            "per_dimension_candidate_std_before_mean": 0.08821965008974075,
+            "per_dimension_candidate_std_after_mean": 0.08821965754032135
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 61
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 47,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0536130666732788,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7668166160583496,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.0625441074371338,
+            "per_dimension_candidate_std_before_mean": 0.05030068755149841,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0536130666732788,
+            "mean_after": -1.0536129474639893,
+            "std_before": 0.7668166160583496,
+            "std_after": 0.7668166160583496,
+            "max_abs_change": 0.7744431495666504,
+            "per_dimension_candidate_std_before_mean": 0.05030068755149841,
+            "per_dimension_candidate_std_after_mean": 0.05030069500207901
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.15109282732009888,
+            "mean_after": -0.15109282732009888,
+            "std_before": 0.8570185899734497,
+            "std_after": 0.8570185899734497,
+            "max_abs_change": 0.6808007955551147,
+            "per_dimension_candidate_std_before_mean": 0.08502809703350067,
+            "per_dimension_candidate_std_after_mean": 0.08502809703350067
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 47
+      },
+      {
+        "scene": "baseline_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 48,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0711783170700073,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7657727599143982,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.020491123199463,
+            "per_dimension_candidate_std_before_mean": 0.05894431471824646,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0711783170700073,
+            "mean_after": -1.0711783170700073,
+            "std_before": 0.7657727599143982,
+            "std_after": 0.7657727599143982,
+            "max_abs_change": 0.9539917707443237,
+            "per_dimension_candidate_std_before_mean": 0.05894431471824646,
+            "per_dimension_candidate_std_after_mean": 0.05894431471824646
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1490168422460556,
+            "mean_after": -0.1490168422460556,
+            "std_before": 0.8220478892326355,
+            "std_after": 0.8220478296279907,
+            "max_abs_change": 0.787740170955658,
+            "per_dimension_candidate_std_before_mean": 0.09158216416835785,
+            "per_dimension_candidate_std_after_mean": 0.09158216416835785
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 48
+      },
+      {
+        "scene": "baseline_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 64,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0478012561798096,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7253777384757996,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 0.971910834312439,
+            "per_dimension_candidate_std_before_mean": 0.055807992815971375,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0478012561798096,
+            "mean_after": -1.0478012561798096,
+            "std_before": 0.7253777384757996,
+            "std_after": 0.7253777384757996,
+            "max_abs_change": 0.6088926792144775,
+            "per_dimension_candidate_std_before_mean": 0.055807992815971375,
+            "per_dimension_candidate_std_after_mean": 0.055807992815971375
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.12227993458509445,
+            "mean_after": -0.12227993458509445,
+            "std_before": 0.7545179724693298,
+            "std_after": 0.7545179724693298,
+            "max_abs_change": 0.8060492277145386,
+            "per_dimension_candidate_std_before_mean": 0.10287128388881683,
+            "per_dimension_candidate_std_after_mean": 0.10287128388881683
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 64
+      },
+      {
+        "scene": "baseline_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 66,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.06273353099823,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7852896451950073,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.058142900466919,
+            "per_dimension_candidate_std_before_mean": 0.05164435878396034,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.06273353099823,
+            "mean_after": -1.06273353099823,
+            "std_before": 0.7852896451950073,
+            "std_after": 0.7852896451950073,
+            "max_abs_change": 0.8009166717529297,
+            "per_dimension_candidate_std_before_mean": 0.05164435878396034,
+            "per_dimension_candidate_std_after_mean": 0.051644355058670044
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.16216488182544708,
+            "mean_after": -0.16216488182544708,
+            "std_before": 0.8691172003746033,
+            "std_after": 0.8691172003746033,
+            "max_abs_change": 0.8425650596618652,
+            "per_dimension_candidate_std_before_mean": 0.08258649706840515,
+            "per_dimension_candidate_std_after_mean": 0.08258649706840515
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 66
+      },
+      {
+        "scene": "dense_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 75,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0597972869873047,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7571039199829102,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 0.9693341851234436,
+            "per_dimension_candidate_std_before_mean": 0.04039980471134186,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0597972869873047,
+            "mean_after": -1.0597972869873047,
+            "std_before": 0.7571039199829102,
+            "std_after": 0.7571039199829102,
+            "max_abs_change": 0.6036772727966309,
+            "per_dimension_candidate_std_before_mean": 0.04039980471134186,
+            "per_dimension_candidate_std_after_mean": 0.04039980098605156
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.14566254615783691,
+            "mean_after": -0.14566254615783691,
+            "std_before": 0.8341465592384338,
+            "std_after": 0.8341466188430786,
+            "max_abs_change": 0.5478432774543762,
+            "per_dimension_candidate_std_before_mean": 0.06463808566331863,
+            "per_dimension_candidate_std_after_mean": 0.06463808566331863
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 75
+      },
+      {
+        "scene": "dense_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 61,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0842444896697998,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7991846799850464,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.184680461883545,
+            "per_dimension_candidate_std_before_mean": 0.061837032437324524,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0842444896697998,
+            "mean_after": -1.0842444896697998,
+            "std_before": 0.7991846799850464,
+            "std_after": 0.7991846799850464,
+            "max_abs_change": 0.7465970516204834,
+            "per_dimension_candidate_std_before_mean": 0.061837032437324524,
+            "per_dimension_candidate_std_after_mean": 0.061837032437324524
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.17364822328090668,
+            "mean_after": -0.17364822328090668,
+            "std_before": 0.8959497809410095,
+            "std_after": 0.8959497809410095,
+            "max_abs_change": 1.0846654176712036,
+            "per_dimension_candidate_std_before_mean": 0.10651237517595291,
+            "per_dimension_candidate_std_after_mean": 0.10651236772537231
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 61
+      },
+      {
+        "scene": "dense_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 69,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0567638874053955,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7730541825294495,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.0891592502593994,
+            "per_dimension_candidate_std_before_mean": 0.05190803110599518,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0567638874053955,
+            "mean_after": -1.0567638874053955,
+            "std_before": 0.7730541825294495,
+            "std_after": 0.7730541825294495,
+            "max_abs_change": 0.7285506725311279,
+            "per_dimension_candidate_std_before_mean": 0.05190803110599518,
+            "per_dimension_candidate_std_after_mean": 0.05190802738070488
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1625455766916275,
+            "mean_after": -0.1625455617904663,
+            "std_before": 0.8434858322143555,
+            "std_after": 0.8434858322143555,
+            "max_abs_change": 0.7043495774269104,
+            "per_dimension_candidate_std_before_mean": 0.09793900698423386,
+            "per_dimension_candidate_std_after_mean": 0.09793899953365326
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 69
+      },
+      {
+        "scene": "dense_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "collision",
+        "steps": 22,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0688539743423462,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.790587306022644,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.0579373836517334,
+            "per_dimension_candidate_std_before_mean": 0.04758293554186821,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0688539743423462,
+            "mean_after": -1.0688539743423462,
+            "std_before": 0.790587306022644,
+            "std_after": 0.790587306022644,
+            "max_abs_change": 0.6917672157287598,
+            "per_dimension_candidate_std_before_mean": 0.04758293554186821,
+            "per_dimension_candidate_std_after_mean": 0.04758293554186821
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.16562218964099884,
+            "mean_after": -0.16562217473983765,
+            "std_before": 0.896984338760376,
+            "std_after": 0.896984338760376,
+            "max_abs_change": 0.8151863813400269,
+            "per_dimension_candidate_std_before_mean": 0.0857781395316124,
+            "per_dimension_candidate_std_after_mean": 0.0857781395316124
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "collision",
+        "external_benchmark_steps": 22
+      },
+      {
+        "scene": "dense_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 94,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0538251399993896,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7513956427574158,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 0.9669123888015747,
+            "per_dimension_candidate_std_before_mean": 0.05482210963964462,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0538251399993896,
+            "mean_after": -1.0538252592086792,
+            "std_before": 0.7513956427574158,
+            "std_after": 0.7513957023620605,
+            "max_abs_change": 1.0796797275543213,
+            "per_dimension_candidate_std_before_mean": 0.05482210963964462,
+            "per_dimension_candidate_std_after_mean": 0.05482211336493492
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.14841614663600922,
+            "mean_after": -0.14841614663600922,
+            "std_before": 0.7882030606269836,
+            "std_after": 0.7882030606269836,
+            "max_abs_change": 1.0609124898910522,
+            "per_dimension_candidate_std_before_mean": 0.08556793630123138,
+            "per_dimension_candidate_std_after_mean": 0.08556793630123138
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 94
+      },
+      {
+        "scene": "dense_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 84,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0511096715927124,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7851587533950806,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.1756243705749512,
+            "per_dimension_candidate_std_before_mean": 0.04703596979379654,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0511096715927124,
+            "mean_after": -1.0511096715927124,
+            "std_before": 0.7851587533950806,
+            "std_after": 0.7851587533950806,
+            "max_abs_change": 0.7697250843048096,
+            "per_dimension_candidate_std_before_mean": 0.04703596979379654,
+            "per_dimension_candidate_std_after_mean": 0.04703596979379654
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.16621291637420654,
+            "mean_after": -0.16621291637420654,
+            "std_before": 0.8901263475418091,
+            "std_after": 0.8901262879371643,
+            "max_abs_change": 0.6484485864639282,
+            "per_dimension_candidate_std_before_mean": 0.08726471662521362,
+            "per_dimension_candidate_std_after_mean": 0.08726471662521362
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 84
+      },
+      {
+        "scene": "large_circle",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 76,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0611141920089722,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7866204380989075,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.022761344909668,
+            "per_dimension_candidate_std_before_mean": 0.03787074238061905,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0611141920089722,
+            "mean_after": -1.0611141920089722,
+            "std_before": 0.7866204380989075,
+            "std_after": 0.7866204380989075,
+            "max_abs_change": 0.6233439445495605,
+            "per_dimension_candidate_std_before_mean": 0.03787074238061905,
+            "per_dimension_candidate_std_after_mean": 0.03787074610590935
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1623651534318924,
+            "mean_after": -0.1623651534318924,
+            "std_before": 0.8764818906784058,
+            "std_after": 0.8764819502830505,
+            "max_abs_change": 0.6534088253974915,
+            "per_dimension_candidate_std_before_mean": 0.06487133353948593,
+            "per_dimension_candidate_std_after_mean": 0.06487132608890533
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 76
+      },
+      {
+        "scene": "large_circle",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 68,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0785112380981445,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.8473138809204102,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.3941216468811035,
+            "per_dimension_candidate_std_before_mean": 0.04038115590810776,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0785112380981445,
+            "mean_after": -1.0785112380981445,
+            "std_before": 0.8473138809204102,
+            "std_after": 0.8473138213157654,
+            "max_abs_change": 0.7596101760864258,
+            "per_dimension_candidate_std_before_mean": 0.04038115590810776,
+            "per_dimension_candidate_std_after_mean": 0.040381163358688354
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.19044378399848938,
+            "mean_after": -0.19044379889965057,
+            "std_before": 1.0243406295776367,
+            "std_after": 1.0243406295776367,
+            "max_abs_change": 0.6163686513900757,
+            "per_dimension_candidate_std_before_mean": 0.07139299809932709,
+            "per_dimension_candidate_std_after_mean": 0.07139299809932709
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 68
+      },
+      {
+        "scene": "large_circle",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 82,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.047789454460144,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.6980907917022705,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.2993106842041016,
+            "per_dimension_candidate_std_before_mean": 0.05760689079761505,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.047789454460144,
+            "mean_after": -1.047789454460144,
+            "std_before": 0.6980907917022705,
+            "std_after": 0.6980907917022705,
+            "max_abs_change": 0.8750808238983154,
+            "per_dimension_candidate_std_before_mean": 0.05760689079761505,
+            "per_dimension_candidate_std_after_mean": 0.05760689079761505
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.10086990892887115,
+            "mean_after": -0.10086989402770996,
+            "std_before": 0.6433680057525635,
+            "std_after": 0.6433680057525635,
+            "max_abs_change": 0.9176956415176392,
+            "per_dimension_candidate_std_before_mean": 0.09263897687196732,
+            "per_dimension_candidate_std_after_mean": 0.09263898432254791
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 82
+      },
+      {
+        "scene": "large_square",
+        "case": 0,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 60,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0889084339141846,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.8059033751487732,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.1284189224243164,
+            "per_dimension_candidate_std_before_mean": 0.04606214910745621,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0889084339141846,
+            "mean_after": -1.0889081954956055,
+            "std_before": 0.8059033751487732,
+            "std_after": 0.8059033155441284,
+            "max_abs_change": 0.6906027793884277,
+            "per_dimension_candidate_std_before_mean": 0.04606214910745621,
+            "per_dimension_candidate_std_after_mean": 0.04606214910745621
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1688137650489807,
+            "mean_after": -0.16881373524665833,
+            "std_before": 0.9237204790115356,
+            "std_after": 0.9237205386161804,
+            "max_abs_change": 0.7178740501403809,
+            "per_dimension_candidate_std_before_mean": 0.0825333297252655,
+            "per_dimension_candidate_std_after_mean": 0.0825333297252655
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 60
+      },
+      {
+        "scene": "large_square",
+        "case": 1,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 66,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.0422204732894897,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.736285388469696,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 0.9605249166488647,
+            "per_dimension_candidate_std_before_mean": 0.047906722873449326,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.0422204732894897,
+            "mean_after": -1.0422204732894897,
+            "std_before": 0.736285388469696,
+            "std_after": 0.7362854480743408,
+            "max_abs_change": 0.9020204544067383,
+            "per_dimension_candidate_std_before_mean": 0.047906722873449326,
+            "per_dimension_candidate_std_after_mean": 0.04790671914815903
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.14137053489685059,
+            "mean_after": -0.1413705199956894,
+            "std_before": 0.7752742171287537,
+            "std_after": 0.7752741575241089,
+            "max_abs_change": 0.7865207195281982,
+            "per_dimension_candidate_std_before_mean": 0.07991033792495728,
+            "per_dimension_candidate_std_after_mean": 0.07991033792495728
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 66
+      },
+      {
+        "scene": "large_square",
+        "case": 2,
+        "deterministic_flip_count": 0,
+        "outcome": "success",
+        "steps": 73,
+        "tensor_digests": {
+          "fixed": {
+            "mode": "fixed",
+            "mean_before": -1.064448595046997,
+            "mean_after": -1.6163101196289062,
+            "std_before": 0.7447018027305603,
+            "std_after": 0.4430534541606903,
+            "max_abs_change": 1.0198547840118408,
+            "per_dimension_candidate_std_before_mean": 0.0550428107380867,
+            "per_dimension_candidate_std_after_mean": 0.0
+          },
+          "shuffle_within": {
+            "mode": "shuffle_within",
+            "mean_before": -1.064448595046997,
+            "mean_after": -1.0644484758377075,
+            "std_before": 0.7447018027305603,
+            "std_after": 0.7447018027305603,
+            "max_abs_change": 0.6886172294616699,
+            "per_dimension_candidate_std_before_mean": 0.0550428107380867,
+            "per_dimension_candidate_std_after_mean": 0.0550428107380867
+          },
+          "ctrl_shuffle_mean": {
+            "mode": "ctrl_shuffle_mean",
+            "mean_before": -0.1439376324415207,
+            "mean_after": -0.14393766224384308,
+            "std_before": 0.7593762278556824,
+            "std_after": 0.7593762278556824,
+            "max_abs_change": 0.9112498760223389,
+            "per_dimension_candidate_std_before_mean": 0.10005802661180496,
+            "per_dimension_candidate_std_after_mean": 0.10005802661180496
+          }
+        },
+        "external_benchmark_parity": true,
+        "external_benchmark_outcome": "success",
+        "external_benchmark_steps": 73
+      }
+    ]
+  },
+  "seconds": 102.17998337745667,
+  "device": "NVIDIA GeForce RTX 3060",
+  "no_original_edits": true,
+  "remote_access": false,
+  "training": false
+}
