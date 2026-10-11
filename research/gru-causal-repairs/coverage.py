@@ -84,7 +84,8 @@ def train():
 
 def evaluate(arm, cohort):
     cfg, p = a.setup()
-    p.load_state_dict(torch.load(a.OUT / f'{arm}.pth', map_location=p.device))
+    source = a.r.OLD / 'artifacts/nominal.pth' if arm == 'nominal' else a.OUT / f'{arm}.pth'
+    p.load_state_dict(torch.load(source, map_location=p.device))
     p.eval()
     p.set_phase('test')
     rows = []
