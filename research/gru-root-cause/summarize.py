@@ -158,7 +158,8 @@ def main():
         cm,tm=[result['causal_training'][a] for a in ['control','matched-smoothing']]
         result['causal_training']['frozen_threshold_passed']=bool(
             tm['fixed_pair_B_C_misrank']<=.8*cm['fixed_pair_B_C_misrank']
-            and tm['timeout']<=cm['timeout']-4 and tm['contact']<=cm['contact'])
+            and tm['timeout']<=cm['timeout']-4 and tm['contact']<=cm['contact']
+            and tm['collision']<=cm['collision'])
     (HERE/'statistics.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='upstream'},indent=2))
     print(json.dumps({k:{a:b for a,b in v.items() if a!='metrics'} for k,v in result['upstream'].items()},indent=2))

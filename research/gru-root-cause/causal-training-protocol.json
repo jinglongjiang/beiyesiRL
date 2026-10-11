@@ -24,6 +24,7 @@
   },
   "expected_mechanism": "If training/deployment smoothing mismatch is a major acquisition cause, training with smoothing should reduce true-successor-versus-own-continuation ranking errors and actual timeouts without merely changing the test controller.",
   "supported_threshold": "At least20% fewer strict fixed-pair B/C misranks than matched control, at least4 fewer timeouts among240, and no extra independent-contact episodes; relate changed outcomes to observed smoothing-sensitive cases. This is a diagnostic threshold, not publication confirmation.",
+  "pre_evaluation_safety_clarification": "Before any causal checkpoint outcome evaluation, also require no extra native collision episodes. Report rescues and damages separately; do not call a net gain absence of damage.",
   "stop": "One2000episode run per arm. No second factor, extension, sweep or retry for a negative scientific outcome. A negative result rejects sufficiency of this tested repair, not every possible effect of smoothing.",
   "limits": "One training seed; fresh post-repair matched control, not bitwise reproduction of historical optimizer/RNG state. Corrected terminal scoring shared. Historical IL demonstrations were unsmoothed and remain identical, so test targets only RL acquisition.",
   "exploration_probe": "Previously registered four paired draws/root continues independently; its result may not alter this frozen training factor. No further training follows."
