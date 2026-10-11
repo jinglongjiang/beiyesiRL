@@ -54,6 +54,13 @@ cp=json.loads((OUT/'checkpoint-pairs.json').read_text())
 if cp['executed']:
     assert len(cp['rows'])==38*5*2
     assert len({(v['stage'],v['policy'],v['root']['scene'],v['root']['case']) for v in cp['rows']})==38*5*2
+    scenes=['baseline_circle','baseline_square','dense_circle','dense_square','large_circle','large_square']
+    for row in cp['rows']:
+        if row['stage']!='RL-2000':
+            continue
+        root=row['root']
+        data=np.load(OUT/'catalogue'/f"{scenes.index(root['scene'])}-{root['case']}"/'inputs.npz')
+        np.testing.assert_allclose(row['actual_next_q'],data['B_q'][row['indices']],rtol=0,atol=2e-6)
 head=json.loads((OUT/'head-fit.json').read_text())
 if head['executed']:
     data=np.load(OUT/'head-fit-inputs.npz')
