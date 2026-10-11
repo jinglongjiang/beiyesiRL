@@ -723,7 +723,7 @@ class MambaRLPolicy(nn.Module):
             dmin = min(dmin, dist)
 
         # 到达目标检测
-        reaching_goal = np.linalg.norm((nav.px - nav.gx, nav.py - nav.gy)) < self.success_radius
+        reaching_goal = np.linalg.norm((nav.px - nav.gx, nav.py - nav.gy)) < nav.radius
 
         # reward计算
         if collision:
@@ -752,9 +752,9 @@ class MambaRLPolicy(nn.Module):
             return reward
 
     def reach_destination(self, state):
-        """检查是否到达目标（🔥 使用success_radius）"""
+        """Use the same strict arrival boundary as CrowdSim.step."""
         self_state = state.self_state if hasattr(state, 'self_state') else state
-        return np.linalg.norm((self_state.px - self_state.gx, self_state.py - self_state.gy)) < self.success_radius
+        return np.linalg.norm((self_state.px - self_state.gx, self_state.py - self_state.gy)) < self_state.radius
 
     def _build_joint_state_34(self, robot_state, human_states):
         """构建34维joint state"""
@@ -812,13 +812,7 @@ class MambaRLPolicy(nn.Module):
 
         # 7. 计算总value（支持test-time分解消融）
         rewards_tensor = torch.tensor(rewards_batch.tolist(), device=self.device)
-        gamma_bar = self.gamma
-        if self.lookahead_ablation_mode == "reward_only":
-            total_values = rewards_tensor  # [80]
-        elif self.lookahead_ablation_mode == "value_only":
-            total_values = gamma_bar * next_values  # [80]
-        else:
-            total_values = rewards_tensor + gamma_bar * next_values  # [80]
+        total_values = self.candidate_action_values(state, commands, rewards_tensor, next_values)
 
         # 7.1 测试期安全过滤（不影响训练）
         if self._phase in ('test', 'val', 'eval') and (self.test_min_clearance > 0.0 or self.test_risk_lambda > 0.0):
@@ -847,6 +841,48 @@ class MambaRLPolicy(nn.Module):
         self._last_action = best_action
 
         return best_action
+
+    def set_env(self, env):
+        self.env = env
+
+    def candidate_terminal_outcomes(self, state, commands, env=None):
+        """Native terminal rules using legal current states, not future human actions."""
+        rob = state.self_state
+        velocity = np.asarray([[a.vx, a.vy] for a in commands], dtype=np.float64)
+        successor = np.asarray([rob.px, rob.py]) + self.time_step * velocity
+        goal = np.linalg.norm(successor - [rob.gx, rob.gy], axis=1) < rob.radius
+        collision = np.zeros(len(commands), dtype=bool)
+        if state.human_states:
+            position = np.asarray([[h.px-rob.px, h.py-rob.py] for h in state.human_states])
+            human_velocity = np.asarray([[h.vx, h.vy] for h in state.human_states])
+            segment = self.time_step * (human_velocity[None] - velocity[:, None])
+            fraction = np.clip(-(position[None] * segment).sum(-1)
+                               / np.maximum((segment * segment).sum(-1), 1e-15), 0, 1)
+            radii = np.asarray([rob.radius+h.radius for h in state.human_states])
+            clearance = np.linalg.norm(position[None] + fraction[..., None]*segment, axis=-1)-radii
+            collision = (clearance < 0).any(axis=1)
+        terminal = goal | collision
+        reward = np.where(collision, self.collision_penalty,
+                          np.where(goal, self.success_reward, 0.0))
+        context = env if env is not None else getattr(self, 'env', None)
+        if context is not None and context.global_time >= context.time_limit - 1e-6:
+            terminal[:] = True
+            reward[:] = context.timeout_penalty
+        return terminal, reward
+
+    def candidate_action_values(self, state, commands, rewards, next_values, env=None):
+        """Apply terminal reward precedence and zero terminal bootstrapping."""
+        terminal, terminal_rewards = self.candidate_terminal_outcomes(state, commands, env)
+        mask = torch.as_tensor(terminal, device=next_values.device)
+        rewards = torch.as_tensor(rewards, device=next_values.device)
+        terminal_rewards = torch.as_tensor(terminal_rewards, device=next_values.device, dtype=rewards.dtype)
+        rewards = torch.where(mask, terminal_rewards, rewards)
+        continuation = torch.where(mask, torch.zeros_like(next_values), next_values)
+        if self.lookahead_ablation_mode == 'reward_only':
+            return rewards
+        if self.lookahead_ablation_mode == 'value_only':
+            return self.gamma * continuation
+        return rewards + self.gamma * continuation
 
     def executable_candidates(self):
         from crowd_sim.envs.utils.action import ActionXY
@@ -912,7 +948,7 @@ class MambaRLPolicy(nn.Module):
 
         # A3 reward 广播 (严格复刻 collision > reaching_goal > else)
         curr_dist = np.hypot(nrp[:, 0] - rob.gx, nrp[:, 1] - rob.gy)
-        reaching = curr_dist < self.success_radius
+        reaching = curr_dist < rob.radius
         prev_dist = float(np.linalg.norm((rob.px - rob.gx, rob.py - rob.gy)))
         speed = np.hypot(cmd[:, 0], cmd[:, 1])
         rew = self.progress_reward * (prev_dist - curr_dist) + self.time_penalty
@@ -1021,14 +1057,7 @@ class MambaRLPolicy(nn.Module):
 
         # 7. 计算总value（支持test-time分解消融）
         rewards_tensor = torch.tensor(rewards_batch, device=self.device)
-        # 使用与训练一致的折扣因子，避免 value 标度不一致
-        gamma_bar = self.gamma
-        if self.lookahead_ablation_mode == "reward_only":
-            total_values = rewards_tensor  # [80]
-        elif self.lookahead_ablation_mode == "value_only":
-            total_values = gamma_bar * next_values  # [80]
-        else:
-            total_values = rewards_tensor + gamma_bar * next_values  # [80]
+        total_values = self.candidate_action_values(state, self.action_space, rewards_tensor, next_values)
 
         # 7.1 测试期安全过滤（不影响训练）
         if self._phase in ('test', 'val', 'eval') and (self.test_min_clearance > 0.0 or self.test_risk_lambda > 0.0):

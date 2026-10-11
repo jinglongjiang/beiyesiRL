@@ -1,0 +1,72 @@
+{
+  "scope": "Targeted CPU fixtures and two saved root checks, not a benchmark or new algorithm",
+  "grid_actions": 80,
+  "checkpoint_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "checkpoint_unchanged": true,
+  "tests": [
+    {
+      "name": "arrival_annulus",
+      "passed": true,
+      "native_event": "reach_goal"
+    },
+    {
+      "name": "strict_radius_boundary",
+      "passed": true,
+      "native_event": "nothing"
+    },
+    {
+      "name": "inside_radius_boundary",
+      "passed": true,
+      "native_event": "reach_goal"
+    },
+    {
+      "name": "swept_collision_endpoint_clear",
+      "passed": true,
+      "native_event": "collision"
+    },
+    {
+      "name": "collision_precedes_goal",
+      "passed": true,
+      "native_event": "collision"
+    },
+    {
+      "name": "timeout_precedes_goal_and_collision",
+      "passed": true,
+      "native_event": "timeout"
+    },
+    {
+      "name": "all_nonterminal_scores_bitwise_unchanged_in_three_modes",
+      "passed": true
+    },
+    {
+      "name": "saved_arrival_annulus_root",
+      "scene": "baseline_circle",
+      "case": 100,
+      "step": 56,
+      "old_reward": 0.0,
+      "new_terminal_score": 1.0,
+      "passed": true
+    },
+    {
+      "name": "saved_arrival_annulus_root",
+      "scene": "large_circle",
+      "case": 128,
+      "step": 96,
+      "old_reward": 0.0,
+      "new_terminal_score": 1.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "not_changed": [
+    "reward config",
+    "actions",
+    "smoothing",
+    "endpoint safety filter",
+    "observation",
+    "model input",
+    "weights",
+    "training"
+  ],
+  "limit": "Nonterminal discomfort still uses the existing endpoint approximation. This patch aligns terminal semantics only; it does not establish future safety or task benefit."
+}
