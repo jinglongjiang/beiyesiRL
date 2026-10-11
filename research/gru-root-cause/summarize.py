@@ -1,0 +1,88 @@
+"""Recompute episode-level and fixed-root causal contrast counts from saved data."""
+import json
+from pathlib import Path
+import numpy as np
+
+HERE=Path(__file__).resolve().parent
+
+
+def read(name):
+    return json.loads((HERE/name).read_text())
+
+
+def diff(x):
+    return x[0]-x[1]
+
+
+def main():
+    baseline=read('repaired-baseline.json')
+    roots=read('value-contrasts.json')
+    tolerance=1e-6
+    wrong=[r for r in roots if diff(r['B_q'])>tolerance and diff(r['C_returns'])<-tolerance]
+    tied=[r for r in roots if abs(diff(r['C_returns']))<=tolerance]
+    old=json.loads((HERE.parent/'navigation-findings'/'counterfactual-results.json').read_text())
+    continuous={(r['scene'],r['case']):r for r in old if r['variant']=='value-free-progress'}
+    policy_traps=[r for r in tied if all(o['timeout'] for o in r['C_outcomes'])
+                 and continuous[(r['scene'],r['case'])]['result']['success']
+                 and not continuous[(r['scene'],r['case'])]['result']['contact']]
+    result={'repaired_baseline':{
+        'episodes':len(baseline),'successes':sum(r['success'] for r in baseline),
+        'collisions':sum(r['collision'] for r in baseline),'contacts':sum(r['contact'] for r in baseline),
+        'timeouts':sum(r['timeout'] for r in baseline),'roots':sum(len(r['sampled_roots']) for r in baseline),
+        'negative_progress_roots':sum(r['flagged_roots'] for r in baseline),
+        'changed_outcomes':[{k:r[k] for k in ['scene','case','old_outcome','outcome']}
+                            for r in baseline if r['old_outcome']!=r['outcome']]},
+        'three_level':{'roots':len(roots),'historical_root_still_flagged':sum(r['root_flag_after_repair'] for r in roots),
+            'repaired_policy_reaches_same_root':sum(r['repaired_policy_reaches_same_root'] for r in roots),
+            'B_reverses_A_task_ranking':sum(diff(r['A_q'])*diff(r['B_q'])<0 for r in roots),
+            'B_C_strict_realized_misrank':len(wrong),'C_forward_better':sum(diff(r['C_returns'])<-tolerance for r in roots),
+            'C_selected_better':sum(diff(r['C_returns'])>tolerance for r in roots),'C_tied':len(tied),
+            'selected_successes':sum(r['C_outcomes'][0]['success'] for r in roots),
+            'forward_successes':sum(r['C_outcomes'][1]['success'] for r in roots),
+            'one_step_rescues':sum(not r['C_outcomes'][0]['success'] and r['C_outcomes'][1]['success'] for r in roots),
+            'one_step_damages':sum(r['C_outcomes'][0]['success'] and not r['C_outcomes'][1]['success'] for r in roots),
+            'policy_trap_with_saved_safe_alternative':[{k:r[k] for k in ['scene','case','step']} for r in policy_traps]},
+        'strata':{},'upstream':{}}
+    for label,subset in [('all',roots),('discovery',[r for r in roots if r['partition']=='discovery']),
+                        ('mechanism-check',[r for r in roots if r['partition']=='mechanism-check'])]:
+        result['strata'][label]={'roots':len(subset),
+            'B_C_misrank':sum(diff(r['B_q'])>tolerance and diff(r['C_returns'])<-tolerance for r in subset),
+            'selected_success':sum(r['C_outcomes'][0]['success'] for r in subset),
+            'selected_timeout':sum(r['C_outcomes'][0]['timeout'] for r in subset)}
+    root_lookup={(r['scene'],r['case']):r for r in roots}
+    for path in sorted(HERE.glob('upstream-*.json')):
+        if path.name=='upstream-protocol.json':
+            continue
+        rows=json.loads(path.read_text())
+        grouped={}
+        for row in rows:
+            grouped.setdefault((row['scene'],row['case']),[]).append(row)
+        metrics=[]
+        for key,draws in grouped.items():
+            original=root_lookup[key]
+            value_difference=diff(original['B_q'])
+            actual_difference=diff(original['C_returns'])
+            changed_difference=float(np.mean([diff(r['returns']) for r in draws]))
+            metrics.append({'scene':key[0],'case':key[1],
+                'old_strict_misrank':bool(value_difference>tolerance and actual_difference<-tolerance),
+                'new_strict_misrank':bool(value_difference>tolerance and changed_difference<-tolerance),
+                'reconciled':bool(value_difference>tolerance and actual_difference<-tolerance and changed_difference>=-tolerance),
+                'baseline_selected_success':original['C_outcomes'][0]['success'],
+                'selected_success_probability':float(np.mean([r['outcomes'][0]['success'] for r in draws])),
+                'selected_contact_probability':float(np.mean([r['outcomes'][0]['contact'] for r in draws])),
+                'return_rank_before':actual_difference,'return_rank_after':changed_difference})
+        result['upstream'][path.stem[len('upstream-'):]]={
+            'roots':len(grouped),'draw_pairs':len(rows),'reconciled_rankings':sum(r['reconciled'] for r in metrics),
+            'remaining_misrankings':sum(r['new_strict_misrank'] for r in metrics),
+            'selected_successes_or_expected_count':sum(r['selected_success_probability'] for r in metrics),
+            'selected_contacts_or_expected_count':sum(r['selected_contact_probability'] for r in metrics),
+            'rescues_or_expected_count':sum(r['selected_success_probability'] for r in metrics if not r['baseline_selected_success']),
+            'damages_or_expected_count':sum(1-r['selected_success_probability'] for r in metrics if r['baseline_selected_success']),
+            'metrics':metrics}
+    (HERE/'statistics.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    print(json.dumps({k:v for k,v in result.items() if k!='upstream'},indent=2))
+    print(json.dumps({k:{a:b for a,b in v.items() if a!='metrics'} for k,v in result['upstream'].items()},indent=2))
+
+
+if __name__=='__main__':
+    main()
