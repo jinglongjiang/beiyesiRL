@@ -14,7 +14,11 @@ NAMES = ['coverage-control', 'targeted-head', 'targeted-full']
 
 def catalogue():
     xs, ys, cases, meta = [], [], [], []
+    stats = json.loads((a.OLD / 'statistics.json').read_text())['cases']
+    active = {a.q.key(v) for v in stats if v['category'] != 'NO_CONTACT_FREE_RESCUE_IN_TESTED_SINGLE_OR_PREFIX_ACTIONS'}
     for root in a.q.roots():
+        if a.q.key(root) not in active:
+            continue
         source = a.OLD / 'catalogue' / a.q.key(root)
         data = np.load(source / 'inputs.npz')
         indices = np.flatnonzero(data['safe'] & (data['first'][:, 1] == 0))
