@@ -58,6 +58,9 @@ def summarize():
             category='NO_REALIZED_RETURN_IMPROVEMENT_FOUND'
         v=np.sort(x['values'])
         gap=float(v[-1]-v[-2])
+        legal_scores=qa-.001*(indices==0)
+        legal_order=np.sort(legal_scores)
+        decision_gap=float(legal_order[-1]-legal_order[-2])/.99
         implied=abs(slope)*float(np.ptp(progress))/.99
         # This is an exact numeric identity, not a causal identification of old V labels.
         np.testing.assert_allclose(qa-ga,(qa-qt)+(qt-gb)+(gb-ga),rtol=0,atol=1e-12)
@@ -82,7 +85,8 @@ def summarize():
             'mean_policy_bundle_effect':float((gb-ga).mean()),
             'within_root_residual_progress_slope':slope,
             'unmasked_value_top_gap':gap,'slope_implied_V_span':implied,
-            'slope_span_exceeds_gap':bool(implied>=gap),
+            'legal_decision_top_gap_in_V_units':decision_gap,
+            'slope_span_exceeds_gap':bool(implied>=decision_gap),
             'A_realized_pair_inversions':int(((apolicy_pairs<0)&non_tied_a).sum()),
             'B_realized_pair_inversions':int(((bpolicy_pairs<0)&non_tied_b).sum()),
             'A_non_tied_pairs':int(non_tied_a.sum()),'B_non_tied_pairs':int(non_tied_b.sum()),
