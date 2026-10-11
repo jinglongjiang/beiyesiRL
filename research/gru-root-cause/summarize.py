@@ -137,6 +137,8 @@ def main():
             'success':sum(r['success'] for r in episodes),'collision':sum(r['collision'] for r in episodes),
             'contact':sum(r['contact'] for r in episodes),'timeout':sum(r['timeout'] for r in episodes),
             'mean_discounted_return':float(np.mean([r['return'] for r in episodes])),
+            'success_mean_duration':float(np.mean([r['duration'] for r in episodes if r['success']])),
+            'minimum_clearance':float(min(r['min_clearance'] for r in episodes)),
             'negative_progress_roots':sum(r['flagged_roots'] for r in episodes),
             'sampled_roots':sum(len(r['sampled_roots']) for r in episodes),
             'fixed_pair_B_C_misrank':len(disagreements),
@@ -147,6 +149,7 @@ def main():
             'fixed_old_states_still_naturally_reached':sum(r['new_policy_reaches_same_root'] for r in contrasts),
             'training_seconds':training['elapsed_seconds'],'evaluation_seconds':metadata['elapsed_seconds'],
             'per_scene':{scene:{'success':sum(r['success'] for r in episodes if r['scene']==scene),
+                               'collision':sum(r['collision'] for r in episodes if r['scene']==scene),
                                'timeout':sum(r['timeout'] for r in episodes if r['scene']==scene),
                                'contact':sum(r['contact'] for r in episodes if r['scene']==scene)}
                          for scene in sorted({r['scene'] for r in episodes})}}
@@ -158,6 +161,10 @@ def main():
             'rescues':sum(not c[k]['success'] and t[k]['success'] for k in c),
             'damages':sum(c[k]['success'] and not t[k]['success'] for k in c),
             'outcome_changes':[{'scene':k[0],'case':k[1],'control':c[k]['outcome'],'treatment':t[k]['outcome']} for k in c if c[k]['outcome']!=t[k]['outcome']]}
+        common=[k for k in c if c[k]['success'] and t[k]['success']]
+        result['causal_training']['paired']['common_success_efficiency']={
+            'episodes':len(common),'mean_treatment_minus_control_duration':float(np.mean([t[k]['duration']-c[k]['duration'] for k in common])),
+            'median_treatment_minus_control_duration':float(np.median([t[k]['duration']-c[k]['duration'] for k in common]))}
         sensitive={(r['scene'],r['case']) for r in result['upstream']['no-smoothing']['metrics'] if r['reconciled']}
         result['causal_training']['paired']['old_smoothing_sensitive_cases']={
             'cases':len(sensitive),
