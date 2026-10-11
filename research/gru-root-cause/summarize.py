@@ -140,6 +140,9 @@ def main():
             'negative_progress_roots':sum(r['flagged_roots'] for r in episodes),
             'sampled_roots':sum(len(r['sampled_roots']) for r in episodes),
             'fixed_pair_B_C_misrank':len(disagreements),
+            'fixed_old_selected_preference_removed':sum(diff(r['fixed_pair_B_q'])<=tolerance for r in contrasts),
+            'new_choice_nonnegative_progress_at_old_root':sum(r['new_selected_progress']>=0 for r in contrasts),
+            'new_action_index_changed_at_old_root':sum(r['new_selected_index']!=r['fixed_indices'][0] for r in contrasts),
             'fixed_pair_B_C_MAE':float(np.mean([np.abs(np.subtract(r['fixed_pair_B_q'],r['C_returns'])) for r in contrasts])),
             'fixed_old_states_still_naturally_reached':sum(r['new_policy_reaches_same_root'] for r in contrasts),
             'training_seconds':training['elapsed_seconds'],'evaluation_seconds':metadata['elapsed_seconds'],
@@ -155,6 +158,11 @@ def main():
             'rescues':sum(not c[k]['success'] and t[k]['success'] for k in c),
             'damages':sum(c[k]['success'] and not t[k]['success'] for k in c),
             'outcome_changes':[{'scene':k[0],'case':k[1],'control':c[k]['outcome'],'treatment':t[k]['outcome']} for k in c if c[k]['outcome']!=t[k]['outcome']]}
+        sensitive={(r['scene'],r['case']) for r in result['upstream']['no-smoothing']['metrics'] if r['reconciled']}
+        result['causal_training']['paired']['old_smoothing_sensitive_cases']={
+            'cases':len(sensitive),
+            'rescues':sum(not c[k]['success'] and t[k]['success'] for k in sensitive),
+            'damages':sum(c[k]['success'] and not t[k]['success'] for k in sensitive)}
         cm,tm=[result['causal_training'][a] for a in ['control','matched-smoothing']]
         result['causal_training']['frozen_threshold_passed']=bool(
             tm['fixed_pair_B_C_misrank']<=.8*cm['fixed_pair_B_C_misrank']
