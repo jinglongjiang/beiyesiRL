@@ -9,5 +9,15 @@
     "fix": "Convert the count to Python int before JSON serialization",
     "scientific_observation": false,
     "action": "Stopped before all-action outcomes; rerun correctness verification only"
+  },
+  {
+    "id": "v1-administrative-interruption",
+    "stage": "partial 25s complete-action catalogue",
+    "exit_code": 130,
+    "error": "KeyboardInterrupt intentionally sent after the user's 50s/two-policy amendment",
+    "cause": "Protocol changed by user while a fixed-contract catalogue was running",
+    "fix": "Preserve all v1 files, stop its process and create separate v2-50s outputs",
+    "scientific_observation": "Completed v1 branches retain their 25s meaning; incomplete files are not observations",
+    "action": "No v1 complete return is reused as a v2 50s return"
   }
 ]

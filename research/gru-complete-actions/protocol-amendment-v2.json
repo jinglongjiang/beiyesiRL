@@ -1,0 +1,62 @@
+{
+  "version": "gru-complete-actions-v2-two-policy-50s",
+  "reason": "User amendment during the partial 25s catalogue; preserve previous outputs and use a separate 50s evaluation contract",
+  "deadline_utc": "2026-10-11T19:45:44Z",
+  "time_limit": 50,
+  "dt": 0.25,
+  "tape_frames": 203,
+  "native_timeout_note": "The native environment checks the clock before state update, so time_limit=50 may produce 201 executed steps and duration 50.25s; tape includes the necessary final next frame",
+  "historical_contract_correction": "The old 240-case research harness explicitly writes [env] time_limit=25. The base file has [env]=50 and a dead [eval_protocol]=25. Do not retrospectively relabel the old results as 50s or call their explicit override a dead key.",
+  "dead_key": "CrowdSim.configure reads [env] time_limit, not [eval_protocol] time_limit. Enabling that latter key in a future general evaluator would silently change historical semantics unless versioned.",
+  "M4": {
+    "status": "BLOCKED_INCOMPATIBLE_TRAINING_LINEAGE",
+    "requested_assets": "formal-gru-seed42/43 ep10000 from 20261008",
+    "current_parent": "Common-input-repaired seed61, IL + 2000 RL, plus common terminal scoring repair",
+    "reason": "Requested old weights predate the shared field, selection and coordinate repairs. Same parameter shapes do not imply input semantic compatibility. Do not connect those weights to corrected inputs, or use them to cancel current-lineage P3.",
+    "interpretation_correction": "Cross-training-seed disagreement is not stochastic inference noise within one frozen network. A disagreement/gap ratio alone cannot prove that an individual network has no stable learned preference.",
+    "no_training_to_unblock": true,
+    "P3_gate": "Retain only same-lineage checkpoint evidence if repeated fixed-world action losses or policy traps survive P1/P2; never claim self-reinforcement from counts alone"
+  },
+  "root_list": "Unchanged 38 roots from protocol.json; no outcome-based replacement",
+  "policies": {
+    "A_deploy": {"margin": 0.2, "risk_lambda": 0.8, "smoothing": 0.3, "epsilon": 0},
+    "B_raw_greedy": {"margin": 0.0, "risk_lambda": 0.0, "smoothing": 0.0, "epsilon": 0}
+  },
+  "first_action": "Both policies receive the identical first executed command from the original deployment-safe 80-action catalogue. Only subsequent control changes. Keep same root clock/history/last executed command/human tape.",
+  "B_limit": "B matches the raw greedy control mapping, not the historical changing epsilon behavior or replay policy mixture. Its residual is not automatically same-policy statistical V estimation error.",
+  "P1": {
+    "budget_fixture": "Same five predetermined roots, 80 actions each, both continuations. Unsafe first commands are timing-only and excluded from legal summaries.",
+    "reuse": "Reuse completed 50s deployment selected/forward continuations from upstream-deadline50.json after checking first commands and root state. Never reuse 25s complete returns as 50s returns.",
+    "full_run_if": "Estimate from the fixture fits before hard deadline with >=30min for analysis and saving; otherwise keep both policies and reduce roots by a fixed round-robin across the four preregistered root groups",
+    "contact": "Retain all branches, including B collisions; do not interpret dropping safety as performance improvement",
+    "return": "G_omega^A and G_omega^B are fixed-world realized returns, not conditional expected values"
+  },
+  "arrival_validation": "Regenerate native full 203-frame tapes, verify every observed position/velocity/radius frame against the existing long tapes, record reached_destination transitions and stepwise error separately for root-horizon subsets with and without at least one arrival transition. Stop on any mismatch; never claim exact extrapolation beyond a failed arrival event.",
+  "decomposition": {
+    "model_term": "Q_pred-Q_actual_next",
+    "raw_reference_residual": "Q_actual_next-G_B (one-world residual relative to frozen raw-greedy continuation; not historical MC fitting error or expected-value bias)",
+    "policy_bundle_effect": "G_B-G_A (causal effect of changing this continuation bundle, given identical forced first action/world)",
+    "identity": "Q_pred-G_A = (Q_pred-Q_actual_next) + (Q_actual_next-G_B) + (G_B-G_A)",
+    "prohibited": "Do not infer training-cause confirmation from the algebraic identity or call Q_pred-G_A pure network error"
+  },
+  "P2": {
+    "regression": "Within-root demeaned raw-reference residual versus progress; 2000 bootstrap draws resample original numerical case IDs jointly across scenes sharing the generator seed",
+    "materiality": "Compare absolute within-root slope times action-progress range against unmasked network top1-top2 value gap. A significant slope alone is not a cause; also require realized ranking/task losses.",
+    "OOD_limit": "Small prediction perturbations alone neither establish nor refute representation OOD; no new OOD experiment"
+  },
+  "P3": {
+    "scope": "Original same-lineage IL/500/1000/1500 checkpoints, original selected/forward commands, own continuation under both A and B at 50s; original final checkpoint data reused from P1",
+    "gate": "Execute only if at least two independent cases show contact-free single-action rescue or tested multistep trap under A",
+    "limits": "No historical replay restoration; no causal self-reinforcement claim"
+  },
+  "P4": {
+    "gate": "At least two contact-free single-action rescue cases under A; otherwise no value-head fitting",
+    "features_and_coverage": "Same frozen final-GRU actual-next legal inputs, selected/forward pairs, same case100..119 fitting and case120..139 held out",
+    "arms": ["B_raw_greedy_labels", "A_deploy_labels"],
+    "only_difference": "Return source from the two fixed continuation mappings with the same final weights",
+    "V_target": "(G-r)/0.99 for nonterminal samples, exclude terminal samples",
+    "fit": "Same original head, same 257 coefficients, exact anchored least squares MSE + 0.01*||head-original_head||^2, no tuning",
+    "limits": "Tests local correctability and policy-source sensitivity on new common counterfactual coverage, not the original historical cause; no new head closed-loop claims"
+  },
+  "stop": "No RL training, no new algorithm, no extra branches after this registered round. Retain all interrupted v1 outputs separately."
+}
