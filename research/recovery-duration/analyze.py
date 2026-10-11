@@ -115,6 +115,19 @@ def main(prefix):
                            'episodes_with_non_nominal_action': episodes_changed,
                            'option_decisions_0_to_9': counts.tolist()}
     data['activation'] = activation
+    # Descriptive reporting only; these do not alter the frozen acceptance rule.
+    data['outcome_motion_medians'] = {
+        arm: {outcome: {
+            'episodes': len(subset),
+            **{metric: float(np.median([r[metric] for r in subset]))
+               for metric in ['progress_efficiency', 'backtracking_ratio',
+                              'low_progress_windows', 'path', 'final_distance']}}
+              for outcome in ['reach_goal', 'collision', 'timeout']
+              if (subset := [r for r in records if r['arm']==arm and r['outcome']==outcome])}
+        for arm in ARMS}
+    data['total_decision_seconds'] = {
+        arm: float(sum(r['mean_decision_ms']*r['steps']/1000
+                       for r in records if r['arm']==arm)) for arm in ARMS}
     label_path = OUT/'paired-results.json'
     if label_path.exists():
         labels = json.loads(label_path.read_text())

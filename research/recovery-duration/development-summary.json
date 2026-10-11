@@ -1,0 +1,4920 @@
+{
+  "cohort": "development",
+  "groups": {
+    "nominal": {
+      "baseline_circle": {
+        "success": 0.975,
+        "collision": 0.0,
+        "timeout": 0.025,
+        "contact": 0.0,
+        "time": 12.425,
+        "discounted_return": 0.6006542627752509,
+        "task_return": 0.9608199203342599,
+        "path": 11.770707221364535,
+        "progress": 7.573255422221813,
+        "final_distance": 0.4267445777781872,
+        "stall_fraction": 0.0008928571428571428,
+        "min_clearance": 0.5219832412039151,
+        "mean_decision_ms": 7.643262946010973,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.6720458584367008,
+        "backtracking_ratio": 0.082390861933043,
+        "low_progress_windows": 0.08292557338766596,
+        "episodes": 40,
+        "success_only_time": 12.096153846153847
+      },
+      "baseline_square": {
+        "success": 0.8,
+        "collision": 0.0,
+        "timeout": 0.2,
+        "contact": 0.0,
+        "time": 16.31875,
+        "discounted_return": 0.4241118044963649,
+        "task_return": 0.6987499151645322,
+        "path": 14.813673447406302,
+        "progress": 5.8335407571980635,
+        "final_distance": 2.166459242801937,
+        "stall_fraction": 0.0010980107444706734,
+        "min_clearance": 0.3187340519438043,
+        "mean_decision_ms": 7.866335629138765,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.4957198738202731,
+        "backtracking_ratio": 0.22585077769187958,
+        "low_progress_windows": 0.2198712896187418,
+        "episodes": 40,
+        "success_only_time": 14.0859375
+      },
+      "dense_circle": {
+        "success": 1.0,
+        "collision": 0.0,
+        "timeout": 0.0,
+        "contact": 0.0,
+        "time": 14.78125,
+        "discounted_return": 0.5575225043585831,
+        "task_return": 0.9968675285173221,
+        "path": 14.08036081032039,
+        "progress": 7.797787490739788,
+        "final_distance": 0.20221250926021156,
+        "stall_fraction": 0.002351329089571838,
+        "min_clearance": 0.2514814972290421,
+        "mean_decision_ms": 7.735742910547441,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.5644874248708669,
+        "backtracking_ratio": 0.14372796725304235,
+        "low_progress_windows": 0.1635829458829289,
+        "episodes": 40,
+        "success_only_time": 14.78125
+      },
+      "dense_square": {
+        "success": 0.5,
+        "collision": 0.0,
+        "timeout": 0.5,
+        "contact": 0.0,
+        "time": 21.10625,
+        "discounted_return": 0.16023158993262596,
+        "task_return": 0.2429732614120003,
+        "path": 18.874578627200812,
+        "progress": 4.48041192833224,
+        "final_distance": 3.5195880716677608,
+        "stall_fraction": 0.0014295684226807773,
+        "min_clearance": 0.23295531802996788,
+        "mean_decision_ms": 8.325822008395965,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.29015052631460764,
+        "backtracking_ratio": 0.3080668188645689,
+        "low_progress_windows": 0.35559442382133744,
+        "episodes": 40,
+        "success_only_time": 16.9625
+      },
+      "large_circle": {
+        "success": 0.775,
+        "collision": 0.0,
+        "timeout": 0.225,
+        "contact": 0.0,
+        "time": 22.2125,
+        "discounted_return": 0.2913184658593127,
+        "task_return": 0.6617405743727197,
+        "path": 21.626583335542616,
+        "progress": 10.860265907716814,
+        "final_distance": 1.139734092283185,
+        "stall_fraction": 0.0,
+        "min_clearance": 0.537677354514066,
+        "mean_decision_ms": 7.928329820190209,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.5149917966708772,
+        "backtracking_ratio": 0.2047026245325237,
+        "low_progress_windows": 0.22462684971957653,
+        "episodes": 40,
+        "success_only_time": 21.330645161290324
+      },
+      "large_square": {
+        "success": 0.875,
+        "collision": 0.0,
+        "timeout": 0.125,
+        "contact": 0.0,
+        "time": 17.25625,
+        "discounted_return": 0.43938189570229,
+        "task_return": 0.809007354904761,
+        "path": 15.209830540809651,
+        "progress": 7.183127239303786,
+        "final_distance": 0.8168727606962143,
+        "stall_fraction": 0.003018219465632048,
+        "min_clearance": 0.245336403459762,
+        "mean_decision_ms": 8.291106188100827,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.5132025233028152,
+        "backtracking_ratio": 0.2059461535042874,
+        "low_progress_windows": 0.24540443621556793,
+        "episodes": 40,
+        "success_only_time": 16.114285714285714
+      },
+      "all": {
+        "success": 0.8208333333333333,
+        "collision": 0.0,
+        "timeout": 0.17916666666666667,
+        "contact": 0.0,
+        "time": 17.35,
+        "discounted_return": 0.41220342052073794,
+        "task_return": 0.7283597591175993,
+        "path": 16.062622330440718,
+        "progress": 7.288064790918751,
+        "final_distance": 1.378601875747916,
+        "stall_fraction": 0.0014649974775354133,
+        "min_clearance": 0.3513613110634263,
+        "mean_decision_ms": 7.965099917064029,
+        "interventions": 0.0,
+        "overrides": 0.0,
+        "progress_efficiency": 0.5084330005693568,
+        "backtracking_ratio": 0.19511420062989082,
+        "low_progress_windows": 0.21533425310763643,
+        "episodes": 240,
+        "success_only_time": 15.625634517766498
+      }
+    },
+    "ordinary": {
+      "baseline_circle": {
+        "success": 0.2,
+        "collision": 0.0,
+        "timeout": 0.8,
+        "contact": 0.0,
+        "time": 24.51875,
+        "discounted_return": -0.06129877023644933,
+        "task_return": -0.2000032716451658,
+        "path": 22.660444346745916,
+        "progress": 4.0044290081281915,
+        "final_distance": 3.9955709918718085,
+        "stall_fraction": 0.0,
+        "min_clearance": 0.5338751788375973,
+        "mean_decision_ms": 8.07898484523825,
+        "interventions": 14.0,
+        "overrides": 0.65,
+        "progress_efficiency": 0.18467488613474115,
+        "backtracking_ratio": 0.38063575931322446,
+        "low_progress_windows": 0.4769397286535876,
+        "episodes": 40,
+        "success_only_time": 21.59375
+      },
+      "baseline_square": {
+        "success": 0.1,
+        "collision": 0.0,
+        "timeout": 0.9,
+        "contact": 0.0,
+        "time": 24.76875,
+        "discounted_return": -0.1218732469285008,
+        "task_return": -0.35194370272808917,
+        "path": 22.510504562524574,
+        "progress": 1.6184602175445584,
+        "final_distance": 6.381539782455443,
+        "stall_fraction": 0.00024752475247524753,
+        "min_clearance": 0.3146228944967855,
+        "mean_decision_ms": 8.23882949290762,
+        "interventions": 15.175,
+        "overrides": 1.125,
+        "progress_efficiency": 0.08460990781544239,
+        "backtracking_ratio": 0.4470000221936751,
+        "low_progress_windows": 0.6007894319459149,
+        "episodes": 40,
+        "success_only_time": 20.4375
+      },
+      "dense_circle": {
+        "success": 0.175,
+        "collision": 0.025,
+        "timeout": 0.8,
+        "contact": 0.025,
+        "time": 24.35,
+        "discounted_return": -0.0834097182647908,
+        "task_return": -0.2390810547918351,
+        "path": 22.405332710071868,
+        "progress": 2.7098273673017883,
+        "final_distance": 5.290172632698211,
+        "stall_fraction": 0.0007425742574257426,
+        "min_clearance": 0.3836988624153733,
+        "mean_decision_ms": 8.241856320078627,
+        "interventions": 14.125,
+        "overrides": 0.875,
+        "progress_efficiency": 0.1299625720675046,
+        "backtracking_ratio": 0.4303392399168945,
+        "low_progress_windows": 0.5611388131414863,
+        "episodes": 40,
+        "success_only_time": 22.214285714285715
+      },
+      "dense_square": {
+        "success": 0.075,
+        "collision": 0.175,
+        "timeout": 0.75,
+        "contact": 0.175,
+        "time": 21.1625,
+        "discounted_return": -0.19128537823934194,
+        "task_return": -0.3909650214680077,
+        "path": 19.60782211586514,
+        "progress": -0.9363180563477634,
+        "final_distance": 8.936318056347764,
+        "stall_fraction": 0.0021706016755521705,
+        "min_clearance": 0.22803733111253832,
+        "mean_decision_ms": 8.63976578296241,
+        "interventions": 12.175,
+        "overrides": 1.275,
+        "progress_efficiency": 0.02396627794853736,
+        "backtracking_ratio": 0.49971050484169305,
+        "low_progress_windows": 0.6750375575769191,
+        "episodes": 40,
+        "success_only_time": 23.833333333333332
+      },
+      "large_circle": {
+        "success": 0.075,
+        "collision": 0.025,
+        "timeout": 0.9,
+        "contact": 0.025,
+        "time": 24.7,
+        "discounted_return": -0.1429976109814251,
+        "task_return": -0.3881872362096489,
+        "path": 22.832658064541278,
+        "progress": 6.272477188857506,
+        "final_distance": 5.727522811142494,
+        "stall_fraction": 0.00024752475247524753,
+        "min_clearance": 0.5699716837175957,
+        "mean_decision_ms": 8.375915481110923,
+        "interventions": 13.725,
+        "overrides": 0.4,
+        "progress_efficiency": 0.27686480097978905,
+        "backtracking_ratio": 0.31297748126908964,
+        "low_progress_windows": 0.40639828362402924,
+        "episodes": 40,
+        "success_only_time": 22.666666666666668
+      },
+      "large_square": {
+        "success": 0.0,
+        "collision": 0.25,
+        "timeout": 0.75,
+        "contact": 0.25,
+        "time": 20.10625,
+        "discounted_return": -0.24758845787603062,
+        "task_return": -0.5061864436644982,
+        "path": 18.000089532299945,
+        "progress": 0.04283046441306724,
+        "final_distance": 7.957169535586933,
+        "stall_fraction": 0.00024752475247524753,
+        "min_clearance": 0.14120747710011666,
+        "mean_decision_ms": 8.64184819088543,
+        "interventions": 13.7,
+        "overrides": 2.55,
+        "progress_efficiency": 0.008976520534196999,
+        "backtracking_ratio": 0.4918570623095039,
+        "low_progress_windows": 0.6817841108000682,
+        "episodes": 40,
+        "success_only_time": null
+      },
+      "all": {
+        "success": 0.10416666666666667,
+        "collision": 0.07916666666666666,
+        "timeout": 0.8166666666666667,
+        "contact": 0.07916666666666666,
+        "time": 23.267708333333335,
+        "discounted_return": -0.1414088637544231,
+        "task_return": -0.3460611217512074,
+        "path": 21.33614188867479,
+        "progress": 2.2852843649828913,
+        "final_distance": 6.381382301683775,
+        "stall_fraction": 0.0006092916984006093,
+        "min_clearance": 0.36190223794666776,
+        "mean_decision_ms": 8.36953335219721,
+        "interventions": 13.816666666666666,
+        "overrides": 1.1458333333333333,
+        "progress_efficiency": 0.11817582758003525,
+        "backtracking_ratio": 0.42708667830734676,
+        "low_progress_windows": 0.5670146542903343,
+        "episodes": 240,
+        "success_only_time": 21.98
+      }
+    },
+    "paired": {
+      "baseline_circle": {
+        "success": 0.175,
+        "collision": 0.05,
+        "timeout": 0.775,
+        "contact": 0.05,
+        "time": 23.475,
+        "discounted_return": -0.07982509490619792,
+        "task_return": -0.23754615990008485,
+        "path": 21.369417406048903,
+        "progress": 3.2109419515518822,
+        "final_distance": 4.789058048448117,
+        "stall_fraction": 0.0,
+        "min_clearance": 0.48925410279617304,
+        "mean_decision_ms": 8.091178795584039,
+        "interventions": 13.75,
+        "overrides": 0.5,
+        "progress_efficiency": 0.16509970552825745,
+        "backtracking_ratio": 0.4062798696329234,
+        "low_progress_windows": 0.5226243823616168,
+        "episodes": 40,
+        "success_only_time": 19.892857142857142
+      },
+      "baseline_square": {
+        "success": 0.025,
+        "collision": 0.05,
+        "timeout": 0.925,
+        "contact": 0.05,
+        "time": 24.1625,
+        "discounted_return": -0.17948720988859584,
+        "task_return": -0.4663819230751648,
+        "path": 21.516481489559645,
+        "progress": 1.300718082837236,
+        "final_distance": 6.699281917162764,
+        "stall_fraction": 0.0,
+        "min_clearance": 0.24041943457483478,
+        "mean_decision_ms": 8.294006940828314,
+        "interventions": 15.8,
+        "overrides": 1.825,
+        "progress_efficiency": 0.07026443274249013,
+        "backtracking_ratio": 0.4540598133666851,
+        "low_progress_windows": 0.624118899717304,
+        "episodes": 40,
+        "success_only_time": 18.25
+      },
+      "dense_circle": {
+        "success": 0.125,
+        "collision": 0.0,
+        "timeout": 0.875,
+        "contact": 0.0,
+        "time": 24.55,
+        "discounted_return": -0.10346363171548352,
+        "task_return": -0.3135893876507464,
+        "path": 22.091417960803607,
+        "progress": 3.2705190789448637,
+        "final_distance": 4.729480921055137,
+        "stall_fraction": 0.0007425742574257426,
+        "min_clearance": 0.29081556046040785,
+        "mean_decision_ms": 8.336546822291563,
+        "interventions": 15.225,
+        "overrides": 1.6,
+        "progress_efficiency": 0.15818457532436875,
+        "backtracking_ratio": 0.4017495947621799,
+        "low_progress_windows": 0.5191428532166784,
+        "episodes": 40,
+        "success_only_time": 19.65
+      },
+      "dense_square": {
+        "success": 0.05,
+        "collision": 0.2,
+        "timeout": 0.75,
+        "contact": 0.2,
+        "time": 20.575,
+        "discounted_return": -0.2105787069185335,
+        "task_return": -0.4278545563260903,
+        "path": 18.528387106737334,
+        "progress": -0.7331874772494057,
+        "final_distance": 8.733187477249405,
+        "stall_fraction": 0.0021706016755521705,
+        "min_clearance": 0.205402157508487,
+        "mean_decision_ms": 8.59939728720932,
+        "interventions": 13.15,
+        "overrides": 2.075,
+        "progress_efficiency": 0.04073370113875534,
+        "backtracking_ratio": 0.4722501257498882,
+        "low_progress_windows": 0.6409057231865259,
+        "episodes": 40,
+        "success_only_time": 22.5
+      },
+      "large_circle": {
+        "success": 0.15,
+        "collision": 0.05,
+        "timeout": 0.8,
+        "contact": 0.05,
+        "time": 24.43125,
+        "discounted_return": -0.10281336940407733,
+        "task_return": -0.27671741335269506,
+        "path": 22.503899213422383,
+        "progress": 7.79721880487403,
+        "final_distance": 4.20278119512597,
+        "stall_fraction": 0.0,
+        "min_clearance": 0.5316175039207446,
+        "mean_decision_ms": 8.346796428170993,
+        "interventions": 11.075,
+        "overrides": 0.3,
+        "progress_efficiency": 0.34279797547670915,
+        "backtracking_ratio": 0.29061481261424704,
+        "low_progress_windows": 0.36037315512010365,
+        "episodes": 40,
+        "success_only_time": 23.458333333333332
+      },
+      "large_square": {
+        "success": 0.025,
+        "collision": 0.275,
+        "timeout": 0.7,
+        "contact": 0.275,
+        "time": 20.00625,
+        "discounted_return": -0.2325016543197532,
+        "task_return": -0.4700668360320666,
+        "path": 17.76859552983678,
+        "progress": 0.049772317382278164,
+        "final_distance": 7.950227682617722,
+        "stall_fraction": 0.00024752475247524753,
+        "min_clearance": 0.1150481524190691,
+        "mean_decision_ms": 8.683215285434992,
+        "interventions": 13.425,
+        "overrides": 2.7,
+        "progress_efficiency": 0.02100399306502226,
+        "backtracking_ratio": 0.471859467643748,
+        "low_progress_windows": 0.7349813373168148,
+        "episodes": 40,
+        "success_only_time": 23.25
+      },
+      "all": {
+        "success": 0.09166666666666666,
+        "collision": 0.10416666666666667,
+        "timeout": 0.8041666666666667,
+        "contact": 0.10416666666666667,
+        "time": 22.866666666666667,
+        "discounted_return": -0.15144494452544022,
+        "task_return": -0.3653593793894746,
+        "path": 20.629699784401442,
+        "progress": 2.4826637930568145,
+        "final_distance": 6.184002873609853,
+        "stall_fraction": 0.0005267834475755267,
+        "min_clearance": 0.312092818613286,
+        "mean_decision_ms": 8.391856926586536,
+        "interventions": 13.7375,
+        "overrides": 1.5,
+        "progress_efficiency": 0.1330140638792672,
+        "backtracking_ratio": 0.41613561396161197,
+        "low_progress_windows": 0.5670243918198407,
+        "episodes": 240,
+        "success_only_time": 21.125
+      }
+    }
+  },
+  "comparisons": {
+    "paired-vs-nominal": {
+      "direction": "paired minus nominal",
+      "episodes": 240,
+      "independent_case_seed_blocks": 40,
+      "statistics": {
+        "success": {
+          "difference": -0.7291666666666666,
+          "ci95": [
+            -0.7833333333333332,
+            -0.6708333333333333
+          ]
+        },
+        "collision": {
+          "difference": 0.10416666666666667,
+          "ci95": [
+            0.06666666666666665,
+            0.14583333333333334
+          ]
+        },
+        "timeout": {
+          "difference": 0.625,
+          "ci95": [
+            0.55,
+            0.6958333333333333
+          ]
+        },
+        "contact": {
+          "difference": 0.10416666666666667,
+          "ci95": [
+            0.06666666666666665,
+            0.14583333333333334
+          ]
+        },
+        "time": {
+          "difference": 5.516666666666667,
+          "ci95": [
+            4.570833333333334,
+            6.44375
+          ]
+        },
+        "discounted_return": {
+          "difference": -0.5636483650461781,
+          "ci95": [
+            -0.6012773487761759,
+            -0.5236888317387551
+          ]
+        },
+        "task_return": {
+          "difference": -1.0937191385070737,
+          "ci95": [
+            -1.1750928806989163,
+            -1.0064621183625329
+          ]
+        },
+        "path": {
+          "difference": 4.567077453960724,
+          "ci95": [
+            3.6909921092095503,
+            5.423802932742328
+          ]
+        },
+        "progress": {
+          "difference": -4.805400997861937,
+          "ci95": [
+            -5.4194177968054325,
+            -4.195895972912079
+          ]
+        },
+        "final_distance": {
+          "difference": 4.805400997861937,
+          "ci95": [
+            4.195895972912079,
+            5.4194177968054325
+          ]
+        },
+        "stall_fraction": {
+          "difference": -0.0009382140299598866,
+          "ci95": [
+            -0.00186270991936292,
+            9.76956606839259e-05
+          ]
+        },
+        "min_clearance": {
+          "difference": -0.03926849245014021,
+          "ci95": [
+            -0.07459064565340136,
+            -0.005180538791172735
+          ]
+        },
+        "mean_decision_ms": {
+          "difference": 0.42675700952250717,
+          "ci95": [
+            0.3646898476186318,
+            0.48823223606443095
+          ]
+        },
+        "interventions": {
+          "difference": 13.7375,
+          "ci95": [
+            13.050000000000002,
+            14.39166666666667
+          ]
+        },
+        "overrides": {
+          "difference": 1.5,
+          "ci95": [
+            1.2708333333333335,
+            1.7416666666666665
+          ]
+        },
+        "progress_efficiency": {
+          "difference": -0.37541893669008963,
+          "ci95": [
+            -0.4107119375117299,
+            -0.3401596677883339
+          ]
+        },
+        "backtracking_ratio": {
+          "difference": 0.2210214133317211,
+          "ci95": [
+            0.19816256551677636,
+            0.2432175977802056
+          ]
+        },
+        "low_progress_windows": {
+          "difference": 0.35169013871220417,
+          "ci95": [
+            0.316624352894818,
+            0.38863919387485407
+          ]
+        }
+      },
+      "rescues": [
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "first": "reach_goal",
+          "second": "timeout"
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 101,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 124,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 101,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 116,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 120,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 116,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        }
+      ],
+      "new_collisions": [
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 106,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        }
+      ],
+      "new_contacts": [
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 106,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        }
+      ],
+      "outcome_matrix": {
+        "timeout / reach_goal": 157,
+        "collision / reach_goal": 19,
+        "reach_goal / reach_goal": 21,
+        "timeout / timeout": 36,
+        "collision / timeout": 6,
+        "reach_goal / timeout": 1
+      }
+    },
+    "paired-vs-ordinary": {
+      "direction": "paired minus ordinary",
+      "episodes": 240,
+      "independent_case_seed_blocks": 40,
+      "statistics": {
+        "success": {
+          "difference": -0.0125,
+          "ci95": [
+            -0.05833333333333335,
+            0.0375
+          ]
+        },
+        "collision": {
+          "difference": 0.025,
+          "ci95": [
+            -0.012499999999999999,
+            0.06250000000000001
+          ]
+        },
+        "timeout": {
+          "difference": -0.0125,
+          "ci95": [
+            -0.07916666666666666,
+            0.054166666666666655
+          ]
+        },
+        "contact": {
+          "difference": 0.025,
+          "ci95": [
+            -0.012499999999999999,
+            0.06250000000000001
+          ]
+        },
+        "time": {
+          "difference": -0.4010416666666667,
+          "ci95": [
+            -1.1885677083333337,
+            0.3572916666666666
+          ]
+        },
+        "discounted_return": {
+          "difference": -0.010036080771017116,
+          "ci95": [
+            -0.03987003934782942,
+            0.021323773244229172
+          ]
+        },
+        "task_return": {
+          "difference": -0.019298257638267192,
+          "ci95": [
+            -0.0891357133036239,
+            0.055952448103303055
+          ]
+        },
+        "path": {
+          "difference": -0.7064421042733449,
+          "ci95": [
+            -1.4243079877856908,
+            -0.0029620953941498864
+          ]
+        },
+        "progress": {
+          "difference": 0.19737942807392278,
+          "ci95": [
+            -0.44019514119666314,
+            0.860025400192185
+          ]
+        },
+        "final_distance": {
+          "difference": -0.1973794280739228,
+          "ci95": [
+            -0.8600254001921853,
+            0.44019514119666314
+          ]
+        },
+        "stall_fraction": {
+          "difference": -8.250825082508251e-05,
+          "ci95": [
+            -0.0002475247524752475,
+            8.250825082508251e-05
+          ]
+        },
+        "min_clearance": {
+          "difference": -0.049809419333381774,
+          "ci95": [
+            -0.08759019681179757,
+            -0.01208150479292893
+          ]
+        },
+        "mean_decision_ms": {
+          "difference": 0.022323574389326646,
+          "ci95": [
+            -0.02199685275956821,
+            0.06969551169478894
+          ]
+        },
+        "interventions": {
+          "difference": -0.07916666666666666,
+          "ci95": [
+            -0.8666666666666668,
+            0.6874999999999998
+          ]
+        },
+        "overrides": {
+          "difference": 0.3541666666666667,
+          "ci95": [
+            0.08333333333333338,
+            0.6166666666666667
+          ]
+        },
+        "progress_efficiency": {
+          "difference": 0.01483823629923192,
+          "ci95": [
+            -0.014526145199054475,
+            0.04532261606823993
+          ]
+        },
+        "backtracking_ratio": {
+          "difference": -0.010951064345734821,
+          "ci95": [
+            -0.03210163527291981,
+            0.009193638714712741
+          ]
+        },
+        "low_progress_windows": {
+          "difference": 9.737529506363234e-06,
+          "ci95": [
+            -0.034693223157831805,
+            0.033809922561695814
+          ]
+        }
+      },
+      "rescues": [
+        {
+          "scene": "baseline_circle",
+          "case": 108,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 116,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 118,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 120,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 130,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 131,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 121,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 105,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 117,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 124,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 137,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 121,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 119,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 120,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 130,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 136,
+          "first": "reach_goal",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 137,
+          "first": "reach_goal",
+          "second": "timeout"
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_circle",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 124,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        }
+      ],
+      "new_collisions": [
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        }
+      ],
+      "new_contacts": [
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "collision",
+          "second": "timeout"
+        }
+      ],
+      "outcome_matrix": {
+        "timeout / timeout": 167,
+        "collision / timeout": 12,
+        "timeout / reach_goal": 18,
+        "reach_goal / timeout": 17,
+        "reach_goal / reach_goal": 5,
+        "collision / reach_goal": 2,
+        "timeout / collision": 8,
+        "collision / collision": 11
+      }
+    },
+    "ordinary-vs-nominal": {
+      "direction": "ordinary minus nominal",
+      "episodes": 240,
+      "independent_case_seed_blocks": 40,
+      "statistics": {
+        "success": {
+          "difference": -0.7166666666666667,
+          "ci95": [
+            -0.7625000000000001,
+            -0.6708333333333333
+          ]
+        },
+        "collision": {
+          "difference": 0.07916666666666666,
+          "ci95": [
+            0.045833333333333344,
+            0.1125
+          ]
+        },
+        "timeout": {
+          "difference": 0.6375,
+          "ci95": [
+            0.5791666666666666,
+            0.6958333333333334
+          ]
+        },
+        "contact": {
+          "difference": 0.07916666666666666,
+          "ci95": [
+            0.045833333333333344,
+            0.1125
+          ]
+        },
+        "time": {
+          "difference": 5.917708333333334,
+          "ci95": [
+            5.075000000000001,
+            6.742760416666665
+          ]
+        },
+        "discounted_return": {
+          "difference": -0.553612284275161,
+          "ci95": [
+            -0.585875145450312,
+            -0.5222180912890738
+          ]
+        },
+        "task_return": {
+          "difference": -1.0744208808688067,
+          "ci95": [
+            -1.143847529491489,
+            -1.0054443489335698
+          ]
+        },
+        "path": {
+          "difference": 5.273519558234069,
+          "ci95": [
+            4.517089356583054,
+            6.021370992220624
+          ]
+        },
+        "progress": {
+          "difference": -5.0027804259358595,
+          "ci95": [
+            -5.7102692055952495,
+            -4.32717515913755
+          ]
+        },
+        "final_distance": {
+          "difference": 5.002780425935859,
+          "ci95": [
+            4.32717515913755,
+            5.710269205595249
+          ]
+        },
+        "stall_fraction": {
+          "difference": -0.000855705779134804,
+          "ci95": [
+            -0.0017858298775756205,
+            0.00017894130244516896
+          ]
+        },
+        "min_clearance": {
+          "difference": 0.01054092688324155,
+          "ci95": [
+            -0.019054128692525013,
+            0.042343486674919724
+          ]
+        },
+        "mean_decision_ms": {
+          "difference": 0.4044334351331805,
+          "ci95": [
+            0.35775082317921036,
+            0.45055522750420895
+          ]
+        },
+        "interventions": {
+          "difference": 13.816666666666666,
+          "ci95": [
+            13.154166666666669,
+            14.441666666666668
+          ]
+        },
+        "overrides": {
+          "difference": 1.1458333333333333,
+          "ci95": [
+            0.9165624999999998,
+            1.3916666666666668
+          ]
+        },
+        "progress_efficiency": {
+          "difference": -0.39025717298932155,
+          "ci95": [
+            -0.429448403896555,
+            -0.3512617342387268
+          ]
+        },
+        "backtracking_ratio": {
+          "difference": 0.23197247767745593,
+          "ci95": [
+            0.20791938328580736,
+            0.2565140745343862
+          ]
+        },
+        "low_progress_windows": {
+          "difference": 0.35168040118269783,
+          "ci95": [
+            0.3102183237669836,
+            0.39388499673411487
+          ]
+        }
+      },
+      "rescues": [
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "first": "reach_goal",
+          "second": "timeout"
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 101,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 116,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 120,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 124,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_circle",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 101,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 101,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 105,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 112,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 116,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 120,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 124,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 104,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 106,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 107,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 115,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 116,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 119,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 120,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 123,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 125,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 126,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 128,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 131,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 135,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 100,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 102,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 103,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 104,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 105,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 107,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 108,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 109,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 110,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 111,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 112,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 113,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 114,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 117,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 118,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 121,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 122,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 124,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 127,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 129,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 130,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 132,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 133,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 134,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 136,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 137,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 138,
+          "first": "timeout",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 139,
+          "first": "timeout",
+          "second": "reach_goal"
+        }
+      ],
+      "new_collisions": [
+        {
+          "scene": "dense_circle",
+          "case": 112,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 106,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 119,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 104,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 105,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 107,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        }
+      ],
+      "new_contacts": [
+        {
+          "scene": "dense_circle",
+          "case": 112,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 106,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 119,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 138,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "dense_square",
+          "case": 139,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_circle",
+          "case": 104,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 105,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 107,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 115,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "first": "collision",
+          "second": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 123,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 125,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 128,
+          "first": "collision",
+          "second": "reach_goal"
+        },
+        {
+          "scene": "large_square",
+          "case": 135,
+          "first": "collision",
+          "second": "reach_goal"
+        }
+      ],
+      "outcome_matrix": {
+        "timeout / reach_goal": 159,
+        "reach_goal / reach_goal": 24,
+        "timeout / timeout": 37,
+        "collision / reach_goal": 14,
+        "collision / timeout": 5,
+        "reach_goal / timeout": 1
+      }
+    }
+  },
+  "decision_checks": {
+    "nominal-sr": false,
+    "nominal-return": false,
+    "nominal-collision": false,
+    "nominal-contact": false,
+    "nominal-dense-scenes": false,
+    "ordinary-sr": false,
+    "ordinary-return": false,
+    "ordinary-collision": false,
+    "ordinary-contact": false,
+    "ordinary-dense-scenes": false
+  },
+  "verdict": "VERSION_NEGATIVE",
+  "scientific_scope": "case-paired outcome of frozen models; not training-seed inference",
+  "descriptive_motion_definitions": {
+    "progress_efficiency": "net goal-distance reduction / executed path length",
+    "backtracking_ratio": "fraction of steps increasing goal distance by more than 1mm",
+    "low_progress_windows": "fraction of complete 8-step (2s) windows with <20cm net goal progress; descriptive, not a pathology label or acceptance criterion",
+    "stall_fraction": "fraction of executed steps with speed <0.1m/s"
+  },
+  "activation": {
+    "nominal": {
+      "steps": 16656,
+      "executed_non_nominal_steps": 0,
+      "episodes_with_non_nominal_action": 0,
+      "option_decisions_0_to_9": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "ordinary": {
+      "steps": 22337,
+      "executed_non_nominal_steps": 13545,
+      "episodes_with_non_nominal_action": 240,
+      "option_decisions_0_to_9": [
+        1138,
+        512,
+        605,
+        242,
+        447,
+        315,
+        704,
+        138,
+        100,
+        253
+      ]
+    },
+    "paired": {
+      "steps": 21952,
+      "executed_non_nominal_steps": 13325,
+      "episodes_with_non_nominal_action": 240,
+      "option_decisions_0_to_9": [
+        1010,
+        264,
+        576,
+        322,
+        713,
+        196,
+        825,
+        124,
+        80,
+        197
+      ]
+    }
+  },
+  "outcome_motion_medians": {
+    "nominal": {
+      "reach_goal": {
+        "episodes": 197,
+        "progress_efficiency": 0.5899008316981107,
+        "backtracking_ratio": 0.1509433962264151,
+        "low_progress_windows": 0.17307692307692307,
+        "path": 13.778436814031199,
+        "final_distance": 0.201927155548821
+      },
+      "timeout": {
+        "episodes": 43,
+        "progress_efficiency": 0.16432576217733572,
+        "backtracking_ratio": 0.39603960396039606,
+        "low_progress_windows": 0.48936170212765956,
+        "path": 23.55383085138333,
+        "final_distance": 5.483498999537491
+      }
+    },
+    "ordinary": {
+      "reach_goal": {
+        "episodes": 25,
+        "progress_efficiency": 0.39688737122294204,
+        "backtracking_ratio": 0.275,
+        "low_progress_windows": 0.26666666666666666,
+        "path": 19.98975077589668,
+        "final_distance": 0.1931674327462277
+      },
+      "collision": {
+        "episodes": 19,
+        "progress_efficiency": 0.17174800677467902,
+        "backtracking_ratio": 0.47619047619047616,
+        "low_progress_windows": 0.43243243243243246,
+        "path": 3.1272237606365687,
+        "final_distance": 7.627321885028796
+      },
+      "timeout": {
+        "episodes": 196,
+        "progress_efficiency": 0.10551651738576538,
+        "backtracking_ratio": 0.42574257425742573,
+        "low_progress_windows": 0.5797872340425532,
+        "path": 23.332590896068208,
+        "final_distance": 6.634946708060802
+      }
+    },
+    "paired": {
+      "reach_goal": {
+        "episodes": 22,
+        "progress_efficiency": 0.4871611484919821,
+        "backtracking_ratio": 0.1965909090909091,
+        "low_progress_windows": 0.23717948717948717,
+        "path": 19.233259606587424,
+        "final_distance": 0.18179030819453404
+      },
+      "collision": {
+        "episodes": 25,
+        "progress_efficiency": 0.15851833492630393,
+        "backtracking_ratio": 0.4117647058823529,
+        "low_progress_windows": 0.5957446808510638,
+        "path": 4.3394182577562335,
+        "final_distance": 7.615457933131787
+      },
+      "timeout": {
+        "episodes": 193,
+        "progress_efficiency": 0.08078023094924533,
+        "backtracking_ratio": 0.44554455445544555,
+        "low_progress_windows": 0.5851063829787234,
+        "path": 22.81570969410363,
+        "final_distance": 6.2610477929132555
+      }
+    }
+  },
+  "total_decision_seconds": {
+    "nominal": 133.28191448701546,
+    "ordinary": 187.00586366734933,
+    "paired": 184.2083248667186
+  },
+  "training_root_counterfactuals": {
+    "root_count": 333,
+    "classes": {
+      "timeout_rescuable_by_catalog": [
+        [
+          "dense_circle",
+          11,
+          8
+        ],
+        [
+          "dense_circle",
+          12,
+          8
+        ],
+        [
+          "dense_circle",
+          12,
+          24
+        ],
+        [
+          "dense_circle",
+          12,
+          48
+        ],
+        [
+          "dense_square",
+          5,
+          8
+        ],
+        [
+          "dense_square",
+          13,
+          24
+        ],
+        [
+          "large_circle",
+          4,
+          8
+        ],
+        [
+          "large_circle",
+          7,
+          72
+        ],
+        [
+          "large_circle",
+          11,
+          72
+        ],
+        [
+          "large_circle",
+          11,
+          88
+        ],
+        [
+          "large_circle",
+          12,
+          72
+        ],
+        [
+          "large_circle",
+          12,
+          88
+        ]
+      ],
+      "nominal_success_harmed_by_catalog": [
+        [
+          "baseline_circle",
+          0,
+          24
+        ],
+        [
+          "baseline_circle",
+          1,
+          48
+        ],
+        [
+          "baseline_circle",
+          4,
+          24
+        ],
+        [
+          "baseline_circle",
+          12,
+          8
+        ],
+        [
+          "baseline_circle",
+          12,
+          48
+        ],
+        [
+          "baseline_circle",
+          13,
+          48
+        ],
+        [
+          "baseline_circle",
+          14,
+          24
+        ],
+        [
+          "baseline_square",
+          0,
+          24
+        ],
+        [
+          "baseline_square",
+          1,
+          48
+        ],
+        [
+          "baseline_square",
+          2,
+          8
+        ],
+        [
+          "baseline_square",
+          3,
+          8
+        ],
+        [
+          "baseline_square",
+          6,
+          8
+        ],
+        [
+          "baseline_square",
+          6,
+          24
+        ],
+        [
+          "baseline_square",
+          7,
+          8
+        ],
+        [
+          "baseline_square",
+          7,
+          24
+        ],
+        [
+          "baseline_square",
+          7,
+          48
+        ],
+        [
+          "baseline_square",
+          8,
+          8
+        ],
+        [
+          "baseline_square",
+          9,
+          8
+        ],
+        [
+          "baseline_square",
+          11,
+          48
+        ],
+        [
+          "baseline_square",
+          13,
+          8
+        ],
+        [
+          "baseline_square",
+          13,
+          24
+        ],
+        [
+          "baseline_square",
+          14,
+          48
+        ],
+        [
+          "baseline_square",
+          15,
+          24
+        ],
+        [
+          "dense_square",
+          0,
+          24
+        ],
+        [
+          "dense_square",
+          0,
+          48
+        ],
+        [
+          "dense_square",
+          1,
+          48
+        ],
+        [
+          "dense_square",
+          1,
+          72
+        ],
+        [
+          "dense_square",
+          3,
+          8
+        ],
+        [
+          "dense_square",
+          3,
+          24
+        ],
+        [
+          "dense_square",
+          4,
+          8
+        ],
+        [
+          "dense_square",
+          4,
+          24
+        ],
+        [
+          "dense_square",
+          4,
+          48
+        ],
+        [
+          "dense_square",
+          4,
+          72
+        ],
+        [
+          "dense_square",
+          6,
+          8
+        ],
+        [
+          "dense_square",
+          6,
+          24
+        ],
+        [
+          "dense_square",
+          6,
+          48
+        ],
+        [
+          "dense_square",
+          6,
+          72
+        ],
+        [
+          "dense_square",
+          7,
+          8
+        ],
+        [
+          "dense_square",
+          8,
+          8
+        ],
+        [
+          "dense_square",
+          9,
+          8
+        ],
+        [
+          "dense_square",
+          9,
+          24
+        ],
+        [
+          "dense_square",
+          9,
+          48
+        ],
+        [
+          "dense_square",
+          10,
+          8
+        ],
+        [
+          "dense_square",
+          10,
+          24
+        ],
+        [
+          "dense_square",
+          11,
+          24
+        ],
+        [
+          "dense_square",
+          11,
+          48
+        ],
+        [
+          "dense_square",
+          12,
+          8
+        ],
+        [
+          "dense_square",
+          12,
+          24
+        ],
+        [
+          "dense_square",
+          12,
+          48
+        ],
+        [
+          "dense_square",
+          12,
+          72
+        ],
+        [
+          "dense_square",
+          14,
+          48
+        ],
+        [
+          "dense_square",
+          15,
+          8
+        ],
+        [
+          "dense_square",
+          15,
+          24
+        ],
+        [
+          "large_circle",
+          0,
+          72
+        ],
+        [
+          "large_circle",
+          1,
+          48
+        ],
+        [
+          "large_circle",
+          1,
+          72
+        ],
+        [
+          "large_circle",
+          2,
+          48
+        ],
+        [
+          "large_circle",
+          2,
+          72
+        ],
+        [
+          "large_circle",
+          2,
+          88
+        ],
+        [
+          "large_circle",
+          3,
+          48
+        ],
+        [
+          "large_circle",
+          3,
+          72
+        ],
+        [
+          "large_circle",
+          5,
+          24
+        ],
+        [
+          "large_circle",
+          5,
+          48
+        ],
+        [
+          "large_circle",
+          5,
+          72
+        ],
+        [
+          "large_circle",
+          8,
+          8
+        ],
+        [
+          "large_circle",
+          8,
+          24
+        ],
+        [
+          "large_circle",
+          8,
+          48
+        ],
+        [
+          "large_circle",
+          8,
+          72
+        ],
+        [
+          "large_circle",
+          8,
+          88
+        ],
+        [
+          "large_circle",
+          9,
+          48
+        ],
+        [
+          "large_circle",
+          9,
+          72
+        ],
+        [
+          "large_circle",
+          10,
+          24
+        ],
+        [
+          "large_circle",
+          10,
+          48
+        ],
+        [
+          "large_circle",
+          10,
+          72
+        ],
+        [
+          "large_circle",
+          10,
+          88
+        ],
+        [
+          "large_circle",
+          13,
+          8
+        ],
+        [
+          "large_circle",
+          13,
+          24
+        ],
+        [
+          "large_circle",
+          13,
+          48
+        ],
+        [
+          "large_circle",
+          13,
+          72
+        ],
+        [
+          "large_circle",
+          13,
+          88
+        ],
+        [
+          "large_circle",
+          13,
+          96
+        ],
+        [
+          "large_circle",
+          15,
+          24
+        ],
+        [
+          "large_circle",
+          15,
+          48
+        ],
+        [
+          "large_circle",
+          15,
+          72
+        ],
+        [
+          "large_circle",
+          15,
+          88
+        ],
+        [
+          "large_square",
+          2,
+          8
+        ],
+        [
+          "large_square",
+          3,
+          8
+        ],
+        [
+          "large_square",
+          4,
+          8
+        ],
+        [
+          "large_square",
+          6,
+          8
+        ],
+        [
+          "large_square",
+          6,
+          48
+        ],
+        [
+          "large_square",
+          7,
+          8
+        ],
+        [
+          "large_square",
+          8,
+          24
+        ],
+        [
+          "large_square",
+          9,
+          8
+        ],
+        [
+          "large_square",
+          9,
+          24
+        ],
+        [
+          "large_square",
+          14,
+          48
+        ],
+        [
+          "large_square",
+          15,
+          8
+        ]
+      ],
+      "no_catalog_success_from_nominal_failure": [
+        [
+          "baseline_circle",
+          7,
+          8
+        ],
+        [
+          "baseline_circle",
+          7,
+          24
+        ],
+        [
+          "baseline_circle",
+          7,
+          48
+        ],
+        [
+          "baseline_circle",
+          7,
+          72
+        ],
+        [
+          "baseline_circle",
+          7,
+          88
+        ],
+        [
+          "baseline_circle",
+          7,
+          96
+        ],
+        [
+          "dense_circle",
+          7,
+          8
+        ],
+        [
+          "dense_circle",
+          7,
+          24
+        ],
+        [
+          "dense_circle",
+          7,
+          48
+        ],
+        [
+          "dense_circle",
+          7,
+          72
+        ],
+        [
+          "dense_circle",
+          7,
+          88
+        ],
+        [
+          "dense_circle",
+          7,
+          96
+        ],
+        [
+          "dense_circle",
+          11,
+          24
+        ],
+        [
+          "dense_circle",
+          11,
+          48
+        ],
+        [
+          "dense_circle",
+          11,
+          72
+        ],
+        [
+          "dense_circle",
+          11,
+          88
+        ],
+        [
+          "dense_circle",
+          11,
+          96
+        ],
+        [
+          "dense_circle",
+          12,
+          72
+        ],
+        [
+          "dense_circle",
+          12,
+          88
+        ],
+        [
+          "dense_circle",
+          12,
+          96
+        ],
+        [
+          "dense_square",
+          2,
+          8
+        ],
+        [
+          "dense_square",
+          2,
+          24
+        ],
+        [
+          "dense_square",
+          2,
+          48
+        ],
+        [
+          "dense_square",
+          2,
+          72
+        ],
+        [
+          "dense_square",
+          2,
+          88
+        ],
+        [
+          "dense_square",
+          2,
+          96
+        ],
+        [
+          "dense_square",
+          5,
+          24
+        ],
+        [
+          "dense_square",
+          5,
+          48
+        ],
+        [
+          "dense_square",
+          5,
+          72
+        ],
+        [
+          "dense_square",
+          5,
+          88
+        ],
+        [
+          "dense_square",
+          5,
+          96
+        ],
+        [
+          "dense_square",
+          13,
+          8
+        ],
+        [
+          "dense_square",
+          13,
+          48
+        ],
+        [
+          "dense_square",
+          13,
+          72
+        ],
+        [
+          "dense_square",
+          13,
+          88
+        ],
+        [
+          "dense_square",
+          13,
+          96
+        ],
+        [
+          "large_circle",
+          4,
+          24
+        ],
+        [
+          "large_circle",
+          4,
+          48
+        ],
+        [
+          "large_circle",
+          4,
+          72
+        ],
+        [
+          "large_circle",
+          4,
+          88
+        ],
+        [
+          "large_circle",
+          4,
+          96
+        ],
+        [
+          "large_circle",
+          7,
+          8
+        ],
+        [
+          "large_circle",
+          7,
+          24
+        ],
+        [
+          "large_circle",
+          7,
+          48
+        ],
+        [
+          "large_circle",
+          7,
+          88
+        ],
+        [
+          "large_circle",
+          7,
+          96
+        ],
+        [
+          "large_circle",
+          11,
+          8
+        ],
+        [
+          "large_circle",
+          11,
+          24
+        ],
+        [
+          "large_circle",
+          11,
+          48
+        ],
+        [
+          "large_circle",
+          11,
+          96
+        ],
+        [
+          "large_circle",
+          12,
+          8
+        ],
+        [
+          "large_circle",
+          12,
+          24
+        ],
+        [
+          "large_circle",
+          12,
+          48
+        ],
+        [
+          "large_circle",
+          12,
+          96
+        ]
+      ]
+    },
+    "interpretation": "Descriptive catalog headroom on training roots, not deployed method improvement or independent episodes."
+  }
+}

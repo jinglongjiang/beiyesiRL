@@ -54,7 +54,7 @@ def setup(device='cuda'):
     for module in (crowd_nav, crowd_sim, mamba_rl):
         assert Path(module.__file__).resolve().is_relative_to(ROOT)
     cfg = configparser.ConfigParser()
-    cfg.read(ROOT / 'crowd_nav/runs/bayes-fix-20261008/remote-run/configs/gru-seed42.ini')
+    assert cfg.read(HERE / 'parent-config.ini'), 'Missing pinned GRU configuration'
     contracts.init_grid_from_cfg(cfg)
     assert contracts.grid_action_dim(contracts.GRID) == 80
     torch.set_num_threads(2)
