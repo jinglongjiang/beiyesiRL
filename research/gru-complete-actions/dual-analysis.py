@@ -42,6 +42,10 @@ def summarize():
         chosen=original[(root['scene'],root['case'])]['selected_index']
         forward=original[(root['scene'],root['case'])]['forward_index']
         selected=load_pair(root,chosen)
+        predicted_selector=int(indices[(qa-.001*(indices==0)).argmax()])
+        actual_next_selector=int(indices[(qt-.001*(indices==0)).argmax()])
+        assert predicted_selector==chosen
+        actual_next_branch=load_pair(root,actual_next_selector)[0]['result']
         safe_success_a=[int(i) for i,v in zip(indices,pairs) if v[0]['result']['success'] and not v[0]['result']['contact']]
         safe_success_b=[int(i) for i,v in zip(indices,pairs) if v[1]['result']['success'] and not v[1]['result']['contact']]
         ps=[v for v in prefixes if q.key(v['root'])==q.key(root)]
@@ -71,6 +75,9 @@ def summarize():
         non_tied_b=valid&(np.abs(gb[:,None]-gb[None,:])>1e-6)
         records.append({**root,'category':category,'legal_actions':len(indices),
             'nominal_index':chosen,'forward_index':forward,'selected_A':selected[0]['result'],
+            'actual_next_selector_index':actual_next_selector,
+            'actual_next_selector_flipped':bool(actual_next_selector!=chosen),
+            'actual_next_selector_A_outcome':actual_next_branch,
             'selected_B':selected[1]['result'],'A_contact_free_success_indices':safe_success_a,
             'B_contact_free_success_indices':safe_success_b,'successful_prefixes':successful_prefixes,
             'A_success_positive_progress':int(sum(x['progress'][i]>0 for i in safe_success_a)),
@@ -129,6 +136,8 @@ def summarize():
                            'contact':sum(v[f'selected_{policy}']['contact'] for v in records)} for policy in ['A','B']},
         'selected_B_rescues_A':sum(not v['selected_A']['success'] and v['selected_B']['success'] for v in records),
         'selected_B_damages_A':sum(v['selected_A']['success'] and not v['selected_B']['success'] for v in records),
+        'true_next_selector_changes':sum(v['actual_next_selector_flipped'] for v in records),
+        'true_next_selector_safe_rescues':sum(not v['selected_A']['success'] and v['actual_next_selector_A_outcome']['success'] and not v['actual_next_selector_A_outcome']['contact'] for v in records),
         'slope':{'estimate':float(num.sum()/den.sum()),'case_cluster_bootstrap_95':np.quantile(bootstrap,[.025,.975]).tolist(),
                  'replicates':2000,'case_ids':ids,'span_exceeds_gap_roots':sum(v['slope_span_exceeds_gap'] for v in records),
                  'limits':'Association on deliberately selected fixed worlds; not proof of OOD or historical training cause'},
