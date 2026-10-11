@@ -1,0 +1,38 @@
+{
+  "version": "navigation-findings-v1",
+  "started_utc": "2026-10-11T05:06:25Z",
+  "total_budget_hours_max": 8,
+  "recovery_postmortem_deadline_utc": "2026-10-11T06:18:25Z",
+  "source_commit": "15086e9",
+  "no_training_or_recovery_optimization": true,
+  "parent": "existing corrected GRU seed61, 2000 RL episodes, unchanged checkpoint/config",
+  "recovery_postmortem": {
+    "saved_data": "all 333 labeled roots and all 720 existing development traces",
+    "annotated_replay_cases": [100, 101],
+    "scenes": "all six existing native scenes",
+    "first_decision": 4,
+    "counterfactual": "use the frozen learned first option once at its original root, then frozen nominal to the same deadline; compare existing repeatedly controlled and nominal trajectories",
+    "decision": "If physical/control replay mismatches, classify the exact engineering defect. If one-shot improves versus repeat, repeated intervention is causally harmful for those matched cases; do not infer that it is the sole cause. If first option is already harmful, test value-ranking error on that root. No repair or retraining follows either outcome.",
+    "stop": "stop by 15 percent budget even if cause is unresolved"
+  },
+  "nominal_discovery": {
+    "cohort": "existing 240 nominal episodes, cases100-139 across six scenes; no new cohort",
+    "discovery_case_ids": [100,119],
+    "held_out_mechanism_check_case_ids": [120,139],
+    "scope": "already observed developmental cases; held-out mechanism checks are not fresh population confirmation",
+    "root_steps": [8,16,24,32,40,48,56,64,72,80,88,96],
+    "record": "full action reward/value/safety decomposition, executable commands, selected pedestrian sets, physical state, legal history, recorded and replayed action",
+    "candidate_conditions": {
+      "value_overrides_progress": "selected predicted progress <=0; another same-mask action has progress >=0.02m and immediate reward >=selected+0.01",
+      "safety_blocks_progress": "best progress action is masked while selected does not progress",
+      "empty_safe_set": "no candidate has native .2m endpoint clearance",
+      "support_switch": "different candidate poses select different nearest-five human ID sets; a descriptive design property, not automatically a defect"
+    },
+    "counterfactual_rule": "Choose at most one repeated, source-supported mechanism from the discovery ledger. Register exact root selection and action catalog before continuation results. Same physical state, time, safety, and native dynamics. Do not invent a candidate if none qualifies.",
+    "go_method": "a repeated task-loss mechanism with causal counterfactual support, valid deployment information/action support, and a specific gap not already absorbed by a simple baseline or closest prior",
+    "stop_no_gap": "only engineering/environment artifacts, no reproducible task consequence, or strongest simple explanation suffices",
+    "escalate": "one unresolved confound directly changes whether an algorithm gap exists; save reproducer and precise competing explanations instead of launching another long task"
+  },
+  "deliverables": ["RESEARCH_FINDINGS.md", "UNRESOLVED_ISSUES.md", "recompute scripts", "case index and raw diagnostic evidence"],
+  "final_main_verdict": ["GO_METHOD", "FIX_BASELINE", "NO_VALID_GAP", "ESCALATE"]
+}
