@@ -38,15 +38,16 @@ def pairs(first, second):
     case_ids = sorted({k[1] for k in keys})
     rng = np.random.default_rng(121012)
     draw = rng.integers(len(case_ids), size=(4000, len(case_ids)))
-    delta = np.array([np.mean([left[k]['success'] - right[k]['success'] for k in keys if k[1] == c]) for c in case_ids])
-    contact = np.array([np.mean([left[k]['contact'] - right[k]['contact'] for k in keys if k[1] == c]) for c in case_ids])
+    counts = np.array([sum(k[1] == c for k in keys) for c in case_ids])
+    delta = np.array([sum(left[k]['success'] - right[k]['success'] for k in keys if k[1] == c) for c in case_ids])
+    contact = np.array([sum(left[k]['contact'] - right[k]['contact'] for k in keys if k[1] == c) for c in case_ids])
     rescues = [list(k) for k in keys if left[k]['success'] and not right[k]['success']]
     damages = [list(k) for k in keys if right[k]['success'] and not left[k]['success']]
     both = [k for k in keys if left[k]['success'] and right[k]['success']]
     return {'episodes': len(keys), 'case_clusters': len(case_ids),
-            'delta_SR': float(delta.mean()), 'delta_SR_case_bootstrap_95': np.quantile(delta[draw].mean(1), [.025, .975]).tolist(),
-            'delta_contact_rate': float(contact.mean()),
-            'delta_contact_case_bootstrap_95': np.quantile(contact[draw].mean(1), [.025, .975]).tolist(),
+            'delta_SR': float(delta.sum() / counts.sum()), 'delta_SR_case_bootstrap_95': np.quantile(delta[draw].sum(1) / counts[draw].sum(1), [.025, .975]).tolist(),
+            'delta_contact_rate': float(contact.sum() / counts.sum()),
+            'delta_contact_case_bootstrap_95': np.quantile(contact[draw].sum(1) / counts[draw].sum(1), [.025, .975]).tolist(),
             'rescues': rescues, 'damages': damages,
             'rescue_count': len(rescues), 'damage_count': len(damages),
             'both_success_time_delta_mean': float(np.mean([left[k]['duration'] - right[k]['duration'] for k in both])) if both else None}
@@ -86,11 +87,43 @@ def ranking():
     print(json.dumps(result, indent=2))
 
 
+def failure():
+    probes = json.loads((HERE / 'ranking-probes.json').read_text())
+    result = {}
+    for arm in ['behavior-mc', 'deploy-mc']:
+        actual = json.loads((HERE / f'roots-{arm}.json').read_text())['results']
+        index = {(v['root']['scene'], v['root']['case']): v for v in probes[arm]}
+        rows = []
+        for row in actual:
+            k = (row['scene'], row['case'])
+            first = index[k]
+            path = HERE / 'artifacts/roots' / arm / f'{["baseline_circle","baseline_square","dense_circle","dense_square","large_circle","large_square"].index(k[0])}-{k[1]}.npz'
+            data = np.load(path)
+            trace = data['records']
+            assert int(trace[0, 5]) == first['chosen']
+            before = first['old_policy_first_action_result']
+            rows.append({'scene': k[0], 'case': k[1], 'category': row['category'],
+                         'first_action_old_policy_safe_success': bool(before['success'] and not before['contact']),
+                         'new_policy_safe_success': bool(row['success'] and not row['contact']),
+                         'nonpositive_progress_fraction': float((trace[:, 9] <= 0).mean()),
+                         'nominal_veto_fraction': float((trace[:, 5] != trace[:, 6]).mean()),
+                         'fallback_steps': row['fallback'], 'outcome': row['outcome'],
+                         'final_distance': row['final_distance'], 'duration': row['duration']})
+        result[arm] = {'rows': rows,
+                      'old_policy_safe_success_lost_under_new_continuation': sum(v['first_action_old_policy_safe_success'] and not v['new_policy_safe_success'] for v in rows),
+                      'new_policy_success_absent_under_old_continuation': sum(not v['first_action_old_policy_safe_success'] and v['new_policy_safe_success'] for v in rows),
+                      'scope': 'Same forced first command/world, later frozen continuation policy differs. Identifies post-first-action policy degradation, not its unique historical training cause.'}
+    write('negative-mechanism.json', result)
+    print(json.dumps({k: {kk: vv for kk, vv in v.items() if kk != 'rows'} for k, v in result.items()}, indent=2))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('stage', choices=['roots', 'fresh', 'ranking'])
+    parser.add_argument('stage', choices=['roots', 'fresh', 'ranking', 'failure'])
     args = parser.parse_args()
-    if args.stage == 'ranking':
+    if args.stage == 'failure':
+        failure()
+    elif args.stage == 'ranking':
         ranking()
     else:
         summarize(args.stage)
