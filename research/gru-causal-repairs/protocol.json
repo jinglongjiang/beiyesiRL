@@ -43,9 +43,10 @@
   },
   "conditional_A_disambiguation": {
     "gate": "Source-only repair does not correct the held-outA roots and full closed-loop failure",
-    "test": "Reuse existing true-successor windows and deployment labels from the2950-action catalogue. Whole-case even/odd split, same targets/updates/batches/init; frozen-encoder head-only vs full-network fitting to test representation correctability on targeted coverage. Do not rerun old ridge results.",
+    "test": "Three1000-update controls from the same nominal initialization: original recollected-state deployment labels with full-network fitting; targeted catalogue deployment labels with head-only fitting; targeted catalogue deployment labels with full-network fitting. Identical optimizer/LR/batch/update RNG. Whole numerical case even fitting/odd heldout for the catalogue. First versus third changes targeted state coverage; second versus third changes feature trainability. Do not rerun old ridge results.",
     "updates": 1000, "learning_rate": 0.00001, "batch_size": 128,
     "interpretation": "Head success supports reusable frozen features; full-only success supports trainable representation/optimization limitation; neither success leaves raw information vs sample coverage unresolved. No failure is called proof of insufficient input.",
+    "closed_loop": "If triggered, evaluate all three on existing35 active roots and an additional frozen6x20 native cases320..339, never on cases300..319 for tuning",
     "no_automatic_new_navigation_method": true
   }
 }
