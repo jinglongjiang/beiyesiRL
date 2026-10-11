@@ -144,6 +144,7 @@ def summarize():
                  'limits':'Association on deliberately selected fixed worlds; not proof of OOD or historical training cause'},
         'checkpoints':checkpoints,'no_method_level_progress':True,
         'limits':['Historical original RL replay is unavailable.',
+                  'Roots were selected using the final checkpoint value-overrides-progress condition; final negative preference is selection-conditioned, not independent evidence of population training drift.',
                   'B is deterministic final-weight raw greedy, not the historical epsilon behavior mixture.',
                   'A/B effects change safety, risk and smoothing as a bundle and do not isolate individual components.',
                   'The 38 roots are a selected developmental cohort, not a population performance evaluation.',
