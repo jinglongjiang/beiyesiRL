@@ -14,6 +14,7 @@
   ],
   "reason": "A comparison of two old-semantic models on corrected-token inputs would not measure training-seed variance of this repaired Parent. No compatible second training seed was supplied for this lineage.",
   "logical_limit": "Nonmonotonic learning counts and disagreement between two trained networks do not prove within-network random ranking, absence of stable preferences or a unique noise cause. Given top gaps alone there is no uniquely defined chance-agreement null.",
+  "counterexample_to_ratio_gate": "For 80 actions, V1(a)=a and V2(a)=10*a, a=0..79. After within-root centering the median absolute disagreement is 180, exceeding both top gaps 1 and 10, but all action ranks and argmax are identical. Centering removes offsets, not positive scale differences; the proposed ratio alone cannot identify ranking noise.",
   "action": "Do not train to unblock M4 and do not mix these weights into P3. Keep same-lineage deterministic fixed-input P3 conditional on repeated P1/P2 task defects.",
   "metrics": null
 }
