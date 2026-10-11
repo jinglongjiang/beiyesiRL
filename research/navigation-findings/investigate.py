@@ -183,11 +183,104 @@ def recovery_roots():
     print('completed one-shot contrasts',len(results),flush=True)
 
 
+def history_channel():
+    cfg,p=setup()
+    d=np.load(m.OUT/'recovery-data.npz')
+    col=256+9
+    assert np.all(d['x'][:,col]==1), 'History age not constant in training'
+    records=[]
+    for scene in range(6):
+        for case in [100,101]:
+            def capture(env,positions,row,parts,snapshot,tape):
+                x=m.feature(p,env,parts[1],positions)
+                for arm in ['ordinary','paired']:
+                    net,norm=model(arm,p.device)
+                    torch.manual_seed(71)
+                    initial=m.RecoveryNet()
+                    untouched=torch.equal(initial.net[0].weight[:,col],net.net[0].weight[:,col].cpu())
+                    changed=x.copy()
+                    changed[col]=1.
+                    with torch.no_grad():
+                        original=net(torch.as_tensor((x-norm[0])/norm[1],device=p.device)).cpu().numpy()
+                        neutral=net(torch.as_tensor((changed-norm[0])/norm[1],device=p.device)).cpu().numpy()
+                    records.append({'scene':m.SCENES[scene],'case':case,'arm':arm,
+                                    'history_age':float(x[col]),'train_mean':float(norm[0][col]),
+                                    'train_std_clamped':float(norm[1][col]),
+                                    'normalized_age':float((x[col]-norm[0][col])/norm[1][col]),
+                                    'input_weights_identical_to_initialization':untouched,
+                                    'actual_choice':int(original.argmax()),
+                                    'age_neutralized_choice':int(neutral.argmax()),
+                                    'actual_q':original.tolist(),'age_neutralized_q':neutral.tolist()})
+            replay(cfg,p,'nominal',scene,case,{4},capture)
+    write('recovery-history-channel.json',{'training_column':col,'training_min_max':[1.,1.],
+          'rows':records,'scope':'Fixed-root input intervention only. No modified controller is executed or retrained.'})
+    print('history channel confirmed',len(records),flush=True)
+
+
+def nominal_ledger():
+    cfg,p=setup()
+    outcome={(r['scene'],r['case']):r['outcome'] for r in
+             json.loads((m.OUT/'development-results.json').read_text()) if r['arm']=='nominal'}
+    result=[]
+    action_rows=[]
+    for scene in range(6):
+        for case in range(100,140):
+            def capture(env,positions,row,parts,snapshot,tape):
+                commands,tok,rew,values,clear,risk,scores,best=parts
+                command=np.array(commands)
+                goal=np.array(env.robot.get_goal_position())
+                pos=np.array(env.robot.get_position())
+                dist=np.linalg.norm(pos-goal)
+                successor=pos+command*.25
+                progress=dist-np.linalg.norm(successor-goal,axis=1)
+                valid=clear>=p.test_min_clearance
+                allowed=valid if valid.any() else np.ones(80,dtype=bool)
+                alternative=int(np.where(allowed,progress,-np.inf).argmax())
+                opposite=(progress[best]<=0 and progress[alternative]>=.02 and
+                          rew[alternative]>=rew[best]-1e-8)
+                humans=np.array([[h.px,h.py] for h in env.humans])
+                selected=[tuple(sorted(np.argsort(((humans-(pos+cmd*.25))**2).sum(1),
+                                  kind='stable')[:5].tolist())) for cmd in command]
+                record={'scene':m.SCENES[scene],'case':case,'step':int(row[0]),
+                        'partition':'discovery' if case<120 else 'mechanism-check',
+                        'outcome':outcome[(m.SCENES[scene],case)],
+                        'position':pos.tolist(),'goal_distance':float(dist),
+                        'actual_action':command[best].tolist(),'chosen_index':best,
+                        'progress_index':alternative,'chosen_progress':float(progress[best]),
+                        'max_safe_progress':float(progress[alternative]),
+                        'chosen_reward':float(rew[best]),'progress_reward':float(rew[alternative]),
+                        'chosen_value':float(values[best]),'progress_value':float(values[alternative]),
+                        'chosen_risk':float(risk[best]),'progress_risk':float(risk[alternative]),
+                        'safe_count':int(valid.sum()),'value_overrides_progress':bool(opposite),
+                        'strict_immediate_reversal':bool(opposite and rew[alternative]>=rew[best]+.01),
+                        'support_switch':len(set(selected))>1,
+                        'chosen_selected_ids':list(selected[best]),
+                        'progress_selected_ids':list(selected[alternative]),
+                        'native_radius':float(env.robot.radius),
+                        'policy_success_radius':float(p.success_radius),
+                        'terminal_radius_mismatch_candidates':int(((np.linalg.norm(successor-goal,axis=1)<env.robot.radius)&
+                                                   (np.linalg.norm(successor-goal,axis=1)>=p.success_radius)).sum())}
+                result.append(record)
+                action_rows.append(np.stack([command[:,0],command[:,1],progress,rew,values,
+                                             clear,risk,scores,allowed.astype(float)],axis=1))
+            replay(cfg,p,'nominal',scene,case,set(PROTO['nominal_discovery']['root_steps']),capture)
+            if (case-99)%10==0:
+                write('nominal-ledger.json',result)
+                print('nominal ledger',m.SCENES[scene],case,'roots',len(result),flush=True)
+    write('nominal-ledger.json',result)
+    np.savez_compressed(OUT/'nominal-action-scores.npz',scores=np.stack(action_rows))
+    print('nominal ledger complete',len(result),flush=True)
+
+
 if __name__=='__main__':
     ap=argparse.ArgumentParser()
-    ap.add_argument('command',choices=['recovery-offline','recovery-roots'])
+    ap.add_argument('command',choices=['recovery-offline','recovery-roots','history-channel','nominal-ledger'])
     args=ap.parse_args()
     if args.command=='recovery-offline':
         offline_recovery()
     elif args.command=='recovery-roots':
         recovery_roots()
+    elif args.command=='history-channel':
+        history_channel()
+    elif args.command=='nominal-ledger':
+        nominal_ledger()

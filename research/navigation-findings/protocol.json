@@ -23,7 +23,7 @@
     "root_steps": [8,16,24,32,40,48,56,64,72,80,88,96],
     "record": "full action reward/value/safety decomposition, executable commands, selected pedestrian sets, physical state, legal history, recorded and replayed action",
     "candidate_conditions": {
-      "value_overrides_progress": "selected predicted progress <=0; another same-mask action has progress >=0.02m and immediate reward >=selected+0.01",
+      "value_overrides_progress": "selected predicted progress <=0; another same-mask action has progress >=0.02m and immediate reward >=selected-1e-8; separately flag strictly better immediate reward by >=.01. Before ledger outcomes, inspected config shows progress/time/stand reward=0, so reward ties must be retained rather than incorrectly excluding all sparse-reward states.",
       "safety_blocks_progress": "best progress action is masked while selected does not progress",
       "empty_safe_set": "no candidate has native .2m endpoint clearance",
       "support_switch": "different candidate poses select different nearest-five human ID sets; a descriptive design property, not automatically a defect"
