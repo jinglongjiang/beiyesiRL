@@ -42,6 +42,8 @@ def setup():
     torch.backends.cuda.matmul.allow_tf32=False
     device='cuda' if torch.cuda.is_available() else 'cpu'
     p=m.MambaRLPolicy(cfg,device).eval()
+    p.multiagent_training=True
+    p.use_sarl_predict=True
     p.time_step=.25
     p.build_action_space(1.)
     assert len(p.action_space)==80 and p.temporal_backbone=='gru'
@@ -252,7 +254,6 @@ def contrasts(variants=None):
         tape=load_tape(scene,case)
         env,snap=frozen_root(cfg,p,root,tape)
         part=decompose(p,env)
-        assert part['flag']
         actions=[(part[k],part['commands'][part[k]]) for k in ['best','forward']]
         prefix=list(snap['history'])+[part['token']]
         predicted_humans=[p.propagate(h,m.ActionXY(h.vx,h.vy)) for h in m.state(env).human_states]
@@ -265,6 +266,7 @@ def contrasts(variants=None):
             np.savez_compressed(path,records=trace)
             outcomes.append(result)
             firsts.append(first)
+        np.testing.assert_array_equal(np.asarray(firsts[0]['next_humans']),np.asarray(firsts[1]['next_humans']))
         windows=[]
         for field in ['cv','positions','velocities','actual']:
             for first in firsts:
@@ -280,10 +282,14 @@ def contrasts(variants=None):
         np.testing.assert_allclose(values[0],part['value'][[part['best'],part['forward']]],rtol=0,atol=2e-6)
         bq=np.asarray([f['reward']+.99*(not f['done'])*v for f,v in zip(firsts,values[3])])
         record={'scene':root['scene'],'case':case,'step':root['step'],'partition':root['partition'],
+                'root_flag_after_repair':part['flag'],
                 'historical_outcome':root['outcome'],'repaired_episode_outcome':repair[(root['scene'],case)]['outcome'],
                 'selected_index':part['best'],'forward_index':part['forward'],
                 'A_values':part['value'][[part['best'],part['forward']]].tolist(),
                 'A_q':part['q'][[part['best'],part['forward']]].tolist(),
+                'A_rewards':part['reward'][[part['best'],part['forward']]].tolist(),
+                'actual_rewards':[f['reward'] for f in firsts],
+                'actual_terminal':[f['done'] for f in firsts],
                 'B_values':values[3].tolist(),'B_q':bq.tolist(),
                 'field_values':dict(zip(['cv','positions','velocities','actual'],values.tolist())),
                 'C_returns':[r['return'] for r in outcomes],'C_outcomes':outcomes,

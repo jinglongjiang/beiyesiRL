@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "actions": 80,
+  "tests": [
+    {
+      "scene": "baseline_circle",
+      "case": 100,
+      "canonical_match": true,
+      "deterministic": true,
+      "outcome": "reach_goal",
+      "steps": 57
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 115,
+      "canonical_match": true,
+      "deterministic": true,
+      "outcome": "timeout",
+      "steps": 101
+    },
+    {
+      "scene": "large_square",
+      "case": 102,
+      "canonical_match": true,
+      "deterministic": true,
+      "outcome": "reach_goal",
+      "steps": 74
+    }
+  ]
+}
