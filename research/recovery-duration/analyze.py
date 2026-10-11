@@ -14,7 +14,8 @@ SCENES = PROTO['data']['scenes']
 ARMS = ['nominal', 'ordinary', 'paired']
 METRICS = ['success', 'collision', 'timeout', 'contact', 'time', 'discounted_return',
            'task_return', 'path', 'progress', 'final_distance', 'stall_fraction',
-           'min_clearance', 'mean_decision_ms', 'interventions', 'overrides']
+           'min_clearance', 'mean_decision_ms', 'interventions', 'overrides',
+           'progress_efficiency', 'backtracking_ratio', 'low_progress_windows']
 
 
 def mean_metrics(records):
@@ -64,6 +65,15 @@ def main(prefix):
     expected = {(a, s, c) for a in ARMS for s in SCENES for c in range(lo, hi+1)}
     actual = {(r['arm'], r['scene'], r['case']) for r in records}
     assert len(records) == len(expected) and actual == expected, 'Incomplete/duplicate evaluation cohort'
+    for row in records:
+        scene = SCENES.index(row['scene'])
+        trace = np.load(OUT/f'{prefix}-traces'/row['arm']/f'{scene}-{row["case"]}.npz')['records']
+        goal = np.array([0., 6. if row['scene']=='large_circle' else 4.])
+        positions = np.vstack([trace[:, 1:3], trace[-1, 1:3]+.25*trace[-1, 3:5]])
+        distance = np.linalg.norm(positions-goal, axis=1)
+        row['progress_efficiency'] = row['progress']/max(row['path'], 1e-9)
+        row['backtracking_ratio'] = float((np.diff(distance)>.001).mean())
+        row['low_progress_windows'] = float(((distance[:-8]-distance[8:])<.2).mean()) if len(distance)>8 else 0.
     grouped = {a: {s: mean_metrics([r for r in records if r['arm']==a and (s=='all' or r['scene']==s)])
                    for s in SCENES+['all']} for a in ARMS}
     comparisons = {f'{a}-vs-{b}': paired_compare(records, a, b)
@@ -84,6 +94,11 @@ def main(prefix):
             'verdict': ('METHOD_ENTRY_FOUND' if prefix=='fresh' else 'METHOD_SIGNAL_FOUND') if signal
                        else ('CONFIRMATION_NEGATIVE' if prefix=='fresh' else 'VERSION_NEGATIVE'),
             'scientific_scope': 'case-paired outcome of frozen models; not training-seed inference'}
+    data['descriptive_motion_definitions'] = {
+        'progress_efficiency': 'net goal-distance reduction / executed path length',
+        'backtracking_ratio': 'fraction of steps increasing goal distance by more than 1mm',
+        'low_progress_windows': 'fraction of complete 8-step (2s) windows with <20cm net goal progress; descriptive, not a pathology label or acceptance criterion',
+        'stall_fraction': 'fraction of executed steps with speed <0.1m/s'}
     activation = {}
     for arm in ARMS:
         counts = np.zeros(10, dtype=np.int64)
