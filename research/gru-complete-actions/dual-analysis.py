@@ -42,7 +42,9 @@ def summarize():
         chosen=original[(root['scene'],root['case'])]['selected_index']
         forward=original[(root['scene'],root['case'])]['forward_index']
         selected=load_pair(root,chosen)
-        predicted_selector=int(indices[(qa-.001*(indices==0)).argmax()])
+        legal_scores=qa.copy()
+        legal_scores[indices==0]-=.001
+        predicted_selector=int(indices[legal_scores.argmax()])
         actual_next_selector=int(indices[(qt-.001*(indices==0)).argmax()])
         assert predicted_selector==chosen
         actual_next_branch=load_pair(root,actual_next_selector)[0]['result']
@@ -62,7 +64,6 @@ def summarize():
             category='NO_REALIZED_RETURN_IMPROVEMENT_FOUND'
         v=np.sort(x['values'])
         gap=float(v[-1]-v[-2])
-        legal_scores=qa-.001*(indices==0)
         legal_order=np.sort(legal_scores)
         decision_gap=float(legal_order[-1]-legal_order[-2])/.99
         implied=abs(slope)*float(np.ptp(progress))/.99

@@ -19,5 +19,15 @@
     "fix": "Preserve all v1 files, stop its process and create separate v2-50s outputs",
     "scientific_observation": "Completed v1 branches retain their 25s meaning; incomplete files are not observations",
     "action": "No v1 complete return is reused as a v2 50s return"
+  },
+  {
+    "id": "host-bytecode-cache-permission",
+    "stage": "independent static syntax check",
+    "exit_code": 1,
+    "error": "PermissionError writing host Python3.8 bytecode into a container-owned __pycache__",
+    "cause": "The container had created that cache directory as root",
+    "fix": "Compile source in memory rather than writing bytecode",
+    "scientific_observation": false,
+    "action": "No scientific worker failed or read this host cache; preserve ongoing valid continuations"
   }
 ]
