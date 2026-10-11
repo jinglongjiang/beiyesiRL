@@ -1,0 +1,52 @@
+[
+  {
+    "scene": "baseline_circle",
+    "case": 115,
+    "step": 64,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 26.595099736005068
+  },
+  {
+    "scene": "baseline_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 67.11403950699605
+  },
+  {
+    "scene": "dense_square",
+    "case": 100,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 64.08231265598442
+  },
+  {
+    "scene": "large_circle",
+    "case": 102,
+    "step": 88,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 10.335074732080102
+  },
+  {
+    "scene": "large_square",
+    "case": 101,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 75.63573856605217
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "scene": "baseline_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 0,
+    "seconds": 0.3963955430081114
+  },
+  {
+    "scene": "dense_square",
+    "case": 100,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 0,
+    "seconds": 0.3533458170713857
+  },
+  {
+    "scene": "large_circle",
+    "case": 102,
+    "step": 88,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 0,
+    "seconds": 0.28392265702132136
+  },
+  {
+    "scene": "large_circle",
+    "case": 132,
+    "step": 8,
+    "group": "difficult",
+    "partition": "held-out",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 245.39124085998628
+  },
+  {
+    "scene": "large_square",
+    "case": 119,
+    "step": 24,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 334.1861841119826
+  },
+  {
+    "scene": "dense_square",
+    "case": 111,
+    "step": 8,
+    "group": "rescues",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 318.19432830100413
+  },
+  {
+    "scene": "large_circle",
+    "case": 139,
+    "step": 8,
+    "group": "rescues",
+    "partition": "held-out",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 140.82542785292026
+  },
+  {
+    "scene": "large_square",
+    "case": 118,
+    "step": 40,
+    "group": "damages",
+    "partition": "fit",
+    "actions": 67,
+    "branches": 134,
+    "new_branches": 134,
+    "seconds": 103.73022865399253
+  },
+  {
+    "scene": "large_square",
+    "case": 131,
+    "step": 8,
+    "group": "damages",
+    "partition": "held-out",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 267.88006072700955
+  },
+  {
+    "scene": "baseline_square",
+    "case": 101,
+    "step": 16,
+    "group": "successful_controls",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 77.71053807798307
+  },
+  {
+    "scene": "dense_circle",
+    "case": 104,
+    "step": 8,
+    "group": "successful_controls",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 79.87046560703311
+  },
+  {
+    "scene": "large_circle",
+    "case": 100,
+    "step": 16,
+    "group": "successful_controls",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 114.00214675394818
+  },
+  {
+    "scene": "large_square",
+    "case": 103,
+    "step": 8,
+    "group": "successful_controls",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 103.86705328105018
+  }
+]

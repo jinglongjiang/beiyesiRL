@@ -1,0 +1,40 @@
+{
+  "root": {
+    "scene": "baseline_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit"
+  },
+  "index": 78,
+  "policy": "B_raw_greedy",
+  "legal_first_action": true,
+  "reused": false,
+  "first_command": [
+    0.3554694490068743,
+    -0.3290887106873318
+  ],
+  "Q_pred": 0.6607229113578796,
+  "Q_actual_next": 0.6607148498296738,
+  "progress": -0.09425332743586612,
+  "result": {
+    "scene": "baseline_square",
+    "case": 116,
+    "variant": "deadline50",
+    "draw": 0,
+    "outcome": "reach_goal",
+    "success": 1,
+    "collision": 0,
+    "timeout": 0,
+    "contact": 0,
+    "min_clearance": 0.43019903570189066,
+    "duration": 11.0,
+    "steps": 44,
+    "return": 0.6491026283684022,
+    "path": 10.45395352597015,
+    "final_distance": 0.28831111377973134,
+    "decision_ms_mean": 8.589941820404917,
+    "flagged_roots": 1,
+    "continuation_policy": "B_raw_greedy"
+  }
+}

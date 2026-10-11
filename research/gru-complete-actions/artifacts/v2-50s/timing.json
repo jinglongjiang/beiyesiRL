@@ -1,0 +1,57 @@
+[
+  {
+    "scene": "baseline_circle",
+    "case": 115,
+    "step": 64,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 197.64891483692918
+  },
+  {
+    "scene": "baseline_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 171.27626342093572
+  },
+  {
+    "scene": "dense_square",
+    "case": 100,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 260.1841260819929
+  },
+  {
+    "scene": "large_circle",
+    "case": 102,
+    "step": 88,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 169.77528341906145
+  },
+  {
+    "scene": "large_square",
+    "case": 101,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "actions": 80,
+    "branches": 160,
+    "new_branches": 160,
+    "seconds": 326.19356991001405
+  }
+]

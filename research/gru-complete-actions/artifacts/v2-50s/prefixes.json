@@ -1,0 +1,1570 @@
+[
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 120,
+      "step": 8,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.8438265658904944
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.5612630547649122
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.18385366357261468,
+    "return": -0.0792103646649904,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 120,
+      "step": 8,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.8438265658904944
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.5612630547649122
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.3314065438061243
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.2642110838922725
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.18341742365565716,
+    "return": -0.07486818963702041,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 120,
+      "step": 8,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.8438265658904944
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.5612630547649122
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.3314065438061243
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.2642110838922725
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.39829575893942365
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.49622052548538226
+      },
+      {
+        "step": 14,
+        "index": 24,
+        "predicted_clearance": 0.4268485579050912
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.3575060437184275
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.20278946599558578,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 120,
+      "step": 8,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 16,
+    "forced_steps": 16,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.8438265658904944
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.5612630547649122
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.3314065438061243
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.2642110838922725
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.39829575893942365
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.49622052548538226
+      },
+      {
+        "step": 14,
+        "index": 24,
+        "predicted_clearance": 0.4268485579050912
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.3575060437184275
+      },
+      {
+        "step": 16,
+        "index": 24,
+        "predicted_clearance": 0.28821159483167463
+      },
+      {
+        "step": 17,
+        "index": 24,
+        "predicted_clearance": 0.21899041090192278
+      },
+      {
+        "step": 18,
+        "index": 19,
+        "predicted_clearance": 0.2163034980802248
+      },
+      {
+        "step": 19,
+        "index": 19,
+        "predicted_clearance": 0.23356811715553066
+      },
+      {
+        "step": 20,
+        "index": 19,
+        "predicted_clearance": 0.2568534238141345
+      },
+      {
+        "step": 21,
+        "index": 24,
+        "predicted_clearance": 0.21505248001157767
+      },
+      {
+        "step": 22,
+        "index": 19,
+        "predicted_clearance": 0.22050189214818855
+      },
+      {
+        "step": 23,
+        "index": 19,
+        "predicted_clearance": 0.24013335326361102
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.21497548060248373,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 129,
+      "step": 48,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 48,
+        "index": 29,
+        "predicted_clearance": 0.5453489404438898
+      },
+      {
+        "step": 49,
+        "index": 29,
+        "predicted_clearance": 0.32123363759181683
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.259554811613963,
+    "return": -0.10852244833640379,
+    "duration": 38.25,
+    "steps": 153,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 129,
+      "step": 48,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 48,
+        "index": 29,
+        "predicted_clearance": 0.5453489404438898
+      },
+      {
+        "step": 49,
+        "index": 29,
+        "predicted_clearance": 0.32123363759181683
+      },
+      {
+        "step": 50,
+        "index": 39,
+        "predicted_clearance": 0.20227404112508168
+      },
+      {
+        "step": 51,
+        "index": 44,
+        "predicted_clearance": 0.2396817388640658
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.20225995061971314,
+    "return": -0.10852244833640379,
+    "duration": 38.25,
+    "steps": 153,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 129,
+      "step": 48,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 48,
+        "index": 29,
+        "predicted_clearance": 0.5453489404438898
+      },
+      {
+        "step": 49,
+        "index": 29,
+        "predicted_clearance": 0.32123363759181683
+      },
+      {
+        "step": 50,
+        "index": 39,
+        "predicted_clearance": 0.20227404112508168
+      },
+      {
+        "step": 51,
+        "index": 44,
+        "predicted_clearance": 0.2396817388640658
+      },
+      {
+        "step": 52,
+        "index": 34,
+        "predicted_clearance": 0.23954993531510255
+      },
+      {
+        "step": 53,
+        "index": 29,
+        "predicted_clearance": 0.21061057056819782
+      },
+      {
+        "step": 54,
+        "index": 29,
+        "predicted_clearance": 0.22545648304313765
+      },
+      {
+        "step": 55,
+        "index": 29,
+        "predicted_clearance": 0.2599074404832727
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.20225995061971314,
+    "return": 0.8953382542587164,
+    "duration": 3.0,
+    "steps": 12,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "baseline_square",
+      "case": 129,
+      "step": 48,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 16,
+    "forced_steps": 12,
+    "legality": [
+      {
+        "step": 48,
+        "index": 29,
+        "predicted_clearance": 0.5453489404438898
+      },
+      {
+        "step": 49,
+        "index": 29,
+        "predicted_clearance": 0.32123363759181683
+      },
+      {
+        "step": 50,
+        "index": 39,
+        "predicted_clearance": 0.20227404112508168
+      },
+      {
+        "step": 51,
+        "index": 44,
+        "predicted_clearance": 0.2396817388640658
+      },
+      {
+        "step": 52,
+        "index": 34,
+        "predicted_clearance": 0.23954993531510255
+      },
+      {
+        "step": 53,
+        "index": 29,
+        "predicted_clearance": 0.21061057056819782
+      },
+      {
+        "step": 54,
+        "index": 29,
+        "predicted_clearance": 0.22545648304313765
+      },
+      {
+        "step": 55,
+        "index": 29,
+        "predicted_clearance": 0.2599074404832727
+      },
+      {
+        "step": 56,
+        "index": 29,
+        "predicted_clearance": 0.29202119601896853
+      },
+      {
+        "step": 57,
+        "index": 24,
+        "predicted_clearance": 0.44145973253059495
+      },
+      {
+        "step": 58,
+        "index": 29,
+        "predicted_clearance": 0.5905837100482734
+      },
+      {
+        "step": 59,
+        "index": 24,
+        "predicted_clearance": 0.7989234990160454
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.20225995061971314,
+    "return": 0.8953382542587164,
+    "duration": 3.0,
+    "steps": 12,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "dense_square",
+      "case": 133,
+      "step": 64,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 64,
+        "index": 29,
+        "predicted_clearance": 0.80182729779365
+      },
+      {
+        "step": 65,
+        "index": 29,
+        "predicted_clearance": 0.6070431332162796
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.6070070750096722,
+    "return": -0.12745488034815464,
+    "duration": 34.25,
+    "steps": 137,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "dense_square",
+      "case": 133,
+      "step": 64,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 64,
+        "index": 29,
+        "predicted_clearance": 0.80182729779365
+      },
+      {
+        "step": 65,
+        "index": 29,
+        "predicted_clearance": 0.6070431332162796
+      },
+      {
+        "step": 66,
+        "index": 29,
+        "predicted_clearance": 0.39002456068437535
+      },
+      {
+        "step": 67,
+        "index": 34,
+        "predicted_clearance": 0.22305223175648586
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.2226523898716959,
+    "return": -0.12745488034815464,
+    "duration": 34.25,
+    "steps": 137,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "dense_square",
+      "case": 133,
+      "step": 64,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 64,
+        "index": 29,
+        "predicted_clearance": 0.80182729779365
+      },
+      {
+        "step": 65,
+        "index": 29,
+        "predicted_clearance": 0.6070431332162796
+      },
+      {
+        "step": 66,
+        "index": 29,
+        "predicted_clearance": 0.39002456068437535
+      },
+      {
+        "step": 67,
+        "index": 34,
+        "predicted_clearance": 0.22305223175648586
+      },
+      {
+        "step": 68,
+        "index": 44,
+        "predicted_clearance": 0.24822863323742111
+      },
+      {
+        "step": 69,
+        "index": 34,
+        "predicted_clearance": 0.2470124110678456
+      },
+      {
+        "step": 70,
+        "index": 38,
+        "predicted_clearance": 0.20427353956348676
+      },
+      {
+        "step": 71,
+        "index": 44,
+        "predicted_clearance": 0.2438661966494376
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.20428300844713676,
+    "return": 0.8514577710948755,
+    "duration": 4.25,
+    "steps": 17,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "dense_square",
+      "case": 133,
+      "step": 64,
+      "group": "difficult",
+      "partition": "held-out"
+    },
+    "prefix": 16,
+    "forced_steps": 16,
+    "legality": [
+      {
+        "step": 64,
+        "index": 29,
+        "predicted_clearance": 0.80182729779365
+      },
+      {
+        "step": 65,
+        "index": 29,
+        "predicted_clearance": 0.6070431332162796
+      },
+      {
+        "step": 66,
+        "index": 29,
+        "predicted_clearance": 0.39002456068437535
+      },
+      {
+        "step": 67,
+        "index": 34,
+        "predicted_clearance": 0.22305223175648586
+      },
+      {
+        "step": 68,
+        "index": 44,
+        "predicted_clearance": 0.24822863323742111
+      },
+      {
+        "step": 69,
+        "index": 34,
+        "predicted_clearance": 0.2470124110678456
+      },
+      {
+        "step": 70,
+        "index": 38,
+        "predicted_clearance": 0.20427353956348676
+      },
+      {
+        "step": 71,
+        "index": 44,
+        "predicted_clearance": 0.2438661966494376
+      },
+      {
+        "step": 72,
+        "index": 29,
+        "predicted_clearance": 0.20044896441530208
+      },
+      {
+        "step": 73,
+        "index": 34,
+        "predicted_clearance": 0.22322173206665435
+      },
+      {
+        "step": 74,
+        "index": 29,
+        "predicted_clearance": 0.25687397254559047
+      },
+      {
+        "step": 75,
+        "index": 24,
+        "predicted_clearance": 0.2740382441631278
+      },
+      {
+        "step": 76,
+        "index": 24,
+        "predicted_clearance": 0.33138585555169225
+      },
+      {
+        "step": 77,
+        "index": 19,
+        "predicted_clearance": 0.3705850863817142
+      },
+      {
+        "step": 78,
+        "index": 24,
+        "predicted_clearance": 0.5003671715580471
+      },
+      {
+        "step": 79,
+        "index": 19,
+        "predicted_clearance": 0.42538626995105383
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.2013631744195994,
+    "return": 0.8514577710948755,
+    "duration": 4.25,
+    "steps": 17,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 102,
+      "step": 88,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 88,
+        "index": 59,
+        "predicted_clearance": 1.6647326945550196
+      },
+      {
+        "step": 89,
+        "index": 59,
+        "predicted_clearance": 1.4670770097514954
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.5249593042333164,
+    "return": 0.7323033696543975,
+    "duration": 8.0,
+    "steps": 32,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 102,
+      "step": 88,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 88,
+        "index": 59,
+        "predicted_clearance": 1.6647326945550196
+      },
+      {
+        "step": 89,
+        "index": 59,
+        "predicted_clearance": 1.4670770097514954
+      },
+      {
+        "step": 90,
+        "index": 59,
+        "predicted_clearance": 1.2420669625240988
+      },
+      {
+        "step": 91,
+        "index": 59,
+        "predicted_clearance": 1.0118535918570044
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.49153579159018623,
+    "return": 0.7397003733882802,
+    "duration": 7.75,
+    "steps": 31,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 102,
+      "step": 88,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 8,
+    "forced_steps": 7,
+    "legality": [
+      {
+        "step": 88,
+        "index": 59,
+        "predicted_clearance": 1.6647326945550196
+      },
+      {
+        "step": 89,
+        "index": 59,
+        "predicted_clearance": 1.4670770097514954
+      },
+      {
+        "step": 90,
+        "index": 59,
+        "predicted_clearance": 1.2420669625240988
+      },
+      {
+        "step": 91,
+        "index": 59,
+        "predicted_clearance": 1.0118535918570044
+      },
+      {
+        "step": 92,
+        "index": 54,
+        "predicted_clearance": 0.7687531172404682
+      },
+      {
+        "step": 93,
+        "index": 59,
+        "predicted_clearance": 0.5378844395298494
+      },
+      {
+        "step": 94,
+        "index": 54,
+        "predicted_clearance": 0.29622921429049104
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.296229213570946,
+    "return": 0.941480149401,
+    "duration": 1.75,
+    "steps": 7,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 102,
+      "step": 88,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 16,
+    "forced_steps": 7,
+    "legality": [
+      {
+        "step": 88,
+        "index": 59,
+        "predicted_clearance": 1.6647326945550196
+      },
+      {
+        "step": 89,
+        "index": 59,
+        "predicted_clearance": 1.4670770097514954
+      },
+      {
+        "step": 90,
+        "index": 59,
+        "predicted_clearance": 1.2420669625240988
+      },
+      {
+        "step": 91,
+        "index": 59,
+        "predicted_clearance": 1.0118535918570044
+      },
+      {
+        "step": 92,
+        "index": 54,
+        "predicted_clearance": 0.7687531172404682
+      },
+      {
+        "step": 93,
+        "index": 59,
+        "predicted_clearance": 0.5378844395298494
+      },
+      {
+        "step": 94,
+        "index": 54,
+        "predicted_clearance": 0.29622921429049104
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.296229213570946,
+    "return": 0.941480149401,
+    "duration": 1.75,
+    "steps": 7,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 108,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.9412141622793901
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.9253567796298285
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.4988594958100284,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 108,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.9412141622793901
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.9253567796298285
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.8716013318598594
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.8034079473505036
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.3340154300148309,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 108,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.9412141622793901
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.9253567796298285
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.8716013318598594
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.8034079473505036
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.7338082649599846
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.6533533423208888
+      },
+      {
+        "step": 14,
+        "index": 24,
+        "predicted_clearance": 0.573489216014615
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.49771431739317734
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.5129763231588659,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_circle",
+      "case": 108,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 16,
+    "forced_steps": 16,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 0.9412141622793901
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.9253567796298285
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.8716013318598594
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.8034079473505036
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.7338082649599846
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.6533533423208888
+      },
+      {
+        "step": 14,
+        "index": 24,
+        "predicted_clearance": 0.573489216014615
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.49771431739317734
+      },
+      {
+        "step": 16,
+        "index": 24,
+        "predicted_clearance": 0.45282210730969924
+      },
+      {
+        "step": 17,
+        "index": 24,
+        "predicted_clearance": 0.4231788659228238
+      },
+      {
+        "step": 18,
+        "index": 24,
+        "predicted_clearance": 0.37809628884922125
+      },
+      {
+        "step": 19,
+        "index": 24,
+        "predicted_clearance": 0.32787112396047596
+      },
+      {
+        "step": 20,
+        "index": 24,
+        "predicted_clearance": 0.2753534532252307
+      },
+      {
+        "step": 21,
+        "index": 24,
+        "predicted_clearance": 0.2174455191715184
+      },
+      {
+        "step": 22,
+        "index": 19,
+        "predicted_clearance": 0.20079748485399845
+      },
+      {
+        "step": 23,
+        "index": 19,
+        "predicted_clearance": 0.20589629459863562
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.1936706871268704,
+    "return": -0.07333045289738385,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 101,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 1.1560213257932266
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.8049183183770916
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.43058156570008166,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 101,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 1.1560213257932266
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.8049183183770916
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.48247130607130867
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.25158455223659765
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.2504356750588471,
+    "return": -0.07259845310789131,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 101,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 1.1560213257932266
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.8049183183770916
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.48247130607130867
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.25158455223659765
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.20438707741599554
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.3698697632459618
+      },
+      {
+        "step": 14,
+        "index": 29,
+        "predicted_clearance": 0.6003634770316855
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.6989493401640063
+      }
+    ],
+    "success": 1,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.19459490976587002,
+    "return": 0.7316542605237647,
+    "duration": 8.0,
+    "steps": 32,
+    "outcome": "reach_goal"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 101,
+      "step": 8,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 16,
+    "forced_steps": 16,
+    "legality": [
+      {
+        "step": 8,
+        "index": 24,
+        "predicted_clearance": 1.1560213257932266
+      },
+      {
+        "step": 9,
+        "index": 24,
+        "predicted_clearance": 0.8049183183770916
+      },
+      {
+        "step": 10,
+        "index": 24,
+        "predicted_clearance": 0.48247130607130867
+      },
+      {
+        "step": 11,
+        "index": 24,
+        "predicted_clearance": 0.25158455223659765
+      },
+      {
+        "step": 12,
+        "index": 24,
+        "predicted_clearance": 0.20438707741599554
+      },
+      {
+        "step": 13,
+        "index": 24,
+        "predicted_clearance": 0.3698697632459618
+      },
+      {
+        "step": 14,
+        "index": 29,
+        "predicted_clearance": 0.6003634770316855
+      },
+      {
+        "step": 15,
+        "index": 24,
+        "predicted_clearance": 0.6989493401640063
+      },
+      {
+        "step": 16,
+        "index": 29,
+        "predicted_clearance": 0.5741346096835149
+      },
+      {
+        "step": 17,
+        "index": 24,
+        "predicted_clearance": 0.4011451276925509
+      },
+      {
+        "step": 18,
+        "index": 29,
+        "predicted_clearance": 0.28538953487172286
+      },
+      {
+        "step": 19,
+        "index": 34,
+        "predicted_clearance": 0.24357035480297134
+      },
+      {
+        "step": 20,
+        "index": 34,
+        "predicted_clearance": 0.2232453035656588
+      },
+      {
+        "step": 21,
+        "index": 34,
+        "predicted_clearance": 0.20943163812871451
+      },
+      {
+        "step": 22,
+        "index": 39,
+        "predicted_clearance": 0.22867904290028168
+      },
+      {
+        "step": 23,
+        "index": 34,
+        "predicted_clearance": 0.2264723456781053
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.19276465854195524,
+    "return": -0.07394407797690744,
+    "duration": 48.25,
+    "steps": 193,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 119,
+      "step": 24,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 2,
+    "forced_steps": 2,
+    "legality": [
+      {
+        "step": 24,
+        "index": 24,
+        "predicted_clearance": 1.0112588659535842
+      },
+      {
+        "step": 25,
+        "index": 24,
+        "predicted_clearance": 0.7033545514648234
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.7346638645800091,
+    "return": -0.08526371544479318,
+    "duration": 44.25,
+    "steps": 177,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 119,
+      "step": 24,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 4,
+    "forced_steps": 4,
+    "legality": [
+      {
+        "step": 24,
+        "index": 24,
+        "predicted_clearance": 1.0112588659535842
+      },
+      {
+        "step": 25,
+        "index": 24,
+        "predicted_clearance": 0.7033545514648234
+      },
+      {
+        "step": 26,
+        "index": 24,
+        "predicted_clearance": 0.41455741889891123
+      },
+      {
+        "step": 27,
+        "index": 14,
+        "predicted_clearance": 0.20360236599084197
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.21692648925533664,
+    "return": -0.08526371544479318,
+    "duration": 44.25,
+    "steps": 177,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 119,
+      "step": 24,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 8,
+    "forced_steps": 8,
+    "legality": [
+      {
+        "step": 24,
+        "index": 24,
+        "predicted_clearance": 1.0112588659535842
+      },
+      {
+        "step": 25,
+        "index": 24,
+        "predicted_clearance": 0.7033545514648234
+      },
+      {
+        "step": 26,
+        "index": 24,
+        "predicted_clearance": 0.41455741889891123
+      },
+      {
+        "step": 27,
+        "index": 14,
+        "predicted_clearance": 0.20360236599084197
+      },
+      {
+        "step": 28,
+        "index": 4,
+        "predicted_clearance": 0.2091208128353093
+      },
+      {
+        "step": 29,
+        "index": 14,
+        "predicted_clearance": 0.21894803926452738
+      },
+      {
+        "step": 30,
+        "index": 19,
+        "predicted_clearance": 0.24130363555684103
+      },
+      {
+        "step": 31,
+        "index": 24,
+        "predicted_clearance": 0.2640349924692556
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.18991111223506507,
+    "return": -0.08748570057626515,
+    "duration": 44.25,
+    "steps": 177,
+    "outcome": "timeout"
+  },
+  {
+    "root": {
+      "scene": "large_square",
+      "case": 119,
+      "step": 24,
+      "group": "difficult",
+      "partition": "fit"
+    },
+    "prefix": 16,
+    "forced_steps": 16,
+    "legality": [
+      {
+        "step": 24,
+        "index": 24,
+        "predicted_clearance": 1.0112588659535842
+      },
+      {
+        "step": 25,
+        "index": 24,
+        "predicted_clearance": 0.7033545514648234
+      },
+      {
+        "step": 26,
+        "index": 24,
+        "predicted_clearance": 0.41455741889891123
+      },
+      {
+        "step": 27,
+        "index": 14,
+        "predicted_clearance": 0.20360236599084197
+      },
+      {
+        "step": 28,
+        "index": 4,
+        "predicted_clearance": 0.2091208128353093
+      },
+      {
+        "step": 29,
+        "index": 14,
+        "predicted_clearance": 0.21894803926452738
+      },
+      {
+        "step": 30,
+        "index": 19,
+        "predicted_clearance": 0.24130363555684103
+      },
+      {
+        "step": 31,
+        "index": 24,
+        "predicted_clearance": 0.2640349924692556
+      },
+      {
+        "step": 32,
+        "index": 42,
+        "predicted_clearance": 0.20960709328294774
+      },
+      {
+        "step": 33,
+        "index": 64,
+        "predicted_clearance": 0.22624058833341648
+      },
+      {
+        "step": 34,
+        "index": 28,
+        "predicted_clearance": 0.2116229352174897
+      },
+      {
+        "step": 35,
+        "index": 21,
+        "predicted_clearance": 0.21221305459183576
+      },
+      {
+        "step": 36,
+        "index": 13,
+        "predicted_clearance": 0.20543727695400166
+      },
+      {
+        "step": 37,
+        "index": 19,
+        "predicted_clearance": 0.2063218061638546
+      },
+      {
+        "step": 38,
+        "index": 24,
+        "predicted_clearance": 0.2294455247533554
+      },
+      {
+        "step": 39,
+        "index": 53,
+        "predicted_clearance": 0.2041406425057471
+      }
+    ],
+    "success": 0,
+    "collision": 0,
+    "contact": 0,
+    "min_clearance": 0.17924572159029795,
+    "return": -0.08843484643132887,
+    "duration": 44.25,
+    "steps": 177,
+    "outcome": "timeout"
+  }
+]

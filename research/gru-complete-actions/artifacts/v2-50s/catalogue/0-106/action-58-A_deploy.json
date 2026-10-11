@@ -1,0 +1,40 @@
+{
+  "root": {
+    "scene": "baseline_circle",
+    "case": 106,
+    "step": 16,
+    "group": "successful_controls",
+    "partition": "fit"
+  },
+  "index": 58,
+  "policy": "A_deploy",
+  "legal_first_action": true,
+  "reused": false,
+  "first_command": [
+    -0.4894370606973396,
+    -0.4530991751982544
+  ],
+  "Q_pred": 0.7300412058830261,
+  "Q_actual_next": 0.7300413966178894,
+  "progress": -0.15443519263967964,
+  "result": {
+    "scene": "baseline_circle",
+    "case": 106,
+    "variant": "deadline50",
+    "draw": 0,
+    "outcome": "reach_goal",
+    "success": 1,
+    "collision": 0,
+    "timeout": 0,
+    "contact": 0,
+    "min_clearance": 0.8833119963018351,
+    "duration": 12.0,
+    "steps": 48,
+    "return": 0.6235253948912,
+    "path": 11.66911648702655,
+    "final_distance": 0.28883025522579525,
+    "decision_ms_mean": 10.55295539360183,
+    "flagged_roots": 1,
+    "continuation_policy": "A_deploy"
+  }
+}

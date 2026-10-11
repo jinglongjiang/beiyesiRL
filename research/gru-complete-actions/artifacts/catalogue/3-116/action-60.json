@@ -1,0 +1,38 @@
+{
+  "root": {
+    "scene": "dense_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit"
+  },
+  "index": 60,
+  "legal": true,
+  "reused": false,
+  "executed_first": [
+    -0.10395709619218468,
+    -0.36817050519218525
+  ],
+  "A_q": 0.6937161087989807,
+  "B_q": 0.6943862771987915,
+  "progress": -0.0905896251035827,
+  "result": {
+    "scene": "dense_square",
+    "case": 116,
+    "variant": "deploy",
+    "draw": 0,
+    "outcome": "timeout",
+    "success": 0,
+    "collision": 0,
+    "timeout": 1,
+    "contact": 0,
+    "min_clearance": 0.1832053224690472,
+    "duration": 23.25,
+    "steps": 93,
+    "return": -0.20003230170165706,
+    "path": 22.173510181191766,
+    "final_distance": 9.49447092118921,
+    "decision_ms_mean": 9.539493556154431,
+    "flagged_roots": 6
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "root": {
+    "scene": "dense_circle",
+    "case": 104,
+    "step": 8,
+    "group": "successful_controls",
+    "partition": "fit"
+  },
+  "index": 61,
+  "policy": "B_raw_greedy",
+  "legal_first_action": true,
+  "reused": false,
+  "first_command": [
+    -0.29522887779149165,
+    -0.21224327443481458
+  ],
+  "Q_pred": 0.6777693629264832,
+  "Q_actual_next": 0.6774541729688645,
+  "progress": -0.05867148642672593,
+  "result": {
+    "scene": "dense_circle",
+    "case": 104,
+    "variant": "deadline50",
+    "draw": 0,
+    "outcome": "reach_goal",
+    "success": 1,
+    "collision": 0,
+    "timeout": 0,
+    "contact": 0,
+    "min_clearance": 0.1801160838501249,
+    "duration": 12.5,
+    "steps": 50,
+    "return": 0.6084956509285212,
+    "path": 12.090767501601078,
+    "final_distance": 0.27929806759715237,
+    "decision_ms_mean": 8.969686641357839,
+    "flagged_roots": 1,
+    "continuation_policy": "B_raw_greedy"
+  }
+}

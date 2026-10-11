@@ -1,0 +1,51 @@
+{
+  "started_unix": 1791728768.3837445,
+  "workers": [
+    {
+      "shard": 0,
+      "pid": 2907,
+      "command": [
+        "/root/miniconda3/envs/mamba/bin/python",
+        "/workspace/recovery-duration-20261011/research/gru-complete-actions/dual.py",
+        "catalogue",
+        "--shard",
+        "0",
+        "--shards",
+        "3"
+      ]
+    },
+    {
+      "shard": 1,
+      "pid": 2908,
+      "command": [
+        "/root/miniconda3/envs/mamba/bin/python",
+        "/workspace/recovery-duration-20261011/research/gru-complete-actions/dual.py",
+        "catalogue",
+        "--shard",
+        "1",
+        "--shards",
+        "3"
+      ]
+    },
+    {
+      "shard": 2,
+      "pid": 2909,
+      "command": [
+        "/root/miniconda3/envs/mamba/bin/python",
+        "/workspace/recovery-duration-20261011/research/gru-complete-actions/dual.py",
+        "catalogue",
+        "--shard",
+        "2",
+        "--shards",
+        "3"
+      ]
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds": 2242.0731008052826,
+  "exit_codes": [
+    0,
+    0,
+    0
+  ]
+}

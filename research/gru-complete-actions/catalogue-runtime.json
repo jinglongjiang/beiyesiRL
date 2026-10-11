@@ -1,0 +1,62 @@
+[
+  {
+    "scene": "baseline_circle",
+    "case": 115,
+    "step": 64,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 0,
+    "seconds": 0.37256062298547477
+  },
+  {
+    "scene": "baseline_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 0,
+    "seconds": 0.20504844200331718
+  },
+  {
+    "scene": "baseline_square",
+    "case": 120,
+    "step": 8,
+    "group": "difficult",
+    "partition": "held-out",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 67.57256718399003
+  },
+  {
+    "scene": "baseline_square",
+    "case": 129,
+    "step": 48,
+    "group": "difficult",
+    "partition": "held-out",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 39.30896003707312
+  },
+  {
+    "scene": "dense_square",
+    "case": 100,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 0,
+    "seconds": 0.2828315480146557
+  },
+  {
+    "scene": "dense_square",
+    "case": 116,
+    "step": 8,
+    "group": "difficult",
+    "partition": "fit",
+    "requested_actions": 80,
+    "newly_completed": 80,
+    "seconds": 67.85584635194391
+  }
+]

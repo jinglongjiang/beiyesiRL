@@ -1,0 +1,40 @@
+{
+  "root": {
+    "scene": "large_square",
+    "case": 118,
+    "step": 40,
+    "group": "damages",
+    "partition": "fit"
+  },
+  "index": 56,
+  "policy": "A_deploy",
+  "legal_first_action": true,
+  "reused": false,
+  "first_command": [
+    -0.04894543782239337,
+    -0.3790443948863247
+  ],
+  "Q_pred": 0.8810532093048096,
+  "Q_actual_next": 0.8775412952899933,
+  "progress": -0.09397305378609833,
+  "result": {
+    "scene": "large_square",
+    "case": 118,
+    "variant": "deadline50",
+    "draw": 0,
+    "outcome": "timeout",
+    "success": 0,
+    "collision": 0,
+    "timeout": 1,
+    "contact": 0,
+    "min_clearance": 0.19723251982601775,
+    "duration": 40.25,
+    "steps": 161,
+    "return": -0.10034518908092192,
+    "path": 23.431552449316065,
+    "final_distance": 5.89691999782196,
+    "decision_ms_mean": 11.276335582738708,
+    "flagged_roots": 7,
+    "continuation_policy": "A_deploy"
+  }
+}
