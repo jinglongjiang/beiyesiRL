@@ -1,0 +1,8 @@
+[
+  {
+    "id": "preflight-1",
+    "scientific_observation": false,
+    "failure": "Shared-prefix versus repeated-prefix GRU CUDA scoring differed by 0.00018793 with default cuDNN TF32; strict parity failed before training.",
+    "action": "Disable cuDNN and matmul TF32 for all arms and rerun parity. Do not use failed preflight as navigation evidence."
+  }
+]

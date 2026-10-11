@@ -409,9 +409,9 @@ def _batch_joint34_to_tokens_vectorized(state_batch):
     robot_vx = state_batch[:, 2]
     robot_vy = state_batch[:, 3]
     robot_radius = state_batch[:, 4]
-    robot_v_pref = state_batch[:, 5]
-    robot_gx = state_batch[:, 6]
-    robot_gy = state_batch[:, 7]
+    robot_v_pref = state_batch[:, 7]
+    robot_gx = state_batch[:, 5]
+    robot_gy = state_batch[:, 6]
     robot_theta = state_batch[:, 8]
 
     # Clamp v_pref to valid range [0, 3.0]
@@ -516,8 +516,8 @@ def _batch_joint34_to_tokens_vectorized(state_batch):
 def _single_joint34_to_tokens(state_34d):
     """单个34D状态 → 6×13 tokens的具体实现"""
     # 解析机器人状态（前11维）
-    robot_state = state_34d[:11]
-    px, py, vx, vy, radius, v_pref, gx, gy, theta = robot_state[:9]
+    robot_state = state_34d[:9]
+    px, py, vx, vy, radius, gx, gy, v_pref, theta = robot_state
 
     # 防呆检查（允许0值padding，但不允许异常值）
     if not (0.0 <= v_pref <= 3.0):
@@ -791,7 +791,7 @@ def simulate_next_frames(states_34d, actions, dt):
 
             # 解析状态
             px, py, vx, vy = current_state[:4]
-            v_pref = current_state[5]
+            v_pref = current_state[7]
 
             # 应用动作（限速）
             new_vx, new_vy = action[0], action[1]

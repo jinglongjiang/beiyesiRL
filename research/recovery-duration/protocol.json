@@ -1,0 +1,20 @@
+{
+  "version": "recovery-duration-v1",
+  "parent_commit": "6af7275",
+  "branch": "research/recovery-duration-20261011",
+  "question": "Does paired intervention and duration regret learning improve actual navigation beyond ordinary recovery value learning?",
+  "common_fixes": ["FullState gx/gy/v_pref layout", "nearest five before truncation, at current and successor positions", "relative human coordinates not translated twice", "smooth candidate velocities before safety/value evaluation and execute exactly those velocities"],
+  "unchanged": ["native reward", "80 raw actions", "human ORCA dynamics", "robot invisible", "GRU T24/d256/layers4", "test safety margin .2/risk .8/smoothing .3", "native six scenes", "test timeout 25s"],
+  "nominal": {"seed": 61, "il_successes": 512, "il_max_episodes": 2048, "il_epochs": 20, "il_lr": 0.0001, "rl_episodes": 2000, "rl_lr": 0.00001, "updates_per_episode": 4, "batch": 256, "replay_episodes": 1024, "train_time_limit": 50},
+  "options": {"directions_degrees_relative_goal": [90, -90, 180], "durations_steps": [2, 4, 8], "speed": 1, "projection": "nearest of original 80 commands, followed by shared smoothing and safety", "nominal_option": 0, "decision_interval_steps": 4, "eligibility": "all episodes after four observed steps; no outcome or stall filtering", "unsafe_recovery": "terminate option and execute nominal action if selected recovery fails same clearance mask"},
+  "data": {"scenes": ["baseline_circle", "baseline_square", "dense_circle", "dense_square", "large_circle", "large_square"], "native_training_cases": [0, 15], "roots_steps": [8, 24, 48], "root_selection": "all existing preregistered roots, including successful nominal episodes", "labels": "all 10 options to native termination, same root state/history and same remaining deadline, then frozen nominal continuation", "no_hidden_inputs": true},
+  "recovery_training": {"seed": 71, "network": "frozen nominal GRU feature plus legal progress/geometry/time descriptors -> 128 ReLU -> 10 values", "steps": 1500, "batch": 64, "lr": 0.001, "simple_loss": "MSE absolute Monte Carlo returns for all 10 choices", "new_loss": "nominal value MSE + MSE of paired recovery-minus-nominal return + within-direction duration-difference MSE", "parameters_and_minibatches_matched": true, "normalization": "training-only"},
+  "development_cases_per_scene": [100, 139],
+  "fresh_cases_per_scene_if_signal": [300, 379],
+  "arms": ["nominal", "ordinary-recovery-Q", "paired-duration-regret"],
+  "metrics": ["success/collision/timeout", "independent swept geometric contact", "native discounted and undiscounted return", "navigation time", "path length", "stall fraction", "minimum clearance", "rescues/damages by paired case", "latency/training calls", "option choices/durations/overrides"],
+  "go": "new exceeds both nominal and ordinary Q by >=3pp success, improves native mean discounted return, no additional collision or geometry-contact episodes, and successes improve in >=2 of the 3 dense/large-square scenes; freeze and fresh confirm",
+  "kill": "correctly activated method fails the development rule; no tuning to rescue it",
+  "repair": "at most one, only if a demonstrated implementation or representational defect prevents the specified mechanism",
+  "claim_limits": ["single frozen nominal training seed, paired case inference only", "ordinary absolute-Q receives identical paired outcomes", "paired advantages and learned durations are not claimed novel", "no reciprocal pedestrian yielding: robot waits for externally moving pedestrians", "development run is not a paper-grade full reproduction"]
+}

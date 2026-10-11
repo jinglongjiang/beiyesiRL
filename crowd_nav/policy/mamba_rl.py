@@ -102,8 +102,9 @@ class EnhancedSpatialEncoder(nn.Module):
         h_vx = humans_tokens[..., 3]
         h_vy = humans_tokens[..., 4]
 
-        rel_x = h_px - robot_px
-        rel_y = h_py - robot_py
+        # Human token coordinates are already robot-relative (contracts.py).
+        rel_x = h_px
+        rel_y = h_py
         rel_dist = torch.sqrt(rel_x**2 + rel_y**2 + 1e-6)
         rel_vx = h_vx - robot_vx
         rel_vy = h_vy - robot_vy
@@ -766,7 +767,9 @@ class MambaRLPolicy(nn.Module):
 
         # humans: 5×5维 [px, py, vx, vy, radius] × 5
         human_arr = []
-        for h in human_states[:5]:  # 最多5个人
+        nearest = sorted(human_states, key=lambda h:
+                         (h.px - robot_state.px)**2 + (h.py - robot_state.py)**2)
+        for h in nearest[:5]:
             human_arr.extend([h.px, h.py, h.vx, h.vy, h.radius])
 
         # padding到25维
@@ -805,7 +808,7 @@ class MambaRLPolicy(nn.Module):
 
         # 6. Batch forward（一次推理所有动作）
         with torch.no_grad():
-            next_values = self.forward_value(next_states_tensor)  # [80]
+            next_values = self.forward_candidate_values(next_states_tensor)
 
         # 7. 计算总value（支持test-time分解消融）
         rewards_tensor = torch.tensor(rewards_batch.tolist(), device=self.device)
@@ -840,17 +843,37 @@ class MambaRLPolicy(nn.Module):
         # 9. 更新历史（添加当前帧到_history）
         self._history.append(current_token)
 
-        # 10. 测试期动作平滑（减少抖动）
-        if self._phase in ('test', 'val', 'eval') and self.test_action_smoothing > 0.0:
-            if self._last_action is not None:
-                alpha = float(self.test_action_smoothing)
-                best_action = ActionXY(
-                    alpha * self._last_action.vx + (1.0 - alpha) * best_action.vx,
-                    alpha * self._last_action.vy + (1.0 - alpha) * best_action.vy
-                )
-            self._last_action = best_action
+        # Candidates already contain the velocities that will actually execute.
+        self._last_action = best_action
 
         return best_action
+
+    def executable_candidates(self):
+        from crowd_sim.envs.utils.action import ActionXY
+        commands = list(self.action_space)
+        if (self._phase in ('test', 'val', 'eval')
+                and self.test_action_smoothing > 0 and self._last_action is not None):
+            alpha = float(self.test_action_smoothing)
+            commands = [ActionXY(alpha * self._last_action.vx + (1-alpha) * a.vx,
+                                 alpha * self._last_action.vy + (1-alpha) * a.vy)
+                        for a in commands]
+        return commands
+
+    def forward_candidate_values(self, windows):
+        """Exact shared-prefix GRU evaluation; not used for training minibatches."""
+        if self.training or self.temporal_backbone != 'gru' or self.history_contract != 'legal-prefix':
+            return self.forward_value(windows)
+        valid = windows[0].ne(0).flatten(1).any(-1)
+        length = int(valid.sum().item())
+        prefix = windows[:1, -length:-1]
+        hidden = None
+        if prefix.shape[1]:
+            encoded = self.spatial_encoder(prefix)
+            _, hidden = self.temporal_encoder.backend(encoded)
+            hidden = hidden.expand(-1, len(windows), -1).contiguous()
+        encoded_last = self.spatial_encoder(windows[:, -1:])
+        out, _ = self.temporal_encoder.backend(encoded_last, hidden)
+        return self.value_head(self.temporal_encoder.norm(out[:, -1])).squeeze(-1)
 
     def _score_candidates_vectorized(self, state, current_token=None):
         """候选无关的计算(行人推进 / 行人 token / 历史前缀)只做一次, 34 维状态与
@@ -865,7 +888,7 @@ class MambaRLPolicy(nn.Module):
             current_34 = self._build_joint_state_34(state.self_state, state.human_states)
             current_token = _batch_joint34_to_tokens_vectorized(current_34.reshape(1, -1))[0]
         base_hist = list(self._history) + [current_token]
-        commands = list(self.action_space)
+        commands = self.executable_candidates()
         A = len(commands)
         rob = state.self_state
 
@@ -900,11 +923,9 @@ class MambaRLPolicy(nn.Module):
         rew = np.where(reaching, float(self.success_reward), rew)
         rew = np.where(collision, float(self.collision_penalty), rew)
 
-        # A4 joint34 批量 (行人部分共享; 必须复刻 robot 部分的 float32 取整)
-        s34_0 = self._build_joint_state_34(self.propagate(rob, commands[0]), next_humans)
-        s34 = np.repeat(np.asarray(s34_0).reshape(1, -1), A, axis=0)
-        s34[:, 0:2] = np.asarray(nrp, dtype=np.float32).astype(s34.dtype)
-        s34[:, 2:4] = np.asarray(cmd, dtype=np.float32).astype(s34.dtype)
+        # Selection is relative to each successor robot position, before truncation.
+        s34 = np.stack([self._build_joint_state_34(self.propagate(rob, a), next_humans)
+                        for a in commands])
         # A2 token 一次批量转换
         next_tokens = _batch_joint34_to_tokens_vectorized(s34)
 
