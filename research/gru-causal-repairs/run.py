@@ -65,7 +65,7 @@ def old_tape(cfg, p, root):
 
 
 def weight(p, arm):
-    source = OUT / f'{arm}.pth' if arm in ('behavior-mc', 'deploy-mc') else r.OLD / 'artifacts/nominal.pth'
+    source = r.OLD / 'artifacts/nominal.pth' if arm in ('nominal', 'progress', 'commit8', 'adaptive') else OUT / f'{arm}.pth'
     p.load_state_dict(torch.load(source, map_location=p.device))
     p.eval()
     p.set_phase('test')
@@ -341,10 +341,10 @@ def evaluate(cohort, arm):
         raise ValueError(cohort)
 
 
-def probe():
+def probe(arms=('nominal', 'behavior-mc', 'deploy-mc'), filename='ranking-probes.json'):
     cfg, p = setup()
     results = {}
-    for arm in ('nominal', 'behavior-mc', 'deploy-mc'):
+    for arm in arms:
         weight(p, arm)
         rows = []
         for root in q.roots():
@@ -364,14 +364,15 @@ def probe():
             assert chosen in branches
             ga = np.asarray([branches[int(i)]['return'] for i in np.flatnonzero(inputs['safe'])])
             pred = qt[inputs['safe']]
+            nonterminal = inputs['first'][inputs['safe'], 1] == 0
             pairs = np.triu(np.ones((len(ga), len(ga)), bool), 1) & (np.abs(ga[:, None] - ga[None, :]) > 1e-6)
             inversion = ((ga[:, None] - ga[None, :]) * (pred[:, None] - pred[None, :]) < 0) & pairs
             rows.append({'root': root, 'chosen': chosen, 'old_policy_first_action_result': branches[chosen],
-                         'actual_next_V_MAE': float(np.abs((inputs['first'][inputs['safe'], 0] * -1 + ga) / .99 - values[inputs['safe']]).mean()),
+                         'actual_next_V_MAE': float(np.abs(((ga - inputs['first'][inputs['safe'], 0]) / .99 - values[inputs['safe']])[nonterminal]).mean()),
                          'pair_inversions': int(inversion.sum()), 'nontied_pairs': int(pairs.sum()),
                          'regret_fixed_old_policy': float(ga.max() - branches[chosen]['return'])})
         results[arm] = rows
-    save('ranking-probes.json', results)
+    save(filename, results)
 
 
 if __name__ == '__main__':

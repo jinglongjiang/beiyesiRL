@@ -80,6 +80,7 @@ def train():
                          'catalogue_even_MAE': float(np.abs(pred[cases % 2 == 0] - y[cases % 2 == 0]).mean()),
                          'catalogue_odd_MAE': float(np.abs(pred[cases % 2 != 0] - y[cases % 2 != 0]).mean())}
         a.save('coverage-training.json', results)
+    a.probe(NAMES, 'coverage-ranking-probes.json')
 
 
 def evaluate(arm, cohort):
