@@ -1,0 +1,1180 @@
+{
+  "source_ledger_sha256": "1c2ca67c57e0f27097f77651aad7172829183ad969a32f31ee1690b9a9f569b7",
+  "selection": "First preregistered value-overrides-progress root per episode, all qualifying successful and failed episodes; no winner selection",
+  "roots": [
+    {
+      "scene": "baseline_circle",
+      "case": 106,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 107,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 108,
+      "step": 24,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 111,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 115,
+      "step": 64,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 117,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 122,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 128,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 132,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 133,
+      "step": 32,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 135,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_circle",
+      "case": 138,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 100,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 101,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 105,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 107,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 108,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 109,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 113,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 115,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 116,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 120,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 122,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 123,
+      "step": 40,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 124,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 125,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 127,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 128,
+      "step": 40,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 129,
+      "step": 48,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 130,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 131,
+      "step": 32,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 132,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 133,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 135,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 136,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 137,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "baseline_square",
+      "case": 139,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 100,
+      "step": 40,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 104,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 105,
+      "step": 32,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 106,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 107,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 108,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 111,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 113,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 114,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 117,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 120,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 121,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 122,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 125,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 127,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 128,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 130,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 131,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 132,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 133,
+      "step": 48,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 136,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 138,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_circle",
+      "case": 139,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 100,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 101,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 103,
+      "step": 64,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 104,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 105,
+      "step": 40,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 106,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 107,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 108,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 109,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 110,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 111,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 112,
+      "step": 72,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 113,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 114,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 115,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 116,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 117,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 119,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 120,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 121,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 123,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 124,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 125,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 126,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 129,
+      "step": 72,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 130,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 131,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 132,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 133,
+      "step": 64,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 134,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 135,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "dense_square",
+      "case": 137,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "dense_square",
+      "case": 138,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 100,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 102,
+      "step": 88,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 103,
+      "step": 56,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 104,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 105,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 106,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 107,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 108,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 109,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 110,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 111,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 112,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 113,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 114,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 115,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 116,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 117,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 118,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 119,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 120,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 121,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 122,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 123,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 124,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 125,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 126,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 127,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 128,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 129,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 130,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 132,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_circle",
+      "case": 134,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 135,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 136,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 137,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 138,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_circle",
+      "case": 139,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 100,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 101,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 102,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 103,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 104,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 106,
+      "step": 32,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 107,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 108,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 109,
+      "step": 24,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 110,
+      "step": 24,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 112,
+      "step": 24,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 113,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 115,
+      "step": 16,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 116,
+      "step": 8,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 117,
+      "step": 48,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 118,
+      "step": 40,
+      "partition": "discovery",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 119,
+      "step": 24,
+      "partition": "discovery",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 120,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 121,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 123,
+      "step": 32,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 124,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 125,
+      "step": 16,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 126,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 128,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 129,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 130,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 131,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "timeout"
+    },
+    {
+      "scene": "large_square",
+      "case": 132,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 133,
+      "step": 40,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 134,
+      "step": 24,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 136,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 137,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 138,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    },
+    {
+      "scene": "large_square",
+      "case": 139,
+      "step": 8,
+      "partition": "mechanism-check",
+      "outcome": "reach_goal"
+    }
+  ],
+  "arms": [
+    "saved nominal suffix",
+    "one-step-progress",
+    "value-free-progress"
+  ],
+  "one-step-progress": "Change only the first primitive to maximum goal progress within the SAME current safe candidate mask; then exact frozen nominal",
+  "value-free-progress": "At every remaining step, maximum goal progress within SAME current safe candidate mask; if mask empty, exact nominal fallback; no training and no future/goal-of-human information",
+  "unchanged": [
+    "80 actions",
+    "executed smoothing",
+    "native reward",
+    "time remaining",
+    "human dynamics",
+    "observation",
+    "native termination",
+    "geometry accounting"
+  ],
+  "decisions": {
+    "single_action_loss": "Better complete native return/outcome under one-step replacement supplies a same-root counterexample to current action ranking; repeated cases required, not proof the replacement is globally better",
+    "repeated_policy_loss": "Value-free improvement without single-step improvement does NOT prove one-step action misranking; replacement changes the whole continuation policy",
+    "simple_explanation": "If value-free geometry absorbs useful headroom, do not recommend a complex new algorithm on this evidence",
+    "unresolved": "If both controls damage waiting or no consistent task benefit, preserve value/progress disagreement as unresolved rather than claim a defect",
+    "no_method_development": "These are causal diagnostics and known simple controls, not Ours"
+  },
+  "recurrence_rule_before_case_level_check": "At least two adjacent sampled roots, exactly8 native steps apart, both value-overrides-progress and all80 candidates safe. Test whether it concentrates timeouts in discovery and mechanism-check subsets; descriptive rule, not a learned detector.",
+  "limits": "All cases are the already observed development cohort. Mechanism-check is not fresh independent navigation confirmation."
+}
