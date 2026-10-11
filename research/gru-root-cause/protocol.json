@@ -1,0 +1,58 @@
+{
+  "version": "gru-root-cause-v1-20261011",
+  "started_utc": "2026-10-11T08:02:46Z",
+  "deadline_utc": "2026-10-11T16:02:46Z",
+  "branch": "research/gru-root-cause-20261011",
+  "parent_source_commit": "6def8a8",
+  "terminal_repair_commit": "400cff3",
+  "nominal_checkpoint": "research/recovery-duration/artifacts/nominal.pth",
+  "nominal_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "question": "Which upstream factor actually produces repeated value preference for negative progress?",
+  "resource": "Local RTX3060 and CPU only. No external parent, recovery controller or Bayesian experiment.",
+  "baseline": {
+    "scenes": ["baseline_circle", "baseline_square", "dense_circle", "dense_square", "large_circle", "large_square"],
+    "case_range_inclusive": [100,139],
+    "episode_count": 240,
+    "root_steps": [8,16,24,32,40,48,56,64,72,80,88,96],
+    "policy": "Frozen seed61 GRU, corrected canonical terminal score, original safety/smoothing/reward/humans/time limit",
+    "existing_outcomes_are_not_repaired_outcomes": true
+  },
+  "three_level_contrast": {
+    "root_list": "research/navigation-findings/counterfactual-protocol.json",
+    "roots": 164,
+    "source": "Fixed historical states, replayed recorded prefix; score and all continuations use repaired frozen GRU. Separately mark states no longer visited by repaired baseline.",
+    "actions": "Current repaired selected action versus maximum goal progress among the same safe executable candidates",
+    "A": "CV-predicted successor value and corrected immediate task Q; retain risk/tie components separately",
+    "B": "Actual one-step successor observation and updated legal history, same frozen network; true native immediate reward and terminal masking",
+    "C": "Execute each fixed first action then identical repaired GRU until native termination, same physical state, human future and remaining time",
+    "field_contrasts": ["actual pedestrian position only", "actual pedestrian velocity only", "both"],
+    "ranking_tolerance": 0.000001,
+    "no_privileged_input_in_deployed_policy": true
+  },
+  "upstream_contrasts": {
+    "condition": "Only run contrasts that distinguish the A/B/C result; each changes one factor and preserves the first forced action",
+    "allowed": ["continuation deadline25 versus50", "future smoothing .3 versus0", "future test safety/risk enabled versusdisabled", "future exploration0 versus.05 with common indexed draws"],
+    "exploration_draws_if_needed": 4,
+    "selection": "All 164 fixed roots including original successes, not failures only",
+    "long_human_tape": "Generate with unchanged official pedestrian code and verify every existing saved prefix before use. Save separately.",
+    "interpretation": "Counterfactual contract effects are not automatically causes of training weights; isolate learning with a matched targeted training only if required."
+  },
+  "training_allowance": {
+    "maximum": "One selected causal factor, intervention plus matched control",
+    "budget": "Reuse identical frozen IL checkpoint; <=2000 RL episodes per arm, seed61, all non-target parameters matched",
+    "freeze_before_outcomes": "Separate causal-training protocol and commit required after A/B/C identifies the factor",
+    "no_sweeps": true
+  },
+  "decision_rules": {
+    "successor_model": "A/B ranking reversal plus actual C correction supports a prediction-induced error, not merely changed features; quantify fields and affected episodes.",
+    "value_error": "B ranks the selected action higher while C favors the forward action: realized policy-continuation ranking error. Distinguish task-clock mismatch from other learning/distribution error.",
+    "policy_limitation": "A/B/C agree but a saved alternative continuation succeeds safely: frozen policy continuation limitation, not automatically critic misranking.",
+    "causal_factor": "Source evidence plus one-factor intervention changes the predicted mechanism and actual failures, includes normal successes and counterexamples. Report coverage, not universal claims.",
+    "go": "Proceed only with a specific upstream factor's discriminating causal test; no new algorithm development.",
+    "kill": "Stop a causal explanation if its predicted ranking/outcome effect is absent; do not add arbitrary factors or tune parameters.",
+    "unresolved": "If explanations remain inseparable, preserve exact evidence and one discriminating follow-up experiment; do not manufacture a unique root cause."
+  },
+  "preflight": "Check repaired helper equals canonical policy selection, action support80, tape and executed positions, two deterministic repetitions and actual successor construction before full cohort.",
+  "accounting": "Native outcome and independent swept geometry separately; episode/case-level summaries, no independent-root inference; single training seed.",
+  "sealed": ["old recovery controllers", "Bayesian variance", "CV/CA research", "new algorithm implementation", "unrelated source audits"]
+}
