@@ -84,6 +84,42 @@ def main(prefix):
             'verdict': ('METHOD_ENTRY_FOUND' if prefix=='fresh' else 'METHOD_SIGNAL_FOUND') if signal
                        else ('CONFIRMATION_NEGATIVE' if prefix=='fresh' else 'VERSION_NEGATIVE'),
             'scientific_scope': 'case-paired outcome of frozen models; not training-seed inference'}
+    activation = {}
+    for arm in ARMS:
+        counts = np.zeros(10, dtype=np.int64)
+        changes = steps = episodes_changed = 0
+        for trace_path in sorted((OUT/f'{prefix}-traces'/arm).glob('*.npz')):
+            trace = np.load(trace_path)['records']
+            changed = trace[:, 5] != trace[:, 6]
+            changes += int(changed.sum())
+            steps += len(trace)
+            episodes_changed += int(changed.any())
+            options = trace[trace[:, 9]>=0, 9].astype(int)
+            counts += np.bincount(options, minlength=10)
+        activation[arm] = {'steps': steps, 'executed_non_nominal_steps': changes,
+                           'episodes_with_non_nominal_action': episodes_changed,
+                           'option_decisions_0_to_9': counts.tolist()}
+    data['activation'] = activation
+    label_path = OUT/'paired-results.json'
+    if label_path.exists():
+        labels = json.loads(label_path.read_text())
+        roots = {}
+        for row in labels:
+            key = (row['scene'], row['case'], row['root'])
+            roots.setdefault(key, {})[row['option']] = row
+        classes = {'timeout_rescuable_by_catalog': [], 'nominal_success_harmed_by_catalog': [],
+                   'no_catalog_success_from_nominal_failure': []}
+        for key, options in roots.items():
+            assert set(options)==set(range(10))
+            nominal = options[0]
+            if nominal['timeout'] and any(options[j]['success'] for j in range(1, 10)):
+                classes['timeout_rescuable_by_catalog'].append(key)
+            if nominal['success'] and any(not options[j]['success'] for j in range(1, 10)):
+                classes['nominal_success_harmed_by_catalog'].append(key)
+            if not nominal['success'] and not any(options[j]['success'] for j in range(1, 10)):
+                classes['no_catalog_success_from_nominal_failure'].append(key)
+        data['training_root_counterfactuals'] = {'root_count': len(roots), 'classes': classes,
+            'interpretation': 'Descriptive catalog headroom on training roots, not deployed method improvement or independent episodes.'}
     path = HERE/f'{prefix}-summary.json'
     path.write_text(json.dumps(data, indent=2)+'\n')
     # Small complete CSV and exact rescue/damage lists are tracked; stepwise archives stay local.
