@@ -1,0 +1,1288 @@
+{
+  "recovery": {
+    "ordinary": {
+      "first_at_step4": 240,
+      "trace_episodes": 240,
+      "countdown_errors": 0,
+      "longest_non_nominal_steps": 94,
+      "one_shot_successes": 9,
+      "repeated_successes": 2,
+      "nominal_successes": 8,
+      "first_choice_negative_return_advantage": 6,
+      "one_shot_success_repeat_failure": 7,
+      "one_shot_failure_repeat_success": 0,
+      "mean_single_minus_repeat_return": 0.44707169302091104,
+      "history_input_weights_unchanged": 12,
+      "history_channel_choice_changes": 11,
+      "history_channel_roots": 12,
+      "contact_steps": 19,
+      "empty_safe_contact_steps": 19,
+      "noncontact_candidate_available": 16,
+      "nominal_action_avoids_immediate_contact": 16
+    },
+    "paired": {
+      "first_at_step4": 227,
+      "trace_episodes": 240,
+      "countdown_errors": 0,
+      "longest_non_nominal_steps": 92,
+      "one_shot_successes": 9,
+      "repeated_successes": 1,
+      "nominal_successes": 8,
+      "first_choice_negative_return_advantage": 6,
+      "one_shot_success_repeat_failure": 8,
+      "one_shot_failure_repeat_success": 0,
+      "mean_single_minus_repeat_return": 0.513676440163703,
+      "history_input_weights_unchanged": 12,
+      "history_channel_choice_changes": 6,
+      "history_channel_roots": 12,
+      "contact_steps": 25,
+      "empty_safe_contact_steps": 25,
+      "noncontact_candidate_available": 22,
+      "nominal_action_avoids_immediate_contact": 22
+    },
+    "execution_replayed_episodes": 67,
+    "execution_checked_roots": 647,
+    "execution_max_replay_error": 0.0
+  },
+  "ledger": {
+    "discovery / reach_goal": {
+      "roots": 696,
+      "episodes": 96,
+      "value_overrides_progress_roots": 87,
+      "value_override_fraction": 0.125,
+      "empty_safe_roots": 4,
+      "support_switch_roots": 201
+    },
+    "discovery / timeout": {
+      "roots": 288,
+      "episodes": 24,
+      "value_overrides_progress_roots": 109,
+      "value_override_fraction": 0.3784722222222222,
+      "empty_safe_roots": 0,
+      "support_switch_roots": 95
+    },
+    "mechanism-check / reach_goal": {
+      "roots": 737,
+      "episodes": 101,
+      "value_overrides_progress_roots": 105,
+      "value_override_fraction": 0.14246947082767977,
+      "empty_safe_roots": 0,
+      "support_switch_roots": 231
+    },
+    "mechanism-check / timeout": {
+      "roots": 228,
+      "episodes": 19,
+      "value_overrides_progress_roots": 99,
+      "value_override_fraction": 0.4342105263157895,
+      "empty_safe_roots": 2,
+      "support_switch_roots": 77
+    }
+  },
+  "counterfactuals": {
+    "discovery / one-step-progress": {
+      "episodes": 79,
+      "nominal_successes": 55,
+      "alternative_successes": 56,
+      "collisions": 0,
+      "contacts": 0,
+      "sr_difference": {
+        "mean": 0.012658227848101266,
+        "ci95": [
+          -0.05555555555555555,
+          0.0759493670886076
+        ],
+        "case_seed_blocks": 20
+      },
+      "return_advantage": {
+        "mean": 0.007182546768010017,
+        "ci95": [
+          -0.05210711210139409,
+          0.06067773591472424
+        ],
+        "case_seed_blocks": 20
+      },
+      "rescues": [
+        {
+          "scene": "baseline_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 109,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 105,
+          "step": 8
+        }
+      ],
+      "damages": [
+        {
+          "scene": "large_square",
+          "case": 102,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "step": 32,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 118,
+          "step": 40,
+          "outcome": "timeout"
+        }
+      ],
+      "first_step_contacts": 0
+    },
+    "discovery / value-free-progress": {
+      "episodes": 79,
+      "nominal_successes": 55,
+      "alternative_successes": 69,
+      "collisions": 6,
+      "contacts": 6,
+      "sr_difference": {
+        "mean": 0.17721518987341772,
+        "ci95": [
+          0.02666666666666667,
+          0.32
+        ],
+        "case_seed_blocks": 20
+      },
+      "return_advantage": {
+        "mean": 0.15876588472967554,
+        "ci95": [
+          0.027586505807049758,
+          0.28562346803561633
+        ],
+        "case_seed_blocks": 20
+      },
+      "rescues": [
+        {
+          "scene": "baseline_circle",
+          "case": 115,
+          "step": 64
+        },
+        {
+          "scene": "baseline_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 101,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 109,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 114,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 119,
+          "step": 16
+        },
+        {
+          "scene": "large_circle",
+          "case": 102,
+          "step": 88
+        },
+        {
+          "scene": "large_circle",
+          "case": 103,
+          "step": 56
+        },
+        {
+          "scene": "large_circle",
+          "case": 105,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 108,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 101,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 119,
+          "step": 24
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_square",
+          "case": 115,
+          "step": 16,
+          "outcome": "collision"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 104,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 104,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 113,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_square",
+          "case": 104,
+          "step": 8,
+          "outcome": "collision"
+        }
+      ],
+      "first_step_contacts": 0
+    },
+    "mechanism-check / one-step-progress": {
+      "episodes": 85,
+      "nominal_successes": 66,
+      "alternative_successes": 68,
+      "collisions": 0,
+      "contacts": 0,
+      "sr_difference": {
+        "mean": 0.023529411764705882,
+        "ci95": [
+          -0.03529411764705882,
+          0.07954545454545454
+        ],
+        "case_seed_blocks": 20
+      },
+      "return_advantage": {
+        "mean": 0.024137783293524475,
+        "ci95": [
+          -0.02233747400408894,
+          0.06921092873143325
+        ],
+        "case_seed_blocks": 20
+      },
+      "rescues": [
+        {
+          "scene": "baseline_square",
+          "case": 128,
+          "step": 40
+        },
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 125,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 139,
+          "step": 8
+        }
+      ],
+      "damages": [
+        {
+          "scene": "large_square",
+          "case": 126,
+          "step": 24,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 129,
+          "step": 8,
+          "outcome": "timeout"
+        }
+      ],
+      "first_step_contacts": 0
+    },
+    "mechanism-check / value-free-progress": {
+      "episodes": 85,
+      "nominal_successes": 66,
+      "alternative_successes": 74,
+      "collisions": 5,
+      "contacts": 5,
+      "sr_difference": {
+        "mean": 0.09411764705882353,
+        "ci95": [
+          0.022988505747126436,
+          0.16671348314606674
+        ],
+        "case_seed_blocks": 20
+      },
+      "return_advantage": {
+        "mean": 0.09685516128396862,
+        "ci95": [
+          0.027693014030275194,
+          0.163805151721338
+        ],
+        "case_seed_blocks": 20
+      },
+      "rescues": [
+        {
+          "scene": "baseline_square",
+          "case": 120,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 122,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 128,
+          "step": 40
+        },
+        {
+          "scene": "baseline_square",
+          "case": 129,
+          "step": 48
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 125,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 126,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 133,
+          "step": 64
+        },
+        {
+          "scene": "large_circle",
+          "case": 132,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 139,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "step": 24
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "step": 8
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_circle",
+          "case": 122,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 127,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 133,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "step": 16,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_circle",
+          "case": 120,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_square",
+          "case": 138,
+          "step": 8,
+          "outcome": "collision"
+        }
+      ],
+      "first_step_contacts": 0
+    },
+    "all / one-step-progress": {
+      "episodes": 164,
+      "nominal_successes": 121,
+      "alternative_successes": 124,
+      "collisions": 0,
+      "contacts": 0,
+      "sr_difference": {
+        "mean": 0.018292682926829267,
+        "ci95": [
+          -0.024691358024691357,
+          0.06097560975609756
+        ],
+        "case_seed_blocks": 40
+      },
+      "return_advantage": {
+        "mean": 0.01597032179647787,
+        "ci95": [
+          -0.020475372752615094,
+          0.05134885570623278
+        ],
+        "case_seed_blocks": 40
+      },
+      "rescues": [
+        {
+          "scene": "baseline_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 128,
+          "step": 40
+        },
+        {
+          "scene": "dense_square",
+          "case": 109,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 125,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 105,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 139,
+          "step": 8
+        }
+      ],
+      "damages": [
+        {
+          "scene": "large_square",
+          "case": 102,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 106,
+          "step": 32,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 118,
+          "step": 40,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 126,
+          "step": 24,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "large_square",
+          "case": 129,
+          "step": 8,
+          "outcome": "timeout"
+        }
+      ],
+      "first_step_contacts": 0
+    },
+    "all / value-free-progress": {
+      "episodes": 164,
+      "nominal_successes": 121,
+      "alternative_successes": 143,
+      "collisions": 11,
+      "contacts": 11,
+      "sr_difference": {
+        "mean": 0.13414634146341464,
+        "ci95": [
+          0.050314465408805034,
+          0.21518987341772153
+        ],
+        "case_seed_blocks": 40
+      },
+      "return_advantage": {
+        "mean": 0.12667800977305912,
+        "ci95": [
+          0.05287403574877102,
+          0.19768962076095867
+        ],
+        "case_seed_blocks": 40
+      },
+      "rescues": [
+        {
+          "scene": "baseline_circle",
+          "case": 115,
+          "step": 64
+        },
+        {
+          "scene": "baseline_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 120,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 122,
+          "step": 8
+        },
+        {
+          "scene": "baseline_square",
+          "case": 128,
+          "step": 40
+        },
+        {
+          "scene": "baseline_square",
+          "case": 129,
+          "step": 48
+        },
+        {
+          "scene": "dense_square",
+          "case": 100,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 101,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 109,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 114,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 117,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 119,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 123,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 124,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 125,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 126,
+          "step": 8
+        },
+        {
+          "scene": "dense_square",
+          "case": 132,
+          "step": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 133,
+          "step": 64
+        },
+        {
+          "scene": "large_circle",
+          "case": 102,
+          "step": 88
+        },
+        {
+          "scene": "large_circle",
+          "case": 103,
+          "step": 56
+        },
+        {
+          "scene": "large_circle",
+          "case": 105,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 108,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 111,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 132,
+          "step": 8
+        },
+        {
+          "scene": "large_circle",
+          "case": 139,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 101,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 116,
+          "step": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 119,
+          "step": 24
+        },
+        {
+          "scene": "large_square",
+          "case": 120,
+          "step": 24
+        },
+        {
+          "scene": "large_square",
+          "case": 131,
+          "step": 8
+        }
+      ],
+      "damages": [
+        {
+          "scene": "baseline_circle",
+          "case": 122,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 115,
+          "step": 16,
+          "outcome": "collision"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 127,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "baseline_square",
+          "case": 133,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_circle",
+          "case": 104,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 104,
+          "step": 8,
+          "outcome": "timeout"
+        },
+        {
+          "scene": "dense_square",
+          "case": 113,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "dense_square",
+          "case": 120,
+          "step": 16,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_circle",
+          "case": 120,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_square",
+          "case": 104,
+          "step": 8,
+          "outcome": "collision"
+        },
+        {
+          "scene": "large_square",
+          "case": 138,
+          "step": 8,
+          "outcome": "collision"
+        }
+      ],
+      "first_step_contacts": 0
+    }
+  },
+  "recurrence": {
+    "discovery": {
+      "False": {
+        "episodes": 84,
+        "timeouts": 3,
+        "timeout_fraction": 0.03571428571428571
+      },
+      "True": {
+        "episodes": 36,
+        "timeouts": 21,
+        "timeout_fraction": 0.5833333333333334
+      }
+    },
+    "mechanism-check": {
+      "False": {
+        "episodes": 81,
+        "timeouts": 3,
+        "timeout_fraction": 0.037037037037037035
+      },
+      "True": {
+        "episodes": 39,
+        "timeouts": 16,
+        "timeout_fraction": 0.41025641025641024
+      }
+    }
+  },
+  "terminal": {
+    "roots_with_candidate_radius_mismatch": 34,
+    "executed_annulus_mismatches": 2,
+    "rows": [
+      {
+        "scene": "baseline_circle",
+        "case": 100,
+        "step": 56,
+        "candidate_disagreements": 3,
+        "chosen_in_annulus": true,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9816226363182068,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 104,
+        "step": 48,
+        "candidate_disagreements": 12,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.7990724444389343,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 105,
+        "step": 48,
+        "candidate_disagreements": 13,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9789333939552307,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 112,
+        "step": 48,
+        "candidate_disagreements": 8,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9771451354026794,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 118,
+        "step": 48,
+        "candidate_disagreements": 22,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0411145687103271,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 120,
+        "step": 48,
+        "candidate_disagreements": 5,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0305800437927246,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_circle",
+        "case": 128,
+        "step": 48,
+        "candidate_disagreements": 7,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.045998454093933,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 103,
+        "step": 56,
+        "candidate_disagreements": 5,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0235697031021118,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 104,
+        "step": 48,
+        "candidate_disagreements": 6,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9818031191825867,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 105,
+        "step": 88,
+        "candidate_disagreements": 8,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0559942722320557,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 111,
+        "step": 40,
+        "candidate_disagreements": 8,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0071262121200562,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 118,
+        "step": 48,
+        "candidate_disagreements": 23,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9568096995353699,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "baseline_square",
+        "case": 134,
+        "step": 48,
+        "candidate_disagreements": 20,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9314026236534119,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 102,
+        "step": 56,
+        "candidate_disagreements": 6,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.8271815180778503,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 113,
+        "step": 96,
+        "candidate_disagreements": 27,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.7789027094841003,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 116,
+        "step": 48,
+        "candidate_disagreements": 3,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 0.0,
+        "chosen_next_value": 0.9964367747306824,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 122,
+        "step": 64,
+        "candidate_disagreements": 15,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0220606327056885,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 136,
+        "step": 56,
+        "candidate_disagreements": 21,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0451478958129883,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_circle",
+        "case": 137,
+        "step": 56,
+        "candidate_disagreements": 1,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 0.0,
+        "chosen_next_value": 0.941015899181366,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_square",
+        "case": 109,
+        "step": 56,
+        "candidate_disagreements": 5,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 0.0,
+        "chosen_next_value": 1.0219208002090454,
+        "outcome": "timeout"
+      },
+      {
+        "scene": "dense_square",
+        "case": 110,
+        "step": 96,
+        "candidate_disagreements": 11,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9798882603645325,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_square",
+        "case": 127,
+        "step": 56,
+        "candidate_disagreements": 14,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9892489314079285,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "dense_square",
+        "case": 135,
+        "step": 56,
+        "candidate_disagreements": 10,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0416955947875977,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_circle",
+        "case": 104,
+        "step": 80,
+        "candidate_disagreements": 16,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.786686360836029,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_circle",
+        "case": 128,
+        "step": 96,
+        "candidate_disagreements": 2,
+        "chosen_in_annulus": true,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.8528204560279846,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_circle",
+        "case": 130,
+        "step": 88,
+        "candidate_disagreements": 23,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.7471848130226135,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_circle",
+        "case": 137,
+        "step": 88,
+        "candidate_disagreements": 1,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 0.0,
+        "chosen_actual_reward": 0.0,
+        "chosen_next_value": 0.7861126065254211,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 106,
+        "step": 56,
+        "candidate_disagreements": 4,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.018713116645813,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 114,
+        "step": 40,
+        "candidate_disagreements": 17,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.898572564125061,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 118,
+        "step": 64,
+        "candidate_disagreements": 21,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9875286221504211,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 122,
+        "step": 64,
+        "candidate_disagreements": 28,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9719042181968689,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 126,
+        "step": 56,
+        "candidate_disagreements": 7,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 0.9967591166496277,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 127,
+        "step": 64,
+        "candidate_disagreements": 17,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.0244694948196411,
+        "outcome": "reach_goal"
+      },
+      {
+        "scene": "large_square",
+        "case": 130,
+        "step": 72,
+        "candidate_disagreements": 5,
+        "chosen_in_annulus": false,
+        "chosen_predicted_reward": 1.0,
+        "chosen_actual_reward": 1.0,
+        "chosen_next_value": 1.01315176486969,
+        "outcome": "reach_goal"
+      }
+    ]
+  },
+  "navigation_metrics": {
+    "nominal_suffix": {
+      "episodes": 164,
+      "time": 15.40701219512195,
+      "path": 14.453630345608799,
+      "min_clearance": 0.4446344514701896,
+      "progress": 6.046153636420332,
+      "worst_clearance": 0.060545499214155085,
+      "success_only_time": 13.710743801652892
+    },
+    "one-step-progress": {
+      "episodes": 164,
+      "time": 15.112804878048781,
+      "path": 13.94429087475314,
+      "min_clearance": 0.4198605443502398,
+      "progress": 6.164218298035496,
+      "worst_clearance": 0.1222988271505876,
+      "success_only_time": 13.616935483870968
+    },
+    "value-free-progress": {
+      "episodes": 164,
+      "time": 11.146341463414634,
+      "path": 9.585586115397401,
+      "min_clearance": 0.1494696870137488,
+      "progress": 7.168115829812163,
+      "worst_clearance": -0.11402165544757559,
+      "success_only_time": 11.122377622377622
+    }
+  }
+}

@@ -1,0 +1,4877 @@
+{
+  "roots": 333,
+  "arms": {
+    "ordinary": {
+      "train_return_mse": 0.017800916661964632,
+      "chosen_option_counts": [
+        91,
+        37,
+        50,
+        43,
+        28,
+        27,
+        24,
+        9,
+        17,
+        7
+      ],
+      "empirical_best_option_counts": [
+        227,
+        22,
+        11,
+        10,
+        23,
+        18,
+        11,
+        8,
+        2,
+        1
+      ],
+      "mean_chosen_actual_advantage": 0.03075625638912373,
+      "mean_chosen_predicted_advantage": 0.07547309249639511,
+      "negative_actual_advantage_roots": 123,
+      "mean_selection_regret": 0.017116547584538504,
+      "median_selection_regret": 0.006111172395328657,
+      "regret_max": 0.14347410167848573
+    },
+    "paired": {
+      "train_return_mse": 0.038603648484235906,
+      "chosen_option_counts": [
+        88,
+        16,
+        43,
+        34,
+        53,
+        18,
+        19,
+        28,
+        20,
+        14
+      ],
+      "empirical_best_option_counts": [
+        227,
+        22,
+        11,
+        10,
+        23,
+        18,
+        11,
+        8,
+        2,
+        1
+      ],
+      "mean_chosen_actual_advantage": 0.02567899953414772,
+      "mean_chosen_predicted_advantage": 0.09902127087116241,
+      "negative_actual_advantage_roots": 140,
+      "mean_selection_regret": 0.022193804439514506,
+      "median_selection_regret": 0.011335063929295508,
+      "regret_max": 0.18987897893746852
+    }
+  },
+  "traces": {
+    "ordinary": [
+      {
+        "file": "0-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 7,
+        "changed_steps": 66,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 2,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 8,
+        "changed_steps": 26,
+        "steps": 72,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 10,
+        "changed_steps": 37,
+        "steps": 94,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 8,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 50,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 5,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 9,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 4,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 9,
+        "changed_steps": 26,
+        "steps": 81,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 5,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 8,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 2,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 54,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 8,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 4,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 7,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 4,
+        "changed_steps": 45,
+        "steps": 92,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 42,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 5,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 46,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 11,
+        "changed_steps": 41,
+        "steps": 96,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 41,
+        "steps": 96,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 1,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 61,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 6,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 7,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 7,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 53,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 6,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 9,
+        "changed_steps": 34,
+        "steps": 80,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 7,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 94,
+        "steps": 101,
+        "longest_changed_run_steps": 94,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 8,
+        "changed_steps": 38,
+        "steps": 80,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 4,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 3,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 83,
+        "steps": 101,
+        "longest_changed_run_steps": 23,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 6,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 38,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 7,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 93,
+        "steps": 101,
+        "longest_changed_run_steps": 86,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 46,
+        "steps": 96,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 6,
+        "nominal_decisions": 11,
+        "changed_steps": 29,
+        "steps": 80,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 3,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 58,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 5,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 62,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 96,
+        "steps": 101,
+        "longest_changed_run_steps": 77,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 5,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 5,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 46,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 22,
+        "nominal_decisions": 2,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 3,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 1,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 10,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 0,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 3,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 87,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 1,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 4,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 8,
+        "changed_steps": 30,
+        "steps": 79,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 96,
+        "steps": 101,
+        "longest_changed_run_steps": 51,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 74,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 7,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 9,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 41,
+        "steps": 101,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 9,
+        "changed_steps": 23,
+        "steps": 72,
+        "longest_changed_run_steps": 7,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 23,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 42,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 2,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 2,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 9,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 4,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 49,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 7,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 8,
+        "changed_steps": 43,
+        "steps": 86,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 4,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 11,
+        "changed_steps": 37,
+        "steps": 94,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 94,
+        "steps": 101,
+        "longest_changed_run_steps": 93,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 7,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 77,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 7,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 6,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 41,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 9,
+        "changed_steps": 40,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 2,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 77,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 5,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 3,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 49,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 2,
+        "changed_steps": 20,
+        "steps": 42,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 6,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 3,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 13,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 48,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 2,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 88,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 5,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 2,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 7,
+        "changed_steps": 48,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 11,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 84,
+        "steps": 101,
+        "longest_changed_run_steps": 71,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 9,
+        "changed_steps": 47,
+        "steps": 97,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 1,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 8,
+        "changed_steps": 35,
+        "steps": 82,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 8,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 9,
+        "changed_steps": 28,
+        "steps": 81,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 95,
+        "steps": 101,
+        "longest_changed_run_steps": 93,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 25,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 4,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 45,
+        "steps": 92,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 10,
+        "changed_steps": 35,
+        "steps": 90,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 9,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 87,
+        "steps": 101,
+        "longest_changed_run_steps": 77,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 69,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 53,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 7,
+        "changed_steps": 42,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 61,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 4,
+        "steps": 13,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 91,
+        "steps": 101,
+        "longest_changed_run_steps": 79,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 3,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 23,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 3,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 39,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 2,
+        "changed_steps": 87,
+        "steps": 101,
+        "longest_changed_run_steps": 69,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 4,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 8,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 25,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 91,
+        "steps": 101,
+        "longest_changed_run_steps": 78,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 10,
+        "changed_steps": 33,
+        "steps": 90,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 41,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 1,
+        "steps": 5,
+        "longest_changed_run_steps": 1,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 24,
+        "nominal_decisions": 1,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 10,
+        "steps": 14,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 0,
+        "changed_steps": 7,
+        "steps": 12,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 91,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 5,
+        "steps": 13,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 32,
+        "steps": 96,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 4,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 92,
+        "steps": 101,
+        "longest_changed_run_steps": 86,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 9,
+        "changed_steps": 44,
+        "steps": 100,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 3,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 94,
+        "steps": 101,
+        "longest_changed_run_steps": 54,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 9,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 92,
+        "steps": 101,
+        "longest_changed_run_steps": 80,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 12,
+        "changed_steps": 18,
+        "steps": 101,
+        "longest_changed_run_steps": 2,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 0,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 35,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 74,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 54,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 17,
+        "changed_steps": 17,
+        "steps": 101,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 3,
+        "steps": 7,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 2,
+        "steps": 6,
+        "longest_changed_run_steps": 2,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 1,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 6,
+        "nominal_decisions": 15,
+        "changed_steps": 21,
+        "steps": 92,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 0,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 3,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 2,
+        "changed_steps": 18,
+        "steps": 44,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 2,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 11,
+        "changed_steps": 33,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 12,
+        "changed_steps": 42,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 2,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 42,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 4,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 34,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 15,
+        "changed_steps": 34,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 7,
+        "changed_steps": 36,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 40,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 11,
+        "changed_steps": 25,
+        "steps": 84,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 9,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 17,
+        "changed_steps": 21,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 15,
+        "changed_steps": 29,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 4,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 7,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 5,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 13,
+        "changed_steps": 31,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 11,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 16,
+        "changed_steps": 24,
+        "steps": 101,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 15,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 6,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 7,
+        "changed_steps": 46,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 6,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 11,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 12,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 1,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 3,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 38,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 46,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 14,
+        "changed_steps": 20,
+        "steps": 96,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 49,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 38,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 2,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 1,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 0,
+        "changed_steps": 7,
+        "steps": 11,
+        "longest_changed_run_steps": 7,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 4,
+        "nominal_decisions": 0,
+        "changed_steps": 8,
+        "steps": 17,
+        "longest_changed_run_steps": 7,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 9,
+        "steps": 15,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 92,
+        "steps": 101,
+        "longest_changed_run_steps": 53,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 22,
+        "nominal_decisions": 1,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 3,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 1,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 54,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 4,
+        "changed_steps": 17,
+        "steps": 44,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 24,
+        "nominal_decisions": 1,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 4,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 11,
+        "steps": 19,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 3,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 0,
+        "changed_steps": 10,
+        "steps": 14,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 10,
+        "steps": 14,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 1,
+        "changed_steps": 12,
+        "steps": 20,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 4,
+        "nominal_decisions": 0,
+        "changed_steps": 13,
+        "steps": 22,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 1,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 1,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 40,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 22,
+        "nominal_decisions": 1,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 8,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 5,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 0,
+        "changed_steps": 7,
+        "steps": 11,
+        "longest_changed_run_steps": 7,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 41,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 2,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 7,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      }
+    ],
+    "paired": [
+      {
+        "file": "0-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 4,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 6,
+        "nominal_decisions": 1,
+        "changed_steps": 21,
+        "steps": 33,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-102.npz",
+        "first_recovery_step": 12,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-103.npz",
+        "first_recovery_step": 12,
+        "recovery_decisions": 18,
+        "nominal_decisions": 5,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-104.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 12,
+        "nominal_decisions": 2,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 72,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 6,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 44,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 7,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 7,
+        "changed_steps": 30,
+        "steps": 66,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 7,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 93,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 4,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 4,
+        "nominal_decisions": 10,
+        "changed_steps": 21,
+        "steps": 66,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 8,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 48,
+        "steps": 100,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 8,
+        "changed_steps": 26,
+        "steps": 83,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 4,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 38,
+        "steps": 88,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 5,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-124.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 4,
+        "nominal_decisions": 1,
+        "changed_steps": 25,
+        "steps": 35,
+        "longest_changed_run_steps": 23,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 45,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 88,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 1,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 2,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 7,
+        "changed_steps": 24,
+        "steps": 71,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 36,
+        "steps": 83,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 92,
+        "steps": 101,
+        "longest_changed_run_steps": 89,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 96,
+        "steps": 101,
+        "longest_changed_run_steps": 92,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 11,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-136.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 12,
+        "nominal_decisions": 1,
+        "changed_steps": 88,
+        "steps": 101,
+        "longest_changed_run_steps": 75,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 84,
+        "steps": 101,
+        "longest_changed_run_steps": 28,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-138.npz",
+        "first_recovery_step": 12,
+        "recovery_decisions": 12,
+        "nominal_decisions": 8,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "0-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 4,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 57,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 87,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 0,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-102.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 15,
+        "nominal_decisions": 8,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 2,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 2,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 23,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 2,
+        "changed_steps": 9,
+        "steps": 23,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 2,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 59,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 6,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 87,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 3,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 93,
+        "steps": 101,
+        "longest_changed_run_steps": 89,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 58,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 1,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 24,
+        "nominal_decisions": 1,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 0,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 25,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-117.npz",
+        "first_recovery_step": 12,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 4,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 44,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 3,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 74,
+        "steps": 101,
+        "longest_changed_run_steps": 40,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 7,
+        "changed_steps": 22,
+        "steps": 73,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 1,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 8,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 6,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 25,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 2,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 66,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 6,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 4,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 0,
+        "changed_steps": 23,
+        "steps": 33,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 50,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 3,
+        "changed_steps": 43,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 3,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 25,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 2,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 3,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 8,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 2,
+        "changed_steps": 80,
+        "steps": 101,
+        "longest_changed_run_steps": 60,
+        "countdown_errors": 0
+      },
+      {
+        "file": "1-139.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 14,
+        "nominal_decisions": 4,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 7,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 4,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 2,
+        "changed_steps": 83,
+        "steps": 101,
+        "longest_changed_run_steps": 43,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 7,
+        "changed_steps": 44,
+        "steps": 88,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 6,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 95,
+        "steps": 101,
+        "longest_changed_run_steps": 65,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 5,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 3,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 83,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 0,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 57,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 2,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 1,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 53,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 4,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 7,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 8,
+        "changed_steps": 29,
+        "steps": 75,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 45,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 4,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 84,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 1,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 48,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-124.npz",
+        "first_recovery_step": 12,
+        "recovery_decisions": 8,
+        "nominal_decisions": 9,
+        "changed_steps": 18,
+        "steps": 70,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 5,
+        "changed_steps": 52,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 5,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 21,
+        "nominal_decisions": 3,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 5,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 9,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 7,
+        "changed_steps": 58,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 3,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 6,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 33,
+        "steps": 92,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 3,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 43,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 8,
+        "changed_steps": 18,
+        "steps": 68,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 9,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "2-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 39,
+        "steps": 101,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 48,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-101.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 84,
+        "steps": 101,
+        "longest_changed_run_steps": 56,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-102.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 12,
+        "nominal_decisions": 3,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 51,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 75,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 88,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 48,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 4,
+        "steps": 13,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 3,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 15,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 3,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 0,
+        "changed_steps": 90,
+        "steps": 101,
+        "longest_changed_run_steps": 49,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 6,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 1,
+        "changed_steps": 93,
+        "steps": 101,
+        "longest_changed_run_steps": 81,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 62,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 1,
+        "changed_steps": 5,
+        "steps": 16,
+        "longest_changed_run_steps": 2,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 0,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 27,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 1,
+        "steps": 5,
+        "longest_changed_run_steps": 1,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 3,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 4,
+        "steps": 13,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 4,
+        "changed_steps": 29,
+        "steps": 86,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 24,
+        "nominal_decisions": 0,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 4,
+        "steps": 13,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 7,
+        "changed_steps": 29,
+        "steps": 94,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 3,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 27,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 8,
+        "changed_steps": 33,
+        "steps": 101,
+        "longest_changed_run_steps": 5,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 1,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 15,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 7,
+        "changed_steps": 40,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 3,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 72,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 44,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-132.npz",
+        "first_recovery_step": 8,
+        "recovery_decisions": 1,
+        "nominal_decisions": 1,
+        "changed_steps": 1,
+        "steps": 9,
+        "longest_changed_run_steps": 1,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 22,
+        "nominal_decisions": 2,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 2,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 54,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 82,
+        "steps": 101,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 3,
+        "steps": 7,
+        "longest_changed_run_steps": 3,
+        "countdown_errors": 0
+      },
+      {
+        "file": "3-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 1,
+        "nominal_decisions": 0,
+        "changed_steps": 2,
+        "steps": 6,
+        "longest_changed_run_steps": 2,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 6,
+        "changed_steps": 51,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 14,
+        "changed_steps": 23,
+        "steps": 85,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 6,
+        "changed_steps": 59,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 13,
+        "changed_steps": 40,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 9,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 8,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 29,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 6,
+        "changed_steps": 57,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 14,
+        "changed_steps": 33,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 10,
+        "changed_steps": 49,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 14,
+        "changed_steps": 24,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 12,
+        "changed_steps": 40,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 12,
+        "changed_steps": 39,
+        "steps": 101,
+        "longest_changed_run_steps": 21,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 37,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 8,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 10,
+        "changed_steps": 56,
+        "steps": 101,
+        "longest_changed_run_steps": 32,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 12,
+        "changed_steps": 29,
+        "steps": 101,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 13,
+        "changed_steps": 38,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 8,
+        "changed_steps": 47,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 14,
+        "changed_steps": 35,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 16,
+        "changed_steps": 20,
+        "steps": 91,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 14,
+        "changed_steps": 25,
+        "steps": 100,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 9,
+        "nominal_decisions": 13,
+        "changed_steps": 37,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 6,
+        "changed_steps": 50,
+        "steps": 101,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 4,
+        "changed_steps": 60,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 5,
+        "changed_steps": 55,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 3,
+        "changed_steps": 28,
+        "steps": 54,
+        "longest_changed_run_steps": 17,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 45,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 10,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 4,
+        "changed_steps": 30,
+        "steps": 60,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 17,
+        "changed_steps": 29,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 10,
+        "nominal_decisions": 13,
+        "changed_steps": 25,
+        "steps": 100,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 9,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 5,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 66,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 1,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 11,
+        "nominal_decisions": 10,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 11,
+        "changed_steps": 29,
+        "steps": 101,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 15,
+        "changed_steps": 22,
+        "steps": 98,
+        "longest_changed_run_steps": 9,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 13,
+        "nominal_decisions": 10,
+        "changed_steps": 44,
+        "steps": 101,
+        "longest_changed_run_steps": 14,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 7,
+        "nominal_decisions": 12,
+        "changed_steps": 30,
+        "steps": 89,
+        "longest_changed_run_steps": 24,
+        "countdown_errors": 0
+      },
+      {
+        "file": "4-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 8,
+        "nominal_decisions": 17,
+        "changed_steps": 21,
+        "steps": 101,
+        "longest_changed_run_steps": 6,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-100.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 2,
+        "changed_steps": 73,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-101.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 16,
+        "nominal_decisions": 0,
+        "changed_steps": 89,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-102.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 33,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-103.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 65,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-104.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 1,
+        "changed_steps": 68,
+        "steps": 101,
+        "longest_changed_run_steps": 27,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-105.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 64,
+        "steps": 101,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-106.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 4,
+        "nominal_decisions": 0,
+        "changed_steps": 8,
+        "steps": 17,
+        "longest_changed_run_steps": 7,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-107.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 3,
+        "changed_steps": 61,
+        "steps": 101,
+        "longest_changed_run_steps": 20,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-108.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 0,
+        "changed_steps": 78,
+        "steps": 101,
+        "longest_changed_run_steps": 36,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-109.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 53,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-110.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 2,
+        "changed_steps": 9,
+        "steps": 29,
+        "longest_changed_run_steps": 5,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-111.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 1,
+        "changed_steps": 15,
+        "steps": 33,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-112.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 0,
+        "changed_steps": 86,
+        "steps": 101,
+        "longest_changed_run_steps": 77,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-113.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 2,
+        "changed_steps": 70,
+        "steps": 101,
+        "longest_changed_run_steps": 31,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-114.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 1,
+        "changed_steps": 7,
+        "steps": 17,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-115.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 2,
+        "changed_steps": 66,
+        "steps": 101,
+        "longest_changed_run_steps": 30,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-116.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 1,
+        "changed_steps": 80,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-117.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 79,
+        "steps": 101,
+        "longest_changed_run_steps": 41,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-118.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 69,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-119.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 1,
+        "changed_steps": 83,
+        "steps": 101,
+        "longest_changed_run_steps": 49,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-120.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 0,
+        "changed_steps": 10,
+        "steps": 17,
+        "longest_changed_run_steps": 5,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-121.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 19,
+        "nominal_decisions": 3,
+        "changed_steps": 63,
+        "steps": 101,
+        "longest_changed_run_steps": 16,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-122.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 1,
+        "changed_steps": 85,
+        "steps": 101,
+        "longest_changed_run_steps": 22,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-123.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 0,
+        "changed_steps": 10,
+        "steps": 14,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-124.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 3,
+        "nominal_decisions": 1,
+        "changed_steps": 14,
+        "steps": 25,
+        "longest_changed_run_steps": 13,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-125.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 1,
+        "changed_steps": 71,
+        "steps": 101,
+        "longest_changed_run_steps": 34,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-126.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 2,
+        "nominal_decisions": 1,
+        "changed_steps": 12,
+        "steps": 20,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-127.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 1,
+        "changed_steps": 81,
+        "steps": 101,
+        "longest_changed_run_steps": 39,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-128.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 7,
+        "changed_steps": 53,
+        "steps": 101,
+        "longest_changed_run_steps": 26,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-129.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 18,
+        "nominal_decisions": 0,
+        "changed_steps": 67,
+        "steps": 101,
+        "longest_changed_run_steps": 39,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-130.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 0,
+        "changed_steps": 83,
+        "steps": 101,
+        "longest_changed_run_steps": 35,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-131.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 0,
+        "changed_steps": 36,
+        "steps": 58,
+        "longest_changed_run_steps": 10,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-132.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 5,
+        "nominal_decisions": 0,
+        "changed_steps": 20,
+        "steps": 29,
+        "longest_changed_run_steps": 19,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-133.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 12,
+        "nominal_decisions": 2,
+        "changed_steps": 88,
+        "steps": 101,
+        "longest_changed_run_steps": 64,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-134.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 3,
+        "changed_steps": 72,
+        "steps": 101,
+        "longest_changed_run_steps": 37,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-135.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 4,
+        "nominal_decisions": 1,
+        "changed_steps": 8,
+        "steps": 21,
+        "longest_changed_run_steps": 4,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-136.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 15,
+        "nominal_decisions": 9,
+        "changed_steps": 41,
+        "steps": 101,
+        "longest_changed_run_steps": 12,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-137.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 14,
+        "nominal_decisions": 9,
+        "changed_steps": 33,
+        "steps": 93,
+        "longest_changed_run_steps": 8,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-138.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 17,
+        "nominal_decisions": 1,
+        "changed_steps": 76,
+        "steps": 101,
+        "longest_changed_run_steps": 18,
+        "countdown_errors": 0
+      },
+      {
+        "file": "5-139.npz",
+        "first_recovery_step": 4,
+        "recovery_decisions": 20,
+        "nominal_decisions": 2,
+        "changed_steps": 54,
+        "steps": 101,
+        "longest_changed_run_steps": 11,
+        "countdown_errors": 0
+      }
+    ]
+  }
+}

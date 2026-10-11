@@ -238,7 +238,7 @@ def nominal_ledger():
                 alternative=int(np.where(allowed,progress,-np.inf).argmax())
                 opposite=(progress[best]<=0 and progress[alternative]>=.02 and
                           rew[alternative]>=rew[best]-1e-8)
-                humans=np.array([[h.px,h.py] for h in env.humans])
+                humans=np.array([[h.px+h.vx*.25,h.py+h.vy*.25] for h in env.humans])
                 selected=[tuple(sorted(np.argsort(((humans-(pos+cmd*.25))**2).sum(1),
                                   kind='stable')[:5].tolist())) for cmd in command]
                 record={'scene':m.SCENES[scene],'case':case,'step':int(row[0]),
