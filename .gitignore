@@ -66,3 +66,4 @@ crowd_nav/runs/bayes-diagnostic-20261009/seed*-episodes/
 !research/recovery-duration/artifacts/*.pth
 !research/gru-root-cause/artifacts/causal-training/control/*.pth
 !research/gru-root-cause/artifacts/causal-training/matched-smoothing/*.pth
+!research/gru-causal-repairs/artifacts/*.pth

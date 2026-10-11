@@ -1,0 +1,20 @@
+{
+  "arm": "nominal",
+  "scene": "large_circle",
+  "case": 2011,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 1.1654644112014294,
+  "duration": 6.5,
+  "steps": 26,
+  "return": 0.7778213593991467,
+  "path": 6.35813981985514,
+  "final_distance": 0.297761148164155,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 9.36547265602992
+}

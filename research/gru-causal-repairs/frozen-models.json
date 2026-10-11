@@ -1,0 +1,25 @@
+{
+  "files": {
+    "behavior-mc.pth": {
+      "sha256": "dd86d8ea93537f164884f9b4e4828e7bc32c322c9ab49164f2e4b25f71e22792",
+      "bytes": 7032195
+    },
+    "deploy-mc.pth": {
+      "sha256": "dbe79abd049478dd6d8ad048faf2078777a22f418c914deffc4fa048024c0c10",
+      "bytes": 7032129
+    },
+    "matched-data.npz": {
+      "sha256": "1e5e57b4181cb4f94404ed902f73d1ff44fdab71ea7fe962d4197893accc83f2",
+      "bytes": 751910
+    },
+    "batch-indices.npy": {
+      "sha256": "091c78eed07b56370ed509625b74e1d5d09b49b69f5f1a957487dbc1e21b3b58",
+      "bytes": 2048128
+    }
+  },
+  "fresh_cases": [
+    300,
+    319
+  ],
+  "all_parameters_frozen_before_fresh_outcomes": true
+}

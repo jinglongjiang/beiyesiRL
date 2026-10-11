@@ -1,0 +1,305 @@
+{
+  "arms": {
+    "behavior-mc": {
+      "updates": 2000,
+      "seconds": 44.24904567596968,
+      "sha256": "dd86d8ea93537f164884f9b4e4828e7bc32c322c9ab49164f2e4b25f71e22792",
+      "curves": [
+        {
+          "update": 100,
+          "batch_MSE": 0.09373988956212997,
+          "fit_MAE": 0.17852625250816345,
+          "heldout_source_MAE": 0.23473313450813293,
+          "heldout_deploy_MAE": 0.20841830968856812
+        },
+        {
+          "update": 200,
+          "batch_MSE": 0.05869906023144722,
+          "fit_MAE": 0.17135748267173767,
+          "heldout_source_MAE": 0.24219870567321777,
+          "heldout_deploy_MAE": 0.213626891374588
+        },
+        {
+          "update": 300,
+          "batch_MSE": 0.05874466150999069,
+          "fit_MAE": 0.15308137238025665,
+          "heldout_source_MAE": 0.23250460624694824,
+          "heldout_deploy_MAE": 0.20118345320224762
+        },
+        {
+          "update": 400,
+          "batch_MSE": 0.048664823174476624,
+          "fit_MAE": 0.15090009570121765,
+          "heldout_source_MAE": 0.238548144698143,
+          "heldout_deploy_MAE": 0.20548589527606964
+        },
+        {
+          "update": 500,
+          "batch_MSE": 0.04078194871544838,
+          "fit_MAE": 0.1335696429014206,
+          "heldout_source_MAE": 0.22566622495651245,
+          "heldout_deploy_MAE": 0.1843535304069519
+        },
+        {
+          "update": 600,
+          "batch_MSE": 0.04875756800174713,
+          "fit_MAE": 0.14046205580234528,
+          "heldout_source_MAE": 0.235063374042511,
+          "heldout_deploy_MAE": 0.19950085878372192
+        },
+        {
+          "update": 700,
+          "batch_MSE": 0.04293917119503021,
+          "fit_MAE": 0.12655650079250336,
+          "heldout_source_MAE": 0.23161710798740387,
+          "heldout_deploy_MAE": 0.19300585985183716
+        },
+        {
+          "update": 800,
+          "batch_MSE": 0.04329123720526695,
+          "fit_MAE": 0.11779868602752686,
+          "heldout_source_MAE": 0.22374646365642548,
+          "heldout_deploy_MAE": 0.17895908653736115
+        },
+        {
+          "update": 900,
+          "batch_MSE": 0.036194466054439545,
+          "fit_MAE": 0.11468777805566788,
+          "heldout_source_MAE": 0.2289883941411972,
+          "heldout_deploy_MAE": 0.18575519323349
+        },
+        {
+          "update": 1000,
+          "batch_MSE": 0.036165300756692886,
+          "fit_MAE": 0.10983685404062271,
+          "heldout_source_MAE": 0.23084910213947296,
+          "heldout_deploy_MAE": 0.18285971879959106
+        },
+        {
+          "update": 1100,
+          "batch_MSE": 0.04760616645216942,
+          "fit_MAE": 0.11113003641366959,
+          "heldout_source_MAE": 0.23772841691970825,
+          "heldout_deploy_MAE": 0.1949537843465805
+        },
+        {
+          "update": 1200,
+          "batch_MSE": 0.0345785915851593,
+          "fit_MAE": 0.09908641874790192,
+          "heldout_source_MAE": 0.23481982946395874,
+          "heldout_deploy_MAE": 0.18803328275680542
+        },
+        {
+          "update": 1300,
+          "batch_MSE": 0.039863765239715576,
+          "fit_MAE": 0.09669142961502075,
+          "heldout_source_MAE": 0.22539810836315155,
+          "heldout_deploy_MAE": 0.17524315416812897
+        },
+        {
+          "update": 1400,
+          "batch_MSE": 0.041388243436813354,
+          "fit_MAE": 0.09377831965684891,
+          "heldout_source_MAE": 0.2388180047273636,
+          "heldout_deploy_MAE": 0.19367152452468872
+        },
+        {
+          "update": 1500,
+          "batch_MSE": 0.0355757437646389,
+          "fit_MAE": 0.09309083223342896,
+          "heldout_source_MAE": 0.23726598918437958,
+          "heldout_deploy_MAE": 0.19683314859867096
+        },
+        {
+          "update": 1600,
+          "batch_MSE": 0.030089683830738068,
+          "fit_MAE": 0.08857051283121109,
+          "heldout_source_MAE": 0.22711774706840515,
+          "heldout_deploy_MAE": 0.18216440081596375
+        },
+        {
+          "update": 1700,
+          "batch_MSE": 0.02017991803586483,
+          "fit_MAE": 0.08738730102777481,
+          "heldout_source_MAE": 0.23065227270126343,
+          "heldout_deploy_MAE": 0.18384012579917908
+        },
+        {
+          "update": 1800,
+          "batch_MSE": 0.026343967765569687,
+          "fit_MAE": 0.0826130285859108,
+          "heldout_source_MAE": 0.22887639701366425,
+          "heldout_deploy_MAE": 0.18147669732570648
+        },
+        {
+          "update": 1900,
+          "batch_MSE": 0.015948280692100525,
+          "fit_MAE": 0.08740795403718948,
+          "heldout_source_MAE": 0.23835116624832153,
+          "heldout_deploy_MAE": 0.19571560621261597
+        },
+        {
+          "update": 2000,
+          "batch_MSE": 0.015324931591749191,
+          "fit_MAE": 0.07832629233598709,
+          "heldout_source_MAE": 0.22926238179206848,
+          "heldout_deploy_MAE": 0.17850551009178162
+        }
+      ]
+    },
+    "deploy-mc": {
+      "updates": 2000,
+      "seconds": 43.25883219705429,
+      "sha256": "dbe79abd049478dd6d8ad048faf2078777a22f418c914deffc4fa048024c0c10",
+      "curves": [
+        {
+          "update": 100,
+          "batch_MSE": 0.037275299429893494,
+          "fit_MAE": 0.1359708309173584,
+          "heldout_source_MAE": 0.18648062646389008,
+          "heldout_deploy_MAE": 0.18648062646389008
+        },
+        {
+          "update": 200,
+          "batch_MSE": 0.030603960156440735,
+          "fit_MAE": 0.11292532831430435,
+          "heldout_source_MAE": 0.17707769572734833,
+          "heldout_deploy_MAE": 0.17707769572734833
+        },
+        {
+          "update": 300,
+          "batch_MSE": 0.027204349637031555,
+          "fit_MAE": 0.10352454334497452,
+          "heldout_source_MAE": 0.1775023341178894,
+          "heldout_deploy_MAE": 0.1775023341178894
+        },
+        {
+          "update": 400,
+          "batch_MSE": 0.028528263792395592,
+          "fit_MAE": 0.1026402935385704,
+          "heldout_source_MAE": 0.18396960198879242,
+          "heldout_deploy_MAE": 0.18396960198879242
+        },
+        {
+          "update": 500,
+          "batch_MSE": 0.031374599784612656,
+          "fit_MAE": 0.0964333638548851,
+          "heldout_source_MAE": 0.18339021503925323,
+          "heldout_deploy_MAE": 0.18339021503925323
+        },
+        {
+          "update": 600,
+          "batch_MSE": 0.016385041177272797,
+          "fit_MAE": 0.0866229459643364,
+          "heldout_source_MAE": 0.1655419021844864,
+          "heldout_deploy_MAE": 0.1655419021844864
+        },
+        {
+          "update": 700,
+          "batch_MSE": 0.024083923548460007,
+          "fit_MAE": 0.08405051380395889,
+          "heldout_source_MAE": 0.17535822093486786,
+          "heldout_deploy_MAE": 0.17535822093486786
+        },
+        {
+          "update": 800,
+          "batch_MSE": 0.023960452526807785,
+          "fit_MAE": 0.08284424990415573,
+          "heldout_source_MAE": 0.17194443941116333,
+          "heldout_deploy_MAE": 0.17194443941116333
+        },
+        {
+          "update": 900,
+          "batch_MSE": 0.015291707590222359,
+          "fit_MAE": 0.0780155211687088,
+          "heldout_source_MAE": 0.16646143794059753,
+          "heldout_deploy_MAE": 0.16646143794059753
+        },
+        {
+          "update": 1000,
+          "batch_MSE": 0.01889979839324951,
+          "fit_MAE": 0.07875049114227295,
+          "heldout_source_MAE": 0.17525871098041534,
+          "heldout_deploy_MAE": 0.17525871098041534
+        },
+        {
+          "update": 1100,
+          "batch_MSE": 0.021567143499851227,
+          "fit_MAE": 0.07404463738203049,
+          "heldout_source_MAE": 0.16877685487270355,
+          "heldout_deploy_MAE": 0.16877685487270355
+        },
+        {
+          "update": 1200,
+          "batch_MSE": 0.014368214644491673,
+          "fit_MAE": 0.07555446028709412,
+          "heldout_source_MAE": 0.1760992705821991,
+          "heldout_deploy_MAE": 0.1760992705821991
+        },
+        {
+          "update": 1300,
+          "batch_MSE": 0.01712070032954216,
+          "fit_MAE": 0.06943275034427643,
+          "heldout_source_MAE": 0.17108353972434998,
+          "heldout_deploy_MAE": 0.17108353972434998
+        },
+        {
+          "update": 1400,
+          "batch_MSE": 0.015557401813566685,
+          "fit_MAE": 0.06867947429418564,
+          "heldout_source_MAE": 0.1735987365245819,
+          "heldout_deploy_MAE": 0.1735987365245819
+        },
+        {
+          "update": 1500,
+          "batch_MSE": 0.007578406482934952,
+          "fit_MAE": 0.06609155982732773,
+          "heldout_source_MAE": 0.17215293645858765,
+          "heldout_deploy_MAE": 0.17215293645858765
+        },
+        {
+          "update": 1600,
+          "batch_MSE": 0.01370640005916357,
+          "fit_MAE": 0.060035306960344315,
+          "heldout_source_MAE": 0.16563846170902252,
+          "heldout_deploy_MAE": 0.16563846170902252
+        },
+        {
+          "update": 1700,
+          "batch_MSE": 0.018404865637421608,
+          "fit_MAE": 0.06541260331869125,
+          "heldout_source_MAE": 0.17376606166362762,
+          "heldout_deploy_MAE": 0.17376606166362762
+        },
+        {
+          "update": 1800,
+          "batch_MSE": 0.01827322691679001,
+          "fit_MAE": 0.0595073364675045,
+          "heldout_source_MAE": 0.16504444181919098,
+          "heldout_deploy_MAE": 0.16504444181919098
+        },
+        {
+          "update": 1900,
+          "batch_MSE": 0.015077311545610428,
+          "fit_MAE": 0.061743464320898056,
+          "heldout_source_MAE": 0.172397643327713,
+          "heldout_deploy_MAE": 0.172397643327713
+        },
+        {
+          "update": 2000,
+          "batch_MSE": 0.006818731781095266,
+          "fit_MAE": 0.05943753942847252,
+          "heldout_source_MAE": 0.16552811861038208,
+          "heldout_deploy_MAE": 0.16552811861038208
+        }
+      ]
+    }
+  },
+  "shared_initialization": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "batch_sha256": "091c78eed07b56370ed509625b74e1d5d09b49b69f5f1a957487dbc1e21b3b58",
+  "same_dropout_rng": true,
+  "same_optimizer_initial_state": true,
+  "same_state_inputs": true,
+  "fit_states": 255,
+  "heldout_states": 82
+}

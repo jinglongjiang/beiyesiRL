@@ -1,0 +1,20 @@
+{
+  "arm": "nominal",
+  "scene": "baseline_circle",
+  "case": 2015,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.23799968560197582,
+  "duration": 8.75,
+  "steps": 35,
+  "return": 0.7105532272722921,
+  "path": 7.884061763674058,
+  "final_distance": 0.2923132637847941,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 8.600531847748373
+}
