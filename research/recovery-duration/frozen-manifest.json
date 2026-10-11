@@ -1,0 +1,20 @@
+{
+  "parent_source": "6af7275",
+  "training_implementation_commit": "5d8c9c2",
+  "recovery_protocol_commit": "097972a",
+  "nominal_checkpoint": "artifacts/nominal.pth",
+  "nominal_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "nominal_training_seed": 61,
+  "nominal_rl_episodes": 2000,
+  "nominal_il_successes": 512,
+  "nominal_il_epochs": 20,
+  "nominal_il_optimizer_steps": 2040,
+  "nominal_rl_optimizer_steps": 8000,
+  "nominal_training_seconds": 1790.154751860071,
+  "device": "local RTX 3060",
+  "runtime": "mamba_env Python 3.10, PyTorch 2.2.2",
+  "configuration": "Base architecture/environment config is artifacts/parent-config.ini; effective run budgets and RNG seeds override its historical train-section values exactly as protocol.json and run.py specify. Native train.py is not invoked.",
+  "prior_weights_or_features_reused": false,
+  "original_project_modified": false,
+  "logs_timezone": "UTC; host timezone Asia/Seoul"
+}
