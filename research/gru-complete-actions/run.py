@@ -85,7 +85,7 @@ def verify():
             humans=tape, commands=np.asarray(part['commands']), safe=part['safe'],
             predicted_q=part['q'], predicted_value=part['value'], progress=part['progress'])
         records.append({**root,'frames_verified':len(tape),'max_abs_error':max_error,
-                        'arrived_human_frames':arrived_steps,'goals_unchanged':True,
+                        'arrived_human_frames':int(arrived_steps),'goals_unchanged':True,
                         'safe_count':int(part['safe'].sum()),'root_sha256':sha(path)})
     save('verification.json', {'passed':True,'roots':records,'actions':80,
                              'nominal_sha256':SPEC['nominal_sha256']})

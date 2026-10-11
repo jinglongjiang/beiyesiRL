@@ -1,0 +1,13 @@
+[
+  {
+    "id": "verification-json-serialization",
+    "commit": "2b22082",
+    "stage": "full-tape verification",
+    "exit_code": 1,
+    "error": "TypeError: Object of type int64 is not JSON serializable",
+    "cause": "Accumulated reached_destination boolean count retained a numpy integer type",
+    "fix": "Convert the count to Python int before JSON serialization",
+    "scientific_observation": false,
+    "action": "Stopped before all-action outcomes; rerun correctness verification only"
+  }
+]
