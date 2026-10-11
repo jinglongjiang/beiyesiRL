@@ -43,6 +43,25 @@ def main():
             'one_step_damages':sum(r['C_outcomes'][0]['success'] and not r['C_outcomes'][1]['success'] for r in roots),
             'policy_trap_with_saved_safe_alternative':[{k:r[k] for k in ['scene','case','step']} for r in policy_traps]},
         'strata':{},'upstream':{}}
+    result['three_level'].update({
+        'equal_predicted_immediate_rewards':sum(abs(diff(r['A_rewards']))<=tolerance for r in roots),
+        'nonzero_pair_risk_terms':sum(any(abs(x)>tolerance for x in r['risk']) for r in roots),
+        'mean_absolute_A_B_value_difference':float(np.mean([np.abs(np.subtract(r['A_values'],r['B_values'])) for r in roots])),
+        'native_reward_differs_from_prediction':sum(np.max(np.abs(np.subtract(r['A_rewards'],r['actual_rewards'])))>tolerance for r in roots),
+        'both_timeout_return_ties':sum(all(o['timeout'] for o in r['C_outcomes']) for r in tied),
+        'forward_better_both_success':sum(all(o['success'] for o in r['C_outcomes']) for r in wrong),
+        'selected_contacts':sum(r['C_outcomes'][0]['contact'] for r in roots),
+        'forward_contacts':sum(r['C_outcomes'][1]['contact'] for r in roots),
+        'timeout_predicted_positive':sum(r['B_q'][0]>0 for r in roots if r['C_outcomes'][0]['timeout']),
+        'timeout_median_B_minus_C':float(np.median([r['B_q'][0]-r['C_returns'][0] for r in roots if r['C_outcomes'][0]['timeout']]))})
+    result['scenes']={}
+    for scene in sorted({r['scene'] for r in baseline}):
+        episodes=[r for r in baseline if r['scene']==scene]
+        subset=[r for r in roots if r['scene']==scene]
+        result['scenes'][scene]={'episodes':len(episodes),'success':sum(r['success'] for r in episodes),
+            'collision':sum(r['collision'] for r in episodes),'contact':sum(r['contact'] for r in episodes),
+            'timeout':sum(r['timeout'] for r in episodes),'fixed_roots':len(subset),
+            'B_C_misrank':sum(diff(r['B_q'])>tolerance and diff(r['C_returns'])<-tolerance for r in subset)}
     for label,subset in [('all',roots),('discovery',[r for r in roots if r['partition']=='discovery']),
                         ('mechanism-check',[r for r in roots if r['partition']=='mechanism-check'])]:
         result['strata'][label]={'roots':len(subset),
@@ -79,6 +98,44 @@ def main():
             'rescues_or_expected_count':sum(r['selected_success_probability'] for r in metrics if not r['baseline_selected_success']),
             'damages_or_expected_count':sum(1-r['selected_success_probability'] for r in metrics if r['baseline_selected_success']),
             'metrics':metrics}
+    result['causal_training']={}
+    evaluations={}
+    for arm in ['control','matched-smoothing']:
+        directory=HERE/'artifacts'/'causal-evaluation'/arm
+        if not (directory/'complete.json').exists():
+            continue
+        episodes=json.loads((directory/'baseline.json').read_text())
+        contrasts=json.loads((directory/'contrasts.json').read_text())
+        metadata=json.loads((directory/'complete.json').read_text())
+        training=json.loads((HERE/'artifacts'/'causal-training'/arm/'manifest.json').read_text())
+        disagreements=[r for r in contrasts if diff(r['fixed_pair_B_q'])*diff(r['C_returns'])<0
+                       and min(abs(diff(r['fixed_pair_B_q'])),abs(diff(r['C_returns'])))>tolerance]
+        result['causal_training'][arm]={'episodes':len(episodes),'roots':len(contrasts),
+            'success':sum(r['success'] for r in episodes),'collision':sum(r['collision'] for r in episodes),
+            'contact':sum(r['contact'] for r in episodes),'timeout':sum(r['timeout'] for r in episodes),
+            'mean_discounted_return':float(np.mean([r['return'] for r in episodes])),
+            'negative_progress_roots':sum(r['flagged_roots'] for r in episodes),
+            'sampled_roots':sum(len(r['sampled_roots']) for r in episodes),
+            'fixed_pair_B_C_misrank':len(disagreements),
+            'fixed_pair_B_C_MAE':float(np.mean([np.abs(np.subtract(r['fixed_pair_B_q'],r['C_returns'])) for r in contrasts])),
+            'fixed_old_states_still_naturally_reached':sum(r['new_policy_reaches_same_root'] for r in contrasts),
+            'training_seconds':training['elapsed_seconds'],'evaluation_seconds':metadata['elapsed_seconds'],
+            'per_scene':{scene:{'success':sum(r['success'] for r in episodes if r['scene']==scene),
+                               'timeout':sum(r['timeout'] for r in episodes if r['scene']==scene),
+                               'contact':sum(r['contact'] for r in episodes if r['scene']==scene)}
+                         for scene in sorted({r['scene'] for r in episodes})}}
+        evaluations[arm]={(r['scene'],r['case']):r for r in episodes}
+    if len(evaluations)==2:
+        c,t=evaluations['control'],evaluations['matched-smoothing']
+        assert set(c)==set(t) and len(c)==240
+        result['causal_training']['paired']={
+            'rescues':sum(not c[k]['success'] and t[k]['success'] for k in c),
+            'damages':sum(c[k]['success'] and not t[k]['success'] for k in c),
+            'outcome_changes':[{'scene':k[0],'case':k[1],'control':c[k]['outcome'],'treatment':t[k]['outcome']} for k in c if c[k]['outcome']!=t[k]['outcome']]}
+        cm,tm=[result['causal_training'][a] for a in ['control','matched-smoothing']]
+        result['causal_training']['frozen_threshold_passed']=bool(
+            tm['fixed_pair_B_C_misrank']<=.8*cm['fixed_pair_B_C_misrank']
+            and tm['timeout']<=cm['timeout']-4 and tm['contact']<=cm['contact'])
     (HERE/'statistics.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='upstream'},indent=2))
     print(json.dumps({k:{a:b for a,b in v.items() if a!='metrics'} for k,v in result['upstream'].items()},indent=2))

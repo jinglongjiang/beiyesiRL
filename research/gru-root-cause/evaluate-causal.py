@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import time
 
 import numpy as np
 import torch
@@ -11,6 +12,7 @@ import run as r
 
 
 def evaluate(arm):
+    started = time.perf_counter()
     cfg, policy = r.setup()
     trained = r.HERE / 'artifacts' / 'causal-training' / arm
     manifest = json.loads((trained / 'manifest.json').read_text())
@@ -78,7 +80,8 @@ def evaluate(arm):
     r.m.save_json(r.OUT/'complete.json',{'arm':arm,'episodes':240,'roots':164,
                                         'checkpoint_sha256':manifest['final_sha256'],
                                         'test_smoothing':policy.test_action_smoothing,
-                                        'test_filter':policy.test_min_clearance,'test_risk':policy.test_risk_lambda})
+                                        'test_filter':policy.test_min_clearance,'test_risk':policy.test_risk_lambda,
+                                        'elapsed_seconds':time.perf_counter()-started})
     print('COMPLETE evaluation',arm,flush=True)
 
 
