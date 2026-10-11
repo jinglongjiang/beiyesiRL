@@ -17,7 +17,7 @@ data/
 *.mp4
 videos/
 
-# Never publish model weights, optimizers, demonstration datasets or credentials.
+# Exclude model/data binaries and credentials by default; research assets below are explicitly versioned.
 *.pth*
 *.pt
 *.pt.*
@@ -61,3 +61,8 @@ crowd_nav/runs/bayes-diagnostic-20261009/seed*-episodes/
 *.tar.gz
 *.tgz
 *.zip
+
+# User-requested reproducibility assets for the repaired-GRU research lineage.
+!research/recovery-duration/artifacts/*.pth
+!research/gru-root-cause/artifacts/causal-training/control/*.pth
+!research/gru-root-cause/artifacts/causal-training/matched-smoothing/*.pth

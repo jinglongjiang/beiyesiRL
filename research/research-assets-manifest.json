@@ -1,0 +1,134 @@
+{
+  "based_on_commit": "0d78e2b90b1717fdc0999ffc8f2ab9e19127998c",
+  "scope": "Current repaired-GRU, recovery-failure and root-cause research; preserve negative controls and all same-lineage checkpoints",
+  "assets": [
+    {
+      "path": "research/recovery-duration/artifacts/corrected-orca.pth",
+      "bytes": 13828284,
+      "sha256": "3f8610b4c76beb60b9d9431603c3f4feb723937085380c72c36239e05805fe67",
+      "kind": "demonstrations"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/gru-il.pth",
+      "bytes": 7030302,
+      "sha256": "ec1ec766301fbfe79ea87c55923ab349123fcdc358ba003c6fa09dcccf3bbde2",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/gru-rl-1000.pth",
+      "bytes": 7032195,
+      "sha256": "9e9db016fade42a43a8f74d8583a292061642e922629b9808224f61019a516be",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/gru-rl-1500.pth",
+      "bytes": 7032195,
+      "sha256": "fcb46a194e985c6c55a4e0f4f0fedb1eb0fc1375e9d01f15625aa95f0efcde31",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/gru-rl-2000.pth",
+      "bytes": 7032195,
+      "sha256": "4c7ddd902baca39a9522db722a60dc53f7f060d8d1cc012bad135e49fc74c8eb",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/gru-rl-500.pth",
+      "bytes": 7032162,
+      "sha256": "f31ad6cba63cf5707be2d296de5bb4dc83f8de4347910d186abac4aa3f46d475",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/nominal.pth",
+      "bytes": 7031551,
+      "sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/ordinary.pth",
+      "bytes": 147602,
+      "sha256": "85a7bff324697903954f1f6ecee656ed99ceec03518d9350c397febcc9835c1c",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/recovery-duration/artifacts/paired.pth",
+      "bytes": 147390,
+      "sha256": "fd9e77e81bac0d0a7e05f2817640f5f6a8b49283351141382a53d9590817b2fa",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/control/nominal.pth",
+      "bytes": 7031551,
+      "sha256": "b4f99cd9a59a856fc876f64658d6d053d9c2a52a05386a842b3d768ea38558d4",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/control/rl-1000.pth",
+      "bytes": 7031551,
+      "sha256": "876e254b8a8cc1050d1bc9995c3ccffe42dd49b22f6234cd5364756e45e81107",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/control/rl-1500.pth",
+      "bytes": 7031551,
+      "sha256": "9b0f9af28541875070530cea40b56a575c244255567653451e0a9583687c3e65",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/control/rl-2000.pth",
+      "bytes": 7031551,
+      "sha256": "fcb49920dbf1350d5b302f6d58d6778172b54cf38e1c338c3720b0cb38bb45dd",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/control/rl-500.pth",
+      "bytes": 7030302,
+      "sha256": "ebb9ef86fa6e71929e6115f65cd21278bbfd328114100b2a29c303d2bf65a87f",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/matched-smoothing/nominal.pth",
+      "bytes": 7031551,
+      "sha256": "65e3f3e19bd8de12df5a5b3e8166a9452cd7ad8a7be01f65d8b283368ad26b55",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/matched-smoothing/rl-1000.pth",
+      "bytes": 7031551,
+      "sha256": "2e713d23ab0d47b1f732c1ac5ff548a8af7efb5f3cbf831dd1dd9e532eaa9ee0",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/matched-smoothing/rl-1500.pth",
+      "bytes": 7031551,
+      "sha256": "6c61ba66554aa297bf2ccc4ff939b187a8796ec2692945c05d172d526837719b",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/matched-smoothing/rl-2000.pth",
+      "bytes": 7031551,
+      "sha256": "fcae1fd148847ac5ec6314b6ead88db289fc7d891f498d873edd19f5f3771c2f",
+      "kind": "checkpoint"
+    },
+    {
+      "path": "research/gru-root-cause/artifacts/causal-training/matched-smoothing/rl-500.pth",
+      "bytes": 7030302,
+      "sha256": "ebaf588c64405625ee6976a71f37c97fd10d43957631275367550bf06456317e",
+      "kind": "checkpoint"
+    }
+  ],
+  "asset_count": 19,
+  "total_bytes": 126626888,
+  "already_tracked_files_by_research_directory": {
+    "research/recovery-duration": 23,
+    "research/navigation-findings": 371,
+    "research/gru-root-cause": 8196,
+    "research/gru-complete-actions": 13985
+  },
+  "previously_ignored_artifact_directory": {
+    "path": "research/recovery-duration/artifacts",
+    "files": 1180,
+    "bytes": 77416218,
+    "contents": "Training logs, learning curves, model checkpoints, ORCA demonstrations, successful and failed continuation traces, original recovery controls and results"
+  }
+}
