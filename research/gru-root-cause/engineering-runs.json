@@ -9,5 +9,15 @@
     "correction": "Read gx,gy,px,py fields directly",
     "scientific_observations": 0,
     "scope": "No upstream/nominal source change; no training or main contrast results affected"
+  },
+  {
+    "id": "summary-json-numpy-scalar",
+    "source_commit": "697a318",
+    "exit": 1,
+    "error": "TypeError: numpy.int64 is not JSON serializable",
+    "cause": "Summing numpy Boolean comparisons produced a numpy integer",
+    "correction": "Convert comparison to Python bool before aggregation",
+    "scientific_observations": 0,
+    "scope": "Serialization only; previous statistics and all raw experiments retained"
   }
 ]

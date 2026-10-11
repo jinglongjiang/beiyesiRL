@@ -47,7 +47,7 @@ def main():
         'equal_predicted_immediate_rewards':sum(abs(diff(r['A_rewards']))<=tolerance for r in roots),
         'nonzero_pair_risk_terms':sum(any(abs(x)>tolerance for x in r['risk']) for r in roots),
         'mean_absolute_A_B_value_difference':float(np.mean([np.abs(np.subtract(r['A_values'],r['B_values'])) for r in roots])),
-        'native_reward_differs_from_prediction':sum(np.max(np.abs(np.subtract(r['A_rewards'],r['actual_rewards'])))>tolerance for r in roots),
+        'native_reward_differs_from_prediction':sum(bool(np.max(np.abs(np.subtract(r['A_rewards'],r['actual_rewards'])))>tolerance) for r in roots),
         'both_timeout_return_ties':sum(all(o['timeout'] for o in r['C_outcomes']) for r in tied),
         'forward_better_both_success':sum(all(o['success'] for o in r['C_outcomes']) for r in wrong),
         'selected_contacts':sum(r['C_outcomes'][0]['contact'] for r in roots),
