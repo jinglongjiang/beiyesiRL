@@ -1,0 +1,17 @@
+{
+  "version": "single-factor-continuation-contracts-v1",
+  "scope": "Causal diagnostics, not new policies or method performance claims",
+  "roots": "All 164 previously frozen roots, including successful and failed histories; do not select winners",
+  "first_actions": "Preserve selected and forward executable first actions from the repaired deployment policy",
+  "conditions": {
+    "deadline50": "Only change continuation task deadline25->50; identical actions/state/human future up to deadline25. Validate extended tape against all103 saved frames.",
+    "no-smoothing": "Only change future executable-candidate smoothing .3->0, after the forced first action. Keep safety/risk and time25.",
+    "no-filter": "Only disable future test-time safety/risk consumption, after the forced first action. Keep smoothing and time25; collision regressions are preserved, not called improvements.",
+    "explore": "Only add future epsilon=.05 to the deployment continuation; four indexed common draws, no change to time/safety/smoothing. Draws are not independent scenes."
+  },
+  "activation_rule": "Finish A/B/C first. Run deadline50, no-smoothing and no-filter if successor replacement fails to correct the main ranking errors. Run explore only if these fail to explain most remaining realized rank disagreements.",
+  "mechanism_measures": ["realized selected-minus-forward return", "whether B/C rank disagreement becomes agreement", "selected continuation success/rescue/damage/contact", "discovery and mechanism-check separately", "ordinary success controls retained"],
+  "learning_causality_limit": "A changed continuation can identify execution/contract effects, but does not by itself prove how the historical network acquired its weights.",
+  "training_selection": "At most one factor may receive matched causal retraining; select the factor that most consistently reconciles B with C and explains actual failures without solely relying on collision-producing changes. Register and commit exact factor/control before retraining.",
+  "stop": "No sweep, extra scenarios or algorithm. If no factor has a discriminating effect, retain the unresolved learning/distribution alternatives and specify one further experiment instead of forcing a root cause."
+}

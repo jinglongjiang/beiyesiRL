@@ -96,16 +96,19 @@ def decompose(p,env):
         values=p.forward_candidate_values(windows)
         r=torch.tensor(rewards.tolist(),device=p.device)
         q=p.candidate_action_values(state,commands,r,values,env)
-        risk=p.test_risk_lambda*torch.clamp(p.test_min_clearance-torch.tensor(clear.tolist(),device=p.device),min=0)
+        filtering=(p._phase in ['test','val','eval'] and (p.test_min_clearance>0 or p.test_risk_lambda>0))
+        margin=p.test_min_clearance if p.test_min_clearance>0 else p.discomfort_dist
+        risk=(p.test_risk_lambda*torch.clamp(margin-torch.tensor(clear.tolist(),device=p.device),min=0)
+              if filtering else torch.zeros_like(q))
         scores=q-risk
         safe=clear>=p.test_min_clearance
-        if safe.any():
+        if filtering and p.test_min_clearance>0 and safe.any():
             scores=scores.masked_fill(torch.tensor(~safe,device=p.device),-1e9)
         scores[0]-=.001
     pos=np.asarray(env.robot.get_position())
     goal=np.asarray(env.robot.get_goal_position())
     progress=np.linalg.norm(pos-goal)-np.linalg.norm(pos+np.asarray(commands)*.25-goal,axis=1)
-    allowed=safe if safe.any() else np.ones(80,dtype=bool)
+    allowed=safe if filtering and p.test_min_clearance>0 and safe.any() else np.ones(80,dtype=bool)
     best=int(scores.argmax())
     forward=int(np.where(allowed,progress,-np.inf).argmax())
     terminal,tr=p.candidate_terminal_outcomes(state,commands,env)
@@ -266,7 +269,9 @@ def contrasts(variants=None):
             np.savez_compressed(path,records=trace)
             outcomes.append(result)
             firsts.append(first)
-        np.testing.assert_array_equal(np.asarray(firsts[0]['next_humans']),np.asarray(firsts[1]['next_humans']))
+        np.testing.assert_array_equal(
+            [[h.px,h.py,h.vx,h.vy,h.radius] for h in firsts[0]['next_humans']],
+            [[h.px,h.py,h.vx,h.vy,h.radius] for h in firsts[1]['next_humans']])
         windows=[]
         for field in ['cv','positions','velocities','actual']:
             for first in firsts:
@@ -308,8 +313,43 @@ def contrasts(variants=None):
                   'C-forward-better',sum(r['C_returns'][1]>r['C_returns'][0]+1e-6 for r in rows),flush=True)
 
 
+def upstream(variant):
+    cfg,p=setup()
+    roots=json.loads((FINDINGS/'counterfactual-protocol.json').read_text())['roots']
+    assert len(json.loads((HERE/'value-contrasts.json').read_text()))==len(roots)
+    rows=[]
+    draws=range(4) if variant=='explore' else range(1)
+    for n,root in enumerate(roots):
+        scene=m.SCENES.index(root['scene'])
+        case=root['case']
+        tape=load_tape(scene,case,variant=='deadline50',cfg,p)
+        env,snap=frozen_root(cfg,p,root,tape)
+        part=decompose(p,env)
+        actions=[(part[k],part['commands'][part[k]]) for k in ['best','forward']]
+        for draw in draws:
+            outcomes=[]
+            for label,forced in zip(['selected','forward'],actions):
+                result,trace,_=rollout(cfg,p,scene,case,tape,snap,forced,variant,draw)
+                result.pop('sampled_roots')
+                path=OUT/'upstream'/variant/f'{scene}-{case}-{draw}-{label}.npz'
+                path.parent.mkdir(parents=True,exist_ok=True)
+                np.savez_compressed(path,records=trace)
+                outcomes.append(result)
+            rows.append({'scene':root['scene'],'case':case,'step':root['step'],
+                         'partition':root['partition'],'variant':variant,'draw':draw,
+                         'returns':[r['return'] for r in outcomes],'outcomes':outcomes})
+        save(f'upstream-{variant}.json',rows)
+        if (n+1)%10==0:
+            print('upstream',variant,n+1,'pairs',len(rows),flush=True)
+
+
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('stage',choices=['preflight','baseline','contrasts'])
+    parser.add_argument('stage',choices=['preflight','baseline','contrasts','upstream'])
+    parser.add_argument('--variant',choices=['deadline50','no-smoothing','no-filter','explore'])
     args=parser.parse_args()
-    globals()[args.stage]()
+    if args.stage=='upstream':
+        assert args.variant
+        upstream(args.variant)
+    else:
+        globals()[args.stage]()
