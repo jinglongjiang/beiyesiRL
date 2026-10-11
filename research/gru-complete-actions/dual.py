@@ -106,7 +106,7 @@ def actual_windows(cfg,p,root,tape,snap,part):
     return np.asarray(windows,np.float32),np.asarray(first,np.float64)
 
 
-def catalogue(timing=False):
+def catalogue(timing=False,shard=0,shards=1):
     assert json.loads((OUT/'verification.json').read_text())['passed']
     cfg,p=setup()
     old={(v['scene'],v['case']):v for v in json.loads((q.OLD/'value-contrasts.json').read_text())}
@@ -115,6 +115,9 @@ def catalogue(timing=False):
     if timing:
         ids={tuple(v) for v in q.SPEC['timing_roots']}
         chosen=[v for v in chosen if (r.m.SCENES.index(v['scene']),v['case'],v['step']) in ids]
+    else:
+        assert 0<=shard<shards
+        chosen=chosen[shard::shards]
     runtimes=[]
     started=time.perf_counter()
     for root in chosen:
@@ -166,7 +169,7 @@ def catalogue(timing=False):
                 count+=1
         runtimes.append({**root,'actions':len(indices),'branches':len(indices)*2,
                          'new_branches':count,'seconds':time.perf_counter()-began})
-        save('timing.json' if timing else 'runtime.json',runtimes)
+        save('timing.json' if timing else f'runtime-shard-{shard}.json',runtimes)
         print('V2 CATALOGUE',q.key(root),'branches',len(indices)*2,'new',count,
               'seconds',round(runtimes[-1]['seconds'],1),'total',round(time.perf_counter()-started,1),flush=True)
     if timing:
@@ -285,8 +288,10 @@ def checkpoints():
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('stage',choices=['verify','timing','catalogue','prefixes','checkpoints'])
+    parser.add_argument('--shard',type=int,default=0)
+    parser.add_argument('--shards',type=int,default=1)
     args=parser.parse_args()
     if args.stage in ['timing','catalogue']:
-        catalogue(args.stage=='timing')
+        catalogue(args.stage=='timing',args.shard,args.shards)
     else:
         globals()[args.stage]()
