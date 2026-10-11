@@ -62,6 +62,22 @@ def main():
             'collision':sum(r['collision'] for r in episodes),'contact':sum(r['contact'] for r in episodes),
             'timeout':sum(r['timeout'] for r in episodes),'fixed_roots':len(subset),
             'B_C_misrank':sum(diff(r['B_q'])>tolerance and diff(r['C_returns'])<-tolerance for r in subset)}
+    def recurrence(episode):
+        points=episode['sampled_roots']
+        return any(a['flag'] and b['flag'] and a['safe_count']==b['safe_count']==80
+                   and b['step']-a['step']==8 for a,b in zip(points,points[1:]))
+    result['reused_recurrence_rule']={}
+    for name,subset in [('discovery',[r for r in baseline if r['case']<120]),
+                        ('mechanism-check',[r for r in baseline if r['case']>=120])]:
+        result['reused_recurrence_rule'][name]={
+            'positive_episodes':sum(recurrence(r) for r in subset),
+            'positive_timeouts':sum(recurrence(r) and r['timeout'] for r in subset),
+            'negative_episodes':sum(not recurrence(r) for r in subset),
+            'negative_timeouts':sum(not recurrence(r) and r['timeout'] for r in subset)}
+    result['three_level']['both_timeout_ties_equal_pure_terminal_return']=sum(
+        all(o['timeout'] for o in r['C_outcomes'])
+        and all(abs(v+.5*.99**(o['steps']-1))<1e-9 for v,o in zip(r['C_returns'],r['C_outcomes']))
+        for r in tied)
     for label,subset in [('all',roots),('discovery',[r for r in roots if r['partition']=='discovery']),
                         ('mechanism-check',[r for r in roots if r['partition']=='mechanism-check'])]:
         result['strata'][label]={'roots':len(subset),
@@ -98,6 +114,13 @@ def main():
             'rescues_or_expected_count':sum(r['selected_success_probability'] for r in metrics if not r['baseline_selected_success']),
             'damages_or_expected_count':sum(1-r['selected_success_probability'] for r in metrics if r['baseline_selected_success']),
             'metrics':metrics}
+        if path.stem=='upstream-deadline50':
+            still_failed=[row for row in rows if row['outcomes'][0]['timeout']]
+            result['upstream']['deadline50'].update({
+                'selected_timeouts50':len(still_failed),
+                'timeouts50_predicted_positive':sum(root_lookup[(row['scene'],row['case'])]['B_q'][0]>0 for row in still_failed),
+                'timeouts50_median_B_minus_C':float(np.median([
+                    root_lookup[(row['scene'],row['case'])]['B_q'][0]-row['returns'][0] for row in still_failed]))})
     result['causal_training']={}
     evaluations={}
     for arm in ['control','matched-smoothing']:
