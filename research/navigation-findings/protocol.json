@@ -12,6 +12,7 @@
     "scenes": "all six existing native scenes",
     "first_decision": 4,
     "counterfactual": "use the frozen learned first option once at its original root, then frozen nominal to the same deadline; compare existing repeatedly controlled and nominal trajectories",
+    "final_contact_contrast": "At the44 saved contact roots only, compute actual swept clearance of the original80 executable candidates against the saved next human step. Distinguish empty .2m safety mask from unavoidable physical collision, and check whether the already computed nominal action avoids immediate contact. Privileged one-step geometry only, not a deployed predictor or episode rescue. Stop recovery work after this contrast.",
     "decision": "If physical/control replay mismatches, classify the exact engineering defect. If one-shot improves versus repeat, repeated intervention is causally harmful for those matched cases; do not infer that it is the sole cause. If first option is already harmful, test value-ranking error on that root. No repair or retraining follows either outcome.",
     "stop": "stop by 15 percent budget even if cause is unresolved"
   },

@@ -391,10 +391,49 @@ def freeze_counterfactuals():
     print('frozen counterfactual roots',len(roots),flush=True)
 
 
+def collision_choices():
+    cfg,p=setup()
+    rows=json.loads((m.OUT/'development-results.json').read_text())
+    result=[]
+    for old in rows:
+        if old['arm']=='nominal' or not old['collision']:
+            continue
+        arm,case=old['arm'],old['case']
+        scene=m.SCENES.index(old['scene'])
+        trace=np.load(m.OUT/'development-traces'/arm/f'{scene}-{case}.npz')['records']
+        root=int(trace[-1,0])
+        def capture(env,positions,row,parts,snapshot,tape):
+            commands,tok,rew,values,clear,risk,scores,nominal=parts
+            r0=np.array(env.robot.get_position())
+            h0=tape[root,:,:2]
+            h1=tape[root+1,:,:2]
+            r1=r0+np.array(commands)*.25
+            a=h0[None,:,:]-r0[None,None,:]
+            b=(h1[None,:,:]-r1[:,None,:])-a
+            frac=np.clip(-(a*b).sum(-1)/np.maximum((b*b).sum(-1),1e-15),0,1)
+            radii=np.array([h.radius+env.robot.radius for h in env.humans])
+            actual=(np.linalg.norm(a+frac[:,:,None]*b,axis=-1)-radii).min(1)
+            np.testing.assert_allclose(actual[int(row[5])],row[8],atol=1e-9,rtol=0)
+            result.append({'arm':arm,'scene':old['scene'],'case':case,'step':root,
+                           'safe_count':int((clear>=p.test_min_clearance).sum()),
+                           'chosen':int(row[5]),'nominal':nominal,
+                           'chosen_actual_clearance':float(actual[int(row[5])]),
+                           'nominal_actual_clearance':float(actual[nominal]),
+                           'best_actual_clearance':float(actual.max()),
+                           'noncontact_candidates':int((actual>=0).sum()),
+                           'actual_candidate_clearances':actual.tolist(),
+                           'predicted_candidate_clearances':clear.tolist()})
+        replay(cfg,p,arm,scene,case,{root},capture)
+    write('recovery-collision-choices.json',{
+        'scope':'Only final contact step. True next human motion is privileged geometry diagnostic, NOT a deployable policy or full episode rescue.',
+        'rows':result})
+    print('final-step collision contrasts',len(result),flush=True)
+
+
 if __name__=='__main__':
     ap=argparse.ArgumentParser()
     ap.add_argument('command',choices=['recovery-offline','recovery-roots','history-channel','nominal-ledger',
-                                    'recovery-contract','freeze-counterfactuals','counterfactuals'])
+                                    'recovery-contract','freeze-counterfactuals','counterfactuals','collision-choices'])
     args=ap.parse_args()
     if args.command=='recovery-offline':
         offline_recovery()
@@ -410,3 +449,5 @@ if __name__=='__main__':
         counterfactuals()
     elif args.command=='freeze-counterfactuals':
         freeze_counterfactuals()
+    elif args.command=='collision-choices':
+        collision_choices()
