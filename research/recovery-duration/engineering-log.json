@@ -12,5 +12,12 @@
     "failure": "Host shell could not create train.log inside the container-owned artifacts directory; training did not start.",
     "action": "Redirect training output within the same container instead; one training process was launched successfully.",
     "status": "FIXED_BEFORE_TRAINING"
+  },
+  {
+    "id": "supervision-coverage-before-outcomes",
+    "scientific_observation": false,
+    "failure": "Initial label schedule ended at t=12s, while the controller must choose recovery duration through the native 25s deadline.",
+    "action": "Before the first recovery label or evaluation outcome, add fixed t=18,22,24s roots on the same 96 preregistered episodes. Keep every root that exists, without outcome filtering. No changes to method, scenarios, controls or nominal training.",
+    "status": "FIXED_BEFORE_RECOVERY_DATA"
   }
 ]
