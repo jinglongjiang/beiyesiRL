@@ -1,0 +1,116 @@
+{
+  "records": [
+    {
+      "root": {
+        "scene": "baseline_square",
+        "case": 129,
+        "step": 48,
+        "group": "difficult",
+        "partition": "held-out"
+      },
+      "prefix1_outcome": "timeout",
+      "saved_prefix_outcomes": {
+        "2": "timeout",
+        "4": "timeout",
+        "8": "reach_goal",
+        "16": "reach_goal"
+      },
+      "root_relative_not_architecture_impossibility": true,
+      "downstream_transition_bound": {
+        "prefix4": "failure",
+        "prefix8": "safe success",
+        "failure_to_success_extension_exists_between_lengths": [
+          5,
+          8
+        ],
+        "exact_transition_step": "UNRESOLVED; not simulated",
+        "reason": "With identical deterministic world, history and continuation, a finite failure-to-success prefix extension entails at least one downstream state where a single alternative followed by the same GRU improves the outcome. This does not identify its historical training cause."
+      }
+    },
+    {
+      "root": {
+        "scene": "dense_square",
+        "case": 133,
+        "step": 64,
+        "group": "difficult",
+        "partition": "held-out"
+      },
+      "prefix1_outcome": "timeout",
+      "saved_prefix_outcomes": {
+        "2": "timeout",
+        "4": "timeout",
+        "8": "reach_goal",
+        "16": "reach_goal"
+      },
+      "root_relative_not_architecture_impossibility": true,
+      "downstream_transition_bound": {
+        "prefix4": "failure",
+        "prefix8": "safe success",
+        "failure_to_success_extension_exists_between_lengths": [
+          5,
+          8
+        ],
+        "exact_transition_step": "UNRESOLVED; not simulated",
+        "reason": "With identical deterministic world, history and continuation, a finite failure-to-success prefix extension entails at least one downstream state where a single alternative followed by the same GRU improves the outcome. This does not identify its historical training cause."
+      }
+    },
+    {
+      "root": {
+        "scene": "large_circle",
+        "case": 102,
+        "step": 88,
+        "group": "difficult",
+        "partition": "fit"
+      },
+      "prefix1_outcome": "timeout",
+      "saved_prefix_outcomes": {
+        "2": "reach_goal",
+        "4": "reach_goal",
+        "8": "reach_goal",
+        "16": "reach_goal"
+      },
+      "root_relative_not_architecture_impossibility": true,
+      "confirmed_downstream_single_action_misrank": {
+        "step": 89,
+        "nominal": 29,
+        "alternative": 59,
+        "predicted_nominal_Q_advantage": 0.0025125443935394287,
+        "actual_nominal_return_from_child": -0.16386137871890186,
+        "actual_alternative_return_from_child": 0.7397003733882803,
+        "nominal_outcome": "timeout",
+        "alternative_outcome": "reach_goal",
+        "alternative_contact": 0,
+        "same_child_physical_state_and_original_prefix_history": true
+      }
+    },
+    {
+      "root": {
+        "scene": "large_square",
+        "case": 101,
+        "step": 8,
+        "group": "difficult",
+        "partition": "fit"
+      },
+      "prefix1_outcome": "timeout",
+      "saved_prefix_outcomes": {
+        "2": "timeout",
+        "4": "timeout",
+        "8": "reach_goal",
+        "16": "timeout"
+      },
+      "root_relative_not_architecture_impossibility": true,
+      "downstream_transition_bound": {
+        "prefix4": "failure",
+        "prefix8": "safe success",
+        "failure_to_success_extension_exists_between_lengths": [
+          5,
+          8
+        ],
+        "exact_transition_step": "UNRESOLVED; not simulated",
+        "reason": "With identical deterministic world, history and continuation, a finite failure-to-success prefix extension entails at least one downstream state where a single alternative followed by the same GRU improves the outcome. This does not identify its historical training cause."
+      }
+    }
+  ],
+  "no_new_simulation": true,
+  "conclusion": "Initial-root multistep trap is not proof of an inherently sequence-only representational defect; at least one is directly a downstream single-action value misrank."
+}

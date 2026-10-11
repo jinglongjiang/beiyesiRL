@@ -117,11 +117,125 @@ def failure():
     print(json.dumps({k: {kk: vv for kk, vv in v.items() if kk != 'rows'} for k, v in result.items()}, indent=2))
 
 
+def frontier():
+    evidence = json.loads((HERE / 'B-evidence.json').read_text())['roots']
+    prefixes = json.loads((OLD / 'prefixes.json').read_text())
+    records = []
+    names = ['baseline_circle', 'baseline_square', 'dense_circle', 'dense_square', 'large_circle', 'large_square']
+    for item in evidence:
+        root = item['root']
+        key = f'{names.index(root["scene"])}-{root["case"]}'
+        first_index = item['steps'][0]['witness']
+        first = json.loads((OLD / 'catalogue' / key / f'action-{first_index:02d}-A_deploy.json').read_text())
+        assert not first['result']['success']
+        rows = [v for v in prefixes if v['root']['scene'] == root['scene'] and v['root']['case'] == root['case']]
+        successes = sorted(v['prefix'] for v in rows if v['success'] and not v['contact'])
+        result = {'root': root, 'prefix1_outcome': first['result']['outcome'],
+                  'saved_prefix_outcomes': {str(v['prefix']): v['outcome'] for v in rows},
+                  'root_relative_not_architecture_impossibility': True}
+        if 2 in successes:
+            two = next(v for v in rows if v['prefix'] == 2)
+            before = np.load(OLD / 'catalogue' / key / f'action-{first_index:02d}-A_deploy.npz')['records']
+            after = np.load(OLD / 'prefixes' / f'{key}-2.npz')['records']
+            np.testing.assert_allclose(before[0, :6], after[0, :6], rtol=0, atol=1e-12)
+            np.testing.assert_allclose(before[1, :3], after[1, :3], rtol=0, atol=1e-12)
+            step = item['steps'][1]
+            assert int(before[1, 5]) == step['nominal'] and int(after[1, 5]) == step['witness']
+            result['confirmed_downstream_single_action_misrank'] = {
+                'step': int(after[1, 0]), 'nominal': step['nominal'], 'alternative': step['witness'],
+                'predicted_nominal_Q_advantage': step['nominal_Q_advantage'],
+                'actual_nominal_return_from_child': (first['result']['return'] - before[0, 7]) / .99,
+                'actual_alternative_return_from_child': (two['return'] - after[0, 7]) / .99,
+                'nominal_outcome': first['result']['outcome'], 'alternative_outcome': two['outcome'],
+                'alternative_contact': two['contact'], 'same_child_physical_state_and_original_prefix_history': True}
+            assert step['nominal_Q_advantage'] > 0 and two['contact'] == 0
+        else:
+            four = next(v for v in rows if v['prefix'] == 4)
+            eight = next(v for v in rows if v['prefix'] == 8)
+            assert not four['success'] and eight['success'] and not eight['contact']
+            x = np.load(OLD / 'prefixes' / f'{key}-4.npz')['records']
+            y = np.load(OLD / 'prefixes' / f'{key}-8.npz')['records']
+            np.testing.assert_allclose(x[:4, :6], y[:4, :6], rtol=0, atol=1e-12)
+            result['downstream_transition_bound'] = {'prefix4': 'failure', 'prefix8': 'safe success',
+                'failure_to_success_extension_exists_between_lengths': [5, 8],
+                'exact_transition_step': 'UNRESOLVED; not simulated',
+                'reason': 'With identical deterministic world, history and continuation, a finite failure-to-success prefix extension entails at least one downstream state where a single alternative followed by the same GRU improves the outcome. This does not identify its historical training cause.'}
+        records.append(result)
+    write('B-causal-frontier.json', {'records': records,
+          'no_new_simulation': True,
+          'conclusion': 'Initial-root multistep trap is not proof of an inherently sequence-only representational defect; at least one is directly a downstream single-action value misrank.'})
+    print(json.dumps(records, indent=2))
+
+
+def coverage():
+    names = ['coverage-control', 'targeted-head', 'targeted-full']
+    result = {}
+    for cohort in ['roots', 'fresh']:
+        rows = {a: json.loads((HERE / f'coverage-{cohort}-{a}.json').read_text())['results'] for a in names}
+        reference = 'roots-nominal.json' if cohort == 'roots' else 'coverage-fresh-nominal.json'
+        rows['nominal'] = json.loads((HERE / reference).read_text())['results']
+        out = {'overall': {a: aggregate(v) for a, v in rows.items()},
+               'pairwise': {f'{a}-vs-{b}': pairs(rows[a], rows[b]) for a, b in
+                            [('coverage-control', 'nominal'), ('targeted-head', 'nominal'),
+                             ('targeted-full', 'nominal'), ('targeted-full', 'coverage-control'),
+                             ('targeted-full', 'targeted-head')]},
+               'per_scene': {s: {a: aggregate([v for v in rs if v['scene'] == s]) for a, rs in rows.items()}
+                             for s in sorted({v['scene'] for v in rows['nominal']})}}
+        if cohort == 'roots':
+            out['mechanism_groups'] = {c: {a: aggregate([v for v in rs if v['category'] == c])
+                                          for a, rs in rows.items()}
+                                       for c in sorted({v['category'] for v in rows['nominal']})}
+        result[cohort] = out
+    probes = json.loads((HERE / 'coverage-ranking-probes.json').read_text())
+    stats = json.loads((OLD / 'statistics.json').read_text())['cases']
+    active = {(v['scene'], v['case']): v for v in stats
+              if v['category'] != 'NO_CONTACT_FREE_RESCUE_IN_TESTED_SINGLE_OR_PREFIX_ACTIONS'}
+    result['ranking'] = {}
+    for arm, records in probes.items():
+        result['ranking'][arm] = {}
+        for split in ['even-fit', 'odd-heldout']:
+            subset = [v for v in records if (v['root']['scene'], v['root']['case']) in active
+                      and (v['root']['case'] % 2 == 0) == (split == 'even-fit')]
+            result['ranking'][arm][split] = {'n': len(subset),
+                'fixed_old_policy_safe_success': sum(v['old_policy_first_action_result']['success']
+                                                     and not v['old_policy_first_action_result']['contact'] for v in subset),
+                'mean_regret': float(np.mean([v['regret_fixed_old_policy'] for v in subset])),
+                'actual_next_V_MAE': float(np.mean([v['actual_next_V_MAE'] for v in subset]))}
+    write('coverage-summary.json', result)
+    print(json.dumps({c: v['overall'] for c, v in result.items() if c != 'ranking'}, indent=2))
+
+
+def controllers():
+    result = {}
+    for arm in ['commit8', 'adaptive']:
+        episodes = json.loads((HERE / f'fresh-{arm}.json').read_text())['results']
+        rows = []
+        for episode in episodes:
+            scene, case = episode['scene'], episode['case']
+            path = HERE / 'artifacts/fresh' / arm / f'{["baseline_circle", "baseline_square", "dense_circle", "dense_square", "large_circle", "large_square"].index(scene)}-{case}.npz'
+            trace = np.load(path)['records']
+            rows.append({'scene': scene, 'case': case, 'outcome': episode['outcome'],
+                         'triggers': episode['triggers'], 'intervention_steps': episode['intervention_steps'],
+                         'nonpositive_executed_progress_fraction': float((trace[:, 9] <= 0).mean()),
+                         'nonpositive_nominal_progress_fraction': float((trace[:, 10] <= 0).mean()),
+                         'selected_differs_nominal_steps': int((trace[:, 5] != trace[:, 6]).sum()),
+                         'final_distance': episode['final_distance']})
+        result[arm] = {'rows': rows,
+                       'scope': 'Descriptive activation and failure accounting only; divergent trajectories do not identify a unique causal reason for the duration difference.',
+                       'triggered_episodes': sum(v['triggers'] > 0 for v in rows),
+                       'triggered_timeouts': sum(v['triggers'] > 0 and v['outcome'] == 'timeout' for v in rows)}
+    write('controller-accounting.json', result)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('stage', choices=['roots', 'fresh', 'ranking', 'failure'])
+    parser.add_argument('stage', choices=['roots', 'fresh', 'ranking', 'failure', 'frontier', 'coverage', 'controllers'])
     args = parser.parse_args()
-    if args.stage == 'failure':
+    if args.stage in ('coverage', 'controllers'):
+        globals()[args.stage]()
+    elif args.stage == 'frontier':
+        frontier()
+    elif args.stage == 'failure':
         failure()
     elif args.stage == 'ranking':
         ranking()
