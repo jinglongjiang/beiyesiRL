@@ -1,0 +1,695 @@
+{
+  "roots": [
+    {
+      "root": {
+        "scene": "baseline_square",
+        "case": 129,
+        "step": 48,
+        "group": "difficult",
+        "partition": "held-out"
+      },
+      "steps": [
+        {
+          "step": 48,
+          "nominal": 9,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.023135099661719227,
+          "witness_progress": 0.17399863984034392,
+          "nominal_Q_advantage": 0.012033164501190186,
+          "raw_argmax": 9,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 49,
+          "nominal": 4,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.03841325695914133,
+          "witness_progress": 0.2252659052192616,
+          "nominal_Q_advantage": 0.011473476886749268,
+          "raw_argmax": 4,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 50,
+          "nominal": 4,
+          "witness": 39,
+          "witness_safe": true,
+          "nominal_progress": -0.025208079655511195,
+          "witness_progress": 0.20410000409313245,
+          "nominal_Q_advantage": 0.006242990493774414,
+          "raw_argmax": 4,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 51,
+          "nominal": 64,
+          "witness": 44,
+          "witness_safe": true,
+          "nominal_progress": -0.09717690868331674,
+          "witness_progress": 0.13342819928013716,
+          "nominal_Q_advantage": 0.0028093457221984863,
+          "raw_argmax": 64,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 52,
+          "nominal": 64,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": -0.1276814963352697,
+          "witness_progress": 0.19510528025586416,
+          "nominal_Q_advantage": 0.005813241004943848,
+          "raw_argmax": 64,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 53,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.23100682534201566,
+          "witness_progress": 0.23100682534201566,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 54,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.24282619720911813,
+          "witness_progress": 0.24282619720911813,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 55,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.2460335776951934,
+          "witness_progress": 0.2460335776951934,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 56,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.24609040833218676,
+          "witness_progress": 0.24609040833218676,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 57,
+          "nominal": 29,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.24416811325218557,
+          "witness_progress": 0.244411709178038,
+          "nominal_Q_advantage": 0.0005957484245300293,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 58,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.24581288351626346,
+          "witness_progress": 0.24581288351626346,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 59,
+          "nominal": 19,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.20360626477388194,
+          "witness_progress": 0.24346402121767646,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 19,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        }
+      ],
+      "existing_successful_prefixes": [
+        8,
+        16
+      ],
+      "existing_A_return_range": 0.0,
+      "value_interrupts": 6,
+      "safe_witness_steps": 12,
+      "mask_interrupts": 0
+    },
+    {
+      "root": {
+        "scene": "dense_square",
+        "case": 133,
+        "step": 64,
+        "group": "difficult",
+        "partition": "held-out"
+      },
+      "steps": [
+        {
+          "step": 64,
+          "nominal": 58,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.13452457130024165,
+          "witness_progress": 0.1270896416169749,
+          "nominal_Q_advantage": 0.024713873863220215,
+          "raw_argmax": 58,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 65,
+          "nominal": 64,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.12239847339942056,
+          "witness_progress": 0.21297507074272337,
+          "nominal_Q_advantage": 0.03604370355606079,
+          "raw_argmax": 64,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 66,
+          "nominal": 69,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.11103804647537618,
+          "witness_progress": 0.23881032850211925,
+          "nominal_Q_advantage": 0.037953197956085205,
+          "raw_argmax": 69,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 67,
+          "nominal": 69,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": -0.10327574342798762,
+          "witness_progress": 0.23463805064856258,
+          "nominal_Q_advantage": 0.04506731033325195,
+          "raw_argmax": 69,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 68,
+          "nominal": 69,
+          "witness": 44,
+          "witness_safe": true,
+          "nominal_progress": -0.10490963570717549,
+          "witness_progress": 0.13204207763693532,
+          "nominal_Q_advantage": 0.01039743423461914,
+          "raw_argmax": 69,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 69,
+          "nominal": 39,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.1458808376280305,
+          "witness_progress": 0.1908990303170337,
+          "nominal_Q_advantage": 0.02034398913383484,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 70,
+          "nominal": 44,
+          "witness": 38,
+          "witness_safe": true,
+          "nominal_progress": 0.0931821890924378,
+          "witness_progress": 0.1285650979519679,
+          "nominal_Q_advantage": 0.002516418695449829,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": true,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 71,
+          "nominal": 44,
+          "witness": 44,
+          "witness_safe": true,
+          "nominal_progress": 0.06257488415372459,
+          "witness_progress": 0.06257488415372459,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": true,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 72,
+          "nominal": 34,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.14411576848532404,
+          "witness_progress": 0.18001661957882553,
+          "nominal_Q_advantage": 0.006105095148086548,
+          "raw_argmax": 34,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 73,
+          "nominal": 34,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.1759708375744411,
+          "witness_progress": 0.1759708375744411,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 34,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 74,
+          "nominal": 29,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": 0.20491866795898694,
+          "witness_progress": 0.20491866795898694,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 24,
+          "mask_changes_raw_argmax": true,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 75,
+          "nominal": 24,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.23231257663682658,
+          "witness_progress": 0.23231257663682658,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 24,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 76,
+          "nominal": 24,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.24090250394394563,
+          "witness_progress": 0.24090250394394563,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 24,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 77,
+          "nominal": 29,
+          "witness": 19,
+          "witness_safe": true,
+          "nominal_progress": 0.2093066230525109,
+          "witness_progress": 0.24361321699400595,
+          "nominal_Q_advantage": 0.008389890193939209,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 78,
+          "nominal": 29,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.21342769060420663,
+          "witness_progress": 0.2444527895876102,
+          "nominal_Q_advantage": 0.003844022750854492,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 79,
+          "nominal": 24,
+          "witness": 19,
+          "witness_safe": true,
+          "nominal_progress": 0.240321170695511,
+          "witness_progress": 0.24534107713379716,
+          "nominal_Q_advantage": 0.002353966236114502,
+          "raw_argmax": 24,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        }
+      ],
+      "existing_successful_prefixes": [
+        8,
+        16
+      ],
+      "existing_A_return_range": 0.0,
+      "value_interrupts": 11,
+      "safe_witness_steps": 16,
+      "mask_interrupts": 3
+    },
+    {
+      "root": {
+        "scene": "large_circle",
+        "case": 102,
+        "step": 88,
+        "group": "difficult",
+        "partition": "fit"
+      },
+      "steps": [
+        {
+          "step": 88,
+          "nominal": 19,
+          "witness": 59,
+          "witness_safe": true,
+          "nominal_progress": -0.24653644601976166,
+          "witness_progress": 0.10146284882506218,
+          "nominal_Q_advantage": 0.01698136329650879,
+          "raw_argmax": 19,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 89,
+          "nominal": 29,
+          "witness": 59,
+          "witness_safe": true,
+          "nominal_progress": -0.08365374649114199,
+          "witness_progress": 0.20400683715058765,
+          "nominal_Q_advantage": 0.0025125443935394287,
+          "raw_argmax": 29,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 90,
+          "nominal": 69,
+          "witness": 59,
+          "witness_safe": true,
+          "nominal_progress": 0.15725966507782507,
+          "witness_progress": 0.2340377595390266,
+          "nominal_Q_advantage": 0.005433127284049988,
+          "raw_argmax": 69,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 91,
+          "nominal": 74,
+          "witness": 59,
+          "witness_safe": true,
+          "nominal_progress": 0.0918325115544758,
+          "witness_progress": 0.24160315180284675,
+          "nominal_Q_advantage": 0.008636340498924255,
+          "raw_argmax": 74,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 92,
+          "nominal": 74,
+          "witness": 54,
+          "witness_safe": true,
+          "nominal_progress": 0.07808119510181533,
+          "witness_progress": 0.2441807690423864,
+          "nominal_Q_advantage": 0.013599365949630737,
+          "raw_argmax": 74,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 93,
+          "nominal": 74,
+          "witness": 59,
+          "witness_safe": true,
+          "nominal_progress": 0.0793643235957498,
+          "witness_progress": 0.2438970644623783,
+          "nominal_Q_advantage": 0.010869920253753662,
+          "raw_argmax": 74,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 94,
+          "nominal": 1,
+          "witness": 54,
+          "witness_safe": true,
+          "nominal_progress": 0.03650833269432263,
+          "witness_progress": 0.24604383996992119,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 1,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        }
+      ],
+      "existing_successful_prefixes": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "existing_A_return_range": 0.0,
+      "value_interrupts": 6,
+      "safe_witness_steps": 7,
+      "mask_interrupts": 0
+    },
+    {
+      "root": {
+        "scene": "large_square",
+        "case": 101,
+        "step": 8,
+        "group": "difficult",
+        "partition": "fit"
+      },
+      "steps": [
+        {
+          "step": 8,
+          "nominal": 76,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": -0.04189790498050261,
+          "witness_progress": 0.15712046076991726,
+          "nominal_Q_advantage": 0.011849522590637207,
+          "raw_argmax": 76,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 9,
+          "nominal": 72,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": -0.02109219002501206,
+          "witness_progress": 0.21966929920068612,
+          "nominal_Q_advantage": 0.02801048755645752,
+          "raw_argmax": 72,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 10,
+          "nominal": 62,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": -0.01676851434773674,
+          "witness_progress": 0.23832497872454006,
+          "nominal_Q_advantage": 0.04170405864715576,
+          "raw_argmax": 62,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 11,
+          "nominal": 61,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.02208797638272486,
+          "witness_progress": 0.2437176649193198,
+          "nominal_Q_advantage": 0.02858048677444458,
+          "raw_argmax": 61,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 12,
+          "nominal": 51,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.04444859406264268,
+          "witness_progress": 0.24508802403044783,
+          "nominal_Q_advantage": 0.014036417007446289,
+          "raw_argmax": 51,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 13,
+          "nominal": 51,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": 0.04518624354001055,
+          "witness_progress": 0.24521249143120727,
+          "nominal_Q_advantage": 0.02162402868270874,
+          "raw_argmax": 51,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 14,
+          "nominal": 62,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.00862976893659706,
+          "witness_progress": 0.24508134979893548,
+          "nominal_Q_advantage": 0.02270519733428955,
+          "raw_argmax": 62,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 15,
+          "nominal": 63,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": -0.04909962190535211,
+          "witness_progress": 0.2452210520222069,
+          "nominal_Q_advantage": 0.030102849006652832,
+          "raw_argmax": 63,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 16,
+          "nominal": 64,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.09811957616182809,
+          "witness_progress": 0.24515233917242885,
+          "nominal_Q_advantage": 0.029781103134155273,
+          "raw_argmax": 64,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 17,
+          "nominal": 64,
+          "witness": 24,
+          "witness_safe": true,
+          "nominal_progress": -0.09844302431186502,
+          "witness_progress": 0.24523082600185742,
+          "nominal_Q_advantage": 0.04764896631240845,
+          "raw_argmax": 64,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 18,
+          "nominal": 54,
+          "witness": 29,
+          "witness_safe": true,
+          "nominal_progress": -0.02562967446844322,
+          "witness_progress": 0.24515555192181537,
+          "nominal_Q_advantage": 0.03803473711013794,
+          "raw_argmax": 54,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 19,
+          "nominal": 53,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.002150260486003752,
+          "witness_progress": 0.2171013623336635,
+          "nominal_Q_advantage": 0.03222191333770752,
+          "raw_argmax": 53,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 20,
+          "nominal": 44,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.08758145860890965,
+          "witness_progress": 0.20443544507113387,
+          "nominal_Q_advantage": 0.01670968532562256,
+          "raw_argmax": 44,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 21,
+          "nominal": 39,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.14199111567187161,
+          "witness_progress": 0.19566957182074107,
+          "nominal_Q_advantage": 0.0139387845993042,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        },
+        {
+          "step": 22,
+          "nominal": 39,
+          "witness": 39,
+          "witness_safe": true,
+          "nominal_progress": 0.13163347281500126,
+          "witness_progress": 0.13163347281500126,
+          "nominal_Q_advantage": 0.0,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": false
+        },
+        {
+          "step": 23,
+          "nominal": 39,
+          "witness": 34,
+          "witness_safe": true,
+          "nominal_progress": 0.10029069526020784,
+          "witness_progress": 0.15860582287370129,
+          "nominal_Q_advantage": 0.020586133003234863,
+          "raw_argmax": 39,
+          "mask_changes_raw_argmax": false,
+          "nominal_would_cancel_witness": true
+        }
+      ],
+      "existing_successful_prefixes": [
+        8
+      ],
+      "existing_A_return_range": 0.00015382203180958065,
+      "value_interrupts": 15,
+      "safe_witness_steps": 16,
+      "mask_interrupts": 0
+    }
+  ],
+  "prototype_gate_passed": true,
+  "scope": "Saved prefix success reused; no claim of training cause or novel commitment algorithm"
+}
