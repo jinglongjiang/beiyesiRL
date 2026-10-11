@@ -3,6 +3,14 @@
     "id": "preflight-1",
     "scientific_observation": false,
     "failure": "Shared-prefix versus repeated-prefix GRU CUDA scoring differed by 0.00018793 with default cuDNN TF32; strict parity failed before training.",
-    "action": "Disable cuDNN and matmul TF32 for all arms and rerun parity. Do not use failed preflight as navigation evidence."
+    "action": "Disabled cuDNN and matmul TF32 for all arms; strict scoring parity and native/fork replay then passed (tests.json, max replay error 0). Do not use failed preflight as navigation evidence.",
+    "status": "FIXED_BEFORE_TRAINING"
+  },
+  {
+    "id": "launch-1",
+    "scientific_observation": false,
+    "failure": "Host shell could not create train.log inside the container-owned artifacts directory; training did not start.",
+    "action": "Redirect training output within the same container instead; one training process was launched successfully.",
+    "status": "FIXED_BEFORE_TRAINING"
   }
 ]
