@@ -154,53 +154,78 @@ def head_fit():
     features=[]
     labels=[]
     meta=[]
+    offset=0
     for root in q.roots():
         data=np.load(d.OUT/'catalogue'/q.key(root)/'inputs.npz')
         old=original[(root['scene'],root['case'])]
-        indices=[old['selected_index'],old['forward_index']]
+        indices=np.flatnonzero(data['safe']).tolist()
         captured=[]
         handle=p.value_head.register_forward_pre_hook(lambda mod,args:captured.append(args[0].detach().cpu().numpy()))
         with torch.no_grad():
             value=p.forward_candidate_values(torch.as_tensor(data['windows'][indices],device=p.device)).cpu().numpy()
         handle.remove()
-        assert len(captured)==1 and captured[0].shape==(2,256)
-        np.testing.assert_allclose(value,old['B_values'],rtol=0,atol=2e-6)
+        assert len(captured)==1 and captured[0].shape==(len(indices),256)
+        expected=(data['B_q'][indices]-data['first'][indices,0])/.99
+        nonterminal=data['first'][indices,1]==0
+        np.testing.assert_allclose(value[nonterminal],expected[nonterminal],rtol=0,atol=2e-6)
         first=data['first'][indices]
-        assert not first[:,1].any(), 'Terminal pairs excluded; this fixed list should have none'
         target=[]
         for policy in ['B_raw_greedy','A_deploy']:
             returns=np.array([load_pair(root,i)[0 if policy=='A_deploy' else 1]['result']['return'] for i in indices])
             target.append((returns-first[:,0])/.99)
         features.extend(captured[0])
-        labels.append(target)
-        meta.append({'root':root,'indices':indices,'first_rewards':first[:,0].tolist()})
+        labels.extend(np.asarray(target).T)
+        meta.append({'root':root,'indices':indices,'first_rewards':first[:,0].tolist(),
+                     'terminal':first[:,1].astype(bool).tolist(),'offset':offset,'count':len(indices)})
+        offset+=len(indices)
     f=np.asarray(features,np.float64)
     x=np.c_[f,np.ones(len(f))]
     labels=np.asarray(labels,np.float64)
     fit_cases=np.array([v['root']['case']<120 for v in meta])
-    fit=np.repeat(fit_cases,2)
+    fit=np.concatenate([np.repeat(v['root']['case']<120,v['count']) for v in meta])
+    terminal=np.concatenate([v['terminal'] for v in meta])
+    fit=fit&~terminal
     theta0=np.r_[p.value_head.weight.detach().cpu().numpy().ravel(),p.value_head.bias.detach().cpu().numpy()]
-    predictions={'original_head':(x@theta0).reshape(38,2)}
+    predictions={'original_head':x@theta0}
     models={}
     for column,name in enumerate(d.SPEC['P4']['arms']):
-        y=labels[:,column,:].reshape(-1)
+        y=labels[:,column]
         a=x[fit]
         delta=np.linalg.solve(a.T@a/len(a)+.01*np.eye(x.shape[1]),a.T@(y[fit]-a@theta0)/len(a))
         weights=theta0+delta
-        predictions[name]=(x@weights).reshape(38,2)
+        predictions[name]=x@weights
         models[name]={'weights':weights.tolist(),'change_l2':float(np.linalg.norm(delta))}
     metrics={}
     for split,mask in [('fit',fit_cases),('held-out',~fit_cases)]:
         metrics[split]={}
-        truth=labels[mask,1,:]
-        td=truth[:,0]-truth[:,1]
         for name,pred in predictions.items():
-            values=pred[mask]
-            pd=values[:,0]-values[:,1]
-            metrics[split][name]={'cases':int(mask.sum()),'non_tied_pairs':int((np.abs(td)>1e-6).sum()),
-                'strict_ranking_errors':int((((td>1e-6)&(pd< -1e-6))|((td< -1e-6)&(pd>1e-6))).sum()),
-                'pair_advantage_MAE':float(np.abs(td-pd).mean()),'V_MAE':float(np.abs(truth-values).mean()),
-                'negative_action_preferred':int((pd>1e-6).sum())}
+            rows=[]
+            for take,v in zip(mask,meta):
+                if not take:
+                    continue
+                sl=slice(v['offset'],v['offset']+v['count'])
+                rewards=np.asarray(v['first_rewards'])
+                done=np.asarray(v['terminal'])
+                scores=rewards+.99*np.where(done,0.,pred[sl])-.001*(np.asarray(v['indices'])==0)
+                k=int(scores.argmax())
+                index=v['indices'][k]
+                chosen=load_pair(v['root'],index)[0]['result']
+                actual=rewards+.99*np.where(done,0.,labels[sl,1])
+                ordering=actual[:,None]-actual[None,:]
+                value_order=scores[:,None]-scores[None,:]
+                valid=np.triu(np.ones(ordering.shape,bool),1)&(np.abs(ordering)>1e-6)
+                nt=~done
+                rows.append({'root':v['root'],'chosen_index':index,'chosen_result':chosen,
+                    'fixed_world_return_regret':float(actual.max()-chosen['return']),
+                    'inverted_pairs':int(((ordering*value_order<0)&valid).sum()),
+                    'non_tied_pairs':int(valid.sum()),
+                    'V_MAE':float(np.abs(labels[sl,1][nt]-pred[sl][nt]).mean())})
+            metrics[split][name]={'cases':len(rows),'case_results':rows,
+                'fixed_world_selected_success':sum(v['chosen_result']['success'] for v in rows),
+                'fixed_world_selected_contact':sum(v['chosen_result']['contact'] for v in rows),
+                'mean_fixed_world_return_regret':float(np.mean([v['fixed_world_return_regret'] for v in rows])),
+                'case_mean_pair_inversion_rate':float(np.mean([v['inverted_pairs']/max(v['non_tied_pairs'],1) for v in rows])),
+                'case_mean_V_MAE':float(np.mean([v['V_MAE'] for v in rows]))}
     d.save('head-fit.json',{'executed':True,'cases':meta,'metrics':metrics,'models':models,
         'predictions':{k:v.tolist() for k,v in predictions.items()},'V_labels':labels.tolist(),
         'matched_initialization_sha256':q.SPEC['nominal_sha256'],
@@ -212,7 +237,7 @@ def head_fit():
                   'Held-out cases have no normal-success controls because the frozen case split puts the first controls in fitting.',
                   'No head closed-loop experiment; correction is not navigation gain or confirmed historical cause.']})
     np.savez_compressed(d.OUT/'head-fit-inputs.npz',features=f,labels=labels,fit_cases=fit_cases,original_head=theta0)
-    print(json.dumps(metrics,indent=2),flush=True)
+    print(json.dumps({k:{a:{z:t for z,t in b.items() if z!='case_results'} for a,b in v.items()} for k,v in metrics.items()},indent=2),flush=True)
 
 
 if __name__=='__main__':

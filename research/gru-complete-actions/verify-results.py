@@ -57,7 +57,8 @@ if cp['executed']:
 head=json.loads((OUT/'head-fit.json').read_text())
 if head['executed']:
     data=np.load(OUT/'head-fit-inputs.npz')
-    assert data['features'].shape==(76,256) and data['labels'].shape==(38,2,2)
+    assert data['features'].shape==(counts['legal_actions'],256)
+    assert data['labels'].shape==(counts['legal_actions'],2)
     assert int(data['fit_cases'].sum())==head['fit_case_count']
     ids_fit={v['root']['case'] for v in head['cases'] if v['root']['case']<120}
     ids_hold={v['root']['case'] for v in head['cases'] if v['root']['case']>=120}

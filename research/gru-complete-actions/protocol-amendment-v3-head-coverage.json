@@ -1,0 +1,10 @@
+{
+  "stage": "P4 only; before any fitting outcome",
+  "reason": "The complete-action fixture reveals successful alternatives outside the old selected/maximum-progress pair. Refitting just that pair would not test correction of the newly established ranking losses.",
+  "change": "Use all original deployment-safe candidates from each of the same 38 preregistered roots, rather than two candidates, in both matched fitted arms",
+  "unchanged": ["Parent weights and frozen feature encoder", "38 root list", "case100..119 fitting/case120..139 held out", "two continuation-label sources", "257 head parameters", "anchored least squares penalty 0.01", "no tuning", "no RL training", "no new-head closed-loop claim"],
+  "terminal_samples": "Do not fit terminal V labels; their candidate score is the actual terminal reward for every head",
+  "metrics": "Held-out all-candidate ranking residuals and the fixed-world return/outcome of each head's preferred first candidate followed by the original frozen GRU. This is offline selection from an already evaluated catalogue, not a new-head closed-loop rollout.",
+  "causal_scope": "Only contrast between the two fitted heads isolates label source. Compared with the original head both arms add the same counterfactual coverage, so improvement does not identify original training cause.",
+  "no_other_change": true
+}
