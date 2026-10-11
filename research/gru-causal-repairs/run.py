@@ -173,8 +173,10 @@ def evidence():
             windows.append(part['windows'].cpu().numpy())
             action = part['commands'][index]
             m.commit_action(p, part['token'], action, index)
-            _, _, term, trunc, _ = env.step(action)
-            assert not (term or trunc)
+            _, _, term, trunc, info = env.step(action)
+            if term or trunc:
+                assert info['event'] == 'reach_goal', 'Saved safe witness terminated unexpectedly'
+                break
         base = next(v for v in stats['cases'] if q.key(v) == q.key(root))
         assert base['category'] == 'MULTISTEP_POLICY_TRAP_TESTED_ACTION_SET'
         np.savez_compressed(OUT / f'trap-evidence-{scene}-{case}.npz', candidates=np.asarray(candidates), windows=np.asarray(windows))

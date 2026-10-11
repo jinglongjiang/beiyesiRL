@@ -1,0 +1,10 @@
+[
+  {
+    "stage": "B prefix scoring replay",
+    "status": "INVALID_HARNESS_ASSERTION_FIXED",
+    "error": "Assumed every successful witness remains nonterminal for16 steps",
+    "evidence": "baseline_square/129 witness reaches goal after12 steps; large_circle/102 after7. These original recorded outcomes are expected, not navigation errors.",
+    "repair": "Stop scoring replay at original reach_goal, assert no other termination, do not extend a completed witness",
+    "scientific_observation": false
+  }
+]
