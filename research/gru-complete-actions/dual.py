@@ -279,8 +279,11 @@ def checkpoints():
                         np.savez_compressed(folder/f'{q.key(root)}-{label}-{policy}.npz',records=trace)
                     outcomes.append(result)
                 values=previous['checkpoints'][stage]['values'][old_index[(root['scene'],case)]]
+                first=np.load(OUT/'catalogue'/q.key(root)/'inputs.npz')['first'][indices]
+                actual_q=first[:,0]+.99*(1-first[:,1])*np.asarray(values)
                 rows.append({'root':root,'stage':stage,'policy':policy,'sha256':q.sha(weight),
-                             'indices':indices,'actual_next_values':values,'outcomes':outcomes})
+                             'indices':indices,'actual_next_values':values,
+                             'actual_next_q':actual_q.tolist(),'outcomes':outcomes})
                 save('checkpoint-pairs.json',{'executed':True,'rows':rows})
         print('V2 CHECKPOINT',stage,'pairs',len(rows),'seconds',round(time.perf_counter()-started,1),flush=True)
 

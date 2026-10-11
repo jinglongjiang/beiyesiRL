@@ -117,13 +117,15 @@ def summarize():
                     rows=[v for v in c['rows'] if v['stage']==stage and v['policy']==policy]
                     assert len(rows)==38
                     delta=np.array([v['actual_next_values'][0]-v['actual_next_values'][1] for v in rows])
+                    q_delta=np.array([v['actual_next_q'][0]-v['actual_next_q'][1] for v in rows])
                     actual=np.array([v['outcomes'][0]['return']-v['outcomes'][1]['return'] for v in rows])
                     checkpoints[stage][policy]={
                         'negative_action_value_preferred':int((delta>1e-6).sum()),
+                        'negative_action_Q_preferred':int((q_delta>1e-6).sum()),
                         'own_return_forward_better':int((actual< -1e-6).sum()),
                         'own_return_selected_better':int((actual>1e-6).sum()),
                         'own_return_tied':int((np.abs(actual)<=1e-6).sum()),
-                        'strict_pair_misranks':int((((delta>1e-6)&(actual< -1e-6))|((delta< -1e-6)&(actual>1e-6))).sum()),
+                        'strict_pair_misranks':int((((q_delta>1e-6)&(actual< -1e-6))|((q_delta< -1e-6)&(actual>1e-6))).sum()),
                         'selected_success':sum(v['outcomes'][0]['success'] for v in rows),
                         'forward_success':sum(v['outcomes'][1]['success'] for v in rows),
                         'selected_contact':sum(v['outcomes'][0]['contact'] for v in rows),
