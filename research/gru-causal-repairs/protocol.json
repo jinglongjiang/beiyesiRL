@@ -1,0 +1,51 @@
+{
+  "version": "gru-causal-repairs-v1-20261012",
+  "parent_commit": "83ede156efb780d5ac83c3845d6de6ac6d6ed81a",
+  "parent_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "budget_seconds": 28800,
+  "task": "Separate supervised value-source repair from continuous-policy repair; no Bayesian or old recovery network",
+  "shared_contract": {"time_limit": 50, "dt": 0.25, "actions": 80, "margin": 0.2, "risk_lambda": 0.8, "smoothing": 0.3, "history": "legal-prefix"},
+  "evidence_reuse": "All 38 roots/5900 branches/checkpoints unchanged; three unresolved failures paused. Existing prefix outcomes are reused, not resimulated as new evidence.",
+  "B_evidence": {"roots": [[1,129],[3,133],[4,102],[5,101]], "prefix_steps": 16, "purpose": "Reconstruct scoring along saved contact-free progress witnesses; separate mask interruption, smoothing feasibility, raw value preference and nominal reversal. No new full-prefix outcome experiment."},
+  "A_training": {
+    "collection": "Frozen nominal checkpoint, original raw training scorer from recovery-duration/run.py:score, no deployment filtering or smoothing, epsilon exploration",
+    "scenes": [0,1,2,3,4,5], "case_indices": [2000,2015], "capture_steps": [8,16,32,64],
+    "epsilon": "0.30 + (0.05-0.30)*ordinal/95, frozen checkpoint throughout; controlled recollection, not restoration of historical replay",
+    "observations": "Same legal current token windows, no goals of humans, no privileged future at inference. Privileged tape is environment evolution only.",
+    "control": "Actual complete MC return of each collected epsilon behavior episode at the captured state",
+    "treatment": "Same captured state, history, previous executed action and remaining time; complete continuation return of original frozen deployment GRU",
+    "labels": "V(s) labels, not Q labels; current-state MC includes the next executed reward. No Bellman division for current-state supervision.",
+    "initialization": "Both full networks start from the same frozen nominal state_dict",
+    "optimizer": "Adam", "learning_rate": 0.00001, "updates": 2000, "batch_size": 128, "clip_grad_norm": 10, "seed": 121012,
+    "split": "cases2000..2011 fitting; 2012..2015 validation, whole numerical case held out across scenes",
+    "matching": "Identical batch indices, initialization, optimizer state, update count, inputs, dropout RNG per update; label source only differs. Same six-scene coverage in both; compared with historical Parent, recollection and coverage differ, so only trained-arm contrast isolates source.",
+    "stop": "Nonfinite gradients, label/restore mismatch or contract failure stops training. No tuning; full closed-loop evaluation required whether loss improves or not."
+  },
+  "B_prototypes": {
+    "gate": "Saved safe-prefix decisions are feasible under unchanged smoothing and margin but repeatedly lose to nominal V at >=2 trap cases",
+    "shared_trigger": "At least 8 consecutive nominal decisions with nonpositive goal progress, and goal distance has not decreased across last8 executed steps",
+    "commit8": "Then choose maximum goal-progress action within the unchanged deployment-safe action set for 8 steps, safety checked each step; return to GRU. Ordinary fixed-duration simple baseline, not novelty.",
+    "adaptive": "Same trigger/actions; retain progress-directed control until at least0.5m net goal progress and nominal next progress>=0.02m, or16 steps. Immediate return on native empty-safe-set. Bounded hysteresis reference, not assumed novel.",
+    "progress": "Always choose maximum goal-progress safe native candidate; strongest geometry-only explanation. Same smoothing/filters/fallback as Parent.",
+    "no_oracle_inputs": true,
+    "stop": "No sweeping trigger/duration/progress thresholds. Failure activates no second B version."
+  },
+  "evaluation": {
+    "arms": ["nominal","behavior-mc","deploy-mc","progress","commit8","adaptive"],
+    "diagnostic_roots": "All existing38, but exclude3 unresolved from new intervention rollouts; reuse nominal existingA outcomes. Separately report10 ranking failures,4 traps and successful controls.",
+    "fresh_cases": [300,319], "scenes": [0,1,2,3,4,5],
+    "fresh_rules": "120 complete native episodes per arm, fixed before any new outcomes. All arms frozen before fresh evaluation. No selection, parameter tuning or rerun to improve results.",
+    "metrics": ["success","native_collision","timeout","independent_swept_contact","minimum_clearance","duration","successful_navigation_time","path","return","rescue","damage","compute","trigger_count","intervention_steps","fallback"],
+    "statistical_unit": "Whole numerical case resampled jointly across scenes; paired whole episodes, never candidate/step independence",
+    "A_go": "Deploy-MC improves held-out ranking and closed-loop safe success relative to behavior-MC and nominal without contact regression. Otherwise source-only repair is rejected; do not infer representation failure.",
+    "B_go": "Adaptive safe closed-loop success exceeds both commit8 and progress, without collision/contact regression or damaged success excess. Otherwise no independent adaptive mechanism benefit.",
+    "science_scope": "Controlled reproduction and repair feasibility only. Existing methods and simple hysteresis are not automatically algorithm innovation; frozen-old-policy labels are not claimed to be new-policy exact values."
+  },
+  "conditional_A_disambiguation": {
+    "gate": "Source-only repair does not correct the held-outA roots and full closed-loop failure",
+    "test": "Reuse existing true-successor windows and deployment labels from the2950-action catalogue. Whole-case even/odd split, same targets/updates/batches/init; frozen-encoder head-only vs full-network fitting to test representation correctability on targeted coverage. Do not rerun old ridge results.",
+    "updates": 1000, "learning_rate": 0.00001, "batch_size": 128,
+    "interpretation": "Head success supports reusable frozen features; full-only success supports trainable representation/optimization limitation; neither success leaves raw information vs sample coverage unresolved. No failure is called proof of insufficient input.",
+    "no_automatic_new_navigation_method": true
+  }
+}
