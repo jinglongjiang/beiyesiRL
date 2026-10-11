@@ -1,0 +1,19 @@
+{
+  "scientific_status": "UNVERIFIED",
+  "execution_status": "NOT_RUN_INPUT_SEMANTICS_INCOMPATIBLE_WITH_CURRENT_PARENT",
+  "requested_weights": [
+    {"seed":42,"episode":10000,"sha256":"618a2ce09952f07a2039689ceb6ee0377a7e56d40838c8d1cf99b2fb2ddbbbf4"},
+    {"seed":43,"episode":10000,"sha256":"2dd070c32588f77ec7f542f8c0d4f53d3201646932e7e365552556a60bc1ede0"}
+  ],
+  "current_weight": {"seed":61,"RL_episodes":2000,"sha256":"879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c"},
+  "primary_evidence": [
+    "git show 5d8c9c2 -- crowd_nav/contracts.py: robot v_pref/gx/gy reader indices changed 5/6/7 to 7/5/6",
+    "git show 5d8c9c2 -- crowd_nav/policy/mamba_rl.py: shared nearest-human, coordinate and action-execution repairs",
+    "research/recovery-duration/run.py: fresh IL and RL training after common repairs, seed61 and 2000 RL",
+    "Old checkpoint metadata: temporal_backbone=gru, episode_count=10000, 20261008 save; its tensor dimensions match but predate the common repaired training"
+  ],
+  "reason": "A comparison of two old-semantic models on corrected-token inputs would not measure training-seed variance of this repaired Parent. No compatible second training seed was supplied for this lineage.",
+  "logical_limit": "Nonmonotonic learning counts and disagreement between two trained networks do not prove within-network random ranking, absence of stable preferences or a unique noise cause. Given top gaps alone there is no uniquely defined chance-agreement null.",
+  "action": "Do not train to unblock M4 and do not mix these weights into P3. Keep same-lineage deterministic fixed-input P3 conditional on repeated P1/P2 task defects.",
+  "metrics": null
+}
