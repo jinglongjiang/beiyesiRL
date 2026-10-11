@@ -29,7 +29,7 @@ def main():
         windows.append(pairs)
         robot = snap['robot']
         metadata.append({'scene':root['scene'],'case':case,'step':root['step'],
-                         'goal':list(robot.get_goal_position()),'position':list(robot.get_position()),
+                         'goal':[robot.gx,robot.gy],'position':[robot.px,robot.py],
                          'overshot_goal_y':bool(robot.py>robot.gy),
                          'humans':len(env.humans)})
     x = np.asarray(windows,np.float32)

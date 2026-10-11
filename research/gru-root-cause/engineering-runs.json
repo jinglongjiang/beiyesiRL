@@ -1,0 +1,13 @@
+[
+  {
+    "id": "training-evidence-pre-output-interface-error",
+    "command": "python research/gru-root-cause/training-evidence.py",
+    "source_commit": "bd25edc",
+    "exit": 1,
+    "error": "AttributeError: FullState has no get_goal_position/get_position methods",
+    "cause": "Diagnostic script used Agent methods on a FullState snapshot",
+    "correction": "Read gx,gy,px,py fields directly",
+    "scientific_observations": 0,
+    "scope": "No upstream/nominal source change; no training or main contrast results affected"
+  }
+]
