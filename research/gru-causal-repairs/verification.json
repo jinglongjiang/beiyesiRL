@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "trajectories": 1817,
+  "executed_steps": 152318,
+  "cohort_counts": {
+    "coverage-roots": 105,
+    "fresh": 720,
+    "coverage-fresh": 480,
+    "roots": 175,
+    "deploy-labels": 337
+  },
+  "frozen_models_unchanged": true,
+  "actions": 80,
+  "time_limit": 50,
+  "no_upstream_source_change": true,
+  "conditional_model_hashes_verified": true,
+  "paired_targeted_batches_equal": true,
+  "targeted_head_only_changed_keys": [
+    "value_head.weight",
+    "value_head.bias"
+  ],
+  "all_fresh_cases_complete": true,
+  "parent_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c"
+}

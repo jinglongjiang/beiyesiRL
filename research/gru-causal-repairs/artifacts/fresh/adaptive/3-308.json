@@ -1,0 +1,20 @@
+{
+  "arm": "adaptive",
+  "scene": "dense_square",
+  "case": 308,
+  "outcome": "timeout",
+  "success": 0,
+  "collision": 0,
+  "timeout": 1,
+  "contact": 0,
+  "min_clearance": 0.19403501768437992,
+  "duration": 50.25,
+  "steps": 201,
+  "return": -0.06790524005135525,
+  "path": 44.520833476385754,
+  "final_distance": 4.158358306034742,
+  "triggers": 12,
+  "intervention_steps": 58,
+  "fallback": 0,
+  "decision_ms_mean": 9.439979471377473
+}

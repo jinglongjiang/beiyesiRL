@@ -1,0 +1,2326 @@
+{
+  "cohort": "fresh",
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 105,
+      "collision": 0,
+      "timeout": 15,
+      "contact": 0,
+      "SR": 0.875,
+      "CR": 0.0,
+      "TR": 0.125,
+      "duration_all_mean": 20.075,
+      "successful_time_mean": 15.764285714285714,
+      "return_mean": 0.4676973502155278,
+      "path_mean": 18.115170486470266,
+      "final_distance_mean": 2.2681087588238955,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.30314329223224235,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 15,
+      "decision_ms_episode_mean": 9.04892587898202
+    },
+    "behavior-mc": {
+      "n": 120,
+      "success": 17,
+      "collision": 4,
+      "timeout": 99,
+      "contact": 4,
+      "SR": 0.14166666666666666,
+      "CR": 0.03333333333333333,
+      "TR": 0.825,
+      "duration_all_mean": 43.81458333333333,
+      "successful_time_mean": 15.323529411764707,
+      "return_mean": 0.003228515275022207,
+      "path_mean": 42.658637986844134,
+      "final_distance_mean": 28.17805468718932,
+      "min_clearance_min": -0.11430277649553822,
+      "min_clearance_median": 0.242404316867941,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 67,
+      "decision_ms_episode_mean": 9.008855921143493
+    },
+    "deploy-mc": {
+      "n": 120,
+      "success": 49,
+      "collision": 17,
+      "timeout": 54,
+      "contact": 17,
+      "SR": 0.4083333333333333,
+      "CR": 0.14166666666666666,
+      "TR": 0.45,
+      "duration_all_mean": 28.458333333333332,
+      "successful_time_mean": 12.311224489795919,
+      "return_mean": 0.14607865216883992,
+      "path_mean": 26.175549583701997,
+      "final_distance_mean": 16.200664408429482,
+      "min_clearance_min": -0.09440674934016002,
+      "min_clearance_median": 0.18131606785725923,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 281,
+      "decision_ms_episode_mean": 8.993471630901555
+    },
+    "progress": {
+      "n": 120,
+      "success": 82,
+      "collision": 31,
+      "timeout": 7,
+      "contact": 30,
+      "SR": 0.6833333333333333,
+      "CR": 0.25833333333333336,
+      "TR": 0.058333333333333334,
+      "duration_all_mean": 13.4,
+      "successful_time_mean": 13.207317073170731,
+      "return_mean": 0.2585666486212201,
+      "path_mean": 10.284576689952917,
+      "final_distance_mean": 1.5965057522088537,
+      "min_clearance_min": -0.14302520788450312,
+      "min_clearance_median": 0.09096844148745065,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 538,
+      "decision_ms_episode_mean": 9.029185467225018
+    },
+    "commit8": {
+      "n": 120,
+      "success": 115,
+      "collision": 0,
+      "timeout": 5,
+      "contact": 0,
+      "SR": 0.9583333333333334,
+      "CR": 0.0,
+      "TR": 0.041666666666666664,
+      "duration_all_mean": 17.03125,
+      "successful_time_mean": 15.58695652173913,
+      "return_mean": 0.5192079880480746,
+      "path_mean": 15.212801043744935,
+      "final_distance_mean": 0.49950525690675285,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.22518453543549516,
+      "triggers": 83,
+      "intervention_steps": 640,
+      "fallback_steps": 21,
+      "decision_ms_episode_mean": 9.058237223280416
+    },
+    "adaptive": {
+      "n": 120,
+      "success": 111,
+      "collision": 0,
+      "timeout": 9,
+      "contact": 0,
+      "SR": 0.925,
+      "CR": 0.0,
+      "TR": 0.075,
+      "duration_all_mean": 18.216666666666665,
+      "successful_time_mean": 15.61936936936937,
+      "return_mean": 0.4989376008444812,
+      "path_mean": 15.665055267407949,
+      "final_distance_mean": 0.667305904143474,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.22800826825222525,
+      "triggers": 117,
+      "intervention_steps": 844,
+      "fallback_steps": 21,
+      "decision_ms_episode_mean": 9.019276404361552
+    }
+  },
+  "pairwise": {
+    "behavior-mc-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.7333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        -0.825,
+        -0.6333333333333333
+      ],
+      "delta_contact_rate": 0.03333333333333333,
+      "delta_contact_case_bootstrap_95": [
+        0.008333333333333333,
+        0.06666666666666667
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          300
+        ],
+        [
+          "baseline_circle",
+          301
+        ],
+        [
+          "baseline_circle",
+          302
+        ],
+        [
+          "baseline_circle",
+          303
+        ],
+        [
+          "baseline_circle",
+          304
+        ],
+        [
+          "baseline_circle",
+          305
+        ],
+        [
+          "baseline_circle",
+          306
+        ],
+        [
+          "baseline_circle",
+          307
+        ],
+        [
+          "baseline_circle",
+          308
+        ],
+        [
+          "baseline_circle",
+          309
+        ],
+        [
+          "baseline_circle",
+          310
+        ],
+        [
+          "baseline_circle",
+          311
+        ],
+        [
+          "baseline_circle",
+          312
+        ],
+        [
+          "baseline_circle",
+          314
+        ],
+        [
+          "baseline_circle",
+          315
+        ],
+        [
+          "baseline_circle",
+          316
+        ],
+        [
+          "baseline_circle",
+          317
+        ],
+        [
+          "baseline_circle",
+          318
+        ],
+        [
+          "baseline_circle",
+          319
+        ],
+        [
+          "baseline_square",
+          300
+        ],
+        [
+          "baseline_square",
+          301
+        ],
+        [
+          "baseline_square",
+          302
+        ],
+        [
+          "baseline_square",
+          303
+        ],
+        [
+          "baseline_square",
+          304
+        ],
+        [
+          "baseline_square",
+          305
+        ],
+        [
+          "baseline_square",
+          306
+        ],
+        [
+          "baseline_square",
+          307
+        ],
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "baseline_square",
+          309
+        ],
+        [
+          "baseline_square",
+          310
+        ],
+        [
+          "baseline_square",
+          311
+        ],
+        [
+          "baseline_square",
+          313
+        ],
+        [
+          "baseline_square",
+          314
+        ],
+        [
+          "baseline_square",
+          315
+        ],
+        [
+          "baseline_square",
+          316
+        ],
+        [
+          "baseline_square",
+          317
+        ],
+        [
+          "baseline_square",
+          318
+        ],
+        [
+          "baseline_square",
+          319
+        ],
+        [
+          "dense_circle",
+          300
+        ],
+        [
+          "dense_circle",
+          301
+        ],
+        [
+          "dense_circle",
+          302
+        ],
+        [
+          "dense_circle",
+          303
+        ],
+        [
+          "dense_circle",
+          305
+        ],
+        [
+          "dense_circle",
+          306
+        ],
+        [
+          "dense_circle",
+          307
+        ],
+        [
+          "dense_circle",
+          308
+        ],
+        [
+          "dense_circle",
+          309
+        ],
+        [
+          "dense_circle",
+          310
+        ],
+        [
+          "dense_circle",
+          311
+        ],
+        [
+          "dense_circle",
+          312
+        ],
+        [
+          "dense_circle",
+          313
+        ],
+        [
+          "dense_circle",
+          314
+        ],
+        [
+          "dense_circle",
+          315
+        ],
+        [
+          "dense_circle",
+          316
+        ],
+        [
+          "dense_circle",
+          317
+        ],
+        [
+          "dense_circle",
+          319
+        ],
+        [
+          "dense_square",
+          300
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          305
+        ],
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "dense_square",
+          309
+        ],
+        [
+          "dense_square",
+          310
+        ],
+        [
+          "dense_square",
+          311
+        ],
+        [
+          "dense_square",
+          313
+        ],
+        [
+          "dense_square",
+          314
+        ],
+        [
+          "dense_square",
+          315
+        ],
+        [
+          "dense_square",
+          316
+        ],
+        [
+          "large_circle",
+          300
+        ],
+        [
+          "large_circle",
+          301
+        ],
+        [
+          "large_circle",
+          302
+        ],
+        [
+          "large_circle",
+          303
+        ],
+        [
+          "large_circle",
+          304
+        ],
+        [
+          "large_circle",
+          305
+        ],
+        [
+          "large_circle",
+          307
+        ],
+        [
+          "large_circle",
+          308
+        ],
+        [
+          "large_circle",
+          309
+        ],
+        [
+          "large_circle",
+          311
+        ],
+        [
+          "large_circle",
+          312
+        ],
+        [
+          "large_circle",
+          313
+        ],
+        [
+          "large_circle",
+          314
+        ],
+        [
+          "large_circle",
+          315
+        ],
+        [
+          "large_circle",
+          316
+        ],
+        [
+          "large_circle",
+          319
+        ],
+        [
+          "large_square",
+          302
+        ],
+        [
+          "large_square",
+          304
+        ],
+        [
+          "large_square",
+          306
+        ],
+        [
+          "large_square",
+          309
+        ],
+        [
+          "large_square",
+          312
+        ],
+        [
+          "large_square",
+          313
+        ],
+        [
+          "large_square",
+          315
+        ],
+        [
+          "large_square",
+          316
+        ],
+        [
+          "large_square",
+          319
+        ]
+      ],
+      "rescue_count": 4,
+      "damage_count": 92,
+      "both_success_time_delta_mean": -1.7692307692307692
+    },
+    "deploy-mc-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.4666666666666667,
+      "delta_SR_case_bootstrap_95": [
+        -0.6,
+        -0.3331249999999992
+      ],
+      "delta_contact_rate": 0.14166666666666666,
+      "delta_contact_case_bootstrap_95": [
+        0.1,
+        0.18333333333333332
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          300
+        ],
+        [
+          "baseline_circle",
+          303
+        ],
+        [
+          "baseline_circle",
+          308
+        ],
+        [
+          "baseline_circle",
+          310
+        ],
+        [
+          "baseline_circle",
+          315
+        ],
+        [
+          "baseline_circle",
+          316
+        ],
+        [
+          "baseline_circle",
+          317
+        ],
+        [
+          "baseline_square",
+          300
+        ],
+        [
+          "baseline_square",
+          301
+        ],
+        [
+          "baseline_square",
+          302
+        ],
+        [
+          "baseline_square",
+          304
+        ],
+        [
+          "baseline_square",
+          305
+        ],
+        [
+          "baseline_square",
+          306
+        ],
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "baseline_square",
+          310
+        ],
+        [
+          "baseline_square",
+          311
+        ],
+        [
+          "baseline_square",
+          314
+        ],
+        [
+          "baseline_square",
+          318
+        ],
+        [
+          "baseline_square",
+          319
+        ],
+        [
+          "dense_circle",
+          300
+        ],
+        [
+          "dense_circle",
+          301
+        ],
+        [
+          "dense_circle",
+          302
+        ],
+        [
+          "dense_circle",
+          303
+        ],
+        [
+          "dense_circle",
+          304
+        ],
+        [
+          "dense_circle",
+          305
+        ],
+        [
+          "dense_circle",
+          308
+        ],
+        [
+          "dense_circle",
+          309
+        ],
+        [
+          "dense_circle",
+          310
+        ],
+        [
+          "dense_circle",
+          311
+        ],
+        [
+          "dense_circle",
+          312
+        ],
+        [
+          "dense_circle",
+          313
+        ],
+        [
+          "dense_circle",
+          315
+        ],
+        [
+          "dense_circle",
+          316
+        ],
+        [
+          "dense_circle",
+          319
+        ],
+        [
+          "dense_square",
+          300
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          305
+        ],
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "dense_square",
+          310
+        ],
+        [
+          "dense_square",
+          311
+        ],
+        [
+          "dense_square",
+          313
+        ],
+        [
+          "dense_square",
+          314
+        ],
+        [
+          "dense_square",
+          315
+        ],
+        [
+          "dense_square",
+          316
+        ],
+        [
+          "large_circle",
+          300
+        ],
+        [
+          "large_circle",
+          302
+        ],
+        [
+          "large_circle",
+          303
+        ],
+        [
+          "large_circle",
+          304
+        ],
+        [
+          "large_circle",
+          305
+        ],
+        [
+          "large_circle",
+          308
+        ],
+        [
+          "large_circle",
+          309
+        ],
+        [
+          "large_circle",
+          312
+        ],
+        [
+          "large_circle",
+          313
+        ],
+        [
+          "large_circle",
+          315
+        ],
+        [
+          "large_circle",
+          316
+        ],
+        [
+          "large_square",
+          300
+        ],
+        [
+          "large_square",
+          302
+        ],
+        [
+          "large_square",
+          305
+        ],
+        [
+          "large_square",
+          306
+        ],
+        [
+          "large_square",
+          309
+        ],
+        [
+          "large_square",
+          311
+        ],
+        [
+          "large_square",
+          319
+        ]
+      ],
+      "rescue_count": 6,
+      "damage_count": 62,
+      "both_success_time_delta_mean": -2.186046511627907
+    },
+    "deploy-mc-vs-behavior-mc": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.26666666666666666,
+      "delta_SR_case_bootstrap_95": [
+        0.175,
+        0.35833333333333334
+      ],
+      "delta_contact_rate": 0.10833333333333334,
+      "delta_contact_case_bootstrap_95": [
+        0.06666666666666667,
+        0.15
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          301
+        ],
+        [
+          "baseline_circle",
+          302
+        ],
+        [
+          "baseline_circle",
+          304
+        ],
+        [
+          "baseline_circle",
+          305
+        ],
+        [
+          "baseline_circle",
+          306
+        ],
+        [
+          "baseline_circle",
+          307
+        ],
+        [
+          "baseline_circle",
+          309
+        ],
+        [
+          "baseline_circle",
+          311
+        ],
+        [
+          "baseline_circle",
+          312
+        ],
+        [
+          "baseline_circle",
+          314
+        ],
+        [
+          "baseline_circle",
+          318
+        ],
+        [
+          "baseline_circle",
+          319
+        ],
+        [
+          "baseline_square",
+          303
+        ],
+        [
+          "baseline_square",
+          307
+        ],
+        [
+          "baseline_square",
+          309
+        ],
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "baseline_square",
+          313
+        ],
+        [
+          "baseline_square",
+          315
+        ],
+        [
+          "baseline_square",
+          316
+        ],
+        [
+          "baseline_square",
+          317
+        ],
+        [
+          "dense_circle",
+          306
+        ],
+        [
+          "dense_circle",
+          307
+        ],
+        [
+          "dense_circle",
+          314
+        ],
+        [
+          "dense_circle",
+          317
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          309
+        ],
+        [
+          "large_circle",
+          301
+        ],
+        [
+          "large_circle",
+          307
+        ],
+        [
+          "large_circle",
+          311
+        ],
+        [
+          "large_circle",
+          314
+        ],
+        [
+          "large_circle",
+          319
+        ],
+        [
+          "large_square",
+          304
+        ],
+        [
+          "large_square",
+          312
+        ],
+        [
+          "large_square",
+          313
+        ],
+        [
+          "large_square",
+          315
+        ],
+        [
+          "large_square",
+          316
+        ],
+        [
+          "large_square",
+          317
+        ]
+      ],
+      "damages": [
+        [
+          "dense_circle",
+          304
+        ],
+        [
+          "large_square",
+          300
+        ],
+        [
+          "large_square",
+          305
+        ],
+        [
+          "large_square",
+          311
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "rescue_count": 37,
+      "damage_count": 5,
+      "both_success_time_delta_mean": -0.20833333333333334
+    },
+    "progress-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.19166666666666668,
+      "delta_SR_case_bootstrap_95": [
+        -0.2916666666666667,
+        -0.075
+      ],
+      "delta_contact_rate": 0.25,
+      "delta_contact_case_bootstrap_95": [
+        0.175,
+        0.325
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "dense_square",
+          318
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          317
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          301
+        ],
+        [
+          "baseline_circle",
+          307
+        ],
+        [
+          "baseline_circle",
+          308
+        ],
+        [
+          "baseline_circle",
+          315
+        ],
+        [
+          "baseline_circle",
+          317
+        ],
+        [
+          "baseline_square",
+          300
+        ],
+        [
+          "baseline_square",
+          304
+        ],
+        [
+          "baseline_square",
+          306
+        ],
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "dense_circle",
+          300
+        ],
+        [
+          "dense_circle",
+          301
+        ],
+        [
+          "dense_circle",
+          303
+        ],
+        [
+          "dense_circle",
+          306
+        ],
+        [
+          "dense_circle",
+          307
+        ],
+        [
+          "dense_circle",
+          308
+        ],
+        [
+          "dense_circle",
+          309
+        ],
+        [
+          "dense_circle",
+          310
+        ],
+        [
+          "dense_circle",
+          312
+        ],
+        [
+          "dense_circle",
+          313
+        ],
+        [
+          "dense_circle",
+          314
+        ],
+        [
+          "dense_circle",
+          317
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "dense_square",
+          309
+        ],
+        [
+          "dense_square",
+          315
+        ],
+        [
+          "dense_square",
+          316
+        ],
+        [
+          "large_circle",
+          302
+        ],
+        [
+          "large_circle",
+          308
+        ],
+        [
+          "large_circle",
+          314
+        ],
+        [
+          "large_square",
+          301
+        ],
+        [
+          "large_square",
+          305
+        ],
+        [
+          "large_square",
+          309
+        ]
+      ],
+      "rescue_count": 9,
+      "damage_count": 32,
+      "both_success_time_delta_mean": -2.482876712328767
+    },
+    "commit8-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.08333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        0.025,
+        0.15
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          308
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          317
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          305
+        ]
+      ],
+      "rescue_count": 11,
+      "damage_count": 1,
+      "both_success_time_delta_mean": -0.5456730769230769
+    },
+    "adaptive-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.05,
+      "delta_SR_case_bootstrap_95": [
+        -0.008333333333333333,
+        0.10833333333333334
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          305
+        ],
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "dense_square",
+          313
+        ]
+      ],
+      "rescue_count": 9,
+      "damage_count": 3,
+      "both_success_time_delta_mean": -0.30637254901960786
+    },
+    "adaptive-vs-commit8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.03333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        -0.06666666666666667,
+        -0.008333333333333333
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "dense_square",
+          308
+        ],
+        [
+          "dense_square",
+          313
+        ],
+        [
+          "large_circle",
+          317
+        ]
+      ],
+      "rescue_count": 0,
+      "damage_count": 4,
+      "both_success_time_delta_mean": 0.29504504504504503
+    },
+    "adaptive-vs-progress": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.24166666666666667,
+      "delta_SR_case_bootstrap_95": [
+        0.15,
+        0.3333333333333333
+      ],
+      "delta_contact_rate": -0.25,
+      "delta_contact_case_bootstrap_95": [
+        -0.325,
+        -0.175
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          301
+        ],
+        [
+          "baseline_circle",
+          307
+        ],
+        [
+          "baseline_circle",
+          308
+        ],
+        [
+          "baseline_circle",
+          315
+        ],
+        [
+          "baseline_circle",
+          317
+        ],
+        [
+          "baseline_square",
+          300
+        ],
+        [
+          "baseline_square",
+          304
+        ],
+        [
+          "baseline_square",
+          306
+        ],
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "dense_circle",
+          300
+        ],
+        [
+          "dense_circle",
+          301
+        ],
+        [
+          "dense_circle",
+          303
+        ],
+        [
+          "dense_circle",
+          306
+        ],
+        [
+          "dense_circle",
+          307
+        ],
+        [
+          "dense_circle",
+          308
+        ],
+        [
+          "dense_circle",
+          309
+        ],
+        [
+          "dense_circle",
+          310
+        ],
+        [
+          "dense_circle",
+          312
+        ],
+        [
+          "dense_circle",
+          313
+        ],
+        [
+          "dense_circle",
+          314
+        ],
+        [
+          "dense_circle",
+          317
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          309
+        ],
+        [
+          "dense_square",
+          315
+        ],
+        [
+          "dense_square",
+          316
+        ],
+        [
+          "large_circle",
+          302
+        ],
+        [
+          "large_circle",
+          308
+        ],
+        [
+          "large_circle",
+          314
+        ],
+        [
+          "large_square",
+          301
+        ],
+        [
+          "large_square",
+          305
+        ],
+        [
+          "large_square",
+          309
+        ],
+        [
+          "large_square",
+          314
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          305
+        ],
+        [
+          "dense_square",
+          313
+        ],
+        [
+          "dense_square",
+          318
+        ],
+        [
+          "large_circle",
+          317
+        ]
+      ],
+      "rescue_count": 34,
+      "damage_count": 5,
+      "both_success_time_delta_mean": 2.4220779220779223
+    }
+  },
+  "per_scene": {
+    "baseline_circle": {
+      "nominal": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 12.0625,
+        "successful_time_mean": 12.0625,
+        "return_mean": 0.6226417691348053,
+        "path_mean": 11.50529633225986,
+        "final_distance_mean": 0.2747763448816348,
+        "min_clearance_min": 0.16662587036494936,
+        "min_clearance_median": 0.7536701104557947,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.681994478039886
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 1,
+        "collision": 0,
+        "timeout": 19,
+        "contact": 0,
+        "SR": 0.05,
+        "CR": 0.0,
+        "TR": 0.95,
+        "duration_all_mean": 48.4625,
+        "successful_time_mean": 14.5,
+        "return_mean": -0.03550060124057854,
+        "path_mean": 47.883756606903205,
+        "final_distance_mean": 34.44132641477164,
+        "min_clearance_min": 0.19220618353565166,
+        "min_clearance_median": 0.872636965049457,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.713330500564561
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 13,
+        "collision": 4,
+        "timeout": 3,
+        "contact": 4,
+        "SR": 0.65,
+        "CR": 0.2,
+        "TR": 0.15,
+        "duration_all_mean": 15.525,
+        "successful_time_mean": 10.326923076923077,
+        "return_mean": 0.3242541219728573,
+        "path_mean": 14.6648314412562,
+        "final_distance_mean": 6.719965374563247,
+        "min_clearance_min": -0.08947613695540912,
+        "min_clearance_median": 0.18198121132567163,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 46,
+        "decision_ms_episode_mean": 8.529336422293678
+      },
+      "progress": {
+        "n": 20,
+        "success": 15,
+        "collision": 5,
+        "timeout": 0,
+        "contact": 5,
+        "SR": 0.75,
+        "CR": 0.25,
+        "TR": 0.0,
+        "duration_all_mean": 10.25,
+        "successful_time_mean": 12.016666666666667,
+        "return_mean": 0.3309817478705666,
+        "path_mean": 9.45167557819887,
+        "final_distance_mean": 1.231453711211931,
+        "min_clearance_min": -0.09368328100429912,
+        "min_clearance_median": 0.11130997804069465,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 74,
+        "decision_ms_episode_mean": 8.803190399263528
+      },
+      "commit8": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.975,
+        "successful_time_mean": 11.975,
+        "return_mean": 0.6246559175967611,
+        "path_mean": 11.413599946018774,
+        "final_distance_mean": 0.2738082084571435,
+        "min_clearance_min": 0.16662587036494936,
+        "min_clearance_median": 0.7536701104557947,
+        "triggers": 1,
+        "intervention_steps": 8,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.640877760133554
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.975,
+        "successful_time_mean": 11.975,
+        "return_mean": 0.6246559175967611,
+        "path_mean": 11.413599946018774,
+        "final_distance_mean": 0.2738082084571435,
+        "min_clearance_min": 0.16662587036494936,
+        "min_clearance_median": 0.7536701104557947,
+        "triggers": 1,
+        "intervention_steps": 3,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.6437732297725
+      }
+    },
+    "baseline_square": {
+      "nominal": {
+        "n": 20,
+        "success": 19,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.95,
+        "CR": 0.0,
+        "TR": 0.05,
+        "duration_all_mean": 15.425,
+        "successful_time_mean": 13.592105263157896,
+        "return_mean": 0.5531118538676782,
+        "path_mean": 13.338510093544892,
+        "final_distance_mean": 0.5323636256352778,
+        "min_clearance_min": 0.1295025304969608,
+        "min_clearance_median": 0.2355212381940887,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.85918766170233
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 0,
+        "collision": 0,
+        "timeout": 20,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 50.25,
+        "successful_time_mean": null,
+        "return_mean": -0.06829854048030447,
+        "path_mean": 49.23938750164133,
+        "final_distance_mean": 36.98913599694445,
+        "min_clearance_min": 0.15883711427754,
+        "min_clearance_median": 0.24568478546558575,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 8.881775947288837
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 8,
+        "collision": 0,
+        "timeout": 12,
+        "contact": 0,
+        "SR": 0.4,
+        "CR": 0.0,
+        "TR": 0.6,
+        "duration_all_mean": 34.25,
+        "successful_time_mean": 10.25,
+        "return_mean": 0.22117086954386211,
+        "path_mean": 32.882405429609314,
+        "final_distance_mean": 22.697780279395243,
+        "min_clearance_min": 0.126439256438879,
+        "min_clearance_median": 0.18610119445438583,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 27,
+        "decision_ms_episode_mean": 8.94720939214751
+      },
+      "progress": {
+        "n": 20,
+        "success": 16,
+        "collision": 2,
+        "timeout": 2,
+        "contact": 2,
+        "SR": 0.8,
+        "CR": 0.1,
+        "TR": 0.1,
+        "duration_all_mean": 14.3625,
+        "successful_time_mean": 11.109375,
+        "return_mean": 0.4443112998242852,
+        "path_mean": 9.62616383633631,
+        "final_distance_mean": 1.1140102929944258,
+        "min_clearance_min": -0.042560338544971765,
+        "min_clearance_median": 0.1312420175067215,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 58,
+        "decision_ms_episode_mean": 8.787161883466462
+      },
+      "commit8": {
+        "n": 20,
+        "success": 19,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.95,
+        "CR": 0.0,
+        "TR": 0.05,
+        "duration_all_mean": 15.325,
+        "successful_time_mean": 13.486842105263158,
+        "return_mean": 0.5542607305464665,
+        "path_mean": 13.214805898512727,
+        "final_distance_mean": 0.5305265528228498,
+        "min_clearance_min": 0.12424485717646405,
+        "min_clearance_median": 0.2229175048880882,
+        "triggers": 5,
+        "intervention_steps": 34,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 8.816766082794029
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 19,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.95,
+        "CR": 0.0,
+        "TR": 0.05,
+        "duration_all_mean": 15.5375,
+        "successful_time_mean": 13.710526315789474,
+        "return_mean": 0.549557224662512,
+        "path_mean": 13.421002058383326,
+        "final_distance_mean": 0.5310730054843422,
+        "min_clearance_min": 0.12424485717646405,
+        "min_clearance_median": 0.2229175048880882,
+        "triggers": 4,
+        "intervention_steps": 25,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 8.879852074674089
+      }
+    },
+    "dense_circle": {
+      "nominal": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 14.275,
+        "successful_time_mean": 14.275,
+        "return_mean": 0.5694965368261145,
+        "path_mean": 13.638083957541028,
+        "final_distance_mean": 0.28264803629219915,
+        "min_clearance_min": 0.1754497643941807,
+        "min_clearance_median": 0.36622312762928994,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.765567425380258
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 2,
+        "collision": 1,
+        "timeout": 17,
+        "contact": 1,
+        "SR": 0.1,
+        "CR": 0.05,
+        "TR": 0.85,
+        "duration_all_mean": 44.6625,
+        "successful_time_mean": 17.0,
+        "return_mean": -0.031176106656891044,
+        "path_mean": 43.958761168870964,
+        "final_distance_mean": 28.910628904269394,
+        "min_clearance_min": -0.04604295101331257,
+        "min_clearance_median": 0.3982234641546624,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 8,
+        "decision_ms_episode_mean": 8.82400506932609
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 5,
+        "collision": 7,
+        "timeout": 8,
+        "contact": 7,
+        "SR": 0.25,
+        "CR": 0.35,
+        "TR": 0.4,
+        "duration_all_mean": 24.825,
+        "successful_time_mean": 10.85,
+        "return_mean": -0.03118257484196519,
+        "path_mean": 23.90747126153257,
+        "final_distance_mean": 17.06624633236626,
+        "min_clearance_min": -0.09440674934016002,
+        "min_clearance_median": 0.0700222883478448,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 65,
+        "decision_ms_episode_mean": 8.852606433516517
+      },
+      "progress": {
+        "n": 20,
+        "success": 8,
+        "collision": 12,
+        "timeout": 0,
+        "contact": 12,
+        "SR": 0.4,
+        "CR": 0.6,
+        "TR": 0.0,
+        "duration_all_mean": 8.0875,
+        "successful_time_mean": 11.40625,
+        "return_mean": -0.02797856098746691,
+        "path_mean": 7.381106021465139,
+        "final_distance_mean": 2.5698761300645128,
+        "min_clearance_min": -0.08545822558954252,
+        "min_clearance_median": -0.0218486516055188,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 91,
+        "decision_ms_episode_mean": 8.935530503456345
+      },
+      "commit8": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 14.25,
+        "successful_time_mean": 14.25,
+        "return_mean": 0.5700632900225793,
+        "path_mean": 13.604710994181914,
+        "final_distance_mean": 0.2817152319825684,
+        "min_clearance_min": 0.1754497643941807,
+        "min_clearance_median": 0.36622312762928994,
+        "triggers": 1,
+        "intervention_steps": 8,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.883949730238474
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 14.2625,
+        "successful_time_mean": 14.2625,
+        "return_mean": 0.5697784894213407,
+        "path_mean": 13.61938120262975,
+        "final_distance_mean": 0.2815090528127807,
+        "min_clearance_min": 0.1754497643941807,
+        "min_clearance_median": 0.36622312762928994,
+        "triggers": 1,
+        "intervention_steps": 3,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 8.75933547660893
+      }
+    },
+    "dense_square": {
+      "nominal": {
+        "n": 20,
+        "success": 13,
+        "collision": 0,
+        "timeout": 7,
+        "contact": 0,
+        "SR": 0.65,
+        "CR": 0.0,
+        "TR": 0.35,
+        "duration_all_mean": 29.9875,
+        "successful_time_mean": 19.076923076923077,
+        "return_mean": 0.28713193937636816,
+        "path_mean": 26.592771080965555,
+        "final_distance_mean": 6.94289159710124,
+        "min_clearance_min": 0.17952590831382664,
+        "min_clearance_median": 0.2227423288248031,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.435931987664512
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 3,
+        "collision": 2,
+        "timeout": 15,
+        "contact": 2,
+        "SR": 0.15,
+        "CR": 0.1,
+        "TR": 0.75,
+        "duration_all_mean": 40.525,
+        "successful_time_mean": 14.416666666666666,
+        "return_mean": -0.019604965004336068,
+        "path_mean": 38.86453026608852,
+        "final_distance_mean": 25.6322650669537,
+        "min_clearance_min": -0.023085598788335382,
+        "min_clearance_median": 0.1770602082532755,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 25,
+        "decision_ms_episode_mean": 9.33465234982655
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 5,
+        "collision": 4,
+        "timeout": 11,
+        "contact": 4,
+        "SR": 0.25,
+        "CR": 0.2,
+        "TR": 0.55,
+        "duration_all_mean": 32.45,
+        "successful_time_mean": 14.5,
+        "return_mean": -0.007337741023335625,
+        "path_mean": 26.25392533197097,
+        "final_distance_mean": 16.981836862626917,
+        "min_clearance_min": -0.04743855042540246,
+        "min_clearance_median": 0.13739979444920608,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 58,
+        "decision_ms_episode_mean": 9.30411662550868
+      },
+      "progress": {
+        "n": 20,
+        "success": 10,
+        "collision": 5,
+        "timeout": 5,
+        "contact": 5,
+        "SR": 0.5,
+        "CR": 0.25,
+        "TR": 0.25,
+        "duration_all_mean": 20.975,
+        "successful_time_mean": 13.95,
+        "return_mean": 0.11528464892253061,
+        "path_mean": 10.44595679975313,
+        "final_distance_mean": 2.2790147497631166,
+        "min_clearance_min": -0.08721469987950425,
+        "min_clearance_median": 0.05449363695076659,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 111,
+        "decision_ms_episode_mean": 9.359362991225217
+      },
+      "commit8": {
+        "n": 20,
+        "success": 16,
+        "collision": 0,
+        "timeout": 4,
+        "contact": 0,
+        "SR": 0.8,
+        "CR": 0.0,
+        "TR": 0.2,
+        "duration_all_mean": 25.025,
+        "successful_time_mean": 18.71875,
+        "return_mean": 0.37168055437929415,
+        "path_mean": 20.83974002846594,
+        "final_distance_mean": 1.3420726363588555,
+        "min_clearance_min": 0.17952590831382664,
+        "min_clearance_median": 0.19470101592569017,
+        "triggers": 38,
+        "intervention_steps": 294,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.386599185569898
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 13,
+        "collision": 0,
+        "timeout": 7,
+        "contact": 0,
+        "SR": 0.65,
+        "CR": 0.0,
+        "TR": 0.35,
+        "duration_all_mean": 29.8625,
+        "successful_time_mean": 18.884615384615383,
+        "return_mean": 0.28858428184947116,
+        "path_mean": 21.268994259437545,
+        "final_distance_mean": 2.277548846147263,
+        "min_clearance_min": 0.17917548718542275,
+        "min_clearance_median": 0.19711156582274741,
+        "triggers": 67,
+        "intervention_steps": 635,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.433280498181785
+      }
+    },
+    "large_circle": {
+      "nominal": {
+        "n": 20,
+        "success": 17,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.85,
+        "CR": 0.0,
+        "TR": 0.15,
+        "duration_all_mean": 25.525,
+        "successful_time_mean": 21.16176470588235,
+        "return_mean": 0.3570872560225482,
+        "path_mean": 24.741145812595793,
+        "final_distance_mean": 4.217368075063771,
+        "min_clearance_min": 0.1918465995707055,
+        "min_clearance_median": 0.6333028509304318,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.942373257833742
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 1,
+        "collision": 0,
+        "timeout": 19,
+        "contact": 0,
+        "SR": 0.05,
+        "CR": 0.0,
+        "TR": 0.95,
+        "duration_all_mean": 48.7875,
+        "successful_time_mean": 21.0,
+        "return_mean": -0.04588538902779258,
+        "path_mean": 47.444116278955065,
+        "final_distance_mean": 26.89101097884197,
+        "min_clearance_min": 0.03302790152434476,
+        "min_clearance_median": 0.3993079454536013,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 5,
+        "decision_ms_episode_mean": 8.897135700762952
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 6,
+        "collision": 0,
+        "timeout": 14,
+        "contact": 0,
+        "SR": 0.3,
+        "CR": 0.0,
+        "TR": 0.7,
+        "duration_all_mean": 40.5875,
+        "successful_time_mean": 18.041666666666668,
+        "return_mean": 0.08531203933656299,
+        "path_mean": 37.642946800436654,
+        "final_distance_mean": 21.23298103411109,
+        "min_clearance_min": 0.0032467157480774445,
+        "min_clearance_median": 0.19291713946817862,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 29,
+        "decision_ms_episode_mean": 9.076800831458378
+      },
+      "progress": {
+        "n": 20,
+        "success": 17,
+        "collision": 3,
+        "timeout": 0,
+        "contact": 2,
+        "SR": 0.85,
+        "CR": 0.15,
+        "TR": 0.0,
+        "duration_all_mean": 16.3125,
+        "successful_time_mean": 18.16176470588235,
+        "return_mean": 0.30208203863845834,
+        "path_mean": 15.300891446131512,
+        "final_distance_mean": 1.1793688569186134,
+        "min_clearance_min": -0.05925716867742381,
+        "min_clearance_median": 0.09701430602895872,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 112,
+        "decision_ms_episode_mean": 8.953810244548361
+      },
+      "commit8": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 20.5,
+        "successful_time_mean": 20.5,
+        "return_mean": 0.44571083055179966,
+        "path_mean": 19.370668579605756,
+        "final_distance_mean": 0.2864890759297196,
+        "min_clearance_min": 0.18049501488961572,
+        "min_clearance_median": 0.4180602419163222,
+        "triggers": 26,
+        "intervention_steps": 208,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.084020116712349
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 19,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.95,
+        "CR": 0.0,
+        "TR": 0.05,
+        "duration_all_mean": 22.4375,
+        "successful_time_mean": 20.973684210526315,
+        "return_mean": 0.4139945458289428,
+        "path_mean": 21.357098529563913,
+        "final_distance_mean": 0.3574537654951326,
+        "min_clearance_min": 0.18190824072798895,
+        "min_clearance_median": 0.44338739676070793,
+        "triggers": 33,
+        "intervention_steps": 130,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.067841515943906
+      }
+    },
+    "large_square": {
+      "nominal": {
+        "n": 20,
+        "success": 16,
+        "collision": 0,
+        "timeout": 4,
+        "contact": 0,
+        "SR": 0.8,
+        "CR": 0.0,
+        "TR": 0.2,
+        "duration_all_mean": 23.175,
+        "successful_time_mean": 16.40625,
+        "return_mean": 0.416714746065652,
+        "path_mean": 18.87521564191446,
+        "final_distance_mean": 1.3586048739692518,
+        "min_clearance_min": 0.023761808589687128,
+        "min_clearance_median": 0.201217941527719,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 11,
+        "decision_ms_episode_mean": 9.608500463271387
+      },
+      "behavior-mc": {
+        "n": 20,
+        "success": 10,
+        "collision": 1,
+        "timeout": 9,
+        "contact": 1,
+        "SR": 0.5,
+        "CR": 0.05,
+        "TR": 0.45,
+        "duration_all_mean": 30.2,
+        "successful_time_mean": 14.775,
+        "return_mean": 0.21983669406003595,
+        "path_mean": 28.56127609860572,
+        "final_distance_mean": 16.203960761354747,
+        "min_clearance_min": -0.11430277649553822,
+        "min_clearance_median": 0.18756362681978356,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 28,
+        "decision_ms_episode_mean": 9.402235959091971
+      },
+      "deploy-mc": {
+        "n": 20,
+        "success": 12,
+        "collision": 2,
+        "timeout": 6,
+        "contact": 2,
+        "SR": 0.6,
+        "CR": 0.1,
+        "TR": 0.3,
+        "duration_all_mean": 23.1125,
+        "successful_time_mean": 12.666666666666666,
+        "return_mean": 0.2842551980250581,
+        "path_mean": 21.701717237406296,
+        "final_distance_mean": 12.505176567514134,
+        "min_clearance_min": -0.03518196915021743,
+        "min_clearance_median": 0.17175128534611128,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 56,
+        "decision_ms_episode_mean": 9.250760080484579
+      },
+      "progress": {
+        "n": 20,
+        "success": 16,
+        "collision": 4,
+        "timeout": 0,
+        "contact": 4,
+        "SR": 0.8,
+        "CR": 0.2,
+        "TR": 0.0,
+        "duration_all_mean": 10.4125,
+        "successful_time_mean": 11.59375,
+        "return_mean": 0.38671871745894654,
+        "path_mean": 9.501666457832531,
+        "final_distance_mean": 1.2053107723005219,
+        "min_clearance_min": -0.14302520788450312,
+        "min_clearance_median": 0.1056413012744794,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 92,
+        "decision_ms_episode_mean": 9.336056781390209
+      },
+      "commit8": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 15.1125,
+        "successful_time_mean": 15.1125,
+        "return_mean": 0.548876605191547,
+        "path_mean": 12.833280815684484,
+        "final_distance_mean": 0.28241983588937997,
+        "min_clearance_min": 0.023761808589687128,
+        "min_clearance_median": 0.2007528079271098,
+        "triggers": 12,
+        "intervention_steps": 88,
+        "fallback_steps": 14,
+        "decision_ms_episode_mean": 9.537210464234196
+      },
+      "adaptive": {
+        "n": 20,
+        "success": 20,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 15.225,
+        "successful_time_mean": 15.225,
+        "return_mean": 0.5470551457078595,
+        "path_mean": 12.910255608414383,
+        "final_distance_mean": 0.28244254646418127,
+        "min_clearance_min": 0.023761808589687128,
+        "min_clearance_median": 0.20120566576876758,
+        "triggers": 11,
+        "intervention_steps": 48,
+        "fallback_steps": 14,
+        "decision_ms_episode_mean": 9.331575630988095
+      }
+    }
+  }
+}

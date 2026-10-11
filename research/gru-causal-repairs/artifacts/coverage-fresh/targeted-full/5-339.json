@@ -1,0 +1,20 @@
+{
+  "arm": "targeted-full",
+  "scene": "large_square",
+  "case": 339,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.15816307980086364,
+  "duration": 13.0,
+  "steps": 52,
+  "return": 0.589538963843496,
+  "path": 10.293816984411318,
+  "final_distance": 0.2896209601144975,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 1,
+  "decision_ms_mean": 9.576838076240026
+}

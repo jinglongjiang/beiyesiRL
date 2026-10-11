@@ -1,0 +1,125 @@
+{
+  "status": "COMPLETED",
+  "stages": [
+    {
+      "stage": "run-probe",
+      "seconds": 7.976241462980397,
+      "exit_code": 0
+    },
+    {
+      "stage": "analyze-ranking",
+      "seconds": 0.11844456591643393,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-nominal",
+      "seconds": 2.6047864629654214,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-behavior-mc",
+      "seconds": 61.04700724594295,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-deploy-mc",
+      "seconds": 38.06325323798228,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-progress",
+      "seconds": 20.646970310946926,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-commit8",
+      "seconds": 29.7688514390029,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-roots-arm-adaptive",
+      "seconds": 32.97385690396186,
+      "exit_code": 0
+    },
+    {
+      "stage": "analyze-roots",
+      "seconds": 0.14026050502434373,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-nominal",
+      "seconds": 133.33955837297253,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-behavior-mc",
+      "seconds": 207.10570091893896,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-deploy-mc",
+      "seconds": 137.5366034109611,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-progress",
+      "seconds": 67.22058127704076,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-commit8",
+      "seconds": 84.70345380110666,
+      "exit_code": 0
+    },
+    {
+      "stage": "run-evaluate-cohort-fresh-arm-adaptive",
+      "seconds": 90.57581282604951,
+      "exit_code": 0
+    },
+    {
+      "stage": "analyze-fresh",
+      "seconds": 0.14084396697580814,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-train",
+      "seconds": 66.02269041503314,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-roots-arm-coverage-control",
+      "seconds": 37.731390599976294,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-roots-arm-targeted-head",
+      "seconds": 37.39080081903376,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-roots-arm-targeted-full",
+      "seconds": 34.17783703492023,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-fresh-arm-nominal",
+      "seconds": 125.84904954803642,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-fresh-arm-coverage-control",
+      "seconds": 132.9493697520811,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-fresh-arm-targeted-head",
+      "seconds": 91.9153853179887,
+      "exit_code": 0
+    },
+    {
+      "stage": "coverage-evaluate-cohort-fresh-arm-targeted-full",
+      "seconds": 88.37345928396098,
+      "exit_code": 0
+    }
+  ]
+}

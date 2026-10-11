@@ -1,0 +1,20 @@
+{
+  "arm": "progress",
+  "scene": "baseline_circle",
+  "case": 302,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.07597952549626141,
+  "duration": 10.75,
+  "steps": 43,
+  "return": 0.6136260280070327,
+  "path": 9.984819187860191,
+  "final_distance": 0.12391938915836061,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 5,
+  "decision_ms_mean": 8.41359891062386
+}

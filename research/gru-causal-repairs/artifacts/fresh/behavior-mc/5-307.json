@@ -1,0 +1,20 @@
+{
+  "arm": "behavior-mc",
+  "scene": "large_square",
+  "case": 307,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.18912851116752283,
+  "duration": 12.0,
+  "steps": 48,
+  "return": 0.6223276516087979,
+  "path": 10.476133205393163,
+  "final_distance": 0.2964624403274827,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 9.220764259225689
+}

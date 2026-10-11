@@ -1,0 +1,20 @@
+{
+  "arm": "commit8",
+  "scene": "large_circle",
+  "case": 306,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.5494338606706729,
+  "duration": 27.75,
+  "steps": 111,
+  "return": 0.33103308832101386,
+  "path": 26.205704322706474,
+  "final_distance": 0.28632631790704716,
+  "triggers": 3,
+  "intervention_steps": 24,
+  "fallback": 0,
+  "decision_ms_mean": 8.910330555712184
+}

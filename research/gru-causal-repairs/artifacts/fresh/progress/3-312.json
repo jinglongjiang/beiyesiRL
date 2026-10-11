@@ -1,0 +1,20 @@
+{
+  "arm": "progress",
+  "scene": "dense_square",
+  "case": 312,
+  "outcome": "collision",
+  "success": 0,
+  "collision": 1,
+  "timeout": 0,
+  "contact": 1,
+  "min_clearance": -0.06241213721217498,
+  "duration": 4.5,
+  "steps": 18,
+  "return": -0.43486324942746674,
+  "path": 4.172730052634435,
+  "final_distance": 4.648853050859487,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 3,
+  "decision_ms_mean": 9.354463170489502
+}

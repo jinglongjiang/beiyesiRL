@@ -1,0 +1,20 @@
+{
+  "arm": "coverage-control",
+  "scene": "large_circle",
+  "case": 330,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.45247011068376064,
+  "duration": 16.75,
+  "steps": 67,
+  "return": 0.5151371174238033,
+  "path": 13.367796776670374,
+  "final_distance": 0.29439563476315567,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 8.681754875274848
+}

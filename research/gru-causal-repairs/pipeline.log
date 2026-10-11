@@ -1,0 +1,48 @@
+START run-probe
+DONE run-probe 8.0
+START analyze-ranking
+DONE analyze-ranking 0.1
+START run-evaluate-cohort-roots-arm-nominal
+DONE run-evaluate-cohort-roots-arm-nominal 2.6
+START run-evaluate-cohort-roots-arm-behavior-mc
+DONE run-evaluate-cohort-roots-arm-behavior-mc 61.0
+START run-evaluate-cohort-roots-arm-deploy-mc
+DONE run-evaluate-cohort-roots-arm-deploy-mc 38.1
+START run-evaluate-cohort-roots-arm-progress
+DONE run-evaluate-cohort-roots-arm-progress 20.6
+START run-evaluate-cohort-roots-arm-commit8
+DONE run-evaluate-cohort-roots-arm-commit8 29.8
+START run-evaluate-cohort-roots-arm-adaptive
+DONE run-evaluate-cohort-roots-arm-adaptive 33.0
+START analyze-roots
+DONE analyze-roots 0.1
+START run-evaluate-cohort-fresh-arm-nominal
+DONE run-evaluate-cohort-fresh-arm-nominal 133.3
+START run-evaluate-cohort-fresh-arm-behavior-mc
+DONE run-evaluate-cohort-fresh-arm-behavior-mc 207.1
+START run-evaluate-cohort-fresh-arm-deploy-mc
+DONE run-evaluate-cohort-fresh-arm-deploy-mc 137.5
+START run-evaluate-cohort-fresh-arm-progress
+DONE run-evaluate-cohort-fresh-arm-progress 67.2
+START run-evaluate-cohort-fresh-arm-commit8
+DONE run-evaluate-cohort-fresh-arm-commit8 84.7
+START run-evaluate-cohort-fresh-arm-adaptive
+DONE run-evaluate-cohort-fresh-arm-adaptive 90.6
+START analyze-fresh
+DONE analyze-fresh 0.1
+START coverage-train
+DONE coverage-train 66.0
+START coverage-evaluate-cohort-roots-arm-coverage-control
+DONE coverage-evaluate-cohort-roots-arm-coverage-control 37.7
+START coverage-evaluate-cohort-roots-arm-targeted-head
+DONE coverage-evaluate-cohort-roots-arm-targeted-head 37.4
+START coverage-evaluate-cohort-roots-arm-targeted-full
+DONE coverage-evaluate-cohort-roots-arm-targeted-full 34.2
+START coverage-evaluate-cohort-fresh-arm-nominal
+DONE coverage-evaluate-cohort-fresh-arm-nominal 125.8
+START coverage-evaluate-cohort-fresh-arm-coverage-control
+DONE coverage-evaluate-cohort-fresh-arm-coverage-control 132.9
+START coverage-evaluate-cohort-fresh-arm-targeted-head
+DONE coverage-evaluate-cohort-fresh-arm-targeted-head 91.9
+START coverage-evaluate-cohort-fresh-arm-targeted-full
+DONE coverage-evaluate-cohort-fresh-arm-targeted-full 88.4

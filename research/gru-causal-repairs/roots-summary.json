@@ -1,0 +1,1988 @@
+{
+  "cohort": "roots",
+  "overall": {
+    "nominal": {
+      "n": 35,
+      "success": 21,
+      "collision": 0,
+      "timeout": 14,
+      "contact": 0,
+      "SR": 0.6,
+      "CR": 0.0,
+      "TR": 0.4,
+      "duration_all_mean": 26.021428571428572,
+      "successful_time_mean": 14.916666666666666,
+      "return_mean": 0.3064305621831337,
+      "path_mean": 23.899123187775277,
+      "final_distance_mean": 9.821237819961057,
+      "min_clearance_min": 0.13149237706873507,
+      "min_clearance_median": 0.3109062128010267,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 0,
+      "decision_ms_episode_mean": 9.696578233448387
+    },
+    "behavior-mc": {
+      "n": 35,
+      "success": 4,
+      "collision": 0,
+      "timeout": 31,
+      "contact": 0,
+      "SR": 0.11428571428571428,
+      "CR": 0.0,
+      "TR": 0.8857142857142857,
+      "duration_all_mean": 40.7,
+      "successful_time_mean": 13.1875,
+      "return_mean": -0.011096870631548654,
+      "path_mean": 38.912876142491044,
+      "final_distance_mean": 25.174588930718315,
+      "min_clearance_min": 0.05088070792236521,
+      "min_clearance_median": 0.25280193151195385,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 3,
+      "decision_ms_episode_mean": 9.26753442328604
+    },
+    "deploy-mc": {
+      "n": 35,
+      "success": 19,
+      "collision": 1,
+      "timeout": 15,
+      "contact": 1,
+      "SR": 0.5428571428571428,
+      "CR": 0.02857142857142857,
+      "TR": 0.42857142857142855,
+      "duration_all_mean": 24.12857142857143,
+      "successful_time_mean": 9.43421052631579,
+      "return_mean": 0.32238752236438317,
+      "path_mean": 21.547259114779216,
+      "final_distance_mean": 13.734264351004974,
+      "min_clearance_min": -0.00960588938087914,
+      "min_clearance_median": 0.1930311965179765,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 23,
+      "decision_ms_episode_mean": 9.306711049797052
+    },
+    "progress": {
+      "n": 35,
+      "success": 33,
+      "collision": 0,
+      "timeout": 2,
+      "contact": 0,
+      "SR": 0.9428571428571428,
+      "CR": 0.0,
+      "TR": 0.05714285714285714,
+      "duration_all_mean": 11.857142857142858,
+      "successful_time_mean": 9.651515151515152,
+      "return_mean": 0.6391746843536834,
+      "path_mean": 8.813010338850182,
+      "final_distance_mean": 0.43374101806277904,
+      "min_clearance_min": 0.04732150840785054,
+      "min_clearance_median": 0.180411728549691,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 46,
+      "decision_ms_episode_mean": 9.878450998872053
+    },
+    "commit8": {
+      "n": 35,
+      "success": 30,
+      "collision": 0,
+      "timeout": 5,
+      "contact": 0,
+      "SR": 0.8571428571428571,
+      "CR": 0.0,
+      "TR": 0.14285714285714285,
+      "duration_all_mean": 18.135714285714286,
+      "successful_time_mean": 13.916666666666666,
+      "return_mean": 0.49137366149052863,
+      "path_mean": 14.734353049103342,
+      "final_distance_mean": 0.8438890814422949,
+      "min_clearance_min": 0.13149237706873507,
+      "min_clearance_median": 0.2098713875959083,
+      "triggers": 65,
+      "intervention_steps": 506,
+      "fallback_steps": 3,
+      "decision_ms_episode_mean": 9.532822679340326
+    },
+    "adaptive": {
+      "n": 35,
+      "success": 28,
+      "collision": 0,
+      "timeout": 7,
+      "contact": 0,
+      "SR": 0.8,
+      "CR": 0.0,
+      "TR": 0.2,
+      "duration_all_mean": 20.642857142857142,
+      "successful_time_mean": 15.383928571428571,
+      "return_mean": 0.4285746970564167,
+      "path_mean": 17.27768400232329,
+      "final_distance_mean": 1.1962681362183434,
+      "min_clearance_min": 0.13149237706873507,
+      "min_clearance_median": 0.2209386151245053,
+      "triggers": 62,
+      "intervention_steps": 382,
+      "fallback_steps": 3,
+      "decision_ms_episode_mean": 9.284417168386943
+    }
+  },
+  "pairwise": {
+    "behavior-mc-vs-nominal": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": -0.4857142857142857,
+      "delta_SR_case_bootstrap_95": [
+        -0.7027277277277277,
+        -0.23529411764705882
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "large_square",
+          101
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          106
+        ],
+        [
+          "baseline_circle",
+          107
+        ],
+        [
+          "baseline_square",
+          100
+        ],
+        [
+          "baseline_square",
+          101
+        ],
+        [
+          "baseline_square",
+          107
+        ],
+        [
+          "dense_circle",
+          100
+        ],
+        [
+          "dense_circle",
+          104
+        ],
+        [
+          "dense_square",
+          103
+        ],
+        [
+          "dense_square",
+          104
+        ],
+        [
+          "dense_square",
+          124
+        ],
+        [
+          "dense_square",
+          125
+        ],
+        [
+          "large_circle",
+          100
+        ],
+        [
+          "large_circle",
+          104
+        ],
+        [
+          "large_square",
+          100
+        ],
+        [
+          "large_square",
+          102
+        ],
+        [
+          "large_square",
+          106
+        ],
+        [
+          "large_square",
+          118
+        ],
+        [
+          "large_square",
+          129
+        ],
+        [
+          "large_square",
+          131
+        ]
+      ],
+      "rescue_count": 2,
+      "damage_count": 19,
+      "both_success_time_delta_mean": 3.5
+    },
+    "deploy-mc-vs-nominal": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": -0.05714285714285714,
+      "delta_SR_case_bootstrap_95": [
+        -0.3214573732718894,
+        0.2
+      ],
+      "delta_contact_rate": 0.02857142857142857,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "baseline_square",
+          128
+        ],
+        [
+          "baseline_square",
+          129
+        ],
+        [
+          "dense_square",
+          133
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_square",
+          101
+        ],
+        [
+          "large_square",
+          116
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          106
+        ],
+        [
+          "dense_circle",
+          100
+        ],
+        [
+          "dense_square",
+          124
+        ],
+        [
+          "dense_square",
+          125
+        ],
+        [
+          "large_square",
+          100
+        ],
+        [
+          "large_square",
+          102
+        ],
+        [
+          "large_square",
+          106
+        ],
+        [
+          "large_square",
+          118
+        ],
+        [
+          "large_square",
+          131
+        ]
+      ],
+      "rescue_count": 7,
+      "damage_count": 9,
+      "both_success_time_delta_mean": -3.9375
+    },
+    "deploy-mc-vs-behavior-mc": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": 0.42857142857142855,
+      "delta_SR_case_bootstrap_95": [
+        0.25,
+        0.6060606060606061
+      ],
+      "delta_contact_rate": 0.02857142857142857,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.09375
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          107
+        ],
+        [
+          "baseline_square",
+          100
+        ],
+        [
+          "baseline_square",
+          101
+        ],
+        [
+          "baseline_square",
+          107
+        ],
+        [
+          "baseline_square",
+          128
+        ],
+        [
+          "baseline_square",
+          129
+        ],
+        [
+          "dense_circle",
+          104
+        ],
+        [
+          "dense_square",
+          103
+        ],
+        [
+          "dense_square",
+          104
+        ],
+        [
+          "dense_square",
+          133
+        ],
+        [
+          "large_circle",
+          100
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_circle",
+          104
+        ],
+        [
+          "large_square",
+          116
+        ],
+        [
+          "large_square",
+          129
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 15,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -2.5
+    },
+    "progress-vs-nominal": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": 0.34285714285714286,
+      "delta_SR_case_bootstrap_95": [
+        0.0975609756097561,
+        0.5926215277777779
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "baseline_square",
+          128
+        ],
+        [
+          "baseline_square",
+          129
+        ],
+        [
+          "dense_square",
+          100
+        ],
+        [
+          "dense_square",
+          111
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "dense_square",
+          133
+        ],
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_circle",
+          132
+        ],
+        [
+          "large_circle",
+          139
+        ],
+        [
+          "large_square",
+          101
+        ],
+        [
+          "large_square",
+          116
+        ]
+      ],
+      "damages": [
+        [
+          "dense_circle",
+          104
+        ],
+        [
+          "dense_square",
+          104
+        ]
+      ],
+      "rescue_count": 14,
+      "damage_count": 2,
+      "both_success_time_delta_mean": -5.118421052631579
+    },
+    "commit8-vs-nominal": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": 0.2571428571428571,
+      "delta_SR_case_bootstrap_95": [
+        0.09084224598930483,
+        0.4230769230769231
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "baseline_square",
+          128
+        ],
+        [
+          "dense_square",
+          100
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_circle",
+          132
+        ],
+        [
+          "large_circle",
+          139
+        ],
+        [
+          "large_square",
+          101
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          125
+        ]
+      ],
+      "rescue_count": 10,
+      "damage_count": 1,
+      "both_success_time_delta_mean": -0.8
+    },
+    "adaptive-vs-nominal": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": 0.2,
+      "delta_SR_case_bootstrap_95": [
+        0.034482758620689655,
+        0.375
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "baseline_square",
+          128
+        ],
+        [
+          "baseline_square",
+          129
+        ],
+        [
+          "dense_square",
+          100
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "large_circle",
+          132
+        ],
+        [
+          "large_circle",
+          139
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          125
+        ]
+      ],
+      "rescue_count": 8,
+      "damage_count": 1,
+      "both_success_time_delta_mean": 0.1375
+    },
+    "adaptive-vs-commit8": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": -0.05714285714285714,
+      "delta_SR_case_bootstrap_95": [
+        -0.16666666666666666,
+        0.05128205128205128
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          129
+        ]
+      ],
+      "damages": [
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_square",
+          101
+        ]
+      ],
+      "rescue_count": 1,
+      "damage_count": 3,
+      "both_success_time_delta_mean": 1.712962962962963
+    },
+    "adaptive-vs-progress": {
+      "episodes": 35,
+      "case_clusters": 20,
+      "delta_SR": -0.14285714285714285,
+      "delta_SR_case_bootstrap_95": [
+        -0.3333333333333333,
+        0.04878048780487805
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_circle",
+          104
+        ],
+        [
+          "dense_square",
+          104
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          111
+        ],
+        [
+          "dense_square",
+          125
+        ],
+        [
+          "dense_square",
+          133
+        ],
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_square",
+          101
+        ],
+        [
+          "large_square",
+          116
+        ]
+      ],
+      "rescue_count": 2,
+      "damage_count": 7,
+      "both_success_time_delta_mean": 5.730769230769231
+    }
+  },
+  "per_scene": {
+    "baseline_circle": {
+      "nominal": {
+        "n": 3,
+        "success": 2,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.6666666666666666,
+        "CR": 0.0,
+        "TR": 0.3333333333333333,
+        "duration_all_mean": 18.666666666666668,
+        "successful_time_mean": 10.875,
+        "return_mean": 0.39247958757351564,
+        "path_mean": 18.455774597196243,
+        "final_distance_mean": 11.634220738942176,
+        "min_clearance_min": 0.883874213867302,
+        "min_clearance_median": 1.0510765710153644,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.414896285549203
+      },
+      "behavior-mc": {
+        "n": 3,
+        "success": 0,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 42.25,
+        "successful_time_mean": null,
+        "return_mean": -0.09493605415198142,
+        "path_mean": 42.040319361975605,
+        "final_distance_mean": 32.27473998879625,
+        "min_clearance_min": 1.4811598661943397,
+        "min_clearance_median": 2.273223404156076,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.9791871990639
+      },
+      "deploy-mc": {
+        "n": 3,
+        "success": 1,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.3333333333333333,
+        "CR": 0.0,
+        "TR": 0.6666666666666666,
+        "duration_all_mean": 29.666666666666668,
+        "successful_time_mean": 8.5,
+        "return_mean": 0.17053300373207514,
+        "path_mean": 29.364125488244678,
+        "final_distance_mean": 24.198447272509643,
+        "min_clearance_min": 0.20796130013080316,
+        "min_clearance_median": 0.40447172139702514,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.009629533280815
+      },
+      "progress": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 5.75,
+        "successful_time_mean": 5.75,
+        "return_mean": 0.8077141600631498,
+        "path_mean": 5.613277744406418,
+        "final_distance_mean": 0.1982979631517341,
+        "min_clearance_min": 0.2182292792123972,
+        "min_clearance_median": 0.4848970893840664,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 16.51859848508423
+      },
+      "commit8": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 8.833333333333334,
+        "successful_time_mean": 8.833333333333334,
+        "return_mean": 0.713135801506263,
+        "path_mean": 8.617935541372967,
+        "final_distance_mean": 0.2904275491440484,
+        "min_clearance_min": 0.22567265406598436,
+        "min_clearance_median": 0.883874213867302,
+        "triggers": 1,
+        "intervention_steps": 8,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 11.255999347335726
+      },
+      "adaptive": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 16.666666666666668,
+        "successful_time_mean": 16.666666666666668,
+        "return_mean": 0.5431130576440424,
+        "path_mean": 15.628853244350154,
+        "final_distance_mean": 0.29334964177614026,
+        "min_clearance_min": 0.25454272939221745,
+        "min_clearance_median": 0.883874213867302,
+        "triggers": 8,
+        "intervention_steps": 40,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.028398677883962
+      }
+    },
+    "baseline_square": {
+      "nominal": {
+        "n": 6,
+        "success": 3,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 31.125,
+        "successful_time_mean": 20.0,
+        "return_mean": 0.20323437975837522,
+        "path_mean": 30.109642959157025,
+        "final_distance_mean": 17.95374634577565,
+        "min_clearance_min": 0.2208655785248096,
+        "min_clearance_median": 0.36348371095190896,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.746275859990098
+      },
+      "behavior-mc": {
+        "n": 6,
+        "success": 1,
+        "collision": 0,
+        "timeout": 5,
+        "contact": 0,
+        "SR": 0.16666666666666666,
+        "CR": 0.0,
+        "TR": 0.8333333333333334,
+        "duration_all_mean": 39.083333333333336,
+        "successful_time_mean": 13.25,
+        "return_mean": 0.026673777178582037,
+        "path_mean": 38.452816245883376,
+        "final_distance_mean": 29.5954160416634,
+        "min_clearance_min": 0.1964511587527562,
+        "min_clearance_median": 0.21269821156476737,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.867414265922358
+      },
+      "deploy-mc": {
+        "n": 6,
+        "success": 6,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 8.041666666666666,
+        "successful_time_mean": 8.041666666666666,
+        "return_mean": 0.7387310401061816,
+        "path_mean": 7.0357308244287715,
+        "final_distance_mean": 0.2849514676286466,
+        "min_clearance_min": 0.16956641755315616,
+        "min_clearance_median": 0.1907991635604373,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 9.140625621753257
+      },
+      "progress": {
+        "n": 6,
+        "success": 6,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 7.5,
+        "successful_time_mean": 7.5,
+        "return_mean": 0.7542922486828673,
+        "path_mean": 6.858495404429281,
+        "final_distance_mean": 0.18659584878986393,
+        "min_clearance_min": 0.18458663924798024,
+        "min_clearance_median": 0.19805797116374235,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 8.962225765783963
+      },
+      "commit8": {
+        "n": 6,
+        "success": 5,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.8333333333333334,
+        "CR": 0.0,
+        "TR": 0.16666666666666666,
+        "duration_all_mean": 17.958333333333332,
+        "successful_time_mean": 13.9,
+        "return_mean": 0.4697948124552654,
+        "path_mean": 13.377753893079294,
+        "final_distance_mean": 0.5456224677921041,
+        "min_clearance_min": 0.19040282169149725,
+        "min_clearance_median": 0.22630244624674906,
+        "triggers": 18,
+        "intervention_steps": 141,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.085527654053477
+      },
+      "adaptive": {
+        "n": 6,
+        "success": 6,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 14.833333333333334,
+        "successful_time_mean": 14.833333333333334,
+        "return_mean": 0.5768631409218867,
+        "path_mean": 13.062649522831984,
+        "final_distance_mean": 0.29307461134081686,
+        "min_clearance_min": 0.19040282169149725,
+        "min_clearance_median": 0.21631326278473306,
+        "triggers": 7,
+        "intervention_steps": 28,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.02618462851033
+      }
+    },
+    "dense_circle": {
+      "nominal": {
+        "n": 2,
+        "success": 2,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.125,
+        "successful_time_mean": 11.125,
+        "return_mean": 0.6452149555223201,
+        "path_mean": 10.414802584202068,
+        "final_distance_mean": 0.2736113341989067,
+        "min_clearance_min": 0.18886483716054703,
+        "min_clearance_median": 0.18996009392375957,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.85683107518782
+      },
+      "behavior-mc": {
+        "n": 2,
+        "success": 0,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 44.25,
+        "successful_time_mean": null,
+        "return_mean": -0.08636848326831797,
+        "path_mean": 43.689410318899306,
+        "final_distance_mean": 33.643871734000946,
+        "min_clearance_min": 0.20619801015290495,
+        "min_clearance_median": 0.2902970596556297,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.839888312489396
+      },
+      "deploy-mc": {
+        "n": 2,
+        "success": 1,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 24.625,
+        "successful_time_mean": 9.0,
+        "return_mean": 0.2931611404203615,
+        "path_mean": 23.883440007275386,
+        "final_distance_mean": 15.538197755313208,
+        "min_clearance_min": 0.14812410687929078,
+        "min_clearance_median": 0.18328495648194687,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 8.870048262843726
+      },
+      "progress": {
+        "n": 2,
+        "success": 1,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 29.125,
+        "successful_time_mean": 10.0,
+        "return_mean": 0.29665884540332405,
+        "path_mean": 9.826736361825276,
+        "final_distance_mean": 1.5218754778791186,
+        "min_clearance_min": 0.18165603545659337,
+        "min_clearance_median": 0.1819365557215119,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.986657081418272
+      },
+      "commit8": {
+        "n": 2,
+        "success": 2,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.0,
+        "successful_time_mean": 11.0,
+        "return_mean": 0.6486622009516654,
+        "path_mean": 10.328141391548098,
+        "final_distance_mean": 0.287627978630999,
+        "min_clearance_min": 0.18886483716054703,
+        "min_clearance_median": 0.18996009392375957,
+        "triggers": 1,
+        "intervention_steps": 8,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 8.85849810003205
+      },
+      "adaptive": {
+        "n": 2,
+        "success": 2,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.125,
+        "successful_time_mean": 11.125,
+        "return_mean": 0.6452149555223201,
+        "path_mean": 10.435935536048678,
+        "final_distance_mean": 0.2799679968931724,
+        "min_clearance_min": 0.18886483716054703,
+        "min_clearance_median": 0.18996009392375957,
+        "triggers": 1,
+        "intervention_steps": 4,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 9.476358957457332
+      }
+    },
+    "dense_square": {
+      "nominal": {
+        "n": 8,
+        "success": 4,
+        "collision": 0,
+        "timeout": 4,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 31.09375,
+        "successful_time_mean": 17.4375,
+        "return_mean": 0.2208930644070421,
+        "path_mean": 27.00522568830676,
+        "final_distance_mean": 10.82734468387895,
+        "min_clearance_min": 0.2007159047222341,
+        "min_clearance_median": 0.28680091833478666,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 10.141298335181732
+      },
+      "behavior-mc": {
+        "n": 8,
+        "success": 0,
+        "collision": 0,
+        "timeout": 8,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 44.5,
+        "successful_time_mean": null,
+        "return_mean": -0.08721871774033502,
+        "path_mean": 41.0574208181724,
+        "final_distance_mean": 25.7390633888112,
+        "min_clearance_min": 0.1939143015375301,
+        "min_clearance_median": 0.260792601517846,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.500155804533897
+      },
+      "deploy-mc": {
+        "n": 8,
+        "success": 3,
+        "collision": 0,
+        "timeout": 5,
+        "contact": 0,
+        "SR": 0.375,
+        "CR": 0.0,
+        "TR": 0.625,
+        "duration_all_mean": 32.6875,
+        "successful_time_mean": 7.416666666666667,
+        "return_mean": 0.23412263527335064,
+        "path_mean": 25.718470147948064,
+        "final_distance_mean": 16.951443274274208,
+        "min_clearance_min": 0.1682873570887614,
+        "min_clearance_median": 0.18881402959268762,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.560853801976105
+      },
+      "progress": {
+        "n": 8,
+        "success": 7,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.875,
+        "CR": 0.0,
+        "TR": 0.125,
+        "duration_all_mean": 15.71875,
+        "successful_time_mean": 11.071428571428571,
+        "return_mean": 0.5363599558666985,
+        "path_mean": 9.835949240952335,
+        "final_distance_mean": 0.9763604312304002,
+        "min_clearance_min": 0.04732150840785054,
+        "min_clearance_median": 0.14271903848791334,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 21,
+        "decision_ms_episode_mean": 9.552013554211218
+      },
+      "commit8": {
+        "n": 8,
+        "success": 5,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.625,
+        "CR": 0.0,
+        "TR": 0.375,
+        "duration_all_mean": 25.25,
+        "successful_time_mean": 14.25,
+        "return_mean": 0.3274284077445977,
+        "path_mean": 17.02654087626199,
+        "final_distance_mean": 2.207884386841773,
+        "min_clearance_min": 0.19444115515363125,
+        "min_clearance_median": 0.20162600048303608,
+        "triggers": 32,
+        "intervention_steps": 245,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.674614088217464
+      },
+      "adaptive": {
+        "n": 8,
+        "success": 5,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.625,
+        "CR": 0.0,
+        "TR": 0.375,
+        "duration_all_mean": 26.0,
+        "successful_time_mean": 15.45,
+        "return_mean": 0.3132178685817829,
+        "path_mean": 17.63121123240058,
+        "final_distance_mean": 2.4626384431768717,
+        "min_clearance_min": 0.19840361008389407,
+        "min_clearance_median": 0.211220955861687,
+        "triggers": 17,
+        "intervention_steps": 173,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.584318840243206
+      }
+    },
+    "large_circle": {
+      "nominal": {
+        "n": 6,
+        "success": 2,
+        "collision": 0,
+        "timeout": 4,
+        "contact": 0,
+        "SR": 0.3333333333333333,
+        "CR": 0.0,
+        "TR": 0.6666666666666666,
+        "duration_all_mean": 32.791666666666664,
+        "successful_time_mean": 17.875,
+        "return_mean": 0.0933000690676102,
+        "path_mean": 31.290551655190622,
+        "final_distance_mean": 17.578547415710556,
+        "min_clearance_min": 0.39920062238596543,
+        "min_clearance_median": 0.817788753893488,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.223051410347589
+      },
+      "behavior-mc": {
+        "n": 6,
+        "success": 0,
+        "collision": 0,
+        "timeout": 6,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 42.583333333333336,
+        "successful_time_mean": null,
+        "return_mean": -0.0960505133215811,
+        "path_mean": 41.541355519831995,
+        "final_distance_mean": 25.442992617576902,
+        "min_clearance_min": 0.28554243100512144,
+        "min_clearance_median": 0.5602509804811063,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.152860067994583
+      },
+      "deploy-mc": {
+        "n": 6,
+        "success": 3,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 26.208333333333332,
+        "successful_time_mean": 10.833333333333334,
+        "return_mean": 0.2810929543887885,
+        "path_mean": 24.875736628548626,
+        "final_distance_mean": 15.621164447396696,
+        "min_clearance_min": 0.19358884506922425,
+        "min_clearance_median": 0.2357904326606079,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.125391170683516
+      },
+      "progress": {
+        "n": 6,
+        "success": 6,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 11.958333333333334,
+        "successful_time_mean": 11.958333333333334,
+        "return_mean": 0.6439460665921166,
+        "path_mean": 10.79404478832773,
+        "final_distance_mean": 0.11922034590168411,
+        "min_clearance_min": 0.12807226084439638,
+        "min_clearance_median": 0.1911541732672481,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.040598058747902
+      },
+      "commit8": {
+        "n": 6,
+        "success": 6,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 17.958333333333332,
+        "successful_time_mean": 17.958333333333332,
+        "return_mean": 0.5017737445479871,
+        "path_mean": 17.265013106761543,
+        "final_distance_mean": 0.27630571362154227,
+        "min_clearance_min": 0.23756404932216757,
+        "min_clearance_median": 0.4122248824519313,
+        "triggers": 8,
+        "intervention_steps": 64,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.225658635276814
+      },
+      "adaptive": {
+        "n": 6,
+        "success": 4,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.6666666666666666,
+        "CR": 0.0,
+        "TR": 0.3333333333333333,
+        "duration_all_mean": 24.375,
+        "successful_time_mean": 20.4375,
+        "return_mean": 0.2538350418301725,
+        "path_mean": 22.916752902032503,
+        "final_distance_mean": 1.7431720662529528,
+        "min_clearance_min": 0.2209386151245053,
+        "min_clearance_median": 0.7042761894616081,
+        "triggers": 22,
+        "intervention_steps": 100,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 8.973612508457618
+      }
+    },
+    "large_square": {
+      "nominal": {
+        "n": 10,
+        "success": 8,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.8,
+        "CR": 0.0,
+        "TR": 0.2,
+        "duration_all_mean": 20.025,
+        "successful_time_mean": 12.96875,
+        "return_mean": 0.47108497944322447,
+        "path_mean": 17.582940941960203,
+        "final_distance_mean": 0.8480918773463827,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.2033016032220759,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.647553686019027
+      },
+      "behavior-mc": {
+        "n": 10,
+        "success": 3,
+        "collision": 0,
+        "timeout": 7,
+        "contact": 0,
+        "SR": 0.3,
+        "CR": 0.0,
+        "TR": 0.7,
+        "duration_all_mean": 36.325,
+        "successful_time_mean": 13.166666666666666,
+        "return_mean": 0.11831648156690519,
+        "path_mean": 34.00264891237895,
+        "final_distance_mean": 18.085569007481887,
+        "min_clearance_min": 0.05088070792236521,
+        "min_clearance_median": 0.18692724033309577,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.562347415306812
+      },
+      "deploy-mc": {
+        "n": 10,
+        "success": 5,
+        "collision": 1,
+        "timeout": 4,
+        "contact": 1,
+        "SR": 0.5,
+        "CR": 0.1,
+        "TR": 0.4,
+        "duration_all_mean": 23.925,
+        "successful_time_mean": 11.75,
+        "return_mean": 0.21937169415598384,
+        "path_mean": 22.10782466365389,
+        "final_distance_mean": 14.59792732726731,
+        "min_clearance_min": -0.00960588938087914,
+        "min_clearance_median": 0.18119131365283336,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 16,
+        "decision_ms_episode_mean": 9.488297044693752
+      },
+      "progress": {
+        "n": 10,
+        "success": 10,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 9.7,
+        "successful_time_mean": 9.7,
+        "return_mean": 0.6674344242799338,
+        "path_mean": 8.735922081872584,
+        "final_distance_mean": 0.1896510168991338,
+        "min_clearance_min": 0.04970247416545337,
+        "min_clearance_median": 0.15798543104648116,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 21,
+        "decision_ms_episode_mean": 9.378362396155168
+      },
+      "commit8": {
+        "n": 10,
+        "success": 9,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.9,
+        "CR": 0.0,
+        "TR": 0.1,
+        "duration_all_mean": 16.875,
+        "successful_time_mean": 13.38888888888889,
+        "return_mean": 0.5312507741770089,
+        "path_mean": 14.912333830226094,
+        "final_distance_mean": 0.5494935062570121,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.19629621206189574,
+        "triggers": 5,
+        "intervention_steps": 40,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 9.489976909311867
+      },
+      "adaptive": {
+        "n": 10,
+        "success": 8,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.8,
+        "CR": 0.0,
+        "TR": 0.2,
+        "duration_all_mean": 20.7,
+        "successful_time_mean": 13.8125,
+        "return_mean": 0.4590413267831198,
+        "path_mean": 18.003440486777585,
+        "final_distance_mean": 0.8510812237549665,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.2019222332556363,
+        "triggers": 7,
+        "intervention_steps": 37,
+        "fallback_steps": 2,
+        "decision_ms_episode_mean": 9.424335340122305
+      }
+    }
+  },
+  "mechanism_groups": {
+    "EFFICIENCY_OR_RETURN_MISRANK_WITH_SUCCESSFUL_NOMINAL": {
+      "nominal": {
+        "n": 18,
+        "success": 18,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 15.26388888888889,
+        "successful_time_mean": 15.26388888888889,
+        "return_mean": 0.5670941957519695,
+        "path_mean": 14.23121641076519,
+        "final_distance_mean": 0.2882199869139324,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.284421370719752,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.74402922167117
+      },
+      "behavior-mc": {
+        "n": 18,
+        "success": 2,
+        "collision": 0,
+        "timeout": 16,
+        "contact": 0,
+        "SR": 0.1111111111111111,
+        "CR": 0.0,
+        "TR": 0.8888888888888888,
+        "duration_all_mean": 42.513888888888886,
+        "successful_time_mean": 15.625,
+        "return_mean": -0.015399427481503728,
+        "path_mean": 41.2830961264658,
+        "final_distance_mean": 28.296365035291938,
+        "min_clearance_min": 0.05088070792236521,
+        "min_clearance_median": 0.20536442737881505,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.250439055186815
+      },
+      "deploy-mc": {
+        "n": 18,
+        "success": 10,
+        "collision": 1,
+        "timeout": 7,
+        "contact": 1,
+        "SR": 0.5555555555555556,
+        "CR": 0.05555555555555555,
+        "TR": 0.3888888888888889,
+        "duration_all_mean": 23.666666666666668,
+        "successful_time_mean": 10.675,
+        "return_mean": 0.3005513704933019,
+        "path_mean": 20.02825931018641,
+        "final_distance_mean": 12.240203048863163,
+        "min_clearance_min": -0.00960588938087914,
+        "min_clearance_median": 0.19020821782731445,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 18,
+        "decision_ms_episode_mean": 9.216271259986051
+      },
+      "progress": {
+        "n": 18,
+        "success": 17,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.9444444444444444,
+        "CR": 0.0,
+        "TR": 0.05555555555555555,
+        "duration_all_mean": 12.11111111111111,
+        "successful_time_mean": 9.985294117647058,
+        "return_mean": 0.628121872385872,
+        "path_mean": 8.939912257880557,
+        "final_distance_mean": 0.34219333406482016,
+        "min_clearance_min": 0.04970247416545337,
+        "min_clearance_median": 0.17998453758064675,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 23,
+        "decision_ms_episode_mean": 9.213384250193817
+      },
+      "commit8": {
+        "n": 18,
+        "success": 17,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.9444444444444444,
+        "CR": 0.0,
+        "TR": 0.05555555555555555,
+        "duration_all_mean": 15.597222222222221,
+        "successful_time_mean": 13.676470588235293,
+        "return_mean": 0.5539970391923923,
+        "path_mean": 13.451966625291522,
+        "final_distance_mean": 0.6659420181329375,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.20205641159371213,
+        "triggers": 25,
+        "intervention_steps": 195,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.281888780410997
+      },
+      "adaptive": {
+        "n": 18,
+        "success": 17,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.9444444444444444,
+        "CR": 0.0,
+        "TR": 0.05555555555555555,
+        "duration_all_mean": 16.61111111111111,
+        "successful_time_mean": 14.75,
+        "return_mean": 0.5371160537087722,
+        "path_mean": 13.5046216987307,
+        "final_distance_mean": 0.6650467109000239,
+        "min_clearance_min": 0.13149237706873507,
+        "min_clearance_median": 0.21747898557545486,
+        "triggers": 24,
+        "intervention_steps": 210,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.319808887674826
+      }
+    },
+    "MULTISTEP_POLICY_TRAP_TESTED_ACTION_SET": {
+      "nominal": {
+        "n": 4,
+        "success": 0,
+        "collision": 0,
+        "timeout": 4,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 37.25,
+        "successful_time_mean": null,
+        "return_mean": -0.11769963668104065,
+        "path_mean": 34.71572354406065,
+        "final_distance_mean": 25.025425127544104,
+        "min_clearance_min": 0.3122279687382077,
+        "min_clearance_median": 0.769940566777581,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.346074744745591
+      },
+      "behavior-mc": {
+        "n": 4,
+        "success": 1,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.25,
+        "CR": 0.0,
+        "TR": 0.75,
+        "duration_all_mean": 27.25,
+        "successful_time_mean": 8.25,
+        "return_mean": 0.08148775470129233,
+        "path_mean": 24.688818800784624,
+        "final_distance_mean": 17.19487303876991,
+        "min_clearance_min": 0.1934848233319696,
+        "min_clearance_median": 0.6388232381511025,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.15496891032036
+      },
+      "deploy-mc": {
+        "n": 4,
+        "success": 3,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.75,
+        "CR": 0.0,
+        "TR": 0.25,
+        "duration_all_mean": 11.625,
+        "successful_time_mean": 6.083333333333333,
+        "return_mean": 0.5574034554238483,
+        "path_mean": 10.90362293567943,
+        "final_distance_mean": 7.547693140818084,
+        "min_clearance_min": 0.1923564210897034,
+        "min_clearance_median": 0.19776696659303922,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.408659353125909
+      },
+      "progress": {
+        "n": 4,
+        "success": 4,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 5.25,
+        "successful_time_mean": 5.25,
+        "return_mean": 0.8268420730226715,
+        "path_mean": 4.905378609750088,
+        "final_distance_mean": 0.14424270521311308,
+        "min_clearance_min": 0.17730277641150527,
+        "min_clearance_median": 0.20181156251965626,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.177836931724691
+      },
+      "commit8": {
+        "n": 4,
+        "success": 2,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.5,
+        "CR": 0.0,
+        "TR": 0.5,
+        "duration_all_mean": 23.875,
+        "successful_time_mean": 11.5,
+        "return_mean": 0.25977128627195223,
+        "path_mean": 13.675231447753557,
+        "final_distance_mean": 1.1880045344275634,
+        "min_clearance_min": 0.19101569718020528,
+        "min_clearance_median": 0.1972583547587241,
+        "triggers": 29,
+        "intervention_steps": 227,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.468596780471191
+      },
+      "adaptive": {
+        "n": 4,
+        "success": 1,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.25,
+        "CR": 0.0,
+        "TR": 0.75,
+        "duration_all_mean": 29.75,
+        "successful_time_mean": 8.25,
+        "return_mean": 0.09047771279233431,
+        "path_mean": 25.466228571810895,
+        "final_distance_mean": 3.046548928461946,
+        "min_clearance_min": 0.19231742225711745,
+        "min_clearance_median": 0.2743657509039487,
+        "triggers": 12,
+        "intervention_steps": 62,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.253411565452884
+      }
+    },
+    "NO_REALIZED_RETURN_IMPROVEMENT_FOUND": {
+      "nominal": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 12.833333333333334,
+        "successful_time_mean": 12.833333333333334,
+        "return_mean": 0.6138545265835776,
+        "path_mean": 12.103704259034144,
+        "final_distance_mean": 0.2944487844206047,
+        "min_clearance_min": 0.20502647950056563,
+        "min_clearance_median": 0.2098713875959083,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 10.300621031627065
+      },
+      "behavior-mc": {
+        "n": 3,
+        "success": 0,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 45.583333333333336,
+        "successful_time_mean": null,
+        "return_mean": -0.08219212599333352,
+        "path_mean": 40.13841432240698,
+        "final_distance_mean": 21.328684381949245,
+        "min_clearance_min": 0.17750637131122526,
+        "min_clearance_median": 0.26878327152373815,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.519456427833722
+      },
+      "deploy-mc": {
+        "n": 3,
+        "success": 2,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.6666666666666666,
+        "CR": 0.0,
+        "TR": 0.3333333333333333,
+        "duration_all_mean": 22.333333333333332,
+        "successful_time_mean": 12.375,
+        "return_mean": 0.371906725562988,
+        "path_mean": 21.350162130803714,
+        "final_distance_mean": 11.96845322827573,
+        "min_clearance_min": 0.16110086400460755,
+        "min_clearance_median": 0.18933537310928128,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 1,
+        "decision_ms_episode_mean": 9.388523299618692
+      },
+      "progress": {
+        "n": 3,
+        "success": 2,
+        "collision": 0,
+        "timeout": 1,
+        "contact": 0,
+        "SR": 0.6666666666666666,
+        "CR": 0.0,
+        "TR": 0.3333333333333333,
+        "duration_all_mean": 22.5,
+        "successful_time_mean": 9.625,
+        "return_mean": 0.42773160755647294,
+        "path_mean": 9.679652466554254,
+        "final_distance_mean": 2.148213382935224,
+        "min_clearance_min": 0.1622216930503434,
+        "min_clearance_median": 0.17624569790265,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 3,
+        "decision_ms_episode_mean": 9.456525340083607
+      },
+      "commit8": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 12.5,
+        "successful_time_mean": 12.5,
+        "return_mean": 0.6206890241672801,
+        "path_mean": 11.698318064344297,
+        "final_distance_mean": 0.28712447720903495,
+        "min_clearance_min": 0.20502647950056563,
+        "min_clearance_median": 0.2098713875959083,
+        "triggers": 1,
+        "intervention_steps": 8,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.454647067032871
+      },
+      "adaptive": {
+        "n": 3,
+        "success": 3,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 12.666666666666666,
+        "successful_time_mean": 12.666666666666666,
+        "return_mean": 0.6172374320336997,
+        "path_mean": 11.910882665471606,
+        "final_distance_mean": 0.292375246849893,
+        "min_clearance_min": 0.20502647950056563,
+        "min_clearance_median": 0.2098713875959083,
+        "triggers": 1,
+        "intervention_steps": 3,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.251637442316941
+      }
+    },
+    "VALUE_RANKING_FAILURE_FIXED_WORLD": {
+      "nominal": {
+        "n": 10,
+        "success": 0,
+        "collision": 0,
+        "timeout": 10,
+        "contact": 0,
+        "SR": 0.0,
+        "CR": 0.0,
+        "TR": 1.0,
+        "duration_all_mean": 44.85,
+        "successful_time_mean": null,
+        "return_mean": -0.08533908801523435,
+        "path_mean": 40.51334092250164,
+        "final_distance_mean": 23.7570317070748,
+        "min_clearance_min": 0.2007159047222341,
+        "min_clearance_median": 0.45256711051962584,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.570155010674892
+      },
+      "behavior-mc": {
+        "n": 10,
+        "success": 1,
+        "collision": 0,
+        "timeout": 9,
+        "contact": 0,
+        "SR": 0.1,
+        "CR": 0.0,
+        "TR": 0.9,
+        "duration_all_mean": 41.35,
+        "successful_time_mean": 13.25,
+        "return_mean": -0.019057541826230446,
+        "path_mean": 39.968441654044256,
+        "final_distance_mean": 23.90104966389587,
+        "min_clearance_min": 0.19068259069524784,
+        "min_clearance_median": 0.3567002027755858,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.267755689686613
+      },
+      "deploy-mc": {
+        "n": 10,
+        "success": 4,
+        "collision": 0,
+        "timeout": 6,
+        "contact": 0,
+        "SR": 0.4,
+        "CR": 0.0,
+        "TR": 0.6,
+        "duration_all_mean": 30.5,
+        "successful_time_mean": 7.375,
+        "return_mean": 0.2528304615489623,
+        "path_mean": 28.598042329878844,
+        "final_distance_mean": 19.42794651575377,
+        "min_clearance_min": 0.1682873570887614,
+        "min_clearance_median": 0.20070351687025506,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 4,
+        "decision_ms_episode_mean": 9.404179675178828
+      },
+      "progress": {
+        "n": 10,
+        "success": 10,
+        "collision": 0,
+        "timeout": 0,
+        "contact": 0,
+        "SR": 1.0,
+        "CR": 0.0,
+        "TR": 0.0,
+        "duration_all_mean": 10.85,
+        "successful_time_mean": 10.85,
+        "return_mean": 0.6474357134673125,
+        "path_mean": 9.887646937924321,
+        "final_distance_mean": 0.1999844649372378,
+        "min_clearance_min": 0.04732150840785054,
+        "min_clearance_median": 0.15804637476259864,
+        "triggers": 0,
+        "intervention_steps": 0,
+        "fallback_steps": 20,
+        "decision_ms_episode_mean": 11.482394470988357
+      },
+      "commit8": {
+        "n": 10,
+        "success": 8,
+        "collision": 0,
+        "timeout": 2,
+        "contact": 0,
+        "SR": 0.8,
+        "CR": 0.0,
+        "TR": 0.2,
+        "duration_all_mean": 22.1,
+        "successful_time_mean": 15.5625,
+        "return_mean": 0.4324979229115794,
+        "path_mean": 18.377107747932243,
+        "final_distance_mean": 1.1935769954750095,
+        "min_clearance_min": 0.19840361008389407,
+        "min_clearance_median": 0.22870598401733644,
+        "triggers": 10,
+        "intervention_steps": 76,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 10.03364674065301
+      },
+      "adaptive": {
+        "n": 10,
+        "success": 7,
+        "collision": 0,
+        "timeout": 3,
+        "contact": 0,
+        "SR": 0.7,
+        "CR": 0.0,
+        "TR": 0.3,
+        "duration_all_mean": 26.65,
+        "successful_time_mean": 19.107142857142858,
+        "return_mean": 0.31184022829462477,
+        "path_mean": 22.403818722050424,
+        "final_distance_mean": 1.683522251704413,
+        "min_clearance_min": 0.19840361008389407,
+        "min_clearance_median": 0.22279988474662737,
+        "triggers": 25,
+        "intervention_steps": 107,
+        "fallback_steps": 0,
+        "decision_ms_episode_mean": 9.242948232663371
+      }
+    }
+  }
+}

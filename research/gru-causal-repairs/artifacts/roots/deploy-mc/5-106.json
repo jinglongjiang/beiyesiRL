@@ -1,0 +1,20 @@
+{
+  "arm": "deploy-mc",
+  "scene": "large_square",
+  "case": 106,
+  "outcome": "timeout",
+  "success": 0,
+  "collision": 0,
+  "timeout": 1,
+  "contact": 0,
+  "min_clearance": 0.16110086400460755,
+  "duration": 42.25,
+  "steps": 169,
+  "return": -0.11092737654023016,
+  "path": 40.73017284069171,
+  "final_distance": 35.35326771588337,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 1,
+  "decision_ms_mean": 9.56915906415536
+}

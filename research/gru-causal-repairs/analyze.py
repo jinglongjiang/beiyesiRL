@@ -22,6 +22,8 @@ def aggregate(rows):
             'duration_all_mean': float(np.mean([v['duration'] for v in rows])),
             'successful_time_mean': float(np.mean([v['duration'] for v in success])) if success else None,
             'return_mean': float(np.mean([v['return'] for v in rows])),
+            'path_mean': float(np.mean([v['path'] for v in rows])),
+            'final_distance_mean': float(np.mean([v['final_distance'] for v in rows])),
             'min_clearance_min': float(min(v['min_clearance'] for v in rows)),
             'min_clearance_median': float(np.median([v['min_clearance'] for v in rows])),
             'triggers': sum(v.get('triggers', 0) for v in rows),

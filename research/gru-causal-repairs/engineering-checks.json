@@ -1,0 +1,25 @@
+{
+  "runs": [
+    {
+      "check": "host python3 -m py_compile analyze.py verify.py",
+      "exit_code": 1,
+      "cause": "Container-created __pycache__ is not writable by the host user; PermissionError writing bytecode, not a source syntax or simulation failure.",
+      "scientific_observation": false,
+      "resolution": "Use compile(source, path, exec) without writing bytecode; all five Python scripts passed."
+    },
+    {
+      "check": "host recomputation of roots-summary.json and fresh-summary.json",
+      "exit_code": 1,
+      "cause": "Host cannot overwrite container-root-owned summary files; raw episode data were not changed.",
+      "scientific_observation": false,
+      "resolution": "Both summaries recomputed successfully with the pinned container Python."
+    },
+    {
+      "check": "final verifier git diff inside container",
+      "exit_code": 1,
+      "cause": "Git exit128: the worktree .git file points to an absolute /home/abc/workspace host path unavailable in the container. Initial ownership hypothesis was unverified and has been withdrawn after reading fatal stderr.",
+      "scientific_observation": false,
+      "resolution": "Resolve the existing worktree metadata under the /workspace mount and pass --git-dir/--work-tree explicitly. Preserve the actual source-diff assertion and do not change Git metadata or global configuration."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "arm": "deploy-mc",
+  "scene": "baseline_circle",
+  "case": 302,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.18229990993660206,
+  "duration": 11.5,
+  "steps": 46,
+  "return": 0.6336014337743548,
+  "path": 10.211320062847399,
+  "final_distance": 0.29392284813892267,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 8.459641610818876
+}

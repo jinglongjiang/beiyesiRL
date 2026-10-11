@@ -1,0 +1,12 @@
+EVAL fresh behavior-mc 10 success 0
+EVAL fresh behavior-mc 20 success 1
+EVAL fresh behavior-mc 30 success 1
+EVAL fresh behavior-mc 40 success 1
+EVAL fresh behavior-mc 50 success 2
+EVAL fresh behavior-mc 60 success 3
+EVAL fresh behavior-mc 70 success 4
+EVAL fresh behavior-mc 80 success 6
+EVAL fresh behavior-mc 90 success 6
+EVAL fresh behavior-mc 100 success 7
+EVAL fresh behavior-mc 110 success 13
+EVAL fresh behavior-mc 120 success 17

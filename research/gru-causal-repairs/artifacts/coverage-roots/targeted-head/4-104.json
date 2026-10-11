@@ -1,0 +1,20 @@
+{
+  "arm": "targeted-head",
+  "scene": "large_circle",
+  "case": 104,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.5359966929751726,
+  "duration": 18.5,
+  "steps": 74,
+  "return": 0.4801414565714212,
+  "path": 18.18725397827459,
+  "final_distance": 0.2724163105527261,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 0,
+  "decision_ms_mean": 9.304584604939697
+}

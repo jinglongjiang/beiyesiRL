@@ -1,0 +1,20 @@
+{
+  "arm": "nominal",
+  "scene": "dense_circle",
+  "case": 325,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.12780816563326192,
+  "duration": 18.25,
+  "steps": 73,
+  "return": 0.46423215184732014,
+  "path": 17.32724951146394,
+  "final_distance": 0.2680027893092786,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "fallback": 4,
+  "decision_ms_mean": 9.698284565062863
+}
