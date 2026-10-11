@@ -14,7 +14,7 @@
   "arms": ["nominal", "ordinary-recovery-Q", "paired-duration-regret"],
   "metrics": ["success/collision/timeout", "independent swept geometric contact", "native discounted and undiscounted return", "navigation time", "path length", "stall fraction", "minimum clearance", "rescues/damages by paired case", "latency/training calls", "option choices/durations/overrides"],
   "go": "new exceeds both nominal and ordinary Q by >=3pp success, improves native mean discounted return, no additional collision or geometry-contact episodes, and successes improve in >=2 of the 3 dense/large-square scenes; freeze and fresh confirm",
-  "fresh_confirmation": "same point-estimate and safety rule, plus episode-paired stratified bootstrap 95% lower bound for success improvement above zero against both controls; no development retuning",
+  "fresh_confirmation": "same point-estimate and safety rule, plus paired case-block bootstrap 95% lower bound for success improvement above zero against both controls; resample each case ID jointly across all six scenes and all arms; no development retuning",
   "kill": "correctly activated method fails the development rule; no tuning to rescue it",
   "repair": "at most one, only if a demonstrated implementation or representational defect prevents the specified mechanism",
   "claim_limits": ["single frozen nominal training seed, paired case inference only", "ordinary absolute-Q receives identical paired outcomes", "paired advantages and learned durations are not claimed novel", "no reciprocal pedestrian yielding: robot waits for externally moving pedestrians", "development run is not a paper-grade full reproduction"]

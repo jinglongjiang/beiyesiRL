@@ -32,12 +32,15 @@ def paired_compare(records, first, second, draws=10000):
     keys = sorted(a)
     delta = np.array([[a[k][m]-b[k][m] for m in METRICS] for k in keys])
     rng = np.random.default_rng(20261011)
-    boot = np.zeros((draws, len(METRICS)))
-    for scene in SCENES:
-        idx = [i for i, k in enumerate(keys) if k[0]==scene]
-        chosen = rng.choice(idx, size=(draws, len(idx)), replace=True)
-        boot += delta[chosen].sum(1)/len(keys)
+    # Case IDs share the simulator seed across scene configurations. Resample
+    # the whole six-scene case block, preserving both arm and scene coupling.
+    cases = sorted({k[1] for k in keys})
+    blocks = np.stack([delta[[i for i, k in enumerate(keys) if k[1]==case]].mean(0)
+                       for case in cases])
+    chosen = rng.integers(len(cases), size=(draws, len(cases)))
+    boot = blocks[chosen].mean(1)
     result = {'direction': f'{first} minus {second}', 'episodes': len(keys),
+              'independent_case_seed_blocks': len(cases),
               'statistics': {m: {'difference': float(delta[:, j].mean()),
                                'ci95': np.percentile(boot[:, j], [2.5, 97.5]).tolist()}
                              for j, m in enumerate(METRICS)}}
