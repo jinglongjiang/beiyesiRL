@@ -1,0 +1,53 @@
+{
+  "version": "gru-complete-actions-v1-20261011",
+  "started_utc": "2026-10-11T13:45:44Z",
+  "deadline_utc": "2026-10-11T19:45:44Z",
+  "scope": "Fixed-world counterfactual diagnosis; no new algorithm or RL training",
+  "parent_commit": "e8a78a8",
+  "nominal_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "difficult": [[0,115,64],[1,116,8],[1,120,8],[1,129,48],[3,100,8],[3,116,8],[3,133,64],[4,102,88],[4,103,56],[4,108,8],[4,132,8],[5,101,8],[5,116,8],[5,119,24]],
+  "rescues": [[1,100,8],[1,128,40],[3,111,8],[3,124,16],[3,125,8],[4,139,8]],
+  "damages": [[5,102,8],[5,106,32],[5,118,40],[5,126,24],[5,129,8],[5,131,8]],
+  "successful_controls": [[0,106,16],[0,107,16],[1,101,16],[1,107,8],[2,100,40],[2,104,8],[3,103,64],[3,104,8],[4,100,16],[4,104,8],[5,100,8],[5,103,8]],
+  "case_selection": "All 14 existing safe-success witnesses, all existing one-step rescues and damages; first two both-success cases per scene in the existing 164-root order. No selection using new outcomes.",
+  "timing_roots": [[0,115,64],[1,116,8],[3,100,8],[4,102,88],[5,101,8]],
+  "timing": "Execute all 80 actions on each of five roots; unsafe timing branches are marked and excluded from all scientific legal-action summaries. Reuse timing data afterwards.",
+  "P1": {
+    "roots": 38,
+    "actions": "All candidates with original predicted clearance >= 0.2; preserve and separately report native empty-safe-set fallback",
+    "continuation": "Frozen repaired GRU; same history, last executed action, absolute clock, human tape, native termination and safety rules",
+    "return": "G_omega^pi, native discounted realized return, gamma=0.99; not legal-observation conditional expected Q",
+    "reuse": "Exact selected/forward branches from completed value-contrasts.json, after verifying first executed command and root identifiers",
+    "prefix_lengths": [2,4,8,16],
+    "prefix_rule": "For difficult roots without any safe successful one-step branch, replay saved safe-success trace commands for each prefix length then resume repaired GRU. Check original candidate membership, smoothing and safety at every forced step.",
+    "go": "Repeated legal one-step losses or legal multi-step rescues justify the already-defined P2/P3 attribution, not method development",
+    "kill": "No replicated task loss beyond normal-success controls: stop new mechanism claims and preserve evidence"
+  },
+  "P2": {
+    "regression": "Within-root demeaned (predicted Q - realized G) versus action progress; cluster bootstrap whole original cases, 2000 draws, seed 20261011",
+    "decision_effect": "Report success/contact and realized regret, not slope significance alone",
+    "limits": "Privileged one-world errors do not by themselves prove conditional expected-value error under legal observations"
+  },
+  "P3": {
+    "checkpoints": ["IL","RL-500","RL-1000","RL-1500","RL-2000"],
+    "candidates": "Same original selected and maximal-progress executed commands on the 38 roots",
+    "reuse": "Reuse existing fixed-input value trajectories; RL-2000 full continuations already available",
+    "new_measurement": "Each older checkpoint's own repaired deployment continuation after each fixed first action",
+    "limits": "No claim of monotonic self-reinforcement; old original RL replay missing; own-policy returns are not historical MC labels"
+  },
+  "P4": {
+    "question": "Can frozen final-GRU features correct held-out fixed-world pair rankings, and does changing only evaluation-policy label source change that correction? Not historical-cause identification.",
+    "execute_if": "At least two independent cases have safe better one-step actions; otherwise stop untargeted value fitting",
+    "features": "Frozen RL-2000 actual-next legal-history features, original selected/forward pair only",
+    "coverage": "Identical pair observations in both arms; case100..119 fit, case120..139 held out. Never split roots within a case.",
+    "arms": ["RL-500-continuation-labels","RL-2000-continuation-labels"],
+    "labels": "Nonterminal V targets=(G-r)/0.99; terminal candidates excluded from fitting and separately evaluated",
+    "fit": "Same original head initialization, same frozen features, anchored linear least squares: mean squared error + 0.01*||head-original_head||^2, bias included; exact solve, no tuning",
+    "go": "Held-out pair-ranking correction supports limited feature correctability or policy-source sensitivity only; no new method or automatic follow-up",
+    "kill": "No held-out improvement: stop this fitting diagnostic; not proof of insufficient raw inputs",
+    "limits": "Expanded counterfactual coverage is common to both fitted arms but differs from original training. Neither arm reconstructs original historical labels. No causal claim of original RL self-reinforcement."
+  },
+  "safety": "Separate native collision from true swept geometric contact; keep failures and unsafe-action timing controls",
+  "no_changes": ["reward","state inputs","action support","human dynamics","GRU source","RL training","old recovery methods","Bayesian methods"],
+  "stop": "Any mismatch/nonfinite value/traceback stops the current run; preserve engineering evidence. No automatic additional experiment after P1-P4."
+}
