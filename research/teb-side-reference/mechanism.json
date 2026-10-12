@@ -1,0 +1,766 @@
+{
+  "analysis_registered_after_outcomes": true,
+  "scope": "Descriptive trace accounting; no assertion of a unique cause, no changed controller or new simulator experiment.",
+  "arms": {
+    "side-reset": {
+      "activated_episodes": 45,
+      "active_steps": 1343,
+      "changed_actions": 115,
+      "fraction_active_executed_nonpositive_progress": 0.8086373790022338,
+      "fraction_active_nominal_nonpositive_progress_same_states": 0.8093819806403574,
+      "fraction_active_with_safe_positive_alternative": 0.996276991809382,
+      "nonpositive_selection_despite_positive_alternative_steps": 1081,
+      "mean_executed_progress_per_active_step_m": -0.14192058378918834,
+      "mean_nominal_progress_per_active_step_same_states_m": -0.14047821256904705,
+      "intervention_phases": 171,
+      "nonpositive_net_progress_phases": 138,
+      "median_net_progress_per_phase_m": -1.7158995416635339,
+      "phase_lengths": {
+        "min": 1,
+        "max": 8
+      },
+      "cases": [
+        {
+          "scene": "baseline_circle",
+          "case": 304,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "baseline_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 2
+        },
+        {
+          "scene": "baseline_square",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "baseline_square",
+          "case": 316,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "baseline_square",
+          "case": 318,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_circle",
+          "case": 318,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 302,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 303,
+          "outcome": "timeout",
+          "triggers": 19,
+          "active_steps": 145,
+          "changed_actions": 7
+        },
+        {
+          "scene": "dense_square",
+          "case": 304,
+          "outcome": "timeout",
+          "triggers": 15,
+          "active_steps": 117,
+          "changed_actions": 6
+        },
+        {
+          "scene": "dense_square",
+          "case": 305,
+          "outcome": "reach_goal",
+          "triggers": 4,
+          "active_steps": 32,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 306,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "dense_square",
+          "case": 308,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 126,
+          "changed_actions": 9
+        },
+        {
+          "scene": "dense_square",
+          "case": 312,
+          "outcome": "timeout",
+          "triggers": 3,
+          "active_steps": 24,
+          "changed_actions": 4
+        },
+        {
+          "scene": "dense_square",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 4,
+          "active_steps": 32,
+          "changed_actions": 2
+        },
+        {
+          "scene": "dense_square",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 315,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 14,
+          "active_steps": 108,
+          "changed_actions": 53
+        },
+        {
+          "scene": "large_circle",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 301,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 302,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 303,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 304,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 305,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 306,
+          "outcome": "timeout",
+          "triggers": 13,
+          "active_steps": 104,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 307,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 308,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 309,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 310,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 312,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 5
+        },
+        {
+          "scene": "large_circle",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 315,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 124,
+          "changed_actions": 1
+        },
+        {
+          "scene": "large_circle",
+          "case": 318,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 123,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "large_square",
+          "case": 305,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 2
+        },
+        {
+          "scene": "large_square",
+          "case": 307,
+          "outcome": "timeout",
+          "triggers": 6,
+          "active_steps": 48,
+          "changed_actions": 11
+        },
+        {
+          "scene": "large_square",
+          "case": 308,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 309,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 310,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 2
+        },
+        {
+          "scene": "large_square",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 314,
+          "outcome": "timeout",
+          "triggers": 3,
+          "active_steps": 24,
+          "changed_actions": 1
+        },
+        {
+          "scene": "large_square",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 4,
+          "active_steps": 32,
+          "changed_actions": 6
+        },
+        {
+          "scene": "large_square",
+          "case": 318,
+          "outcome": "timeout",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        }
+      ]
+    },
+    "side-latched": {
+      "activated_episodes": 45,
+      "active_steps": 1540,
+      "changed_actions": 114,
+      "fraction_active_executed_nonpositive_progress": 0.8428571428571429,
+      "fraction_active_nominal_nonpositive_progress_same_states": 0.8350649350649351,
+      "fraction_active_with_safe_positive_alternative": 0.9967532467532467,
+      "nonpositive_selection_despite_positive_alternative_steps": 1293,
+      "mean_executed_progress_per_active_step_m": -0.1566584296504476,
+      "mean_nominal_progress_per_active_step_same_states_m": -0.1545830046248481,
+      "intervention_phases": 198,
+      "nonpositive_net_progress_phases": 169,
+      "median_net_progress_per_phase_m": -1.8339068065619886,
+      "phase_lengths": {
+        "min": 1,
+        "max": 8
+      },
+      "cases": [
+        {
+          "scene": "baseline_circle",
+          "case": 304,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "baseline_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 4
+        },
+        {
+          "scene": "baseline_square",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "baseline_square",
+          "case": 316,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "baseline_square",
+          "case": 318,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 2
+        },
+        {
+          "scene": "dense_circle",
+          "case": 318,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 302,
+          "outcome": "timeout",
+          "triggers": 12,
+          "active_steps": 94,
+          "changed_actions": 10
+        },
+        {
+          "scene": "dense_square",
+          "case": 303,
+          "outcome": "timeout",
+          "triggers": 19,
+          "active_steps": 145,
+          "changed_actions": 16
+        },
+        {
+          "scene": "dense_square",
+          "case": 304,
+          "outcome": "timeout",
+          "triggers": 15,
+          "active_steps": 117,
+          "changed_actions": 10
+        },
+        {
+          "scene": "dense_square",
+          "case": 305,
+          "outcome": "reach_goal",
+          "triggers": 4,
+          "active_steps": 32,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 306,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "dense_square",
+          "case": 308,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 126,
+          "changed_actions": 6
+        },
+        {
+          "scene": "dense_square",
+          "case": 312,
+          "outcome": "timeout",
+          "triggers": 3,
+          "active_steps": 24,
+          "changed_actions": 5
+        },
+        {
+          "scene": "dense_square",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 4,
+          "active_steps": 32,
+          "changed_actions": 3
+        },
+        {
+          "scene": "dense_square",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "dense_square",
+          "case": 315,
+          "outcome": "timeout",
+          "triggers": 18,
+          "active_steps": 137,
+          "changed_actions": 9
+        },
+        {
+          "scene": "dense_square",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 14,
+          "active_steps": 105,
+          "changed_actions": 2
+        },
+        {
+          "scene": "large_circle",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 301,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 302,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 303,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 2
+        },
+        {
+          "scene": "large_circle",
+          "case": 304,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 305,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 306,
+          "outcome": "timeout",
+          "triggers": 13,
+          "active_steps": 104,
+          "changed_actions": 4
+        },
+        {
+          "scene": "large_circle",
+          "case": 307,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 308,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 309,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 310,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 312,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 6
+        },
+        {
+          "scene": "large_circle",
+          "case": 314,
+          "outcome": "reach_goal",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 315,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_circle",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 124,
+          "changed_actions": 1
+        },
+        {
+          "scene": "large_circle",
+          "case": 318,
+          "outcome": "timeout",
+          "triggers": 16,
+          "active_steps": 123,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 300,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 3
+        },
+        {
+          "scene": "large_square",
+          "case": 305,
+          "outcome": "timeout",
+          "triggers": 2,
+          "active_steps": 16,
+          "changed_actions": 6
+        },
+        {
+          "scene": "large_square",
+          "case": 307,
+          "outcome": "timeout",
+          "triggers": 6,
+          "active_steps": 48,
+          "changed_actions": 8
+        },
+        {
+          "scene": "large_square",
+          "case": 308,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 1
+        },
+        {
+          "scene": "large_square",
+          "case": 309,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 310,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 2
+        },
+        {
+          "scene": "large_square",
+          "case": 313,
+          "outcome": "reach_goal",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 314,
+          "outcome": "timeout",
+          "triggers": 3,
+          "active_steps": 24,
+          "changed_actions": 0
+        },
+        {
+          "scene": "large_square",
+          "case": 317,
+          "outcome": "timeout",
+          "triggers": 3,
+          "active_steps": 17,
+          "changed_actions": 9
+        },
+        {
+          "scene": "large_square",
+          "case": 318,
+          "outcome": "timeout",
+          "triggers": 1,
+          "active_steps": 8,
+          "changed_actions": 2
+        }
+      ]
+    }
+  }
+}

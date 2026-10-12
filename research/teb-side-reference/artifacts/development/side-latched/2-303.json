@@ -1,0 +1,21 @@
+{
+  "arm": "side-latched",
+  "scene": "dense_circle",
+  "case": 303,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.8490908220950545,
+  "duration": 15.0,
+  "steps": 60,
+  "return": 0.5526834771623851,
+  "path": 13.89519858177276,
+  "final_distance": 0.29353457756218465,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "action_changes": 0,
+  "fallback": 0,
+  "decision_ms_mean": 10.254810785409063
+}

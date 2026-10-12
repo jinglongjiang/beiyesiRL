@@ -1,0 +1,21 @@
+{
+  "arm": "side-reset",
+  "scene": "dense_square",
+  "case": 305,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.20017587053733732,
+  "duration": 33.0,
+  "steps": 132,
+  "return": 0.2680467169168741,
+  "path": 29.560513566449725,
+  "final_distance": 0.29427405845725685,
+  "triggers": 4,
+  "intervention_steps": 32,
+  "action_changes": 0,
+  "fallback": 0,
+  "decision_ms_mean": 10.897427438370263
+}

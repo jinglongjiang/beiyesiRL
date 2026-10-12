@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "units": {
+    "trigger_clock": true,
+    "retained_direction": true,
+    "native_fallback": true,
+    "no_masked_score_scaling": true,
+    "rotation_translation_equivariance": true,
+    "direction_sensitivity": true
+  },
+  "parent_parity": [
+    {
+      "scene": 0,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    },
+    {
+      "scene": 1,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    },
+    {
+      "scene": 2,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    },
+    {
+      "scene": 3,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    },
+    {
+      "scene": 4,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    },
+    {
+      "scene": 5,
+      "case": 300,
+      "exact_actions_and_candidates": true
+    }
+  ],
+  "determinism": [
+    {
+      "scene": 0,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    },
+    {
+      "scene": 1,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    },
+    {
+      "scene": 2,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    },
+    {
+      "scene": 3,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    },
+    {
+      "scene": 4,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    },
+    {
+      "scene": 5,
+      "case": 301,
+      "exact_repeat": true,
+      "outcome": "reach_goal",
+      "changes": 0
+    }
+  ],
+  "grid": 80,
+  "time_limit": 50,
+  "checkpoint_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c"
+}
