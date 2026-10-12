@@ -1,0 +1,9 @@
+# Primary Source and Scope
+
+SARL's original value lookahead and pooling are established: https://arxiv.org/html/1809.08835 sectionsIII-C/D. Official RGL source is available locally at research-deps/relational-graph-source-20261012, commit8e87aa5ed8221efd688f8e6857ba4c38637bf6e1. Its crowd_nav/policy/model_predictive_rl.py predict/V_planning compute future-state values directly; graph_model.py processes the supplied human axis. Neither inspected calculation performs the proposed same-state subset-offset subtraction. This limited source check is not a claim that no related method exists.
+
+Primary policy-gradient warning: https://proceedings.mlr.press/v80/tucker18a/tucker18a.pdf. An action-dependent subtraction is not automatically unbiased. We are not estimating a policy gradient here and claim neither unbiasedness nor a policy-improvement theorem. Ordinary advantages, control variates and consistent context are not inventions.
+
+Project-specific inspectable premise: crowd_nav/policy/mamba_rl.py _score_candidates_vectorized calls _build_joint_state_34 separately at each propagated robot position; the builder sorts and truncates at five. Actual candidate values can therefore compare distinct selected identities despite a common physical root. This is an intentional information-selection limitation, not automatically an implementation bug. Current action-witness selector is sealed; this version keeps original nearest selection and tests a value-comparison correction rather than a risk-selected crowd.
+
+The minimal reference reuses original builders, batched GRU evaluation, terminal-aware candidate scoring, and the pinned MPPI implementation. The strongest explanation is ordinary fixed-root support; it is included. Additional independent capability remainsUNVERIFIED until meaningful closed-loop benefit and fresh confirmation; source similarity alone is neither automatic rejection nor evidence of novelty.
