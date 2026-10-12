@@ -1,0 +1,16 @@
+{
+  "version":"physical-envelope-v1-20261012",
+  "parent_sha256":"879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "hypothesis":"Impossible optimistic continuation values maintain avoidable negative progress. Projecting only values above an action-support and smoothing-consistent optimistic reachability envelope improves closed-loop outcomes beyond distance-only clipping, geometric replacement, and existing fixed-prefix MPPI.",
+  "difference":"Inference-time upper projection of the frozen critic, no training or global head refit. Bound earliest possible goal entry along the successor-to-goal direction using the support of the original80 raw actions and the exact smoothing recurrence; ignore humans for an optimistic necessary condition, not a safety guarantee.",
+  "novelty":"UNVERIFIED. Admissible heuristics, value bounds and neural repair are established. Only the additional executable finite-action envelope versus distance-only cap is a candidate difference. No paper PASS from a development win alone.",
+  "shared":{"actions":80,"dt":0.25,"time_limit":50,"history":"legal-prefix24","margin":0.2,"risk_lambda":0.8,"smoothing":0.3,"reward":"unchanged: terminal success1; nonterminal rewards nonpositive","weight":"frozen corrected GRU seed61 RL2000","legal_inputs_only":true},
+  "math":"For successor position x, velocity v, goal g, d=|g-x|, e=(g-x)/d, m=max_a e.a, alpha=.3: maximum projected displacement in n future steps is dt*(n*m+(e.v-m)*alpha*(1-alpha^n)/(1-alpha)). First n with displacement >= d-radius is an optimistic lower bound on arrival steps. U=gamma^(max(n-1,0)); U=0 if no success possible before native timeout. V_used=min(V,U). Candidate terminal precedence remains original.",
+  "arms":["nominal","hold8","free","distance-cap","envelope"],
+  "development":{"scenes":[0,1,2,3,4,5],"case_first":100,"case_last":119,"n":120,"note":"Existing development cases. Nominal and hold8 complete results reused byte-identically from policy-handoff. No fresh claim."},
+  "confirmation":{"scenes":[0,1,2,3,4,5],"case_first":340,"case_last":379,"n":240,"conditional":"development signal plus credible independent mechanism required"},
+  "go":"No fewer successes and no more collisions/contacts than every comparator AND either at least2 extra successes or at least5% lower paired both-success time versus strongest simple; envelope changes actions relative to distance-cap; mean decision<50ms. Otherwise KILL. No parameter rescue. Fresh paired interval must exclude zero on the registered benefit metric.",
+  "budget_seconds":3600,
+  "resources":"local3060 frozen inference and CPU only; no4090; zero training",
+  "priors":["https://arxiv.org/html/2304.01203","https://github.com/quasimetric-learning/quasimetric-rl","https://github.com/k1majd/SARP","https://github.com/BU-DEPEND-Lab/REASSURE"]
+}
