@@ -1,0 +1,19 @@
+{
+  "version":"policy-handoff-v1-20261012",
+  "parent_sha256":"879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "hypothesis":"A safe geometric endpoint can remain in the nominal policy's stagnation basin. Admitting handoff only after the actual frozen GRU continuation predicts safe positive progress improves navigation beyond ordinary variable-duration policy rollout and fixed-prefix MPC.",
+  "difference":"Evaluate the nominal policy itself, with its legal history and smoothing, after candidate prefixes; candidate adds a safe/productive re-entry constraint. No renewed deadline, side latch, trained recovery network or posterior.",
+  "novelty_status":"UNVERIFIED. Policy rollout, safe policy switching and terminal admission are prior art; a meaningful incremental social-navigation capability must survive the same-budget ordinary-rollout comparison and closest-prior review. This is not automatically a paper method.",
+  "priors":["https://arxiv.org/abs/1905.10691","https://github.com/obastani/model-predictive-shielding","https://web.mit.edu/dimitrib/www/Bertsekas_NMPC_IFAC.pdf","https://arxiv.org/abs/2211.14361"],
+  "upstream":{"url":"https://github.com/UM-ARM-Lab/pytorch_mppi","commit":"e04a569cd4215e705f9013145c496fc59cb25ed6","license":"MIT"},
+  "shared":{"actions":80,"dt":0.25,"time_limit":50,"history":"legal-prefix24","margin":0.2,"risk_lambda":0.8,"smoothing":0.3,"reward":"unchanged","weight":"frozen GRU seed61 RL2000","humans":"all current legal observable position/velocity/radius for safety, original nearest5 for value; no future tape or goals"},
+  "planner":{"horizon":16,"samples":256,"updates":1,"lambda":0.01,"noise_std":0.5,"objective":"same native reward plus frozen free-space terminal heuristic as progress-contract-v2","human_forecast":"current legal CV","seed":"812121+scene*100000+case*300+step"},
+  "handoff":{"prefixes":[0,4,8,16],"nominal_tail_steps":8,"admission":"predicted tail endpoint clearance >=0.2m at every step AND tail goal-distance decrease>=0.2m, or predicted goal reached","ranking":"discounted original task return of prefix followed by GRU tail plus same terminal free-space heuristic","fallback":"if all tails inadmissible, execute8 of original feasible MPPI plan; this is logged, not called certified","execution":"revalidate stored prefix every actual step using current native safe mask and shared legal CV; invalidate to nominal if unavailable. Nominal handoff uses8-step reassessment cooldown, shared by rollout and candidate."},
+  "arms":["nominal","hold8","rollout","handoff"],
+  "development":{"scenes":[0,1,2,3,4,5],"case_first":100,"case_last":119,"n":120,"note":"Previously observed native cases; not fresh. Existing240-root cohort used25s; this comparison uses native50s for every arm. No case picked from current outcome."},
+  "confirmation":{"scenes":[0,1,2,3,4,5],"case_first":340,"case_last":379,"n":240,"conditional":"only if development gate passes and credible prior-method difference remains"},
+  "go":"Against every comparator: no fewer successes and no more collisions or contacts; plus either >=2 extra successes OR >=5% lower paired both-success navigation time against strongest simple; actual admission changes choices; average decision<250ms. Otherwise KILL, no sweeps. Fresh outcome must preserve benefit with paired cluster interval excluding zero on its registered benefit metric.",
+  "repairs":"At most one concrete implementation/representation repair, not a negative-outcome rescue.",
+  "budget_seconds":5400,
+  "resources":"CPU planner and local3060 frozen GRU only. No4090; no training."
+}
