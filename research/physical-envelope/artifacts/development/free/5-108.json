@@ -1,0 +1,22 @@
+{
+  "arm": "free",
+  "scene": "large_square",
+  "case": 108,
+  "outcome": "timeout",
+  "success": 0,
+  "collision": 0,
+  "timeout": 1,
+  "contact": 0,
+  "min_clearance": 0.06235120724840315,
+  "duration": 50.25,
+  "steps": 201,
+  "path": 13.236443218256221,
+  "final_distance": 4.423438225878014,
+  "return": -0.16058371231335958,
+  "clipped_steps": 20,
+  "action_changes": 196,
+  "envelope_distance_disagreements": 1,
+  "fallback": 8,
+  "decision_ms_mean": 12.524021115265231,
+  "decision_ms_p95": 15.338035998865962
+}

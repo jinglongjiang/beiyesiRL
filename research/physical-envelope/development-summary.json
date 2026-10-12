@@ -1,0 +1,727 @@
+{
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 102,
+      "collision": 0,
+      "timeout": 18,
+      "contact": 0,
+      "SR": 0.85,
+      "CR": 0.0,
+      "TR": 0.15,
+      "duration_all_mean": 21.614583333333332,
+      "successful_time_mean": 16.561274509803923,
+      "return_mean": 0.4376624555515191,
+      "path_mean": 19.734017046527445,
+      "final_distance_mean": 3.013217402151268,
+      "min_clearance_min": 0.060545499214155085,
+      "min_clearance_median": 0.2305543344960317,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 41,
+      "decision_ms_episode_mean": 16.79502306745999
+    },
+    "hold8": {
+      "n": 120,
+      "success": 114,
+      "collision": 0,
+      "timeout": 6,
+      "contact": 0,
+      "SR": 0.95,
+      "CR": 0.0,
+      "TR": 0.05,
+      "duration_all_mean": 17.085416666666667,
+      "successful_time_mean": 15.339912280701755,
+      "return_mean": 0.5174285022768121,
+      "path_mean": 14.110901632812668,
+      "final_distance_mean": 0.4260571385855989,
+      "min_clearance_min": 0.03734441294978896,
+      "min_clearance_median": 0.22576135405020692,
+      "triggers": 211,
+      "intervention_steps": 3196,
+      "fallback_steps": 30,
+      "decision_ms_episode_mean": 39.47715794271624
+    },
+    "free": {
+      "n": 120,
+      "success": 4,
+      "collision": 21,
+      "timeout": 95,
+      "contact": 21,
+      "SR": 0.03333333333333333,
+      "CR": 0.175,
+      "TR": 0.7916666666666666,
+      "duration_all_mean": 42.11666666666667,
+      "successful_time_mean": 35.9375,
+      "return_mean": -0.14721428476652226,
+      "path_mean": 10.88147543294036,
+      "final_distance_mean": 6.740823933164348,
+      "min_clearance_min": -0.12480799475658594,
+      "min_clearance_median": 0.15652859471388436,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 589,
+      "decision_ms_episode_mean": 13.909205924578561
+    },
+    "distance-cap": {
+      "n": 120,
+      "success": 103,
+      "collision": 0,
+      "timeout": 17,
+      "contact": 0,
+      "SR": 0.8583333333333333,
+      "CR": 0.0,
+      "TR": 0.14166666666666666,
+      "duration_all_mean": 23.502083333333335,
+      "successful_time_mean": 19.0873786407767,
+      "return_mean": 0.40862246721608,
+      "path_mean": 18.203163786430505,
+      "final_distance_mean": 2.25985832576402,
+      "min_clearance_min": 0.060545499214155085,
+      "min_clearance_median": 0.21603695169608256,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 42,
+      "decision_ms_episode_mean": 14.972580899330653
+    },
+    "envelope": {
+      "n": 120,
+      "success": 107,
+      "collision": 0,
+      "timeout": 13,
+      "contact": 0,
+      "SR": 0.8916666666666667,
+      "CR": 0.0,
+      "TR": 0.10833333333333334,
+      "duration_all_mean": 19.341666666666665,
+      "successful_time_mean": 15.586448598130842,
+      "return_mean": 0.47914609687544335,
+      "path_mean": 16.645443982508244,
+      "final_distance_mean": 1.7789960050031532,
+      "min_clearance_min": 0.060545499214155085,
+      "min_clearance_median": 0.20500539632450981,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 41,
+      "decision_ms_episode_mean": 15.163950818925962
+    }
+  },
+  "pairs": {
+    "nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.041666666666666664,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.1
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          105
+        ],
+        [
+          "baseline_square",
+          113
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "large_circle",
+          108
+        ],
+        [
+          "large_square",
+          116
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          113
+        ]
+      ],
+      "rescue_count": 6,
+      "damage_count": 1,
+      "both_success_time_delta_mean": -1.0148514851485149
+    },
+    "hold8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.058333333333333334,
+      "delta_SR_case_bootstrap_95": [
+        -0.10833333333333334,
+        -0.008333333333333333
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          105
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "dense_square",
+          100
+        ],
+        [
+          "dense_square",
+          101
+        ],
+        [
+          "dense_square",
+          114
+        ],
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_square",
+          101
+        ],
+        [
+          "large_square",
+          119
+        ]
+      ],
+      "rescue_count": 1,
+      "damage_count": 8,
+      "both_success_time_delta_mean": 0.2806603773584906
+    },
+    "free": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.8583333333333333,
+      "delta_SR_case_bootstrap_95": [
+        0.8,
+        0.9166666666666666
+      ],
+      "delta_contact_rate": -0.175,
+      "delta_contact_case_bootstrap_95": [
+        -0.24166666666666667,
+        -0.11666666666666667
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          100
+        ],
+        [
+          "baseline_circle",
+          101
+        ],
+        [
+          "baseline_circle",
+          102
+        ],
+        [
+          "baseline_circle",
+          103
+        ],
+        [
+          "baseline_circle",
+          105
+        ],
+        [
+          "baseline_circle",
+          107
+        ],
+        [
+          "baseline_circle",
+          108
+        ],
+        [
+          "baseline_circle",
+          109
+        ],
+        [
+          "baseline_circle",
+          110
+        ],
+        [
+          "baseline_circle",
+          111
+        ],
+        [
+          "baseline_circle",
+          112
+        ],
+        [
+          "baseline_circle",
+          113
+        ],
+        [
+          "baseline_circle",
+          114
+        ],
+        [
+          "baseline_circle",
+          116
+        ],
+        [
+          "baseline_circle",
+          117
+        ],
+        [
+          "baseline_circle",
+          118
+        ],
+        [
+          "baseline_circle",
+          119
+        ],
+        [
+          "baseline_square",
+          100
+        ],
+        [
+          "baseline_square",
+          101
+        ],
+        [
+          "baseline_square",
+          102
+        ],
+        [
+          "baseline_square",
+          103
+        ],
+        [
+          "baseline_square",
+          104
+        ],
+        [
+          "baseline_square",
+          105
+        ],
+        [
+          "baseline_square",
+          106
+        ],
+        [
+          "baseline_square",
+          107
+        ],
+        [
+          "baseline_square",
+          108
+        ],
+        [
+          "baseline_square",
+          109
+        ],
+        [
+          "baseline_square",
+          110
+        ],
+        [
+          "baseline_square",
+          111
+        ],
+        [
+          "baseline_square",
+          112
+        ],
+        [
+          "baseline_square",
+          113
+        ],
+        [
+          "baseline_square",
+          114
+        ],
+        [
+          "baseline_square",
+          115
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "baseline_square",
+          117
+        ],
+        [
+          "baseline_square",
+          118
+        ],
+        [
+          "baseline_square",
+          119
+        ],
+        [
+          "dense_circle",
+          100
+        ],
+        [
+          "dense_circle",
+          101
+        ],
+        [
+          "dense_circle",
+          102
+        ],
+        [
+          "dense_circle",
+          103
+        ],
+        [
+          "dense_circle",
+          104
+        ],
+        [
+          "dense_circle",
+          105
+        ],
+        [
+          "dense_circle",
+          106
+        ],
+        [
+          "dense_circle",
+          107
+        ],
+        [
+          "dense_circle",
+          108
+        ],
+        [
+          "dense_circle",
+          109
+        ],
+        [
+          "dense_circle",
+          110
+        ],
+        [
+          "dense_circle",
+          111
+        ],
+        [
+          "dense_circle",
+          112
+        ],
+        [
+          "dense_circle",
+          113
+        ],
+        [
+          "dense_circle",
+          114
+        ],
+        [
+          "dense_circle",
+          116
+        ],
+        [
+          "dense_circle",
+          117
+        ],
+        [
+          "dense_circle",
+          118
+        ],
+        [
+          "dense_circle",
+          119
+        ],
+        [
+          "dense_square",
+          102
+        ],
+        [
+          "dense_square",
+          104
+        ],
+        [
+          "dense_square",
+          105
+        ],
+        [
+          "dense_square",
+          107
+        ],
+        [
+          "dense_square",
+          108
+        ],
+        [
+          "dense_square",
+          109
+        ],
+        [
+          "dense_square",
+          110
+        ],
+        [
+          "dense_square",
+          115
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "dense_square",
+          117
+        ],
+        [
+          "dense_square",
+          118
+        ],
+        [
+          "large_circle",
+          100
+        ],
+        [
+          "large_circle",
+          101
+        ],
+        [
+          "large_circle",
+          104
+        ],
+        [
+          "large_circle",
+          105
+        ],
+        [
+          "large_circle",
+          106
+        ],
+        [
+          "large_circle",
+          107
+        ],
+        [
+          "large_circle",
+          108
+        ],
+        [
+          "large_circle",
+          109
+        ],
+        [
+          "large_circle",
+          110
+        ],
+        [
+          "large_circle",
+          111
+        ],
+        [
+          "large_circle",
+          112
+        ],
+        [
+          "large_circle",
+          113
+        ],
+        [
+          "large_circle",
+          114
+        ],
+        [
+          "large_circle",
+          115
+        ],
+        [
+          "large_circle",
+          116
+        ],
+        [
+          "large_circle",
+          117
+        ],
+        [
+          "large_circle",
+          118
+        ],
+        [
+          "large_circle",
+          119
+        ],
+        [
+          "large_square",
+          100
+        ],
+        [
+          "large_square",
+          102
+        ],
+        [
+          "large_square",
+          103
+        ],
+        [
+          "large_square",
+          104
+        ],
+        [
+          "large_square",
+          105
+        ],
+        [
+          "large_square",
+          106
+        ],
+        [
+          "large_square",
+          107
+        ],
+        [
+          "large_square",
+          108
+        ],
+        [
+          "large_square",
+          109
+        ],
+        [
+          "large_square",
+          110
+        ],
+        [
+          "large_square",
+          111
+        ],
+        [
+          "large_square",
+          112
+        ],
+        [
+          "large_square",
+          113
+        ],
+        [
+          "large_square",
+          114
+        ],
+        [
+          "large_square",
+          115
+        ],
+        [
+          "large_square",
+          116
+        ],
+        [
+          "large_square",
+          117
+        ],
+        [
+          "large_square",
+          118
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 103,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -20.25
+    },
+    "distance-cap": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.03333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        -0.016666666666666666,
+        0.09166666666666666
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          107
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "large_circle",
+          105
+        ],
+        [
+          "large_circle",
+          108
+        ],
+        [
+          "large_circle",
+          111
+        ],
+        [
+          "large_circle",
+          116
+        ],
+        [
+          "large_square",
+          106
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "dense_square",
+          113
+        ],
+        [
+          "large_square",
+          101
+        ]
+      ],
+      "rescue_count": 7,
+      "damage_count": 3,
+      "both_success_time_delta_mean": -3.6075
+    }
+  },
+  "strongest_simple": "hold8",
+  "paired_time_ratio": 1.0184868727668168,
+  "paired_time_delta_bootstrap_95": [
+    -0.4504509816420194,
+    1.1480951138735145
+  ],
+  "gate": {
+    "checks": {
+      "outcome_nonregression": false,
+      "safety": true,
+      "independent_gain": false,
+      "mechanism": true,
+      "compute": true
+    },
+    "passed": false
+  },
+  "verdict": "VERSION_NEGATIVE"
+}

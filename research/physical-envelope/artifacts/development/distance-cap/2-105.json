@@ -1,0 +1,22 @@
+{
+  "arm": "distance-cap",
+  "scene": "dense_circle",
+  "case": 105,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.17017050922446586,
+  "duration": 19.5,
+  "steps": 78,
+  "path": 14.322036389270247,
+  "final_distance": 0.2999024622189792,
+  "return": 0.45648695901958664,
+  "clipped_steps": 25,
+  "action_changes": 19,
+  "envelope_distance_disagreements": 22,
+  "fallback": 0,
+  "decision_ms_mean": 15.022984656612746,
+  "decision_ms_p95": 18.16309985006228
+}

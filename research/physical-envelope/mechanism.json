@@ -1,0 +1,38 @@
+{
+  "envelope": {
+    "episodes": 120,
+    "steps": 9284,
+    "speed_median": 0.9808518355140821,
+    "nonpositive_progress_fraction": 0.24687634640241277,
+    "top_score_tie_count_median": 1.0,
+    "top_score_tie_fraction": 0.16199913830245583,
+    "upper_bound_clip_step_fraction": 0.3339077983627747,
+    "envelope_differs_distance_bound_step_fraction": 0.9466824644549763,
+    "action_changes": 2324,
+    "envelope_distance_disagreements": 1621
+  },
+  "distance-cap": {
+    "episodes": 120,
+    "steps": 11281,
+    "speed_median": 0.9424621959588694,
+    "nonpositive_progress_fraction": 0.2877404485417959,
+    "top_score_tie_count_median": 1.0,
+    "top_score_tie_fraction": 0.28481517595957806,
+    "upper_bound_clip_step_fraction": 0.38391986526017197,
+    "envelope_differs_distance_bound_step_fraction": 0.9437993085719351,
+    "action_changes": 3459,
+    "envelope_distance_disagreements": 3152
+  },
+  "free": {
+    "episodes": 120,
+    "steps": 20216,
+    "speed_median": 0.12886035088079095,
+    "nonpositive_progress_fraction": 0.486594776414721,
+    "top_score_tie_count_median": 41.0,
+    "top_score_tie_fraction": 0.9233280569845667,
+    "upper_bound_clip_step_fraction": 0.15621290067273447,
+    "envelope_differs_distance_bound_step_fraction": 0.8862287297190344,
+    "action_changes": 19523,
+    "envelope_distance_disagreements": 977
+  }
+}
