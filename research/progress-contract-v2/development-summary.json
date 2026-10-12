@@ -1,0 +1,333 @@
+{
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 105,
+      "collision": 0,
+      "timeout": 15,
+      "contact": 0,
+      "SR": 0.875,
+      "CR": 0.0,
+      "TR": 0.125,
+      "duration_all_mean": 20.075,
+      "successful_time_mean": 15.764285714285714,
+      "return_mean": 0.4676973502155278,
+      "path_mean": 18.115170486470266,
+      "final_distance_mean": 2.2681087588238955,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.30314329223224235,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 15,
+      "decision_ms_episode_mean": 9.04892587898202
+    },
+    "commit8": {
+      "n": 120,
+      "success": 115,
+      "collision": 0,
+      "timeout": 5,
+      "contact": 0,
+      "SR": 0.9583333333333334,
+      "CR": 0.0,
+      "TR": 0.041666666666666664,
+      "duration_all_mean": 17.03125,
+      "successful_time_mean": 15.58695652173913,
+      "return_mean": 0.5192079880480746,
+      "path_mean": 15.212801043744935,
+      "final_distance_mean": 0.49950525690675285,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.22518453543549516,
+      "triggers": 83,
+      "intervention_steps": 640,
+      "fallback_steps": 21,
+      "decision_ms_episode_mean": 9.058237223280416
+    },
+    "low-commit8": {
+      "n": 120,
+      "success": 116,
+      "collision": 1,
+      "timeout": 3,
+      "contact": 1,
+      "SR": 0.9666666666666667,
+      "CR": 0.008333333333333333,
+      "TR": 0.025,
+      "duration_all_mean": 15.727083333333333,
+      "successful_time_mean": 14.933189655172415,
+      "return_mean": 0.5257515596551173,
+      "path_mean": 13.315949555717642,
+      "final_distance_mean": 0.4419459290846827,
+      "min_clearance_min": -0.04257904841743798,
+      "min_clearance_median": 0.2001155553123743,
+      "triggers": 272,
+      "intervention_steps": 2035,
+      "fallback_steps": 116,
+      "decision_ms_episode_mean": 10.343532136031936
+    },
+    "mpc": {
+      "n": 120,
+      "success": 118,
+      "collision": 0,
+      "timeout": 2,
+      "contact": 0,
+      "SR": 0.9833333333333333,
+      "CR": 0.0,
+      "TR": 0.016666666666666666,
+      "duration_all_mean": 15.26875,
+      "successful_time_mean": 14.67584745762712,
+      "return_mean": 0.5530271642426674,
+      "path_mean": 13.22357717758757,
+      "final_distance_mean": 0.3479060967175551,
+      "min_clearance_min": 0.018668894390718282,
+      "min_clearance_median": 0.22047870103941747,
+      "triggers": 179,
+      "intervention_steps": 2709,
+      "fallback_steps": 21,
+      "decision_ms_episode_mean": 27.079156181534547
+    },
+    "hold8": {
+      "n": 120,
+      "success": 119,
+      "collision": 0,
+      "timeout": 1,
+      "contact": 0,
+      "SR": 0.9916666666666667,
+      "CR": 0.0,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 15.1,
+      "successful_time_mean": 14.804621848739496,
+      "return_mean": 0.5560864841418843,
+      "path_mean": 13.265620033449345,
+      "final_distance_mean": 0.3294645025787252,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.24838486347056166,
+      "triggers": 169,
+      "intervention_steps": 2589,
+      "fallback_steps": 13,
+      "decision_ms_episode_mean": 29.4522958857357
+    },
+    "deadline": {
+      "n": 120,
+      "success": 119,
+      "collision": 0,
+      "timeout": 1,
+      "contact": 0,
+      "SR": 0.9916666666666667,
+      "CR": 0.0,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 14.90625,
+      "successful_time_mean": 14.609243697478991,
+      "return_mean": 0.5595956413291288,
+      "path_mean": 13.055796172491478,
+      "final_distance_mean": 0.31594398541567253,
+      "min_clearance_min": 0.018668894390718282,
+      "min_clearance_median": 0.2170241074701721,
+      "triggers": 228,
+      "intervention_steps": 2389,
+      "fallback_steps": 20,
+      "decision_ms_episode_mean": 28.847886183411898
+    }
+  },
+  "pairs": {
+    "deadline-vs-nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.11666666666666667,
+      "delta_SR_case_bootstrap_95": [
+        0.05,
+        0.19166666666666668
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          308
+        ],
+        [
+          "dense_square",
+          312
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "dense_square",
+          318
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          317
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 14,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -1.6738095238095239
+    },
+    "deadline-vs-commit8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.03333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.075
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          305
+        ],
+        [
+          "dense_square",
+          312
+        ],
+        [
+          "dense_square",
+          318
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 4,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -1.1630434782608696
+    },
+    "deadline-vs-low-commit8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.025,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.05
+      ],
+      "delta_contact_rate": -0.008333333333333333,
+      "delta_contact_case_bootstrap_95": [
+        -0.025,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          306
+        ],
+        [
+          "large_square",
+          311
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 3,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -0.4525862068965517
+    },
+    "deadline-vs-mpc": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.008333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.025
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          302
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 1,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -0.13771186440677965
+    },
+    "deadline-vs-hold8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.0,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [],
+      "rescue_count": 0,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -0.1953781512605042
+    }
+  },
+  "strongest_simple": "hold8",
+  "paired_time_ratio": 0.9868028948488718,
+  "gate": {
+    "checks": {
+      "beats_all_by_two": false,
+      "safety_nonregression": true,
+      "time_nonregression": true,
+      "mechanism_activates": true,
+      "compute": true
+    },
+    "passed": false
+  },
+  "verdict": "VERSION_NEGATIVE",
+  "scientific_scope": "Tests this candidate, not general impossibility; no paper PASS without novelty review and fresh confirmation."
+}

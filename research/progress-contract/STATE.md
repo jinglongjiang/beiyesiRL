@@ -12,4 +12,6 @@ Current candidate: progress deadline preserved across multistep safe plan replac
 
 Scientific stop: native closed-loop gain absorbed by any strong simple, extra contact/collision, inactive intended mechanism, or excessive computation -> KILL this candidate, preserve results, choose a genuinely different evidence-supported hypothesis. No parameter rescue. Fresh confirmation only after frozen development GO. Paper-candidate PASS additionally requires meaningful independent mechanism and fresh benefit.
 
-Cycle log: previous TEB candidate REFUTED/KILL. Current progress-contract INCONCLUSIVE/GO for implementation and matched outcome test. No method-level progress established yet.
+Cycle log: previous TEB candidate REFUTED/KILL. Progress-contract v1 plus its one common terminal-value correction v2 completed: deadline119/120, ordinary MPPI118/120, fixed8 plan119/120; all three contact0. Frozen criterion fails, REFUTED/KILL for the candidate's independent success benefit. Preserve all results; no fresh confirmation and no parameter rescue. No method-level progress established yet.
+
+Strongest updated simple: fixed8 execution of revalidated MPPI plans,119/120 and contact0. Ordinary MPPI118/120 also decisively exceeds GRU105/120 on these development cases; that is established planning reuse, not an original algorithm. Next cycle must address a different information/decision mechanism and include this strong control, not rename a progress deadline.
