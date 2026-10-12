@@ -1,0 +1,33 @@
+{
+  "arm": "scalar",
+  "scene": "baseline_circle",
+  "case": 303,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.23000448402511908,
+  "duration": 11.25,
+  "steps": 45,
+  "return": 0.6426116020847181,
+  "path": 10.714902887991885,
+  "final_distance": 0.276789198918585,
+  "triggers": 1,
+  "intervention_steps": 16,
+  "action_changes": 16,
+  "fallback": 0,
+  "rejected_plan_count": 0,
+  "retained_plan_steps": 13,
+  "invalidations": 0,
+  "completed_obligations": 0,
+  "decision_ms_mean": 22.45388946030289,
+  "decision_ms_p95": 46.98254663962871,
+  "selection": {
+    "calls": 3645,
+    "eligible": 0,
+    "cover_scalar_different": 0,
+    "selected_nearest_different": 0,
+    "current_steps": []
+  }
+}

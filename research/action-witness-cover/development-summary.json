@@ -1,0 +1,749 @@
+{
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 105,
+      "collision": 0,
+      "timeout": 15,
+      "contact": 0,
+      "SR": 0.875,
+      "CR": 0.0,
+      "TR": 0.125,
+      "duration_all_mean": 20.075,
+      "successful_time_mean": 15.764285714285714,
+      "return_mean": 0.4676973502155278,
+      "path_mean": 18.115170486470266,
+      "final_distance_mean": 2.2681087588238955,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.30314329223224235,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 15,
+      "decision_ms_episode_mean": 9.04892587898202
+    },
+    "hold8": {
+      "n": 120,
+      "success": 119,
+      "collision": 0,
+      "timeout": 1,
+      "contact": 0,
+      "SR": 0.9916666666666667,
+      "CR": 0.0,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 15.1,
+      "successful_time_mean": 14.804621848739496,
+      "return_mean": 0.5560864841418843,
+      "path_mean": 13.265620033449345,
+      "final_distance_mean": 0.3294645025787252,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.24838486347056166,
+      "triggers": 169,
+      "intervention_steps": 2589,
+      "fallback_steps": 13,
+      "decision_ms_episode_mean": 29.4522958857357
+    },
+    "ttc": {
+      "n": 120,
+      "success": 118,
+      "collision": 1,
+      "timeout": 1,
+      "contact": 1,
+      "SR": 0.9833333333333333,
+      "CR": 0.008333333333333333,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 15.210416666666667,
+      "successful_time_mean": 14.976694915254237,
+      "return_mean": 0.5447187367776398,
+      "path_mean": 13.308044521562108,
+      "final_distance_mean": 0.3735352172538529,
+      "min_clearance_min": -0.005454716747705257,
+      "min_clearance_median": 0.24219968587850538,
+      "triggers": 178,
+      "intervention_steps": 2718,
+      "fallback_steps": 19,
+      "decision_ms_episode_mean": 60.39833966913389
+    },
+    "scalar": {
+      "n": 120,
+      "success": 118,
+      "collision": 0,
+      "timeout": 2,
+      "contact": 0,
+      "SR": 0.9833333333333333,
+      "CR": 0.0,
+      "TR": 0.016666666666666666,
+      "duration_all_mean": 15.733333333333333,
+      "successful_time_mean": 15.148305084745763,
+      "return_mean": 0.5452243723211048,
+      "path_mean": 13.39512366659253,
+      "final_distance_mean": 0.31384518110710174,
+      "min_clearance_min": 0.036483483932428507,
+      "min_clearance_median": 0.2330527555808502,
+      "triggers": 183,
+      "intervention_steps": 2809,
+      "fallback_steps": 22,
+      "decision_ms_episode_mean": 60.233673244461535
+    },
+    "cover": {
+      "n": 120,
+      "success": 118,
+      "collision": 0,
+      "timeout": 2,
+      "contact": 0,
+      "SR": 0.9833333333333333,
+      "CR": 0.0,
+      "TR": 0.016666666666666666,
+      "duration_all_mean": 15.60625,
+      "successful_time_mean": 15.01906779661017,
+      "return_mean": 0.5467228916244574,
+      "path_mean": 13.278081736654732,
+      "final_distance_mean": 0.3175419162677248,
+      "min_clearance_min": 0.001254118096719492,
+      "min_clearance_median": 0.23817308931808756,
+      "triggers": 183,
+      "intervention_steps": 2761,
+      "fallback_steps": 6,
+      "decision_ms_episode_mean": 60.84615131247113
+    }
+  },
+  "pairs": {
+    "nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.10833333333333334,
+      "delta_SR_case_bootstrap_95": [
+        0.041666666666666664,
+        0.19166666666666668
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          304
+        ],
+        [
+          "dense_square",
+          308
+        ],
+        [
+          "dense_square",
+          312
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "dense_square",
+          318
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          317
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          302
+        ]
+      ],
+      "rescue_count": 14,
+      "damage_count": 1,
+      "both_success_time_delta_mean": -1.1610576923076923
+    },
+    "hold8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.008333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        -0.025,
+        0.0
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [
+        [
+          "dense_square",
+          302
+        ]
+      ],
+      "rescue_count": 0,
+      "damage_count": 1,
+      "both_success_time_delta_mean": 0.2288135593220339
+    },
+    "ttc": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.0,
+      "delta_SR_case_bootstrap_95": [
+        -0.025,
+        0.025
+      ],
+      "delta_contact_rate": -0.008333333333333333,
+      "delta_contact_case_bootstrap_95": [
+        -0.025,
+        0.0
+      ],
+      "rescues": [
+        [
+          "large_square",
+          308
+        ]
+      ],
+      "damages": [
+        [
+          "dense_square",
+          302
+        ]
+      ],
+      "rescue_count": 1,
+      "damage_count": 1,
+      "both_success_time_delta_mean": 0.021367521367521368
+    },
+    "scalar": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.0,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [],
+      "rescue_count": 0,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -0.1292372881355932
+    }
+  },
+  "paired_success_time_ratios": {
+    "nominal": 0.9260110294117647,
+    "hold8": 1.0154705629565965,
+    "ttc": 1.0014279594459516,
+    "scalar": 0.9914685314685314
+  },
+  "changed_executed_trajectories": [
+    {
+      "scene": "baseline_square",
+      "case": 300,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "baseline_square",
+      "case": 301,
+      "first_executed_action_difference_step": 3
+    },
+    {
+      "scene": "baseline_square",
+      "case": 302,
+      "first_executed_action_difference_step": 7
+    },
+    {
+      "scene": "baseline_square",
+      "case": 303,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "baseline_square",
+      "case": 304,
+      "first_executed_action_difference_step": 8
+    },
+    {
+      "scene": "baseline_square",
+      "case": 305,
+      "first_executed_action_difference_step": 11
+    },
+    {
+      "scene": "baseline_square",
+      "case": 306,
+      "first_executed_action_difference_step": 4
+    },
+    {
+      "scene": "baseline_square",
+      "case": 307,
+      "first_executed_action_difference_step": 26
+    },
+    {
+      "scene": "baseline_square",
+      "case": 308,
+      "first_executed_action_difference_step": 5
+    },
+    {
+      "scene": "baseline_square",
+      "case": 309,
+      "first_executed_action_difference_step": 6
+    },
+    {
+      "scene": "baseline_square",
+      "case": 310,
+      "first_executed_action_difference_step": 14
+    },
+    {
+      "scene": "baseline_square",
+      "case": 311,
+      "first_executed_action_difference_step": 3
+    },
+    {
+      "scene": "baseline_square",
+      "case": 312,
+      "first_executed_action_difference_step": 4
+    },
+    {
+      "scene": "baseline_square",
+      "case": 313,
+      "first_executed_action_difference_step": 34
+    },
+    {
+      "scene": "baseline_square",
+      "case": 314,
+      "first_executed_action_difference_step": 7
+    },
+    {
+      "scene": "baseline_square",
+      "case": 315,
+      "first_executed_action_difference_step": 4
+    },
+    {
+      "scene": "baseline_square",
+      "case": 316,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "baseline_square",
+      "case": 317,
+      "first_executed_action_difference_step": 43
+    },
+    {
+      "scene": "baseline_square",
+      "case": 318,
+      "first_executed_action_difference_step": 30
+    },
+    {
+      "scene": "baseline_square",
+      "case": 319,
+      "first_executed_action_difference_step": 5
+    },
+    {
+      "scene": "dense_circle",
+      "case": 300,
+      "first_executed_action_difference_step": 46
+    },
+    {
+      "scene": "dense_circle",
+      "case": 302,
+      "first_executed_action_difference_step": 27
+    },
+    {
+      "scene": "dense_circle",
+      "case": 303,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_circle",
+      "case": 304,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "dense_circle",
+      "case": 306,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_circle",
+      "case": 307,
+      "first_executed_action_difference_step": 3
+    },
+    {
+      "scene": "dense_circle",
+      "case": 308,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_circle",
+      "case": 310,
+      "first_executed_action_difference_step": 4
+    },
+    {
+      "scene": "dense_circle",
+      "case": 311,
+      "first_executed_action_difference_step": 13
+    },
+    {
+      "scene": "dense_circle",
+      "case": 312,
+      "first_executed_action_difference_step": 27
+    },
+    {
+      "scene": "dense_circle",
+      "case": 313,
+      "first_executed_action_difference_step": 8
+    },
+    {
+      "scene": "dense_circle",
+      "case": 314,
+      "first_executed_action_difference_step": 6
+    },
+    {
+      "scene": "dense_circle",
+      "case": 315,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_circle",
+      "case": 317,
+      "first_executed_action_difference_step": 27
+    },
+    {
+      "scene": "dense_circle",
+      "case": 318,
+      "first_executed_action_difference_step": 25
+    },
+    {
+      "scene": "dense_square",
+      "case": 300,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_square",
+      "case": 301,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "dense_square",
+      "case": 302,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_square",
+      "case": 303,
+      "first_executed_action_difference_step": 41
+    },
+    {
+      "scene": "dense_square",
+      "case": 304,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_square",
+      "case": 305,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_square",
+      "case": 306,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_square",
+      "case": 307,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "dense_square",
+      "case": 308,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_square",
+      "case": 309,
+      "first_executed_action_difference_step": 3
+    },
+    {
+      "scene": "dense_square",
+      "case": 310,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "dense_square",
+      "case": 311,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_square",
+      "case": 312,
+      "first_executed_action_difference_step": 3
+    },
+    {
+      "scene": "dense_square",
+      "case": 313,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "dense_square",
+      "case": 314,
+      "first_executed_action_difference_step": 26
+    },
+    {
+      "scene": "dense_square",
+      "case": 315,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "dense_square",
+      "case": 316,
+      "first_executed_action_difference_step": 4
+    },
+    {
+      "scene": "dense_square",
+      "case": 317,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "dense_square",
+      "case": 318,
+      "first_executed_action_difference_step": 5
+    },
+    {
+      "scene": "dense_square",
+      "case": 319,
+      "first_executed_action_difference_step": 6
+    },
+    {
+      "scene": "large_circle",
+      "case": 302,
+      "first_executed_action_difference_step": 26
+    },
+    {
+      "scene": "large_circle",
+      "case": 303,
+      "first_executed_action_difference_step": 28
+    },
+    {
+      "scene": "large_circle",
+      "case": 304,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 305,
+      "first_executed_action_difference_step": 31
+    },
+    {
+      "scene": "large_circle",
+      "case": 306,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 307,
+      "first_executed_action_difference_step": 5
+    },
+    {
+      "scene": "large_circle",
+      "case": 308,
+      "first_executed_action_difference_step": 25
+    },
+    {
+      "scene": "large_circle",
+      "case": 309,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 310,
+      "first_executed_action_difference_step": 26
+    },
+    {
+      "scene": "large_circle",
+      "case": 311,
+      "first_executed_action_difference_step": 12
+    },
+    {
+      "scene": "large_circle",
+      "case": 312,
+      "first_executed_action_difference_step": 31
+    },
+    {
+      "scene": "large_circle",
+      "case": 313,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 314,
+      "first_executed_action_difference_step": 25
+    },
+    {
+      "scene": "large_circle",
+      "case": 315,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 316,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 317,
+      "first_executed_action_difference_step": 26
+    },
+    {
+      "scene": "large_circle",
+      "case": 318,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_circle",
+      "case": 319,
+      "first_executed_action_difference_step": 27
+    },
+    {
+      "scene": "large_square",
+      "case": 300,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 301,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 302,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "large_square",
+      "case": 303,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 304,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 305,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 306,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "large_square",
+      "case": 307,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 308,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "large_square",
+      "case": 309,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "large_square",
+      "case": 310,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 311,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "large_square",
+      "case": 312,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "large_square",
+      "case": 313,
+      "first_executed_action_difference_step": 24
+    },
+    {
+      "scene": "large_square",
+      "case": 314,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 315,
+      "first_executed_action_difference_step": 0
+    },
+    {
+      "scene": "large_square",
+      "case": 316,
+      "first_executed_action_difference_step": 2
+    },
+    {
+      "scene": "large_square",
+      "case": 317,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "large_square",
+      "case": 318,
+      "first_executed_action_difference_step": 1
+    },
+    {
+      "scene": "large_square",
+      "case": 319,
+      "first_executed_action_difference_step": 1
+    }
+  ],
+  "gate": {
+    "checks": {
+      "success_nonregression": false,
+      "safety": true,
+      "independent_task_gain": false,
+      "activation": true,
+      "compute": true
+    },
+    "passed": false
+  },
+  "verdict": "VERSION_NEGATIVE",
+  "novelty": "UNVERIFIED; no paper PASS from a generic greedy coverage selector alone."
+}
