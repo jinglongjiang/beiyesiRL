@@ -1,0 +1,17 @@
+{
+  "version": "local-action-gap-v1",
+  "hypothesis": "Within-root centered candidate features and realized return residuals transfer corrective action gaps without transferring unrelated state-value offsets; this improves complete navigation beyond ordinary absolute episodic residuals and fixed8 MPPI.",
+  "parent_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "arms": ["nominal", "hold8", "absolute", "relative"],
+  "fit": "All legal nonterminal actions of the existing non-paused 35-root catalogue, even numeric cases only. Odd numeric cases are heldout diagnostics. No new continuation labels.",
+  "representation": "Frozen 256-dimensional candidate GRU features. Relative arm subtracts the safe candidate feature mean; absolute arm does not. All queries use the same CV successor windows used during deployment, not actual future states.",
+  "target": "Absolute: fixed-world deployment continuation return minus original candidate Q. Relative: subtract the root mean from that residual. These are realized-world labels, not exact conditional expected Q.",
+  "retrieval": {"implementation": "scipy.spatial.cKDTree", "neighbors": 8, "kernel": "1/(squared Euclidean distance+0.001)", "radius": "95th percentile of fitting-only leave-one-whole-case-out eighth-neighbor distance, separately for each representation", "outside": "zero correction"},
+  "consumer": "Add residual only to nonterminal candidate Q before the unchanged risk/mask/tie rule. Every arm other than nominal has the identical fixed8 MPPI intervention; only its nominal action ranking is changed by the memory arms. No network weight change.",
+  "development": {"case_first": 300, "case_last": 319, "scenes": [0,1,2,3,4,5], "n": 120, "scope": "Previously used development cases, not independent confirmation; entirely disjoint from fitting catalogue cases."},
+  "confirmation": {"case_first": 340, "case_last": 379, "scenes": [0,1,2,3,4,5], "n": 240},
+  "go": "No lower success count or greater contact/collision than ANY control; at least two additional successes versus every control OR at least 5% lower paired-both-success time versus the strongest control; relative correction must change at least one actual executed decision; mean decision time below 250ms. Confirmation additionally requires a positive case-bootstrap SR interval or a paired-time upper interval below zero, and a defensible independent mechanism beyond NEC/advantage centering/ranking.",
+  "kill": "Failure of any frozen development condition, ordinary absolute correction absorbs the benefit, or primary-source review fully covers the actual capability. No sweep, no parameter rescue; preserve all data.",
+  "fairness": "Identical legal observations, native80 actions, 50s/dt0.25, reward, all-human safety mask, 0.2 margin, 0.8 risk, 0.3 smoothing. Same memory rows/dimension/neighbors/kernel and no method-specific tuning. Both representations queried for both memory arms for comparable compute. No 4090 use, no RL training.",
+  "novelty_status": "UNVERIFIED. Local memory, advantage centering and action ranking are established ingredients; an outcome improvement alone is not a paper PASS."
+}
