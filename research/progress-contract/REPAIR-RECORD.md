@@ -1,0 +1,9 @@
+# One Structural Correction
+
+First version frozen at a2d73609, outcomes preserved at a1a4d5e7. Stopped deliberately after13/120 ordinary-MPC episodes (7success,6timeout,0contact); not a complete candidate comparison. Low-progress fixed8 completed120 episodes:116success,1collision/contact,3timeout. It is not an acceptable safety improvement over fixed8 (115success,0contact), but remains a dangerous simple explanation.
+
+Concrete design error: finite-horizon original reward without terminal value. Current task has zero progress/time/stand shaping, nonzero discomfort penalty, sparse goal/terminal rewards. Thus many safe trajectories that cannot reach the goal within16steps have identical zero rollout return. The earlier commentary saying all nonterminal reward is zero was too broad: recorded discomfort penalties are nonzero. No hidden change to environment rewards occurred.
+
+This is a failed reference design, not evidence the deadline hypothesis is false and not a fabricated engineering invalidity. No claim of a completed120-case MPC result. The interruptedprocess exit143 was intentional; no traceback or corrupted execution was observed. Partial current episode is excluded if no terminal record exists.
+
+Exactly one shared correction: add the same explicit free-space terminal value heuristic to all3 planning arms. V_free(x)=success_reward*gamma^(max(distance-radius,0)/(v_pref*dt)); zero after predicted termination. This approximates delayed sparse goal return, introduces no changed native reward, observations, action set or training. It is a standard planning heuristic, NOT novelty. Reuse the completed low-commit8 and original baselines; re-freeze before new planner outcomes in progress-contract-v2. If repaired candidate fails, no second repair, threshold rescue or larger search.
