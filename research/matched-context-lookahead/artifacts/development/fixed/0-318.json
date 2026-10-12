@@ -1,0 +1,285 @@
+{
+  "arm": "fixed",
+  "scene": "baseline_circle",
+  "case": 318,
+  "outcome": "reach_goal",
+  "success": 1,
+  "collision": 0,
+  "timeout": 0,
+  "contact": 0,
+  "min_clearance": 0.3848596904964997,
+  "duration": 10.5,
+  "steps": 42,
+  "return": 0.6622820409839835,
+  "path": 10.036025216576336,
+  "final_distance": 0.27613260127743494,
+  "triggers": 0,
+  "intervention_steps": 0,
+  "action_changes": 0,
+  "fallback": 0,
+  "rejected_plan_count": 0,
+  "retained_plan_steps": 0,
+  "invalidations": 0,
+  "completed_obligations": 0,
+  "decision_ms_mean": 9.676516219596602,
+  "decision_ms_p95": 10.775081696920093,
+  "context": {
+    "decisions": 42,
+    "changed_support_decisions": 0,
+    "ranking_changes": 0,
+    "steps": [
+      {
+        "step": 0,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 1,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 2,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 3,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 4,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 5,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 6,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 7,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 8,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 9,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 10,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 11,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 12,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 13,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 14,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 15,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 16,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 17,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 18,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 19,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 20,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 21,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 22,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 23,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 24,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 25,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 26,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 27,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 28,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 29,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 30,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 31,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 32,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 33,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 34,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 35,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 36,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 37,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 38,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 39,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 40,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      },
+      {
+        "step": 41,
+        "changed_support_actions": 0,
+        "ranking_changed": false,
+        "correction_max": 0.0
+      }
+    ]
+  }
+}
