@@ -124,7 +124,8 @@ def units():
     angles = np.arange(80) * (2 * np.pi / 80)
     commands = np.c_[np.cos(angles), np.sin(angles)]
     safe = np.ones(80, bool)
-    scores = np.linspace(0, .1, 80)
+    scores = np.linspace(-.01, .01, 80)
+    scores[20], scores[60] = .09, .10
     part = {'commands': commands, 'safe': safe, 'scores': scores, 'progress': -np.ones(80), 'best': int(scores.argmax())}
     c = SideController()
     for _ in range(8):

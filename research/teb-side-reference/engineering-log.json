@@ -1,0 +1,10 @@
+{
+  "runs": [{
+    "stage": "controls/unit",
+    "commit": "49738a53",
+    "failure": "Synthetic positive-control scores increased monotonically; the best action was almost collinear, so the frozen finite side penalty was correctly too small to flip it. The test incorrectly required a flip on this non-discriminative fixture.",
+    "correction": "Use two explicit near-tied peaks on opposite lateral sides; keep controller and navigation protocol unchanged. The positive-control fixture now has a known penalty-induced ordering change.",
+    "navigation_outcomes_observed": false,
+    "scientific_observation": false
+  }]
+}
