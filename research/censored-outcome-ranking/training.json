@@ -1,0 +1,1744 @@
+{
+  "arms": {
+    "pair": {
+      "sha256": "774672ab2390736d51173bc684a679b2f13c34b1e7c78e4216a70ea0420e42fa",
+      "seconds": 24.383515436085872,
+      "updates": 1000,
+      "curve": [
+        {
+          "update": 100,
+          "loss": 0.33437838173168394
+        },
+        {
+          "update": 200,
+          "loss": 0.2496667764725698
+        },
+        {
+          "update": 300,
+          "loss": 0.20782992216221574
+        },
+        {
+          "update": 400,
+          "loss": 0.19134974762273427
+        },
+        {
+          "update": 500,
+          "loss": 0.1814946660622918
+        },
+        {
+          "update": 600,
+          "loss": 0.17530374738268156
+        },
+        {
+          "update": 700,
+          "loss": 0.16983389114405478
+        },
+        {
+          "update": 800,
+          "loss": 0.16512778838603334
+        },
+        {
+          "update": 900,
+          "loss": 0.16219950387351584
+        },
+        {
+          "update": 1000,
+          "loss": 0.16026844212995509
+        }
+      ],
+      "diagnostics": [
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 115,
+            "step": 64,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1996767520904541
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 129,
+            "step": 48,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": false,
+          "residual_range": 0.1999998241662979
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 100,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 133,
+            "step": 64,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 102,
+            "step": 88,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1732940971851349
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 103,
+            "step": 56,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19999974966049194
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 132,
+            "step": 8,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19999997317790985
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 101,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19975849986076355
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 100,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1996309608221054
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 128,
+            "step": 40,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 111,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 124,
+            "step": 16,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 125,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1999777853488922
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 139,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19999995827674866
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 102,
+            "step": 8,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 106,
+            "step": 32,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 118,
+            "step": 40,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 126,
+            "step": 24,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 129,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999778270721436
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 131,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 106,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.18875497579574585
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 107,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.19999180734157562
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 101,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 107,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999998807907104
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 100,
+            "step": 40,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1976197063922882
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 103,
+            "step": 64,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 100,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19743134081363678
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19992852210998535
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 100,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999676942825317
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 103,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        }
+      ],
+      "parameters": 32897
+    },
+    "set": {
+      "sha256": "bef07a9bcb94167ef5e1905a6da51517b83e90ccb9f845e100a4d67fa66a7c2e",
+      "seconds": 21.07734966999851,
+      "updates": 1000,
+      "curve": [
+        {
+          "update": 100,
+          "loss": 0.29682284593582153
+        },
+        {
+          "update": 200,
+          "loss": 0.2229745239019394
+        },
+        {
+          "update": 300,
+          "loss": 0.18931028246879578
+        },
+        {
+          "update": 400,
+          "loss": 0.16790063679218292
+        },
+        {
+          "update": 500,
+          "loss": 0.151830792427063
+        },
+        {
+          "update": 600,
+          "loss": 0.13957816362380981
+        },
+        {
+          "update": 700,
+          "loss": 0.13041922450065613
+        },
+        {
+          "update": 800,
+          "loss": 0.12223830074071884
+        },
+        {
+          "update": 900,
+          "loss": 0.11604416370391846
+        },
+        {
+          "update": 1000,
+          "loss": 0.11064048111438751
+        }
+      ],
+      "diagnostics": [
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 115,
+            "step": 64,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19950751960277557
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 129,
+            "step": 48,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 100,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19999992847442627
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19999977946281433
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 133,
+            "step": 64,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1999940574169159
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 102,
+            "step": 88,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.16569218039512634
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 103,
+            "step": 56,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1998310089111328
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 132,
+            "step": 8,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.16407644748687744
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 101,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1997135579586029
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19950103759765625
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 100,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19994553923606873
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 128,
+            "step": 40,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 111,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.191209614276886
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 124,
+            "step": 16,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19995886087417603
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 125,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19990506768226624
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 139,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19992659986019135
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 102,
+            "step": 8,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.19542458653450012
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 106,
+            "step": 32,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.19933080673217773
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 118,
+            "step": 40,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1785711944103241
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 126,
+            "step": 24,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.023432143032550812
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 129,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999998807907104
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 131,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 106,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1631363332271576
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 107,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1974838674068451
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 101,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999881088733673
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 107,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19998107850551605
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 100,
+            "step": 40,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1995379477739334
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19940781593322754
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 103,
+            "step": 64,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999942183494568
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 100,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19526192545890808
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1997947245836258
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 100,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19513189792633057
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 103,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999787211418152
+        }
+      ],
+      "parameters": 32897
+    },
+    "regret": {
+      "sha256": "39388d0138d32efe7c332ec831d34a0976bdf564bd1010fa463473463c0f47b5",
+      "seconds": 24.418836371973157,
+      "updates": 1000,
+      "curve": [
+        {
+          "update": 100,
+          "loss": 0.0539495619363152
+        },
+        {
+          "update": 200,
+          "loss": 0.05334926934156106
+        },
+        {
+          "update": 300,
+          "loss": 0.0528130496051745
+        },
+        {
+          "update": 400,
+          "loss": 0.05395495665507047
+        },
+        {
+          "update": 500,
+          "loss": 0.05205597327149012
+        },
+        {
+          "update": 600,
+          "loss": 0.04970134414033969
+        },
+        {
+          "update": 700,
+          "loss": 0.04836234755057381
+        },
+        {
+          "update": 800,
+          "loss": 0.047904450495843826
+        },
+        {
+          "update": 900,
+          "loss": 0.03566547922382601
+        },
+        {
+          "update": 1000,
+          "loss": 0.013169123115949378
+        }
+      ],
+      "diagnostics": [
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 115,
+            "step": 64,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": false,
+          "residual_range": 0.19980880618095398
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.12803497910499573
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 129,
+            "step": 48,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": false,
+          "residual_range": 0.14755669236183167
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 100,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1808653473854065
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19578978419303894
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 133,
+            "step": 64,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1691364347934723
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 102,
+            "step": 88,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1648939847946167
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 103,
+            "step": 56,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1825367510318756
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 132,
+            "step": 8,
+            "group": "difficult",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.17721626162528992
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 101,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.18793055415153503
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 116,
+            "step": 8,
+            "group": "difficult",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.19306805729866028
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 100,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19226403534412384
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 128,
+            "step": 40,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1997000277042389
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 111,
+            "step": 8,
+            "group": "rescues",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": false,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.1832646131515503
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 124,
+            "step": 16,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999998807907104
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 125,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19331005215644836
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 139,
+            "step": 8,
+            "group": "rescues",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": false,
+          "changed": true,
+          "residual_range": 0.18332228064537048
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 102,
+            "step": 8,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.20000000298023224
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 106,
+            "step": 32,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.19135582447052002
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 118,
+            "step": 40,
+            "group": "damages",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": false,
+          "residual_range": 0.17153872549533844
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 126,
+            "step": 24,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": true,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19168581068515778
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 129,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": true,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19714656472206116
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 131,
+            "step": 8,
+            "group": "damages",
+            "partition": "held-out"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19989240169525146
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 106,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.17670464515686035
+        },
+        {
+          "root": {
+            "scene": "baseline_circle",
+            "case": 107,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19714099168777466
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 101,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19966259598731995
+        },
+        {
+          "root": {
+            "scene": "baseline_square",
+            "case": 107,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.199022114276886
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 100,
+            "step": 40,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.13316041231155396
+        },
+        {
+          "root": {
+            "scene": "dense_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.18658822774887085
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 103,
+            "step": 64,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.1902117282152176
+        },
+        {
+          "root": {
+            "scene": "dense_square",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.181552916765213
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 100,
+            "step": 16,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.11622375249862671
+        },
+        {
+          "root": {
+            "scene": "large_circle",
+            "case": 104,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.15634989738464355
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 100,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": true,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.19999539852142334
+        },
+        {
+          "root": {
+            "scene": "large_square",
+            "case": 103,
+            "step": 8,
+            "group": "successful_controls",
+            "partition": "fit"
+          },
+          "fit": false,
+          "contrast": false,
+          "selected_safe_success_label": true,
+          "old_selected_safe_success_label": true,
+          "changed": true,
+          "residual_range": 0.013862118124961853
+        }
+      ],
+      "parameters": 32897
+    }
+  },
+  "normalization_sha256": "7ea259ab94021a0d868a69b1b47234080ddfc32f8787bdb214342a728e2091ef",
+  "fit_roots": 20,
+  "heldout_roots": 15,
+  "fit_case_ids": [
+    100,
+    102,
+    104,
+    106,
+    116,
+    118,
+    124,
+    126,
+    128,
+    132
+  ]
+}
