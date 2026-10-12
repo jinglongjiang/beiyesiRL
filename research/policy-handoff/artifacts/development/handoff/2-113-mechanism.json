@@ -1,0 +1,928 @@
+[
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": true,
+    "remaining": 0,
+    "handoff_options": [
+      {
+        "prefix": 0,
+        "cost": -0.7158907651901245,
+        "admitted": true,
+        "tail_progress": 1.0972173125906188,
+        "safe": true
+      },
+      {
+        "prefix": 4,
+        "cost": -0.7044315338134766,
+        "admitted": true,
+        "tail_progress": 0.9278502328732889,
+        "safe": true
+      },
+      {
+        "prefix": 8,
+        "cost": -0.6968382596969604,
+        "admitted": true,
+        "tail_progress": 0.8358513909033833,
+        "safe": true
+      },
+      {
+        "prefix": 16,
+        "cost": -0.6464577913284302,
+        "admitted": false,
+        "tail_progress": -0.46619350656524094,
+        "safe": true
+      }
+    ],
+    "admission_changed_choice": false,
+    "fallback": false,
+    "chosen_prefix": 0
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": true,
+    "remaining": 3,
+    "handoff_options": [
+      {
+        "prefix": 0,
+        "cost": -0.7363708442348627,
+        "admitted": false,
+        "tail_progress": -0.32168553956584667,
+        "safe": true
+      },
+      {
+        "prefix": 4,
+        "cost": -0.7362686818737176,
+        "admitted": true,
+        "tail_progress": 1.58781540485566,
+        "safe": true
+      },
+      {
+        "prefix": 8,
+        "cost": -0.6848141378063348,
+        "admitted": true,
+        "tail_progress": 1.7245924009797031,
+        "safe": true
+      },
+      {
+        "prefix": 16,
+        "cost": -0.5811176723140863,
+        "admitted": true,
+        "tail_progress": 1.5599544114422352,
+        "safe": true
+      }
+    ],
+    "admission_changed_choice": true,
+    "fallback": false,
+    "chosen_prefix": 4
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 2,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 1,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": true,
+    "remaining": 7,
+    "handoff_options": [
+      {
+        "prefix": 0,
+        "cost": -0.6967992782592773,
+        "admitted": false,
+        "tail_progress": -0.8240807488373694,
+        "safe": true
+      },
+      {
+        "prefix": 4,
+        "cost": -0.6861924529075623,
+        "admitted": true,
+        "tail_progress": 0.7865735802165021,
+        "safe": true
+      },
+      {
+        "prefix": 8,
+        "cost": -0.7126933336257935,
+        "admitted": true,
+        "tail_progress": 1.9416972592169257,
+        "safe": true
+      },
+      {
+        "prefix": 16,
+        "cost": -0.711089551448822,
+        "admitted": true,
+        "tail_progress": 1.8876017465315278,
+        "safe": true
+      }
+    ],
+    "admission_changed_choice": false,
+    "fallback": false,
+    "chosen_prefix": 8
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 6,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 5,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 4,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 3,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 2,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 1,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": true,
+    "remaining": 7,
+    "handoff_options": [
+      {
+        "prefix": 0,
+        "cost": -0.7053298354148865,
+        "admitted": false,
+        "tail_progress": -0.31664720962642345,
+        "safe": true
+      },
+      {
+        "prefix": 4,
+        "cost": -0.6832590103149414,
+        "admitted": false,
+        "tail_progress": 0.09346512290732267,
+        "safe": true
+      },
+      {
+        "prefix": 8,
+        "cost": -0.6672046184539795,
+        "admitted": true,
+        "tail_progress": 0.8573526696385985,
+        "safe": true
+      },
+      {
+        "prefix": 16,
+        "cost": -0.5647359490394592,
+        "admitted": false,
+        "tail_progress": -0.5388685531770117,
+        "safe": true
+      }
+    ],
+    "admission_changed_choice": true,
+    "fallback": false,
+    "chosen_prefix": 8
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 6,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 5,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 4,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 3,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 2,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 1,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": true,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": true,
+    "remaining": 0,
+    "handoff_options": [
+      {
+        "prefix": 0,
+        "cost": -0.7183326482772827,
+        "admitted": true,
+        "tail_progress": 0.6940081728999177,
+        "safe": true
+      },
+      {
+        "prefix": 4,
+        "cost": -0.6681104898452759,
+        "admitted": false,
+        "tail_progress": -0.1576488504592719,
+        "safe": true
+      },
+      {
+        "prefix": 8,
+        "cost": -0.660849465738158,
+        "admitted": true,
+        "tail_progress": 0.4767414705701425,
+        "safe": true
+      },
+      {
+        "prefix": 16,
+        "cost": -0.6038304967050224,
+        "admitted": false,
+        "tail_progress": 0.041787049400975995,
+        "safe": true
+      }
+    ],
+    "admission_changed_choice": false,
+    "fallback": false,
+    "chosen_prefix": 0
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  },
+  {
+    "active": false,
+    "triggered": false,
+    "remaining": 0,
+    "handoff_options": [],
+    "admission_changed_choice": false,
+    "fallback": false
+  }
+]

@@ -1,0 +1,233 @@
+{
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 102,
+      "collision": 0,
+      "timeout": 18,
+      "contact": 0,
+      "SR": 0.85,
+      "CR": 0.0,
+      "TR": 0.15,
+      "duration_all_mean": 21.614583333333332,
+      "successful_time_mean": 16.561274509803923,
+      "return_mean": 0.4376624555515191,
+      "path_mean": 19.734017046527445,
+      "final_distance_mean": 3.013217402151268,
+      "min_clearance_min": 0.060545499214155085,
+      "min_clearance_median": 0.2305543344960317,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 41,
+      "decision_ms_episode_mean": 16.79502306745999
+    },
+    "hold8": {
+      "n": 120,
+      "success": 114,
+      "collision": 0,
+      "timeout": 6,
+      "contact": 0,
+      "SR": 0.95,
+      "CR": 0.0,
+      "TR": 0.05,
+      "duration_all_mean": 17.085416666666667,
+      "successful_time_mean": 15.339912280701755,
+      "return_mean": 0.5174285022768121,
+      "path_mean": 14.110901632812668,
+      "final_distance_mean": 0.4260571385855989,
+      "min_clearance_min": 0.03734441294978896,
+      "min_clearance_median": 0.22576135405020692,
+      "triggers": 211,
+      "intervention_steps": 3196,
+      "fallback_steps": 30,
+      "decision_ms_episode_mean": 39.47715794271624
+    },
+    "rollout": {
+      "n": 120,
+      "success": 115,
+      "collision": 0,
+      "timeout": 5,
+      "contact": 0,
+      "SR": 0.9583333333333334,
+      "CR": 0.0,
+      "TR": 0.041666666666666664,
+      "duration_all_mean": 16.866666666666667,
+      "successful_time_mean": 15.415217391304347,
+      "return_mean": 0.5214309976532481,
+      "path_mean": 14.991406831883884,
+      "final_distance_mean": 0.4600931236608076,
+      "min_clearance_min": 0.038803663193764715,
+      "min_clearance_median": 0.22670552230756452,
+      "triggers": 324,
+      "intervention_steps": 1074,
+      "fallback_steps": 39,
+      "decision_ms_episode_mean": 38.20406789151654
+    },
+    "handoff": {
+      "n": 120,
+      "success": 116,
+      "collision": 0,
+      "timeout": 4,
+      "contact": 0,
+      "SR": 0.9666666666666667,
+      "CR": 0.0,
+      "TR": 0.03333333333333333,
+      "duration_all_mean": 16.710416666666667,
+      "successful_time_mean": 15.553879310344827,
+      "return_mean": 0.5248804140017412,
+      "path_mean": 14.076352014415303,
+      "final_distance_mean": 0.35712167474203704,
+      "min_clearance_min": 0.038803663193764715,
+      "min_clearance_median": 0.21571961173165838,
+      "triggers": 302,
+      "intervention_steps": 1909,
+      "fallback_steps": 36,
+      "decision_ms_episode_mean": 37.68510134281225
+    }
+  },
+  "pairs": {
+    "nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.11666666666666667,
+      "delta_SR_case_bootstrap_95": [
+        0.06666666666666667,
+        0.175
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_circle",
+          115
+        ],
+        [
+          "baseline_square",
+          105
+        ],
+        [
+          "baseline_square",
+          113
+        ],
+        [
+          "baseline_square",
+          116
+        ],
+        [
+          "dense_square",
+          100
+        ],
+        [
+          "dense_square",
+          101
+        ],
+        [
+          "dense_square",
+          114
+        ],
+        [
+          "dense_square",
+          116
+        ],
+        [
+          "large_circle",
+          102
+        ],
+        [
+          "large_circle",
+          103
+        ],
+        [
+          "large_circle",
+          108
+        ],
+        [
+          "large_square",
+          101
+        ],
+        [
+          "large_square",
+          116
+        ],
+        [
+          "large_square",
+          119
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 14,
+      "damage_count": 0,
+      "both_success_time_delta_mean": -1.3651960784313726
+    },
+    "hold8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.016666666666666666,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.041666666666666664
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          105
+        ],
+        [
+          "dense_square",
+          113
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 2,
+      "damage_count": 0,
+      "both_success_time_delta_mean": 0.11842105263157894
+    },
+    "rollout": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.008333333333333333,
+      "delta_SR_case_bootstrap_95": [
+        0.0,
+        0.025
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "dense_square",
+          105
+        ]
+      ],
+      "damages": [],
+      "rescue_count": 1,
+      "damage_count": 0,
+      "both_success_time_delta_mean": 0.07391304347826087
+    }
+  },
+  "strongest_simple": "rollout",
+  "paired_time_ratio": 1.0047948103229447,
+  "admission_changed_decisions": 122,
+  "gate": {
+    "checks": {
+      "no_success_regression": true,
+      "safety": true,
+      "independent_task_gain": false,
+      "mechanism": true,
+      "compute": true
+    },
+    "passed": false
+  },
+  "verdict": "VERSION_NEGATIVE",
+  "scope": "Known rollout/shielding ingredients are not novelty. No paper PASS without meaningful mechanism and fresh confirmation."
+}
