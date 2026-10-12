@@ -1,0 +1,37 @@
+{
+  "version": "teb-side-reference-v1-20261012",
+  "parent_commit": "5b0966260329d323c1e0477b2349cee63fc9e47f",
+  "parent_sha256": "879c612fcea61a7e39bdef6506b4eb141b6eecdf0de46eda39ad8525acd8ee2c",
+  "hypothesis": "During repeated nonpositive progress, retaining a bypass side while continuing GRU value ranking can reduce failed reversals without forcing unsafe forward progress, beyond fixed8 progress intervention.",
+  "scope": "Existing-method adaptation, NOT an official TEB reproduction, new learned recovery algorithm, or established novelty. No training.",
+  "upstream": {
+    "repository": "https://github.com/rst-tu-dortmund/teb_local_planner",
+    "commit": "9e55af4724310c34bcfa8cbb3b2783478c1a246a",
+    "license": "BSD-3-Clause",
+    "mechanism_sources": ["src/teb_local_planner_ros.cpp:980-1014", "include/teb_local_planner/g2o_types/edge_prefer_rotdir.h:computeError", "src/homotopy_class_planner.cpp:selectBestTeb"],
+    "reused": "One-sided squared direction penalty and retained direction state from oscillation recovery.",
+    "not_reused": "ROS, g2o optimizer, nonholonomic yaw dynamics, homotopy search, TEB collision constraints. Full TEB would change the action/planning contract."
+  },
+  "shared_contract": {"actions": 80, "history": "legal-prefix T24", "time_limit": 50, "dt": 0.25, "margin": 0.2, "risk_lambda": 0.8, "smoothing": 0.3, "value_humans": 5, "safety_humans": "all", "weight": "same frozen GRU", "reward": "unchanged", "fallback": "unchanged"},
+  "controller": {
+    "trigger": "Exactly the existing commit8 trigger:8 consecutive nominal nonpositive-progress decisions and no goal-distance reduction over last8 executed steps.",
+    "duration_steps": 8,
+    "axis": "Unit direction from robot to goal at activation; retained for8 steps.",
+    "side": "Sign of current actual velocity cross activation goal axis; if lateral speed<=1e-6, use the highest-scoring safe candidate with nonzero lateral velocity; if none, no side penalty.",
+    "bearing": "asin(clip(cross(axis,executed_candidate_velocity)/max(speed,1e-12),-1,1)); treats forward/backward motion on the same lateral side equally. This replaces TEB yaw increment for a holonomic robot.",
+    "penalty": "std(original finite safe scores) * max(0,-side*bearing)^2; subtract from original scores; select only original safe candidates. No progress bonus. No extra actions. No future human state.",
+    "empty_safe_set": "Cancel active interval and execute unchanged nominal fallback; do not replace it with an unvalidated safety fallback.",
+    "limits": "Not a long-term safety certificate. Trigger and duration inherited without tuning; scale deterministic from within-step safe scores, not navigation outcomes."
+  },
+  "arms": ["nominal", "commit8", "side-reset", "side-latched"],
+  "side_reset": "Same trigger,8-step interval and penalty, but recompute axis and preferred side each active step. Isolates retained-side state from mere directional penalty.",
+  "development": {"scenes": [0,1,2,3,4,5], "case_first": 300, "case_last": 319, "episodes_per_arm": 120, "reuse": "Existing nominal and commit8 complete outcomes and logs; only the2 side arms are new. These cases are already development, not fresh confirmation."},
+  "controls": {"parity_cases": [300], "smoke_cases": [301], "scenes": [0,1,2,3,4,5], "determinism": "Repeat side-latched smoke, exactly matching executed actions, physical traces, candidate values and outcomes; timings excluded.", "activation_unit_tests": "Synthetic triggers, fixed direction retention, empty-mask fallback, finite score scaling without masked -1e9, translation/rotation equivariance, safe selection and explicit direction perturbation sensitivity."},
+  "development_go": "At least2 additional successes versus commit8 AND more successes than nominal; no increase in collision/contact versus either; mechanism changes executed choices; paired both-success duration increase<=10%. Otherwise KILL this adaptation without repair/sweep.",
+  "confirmation": {"conditional_on_development_go": true, "scenes": [0,1,2,3,4,5], "case_first": 340, "case_last": 359, "arms": ["nominal", "commit8", "side-reset", "side-latched"], "rule": "No tuning. Candidate must improve paired SR over commit8 with cluster bootstrap lower bound>0, no collision/contact regression, and not be fully absorbed by side-reset; otherwise no method entry."},
+  "statistics": "Resample numerical case jointly across6 scenes,4000 paired bootstrap draws. Report20 case clusters per120-episode cohort; one nominal training seed, not population policy generalization.",
+  "metrics": ["SR", "CR", "TR", "independent_actual_contact", "minimum_clearance", "successful_navigation_time", "paired_time", "path", "return", "rescue", "damage", "compute", "triggers", "active_steps", "action_changes", "fallback"],
+  "engineering_stop": "Any traceback/nonzero exit/nonfinite score/action contract, weight hash, import path or exact tape/parity failure stops outcome evaluation until the specific engineering failure is recorded and corrected. No scientific rescue.",
+  "budget_seconds": 3600,
+  "resources": "Local3060 inference only, no4090, no training, no original project source edits."
+}
