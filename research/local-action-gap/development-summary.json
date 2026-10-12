@@ -1,0 +1,250 @@
+{
+  "overall": {
+    "nominal": {
+      "n": 120,
+      "success": 105,
+      "collision": 0,
+      "timeout": 15,
+      "contact": 0,
+      "SR": 0.875,
+      "CR": 0.0,
+      "TR": 0.125,
+      "duration_all_mean": 20.075,
+      "successful_time_mean": 15.764285714285714,
+      "return_mean": 0.4676973502155278,
+      "path_mean": 18.115170486470266,
+      "final_distance_mean": 2.2681087588238955,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.30314329223224235,
+      "triggers": 0,
+      "intervention_steps": 0,
+      "fallback_steps": 15,
+      "decision_ms_episode_mean": 9.04892587898202
+    },
+    "hold8": {
+      "n": 120,
+      "success": 119,
+      "collision": 0,
+      "timeout": 1,
+      "contact": 0,
+      "SR": 0.9916666666666667,
+      "CR": 0.0,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 15.1,
+      "successful_time_mean": 14.804621848739496,
+      "return_mean": 0.5560864841418843,
+      "path_mean": 13.265620033449345,
+      "final_distance_mean": 0.3294645025787252,
+      "min_clearance_min": 0.023761808589687128,
+      "min_clearance_median": 0.24838486347056166,
+      "triggers": 169,
+      "intervention_steps": 2589,
+      "fallback_steps": 13,
+      "decision_ms_episode_mean": 29.4522958857357
+    },
+    "absolute": {
+      "n": 120,
+      "success": 119,
+      "collision": 0,
+      "timeout": 1,
+      "contact": 0,
+      "SR": 0.9916666666666667,
+      "CR": 0.0,
+      "TR": 0.008333333333333333,
+      "duration_all_mean": 17.3375,
+      "successful_time_mean": 17.060924369747898,
+      "return_mean": 0.5095471801257833,
+      "path_mean": 14.189747731097604,
+      "final_distance_mean": 0.2910132141347089,
+      "min_clearance_min": 0.02877143003177829,
+      "min_clearance_median": 0.23141768483016584,
+      "triggers": 235,
+      "intervention_steps": 3325,
+      "fallback_steps": 22,
+      "decision_ms_episode_mean": 100.69810871263967
+    },
+    "relative": {
+      "n": 120,
+      "success": 116,
+      "collision": 0,
+      "timeout": 4,
+      "contact": 0,
+      "SR": 0.9666666666666667,
+      "CR": 0.0,
+      "TR": 0.03333333333333333,
+      "duration_all_mean": 20.275,
+      "successful_time_mean": 19.24137931034483,
+      "return_mean": 0.44928225710405606,
+      "path_mean": 12.923548705095188,
+      "final_distance_mean": 0.3113800235338175,
+      "min_clearance_min": 0.0068763106756476455,
+      "min_clearance_median": 0.20632474821958852,
+      "triggers": 409,
+      "intervention_steps": 5575,
+      "fallback_steps": 74,
+      "decision_ms_episode_mean": 112.35326263787866
+    }
+  },
+  "pairs": {
+    "nominal": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": 0.09166666666666666,
+      "delta_SR_case_bootstrap_95": [
+        0.025,
+        0.175
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [
+        [
+          "baseline_square",
+          312
+        ],
+        [
+          "dense_square",
+          303
+        ],
+        [
+          "dense_square",
+          308
+        ],
+        [
+          "dense_square",
+          312
+        ],
+        [
+          "dense_square",
+          317
+        ],
+        [
+          "dense_square",
+          318
+        ],
+        [
+          "large_circle",
+          306
+        ],
+        [
+          "large_circle",
+          317
+        ],
+        [
+          "large_circle",
+          318
+        ],
+        [
+          "large_square",
+          307
+        ],
+        [
+          "large_square",
+          314
+        ],
+        [
+          "large_square",
+          317
+        ],
+        [
+          "large_square",
+          318
+        ]
+      ],
+      "damages": [
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "dense_square",
+          302
+        ]
+      ],
+      "rescue_count": 13,
+      "damage_count": 2,
+      "both_success_time_delta_mean": 2.9781553398058254
+    },
+    "hold8": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.025,
+      "delta_SR_case_bootstrap_95": [
+        -0.05,
+        0.0
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          304
+        ]
+      ],
+      "rescue_count": 0,
+      "damage_count": 3,
+      "both_success_time_delta_mean": 4.4655172413793105
+    },
+    "absolute": {
+      "episodes": 120,
+      "case_clusters": 20,
+      "delta_SR": -0.025,
+      "delta_SR_case_bootstrap_95": [
+        -0.05,
+        0.0
+      ],
+      "delta_contact_rate": 0.0,
+      "delta_contact_case_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "rescues": [],
+      "damages": [
+        [
+          "baseline_square",
+          308
+        ],
+        [
+          "dense_square",
+          302
+        ],
+        [
+          "dense_square",
+          304
+        ]
+      ],
+      "rescue_count": 0,
+      "damage_count": 3,
+      "both_success_time_delta_mean": 2.4504310344827585
+    }
+  },
+  "strongest_simple": "hold8",
+  "paired_time_ratio": 1.3022170361726955,
+  "executed_memory_changes": 3963,
+  "gate": {
+    "checks": {
+      "no_success_regression": false,
+      "safety": true,
+      "independent_task_gain": false,
+      "mechanism": true,
+      "compute": true
+    },
+    "passed": false
+  },
+  "verdict": "VERSION_NEGATIVE",
+  "novelty": "UNVERIFIED; no independent algorithmic contribution established by this experiment alone."
+}
