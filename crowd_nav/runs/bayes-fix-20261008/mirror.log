@@ -275,7 +275,7 @@
 kex_exchange_identification: read: Connection reset by peer
 rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
 rsync error: unexplained error (code 255) at io.c(235) [Receiver=3.1.3]
-Mirror error: Command '['rsync', '-az', '--timeout=60', '--exclude=code/', '--exclude=scripts/', '-e', 'ssh -o BatchMode=yes -o ConnectTimeout=15', 'root@45.126.120.6:/root/bayes-fix-20261008/', '/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-fix-20261008/remote-run/']' returned non-zero exit status 255.
+Mirror error: Command '['rsync', '-az', '--timeout=60', '--exclude=code/', '--exclude=scripts/', '-e', 'ssh -o BatchMode=yes -o ConnectTimeout=15', 'root@REMOTE_HOST_REDACTED:/root/bayes-fix-20261008/', '/home/abc/workspace/CrowdNav(20270731_backup2)/CrowdNav/crowd_nav/runs/bayes-fix-20261008/remote-run/']' returned non-zero exit status 255.
 2026-10-08 13:26:16 synchronized
 2026-10-08 13:28:32 synchronized
 2026-10-08 13:30:47 synchronized
