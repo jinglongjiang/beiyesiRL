@@ -7,7 +7,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'crowd_nav/runs/bayes-optimized-20261007/accepted-run'
-REMOTE = 'root@45.126.120.6:/root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/'
+REMOTE = 'root@REMOTE_HOST_REDACTED:/root/bayes-vl-optimized-20261007/crowd_nav/runs/optimized-10000-r1/'
 
 
 def main():
