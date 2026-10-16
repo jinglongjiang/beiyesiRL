@@ -85,7 +85,7 @@ def main():
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     command = ['rsync', '-az', '--timeout=90', '-e', 'ssh -o BatchMode=yes -o ConnectTimeout=15',
                '--exclude=mamba-*', '--exclude=orca-shared.pth', '--exclude=collection/',
-               'root@45.126.120.6:/root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/',
+               'root@REMOTE_HOST_REDACTED:/root/bayes-vl-matched-20261006/crowd_nav/runs/bayes-matched-v1/',
                str(RUN) + '/']
     while True:
         try:

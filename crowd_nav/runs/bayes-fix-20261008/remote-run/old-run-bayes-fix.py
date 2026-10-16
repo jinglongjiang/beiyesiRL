@@ -302,7 +302,7 @@ def mirror(destination):
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     command = ['rsync', '-az', '--timeout=60', '--exclude=code/', '--exclude=scripts/',
                '-e', 'ssh -o BatchMode=yes -o ConnectTimeout=15',
-               'root@45.126.120.6:/root/bayes-fix-20261008/', str(destination) + '/']
+               'root@REMOTE_HOST_REDACTED:/root/bayes-fix-20261008/', str(destination) + '/']
     while True:
         try:
             subprocess.run(command, check=True, timeout=300)
