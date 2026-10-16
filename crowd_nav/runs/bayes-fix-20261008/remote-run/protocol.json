@@ -44,6 +44,6 @@
   "smoke": {"seed": 42, "rl_episodes": 200, "updates_per_episode": 4, "batch_size": 256, "pass": "all complete, strict expected IL loading and dataset version/hash, GRID=80, finite saved policy/optimizer, aggregate 200 training-episode SR strictly between zero and one, no traceback"},
   "formal": {"rl_episodes": 10000, "updates_per_episode": 4, "batch_size": 256, "save_every": 500, "eval_every": 1000, "eval_episodes": 50},
   "benchmark": {"cases_per_scenario": 500, "scenarios": 6, "time_limit": 25, "base_seed": 20261006, "fresh_confirmation": false},
-  "operational": {"remote": "root@45.126.120.6", "root": "/root/bayes-fix-20261008", "python": "/root/miniconda3/envs/mamba/bin/python", "memory_and_disk_guard": true, "pid_identity": "pid plus /proc starttime, no self-matching grep"},
+  "operational": {"remote": "root@REMOTE_HOST_REDACTED", "root": "/root/bayes-fix-20261008", "python": "/root/miniconda3/envs/mamba/bin/python", "memory_and_disk_guard": true, "pid_identity": "pid plus /proc starttime, no self-matching grep"},
   "b2": "Optional after priority acceptance/startup work; at most 12 frozen failed-root first-action replay tests, not a population SR upper bound."
 }
