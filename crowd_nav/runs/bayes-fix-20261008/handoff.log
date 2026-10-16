@@ -10,4 +10,4 @@ Traceback (most recent call last):
     return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
   File "/home/abc/miniconda3/envs/crowdnav/lib/python3.8/subprocess.py", line 516, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', 'root@45.126.120.6', '/root/miniconda3/envs/mamba/bin/python -c \'import pathlib,json; b=pathlib.Path(\'"\'"\'/root/bayes-fix-20261008\'"\'"\'); print(json.dumps({n:json.loads((b/n).read_text()) if (b/n).exists() else None for n in ("controller-state.json","smoke-results.json","error.json")}))\'']' returned non-zero exit status 255.
+subprocess.CalledProcessError: Command '['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', 'root@REMOTE_HOST_REDACTED', '/root/miniconda3/envs/mamba/bin/python -c \'import pathlib,json; b=pathlib.Path(\'"\'"\'/root/bayes-fix-20261008\'"\'"\'); print(json.dumps({n:json.loads((b/n).read_text()) if (b/n).exists() else None for n in ("controller-state.json","smoke-results.json","error.json")}))\'']' returned non-zero exit status 255.

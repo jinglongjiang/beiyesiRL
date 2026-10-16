@@ -318,7 +318,7 @@ def mirror(destination):
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     command = ['rsync', '-az', '--timeout=60', '--exclude=code/', '--exclude=scripts/',
                '-e', 'ssh -o BatchMode=yes -o ConnectTimeout=15',
-               'root@45.126.120.6:/root/bayes-fix-20261008/', str(destination) + '/']
+               'root@REMOTE_HOST_REDACTED:/root/bayes-fix-20261008/', str(destination) + '/']
     while True:
         try:
             subprocess.run(command, check=True, timeout=300)
@@ -333,7 +333,7 @@ def mirror(destination):
 def handoff(artifacts):
     """Retire the old queue only after smoke, then deploy the frozen RL queue."""
     artifacts = Path(artifacts)
-    remote = 'root@45.126.120.6'
+    remote = 'root@REMOTE_HOST_REDACTED'
     base = '/root/bayes-fix-20261008'
     pybin = '/root/miniconda3/envs/mamba/bin/python'
     def remote_python(code, read_only=False):
